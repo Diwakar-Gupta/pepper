@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Level 1: DSA Fundamentals",
+    "slug": "dsa-fundamentals",
+    "contents": "300 DSA Questions",
+    "duration": "2 months",
+    "description": "Ideal for beginners wanting to build a strong foundation in Data Structures and Algorithms."
+  },
+  {
+    "name": "Level 2: LevelUp",
+    "slug": "levelup",
+    "contents": "Core Subject Notes",
+    "duration": "3 months",
+    "description": "Designed for intermediate developers looking to level up their problem-solving skills."
+  },
+  {
+    "name": "Level 3: Interview Preparation",
+    "slug": "interview-prep",
+    "contents": "System Design Notes",
+    "duration": "3 months",
+    "description": "Tailored for experienced developers preparing for technical interviews."
+  }
+]
