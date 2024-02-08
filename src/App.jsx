@@ -5,6 +5,7 @@ import Progress from "./components/Progress";
 const CoursesPage = lazy(() => import("./pages/CoursesPage"));
 const CourseDetailPage = lazy(() => import("./pages/CourseDetailPage"));
 const ModuleDetail = lazy(() => import("./pages/ModuleDetailPage"));
+const ProblemDetails = lazy(() => import("./pages/ProblemDetail"));
 const Error = lazy(() => import("./pages/Error"));
 
 const AppLayout = () => {
@@ -43,6 +44,15 @@ const appRouter = createBrowserRouter([
         element: (
           <Suspense fallback={<Progress />}>
             <ModuleDetail />
+          </Suspense>
+        ),
+      },
+      ,
+      {
+        path: "/pepper/course/:courseSlug/:moduleSlug/:problemSlug",
+        element: (
+          <Suspense fallback={<Progress />}>
+            <ProblemDetails />
           </Suspense>
         ),
       },
