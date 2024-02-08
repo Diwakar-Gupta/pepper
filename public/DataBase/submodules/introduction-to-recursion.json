@@ -3,5 +3,30 @@
     "name": "Print Decreasing",
     "slug": "print-decreasing",
     "difficulty": "Easy"
+  },
+  {
+    "name": "Factorial",
+    "slug": "factorial",
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Power linear Easy",
+    "slug": "Power linear Easy",
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Power-logarithmic Easy",
+    "slug": "Power-logarithmic Easy",
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Print Zigzag Easy",
+    "slug": "factorial",
+    "difficulty": "Easy"
+  },
+  {
+    "name": "Tower Of Hano",
+    "slug": "Tower Of Hano",
+    "difficulty": "Easy"
   }
 ]
