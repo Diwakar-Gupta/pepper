@@ -1,0 +1,19 @@
+{
+  "name": "Level 3: Interview Preparation",
+  "categorys": [
+    {
+      "name": "Basics of Programming",
+      "topics": [
+        { "name": "Getting Started", "slug": "getting-started" },
+        {
+          "name": "Recursion and Backtracking",
+          "slug": "recursion-and-backtracking"
+        }
+      ]
+    },
+    {
+      "name": "Recursion and Backtracking",
+      "topics": []
+    }
+  ]
+}

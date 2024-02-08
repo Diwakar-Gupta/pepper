@@ -1,0 +1,12 @@
+{
+  "name": "Print Decreasing",
+  "description": "description of question",
+  "externalPlatforms": [
+    {
+      "name": "leetcode",
+      "link": "https://leetcode.com/problems/increasing-decreasing-string/description/"
+    }
+  ],
+  "solutionVideolink": "https://www.youtube.com/embed/5Q5ed7PWJ8I?list=PL-Jc9J83PIiFxaBahjslhBD1LiJAV7nKs",
+  "problemVideoLink": ""
+}
