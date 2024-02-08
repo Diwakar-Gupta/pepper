@@ -1,8 +1,10 @@
 import url from "../constants";
 
-const getCourseDetails = async (courseSlug) => {
+const getModuleDetails = async (moduleSlug) => {
   try {
-    const response = await fetch(`${url}/database/courses/${courseSlug}.json`);
+    const response = await fetch(
+      `${url}/database/submodules/${moduleSlug}.json`,
+    );
     if (!response.ok) {
       throw new Error("Failed to fetch course details");
     }
@@ -14,5 +16,4 @@ const getCourseDetails = async (courseSlug) => {
   }
 };
 
-export default getCourseDetails;
-
+export default getModuleDetails;

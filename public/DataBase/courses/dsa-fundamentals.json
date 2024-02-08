@@ -13,7 +13,12 @@
     },
     {
       "name": "Recursion and Backtracking",
-      "topics": []
+      "topics": [
+        {
+          "name": "Introduction to Recursion",
+          "slug": "introduction-to-recursion"
+        }
+      ]
     }
   ]
 }

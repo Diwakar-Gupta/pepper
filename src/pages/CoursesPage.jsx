@@ -21,7 +21,7 @@ const CoursesPage = () => {
         {courses.map((course, index) => (
           <Link
             key={index}
-            to={`/course/${course.slug}`}
+            to={`course/${course.slug}`}
             className="bg-gray-200 p-4 rounded shadow-md"
           >
             <h2 className="text-lg font-semibold mb-2">{course.name}</h2>{" "}
