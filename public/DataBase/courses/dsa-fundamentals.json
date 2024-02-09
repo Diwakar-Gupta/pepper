@@ -5,9 +5,12 @@
       "name": "Basics of Programming",
       "topics": [
         { "name": "Getting Started", "slug": "getting-started" },
+        { "name": "Patterns", "slug": "patterns" },
+        { "name": "Function and Arrays", "slug": "function-and-arrays" },
+        { "name": "2D Arrays", "slug": "2d-arrays" },
         {
-          "name": "Recursion and Backtracking",
-          "slug": "recursion-and-backtracking"
+          "name": "String, String Builder and ArrayList",
+          "slug": "string-string-builder-and-arraylist"
         }
       ]
     },
@@ -17,7 +20,54 @@
         {
           "name": "Introduction to Recursion",
           "slug": "introduction-to-recursion"
+        },
+        { "name": "Recursion in Arrays", "slug": "recursion-in-arrays" },
+        {
+          "name": "Recursion with Arraylists",
+          "slug": "recursion-with-arraylists"
+        },
+        {
+          "name": "Recursion on the way up",
+          "slug": "recursion-on-the-way-up"
+        },
+        { "name": "Recursion Backtracking", "slug": "recursion-backtracking" }
+      ]
+    },
+    {
+      "name": "Dynamic Programming",
+      "topics": [
+        {
+          "name": "Time and Space Complexity",
+          "slug": "time-and-space-complexity"
+        },
+        {
+          "name": "Dynamic Programming and Greedy",
+          "slug": "dynamic-programming-and-greedy"
         }
+      ]
+    },
+    { "name": "OOPS", "topics": [{ "name": "OOPS", "slug": "oops" }] },
+    {
+      "name": "Basic Data Structures",
+      "topics": [
+        { "name": "Stacks and Queues", "slug": "stacks-and-queues" },
+        { "name": "Linked Lists", "slug": "linked-lists" },
+        { "name": "Generic Tree", "slug": "generic-tree" },
+        { "name": "Binary Tree", "slug": "binary-tree" },
+        { "name": "Binary Search Tree", "slug": "binary-search-tree" }
+      ]
+    },
+    {
+      "name": "Advanced Data Structure",
+      "topics": [
+        { "name": "Hashmap And Heap", "slug": "hashmap-and-heap" },
+        { "name": "Graphs", "slug": "graphs" }
+      ]
+    },
+    {
+      "name": "Miscellaneous",
+      "topics": [
+        { "name": "JAVA for C++ Coders", "slug": "java-for-c++-coders" }
       ]
     }
   ]

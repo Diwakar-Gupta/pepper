@@ -1,0 +1,71 @@
+{
+  "slug": "getting-started",
+  "problems": [
+    { "name": "Print Z Easy", "difficulty": "Easy", "slug": "print-z-easy" },
+    {
+      "name": "Grading System Easy",
+      "difficulty": "Easy",
+      "slug": "grading-system-easy"
+    },
+    {
+      "name": "Is A Number Prime Easy",
+      "difficulty": "Easy",
+      "slug": "is-a-number-prime-easy"
+    },
+    {
+      "name": "Print All Primes Till N Easy",
+      "difficulty": "Easy",
+      "slug": "print-all-primes-till-n-easy"
+    },
+    {
+      "name": "Print Fibonacci Numbers Till N Easy",
+      "difficulty": "Easy",
+      "slug": "print-fibonacci-numbers-till-n-easy"
+    },
+    {
+      "name": "Count Digits In A Number Easy",
+      "difficulty": "Easy",
+      "slug": "count-digits-in-a-number-easy"
+    },
+    {
+      "name": "Digits Of A Number Easy",
+      "difficulty": "Easy",
+      "slug": "digits-of-a-number-easy"
+    },
+    {
+      "name": "Reverse A Number Easy",
+      "difficulty": "Easy",
+      "slug": "reverse-a-number-easy"
+    },
+    {
+      "name": "Inverse Of A Number Easy",
+      "difficulty": "Easy",
+      "slug": "inverse-of-a-number-easy"
+    },
+    {
+      "name": "Rotate A Number Easy",
+      "difficulty": "Easy",
+      "slug": "rotate-a-number-easy"
+    },
+    {
+      "name": "Gcd And Lcm Easy",
+      "difficulty": "Easy",
+      "slug": "gcd-and-lcm-easy"
+    },
+    {
+      "name": "Prime Factorisation Of A Number Easy",
+      "difficulty": "Easy",
+      "slug": "prime-factorisation-of-a-number-easy"
+    },
+    {
+      "name": "Pythagorean Triplet Easy",
+      "difficulty": "Easy",
+      "slug": "pythagorean-triplet-easy"
+    },
+    {
+      "name": "The Curious Case Of Benjamin Bulbs Easy",
+      "difficulty": "Easy",
+      "slug": "the-curious-case-of-benjamin-bulbs-easy"
+    }
+  ]
+}

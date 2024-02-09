@@ -1,19 +1,49 @@
 {
-  "name": "Level 2: LevelUp",
   "categorys": [
     {
-      "name": "Basics of Programming",
+      "name": "Conceptual building blocks",
       "topics": [
-        { "name": "Getting Started", "slug": "getting-started" },
         {
           "name": "Recursion and Backtracking",
           "slug": "recursion-and-backtracking"
-        }
+        },
+        { "name": "Bit Manipulation", "slug": "bit-manipulation" },
+        { "name": "Dynamic Programming", "slug": "dynamic-programming" }
       ]
     },
     {
-      "name": "Recursion and Backtracking",
-      "topics": []
+      "name": "Data Structures",
+      "topics": [
+        { "name": "Graphs", "slug": "graphs" },
+        { "name": "Hashmap and Heaps", "slug": "hashmap-and-heaps" },
+        { "name": "Trees", "slug": "trees" },
+        { "name": "Linked List", "slug": "linked-list" },
+        { "name": "Stacks", "slug": "stacks" },
+        { "name": "Trie", "slug": "trie" }
+      ]
+    },
+    {
+      "name": "Competitive",
+      "topics": [
+        { "name": "Text Processing", "slug": "text-processing" },
+        { "name": "Number Theory", "slug": "number-theory" },
+        { "name": "Computational Geometry", "slug": "computational-geometry" },
+        { "name": "Range Query", "slug": "range-query" }
+      ]
+    },
+    {
+      "name": "Arrays and Strings",
+      "topics": [
+        { "name": "Arrays and Strings", "slug": "arrays-and-strings" },
+        { "name": "Searching and Sorting", "slug": "searching-and-sorting" }
+      ]
+    },
+    {
+      "name": "Miscellaneous",
+      "topics": [
+        { "name": "JAVA for C++ Coders", "slug": "java-for-c++-coders" }
+      ]
     }
-  ]
+  ],
+  "slug": "data-structures-and-algorithms-in-java-levelup"
 }
