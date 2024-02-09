@@ -42,7 +42,7 @@ const ProblemDescription = React.memo(({ problem }) => {
       />
       <div className="mt-4">
         {problem.problemVideoLink && (
-          <div>
+          <div className="mb-2">
             <strong>Problem Video:</strong>{" "}
             <YouTube
               videoId={getYouTubeVideoId(problem.problemVideoLink)}
