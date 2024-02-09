@@ -2,7 +2,7 @@ import url from "../constants";
 
 const getCourseList = async () => {
   try {
-    const response = await fetch(`${url}/database/courses/all.json`);
+    const response = await fetch(`${url}/database/courses/meta.json`);
     if (!response.ok) {
       throw new Error("Failed to fetch course details");
     }

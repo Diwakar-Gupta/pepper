@@ -2,7 +2,9 @@ import url from "../constants";
 
 const getCourseDetails = async (courseSlug) => {
   try {
-    const response = await fetch(`${url}/database/courses/${courseSlug}.json`);
+    const response = await fetch(
+      `${url}/database/courses/${courseSlug}/meta.json`,
+    );
     if (!response.ok) {
       throw new Error("Failed to fetch course details");
     }
@@ -15,4 +17,3 @@ const getCourseDetails = async (courseSlug) => {
 };
 
 export default getCourseDetails;
-

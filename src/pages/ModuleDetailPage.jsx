@@ -3,13 +3,16 @@ import { Link, useParams } from "react-router-dom";
 import getModuleDetails from "../repository/getModuleDetails";
 
 const ModuleDetail = () => {
-  const { moduleSlug } = useParams();
+  const { courseSlug, moduleSlug } = useParams();
   const [moduleProblems, setModuleProblems] = useState(null);
 
   useEffect(() => {
     const fetchModule = async () => {
       try {
-        const moduleProblemsList = await getModuleDetails(moduleSlug);
+        const moduleProblemsList = await getModuleDetails(
+          courseSlug,
+          moduleSlug,
+        );
         setModuleProblems(moduleProblemsList);
       } catch (error) {
         console.error("Error loading course:", error);
