@@ -14,9 +14,7 @@ const Accordion = ({ title, items }) => {
 
   return (
     <div
-      className={`border border-solid border-gray-300 mb-0  transition-max-height duration-300 ease-out max-h-16 ${
-        isOpen ? "max-h-48" : ""
-      }`}
+      className={`border border-solid border-gray-300 mb-0  transition-max-height duration-300 ease-out`}
     >
       <div
         className="bg-gray-100 py-2 px-4 cursor-pointer flex justify-between items-center"

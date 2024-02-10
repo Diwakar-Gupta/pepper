@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Accordion from "../components/utils/Accordion";
 import getCourseDetails from "../repository/getCourseDetails";
+import TwoColListAndRankView from "../layouts/TwoColListAndRankView";
 
 const CourseDetailPage = () => {
   const { courseSlug } = useParams();
@@ -29,15 +30,21 @@ const CourseDetailPage = () => {
   console.log(course.categorys);
 
   return (
-    <div className="flex flex-col justify-center m-10">
-      <h1 className="font-medium text-3xl">Modules and Lectures</h1>
-      {course.categorys.map((category) => {
-        const title = category.name;
-        const items = category.topics.map((topic) => topic.name);
+    <TwoColListAndRankView
+      Component1={
+        <div className="flex flex-col justify-center m-10 md:grow">
+          <h1 className="font-medium text-3xl text-center">
+            Modules and Lectures
+          </h1>
+          {course.categorys.map((category) => {
+            const title = category.name;
+            const items = category.topics.map((topic) => topic.name);
 
-        return <Accordion key={title} title={title} items={items} />;
-      })}
-    </div>
+            return <Accordion key={title} title={title} items={items} />;
+          })}
+        </div>
+      }
+    />
   );
 };
 
