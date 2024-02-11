@@ -32,7 +32,7 @@ const CourseDetailPage = () => {
   return (
     <TwoColListAndRankView
       Component1={
-        <div className="flex flex-col justify-center m-10 md:grow">
+        <div className="flex flex-col justify-center md:grow">
           <h1 className="font-medium text-3xl text-center">
             Modules and Lectures
           </h1>

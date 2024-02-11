@@ -78,7 +78,6 @@ const ModuleDetail = () => {
           </table>
         </div>
       }
-      Component2={<div></div>}
     />
   );
 };
