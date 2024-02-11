@@ -268,10 +268,6 @@ img, video {
   z-index: 10;
 }
 
-.m-10 {
-  margin: 2.5rem;
-}
-
 .m-0 {
   margin: 0;
 }
@@ -500,10 +496,6 @@ img, video {
   text-align: center;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -579,10 +571,6 @@ img, video {
 }
 
 @media (width >= 640px) {
-  .sm\:m-0 {
-    margin: 0;
-  }
-
   .sm\:m-10 {
     margin: 2.5rem;
   }
@@ -591,8 +579,8 @@ img, video {
     flex-direction: row;
   }
 
-  .sm\:flex-col {
-    flex-direction: column;
+  .sm\:gap-6 {
+    gap: 1.5rem;
   }
 
   .sm\:p-2 {
@@ -601,10 +589,6 @@ img, video {
 }
 
 @media (width >= 768px) {
-  .md\:m-10 {
-    margin: 2.5rem;
-  }
-
   .md\:mr-2 {
     margin-right: .5rem;
   }

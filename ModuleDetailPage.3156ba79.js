@@ -836,7 +836,7 @@ const NOTHING_HERE = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
 }, undefined);
 const TwoColListAndRankView = ({ Component1, Component2 })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex flex-col md:flex-row justify-center md:p-20 sm:p-2 bg-[#fcfcfd] h-full w-full",
+        className: "flex flex-col sm:flex-row sm:gap-6 justify-center md:p-20 sm:p-2 bg-[#fcfcfd] h-full w-full",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "grow shadow-md rounded-md bg-white",
