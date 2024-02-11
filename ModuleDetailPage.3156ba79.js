@@ -821,7 +821,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 const NOTHING_HERE = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-    className: "flex justify-center items-center h-full",
+    className: "flex justify-center items-center h-full min-h-20",
     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
         children: "Nothing Here"
     }, void 0, false, {
@@ -847,7 +847,7 @@ const TwoColListAndRankView = ({ Component1, Component2 })=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "sm:w-1/3 md:w-2/5 shadow-md rounded-md bg-white min-h-20",
+                className: "sm:w-1/3 md:w-2/5 shadow-md rounded-md bg-white",
                 children: Component2 ? Component2 : NOTHING_HERE
             }, void 0, false, {
                 fileName: "src/layouts/TwoColListAndRankView.jsx",
