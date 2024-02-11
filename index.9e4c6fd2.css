@@ -272,6 +272,10 @@ img, video {
   margin: 2.5rem;
 }
 
+.m-0 {
+  margin: 0;
+}
+
 .mb-0 {
   margin-bottom: 0;
 }
@@ -496,6 +500,10 @@ img, video {
   text-align: center;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -573,6 +581,18 @@ img, video {
 @media (width >= 640px) {
   .sm\:m-0 {
     margin: 0;
+  }
+
+  .sm\:m-10 {
+    margin: 2.5rem;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
   }
 
   .sm\:p-2 {

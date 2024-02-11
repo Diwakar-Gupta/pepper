@@ -27187,7 +27187,7 @@ _c4 = Error;
 const AppLayout = ()=>{
     console.log("AppLayout Rendered");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "app",
+        className: "app h-full w-full",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
             fileName: "src/App.jsx",
             lineNumber: 15,

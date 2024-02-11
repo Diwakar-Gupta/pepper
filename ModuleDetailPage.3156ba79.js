@@ -761,11 +761,6 @@ const ModuleDetail = ()=>{
             fileName: "src/pages/ModuleDetailPage.jsx",
             lineNumber: 34,
             columnNumber: 9
-        }, void 0),
-        Component2: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
-            fileName: "src/pages/ModuleDetailPage.jsx",
-            lineNumber: 81,
-            columnNumber: 19
         }, void 0)
     }, void 0, false, {
         fileName: "src/pages/ModuleDetailPage.jsx",
@@ -841,7 +836,7 @@ const NOTHING_HERE = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
 }, undefined);
 const TwoColListAndRankView = ({ Component1, Component2 })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex flex-row justify-center md:p-20 sm:p-2 bg-[#fcfcfd]",
+        className: "flex flex-col md:flex-row justify-center md:p-20 sm:p-2 bg-[#fcfcfd] h-full w-full",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "grow shadow-md rounded-md bg-white",
@@ -852,7 +847,7 @@ const TwoColListAndRankView = ({ Component1, Component2 })=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "sm:m-0 md:m-10"
+                className: "sm:m-10 m-0"
             }, void 0, false, {
                 fileName: "src/layouts/TwoColListAndRankView.jsx",
                 lineNumber: 17,
