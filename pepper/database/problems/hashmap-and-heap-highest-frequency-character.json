@@ -1,0 +1,8 @@
+{
+  "name": "Highest Frequency Character",
+  "slug": "hashmap-and-heap-highest-frequency-character",
+  "description": "1. You are given a string str.\n2. You are required to find the character with maximum frequency.\nInput Format\nA string str\nOutput Format\nThe character with highest frequency\nQuestion Video\nCOMMENT\nConstraints\n0 < str.length() <= 100\nThere will be a single character with highest frequency\nSample Input\nzmszeqxllzvheqwrofgcuntypejcxovtaqbnqyqlmrwitc\n\nSample Output\nq\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/o_21yt_tgHk?rel=0",
+  "solutionVideolink": ""
+}

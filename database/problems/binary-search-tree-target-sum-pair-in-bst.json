@@ -1,0 +1,8 @@
+{
+  "name": "Target Sum Pair In Bst",
+  "slug": "binary-search-tree-target-sum-pair-in-bst",
+  "description": "1. You are given a partially written BST class.\n2. You are given a value. You are required to print all pair of nodes which add up to the given value. Make sure all pairs print the smaller value first and avoid duplicacies. Make sure to print the pairs in increasing order. Use the question video to gain clarity.\n3. Input and Output is managed for you.\nInput Format\nInput is managed for you\nOutput Format\n\"smaller node\" \"larger node\"\n.. all pairs that add to target on separate lines\nQuestion Video\nCOMMENT\nConstraints\nNone\nSample Input\n21\n50 25 12 n n 37 30 n n n 75 62 60 n n 70 n n 87 n n\n100\n\nSample Output\n25 75\n30 70\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/FH7gpdOgc88?rel=0",
+  "solutionVideolink": ""
+}

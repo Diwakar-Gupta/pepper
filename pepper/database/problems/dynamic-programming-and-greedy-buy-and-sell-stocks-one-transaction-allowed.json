@@ -1,0 +1,8 @@
+{
+  "name": "Buy And Sell Stocks - One Transaction Allowed",
+  "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-one-transaction-allowed",
+  "description": "1. You are given a number n, representing the number of days.\n2. You are given n numbers, where ith number represents price of stock on ith day.\n3. You are required to print the maximum profit you can make if you are allowed a single transaction.\nInput Format\nA number n\n.. n more elements\nOutput Format\nA number representing the maximum profit you can make if you are allowed a single transaction.\nQuestion Video\nCOMMENT\nConstraints\n0 <= n <= 20\n0 <= n1, n2, .. <= 10\nSample Input\n9\n11\n6\n7\n19\n4\n1\n6\n18\n4\n\nSample Output\n17\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/4YjEHmw1MX0?end=31&rel=0",
+  "solutionVideolink": ""
+}

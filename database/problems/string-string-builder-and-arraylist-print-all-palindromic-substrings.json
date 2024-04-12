@@ -1,0 +1,8 @@
+{
+  "name": "Print All Palindromic Substrings",
+  "slug": "string-string-builder-and-arraylist-print-all-palindromic-substrings",
+  "description": "Input Format\nA String\nOutput Format\nAll palindromic substrings(one in a line).\nFirst, all palindromic substrings starting from first character of string will be printed, then from second character and so on.\nQuestion Video\nCOMMENT\nConstraints\n1 <= length of string <= 500\nSample Input\nabcc\n\nSample Output\na\nb\nc\ncc\nc\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/_jM3iMT4k7g?end=88&rel=0",
+  "solutionVideolink": ""
+}

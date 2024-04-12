@@ -1,0 +1,8 @@
+{
+  "name": "Tiling With 2 * 1 Tiles",
+  "slug": "dynamic-programming-and-greedy-tiling-with-2-1-tiles",
+  "description": "1. You are given a number n representing the length of a floor space which is 2m wide. It's a 2 * n board.\n2. You've an infinite supply of 2 * 1 tiles.\n3. You are required to calculate and print the number of ways floor can be tiled using tiles.\nInput Format\nA number n\nOutput Format\nA number representing the number of ways in which the number of ways floor can be tiled using tiles.\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 100\nSample Input\n8\n\nSample Output\n34\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/dVT9JeUMMDE?end=131&rel=0",
+  "solutionVideolink": ""
+}

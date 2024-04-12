@@ -1,0 +1,8 @@
+{
+  "name": "Fold A Linked List",
+  "slug": "linked-lists-fold-a-linked-list",
+  "description": "1. You are given a partially written LinkedList class.\n2. You are required to complete the body of fold function. The function is expected to place last element after 1st element, 2nd last element after 2nd element and so on. For more insight check the example\n\nExample 1\n1->2->3->4->5\nwill fold as\n1->5->2->4->3\n\nExample 2\n1->2->3->4->5->6\n1->6->2->5->3->4\nInput Format\nInput is managed for you\nOutput Format\nOutput is managed for you\nQuestion Video\nCOMMENT\nConstraints\n1. Time complexity -> O(n)\n2. Space complexity -> Recursion space, O(n)\nSample Input\n5\n1 2 3 4 5\n10\n20\n\nSample Output\n1 2 3 4 5 \n1 5 2 4 3 \n10 1 5 2 4 3 20\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/qMFOU84GGW4?rel=0",
+  "solutionVideolink": ""
+}

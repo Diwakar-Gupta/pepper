@@ -1,0 +1,32 @@
+[
+  {
+    "type": "Code",
+    "slug": "recursion-in-arrays-display-array",
+    "name": "Display Array"
+  },
+  {
+    "type": "Code",
+    "slug": "recursion-in-arrays-display-array-in-reverse",
+    "name": "Display Array In Reverse"
+  },
+  {
+    "type": "Code",
+    "slug": "recursion-in-arrays-max-of-an-array",
+    "name": "Max Of An Array"
+  },
+  {
+    "type": "Code",
+    "slug": "recursion-in-arrays-first-index",
+    "name": "First Index"
+  },
+  {
+    "type": "Code",
+    "slug": "recursion-in-arrays-last-index",
+    "name": "Last Index"
+  },
+  {
+    "type": "Code",
+    "slug": "recursion-in-arrays-all-indices-of-array",
+    "name": "All Indices Of Array"
+  }
+]

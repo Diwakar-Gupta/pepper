@@ -1,0 +1,8 @@
+{
+  "name": "Arrange Buildings",
+  "slug": "dynamic-programming-and-greedy-arrange-buildings",
+  "description": "1. You are given a number n, which represents the length of a road. The road has n plots on it's each side.\n2. The road is to be so planned that there should not be consecutive buildings on either side of the road.\n3. You are required to find and print the number of ways in which the buildings can be built on both side of roads.\nInput Format\nA number n\nOutput Format\nA number representing the number of ways in which the buildings can be built on both side of roads.\nQuestion Video\nCOMMENT\nConstraints\n0 < n <= 45\nSample Input\n6\n\nSample Output\n441\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/0nF-BMYy7tc?end=167&rel=0",
+  "solutionVideolink": ""
+}

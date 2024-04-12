@@ -1,0 +1,8 @@
+{
+  "name": "Add Last In Linked List",
+  "slug": "linked-lists-add-last-in-linked-list",
+  "description": "1. You are given a partially written LinkedList class.\n2. You are required to complete the body of addLast function. This function is supposed to add an element to the end of LinkedList. You are required to update head, tail and size as required.\n3. Input and Output is managed for you. Just update the code in addLast function.\nInput Format\nInput is managed for you\nOutput Format\nOutput is managed for you\nQuestion Video\nCOMMENT\nConstraints\nNone\nSample Input\naddLast 10\naddLast 20\naddLast 30\naddLast 40\naddLast 50\nquit\n\nSample Output\n10\n20\n30\n40\n50\n5\n50\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/r9FxRiIZhK4?rel=0",
+  "solutionVideolink": ""
+}

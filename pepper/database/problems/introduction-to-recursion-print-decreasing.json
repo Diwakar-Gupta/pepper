@@ -1,0 +1,8 @@
+{
+  "name": "Print Decreasing",
+  "slug": "introduction-to-recursion-print-decreasing",
+  "description": "1. You are given a positive number n. \n2. You are required to print the counting from n to 1.\n3. You are required to not use any loops. Complete the body of print Decreasing function to achieve it.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\nInput Format\nA number n\nOutput Format\nn\nn - 1\nn - 2\n.. \n1\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 1000\nSample Input\n5\n\nSample Output\n5\n4\n3\n2\n1\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/5Q5ed7PWJ8I?rel=0",
+  "solutionVideolink": ""
+}

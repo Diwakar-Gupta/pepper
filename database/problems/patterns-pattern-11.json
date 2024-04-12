@@ -1,0 +1,8 @@
+{
+  "name": "Pattern 11",
+  "slug": "patterns-pattern-11",
+  "description": "1. You are given a number n.\n2. You've to create a pattern as shown in output format.\nInput Format\nA number n\nOutput Format\n\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 44\nSample Input\n5\n\nSample Output\n1\t\n2\t3\t\n4\t5\t6\t\n7\t8\t9\t10\t\n11\t12\t13\t14\t15\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/1AELjQJeeOw?rel=0",
+  "solutionVideolink": ""
+}

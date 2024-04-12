@@ -1,0 +1,8 @@
+{
+  "name": "Print Encodings",
+  "slug": "recursion-on-the-way-up-print-encodings",
+  "description": "1. You are given a string str of digits. (will never start with a 0)\n2. You are required to encode the str as per following rules\n    1 -> a\n    2 -> b\n    3 -> c\n    ..\n    25 -> y\n    26 -> z\n3. Complete the body of printEncodings function - without changing signature - to calculate and print all encodings of str.\nUse the input-output below to get more understanding on what is required\n123 -> abc, aw, lc\n993 -> iic\n013 -> Invalid input. A string starting with 0 will not be passed.\n103 -> jc\n303 -> No output possible. But such a string maybe passed. In this case print nothing.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\nInput Format\nA string str\nOutput Format\nPermutations of str in order hinted by Sample output\nQuestion Video\nCOMMENT\nConstraints\n0 <= str.length <= 10\nSample Input\n655196\n\nSample Output\nfeeaif\nfeesf\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/jUo0Qis4FKU?rel=0",
+  "solutionVideolink": ""
+}

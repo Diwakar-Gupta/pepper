@@ -1,0 +1,8 @@
+{
+  "name": "Tiling With M * 1 Tiles",
+  "slug": "dynamic-programming-and-greedy-tiling-with-m-1-tiles",
+  "description": "1. You are given a number n and a number m separated by line-break representing the length and breadth of a m * n floor.\n2. You've an infinite supply of m * 1 tiles.\n3. You are required to calculate and print the number of ways floor can be tiled using tiles.\nInput Format\nA number n\nA number m\nOutput Format\nA number representing the number of ways in which the number of ways floor can be tiled using tiles.\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 100\n1 <= m <= 50\nSample Input\n39\n16\n\nSample Output\n61\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/_c_R-uIi-zU?end=52&rel=0",
+  "solutionVideolink": ""
+}

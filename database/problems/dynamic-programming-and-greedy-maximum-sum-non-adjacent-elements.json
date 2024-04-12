@@ -1,0 +1,8 @@
+{
+  "name": "Maximum Sum Non Adjacent Elements",
+  "slug": "dynamic-programming-and-greedy-maximum-sum-non-adjacent-elements",
+  "description": "1. You are given a number n, representing the count of elements.\n2. You are given n numbers, representing n elements.\n3. You are required to find the maximum sum of a subsequence with no adjacent elements.\nInput Format\nA number n\nn1\nn2\n.. n number of elements\nOutput Format\nA number representing the maximum sum of a subsequence with no adjacent elements.\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 1000\n-1000 <= n1, n2, .. n elements <= 1000\nSample Input\n6\n5\n10\n10\n100\n5\n6\n\nSample Output\n116\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/VT4bZV24QNo?end=69&rel=0",
+  "solutionVideolink": ""
+}

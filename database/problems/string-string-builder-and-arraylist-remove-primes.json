@@ -1,0 +1,8 @@
+{
+  "name": "Remove Primes",
+  "slug": "string-string-builder-and-arraylist-remove-primes",
+  "description": "Input Format\nA number N\narr1\narr2.. N numbers\nOutput Format\nAn Arraylist\nQuestion Video\nCOMMENT\nConstraints\n1 <= N <= 10000\nSample Input\n4\n3 12 13 15\n\nSample Output\n[12, 15]\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/jj90JZ_wLoo?end=251&rel=0",
+  "solutionVideolink": ""
+}
