@@ -29,10 +29,12 @@ async function getTaskType(task) {
   }
 }
 
-async function scrapTaskCode(page) {
+async function scrapTaskCode(page, parentSlug) {
   let detailDOMList = await page.$$("#resource > div.col.l12.s12.m8 > *");
 
   let name = await detailDOMList[0].evaluate((node) => node.innerText.trim());
+  let slug = cleanString(name);
+  slug = `${parentSlug}-${slug}`;
 
   let description = "";
   for (let i = 4; i < detailDOMList.length; i++) {
@@ -46,20 +48,39 @@ async function scrapTaskCode(page) {
     await page.$("#videoId")
   ).evaluate((node) => node.value);
 
-  return {
+  let filePath = `scrappedData/problems/${slug}.json`;
+
+  let payload = {
     name,
+    slug,
     description,
+    externalPlatforms: [],
     problemVideoLink,
+    solutionVideolink: "",
   };
+
+  await fs.writeFile(
+    filePath,
+    JSON.stringify(
+      payload,
+      null,
+      2
+    )
+  );
+
+  console.log("Wrote to file: ", filePath);
+
+  return payload;
 }
 
-async function scrapSubModule(page) {
+async function scrapSubModule(page, filePath, mySlug) {
   let tasks = await page.$$("ul.resourceList>li");
 
   let taskList = [];
   for (let task of tasks) {
-    let details = {};
 
+    let name = await task.evaluate(node => node.innerText.trim());
+    let slug = cleanString(name);
     let type = await getTaskType(task);
     let link = await (await task.$("a")).evaluate((node) => node.href);
 
@@ -72,27 +93,36 @@ async function scrapSubModule(page) {
 
       if (response.status() === 200) {
         try {
-          details["meta"] = await scrapTaskCode(taskpage);
+          let meta = await scrapTaskCode(taskpage, mySlug);
+          name = meta.name;
+          slug = meta.slug;
         } catch (error) {
-          details["meta"] = null;
+          console.error(`ERROR: task: ${slug}`, error);
         }
       } else {
-        details["meta"] = null;
       }
 
       await taskpage.close();
+
+      taskList.push({
+        type, slug, name
+      });
     }
   }
-  return taskList;
+  await fs.writeFile(filePath, JSON.stringify(taskList, null, 2));
+
+  console.log("Wrote to file: ", filePath);
 }
 
-async function scrapModules(page) {
+async function scrapModules(page, folderPath) {
   let modules = await page.$$("ol>li");
 
   let results = [];
 
   for (let module of modules) {
     let moduleDetail = {};
+    results.push(moduleDetail);
+
     moduleDetail["name"] = await (
       await module.$(".collapsible-header")
     ).evaluate((node) => node.innerText.trim());
@@ -100,39 +130,44 @@ async function scrapModules(page) {
     let subModules = await module.$$("li");
 
     let subModuleList = [];
-    moduleDetail["subModules"] = subModuleList;
+    moduleDetail["topics"] = subModuleList;
 
     for (let subModule of subModules) {
-      let subModuleDetail = {};
+      let name = await subModule.evaluate((node) => node.innerText.trim());
+      let slug = cleanString(name);
 
-      subModuleDetail["name"] = await subModule.evaluate((node) =>
-        node.innerText.trim()
-      );
-      subModuleDetail["link"] = await (
-        await subModule.$("a")
-      ).evaluate((node) => node.href);
+      subModuleList.push({
+        name,
+        slug,
+      });
 
-      console.log("link is: ", subModuleDetail["link"]);
+
+      let link = await (await subModule.$("a")).evaluate((node) => node.href);
 
       const smpage = await browser.newPage();
-      await smpage.goto(urlPrefix + subModuleDetail["link"], {
+      await smpage.goto(urlPrefix + link, {
         waitUntil: "load",
         timeout: 0,
       });
 
       try {
-        subModuleDetail["tasks"] = await scrapSubModule(smpage);
+        await scrapSubModule(smpage, `${folderPath}/{slug}.json`, slug);
       } catch (error) {
-        subModuleDetail["tasks"] = null;
+        console.error(`ERROR: ${submodule}: ${slug}`, error);
       }
 
       await smpage.close();
 
-      subModuleList.push(subModuleDetail);
     }
   }
 
   return results;
+}
+
+function cleanString(inputString) {
+  // Remove all characters except alphabets and digits
+  const cleanedString = inputString.replace(/[^a-zA-Z0-9]+/g, "-");
+  return cleanedString.toLowerCase();
 }
 
 async function main() {
@@ -140,23 +175,29 @@ async function main() {
     headless: false,
   });
 
+  fs.mkdir("scrappedData/courses/", { recursive: true });
+  fs.mkdir("scrappedData/problems/", { recursive: true });
+
   for (let { name, link } of meta) {
+    let folderPath = `scrappedData/courses/${cleanString(name)}`;
+
+    fs.mkdir(folderPath, { recursive: true });
+
     const page = await browser.newPage();
     await page.goto(link, { waitUntil: "load", timeout: 0 });
 
-    let resultList = await scrapModules(page);
+    let resultList = await scrapModules(page, folderPath);
     let levelDetails = {
       name: name,
-      link: link,
-      modules: resultList,
+      categorys: resultList,
     };
 
     await page.close();
 
-    await fs.writeFile(
-      `scrappedData/{name}.json`,
-      JSON.stringify(levelDetails, null, 2)
-    );
+    let filePath = `scrappedData/courses/{name}.json`;
+    await fs.writeFile(filePath, JSON.stringify(levelDetails, null, 2));
+
+    console.log("Wrote to file: ", filePath);
   }
 }
 
