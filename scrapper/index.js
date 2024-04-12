@@ -119,7 +119,7 @@ async function scrapModules(page, folderPath) {
 
   let results = [];
 
-  for (let module of modules) {
+  async function processModule(module) {
     let moduleDetail = {};
     results.push(moduleDetail);
 
@@ -132,7 +132,7 @@ async function scrapModules(page, folderPath) {
     let subModuleList = [];
     moduleDetail["topics"] = subModuleList;
 
-    for (let subModule of subModules) {
+    async function processSubModule(subModule) {
       let name = await subModule.evaluate((node) => node.innerText.trim());
       let slug = cleanString(name);
 
@@ -151,7 +151,7 @@ async function scrapModules(page, folderPath) {
       });
 
       try {
-        await scrapSubModule(smpage, `${folderPath}/{slug}.json`, slug);
+        await scrapSubModule(smpage, `${folderPath}/${slug}.json`, slug);
       } catch (error) {
         console.error(`ERROR: ${submodule}: ${slug}`, error);
       }
@@ -159,7 +159,18 @@ async function scrapModules(page, folderPath) {
       await smpage.close();
 
     }
+
+    let promises = subModules.map(async (subModule) => {
+      return processSubModule(subModule);
+    });
+    await Promise.all(promises);
   }
+
+  let promises = modules.map(async (module) => {
+    return processModule(module);
+  });
+  await Promise.all(promises);
+
 
   return results;
 }
@@ -194,7 +205,7 @@ async function main() {
 
     await page.close();
 
-    let filePath = `scrappedData/courses/{name}.json`;
+    let filePath = `scrappedData/courses/${name}.json`;
     await fs.writeFile(filePath, JSON.stringify(levelDetails, null, 2));
 
     console.log("Wrote to file: ", filePath);
