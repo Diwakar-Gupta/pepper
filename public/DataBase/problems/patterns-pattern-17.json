@@ -1,0 +1,8 @@
+{
+  "name": "Pattern 17",
+  "slug": "patterns-pattern-17",
+  "description": "1. You are given a number n.\n2. You've to write code to print the pattern given in output format below.\nInput Format\nA number n\nOutput Format\n\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 10\n Also, n is odd.\nSample Input\n5\n\nSample Output\n*\t\n\t\t*\t*\t\n*\t*\t*\t*\t*\t\n\t\t*\t*\t\n\t\t*\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/kmqISkLQlMI?rel=0",
+  "solutionVideolink": ""
+}

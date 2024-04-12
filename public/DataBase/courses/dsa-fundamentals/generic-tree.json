@@ -1,0 +1,117 @@
+[
+  {
+    "type": "Code",
+    "slug": "generic-tree-size-of-generic-tree",
+    "name": "Size Of Generic Tree"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-maximum-in-a-generic-tree",
+    "name": "Maximum In A Generic Tree"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-height-of-a-generic-tree",
+    "name": "Height Of A Generic Tree"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-generic-tree-traversals-pre-order-post-order-",
+    "name": "Generic Tree - Traversals (pre-order, Post-order)"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-level-order-of-generic-tree",
+    "name": "Level-order Of Generic Tree"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-levelorder-linewise-generic-tree-",
+    "name": "Levelorder Linewise (generic Tree)"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-levelorder-linewise-zig-zag",
+    "name": "Levelorder Linewise Zig Zag"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-mirror-a-generic-tree",
+    "name": "Mirror A Generic Tree"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-remove-leaves-in-generic-tree",
+    "name": "Remove Leaves In Generic Tree"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-linearize-a-generic-tree",
+    "name": "Linearize A Generic Tree"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-find-in-generic-tree",
+    "name": "Find In Generic Tree"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-node-to-root-path-in-generic-tree",
+    "name": "Node To Root Path In Generic Tree"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-lowest-common-ancestor-generic-tree-",
+    "name": "Lowest Common Ancestor (generic Tree)"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-distance-between-two-nodes-in-a-generic-tree",
+    "name": "Distance Between Two Nodes In A Generic Tree"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-are-trees-similar-in-shape",
+    "name": "Are Trees Similar In Shape"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-are-trees-mirror-in-shape",
+    "name": "Are Trees Mirror In Shape"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-is-generic-tree-symmetric",
+    "name": "Is Generic Tree Symmetric"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-predecessor-and-successor-of-an-element",
+    "name": "Predecessor And Successor Of An Element"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-ceil-and-floor-in-generic-tree",
+    "name": "Ceil And Floor In Generic Tree"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-kth-largest-element-in-tree",
+    "name": "Kth Largest Element In Tree"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-node-with-maximum-subtree-sum",
+    "name": "Node With Maximum Subtree Sum"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-diameter-of-generic-tree",
+    "name": "Diameter Of Generic Tree"
+  },
+  {
+    "type": "Code",
+    "slug": "generic-tree-iterative-preorder-and-postorder-of-generic-tree",
+    "name": "Iterative Preorder And Postorder Of Generic Tree"
+  }
+]

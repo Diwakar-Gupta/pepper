@@ -1,0 +1,8 @@
+{
+  "name": "Paint House",
+  "slug": "dynamic-programming-and-greedy-paint-house",
+  "description": "1. You are given a number n, representing the number of houses.\n2. In the next n rows, you are given 3 space separated numbers representing the cost of painting nth house with red or blue or green color.\n3. You are required to calculate and print the minimum cost of painting all houses without painting any consecutive house with same color.\nInput Format\nA number n\nn1red n1blue n1green\nn2red n2blue n2green\n.. n number of elements\nOutput Format\nA number representing the minimum cost of painting all houses without painting any consecutive house with same color.\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 1000\n0 <= n1red, n1blue, .. <= 1000\nSample Input\n4\n1 5 7\n5 8 4\n3 2 9\n1 2 4\n\nSample Output\n8\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/kh48JLieeW8?end=84&rel=0",
+  "solutionVideolink": ""
+}

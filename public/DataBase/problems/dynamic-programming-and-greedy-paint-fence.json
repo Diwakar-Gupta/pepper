@@ -1,0 +1,8 @@
+{
+  "name": "Paint Fence",
+  "slug": "dynamic-programming-and-greedy-paint-fence",
+  "description": "1. You are given a number n and a number k in separate lines, representing the number of fences and number of colors.\n2. You are required to calculate and print the number of ways in which the fences could be painted so that not more than two consecutive  fences have same colors.\nInput Format\nA number n\nA number k\nOutput Format\nA number representing the number of ways in which the fences could be painted so that not more than two fences have same colors.\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 10\n1 <= k <= 10\nSample Input\n8\n3\n\nSample Output\n3672\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/ju8vrEAsa3Q?end=56&rel=0",
+  "solutionVideolink": ""
+}

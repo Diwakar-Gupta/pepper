@@ -1,0 +1,8 @@
+{
+  "name": "Pattern 8",
+  "slug": "patterns-pattern-8",
+  "description": "1. You are given a number n.\n2. You've to create a pattern of * and separated by tab as shown in output format.\nInput Format\nA number n\nOutput Format\n\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 100\nSample Input\n5\n\nSample Output\n*\t\n\t\t\t*\t\t\n\t\t*\t\t\t\n\t*\t\t\t\t\n*\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/f5DrvVWSDgY?rel=0",
+  "solutionVideolink": ""
+}

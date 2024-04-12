@@ -1,0 +1,8 @@
+{
+  "name": "K Largest Elements",
+  "slug": "hashmap-and-heap-k-largest-elements",
+  "description": "1. You are given a number n, representing the size of array a.\n2. You are given n numbers, representing elements of array a.\n3. You are given a number k.\n4. You are required to find and print the k largest elements of array in increasing order.\nInput Format\nInput is managed for you\nOutput Format\nPrint the k largest elements of array in increasing order in separate lines.\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 30\n0 <= n1, n2, .. n elements <= 100\n0 < k <= n\nSample Input\n13\n12\n62\n22\n15\n37\n99\n11\n37\n98\n67\n31\n84\n99\n4\n\nSample Output\n84\n98\n99\n99\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/MJBYYuWK0LM?rel=0",
+  "solutionVideolink": ""
+}

@@ -1,68 +1,72 @@
 [
-  { "name": "Print Z Easy", "difficulty": "Easy", "slug": "print-z-easy" },
   {
-    "name": "Grading System Easy",
-    "difficulty": "Easy",
-    "slug": "grading-system-easy"
+    "type": "Code",
+    "slug": "getting-started-print-z",
+    "name": "Print Z"
   },
   {
-    "name": "Is A Number Prime Easy",
-    "difficulty": "Easy",
-    "slug": "is-a-number-prime-easy"
+    "type": "Code",
+    "slug": "getting-started-grading-system",
+    "name": "Grading System"
   },
   {
-    "name": "Print All Primes Till N Easy",
-    "difficulty": "Easy",
-    "slug": "print-all-primes-till-n-easy"
+    "type": "Code",
+    "slug": "is-a-number-prime-easy",
+    "name": "Is A Number Prime Easy"
   },
   {
-    "name": "Print Fibonacci Numbers Till N Easy",
-    "difficulty": "Easy",
-    "slug": "print-fibonacci-numbers-till-n-easy"
+    "type": "Code",
+    "slug": "getting-started-print-all-primes-till-n",
+    "name": "Print All Primes Till N"
   },
   {
-    "name": "Count Digits In A Number Easy",
-    "difficulty": "Easy",
-    "slug": "count-digits-in-a-number-easy"
+    "type": "Code",
+    "slug": "getting-started-print-fibonacci-numbers-till-n",
+    "name": "Print Fibonacci Numbers Till N"
   },
   {
-    "name": "Digits Of A Number Easy",
-    "difficulty": "Easy",
-    "slug": "digits-of-a-number-easy"
+    "type": "Code",
+    "slug": "getting-started-count-digits-in-a-number",
+    "name": "Count Digits In A Number"
   },
   {
-    "name": "Reverse A Number Easy",
-    "difficulty": "Easy",
-    "slug": "reverse-a-number-easy"
+    "type": "Code",
+    "slug": "digits-of-a-number-easy",
+    "name": "Digits Of A Number Easy"
   },
   {
-    "name": "Inverse Of A Number Easy",
-    "difficulty": "Easy",
-    "slug": "inverse-of-a-number-easy"
+    "type": "Code",
+    "slug": "getting-started-reverse-a-number",
+    "name": "Reverse A Number"
   },
   {
-    "name": "Rotate A Number Easy",
-    "difficulty": "Easy",
-    "slug": "rotate-a-number-easy"
+    "type": "Code",
+    "slug": "getting-started-inverse-of-a-number",
+    "name": "Inverse Of A Number"
   },
   {
-    "name": "Gcd And Lcm Easy",
-    "difficulty": "Easy",
-    "slug": "gcd-and-lcm-easy"
+    "type": "Code",
+    "slug": "getting-started-rotate-a-number",
+    "name": "Rotate A Number"
   },
   {
-    "name": "Prime Factorisation Of A Number Easy",
-    "difficulty": "Easy",
-    "slug": "prime-factorisation-of-a-number-easy"
+    "type": "Code",
+    "slug": "getting-started-gcd-and-lcm",
+    "name": "Gcd And Lcm"
   },
   {
-    "name": "Pythagorean Triplet Easy",
-    "difficulty": "Easy",
-    "slug": "pythagorean-triplet-easy"
+    "type": "Code",
+    "slug": "prime-factorisation-of-a-number-easy",
+    "name": "Prime Factorisation Of A Number Easy"
   },
   {
-    "name": "The Curious Case Of Benjamin Bulbs Easy",
-    "difficulty": "Easy",
-    "slug": "the-curious-case-of-benjamin-bulbs-easy"
+    "type": "Code",
+    "slug": "pythagorean-triplet-easy",
+    "name": "Pythagorean Triplet Easy"
+  },
+  {
+    "type": "Code",
+    "slug": "getting-started-the-curious-case-of-benjamin-bulbs",
+    "name": "The Curious Case Of Benjamin Bulbs"
   }
 ]

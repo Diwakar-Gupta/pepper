@@ -1,32 +1,42 @@
 [
   {
-    "name": "Print Decreasing",
-    "slug": "print-decreasing",
-    "difficulty": "Easy"
+    "type": "Code",
+    "slug": "introduction-to-recursion-print-decreasing",
+    "name": "Print Decreasing"
   },
   {
-    "name": "Factorial",
-    "slug": "factorial",
-    "difficulty": "Easy"
+    "type": "Code",
+    "slug": "introduction-to-recursion-print-increasing",
+    "name": "Print Increasing"
   },
   {
-    "name": "Power linear Easy",
-    "slug": "Power linear Easy",
-    "difficulty": "Easy"
+    "type": "Code",
+    "slug": "introduction-to-recursion-print-increasing-decreasing",
+    "name": "Print Increasing Decreasing"
   },
   {
-    "name": "Power-logarithmic Easy",
-    "slug": "Power-logarithmic Easy",
-    "difficulty": "Easy"
+    "type": "Code",
+    "slug": "introduction-to-recursion-factorial",
+    "name": "Factorial"
   },
   {
-    "name": "Print Zigzag Easy",
-    "slug": "factorial",
-    "difficulty": "Easy"
+    "type": "Code",
+    "slug": "introduction-to-recursion-power-linear",
+    "name": "Power-linear"
   },
   {
-    "name": "Tower Of Hano",
-    "slug": "Tower Of Hano",
-    "difficulty": "Easy"
+    "type": "Code",
+    "slug": "introduction-to-recursion-power-logarithmic",
+    "name": "Power-logarithmic"
+  },
+  {
+    "type": "Code",
+    "slug": "introduction-to-recursion-print-zigzag",
+    "name": "Print Zigzag"
+  },
+  {
+    "type": "Code",
+    "slug": "introduction-to-recursion-tower-of-hanoi",
+    "name": "Tower Of Hanoi"
   }
 ]
