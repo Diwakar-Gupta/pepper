@@ -1,8 +1,11 @@
 {
   "name": "Paint House - Many Colors",
   "slug": "dynamic-programming-and-greedy-paint-house-many-colors",
-  "description": "1. You are given a number n and a number k separated by a space, representing the number of houses and number of colors.\n2. In the next n rows, you are given k space separated numbers representing the cost of painting nth house with one of the k colors.\n3. You are required to calculate and print the minimum cost of painting all houses without painting any consecutive house with same color.\nInput Format\nA number n\nn1-0th n1-1st n1-2nd .. n1-kth\nn2-0th n2-1st n2-2nd .. n2-kth\n.. n number of elements\nOutput Format\nA number representing the minimum cost of painting all houses without painting any consecutive house with same color.\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 1000\n1 <= k <= 10\n0 <= n1-0th, n1-1st, .. <= 1000\nSample Input\n4 3\n1 5 7\n5 8 4\n3 2 9\n1 2 4\n\nSample Output\n8\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given a number n and a number k separated by a space, representing the number of houses and number of colors.\n2. In the next n rows, you are given k space separated numbers representing the cost of painting nth house with one of the k colors.\n3. You are required to calculate and print the minimum cost of painting all houses without painting any consecutive house with same color.\n\n### Input Format\n```\nA number n\nn1-0th n1-1st n1-2nd .. n1-kth\nn2-0th n2-1st n2-2nd .. n2-kth\n.. n number of elements\n```\n\n### Output Format\n```\nA number representing the minimum cost of painting all houses without painting any consecutive house with same color.\n```\n\n### Constraints\n```\n1 <= n <= 1000\n1 <= k <= 10\n0 <= n1-0th, n1-1st, .. <= 1000\n```\n\n### Sample Input\n```\n4 3\n1 5 7\n5 8 4\n3 2 9\n1 2 4\n```\n\n### Sample Output\n```\n8\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/jGywRalvoRw?end=197&rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/jGywRalvoRw?start=197&rel=0&loop=1&playlist=jGywRalvoRw",
+  "codes": {
+    "java": ""
+  }
 }

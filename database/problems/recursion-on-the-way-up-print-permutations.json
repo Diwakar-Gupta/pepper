@@ -1,8 +1,11 @@
 {
   "name": "Print Permutations",
   "slug": "recursion-on-the-way-up-print-permutations",
-  "description": "1. You are given a string str.\n2. Complete the body of printPermutations function - without changing signature - to calculate and print all permutations of str.\nUse sample input and output to take idea about permutations.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\nInput Format\nA string str\nOutput Format\nPermutations of str in order hinted by Sample output\nQuestion Video\nCOMMENT\nConstraints\n0 <= str.length <= 7\nSample Input\nabc\n\nSample Output\nabc\nacb\nbac\nbca\ncab\ncba\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given a string str.\n2. Complete the body of printPermutations function - without changing signature - to calculate and print all permutations of str.\nUse sample input and output to take idea about permutations.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA string str\n```\n\n### Output Format\n```\nPermutations of str in order hinted by Sample output\n```\n\n### Constraints\n```\n0 <= str.length <= 7\n```\n\n### Sample Input\n```\nabc\n```\n\n### Sample Output\n```\nabc\nacb\nbac\nbca\ncab\ncba\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/K5xJXbnYMBc?rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/sPAT_DbvDj0?rel=0&loop=1&playlist=sPAT_DbvDj0",
+  "codes": {
+    "java": ""
+  }
 }

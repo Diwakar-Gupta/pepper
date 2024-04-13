@@ -1,8 +1,11 @@
 {
   "name": "Reverse A Number",
   "slug": "getting-started-reverse-a-number",
-  "description": "1. You've to display the digits of a number in reverse.\n2. Take as input \"n\", the number for which digits have to be display in reverse.\n3. Print the digits of the number line-wise, but in reverse order.\nInput Format\n\"n\" where n is any integer.\nOutput Format\nd1\nd2\nd3\n... digits of the number in reverse\nQuestion Video\nCOMMENT\nConstraints\n1 <= n < 10^9\nSample Input\n65784383\n\nSample Output\n3\n8\n3\n4\n8\n7\n5\n6\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You've to display the digits of a number in reverse.\n2. Take as input \"n\", the number for which digits have to be display in reverse.\n3. Print the digits of the number line-wise, but in reverse order.\n\n### Input Format\n```\n\"n\" where n is any integer.\n```\n\n### Output Format\n```\nd1\nd2\nd3\n... digits of the number in reverse\n```\n\n### Constraints\n```\n1 <= n < 10^9\n```\n\n### Sample Input\n```\n65784383\n```\n\n### Sample Output\n```\n3\n8\n3\n4\n8\n7\n5\n6\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/uYOIb1-47qw?rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/D_yKIOnhMRc?rel=0&loop=1&playlist=D_yKIOnhMRc",
+  "codes": {
+    "java": ""
+  }
 }

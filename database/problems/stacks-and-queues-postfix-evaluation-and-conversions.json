@@ -1,8 +1,11 @@
 {
   "name": "Postfix Evaluation And Conversions",
   "slug": "stacks-and-queues-postfix-evaluation-and-conversions",
-  "description": "1. You are given a postfix expression.\n2. You are required to evaluate it and print it's value.\n3. You are required to convert it to infix and print it.\n4. You are required to convert it to prefix and print it.\n\nNote -> Use brackets in infix expression for indicating precedence. Check sample input output for more details.\nInput Format\nInput is managed for you\nOutput Format\nvalue, a number\ninfix\nprefix\nQuestion Video\nCOMMENT\nConstraints\n1. Expression is a valid postfix expression\n2. The only operators used are +, -, *, /\n3. All operands are single digit numbers.\nSample Input\n264*8/+3-\n\nSample Output\n2\n((2+((6*4)/8))-3)\n-+2/*6483\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given a postfix expression.\n2. You are required to evaluate it and print it's value.\n3. You are required to convert it to infix and print it.\n4. You are required to convert it to prefix and print it.\n\nNote -> Use brackets in infix expression for indicating precedence. Check sample input output for more details.\n\n### Input Format\n```\nInput is managed for you\n```\n\n### Output Format\n```\nvalue, a number\ninfix\nprefix\n```\n\n### Constraints\n```\n1. Expression is a valid postfix expression\n2. The only operators used are +, -, *, /\n3. All operands are single digit numbers.\n```\n\n### Sample Input\n```\n264*8/+3-\n```\n\n### Sample Output\n```\n2\n((2+((6*4)/8))-3)\n-+2/*6483\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/qusuduyQm8k?rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/BlNXOtll7jo?rel=0&loop=1&playlist=BlNXOtll7jo",
+  "codes": {
+    "java": ""
+  }
 }

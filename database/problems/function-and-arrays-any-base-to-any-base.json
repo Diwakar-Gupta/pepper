@@ -1,8 +1,11 @@
 {
   "name": "Any Base To Any Base",
   "slug": "function-and-arrays-any-base-to-any-base",
-  "description": "1. You are given a number n.\n2. You are given a base b1. n is a number on base b.\n3. You are given another base b2.\n4. You are required to convert the number n of base b1 to a number in base b2.\nInput Format\nA number n\nA base b1\nA base b2\nOutput Format\nA number of base b2 equal in value to n of base b1.\nQuestion Video\nCOMMENT\nConstraints\n0 <= n <= 512\n2 <= b1 <= 10\n2 <= b2 <= 10\nSample Input\n111001\n2\n3\n\nSample Output\n2010\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given a number n.\n2. You are given a base b1. n is a number on base b.\n3. You are given another base b2.\n4. You are required to convert the number n of base b1 to a number in base b2.\n\n### Input Format\n```\nA number n\nA base b1\nA base b2\n```\n\n### Output Format\n```\nA number of base b2 equal in value to n of base b1.\n```\n\n### Constraints\n```\n0 <= n <= 512\n2 <= b1 <= 10\n2 <= b2 <= 10\n```\n\n### Sample Input\n```\n111001\n2\n3\n```\n\n### Sample Output\n```\n2010\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/2-d3DcBFzug?rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/LJ697zHLL0M?rel=0&loop=1&playlist=LJ697zHLL0M",
+  "codes": {
+    "java": ""
+  }
 }

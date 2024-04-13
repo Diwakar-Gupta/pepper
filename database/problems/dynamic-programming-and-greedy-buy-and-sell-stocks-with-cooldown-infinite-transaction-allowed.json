@@ -1,8 +1,11 @@
 {
   "name": "Buy And Sell Stocks With Cooldown - Infinite Transaction Allowed",
   "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-with-cooldown-infinite-transaction-allowed",
-  "description": "1. You are given a number n, representing the number of days.\n2. You are given n numbers, where ith number represents price of stock on ith day.\n3. You are required to print the maximum profit you can make if you are allowed infinite transactions, but have to cooldown for 1 day after 1 transaction\ni.e. you cannot buy on the next day after you sell, you have to cooldown for a day at-least before buying again.\nNote - There can be no overlapping transaction. One transaction needs to be closed (a buy followed by a sell) before opening another transaction (another buy).\nInput Format\nA number n\n.. n more elements\nOutput Format\nA number representing the maximum profit you can make if you are allowed infinite transactions with cooldown of 1 day.\nQuestion Video\nCOMMENT\nConstraints\n0 <= n <= 20\n0 <= n1, n2, .. <= 10\nSample Input\n12\n10\n15\n17\n20\n16\n18\n22\n20\n22\n20\n23\n25\n\nSample Output\n19\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given a number n, representing the number of days.\n2. You are given n numbers, where ith number represents price of stock on ith day.\n3. You are required to print the maximum profit you can make if you are allowed infinite transactions, but have to cooldown for 1 day after 1 transaction\ni.e. you cannot buy on the next day after you sell, you have to cooldown for a day at-least before buying again.\nNote - There can be no overlapping transaction. One transaction needs to be closed (a buy followed by a sell) before opening another transaction (another buy).\n\n### Input Format\n```\nA number n\n.. n more elements\n```\n\n### Output Format\n```\nA number representing the maximum profit you can make if you are allowed infinite transactions with cooldown of 1 day.\n```\n\n### Constraints\n```\n0 <= n <= 20\n0 <= n1, n2, .. <= 10\n```\n\n### Sample Input\n```\n12\n10\n15\n17\n20\n16\n18\n22\n20\n22\n20\n23\n25\n```\n\n### Sample Output\n```\n19\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/GY0O57llkKQ?end=88&rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/GY0O57llkKQ?start=88&rel=0&loop=1&playlist=GY0O57llkKQ",
+  "codes": {
+    "java": "import java.io.*;\nimport java.util.*;\npublic class Main {\n    public static void main\n(String[] args) throws \nException {\n        // write your code \nhere\n    }\n}"
+  }
 }

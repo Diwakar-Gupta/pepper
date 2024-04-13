@@ -1,8 +1,11 @@
 {
   "name": "Count A+b+c+ Subsequences",
   "slug": "dynamic-programming-and-greedy-count-a-b-c-subsequences",
-  "description": "1. You are given a string str.\n2. You are required to calculate and print the count of subsequences of the nature a+b+c+.\nFor abbc -> there are 3 subsequences. abc, abc, abbc\nFor abcabc -> there are 7 subsequences. abc, abc, abbc, aabc, abcc, abc, abc.\nInput Format\nA string str\nOutput Format\ncount of subsequences of the nature a+b+c+\nQuestion Video\nCOMMENT\nConstraints\n0 < str.length <= 10\nSample Input\nabcabc\n\nSample Output\n7\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given a string str.\n2. You are required to calculate and print the count of subsequences of the nature a+b+c+.\nFor abbc -> there are 3 subsequences. abc, abc, abbc\nFor abcabc -> there are 7 subsequences. abc, abc, abbc, aabc, abcc, abc, abc.\n\n### Input Format\n```\nA string str\n```\n\n### Output Format\n```\ncount of subsequences of the nature a+b+c+\n```\n\n### Constraints\n```\n0 < str.length <= 10\n```\n\n### Sample Input\n```\nabcabc\n```\n\n### Sample Output\n```\n7\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/IV9pbZsi5cc?end=76&rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/IV9pbZsi5cc?start=76&rel=0&loop=1&playlist=IV9pbZsi5cc",
+  "codes": {
+    "java": ""
+  }
 }

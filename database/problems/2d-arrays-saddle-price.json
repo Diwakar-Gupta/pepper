@@ -1,8 +1,11 @@
 {
   "name": "Saddle Price",
   "slug": "2d-arrays-saddle-price",
-  "description": "1. You are given a square matrix of size 'n'. You are given n*n elements of the square matrix. \n2. You are required to find the saddle price of the given matrix and print the saddle price. \n3. The saddle price is defined as the least price in the row but the maximum price in the column of the matrix.\nInput Format\nA number n\ne11\ne12..\ne21\ne22..\n.. n * n number of elements of array a\nOutput Format\nSaddle point of the matrix if available or \"Invalid input\" if no saddle point is there.\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 10^2\n-10^9 <= e11, e12, .. n * m elements <= 10^9\nSample Input\n4\n11\n12\n13\n14\n21\n22\n23\n24\n31\n32\n33\n34\n41\n42\n43\n44\n\nSample Output\n41\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given a square matrix of size 'n'. You are given n*n elements of the square matrix. \n2. You are required to find the saddle price of the given matrix and print the saddle price. \n3. The saddle price is defined as the least price in the row but the maximum price in the column of the matrix.\n\n### Input Format\n```\nA number n\ne11\ne12..\ne21\ne22..\n.. n * n number of elements of array a\n```\n\n### Output Format\n```\nSaddle point of the matrix if available or \"Invalid input\" if no saddle point is there.\n```\n\n### Constraints\n```\n1 <= n <= 10^2\n-10^9 <= e11, e12, .. n * m elements <= 10^9\n```\n\n### Sample Input\n```\n4\n11\n12\n13\n14\n21\n22\n23\n24\n31\n32\n33\n34\n41\n42\n43\n44\n```\n\n### Sample Output\n```\n41\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/xt0Og8YaON4?rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/6YIWq2JGzEQ?rel=0&loop=1&playlist=6YIWq2JGzEQ",
+  "codes": {
+    "java": "import \njava.io\n.*;\nimport \njava.util\n.*;\npublic \nclass \nMain {\n    \npublic \nstatic \nvoid main\n(String[] \nargs) \nthrows \nException \n{\n        \n// write \nyour code \nhere\n    }\n}"
+  }
 }

@@ -1,8 +1,11 @@
 {
   "name": "Gcd And Lcm",
   "slug": "getting-started-gcd-and-lcm",
-  "description": "1. You are required to print the Greatest Common Divisor (GCD) of two numbers.\n2. You are also required to print the Lowest Common Multiple (LCM) of the same numbers.\n3. Take input \"num1\" and \"num2\" as the two numbers.\n4. Print their GCD and LCM.\nInput Format\nnum1\nnum2\n.. the numbers whose GCD and LCM we have to find.\nOutput Format\na\nb\n.. where 'a' and 'b' are the GCD and LCM respectively.\nQuestion Video\nCOMMENT\nConstraints\n2 <= n <= 10^9\nSample Input\n36\n24\n\nSample Output\n12\n72\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are required to print the Greatest Common Divisor (GCD) of two numbers.\n2. You are also required to print the Lowest Common Multiple (LCM) of the same numbers.\n3. Take input \"num1\" and \"num2\" as the two numbers.\n4. Print their GCD and LCM.\n\n### Input Format\n```\nnum1\nnum2\n.. the numbers whose GCD and LCM we have to find.\n```\n\n### Output Format\n```\na\nb\n.. where 'a' and 'b' are the GCD and LCM respectively.\n```\n\n### Constraints\n```\n2 <= n <= 10^9\n```\n\n### Sample Input\n```\n36\n24\n```\n\n### Sample Output\n```\n12\n72\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/8RlrYFljNJI?rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/ZtDeDD1VYLk?rel=0&loop=1&playlist=ZtDeDD1VYLk",
+  "codes": {
+    "java": ""
+  }
 }

@@ -1,0 +1,11 @@
+{
+  "name": "String Rotation",
+  "slug": "test-string-rotation",
+  "description": "Three Programmers at Pepcoding invented an amusing game. First Pepcoder thought out a string S and passed it to the Second Pepcoder. The Second Pepcoder executed X (0< X < string length) cyclic shifts ( a cyclic shift is a transfer of the last character of the string to the beginning of this string) with this string. As a result of these operations, a string T was produced, and the Second Pepcoder passed it to the Third Pepcoder. The task of the Third Pepcoder was to find the number X or make sure that the Second Pepcoder was mistaken because the string T could not be produced from the string S via cyclic shifts.\n\nExpected complexity: O(n)\n\n### Input Format\n```\nThe first line contains string S. The second line contains the string T.\n```\n\n### Output Format\n```\nIf the string T can be produced from the string S via cycle shifts you should output the desired number X, otherwise, you should output \"-1\". If multiple answers exist, output maximum X among them.\n```\n\n### Constraints\n```\n1 <= S.length() <= 100000\n```\n\n### Sample Input\n```\npepcodingforlife\nforlifepepcoding\n```\n\n### Sample Output\n```\n7\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/Z-lZrO6N6Ko?rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/Z-lZrO6N6Ko?rel=0&loop=1&playlist=Z-lZrO6N6Ko",
+  "codes": {
+    "java": "import java.io.*;\nimport java.util.*;\npublic class Main {\n    public static void main\n(String[] args) throws \nNumberFormatException, \nIOException {\n        BufferedReader br = \nnew BufferedReader(new \nInputStreamReader(System.in\n));\n        String S = br\n.readLine();\n        String T = br\n.readLine();\n        Solution(S, T);\n    }\n    private static void \nSolution(String s, String t) \n{\n    }\n}"
+  }
+}

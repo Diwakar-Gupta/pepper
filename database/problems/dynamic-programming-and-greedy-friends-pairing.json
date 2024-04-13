@@ -1,8 +1,11 @@
 {
   "name": "Friends Pairing",
   "slug": "dynamic-programming-and-greedy-friends-pairing",
-  "description": "Input Format\nA number n\nOutput Format\nA number representing the number of ways in which n friends can stay single or pair up.\nQuestion Video\nCOMMENT\nConstraints\n0 <= n <= 20\nSample Input\n4\n\nSample Output\n10\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given a number n, representing the number of friends.\n2. Each friend can stay single or pair up with any of it's friends.\n3. You are required to print the number of ways in which these friends can stay single or pair up.\nE.g.\n1 person can stay single or pair up in 1 way.\n2 people can stay singles or pair up in 2 ways. 12 => 1-2, 12.\n3 people (123) can stay singles or pair up in 4 ways. 123 => 1-2-3, 12-3, 13-2, 23-1.\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\nA number representing the number of ways in which n friends can stay single or pair up.\n```\n\n### Constraints\n```\n0 <= n <= 20\n```\n\n### Sample Input\n```\n4\n```\n\n### Sample Output\n```\n10\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/SHDu0Ufjyk8?end=125&rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/SHDu0Ufjyk8?start=125&rel=0&loop=1&playlist=SHDu0Ufjyk8",
+  "codes": {
+    "java": "import java.io.*;\nimport java.util.*;\npublic class Main {\n    public static void main\n(String[] args) throws \nException {\n        // write your code \nhere\n    }\n}"
+  }
 }

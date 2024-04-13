@@ -1,8 +1,11 @@
 {
   "name": "Merge Overlapping Interval",
   "slug": "stacks-and-queues-merge-overlapping-interval",
-  "description": "1. You are given a number n, representing the number of time-intervals.\n2. In the next n lines, you are given a pair of space separated numbers.\n3. The pair of numbers represent the start time and end time of a meeting (first number is start time and second number is end time)\n4. You are required to merge the meetings and print the merged meetings output in increasing order of start time.\n\nE.g. Let us say there are 6 meetings\n1 8\n5 12\n14 19\n22 28\n25 27\n27 30\n\nThen the output of merged meetings will belongs\n1 12\n14 19\n22 30\n\nNote -> The given input maynot be sorted by start-time.\nInput Format\nInput is managed for you\nOutput Format\nPrint a merged meeting start time and end time separated by a space in a line\n.. print all merged meetings one in each line.\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 10^4\n0 <= ith start time < 100\nith start time < ith end time <= 100\nSample Input\n6\n22 28\n1 8\n25 27\n14 19\n27 30\n5 12\n\nSample Output\n1 12\n14 19\n22 30\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given a number n, representing the number of time-intervals.\n2. In the next n lines, you are given a pair of space separated numbers.\n3. The pair of numbers represent the start time and end time of a meeting (first number is start time and second number is end time)\n4. You are required to merge the meetings and print the merged meetings output in increasing order of start time.\n\nE.g. Let us say there are 6 meetings\n1 8\n5 12\n14 19\n22 28\n25 27\n27 30\n\nThen the output of merged meetings will belongs\n1 12\n14 19\n22 30\n\nNote -> The given input maynot be sorted by start-time.\n\n### Input Format\n```\nInput is managed for you\n```\n\n### Output Format\n```\nPrint a merged meeting start time and end time separated by a space in a line\n.. print all merged meetings one in each line.\n```\n\n### Constraints\n```\n1 <= n <= 10^4\n0 <= ith start time < 100\nith start time < ith end time <= 100\n```\n\n### Sample Input\n```\n6\n22 28\n1 8\n25 27\n14 19\n27 30\n5 12\n```\n\n### Sample Output\n```\n1 12\n14 19\n22 30\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/XsOI7fpx8IY?rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/QlaDyZTCAbM?rel=0&loop=1&playlist=QlaDyZTCAbM",
+  "codes": {
+    "java": ""
+  }
 }

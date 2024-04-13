@@ -1,8 +1,11 @@
 {
   "name": "String Compression",
   "slug": "string-string-builder-and-arraylist-string-compression",
-  "description": "Input Format\nA String\nOutput Format\nTwo strings representing first compressed string and second compressed string respectively.\nQuestion Video\nCOMMENT\nConstraints\n1 <= length of string <= 1000\nSample Input\nwwwwaaadexxxxxx\n\nSample Output\nwadex\nw4a3dex6\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given a string. \n2. You have to compress the given string in the following two ways - \n   First compression -> The string should be compressed such that consecutive duplicates of characters are replaced with a single character.\n   For \"aaabbccdee\", the compressed string will be \"abcde\".\n   Second compression -> The string should be compressed such that consecutive duplicates of characters are replaced with the character and followed by the number of consecutive duplicates.\n   For \"aaabbccdee\", the compressed string will be \"a3b2c2de2\".\n\n### Input Format\n```\nA String\n```\n\n### Output Format\n```\nTwo strings representing first compressed string and second compressed string respectively.\n```\n\n### Constraints\n```\n1 <= length of string <= 1000\n```\n\n### Sample Input\n```\nwwwwaaadexxxxxx\n```\n\n### Sample Output\n```\nwadex\nw4a3dex6\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/6W1MDK7nPZs?end=61&rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/6W1MDK7nPZs?start=61&rel=0&loop=1&playlist=6W1MDK7nPZs",
+  "codes": {
+    "java": "import java.io.*;\nimport java.util.*;\npublic class Main {\n    public static String \ncompression1(String str){\n        // write your code \nhere\n        return null;\n    }\n    public static String \ncompression2(String str){\n        // write your code \nhere\n        return null;\n    }\n    public static void main\n(String[] args) {\n        Scanner scn = new \nScanner(System.in);\n        String str = scn\n.next();\n        System.out.println\n(compression1(str));\n        System.out.println\n(compression2(str));\n    }\n}"
+  }
 }

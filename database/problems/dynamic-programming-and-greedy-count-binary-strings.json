@@ -1,8 +1,11 @@
 {
   "name": "Count Binary Strings",
   "slug": "dynamic-programming-and-greedy-count-binary-strings",
-  "description": "1. You are given a number n.\n2. You are required to print the number of binary strings of length n with no consecutive 0's.\nInput Format\nA number n\nOutput Format\nA number representing the number of binary strings of length n with no consecutive 0's.\nQuestion Video\nCOMMENT\nConstraints\n0 < n <= 45\nSample Input\n6\n\nSample Output\n21\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given a number n.\n2. You are required to print the number of binary strings of length n with no consecutive 0's.\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\nA number representing the number of binary strings of length n with no consecutive 0's.\n```\n\n### Constraints\n```\n0 < n <= 45\n```\n\n### Sample Input\n```\n6\n```\n\n### Sample Output\n```\n21\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/nqrXHJWMeBc?end=98&rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/nqrXHJWMeBc?start=231&rel=0&loop=1&playlist=nqrXHJWMeBc",
+  "codes": {
+    "java": ""
+  }
 }
