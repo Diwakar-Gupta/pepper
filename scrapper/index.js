@@ -6,15 +6,15 @@ let urlPrefix = "https://web.archive.org/web/20211018102323/";
 
 const meta = [
   {
-    name: "Level 1: DSA Fundamentals",
+    name: "dsa-fundamentals",
     link: "https://web.archive.org/web/20211018102323/https://pepcoding.com/resources/online-java-foundation/",
   },
   {
-    name: "Level 2: LevelUp",
+    name: "levelup",
     link: "https://web.archive.org/web/20211018104938/https://pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/",
   },
   {
-    name: "Level 3: Interview Preparation",
+    name: "interview-prep",
     link: "https://web.archive.org/web/20211018094739/https://pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep",
   },
 ];
@@ -48,9 +48,9 @@ async function scrapTaskCode(page, parentSlug) {
     await page.$("#videoId")
   ).evaluate((node) => node.value);
 
-  let solutionVideolink = await (await page.$("#solutionContainer iframe")).evaluate((node) =>
-      node.src
-  );
+  let solutionVideolink = await (
+    await page.$("#solutionContainer iframe")
+  ).evaluate((node) => node.src);
 
   let filePath = `scrappedData/problems/${slug}.json`;
 
@@ -63,14 +63,7 @@ async function scrapTaskCode(page, parentSlug) {
     solutionVideolink,
   };
 
-  await fs.writeFile(
-    filePath,
-    JSON.stringify(
-      payload,
-      null,
-      2
-    )
-  );
+  await fs.writeFile(filePath, JSON.stringify(payload, null, 2));
 
   console.log("Wrote to file: ", filePath);
 
@@ -82,8 +75,7 @@ async function scrapSubModule(page, filePath, mySlug) {
 
   let taskList = [];
   for (let task of tasks) {
-
-    let name = await task.evaluate(node => node.innerText.trim());
+    let name = await task.evaluate((node) => node.innerText.trim());
     let slug = cleanString(name);
     let type = await getTaskType(task);
     let link = await (await task.$("a")).evaluate((node) => node.href);
@@ -109,7 +101,9 @@ async function scrapSubModule(page, filePath, mySlug) {
       await taskpage.close();
 
       taskList.push({
-        type, slug, name
+        type,
+        slug,
+        name,
       });
     }
   }
@@ -145,7 +139,6 @@ async function scrapModules(page, folderPath) {
         slug,
       });
 
-
       let link = await (await subModule.$("a")).evaluate((node) => node.href);
 
       const smpage = await browser.newPage();
@@ -161,7 +154,6 @@ async function scrapModules(page, folderPath) {
       }
 
       await smpage.close();
-
     }
 
     let promises = subModules.map(async (subModule) => {
@@ -174,7 +166,6 @@ async function scrapModules(page, folderPath) {
     return processModule(module);
   });
   await Promise.all(promises);
-
 
   return results;
 }
