@@ -29,6 +29,39 @@ async function getTaskType(task) {
   }
 }
 
+async function codeTaskDescription(page) {
+  let details = await page.$("#resource > div.col.l12.s12.m8");
+  let detailDOMList = await page.$$("#resource > div.col.l12.s12.m8 > *");
+
+  let description = await (
+    await details.$("pre.card")
+  ).evaluate((node) => node.innerText.trim());
+
+  for (let i = 0; i < detailDOMList.length; i++) {
+    let child = detailDOMList[i];
+
+    let classList = await page.evaluate(
+      (el) => Array.from(el.classList),
+      child
+    );
+    let isHeading = classList.includes("pre-heading");
+
+    if (isHeading) {
+      let heading = await child.evaluate((node) => node.innerText.trim());
+      if (heading === "Question Video") continue;
+      let content = await detailDOMList[i + 1].evaluate((node) =>
+        node.innerText.trim()
+      );
+
+      description += "\n\n### " + heading;
+      description += "\n```\n" + content + "\n```";
+      i++;
+    }
+  }
+
+  return description;
+}
+
 async function scrapTaskCode(page, parentSlug) {
   let detailDOMList = await page.$$("#resource > div.col.l12.s12.m8 > *");
 
@@ -36,13 +69,7 @@ async function scrapTaskCode(page, parentSlug) {
   let slug = cleanString(name);
   slug = `${parentSlug}-${slug}`;
 
-  let description = "";
-  for (let i = 4; i < detailDOMList.length; i++) {
-    description += await detailDOMList[i].evaluate((node) =>
-      node.innerText.trim()
-    );
-    description += "\n";
-  }
+  let description = await codeTaskDescription(page);
 
   let problemVideoLink = await (
     await page.$("#videoId")
@@ -51,6 +78,10 @@ async function scrapTaskCode(page, parentSlug) {
   let solutionVideolink = await (
     await page.$("#solutionContainer iframe")
   ).evaluate((node) => node.src);
+
+  let javaCode = await (
+    await page.$(".ace_content")
+  ).evaluate((node) => node.innerText.trim());
 
   let filePath = `scrappedData/problems/${slug}.json`;
 
@@ -61,6 +92,9 @@ async function scrapTaskCode(page, parentSlug) {
     externalPlatforms: [],
     problemVideoLink,
     solutionVideolink,
+    codes: {
+      java: javaCode,
+    },
   };
 
   await fs.writeFile(filePath, JSON.stringify(payload, null, 2));
@@ -176,11 +210,7 @@ function cleanString(inputString) {
   return cleanedString.toLowerCase();
 }
 
-async function main() {
-  browser = await puppeteer.launch({
-    headless: false,
-  });
-
+async function scrapAllCourse() {
   fs.mkdir("scrappedData/courses/", { recursive: true });
   fs.mkdir("scrappedData/problems/", { recursive: true });
 
@@ -205,6 +235,28 @@ async function main() {
 
     console.log("Wrote to file: ", filePath);
   }
+}
+
+async function scrapACodeTask(parentSlug, link) {
+  let page = await browser.newPage();
+  await page.goto(link, { waitUntil: "load", timeout: 0 });
+  await scrapTaskCode(page, parentSlug);
+
+  await page.close();
+}
+
+async function main() {
+  browser = await puppeteer.launch({
+    headless: false,
+  });
+
+  // await scrapAllCourse();
+  await scrapACodeTask(
+    "test",
+    "https://web.archive.org/web/20220604082108/https://www.pepcoding.com/resources/online-java-foundation/getting-started/print-z-official/ojquestion"
+  );
+
+  await browser.close();
 }
 
 main();
