@@ -1,8 +1,11 @@
 {
   "name": "Climb Stairs",
   "slug": "dynamic-programming-and-greedy-climb-stairs",
-  "description": "1. You are given a number n, representing the number of stairs in a staircase.\n2. You are on the 0th step and are required to climb to the top.\n3. In one move, you are allowed to climb 1, 2 or 3 stairs.\n4. You are required to print the number of different paths via which you can climb to the top.\nInput Format\nA number n\nOutput Format\nA number representing the number of ways to climb the stairs from 0 to top.\nQuestion Video\nCOMMENT\nConstraints\n0 <= n <= 20\nSample Input\n4\n\nSample Output\n7\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given a number n, representing the number of stairs in a staircase.\n2. You are on the 0th step and are required to climb to the top.\n3. In one move, you are allowed to climb 1, 2 or 3 stairs.\n4. You are required to print the number of different paths via which you can climb to the top.\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\nA number representing the number of ways to climb the stairs from 0 to top.\n```\n\n### Constraints\n```\n0 <= n <= 20\n```\n\n### Sample Input\n```\n4\n```\n\n### Sample Output\n```\n7\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/A6mOASLl2Dg?end=194&rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/A6mOASLl2Dg?start=194&rel=0&loop=1&playlist=A6mOASLl2Dg",
+  "codes": {
+    "java": "import java\n.io.*;\nimport java\n.util.*;\npublic \nclass Main \n{\n    public \nstatic void \nmain\n(String[] \nargs) \nthrows \nException {\n        // \nwrite your \ncode here\n    }\n}"
+  }
 }

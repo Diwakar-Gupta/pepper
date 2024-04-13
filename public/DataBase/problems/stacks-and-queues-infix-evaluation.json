@@ -1,8 +1,11 @@
 {
   "name": "Infix Evaluation",
   "slug": "stacks-and-queues-infix-evaluation",
-  "description": "1. You are given an infix expression.\n2. You are required to evaluate and print it's value.\nInput Format\nInput is managed for you\nOutput Format\nValue of infix expression\nQuestion Video\nCOMMENT\nConstraints\n1. Expression is balanced\n2. The only operators used are +, -, *, /\n3. Opening and closing brackets - () - are used to impact precedence of operations\n4. + and - have equal precedence which is less than * and /. * and / also have equal precedence.\n5. In two operators of equal precedence give preference to the one on left.\n6. All operands are single digit numbers.\nSample Input\n2 + 6 * 4 / 8 - 3\n\nSample Output\n2\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given an infix expression.\n2. You are required to evaluate and print it's value.\n\n### Input Format\n```\nInput is managed for you\n```\n\n### Output Format\n```\nValue of infix expression\n```\n\n### Constraints\n```\n1. Expression is balanced\n2. The only operators used are +, -, *, /\n3. Opening and closing brackets - () - are used to impact precedence of operations\n4. + and - have equal precedence which is less than * and /. * and / also have equal precedence.\n5. In two operators of equal precedence give preference to the one on left.\n6. All operands are single digit numbers.\n```\n\n### Sample Input\n```\n2 + 6 * 4 / 8 - 3\n```\n\n### Sample Output\n```\n2\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/cv_kPZnMxdA?rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/IY0nZLEg6MA?rel=0&loop=1&playlist=IY0nZLEg6MA",
+  "codes": {
+    "java": ""
+  }
 }

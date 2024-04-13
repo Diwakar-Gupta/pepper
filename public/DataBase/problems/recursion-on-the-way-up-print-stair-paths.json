@@ -1,8 +1,11 @@
 {
   "name": "Print Stair Paths",
   "slug": "recursion-on-the-way-up-print-stair-paths",
-  "description": "1. You are given a number n representing number of stairs in a staircase.\n2. You are standing at the bottom of staircase. You are allowed to climb 1 step, 2 steps or 3 steps in one move.\n3. Complete the body of printStairPaths function - without changing signature - to print the list of all paths that can be used to climb the staircase up.\nUse sample input and output to take idea about output.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\nInput Format\nA number n\nOutput Format\nPrint paths (one path in each line) in order hinted by Sample output\nQuestion Video\nCOMMENT\nConstraints\n0 <= n <= 10\nSample Input\n3\n\nSample Output\n111\n12\n21\n3\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given a number n representing number of stairs in a staircase.\n2. You are standing at the bottom of staircase. You are allowed to climb 1 step, 2 steps or 3 steps in one move.\n3. Complete the body of printStairPaths function - without changing signature - to print the list of all paths that can be used to climb the staircase up.\nUse sample input and output to take idea about output.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\nPrint paths (one path in each line) in order hinted by Sample output\n```\n\n### Constraints\n```\n0 <= n <= 10\n```\n\n### Sample Input\n```\n3\n```\n\n### Sample Output\n```\n111\n12\n21\n3\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/JxIoGHzzoW8?rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/NEuYcztalew?rel=0&loop=1&playlist=NEuYcztalew",
+  "codes": {
+    "java": ""
+  }
 }

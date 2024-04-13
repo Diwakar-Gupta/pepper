@@ -1,8 +1,11 @@
 {
   "name": "Max Of An Array",
   "slug": "recursion-in-arrays-max-of-an-array",
-  "description": "1. You are given a number n, representing the count of elements.\n2. You are given n numbers.\n3. You are required to find the maximum of input. \n4. For the purpose complete the body of maxOfArray function. Don't change the signature.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\nInput Format\nA number n\nn1\nn2\n.. n number of elements\nOutput Format\nA number representing max\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 10^4\n0 <= n1, n2, .. n elements <= 10 ^9\nSample Input\n6\n15\n30\n40\n4\n11\n9\n\nSample Output\n40\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given a number n, representing the count of elements.\n2. You are given n numbers.\n3. You are required to find the maximum of input. \n4. For the purpose complete the body of maxOfArray function. Don't change the signature.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA number n\nn1\nn2\n.. n number of elements\n```\n\n### Output Format\n```\nA number representing max\n```\n\n### Constraints\n```\n1 <= n <= 10^4\n0 <= n1, n2, .. n elements <= 10 ^9\n```\n\n### Sample Input\n```\n6\n15\n30\n40\n4\n11\n9\n```\n\n### Sample Output\n```\n40\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/obrreX-sQWo?rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/XpUiZg9YZQg?rel=0&loop=1&playlist=XpUiZg9YZQg",
+  "codes": {
+    "java": "im\npo\nrt \nja\nva\n.i\no.\n*;\nim\npo\nrt \nja\nva\n.u\nti\nl.\n*;\npu\nbl\nic \ncl\nas\ns \nMa\nin \n{\n  \n  \npu\nbl\nic \nst\nat\nic \nvo\nid \nma\nin\n(S\ntr\nin\ng[\n] \nar\ngs\n) \nth\nro\nws \nEx\nce\npt\nio\nn \n{"
+  }
 }

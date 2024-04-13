@@ -1,8 +1,11 @@
 {
   "name": "Print All Palindromic Substrings",
   "slug": "string-string-builder-and-arraylist-print-all-palindromic-substrings",
-  "description": "Input Format\nA String\nOutput Format\nAll palindromic substrings(one in a line).\nFirst, all palindromic substrings starting from first character of string will be printed, then from second character and so on.\nQuestion Video\nCOMMENT\nConstraints\n1 <= length of string <= 500\nSample Input\nabcc\n\nSample Output\na\nb\nc\ncc\nc\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given a string. \n2. You have to print all palindromic substrings of the given string.\n\n### Input Format\n```\nA String\n```\n\n### Output Format\n```\nAll palindromic substrings(one in a line).\nFirst, all palindromic substrings starting from first character of string will be printed, then from second character and so on.\n```\n\n### Constraints\n```\n1 <= length of string <= 500\n```\n\n### Sample Input\n```\nabcc\n```\n\n### Sample Output\n```\na\nb\nc\ncc\nc\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/_jM3iMT4k7g?end=88&rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/_jM3iMT4k7g?start=88&rel=0&loop=1&playlist=_jM3iMT4k7g",
+  "codes": {
+    "java": "import \njava.io\n.*;\nimport \njava\n.util.*;\npublic \nclass \nMain {\n    \npublic \nstatic \nvoid \nsolution\n(String \nstr){\n        \n//write \nyour \ncode \nhere\n        \n    }\n    \npublic \nstatic \nvoid \nmain\n(String[\n] args) \n{\n        \nScanner \nscn = \nnew \nScanner\n(System\n.in);"
+  }
 }

@@ -1,8 +1,11 @@
 {
   "name": "Display Array In Reverse",
   "slug": "recursion-in-arrays-display-array-in-reverse",
-  "description": "1. You are given a number n, representing the size of array a.\n2. You are given n numbers, representing elements of array a.\n3. You are required to print the elements of array from end to beginning each in a separate line.\n4. For the above purpose complete the body of displayArrReverse function. Don't change the signature.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\nInput Format\nA number n\nn1\nn2\n.. n number of elements\nOutput Format\nn1\nn2\n.. n elements\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 30\n0 <= n1, n2, .. n elements <= 10\nSample Input\n5\n3\n1\n0\n7\n5\n\nSample Output\n5\n7\n0\n1\n3\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
+  "description": "1. You are given a number n, representing the size of array a.\n2. You are given n numbers, representing elements of array a.\n3. You are required to print the elements of array from end to beginning each in a separate line.\n4. For the above purpose complete the body of displayArrReverse function. Don't change the signature.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA number n\nn1\nn2\n.. n number of elements\n```\n\n### Output Format\n```\nn1\nn2\n.. n elements\n```\n\n### Constraints\n```\n1 <= n <= 30\n0 <= n1, n2, .. n elements <= 10\n```\n\n### Sample Input\n```\n5\n3\n1\n0\n7\n5\n```\n\n### Sample Output\n```\n5\n7\n0\n1\n3\n```",
   "externalPlatforms": [],
   "problemVideoLink": "https://www.youtube.com/embed/_O6geLdoSV4?rel=0",
-  "solutionVideolink": ""
+  "solutionVideolink": "https://www.youtube.com/embed/SJrfxaYBEFU?rel=0&loop=1&playlist=SJrfxaYBEFU",
+  "codes": {
+    "java": ""
+  }
 }
