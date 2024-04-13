@@ -48,6 +48,10 @@ async function scrapTaskCode(page, parentSlug) {
     await page.$("#videoId")
   ).evaluate((node) => node.value);
 
+  let solutionVideolink = await (await page.$("#solutionContainer iframe")).evaluate((node) =>
+      node.src
+  );
+
   let filePath = `scrappedData/problems/${slug}.json`;
 
   let payload = {
@@ -56,7 +60,7 @@ async function scrapTaskCode(page, parentSlug) {
     description,
     externalPlatforms: [],
     problemVideoLink,
-    solutionVideolink: "",
+    solutionVideolink,
   };
 
   await fs.writeFile(
