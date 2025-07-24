@@ -1,0 +1,11 @@
+{
+  "name": "Minimum Stack - I",
+  "slug": "stacks-and-queues-minimum-stack-i",
+  "description": "1. You are required to complete the code of our MinStack class. \n2. As data members you've two stacks available in the class - one for data values and another for minimum values. (This is cryptic - take hint from video)\n2. Here is the list of functions that you are supposed to complete\n2.1. push -> Should accept new data in LIFO manner\n2.2. pop -> Should remove and return data in LIFO manner. If not available, print \"Stack underflow\" and return -1.\n2.3. top -> Should return data in LIFO manner. If not available, print \"Stack underflow\" and return -1.\n2.4. size -> Should return the number of elements available in the stack\n2.5. min -> Should return the smallest element available in the stack. If not available, print \"Stack underflow\" and return -1.\n3. Input and Output is managed for you.\n\nNote -> The judge maynot be able to check if all your functions are O(1) in time, but that is what the expectation is.\n\n### Input Format\n```\nInput is managed for you\n```\n\n### Output Format\n```\nOutput is managed for you\n```\n\n### Constraints\n```\nNone\n```\n\n### Sample Input\n```\npush 10\npush 20\npush 5\npush 8\npush 2\npush 4\npush 11\ntop\nmin\npop\ntop\nmin\npop\ntop\nmin\npop\ntop\nmin\npop\ntop\nmin\npop\ntop\nmin\npop\ntop\nmin\npop\nquit\n```\n\n### Sample Output\n```\n11\n2\n11\n4\n2\n4\n2\n2\n2\n8\n5\n8\n5\n5\n5\n20\n10\n20\n10\n10\n10\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/NslJ5PXAM4Q?rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/4bjCEJmiPZA?rel=0&loop=1&playlist=4bjCEJmiPZA",
+  "codes": {
+    "java": ""
+  }
+}

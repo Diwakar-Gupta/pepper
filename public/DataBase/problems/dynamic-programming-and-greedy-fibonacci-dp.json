@@ -1,0 +1,11 @@
+{
+  "name": "Fibonacci-dp",
+  "slug": "dynamic-programming-and-greedy-fibonacci-dp",
+  "description": "1. You are given a number n.\n2. You are required to print the nth element of fibonnaci sequence.\n\nNote -> Notice precisely how we have defined the fibonnaci sequence\n0th element -> 0\n1st element -> 1\n2nd element -> 1\n3rd element -> 2\n4th element -> 3\n5th element -> 5\n6th element -> 8\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\nA number representing the nth element of fibonnaci sequence\n```\n\n### Constraints\n```\n0 <= n <= 45\n```\n\n### Sample Input\n```\n10\n```\n\n### Sample Output\n```\n55\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/94dfRrDANRY?rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/94dfRrDANRY?rel=0&loop=1&playlist=94dfRrDANRY",
+  "codes": {
+    "java": "import java\n.io.*;\nimport java\n.util.*;\npublic class \nMain{\npublic \nstatic void \nmain(String[\n] args) \nthrows \nException {\n    // write \nyour code \nhere\n }\n}"
+  }
+}

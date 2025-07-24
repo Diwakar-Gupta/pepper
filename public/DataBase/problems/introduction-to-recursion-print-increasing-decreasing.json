@@ -1,0 +1,11 @@
+{
+  "name": "Print Increasing Decreasing",
+  "slug": "introduction-to-recursion-print-increasing-decreasing",
+  "description": "1. You are given a positive number n. \n2. You are required to print the counting from n to 1 and back to n again.\n3. You are required to not use any loops. Complete the body of pdi function to achieve it. Don't change the signature of the function.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is.Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\nn\nn - 1\nn - 2\n..\n1\n1\n2\n3\n..\nn\n```\n\n### Constraints\n```\n1 <= n <= 1000\n```\n\n### Sample Input\n```\n3\n```\n\n### Sample Output\n```\n3\n2\n1\n1\n2\n3\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/V-WSKmGTWxk?rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/BWr4zBiRtJY?rel=0&loop=1&playlist=BWr4zBiRtJY",
+  "codes": {
+    "java": ""
+  }
+}

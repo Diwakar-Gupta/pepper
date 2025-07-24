@@ -1,0 +1,11 @@
+{
+  "name": "Goldmine",
+  "slug": "dynamic-programming-and-greedy-goldmine",
+  "description": "1. You are given a number n, representing the number of rows.\n2. You are given a number m, representing the number of columns.\n3. You are given n*m numbers, representing elements of 2d array a, which represents a gold mine.\n4. You are standing in front of left wall and are supposed to dig to the right wall. You can start from \n     any row in the left wall.\n5. You are allowed to move 1 cell right-up (d1), 1 cell right (d2) or 1 cell right-down(d3).\n\n\n\n6. Each cell has a value that is the amount of gold available in the cell.\n7. You are required to identify the maximum amount of gold that can be dug out from the mine.\n\n### Input Format\n```\nA number n\nA number m\ne11\ne12..\ne21\ne22..\n.. n * m number of elements\n```\n\n### Output Format\n```\nAn integer representing Maximum gold available.\n```\n\n### Constraints\n```\n1 <= n <= 10^2\n1 <= m <= 10^2\n0 <= e1, e2, .. n * m elements <= 1000\n```\n\n### Sample Input\n```\n6\n6\n0 1 4 2 8 2\n4 3 6 5 0 4\n1 2 4 1 4 6\n2 0 7 3 2 2\n3 1 5 9 2 4\n2 7 0 8 5 1\n```\n\n### Sample Output\n```\n33\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/5KdvH15NJjc?rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/hs0lilfJ7C0?rel=0&loop=1&playlist=hs0lilfJ7C0",
+  "codes": {
+    "java": ""
+  }
+}

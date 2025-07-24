@@ -1,0 +1,11 @@
+{
+  "name": "Print All Primes Till N",
+  "slug": "getting-started-print-all-primes-till-n",
+  "description": "1. You've to print all prime numbers between a range. \n2. Take as input \"low\", the lower limit of range.\n3. Take as input \"high\", the higher limit of range.\n4. For the range print all the primes numbers between low and high (both included).\n\n### Input Format\n```\nlow \nhigh\n```\n\n### Output Format\n```\nn1\nn2\n.. all primes between low and high (both included)\n```\n\n### Constraints\n```\n2 <= low < high < 10 ^ 6\n```\n\n### Sample Input\n```\n6 \n24\n```\n\n### Sample Output\n```\n7\n11\n13\n17\n19\n23\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/sVdGn8xfCCM?rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/YOmq-Jr3QIk?rel=0&loop=1&playlist=YOmq-Jr3QIk",
+  "codes": {
+    "java": ""
+  }
+}

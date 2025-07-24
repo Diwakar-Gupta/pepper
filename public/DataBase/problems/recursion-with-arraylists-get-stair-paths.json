@@ -1,0 +1,11 @@
+{
+  "name": "Get Stair Paths",
+  "slug": "recursion-with-arraylists-get-stair-paths",
+  "description": "1. You are given a number n representing number of stairs in a staircase.\n2. You are standing at the bottom of staircase. You are allowed to climb 1 step, 2 steps or 3 steps in one move.\n3. Complete the body of getStairPaths function - without changing signature - to get the list of all paths that can be used to climb the staircase up.\nUse sample input and output to take idea about output.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\nContents of the arraylist containing paths as shown in sample output\n```\n\n### Constraints\n```\n0 <= n <= 10\n```\n\n### Sample Input\n```\n3\n```\n\n### Sample Output\n```\n[111, 12, 21, 3]\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/W6cT68K7Hls?rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/hMJAlbJIS7E?rel=0&loop=1&playlist=hMJAlbJIS7E",
+  "codes": {
+    "java": "imp\nort \njav\na.i\no.*\n;\nimp\nort \njav\na.u\ntil\n.*;\npub\nlic \ncla\nss \nMai\nn {\n   \n pu\nbli\nc \nsta\ntic \nvoi\nd \nmai\nn(S\ntri\nng[\n] \narg\ns) \nthr\nows \nExc\nept\nion \n{"
+  }
+}

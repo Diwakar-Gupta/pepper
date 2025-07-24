@@ -1,0 +1,11 @@
+{
+  "name": "Levelorder Linewise (generic Tree)",
+  "slug": "generic-tree-levelorder-linewise-generic-tree-",
+  "description": "1. You are given a partially written GenericTree class.\n2. You are required to complete the body of levelorderLineWise function. The function is expected to visit every node in \"levelorder fashion\" and print them from left to right (level by level). All nodes on same level should be separated by a space. Different levels should be on separate lines. Please check the question video for more details.\n3. Input is managed for you.\n\n### Input Format\n```\nInput is managed for you\n```\n\n### Output Format\n```\nAll nodes from left to right (level by level) all separated by a space.\nAll levels on separate lines starting from top to bottom.\n```\n\n### Constraints\n```\nNone\n```\n\n### Sample Input\n```\n24\n10 20 50 -1 60 -1 -1 30 70 -1 80 110 -1 120 -1 -1 90 -1 -1 40 100 -1 -1 -1\n```\n\n### Sample Output\n```\n10 \n20 30 40 \n50 60 70 80 90 100 \n110 120\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/t4ts_6m4z68?rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/amG7xun8k4w?rel=0&loop=1&playlist=amG7xun8k4w",
+  "codes": {
+    "java": "import java.io.*;\nimport java.util.*;\npublic class Main {\n  private static class Node {\n    int data;\n    ArrayList<Node> children = new ArrayList<>();\n  }\n  public static void display(Node node) {\n    String str = node.data + \" -> \";\n    for (Node child : node.children) {\n      str += child.data + \", \";\n    }\n    str += \".\";\n    System.out.println(str);\n    for (Node child : node.children) {\n      display(child);\n    }\n  }\n  public static Node construct(int[] arr) {\n    Node root = null;\n    Stack<Node> st = new Stack<>();\n    for (int i = 0; i < arr.length; i++) {\n      if (arr[i] == -1) {\n        st.pop();\n      } else {\n        Node t = new Node();\n        t.data = arr[i];\n        if (st.size() > 0) {\n          st.peek().children.add(t);\n        } else {"
+  }
+}

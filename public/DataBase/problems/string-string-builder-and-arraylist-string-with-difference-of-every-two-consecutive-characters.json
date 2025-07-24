@@ -1,0 +1,11 @@
+{
+  "name": "String With Difference Of Every Two Consecutive Characters",
+  "slug": "string-string-builder-and-arraylist-string-with-difference-of-every-two-consecutive-characters",
+  "description": "1. You are given a string that contains only lowercase and uppercase alphabets. \n2. You have to form a string that contains the difference of ASCII values of every two consecutive characters between those characters.\n   For \"abecd\", the answer should be \"a1b3e-2c1d\", as \n   'b'-'a' = 1\n   'e'-'b' = 3\n   'c'-'e' = -2\n   'd'-'c' = 1\n\n### Input Format\n```\nA String\n```\n\n### Output Format\n```\nA String\n```\n\n### Constraints\n```\n1 <= length of string <= 1000\n```\n\n### Sample Input\n```\npepCODinG\n```\n\n### Sample Output\n```\np-11e11p-45C12O-11D37i5n-39G\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/PHtNm0B9Ig4?end=99&rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/PHtNm0B9Ig4?start=99&rel=0&loop=1&playlist=PHtNm0B9Ig4",
+  "codes": {
+    "java": ""
+  }
+}

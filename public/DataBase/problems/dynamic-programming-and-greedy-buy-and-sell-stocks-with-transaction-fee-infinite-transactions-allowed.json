@@ -1,0 +1,11 @@
+{
+  "name": "Buy And Sell Stocks With Transaction Fee - Infinite Transactions Allowed",
+  "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-with-transaction-fee-infinite-transactions-allowed",
+  "description": "1. You are given a number n, representing the number of days.\n2. You are given n numbers, where ith number represents price of stock on ith day.\n3. You are give a number fee, representing the transaction fee for every transaction.\n4. You are required to print the maximum profit you can make if you are allowed infinite transactions, but has to pay \"fee\" for every closed transaction.\nNote - There can be no overlapping transaction. One transaction needs to be closed (a buy followed by a sell) before opening another transaction (another buy).\n\n### Input Format\n```\nA number n\n.. n more elements\nA number fee\n```\n\n### Output Format\n```\nA number representing the maximum profit you can make if you are allowed infinite transactions with transaction fee.\n```\n\n### Constraints\n```\n0 <= n <= 20\n0 <= n1, n2, .. <= 10\n0 <= fee <= 5\n```\n\n### Sample Input\n```\n12\n10\n15\n17\n20\n16\n18\n22\n20\n22\n20\n23\n25\n3\n```\n\n### Sample Output\n```\n13\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/pTQB9wbIpfU?end=85&rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/pTQB9wbIpfU?start=85&rel=0&loop=1&playlist=pTQB9wbIpfU",
+  "codes": {
+    "java": "import \njava\n.io.*;\nimport \njava\n.util\n.*;\npublic \nclass \nMain {\n    \npublic \nstatic \nvoid \nmain\n(Strin\ng[] \nargs) \nthrows \nExcept\nion {\n      \n  // \nwrite \nyour \ncode \nhere\n    }\n}"
+  }
+}

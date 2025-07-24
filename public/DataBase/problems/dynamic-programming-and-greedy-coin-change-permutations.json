@@ -1,0 +1,11 @@
+{
+  "name": "Coin Change Permutations",
+  "slug": "dynamic-programming-and-greedy-coin-change-permutations",
+  "description": "1. You are given a number n, representing the count of coins.\n2. You are given n numbers, representing the denominations of n coins.\n3. You are given a number \"amt\".\n4. You are required to calculate and print the number of permutations of the n coins using which the \n     amount \"amt\" can be paid.\n\nNote1 -> You have an infinite supply of each coin denomination i.e. same coin denomination can be \n                  used for many installments in payment of \"amt\"\nNote2 -> You are required to find the count of permutations and not combinations i.e.\n                  2 + 2 + 3 = 7 and 2 + 3 + 2 = 7 and 3 + 2 + 2 = 7 are different permutations of same \n                  combination. You should treat them as 3 and not 1.\n\n### Input Format\n```\nA number n\nn1\nn2\n.. n number of elements\nA number amt\n```\n\n### Output Format\n```\nA number representing the count of combinations of coins which can be used to pay the amount \"amt\"\n```\n\n### Constraints\n```\n1 <= n <= 20\n0 <= n1, n2, .. n elements <= 20\n0 <= amt <= 30\n```\n\n### Sample Input\n```\n4\n2\n3\n5\n6\n7\n```\n\n### Sample Output\n```\n5\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/yc0LunmJA1A?start=0&end=171&rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/yc0LunmJA1A?start=173&end=1453&rel=0&loop=1&playlist=yc0LunmJA1A",
+  "codes": {
+    "java": "import java.io.*;\nimport java.util.*;\npublic class Main {\n    public static void main\n(String[] args) throws \nException {\n    }\n}"
+  }
+}
