@@ -2,40 +2,44 @@
 
 Welcome to Pepper, a static DSA learning platform inspired by Pepcoding. Pepper aims to provide quality educational materials for learning Data Structures and Algorithms.
 
-## Overview
+## Repository Structure
 
-Pepper offers a collection of courses and problems to help you sharpen your DSA skills. The platform is built using Node.js, React, and Parcel, ensuring a seamless learning experience. Additionally, we utilize Puppeteer for web scraping to gather course and problem data from Pepcoding's archived content.
+- **frontend/**: The main web application, built with React and Parcel. Hosted at [diwakar-gupta.github.io/pepper/](https://diwakar-gupta.github.io/pepper/).
+- **judge/**: Local code execution backend supporting Java, Python, and C++. Run this locally to enable code execution from the frontend.
+- **scrapper/**: Tools for scraping course/problem data (optional for most users).
 
-## Features
+## Quick Start
 
-- **Courses**: Explore DSA courses categorized into different levels (1, 2, 3) with detailed modules.
-- **Problems**: Access a variety of DSA problems to practice and enhance your problem-solving abilities.
-- **Dynamic Content**: All course and problem data are stored as JSON files in the `public/Database` directory, ensuring easy access and scalability.
-- **Issue Tracking**: We keep track of missing content in our [issue tracker](https://github.com/Diwakar-Gupta/pepper/issues/1), allowing for continuous improvement and updates.
+1. **Clone the repository:**
+   ```bash
+   git clone git@github.com:Diwakar-Gupta/pepper.git
+   cd pepper
+   ```
+2. **Install frontend dependencies and run the web app:**
+   ```bash
+   cd frontend
+   yarn install
+   yarn start
+   # Visit http://localhost:1234/pepper/
+   ```
+3. **(Optional) Run the judge for local code execution:**
+   ```bash
+   cd ../judge
+   # Set up your Python environment, then:
+   python main.py
+   ```
 
-## Getting Started
+## Visit the Website
 
-To get started with Pepper locally:
+The production site is hosted at: [https://diwakar-gupta.github.io/pepper/](https://diwakar-gupta.github.io/pepper/)
 
-```bash
-git clone git@github.com:Diwakar-Gupta/pepper.git
-cd pepper
-yarn install
-yarn start
-```
+- For code execution, you must run the judge locally (see [judge/README.md](judge/README.md)).
 
-open `http://localhost:1234/pepper/` in any browser
+## Subproject READMEs
 
-## Deployment
-
-Pepper is currently hosted on GitHub Pages at [diwakar-gupta.github.io/pepper/](https://diwakar-gupta.github.io/pepper/), deployed using `gh-pages`.
-
-## Contributing
-
-We welcome contributions to Pepper! Whether it's adding missing content, improving code execution functionality, or fixing bugs, your contributions are valuable. Feel free to open pull requests or submit issues to help us make Pepper even better.
+- [frontend/README.md](frontend/README.md): Web app details, development, and deployment.
+- [judge/README.md](judge/README.md): Local code execution backend setup and usage.
 
 ## License
 
-This project is licensed under the [Apache License](LICENSE), so feel free to fork, modify, and distribute the code according to your needs.
-
-Happy learning!
+This project is licensed under the [Apache License](LICENSE).
