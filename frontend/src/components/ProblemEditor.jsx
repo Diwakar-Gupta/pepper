@@ -22,13 +22,10 @@ import "ace-builds/src-noconflict/theme-xcode";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCog } from "@fortawesome/free-solid-svg-icons";
 
-const languageOptions = ["java", "python"];
-
-const ProblemEditor = ({ code, setCode }) => {
+const ProblemEditor = ({ code, setCode, languages = [], selectedLanguage, setSelectedLanguage }) => {
   const [selectedTheme, setSelectedTheme] = useState("monokai");
   const [fontSize, setFontSize] = useState(14); // Initial font size
   const [showSettings, setShowSettings] = useState(false);
-  const [selectedLanguage, handleLanguageChange] = useState(languageOptions[0]);
 
   const themeOptions = [
     "chaos",
@@ -69,9 +66,9 @@ const ProblemEditor = ({ code, setCode }) => {
           name="languageSelector"
           className="p-2 border border-gray-300 rounded-md"
           value={selectedLanguage}
-          onChange={(e) => handleLanguageChange(e.target.value)}
+          onChange={(e) => setSelectedLanguage(e.target.value)}
         >
-          {languageOptions.map((lang) => (
+          {languages.map((lang) => (
             <option key={lang} value={lang}>
               {lang}
             </option>

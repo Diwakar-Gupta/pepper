@@ -1,4 +1,4 @@
-import url from "../constants";
+import {url} from "../constants";
 
 const getProblemDetails = async (problemSlug) => {
   try {
