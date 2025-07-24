@@ -11,7 +11,7 @@ const ProblemDetails = () => {
   const { problemSlug } = useParams();
   const [problem, setProblem] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [code, setCode] = useState("");
+  const [codeByLanguage, setCodeByLanguage] = useState({});
   const [languages, setLanguages] = useState([]);
   const [selectedLanguage, setSelectedLanguage] = useState("");
   const [runResult, setRunResult] = useState({ stdout: "", stderr: "" });
@@ -27,6 +27,34 @@ const ProblemDetails = () => {
     };
     fetchData();
   }, [problemSlug]);
+
+  // Set default code when language changes or on initial load
+  useEffect(() => {
+    if (selectedLanguage) {
+      // If code for this language doesn't exist, set default code
+      if (!codeByLanguage[selectedLanguage]) {
+        let defaultCode = "";
+        if (selectedLanguage.toLowerCase().includes("python")) {
+          defaultCode = 'print("Hello Pepper")';
+        } else if (selectedLanguage.toLowerCase().includes("java")) {
+          defaultCode = 'public class Main {\n    public static void main(String[] args) {\n        System.out.println("Hello Pepper");\n    }\n}';
+        } else if (
+          selectedLanguage.toLowerCase().includes("cpp") ||
+          selectedLanguage.toLowerCase().includes("c++")
+        ) {
+          defaultCode = '#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << "Hello Pepper" << endl;\n    return 0;\n}';
+        }
+        setCodeByLanguage((prev) => ({ ...prev, [selectedLanguage]: defaultCode }));
+      }
+    }
+  }, [selectedLanguage]);
+
+  // Helper to get current code
+  const code = codeByLanguage[selectedLanguage] || "";
+  // Helper to update code for current language
+  const setCode = (newCode) => {
+    setCodeByLanguage((prev) => ({ ...prev, [selectedLanguage]: newCode }));
+  };
 
   useEffect(() => {
     const fetchLanguages = async () => {
