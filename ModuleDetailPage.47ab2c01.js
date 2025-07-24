@@ -855,10 +855,9 @@ $RefreshReg$(_c, "ModuleDetail");
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _constants = require("../constants");
-var _constantsDefault = parcelHelpers.interopDefault(_constants);
 const getModuleDetails = async (courseSlug, moduleSlug)=>{
     try {
-        const response = await fetch(`${(0, _constantsDefault.default)}/database/courses/${courseSlug}/${moduleSlug}.json`);
+        const response = await fetch(`${(0, _constants.url)}/database/courses/${courseSlug}/${moduleSlug}.json`);
         if (!response.ok) throw new Error("Failed to fetch course details");
         const courseDetails = await response.json();
         return courseDetails;
@@ -872,10 +871,14 @@ exports.default = getModuleDetails;
 },{"../constants":"6Q7L8","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"6Q7L8":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "url", ()=>url);
 parcelHelpers.export(exports, "JUDGE_API_BASE_URL", ()=>JUDGE_API_BASE_URL);
 const url = "/pepper";
 const JUDGE_API_BASE_URL = "http://127.0.0.1:5050";
-exports.default = url;
+exports.default = {
+    url,
+    JUDGE_API_BASE_URL
+};
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jkpUs":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$9ec4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
