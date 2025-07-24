@@ -1,8 +1,0 @@
-{
-  "name": "Sort K-sorted Array",
-  "slug": "hashmap-and-heap-sort-k-sorted-array",
-  "description": "1. You are given a number n, representing the size of array a.\n2. You are given n numbers, representing elements of array a.\n3. The array is nearly sorted. Every element is at-max displaced k spots left or right to it's position in the sorted array. Hence it is being called k-sorted array.\n4. You are required to sort and print the sorted array.\n\nNote -> You can use at-max k extra space and nlogk time complexity.\nInput Format\nInput is managed for you\nOutput Format\nPrint the elements of sorted array in separate lines.\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 30\n0 <= n1, n2, .. n elements <= 100\n0 < k <= n\nSample Input\n9\n3\n2\n4\n1\n6\n5\n7\n9\n8\n3\n\nSample Output\n1\n2\n3\n4\n5\n6\n7\n8\n9\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/1I2uRpdbiK0?rel=0",
-  "solutionVideolink": ""
-}

@@ -1,8 +1,0 @@
-{
-  "name": "Count Digits In A Number",
-  "slug": "getting-started-count-digits-in-a-number",
-  "description": "1. You've to count the number of digits in a number.\n2. Take as input \"n\", the number for which the digits has to be counted.\n3. Print the digits in that number.\nInput Format\n\"n\" where n is any integer.\nOutput Format\n\"d\" where d is the number of digits in the number \"n\"\nQuestion Video\nCOMMENT\nConstraints\n1 <= n < 10^9\nSample Input\n65784383\n\nSample Output\n8\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/4wtESDtEBp4?rel=0",
-  "solutionVideolink": ""
-}

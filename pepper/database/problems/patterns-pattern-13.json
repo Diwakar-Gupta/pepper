@@ -1,8 +1,0 @@
-{
-  "name": "Pattern 13",
-  "slug": "patterns-pattern-13",
-  "description": "1. You are given a number n.\n2. You've to create a pattern as shown in output format\nInput Format\nA number n\nOutput Format\n\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 10\nSample Input\n5\n\nSample Output\n1\t\n1\t1\t\n1\t2\t1\t\n1\t3\t3\t1\t\n1\t4\t6\t4\t1\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/zAnV4KZ6uDk?rel=0",
-  "solutionVideolink": ""
-}

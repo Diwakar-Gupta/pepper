@@ -1,0 +1,11 @@
+{
+  "name": "Print Zigzag",
+  "slug": "introduction-to-recursion-print-zigzag",
+  "description": "1. Here are a few sets of inputs and outputs for your reference\nInput1 -> 1\nOutput1 -> 1 1 1\n\nInput2 -> 2\nOutput2 -> 2 1 1 1 2 1 1 1 2\n\nInput2 -> 3\nOutput3 -> 3 2 1 1 1 2 1 1 1 2 3 2 1 1 1 2 1 1 1 2 3\n\n2. Figure out the pattern and complete the recursive function pzz to achieve the above for any positive number n.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is.Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\nAs discussed in point 1 of description\n```\n\n### Constraints\n```\n1 <= n <= 10\n```\n\n### Sample Input\n```\n3\n```\n\n### Sample Output\n```\n3 2 1 1 1 2 1 1 1 2 3 2 1 1 1 2 1 1 1 2 3\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/R7qja_gZrvI?rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/R7qja_gZrvI?rel=0&loop=1&playlist=R7qja_gZrvI",
+  "codes": {
+    "java": "import java.io.*;\nimport java.util.*;\npublic class Main {\n    public static void main\n(String[] args) throws \nException {\n        // write your code \nhere\n    }\n    public static void pzz\n(int n){\n        \n    }\n}"
+  }
+}

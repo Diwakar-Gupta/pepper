@@ -1,8 +1,0 @@
-{
-  "name": "Balanced Brackets",
-  "slug": "stacks-and-queues-balanced-brackets",
-  "description": "1. You are given a string exp representing an expression.\n2. You are required to check if the expression is balanced i.e. closing brackets and opening brackets match up well.\n\ne.g.\n[(a + b) + {(c + d) * (e / f)}] -> true\n[(a + b) + {(c + d) * (e / f)]} -> false\n[(a + b) + {(c + d) * (e / f)} -> false\n([(a + b) + {(c + d) * (e / f)}] -> false\nInput Format\nA string str\nOutput Format\ntrue or false\nQuestion Video\nCOMMENT\nConstraints\n0 <= str.length <= 100\nSample Input\n[(a + b) + {(c + d) * (e / f)}]\n\nSample Output\ntrue\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/p-RbQyQevTQ?rel=0",
-  "solutionVideolink": ""
-}

@@ -1,0 +1,11 @@
+{
+  "name": "Print Kpc",
+  "slug": "recursion-on-the-way-up-print-kpc",
+  "description": "1. You are given a string str. The string str will contains numbers only, where each number stands for a key pressed on a mobile phone.\n2. The following list is the key to characters map\n    0 -> .;\n   1 -> abc\n   2 -> def\n   3 -> ghi\n   4 -> jkl\n   5 -> mno\n   6 -> pqrs\n   7 -> tu\n   8 -> vwx\n   9 -> yz\n3. Complete the body of printKPC function - without changing signature - to print the list of all words that could be produced by the keys in str.\nUse sample input and output to take idea about output.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA string str\n```\n\n### Output Format\n```\nWords that can be produced by pressed keys indictated by str in order hinted by Sample output\n```\n\n### Constraints\n```\n0 <= str.length <= 10\nstr contains numbers only\n```\n\n### Sample Input\n```\n78\n```\n\n### Sample Output\n```\ntv\ntw\ntx\nuv\nuw\nux\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/HVCajDe2Uus?rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/4yMtvToiJE0?rel=0&loop=1&playlist=4yMtvToiJE0",
+  "codes": {
+    "java": "im\npo\nrt \nja\nva\n.i\no.\n*;\nim\npo\nrt \nja\nva\n.u\nti\nl.\n*;\npu\nbl\nic \ncl\nas\ns \nMa\nin \n{\n  \n  \npu\nbl\nic \nst\nat\nic \nvo\nid \nma\nin\n(S\ntr\nin\ng[\n] \nar\ngs\n) \nth\nro\nws \nEx\nce\npt\nio\nn \n{"
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "name": "Largest Area Histogram",
-  "slug": "stacks-and-queues-largest-area-histogram",
-  "description": "1. You are given a number n, representing the size of array a.\n2. You are given n numbers, representing the height of bars in a bar chart.\n3. You are required to find and print the area of largest rectangle in the histogram.\n\ne.g.\nfor the array [6 2 5 4 5 1 6] -> 12\nInput Format\nInput is managed for you\nOutput Format\nA number representing area of largest rectangle in histogram\nQuestion Video\nCOMMENT\nConstraints\n0 <= n < 20\n0 <= a[i] <= 10\nSample Input\n7\n6\n2\n5\n4\n5\n1\n6\n\nSample Output\n12\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/m01ubOp-FMg?rel=0",
-  "solutionVideolink": ""
-}

@@ -1,8 +1,0 @@
-{
-  "name": "Merge K Sorted Lists",
-  "slug": "hashmap-and-heap-merge-k-sorted-lists",
-  "description": "1. You are given a list of lists, where each list is sorted.\n2. You are required to complete the body of mergeKSortedLists function. The function is expected to merge k sorted lists to create one sorted list.\nInput Format\nInput is managed for you\nOutput Format\nOutput is managed for you\nQuestion Video\nCOMMENT\nConstraints\nSpace complextiy = O(k)\nTime complexity = nlogk\nwhere k is the number of lists and n is number of elements across all lists.\nSample Input\n4\n5\n10 20 30 40 50\n7\n5 7 9 11 19 55 57\n3\n1 2 3\n2\n32 39\n\nSample Output\n1 2 3 5 7 9 10 11 19 20 30 32 39 40 50 55 57\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/k_3hDj23DuE?rel=0",
-  "solutionVideolink": ""
-}

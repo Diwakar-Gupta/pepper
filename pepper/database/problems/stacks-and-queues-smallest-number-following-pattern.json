@@ -1,8 +1,0 @@
-{
-  "name": "Smallest Number Following Pattern",
-  "slug": "stacks-and-queues-smallest-number-following-pattern",
-  "description": "1. You are given a pattern of upto 8 length containing characters 'i' and 'd'.\n2. 'd' stands for decreasing and 'i' stands for increasing\n3. You have to print the smallest number, using the digits 1 to 9 only without repetition, such that \nthe digit decreases following a d and increases follwing an i.\n\ne.g.\nd -> 21\ni -> 12\nddd -> 4321\niii -> 1234\ndddiddd -> 43218765\niiddd -> 126543\nInput Format\nInput is managed for you\nOutput Format\nSmallest sequence of digits (from 1 to 9) without duplicacy and following the pattern\nQuestion Video\nCOMMENT\nConstraints\n0 < str.length <= 8\nstr contains only 'd' and 'i'\nSample Input\nddddiiii\n\nSample Output\n543216789\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/4_0l-QydwzI?rel=0",
-  "solutionVideolink": ""
-}

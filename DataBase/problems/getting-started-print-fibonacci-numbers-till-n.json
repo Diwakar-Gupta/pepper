@@ -1,0 +1,11 @@
+{
+  "name": "Print Fibonacci Numbers Till N",
+  "slug": "getting-started-print-fibonacci-numbers-till-n",
+  "description": "1. You've to print first n fibonacci numbers.\n2. Take as input \"n\", the count of fibonacci numbers to print.\n3. Print first n fibonacci numbers.\n\n### Input Format\n```\nn\n```\n\n### Output Format\n```\n0\n1\n1\n2\n3\n5\n8\n.. first n fibonaccis\n```\n\n### Constraints\n```\n1 <= n < 40\n```\n\n### Sample Input\n```\n10\n```\n\n### Sample Output\n```\n0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/JbLEpRy_vTk?rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/P07sxSfcF40?rel=0&loop=1&playlist=P07sxSfcF40",
+  "codes": {
+    "java": ""
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Paint Fence",
+  "slug": "dynamic-programming-and-greedy-paint-fence",
+  "description": "1. You are given a number n and a number k in separate lines, representing the number of fences and number of colors.\n2. You are required to calculate and print the number of ways in which the fences could be painted so that not more than two consecutive  fences have same colors.\n\n### Input Format\n```\nA number n\nA number k\n```\n\n### Output Format\n```\nA number representing the number of ways in which the fences could be painted so that not more than two fences have same colors.\n```\n\n### Constraints\n```\n1 <= n <= 10\n1 <= k <= 10\n```\n\n### Sample Input\n```\n8\n3\n```\n\n### Sample Output\n```\n3672\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/ju8vrEAsa3Q?end=56&rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/ju8vrEAsa3Q?start=56&rel=0&loop=1&playlist=ju8vrEAsa3Q",
+  "codes": {
+    "java": "import java.io.*;\nimport java.util.*;\npublic class Main {\n    public static void main\n(String[] args) throws \nException {\n    }\n}"
+  }
+}

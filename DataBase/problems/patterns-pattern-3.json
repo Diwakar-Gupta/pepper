@@ -1,0 +1,11 @@
+{
+  "name": "Pattern 3",
+  "slug": "patterns-pattern-3",
+  "description": "1. You are given a number n.\n2. You've to create a pattern of * and separated by tab as shown in output format.\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\n\n```\n\n### Constraints\n```\n1 <= n <= 10\n```\n\n### Sample Input\n```\n5\n```\n\n### Sample Output\n```\n*\t\n\t\t\t*\t*\t\n\t\t*\t*\t*\t\n\t*\t*\t*\t*\t\n*\t*\t*\t*\t*\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/ArnoqgUbN8I?rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/4QJQOVswBIc?rel=0&loop=1&playlist=4QJQOVswBIc",
+  "codes": {
+    "java": ""
+  }
+}

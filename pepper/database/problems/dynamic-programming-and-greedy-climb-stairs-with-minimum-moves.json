@@ -1,8 +1,0 @@
-{
-  "name": "Climb Stairs With Minimum Moves",
-  "slug": "dynamic-programming-and-greedy-climb-stairs-with-minimum-moves",
-  "description": "1. You are given a number n, representing the number of stairs in a staircase.\n2. You are on the 0th step and are required to climb to the top.\n3. You are given n numbers, where ith element's value represents - till how far from the step you \n     could jump to in a single move.  You can of-course fewer number of steps in the move.\n4. You are required to print the number of minimum moves in which you can reach the top of \n     staircase.\nNote -> If there is no path through the staircase print null.\nInput Format\nA number n\n.. n more elements\nOutput Format\nA number representing the number of ways to climb the stairs from 0 to top.\nQuestion Video\nCOMMENT\nConstraints\n0 <= n <= 20\n0 <= n1, n2, .. <= 20\nSample Input\n10\n3\n3\n0\n2\n1\n2\n4\n2\n0\n0\n\nSample Output\n4\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/d42uDPBOXSw?rel=0",
-  "solutionVideolink": ""
-}

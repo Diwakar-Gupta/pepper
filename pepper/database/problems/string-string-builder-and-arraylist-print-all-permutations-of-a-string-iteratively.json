@@ -1,8 +1,0 @@
-{
-  "name": "Print All Permutations Of A String Iteratively",
-  "slug": "string-string-builder-and-arraylist-print-all-permutations-of-a-string-iteratively",
-  "description": "Input Format\nA String\nOutput Format\nAll permutations of the given string(one in a line).\nQuestion Video\nCOMMENT\nConstraints\n1 <= length of string <= 15\nSample Input\nabc\n\nSample Output\nabc\nbac\ncab\nacb\nbca\ncba\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/39SKIuA-ieY?end=286&rel=0",
-  "solutionVideolink": ""
-}

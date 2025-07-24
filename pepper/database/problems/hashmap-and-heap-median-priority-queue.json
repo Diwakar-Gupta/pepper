@@ -1,8 +1,0 @@
-{
-  "name": "Median Priority Queue",
-  "slug": "hashmap-and-heap-median-priority-queue",
-  "description": "1. You are required to complete the code of our MedianPriorityQueue class. The class should mimic the behaviour of a PriorityQueue and give highest priority to median of it's data.\n2. Here is the list of functions that you are supposed to complete\n2.1. add -> Should accept new data.\n2.2. remove -> Should remove and return median value, if available or print \"Underflow\" otherwise and return -1\n2.3. peek -> Should return median value, if available or print \"Underflow\" otherwise and return -1\n2.4. size -> Should return the number of elements available\n3. Input and Output is managed for you.\n\nNote -> If there are even number of elements in the MedianPriorityQueue, consider the smaller median as median value.\nInput Format\nInput is managed for you\nOutput Format\nOutput is managed for you\nQuestion Video\nCOMMENT\nConstraints\nNone\nSample Input\nadd 10\nadd 20\nadd 30\nadd 40\npeek\nadd 50\npeek\nremove\npeek\nremove\npeek\nremove\npeek\nremove\npeek\nquit\n\nSample Output\n20\n30\n30\n20\n20\n40\n40\n10\n10\n50\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/3k7tAOLBhK0?rel=0",
-  "solutionVideolink": ""
-}

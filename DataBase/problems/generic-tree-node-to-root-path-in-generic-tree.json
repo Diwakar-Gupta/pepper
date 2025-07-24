@@ -1,0 +1,11 @@
+{
+  "name": "Node To Root Path In Generic Tree",
+  "slug": "generic-tree-node-to-root-path-in-generic-tree",
+  "description": "1. You are given a partially written GenericTree class.\n2. You are required to complete the body of nodeToRootPath function. The function is expected to return in form of linked list the path from element to root, if the element with data is found.\n3. Input and Output is managed for you.\n\n### Input Format\n```\nInput is managed for you\n```\n\n### Output Format\n```\nOutput is managed for you\n```\n\n### Constraints\n```\nNone\n```\n\n### Sample Input\n```\n24\n10 20 50 -1 60 -1 -1 30 70 -1 80 110 -1 120 -1 -1 90 -1 -1 40 100 -1 -1 -1\n120\n```\n\n### Sample Output\n```\n[120, 80, 30, 10]\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/5r6yB_muOj4?rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/oEBwL5pHzTs?rel=0&loop=1&playlist=oEBwL5pHzTs",
+  "codes": {
+    "java": ""
+  }
+}

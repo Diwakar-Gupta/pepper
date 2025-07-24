@@ -1,0 +1,11 @@
+{
+  "name": "Pattern 19",
+  "slug": "patterns-pattern-19",
+  "description": "1. You are given a number n.\n      2. You've to write code to print the pattern given in output format below\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\n\n```\n\n### Constraints\n```\n1 <= n <= 10\n Also, n is odd.\n```\n\n### Sample Input\n```\n3\n```\n\n### Sample Output\n```\n*\t*\t*\t\n*\t*\t*\t\n*\t*\t*\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/9KlKv54QI9c?rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/SHaqp8vqzxg?rel=0&loop=1&playlist=SHaqp8vqzxg",
+  "codes": {
+    "java": ""
+  }
+}

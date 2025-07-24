@@ -1,8 +1,0 @@
-{
-  "name": "Last Index",
-  "slug": "recursion-in-arrays-last-index",
-  "description": "1. You are given a number n, representing the count of elements.\n2. You are given n numbers.\n3. You are given a number x. \n4. You are required to find the last index at which x occurs in array a.\n5. If x exists in array, print the last index where it is found otherwise print -1.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\nInput Format\nA number n\nn1\nn2\n.. n number of elements\nA number x\nOutput Format\nA number representing last index of occurence of x in array a or -1 if not found at all.\nQuestion Video\nCOMMENT\nConstraints\n1 <= n <= 10^4\n0 <= n1, n2, .. n elements <= 10 ^ 3\n0 <= x <= 10 ^ 3\nSample Input\n6\n15\n11\n40\n4\n4\n9\n4\n\nSample Output\n4\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/qr984qKJf4Y?rel=0",
-  "solutionVideolink": ""
-}

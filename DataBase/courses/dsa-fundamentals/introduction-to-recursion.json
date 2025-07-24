@@ -1,0 +1,42 @@
+[
+  {
+    "type": "Code",
+    "slug": "introduction-to-recursion-print-decreasing",
+    "name": "Print Decreasing"
+  },
+  {
+    "type": "Code",
+    "slug": "introduction-to-recursion-print-increasing",
+    "name": "Print Increasing"
+  },
+  {
+    "type": "Code",
+    "slug": "introduction-to-recursion-print-increasing-decreasing",
+    "name": "Print Increasing Decreasing"
+  },
+  {
+    "type": "Code",
+    "slug": "introduction-to-recursion-factorial",
+    "name": "Factorial"
+  },
+  {
+    "type": "Code",
+    "slug": "introduction-to-recursion-power-linear",
+    "name": "Power-linear"
+  },
+  {
+    "type": "Code",
+    "slug": "introduction-to-recursion-power-logarithmic",
+    "name": "Power-logarithmic"
+  },
+  {
+    "type": "Code",
+    "slug": "introduction-to-recursion-print-zigzag",
+    "name": "Print Zigzag"
+  },
+  {
+    "type": "Code",
+    "slug": "introduction-to-recursion-tower-of-hanoi",
+    "name": "Tower Of Hanoi"
+  }
+]

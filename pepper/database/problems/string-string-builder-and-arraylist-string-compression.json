@@ -1,8 +1,0 @@
-{
-  "name": "String Compression",
-  "slug": "string-string-builder-and-arraylist-string-compression",
-  "description": "Input Format\nA String\nOutput Format\nTwo strings representing first compressed string and second compressed string respectively.\nQuestion Video\nCOMMENT\nConstraints\n1 <= length of string <= 1000\nSample Input\nwwwwaaadexxxxxx\n\nSample Output\nwadex\nw4a3dex6\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/6W1MDK7nPZs?end=61&rel=0",
-  "solutionVideolink": ""
-}

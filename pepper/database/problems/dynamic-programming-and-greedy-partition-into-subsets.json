@@ -1,8 +1,0 @@
-{
-  "name": "Partition Into Subsets",
-  "slug": "dynamic-programming-and-greedy-partition-into-subsets",
-  "description": "1. You are given a number n, representing the number of elements.\n2. You are given a number k, representing the number of subsets.\n3. You are required to print the number of ways in which these elements can be partitioned in k non-empty subsets.\nE.g.\nFor n = 4 and k = 3 total ways is 6\n12-3-4\n1-23-4\n13-2-4\n14-2-3\n1-24-3\n1-2-34\nInput Format\nA number n\nA number k\nOutput Format\nA number representing the number of ways in which these elements can be partitioned in k non-empty subsets.\nQuestion Video\nCOMMENT\nConstraints\n0 <= n <= 20\n0 <= k <= n\nSample Input\n4\n3\n\nSample Output\n6\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/IiAsqfjhZnY?end=99&rel=0",
-  "solutionVideolink": ""
-}

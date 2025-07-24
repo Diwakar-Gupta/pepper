@@ -1,8 +1,0 @@
-{
-  "name": "Get Common Elements - 1",
-  "slug": "hashmap-and-heap-get-common-elements-1",
-  "description": "1. You are given a number n1, representing the size of array a1.\n2. You are given n1 numbers, representing elements of array a1.\n3. You are given a number n2, representing the size of array a2.\n4. You are given n2 numbers, representing elements of array a2.\n5. You are required to print all elements of a2 which are also present in a1 (in order of their occurence in a2). Make sure to not print duplicates (a2 may have same value present many times).\nInput Format\nA number n1\nn1 number of elements line separated\nA number n2\nn2 number of elements line separated\nOutput Format\nAll relevant elements of a2 in separate lines (no duplicacy)\nQuestion Video\nCOMMENT\nConstraints\n1 <= n1, n2 <= 100\n0 <= a1[i], a2[i] < 10\nTime complexity should be O(n)\nSample Input\n9\n5\n5\n9\n8\n5\n5\n8\n0\n3\n18\n9\n7\n1\n0\n3\n6\n5\n9\n1\n1\n8\n0\n2\n4\n2\n9\n1\n5\n\nSample Output\n9\n0\n3\n5\n8\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/KruULhITtk4?rel=0",
-  "solutionVideolink": ""
-}

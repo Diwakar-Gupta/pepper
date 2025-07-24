@@ -1,8 +1,0 @@
-{
-  "name": "Sliding Window Maximum",
-  "slug": "stacks-and-queues-sliding-window-maximum",
-  "description": "1. You are given a number n, representing the size of array a.\n2. You are given n numbers, representing the elements of array a.\n3. You are given a number k, representing the size of window.\n4. You are required to find and print the maximum element in every window of size k.\n\ne.g.\nfor the array [2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6] and k = 4, the answer is [9 9 8 12 12 14 14 32 32 32 32 19 19 19]\nInput Format\nInput is managed for you\nOutput Format\nMaximum of each window in separate line\nQuestion Video\nCOMMENT\nConstraints\n0 <= n < 100000\n-10^9 <= a[i] <= 10^9\n0 < k < n\nSample Input\n17\n2\n9\n3\n8\n1\n7\n12\n6\n14\n4\n32\n0\n7\n19\n8\n12\n6\n4\n\nSample Output\n9\n9\n8\n12\n12\n14\n14\n32\n32\n32\n32\n19\n19\n19\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/nKXUyUC3BNA?rel=0",
-  "solutionVideolink": ""
-}

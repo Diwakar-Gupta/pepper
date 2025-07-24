@@ -1,8 +1,0 @@
-{
-  "name": "Rotate A Number",
-  "slug": "getting-started-rotate-a-number",
-  "description": "1. You are given two numbers n and k. You are required to rotate n, k times to the right. If k is positive, rotate to the right i.e. remove rightmost digit and make it leftmost. Do the reverse for negative value of k. Also k can have an absolute value larger than number of digits in n.\n2. Take as input n and k.\n3. Print the rotated number.\n4. Note - Assume that the number of rotations will not cause leading 0's in the result. e.g. such an input will not be given\n   n = 12340056\n   k = 3\n   r = 05612340\nInput Format\n\"n\" where n is any integer.\n\"K\" where k is any integer.\nOutput Format\n\"r\", the rotated number\nQuestion Video\nCOMMENT\nConstraints\n1 <= n < 10^9\n-10^9 < k < 10^9\nSample Input\n562984\n2\n\nSample Output\n845629\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/ysMHtDIlU0c?rel=0",
-  "solutionVideolink": ""
-}

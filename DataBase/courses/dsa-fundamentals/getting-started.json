@@ -1,0 +1,72 @@
+[
+  {
+    "type": "Code",
+    "slug": "getting-started-print-z",
+    "name": "Print Z"
+  },
+  {
+    "type": "Code",
+    "slug": "getting-started-grading-system",
+    "name": "Grading System"
+  },
+  {
+    "type": "Code",
+    "slug": "is-a-number-prime-easy",
+    "name": "Is A Number Prime Easy"
+  },
+  {
+    "type": "Code",
+    "slug": "getting-started-print-all-primes-till-n",
+    "name": "Print All Primes Till N"
+  },
+  {
+    "type": "Code",
+    "slug": "getting-started-print-fibonacci-numbers-till-n",
+    "name": "Print Fibonacci Numbers Till N"
+  },
+  {
+    "type": "Code",
+    "slug": "getting-started-count-digits-in-a-number",
+    "name": "Count Digits In A Number"
+  },
+  {
+    "type": "Code",
+    "slug": "digits-of-a-number-easy",
+    "name": "Digits Of A Number Easy"
+  },
+  {
+    "type": "Code",
+    "slug": "getting-started-reverse-a-number",
+    "name": "Reverse A Number"
+  },
+  {
+    "type": "Code",
+    "slug": "getting-started-inverse-of-a-number",
+    "name": "Inverse Of A Number"
+  },
+  {
+    "type": "Code",
+    "slug": "getting-started-rotate-a-number",
+    "name": "Rotate A Number"
+  },
+  {
+    "type": "Code",
+    "slug": "getting-started-gcd-and-lcm",
+    "name": "Gcd And Lcm"
+  },
+  {
+    "type": "Code",
+    "slug": "prime-factorisation-of-a-number-easy",
+    "name": "Prime Factorisation Of A Number Easy"
+  },
+  {
+    "type": "Code",
+    "slug": "pythagorean-triplet-easy",
+    "name": "Pythagorean Triplet Easy"
+  },
+  {
+    "type": "Code",
+    "slug": "getting-started-the-curious-case-of-benjamin-bulbs",
+    "name": "The Curious Case Of Benjamin Bulbs"
+  }
+]

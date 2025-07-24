@@ -1,8 +1,0 @@
-{
-  "name": "Replace With Sum Of Larger",
-  "slug": "binary-search-tree-replace-with-sum-of-larger",
-  "description": "1. You are given a partially written BST class.\n2. You are required to complete the body of rwsol function. \"rwsol\" function is expected to replace a node's value with sum of all nodes greater than it.\n3. Input and Output is managed for you. \n\nNote -> Please watch the question video for clarity. Use the statis sum data member to complete your code.\nInput Format\nInput is managed for you\nOutput Format\nOutput is managed for you\nQuestion Video\nCOMMENT\nConstraints\nNone\nSample Input\n15\n50 25 12 n n 37 n n 75 62 n n 87 n n\n\nSample Output\n311 <- 224 -> 87\n336 <- 311 -> 274\n. <- 336 -> .\n. <- 274 -> .\n162 <- 87 -> 0\n. <- 162 -> .\n. <- 0 -> .\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/0lMnG_9wcsU?rel=0",
-  "solutionVideolink": ""
-}

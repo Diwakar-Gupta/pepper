@@ -1,0 +1,11 @@
+{
+  "name": "Dynamic Stack",
+  "slug": "stacks-and-queues-dynamic-stack",
+  "description": "1. You are given the code of our CustomStack class which mimics the java.util.Stack class.\n2. Here is the list of functions that are written in the class...\n    2.1. push -> Accepts new data if there is space available in the underlying array or \n     print \"Stack overflow\" otherwise\n     2.2. pop -> Removes and returns last data if available or print \"Stack underflow\" \n     otherwise and returns -1\n     2.3. top -> Return last data if available or print \"Stack underflow\" otherwise and \n      returns -1\n     2.4. size -> Returns the number of elements available in the stack\n     2.5. display -> Print the elements of stack in LIFO manner (space-separated) \n     ending with a line-break.\n3. Input and Output are managed for you.\n4. You are required to change the body of push function to accept the element even when the data array is completely full. In that case, you are required to reallocate the data array (to twice it's size). You should not print \"Stack overflow\" ever.\n\n### Input Format\n```\nInput is managed for you\n```\n\n### Output Format\n```\nOutput is managed for you\n```\n\n### Constraints\n```\nNone\n```\n\n### Sample Input\n```\n5\npush 10\ndisplay\npush 20\ndisplay\npush 30\ndisplay\npush 40\ndisplay\npush 50\ndisplay\npush 60\ndisplay\ntop\npop\ndisplay\ntop\npop\ndisplay\ntop\npop\ndisplay\ntop\npop\ndisplay\ntop\npop\ndisplay\ntop\npop\nquit\n```\n\n### Sample Output\n```\n10 \n20 10 \n30 20 10 \n40 30 20 10 \n50 40 30 20 10 \n60 50 40 30 20 10 \n60\n60\n50 40 30 20 10 \n50\n50\n40 30 20 10 \n40\n40\n30 20 10 \n30\n30\n20 10 \n20\n20\n10 \n10\n10\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/DaKNuSxraS4?rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/WuykwrJtZw8?rel=0&loop=1&playlist=WuykwrJtZw8",
+  "codes": {
+    "java": "im\npo\nrt \nja\nva\n.i\no.\n*;\nim\npo\nrt \nja\nva\n.u\nti\nl.\n*;\npu\nbl\nic \ncl\nas\ns \nMa\nin \n{\n  \npu\nbl\nic \nst\nat\nic \ncl\nas\ns \nCu\nst\nom\nSt\nac\nk \n{"
+  }
+}

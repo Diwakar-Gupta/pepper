@@ -1,0 +1,122 @@
+[
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-duplicate-brackets",
+    "name": "Duplicate Brackets"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-balanced-brackets",
+    "name": "Balanced Brackets"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-next-greater-element-to-the-right",
+    "name": "Next Greater Element To The Right"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-stock-span",
+    "name": "Stock Span"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-largest-area-histogram",
+    "name": "Largest Area Histogram"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-sliding-window-maximum",
+    "name": "Sliding Window Maximum"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-infix-evaluation",
+    "name": "Infix Evaluation"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-infix-conversions",
+    "name": "Infix Conversions"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-postfix-evaluation-and-conversions",
+    "name": "Postfix Evaluation And Conversions"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-prefix-evaluation-and-conversions",
+    "name": "Prefix Evaluation And Conversions"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-celebrity-problem",
+    "name": "Celebrity Problem"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-merge-overlapping-interval",
+    "name": "Merge Overlapping Interval"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-smallest-number-following-pattern",
+    "name": "Smallest Number Following Pattern"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-normal-stack",
+    "name": "Normal Stack"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-dynamic-stack",
+    "name": "Dynamic Stack"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-minimum-stack-i",
+    "name": "Minimum Stack - I"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-minimum-stack-constant-space",
+    "name": "Minimum Stack - Constant Space"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-normal-queue",
+    "name": "Normal Queue"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-dynamic-queue",
+    "name": "Dynamic Queue"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-queue-to-stack-adapter-push-efficient",
+    "name": "Queue To Stack Adapter - Push Efficient"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-queue-to-stack-adapter-pop-efficient",
+    "name": "Queue To Stack Adapter - Pop Efficient"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-stack-to-queue-adapter-add-efficient",
+    "name": "Stack To Queue Adapter - Add Efficient"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-stack-to-queue-adapter-remove-efficient",
+    "name": "Stack To Queue Adapter - Remove Efficient"
+  },
+  {
+    "type": "Code",
+    "slug": "stacks-and-queues-two-stacks-in-an-array",
+    "name": "Two Stacks In An Array"
+  }
+]

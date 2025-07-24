@@ -1,8 +1,0 @@
-{
-  "name": "Factorial",
-  "slug": "introduction-to-recursion-factorial",
-  "description": "1. You are given a number n.\n2. You are required to calculate the factorial of the number. Don't change the signature of factorial function.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is.Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\nInput Format\nA number n\nOutput Format\nfactorial of n\nQuestion Video\nCOMMENT\nConstraints\n0 <= n <= 10\nSample Input\n5\n\nSample Output\n120\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/zEwwEQi9FAc?rel=0",
-  "solutionVideolink": ""
-}

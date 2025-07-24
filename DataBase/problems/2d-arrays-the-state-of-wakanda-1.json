@@ -1,0 +1,11 @@
+{
+  "name": "The State Of Wakanda - 1",
+  "slug": "2d-arrays-the-state-of-wakanda-1",
+  "description": "The historic state of Wakanda has various monuments and souvenirs which are visited by many travelers every day. The guides follow a prescribed route of visiting the monuments which improve them understand the relevance of each monument. \n\nThe route of the monument is fixed and expressed in a 2-d matrix where the travelers visit the prescribed next monument. For example\n\n1  2  3\n4  5  6\n7  8  9\n\nis the prescribed route and the visitors travels this path: 1->2->3->4->5->6->7->8->9\n\nHowever, a certain visitor decides to travel a different path as follows: \n1. He first travels southwards till no further south places are available.\n2. He then moves only 1 place eastwards.\n3. He starts to move again towards north till any further north moves are available. \nThis continues till all the places are covered. \n\nFor example, the monuments are named as follows:\n1  2  3\n4  5  6\n7  8  9\n\nPath followed by traveler: 1->4->7->8->5->2->3->6->9\n\nYou are required to print the path that this traveler follows to visit all places.\n\n\n1. You will be given a number n, representing the number of rows.\n2. You will be given a number m, representing the number of columns.\n3. You will be given n*m numbers, representing elements of 2d arrays.\n\nNote - Please check the output format for details.\n\n### Input Format\n```\nA number n\nA number m\ne11\ne12..\ne21\ne22..\n.. n * m number of elements\n```\n\n### Output Format\n```\ne11\ne12\ne13\n..\ne1n\ne2n\ne2n-1\n..\ne21\ne31\ne32\n..\ne3n\ne4n ..\n```\n\n### Constraints\n```\n1 <= n <= 10^2\n1 <= m <= 10^2\n-10^9 <= e1, e2, .. n * m elements <= 10^9\n```\n\n### Sample Input\n```\n3\n4\n11\n12\n13\n14\n21\n22\n23\n24\n31\n32\n33\n34\n```\n\n### Sample Output\n```\n11\n21\n31\n32\n22\n12\n13\n23\n33\n34\n24\n14\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "https://www.youtube.com/embed/nUUc9DKTBdY?rel=0",
+  "solutionVideolink": "https://www.youtube.com/embed/_olQ9Rrnm_c?rel=0&loop=1&playlist=_olQ9Rrnm_c",
+  "codes": {
+    "java": "im\npo\nrt \nja\nva\n.i\no.\n*;\nim\npo\nrt \nja\nva\n.u\nti\nl.\n*;\npu\nbl\nic \ncl\nas\ns \nMa\nin\n{\npu\nbl\nic \nst\nat\nic \nvo\nid \nma\nin\n(S\ntr\nin\ng[\n] \nar\ngs\n) \nth\nro\nws \nEx\nce\npt\nio\nn \n{"
+  }
+}

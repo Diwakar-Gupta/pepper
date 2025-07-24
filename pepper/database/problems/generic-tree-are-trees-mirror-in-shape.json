@@ -1,8 +1,0 @@
-{
-  "name": "Are Trees Mirror In Shape",
-  "slug": "generic-tree-are-trees-mirror-in-shape",
-  "description": "1. You are given a partially written GenericTree class.\n2. You are required to complete the body of areMirror function. The function is expected to check if the two trees passed to it are mirror images of each other in shape (data not to be checked, just the shape of tree).\nNote -> Watch the question video for clarity.\n3. Input and Output is managed for you.\nInput Format\nInput is managed for you\nOutput Format\nOutput is managed for you\nQuestion Video\nCOMMENT\nConstraints\nNone\nSample Input\n12\n10 20 -1 30 50 -1 60 -1 -1 40 -1 -1\n12\n100 200 -1 300 500 -1 600 -1 -1 400 -1 -1\n\nSample Output\ntrue\n\n\n\nEditorial\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/GfEQs3qhMws?rel=0",
-  "solutionVideolink": ""
-}

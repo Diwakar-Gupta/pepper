@@ -1,0 +1,52 @@
+[
+  {
+    "type": "Code",
+    "slug": "hashmap-and-heap-highest-frequency-character",
+    "name": "Highest Frequency Character"
+  },
+  {
+    "type": "Code",
+    "slug": "hashmap-and-heap-get-common-elements-1",
+    "name": "Get Common Elements - 1"
+  },
+  {
+    "type": "Code",
+    "slug": "hashmap-and-heap-get-common-elements-2",
+    "name": "Get Common Elements - 2"
+  },
+  {
+    "type": "Code",
+    "slug": "hashmap-and-heap-longest-consecutive-sequence-of-elements",
+    "name": "Longest Consecutive Sequence Of Elements"
+  },
+  {
+    "type": "Code",
+    "slug": "hashmap-and-heap-k-largest-elements",
+    "name": "K Largest Elements"
+  },
+  {
+    "type": "Code",
+    "slug": "hashmap-and-heap-sort-k-sorted-array",
+    "name": "Sort K-sorted Array"
+  },
+  {
+    "type": "Code",
+    "slug": "hashmap-and-heap-median-priority-queue",
+    "name": "Median Priority Queue"
+  },
+  {
+    "type": "Code",
+    "slug": "hashmap-and-heap-merge-k-sorted-lists",
+    "name": "Merge K Sorted Lists"
+  },
+  {
+    "type": "Code",
+    "slug": "hashmap-and-heap-write-priority-queue-using-heap",
+    "name": "Write Priority Queue Using Heap"
+  },
+  {
+    "type": "Code",
+    "slug": "hashmap-and-heap-write-hashmap",
+    "name": "Write Hashmap"
+  }
+]

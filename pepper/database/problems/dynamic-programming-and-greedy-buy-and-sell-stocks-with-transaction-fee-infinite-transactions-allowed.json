@@ -1,8 +1,0 @@
-{
-  "name": "Buy And Sell Stocks With Transaction Fee - Infinite Transactions Allowed",
-  "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-with-transaction-fee-infinite-transactions-allowed",
-  "description": "1. You are given a number n, representing the number of days.\n2. You are given n numbers, where ith number represents price of stock on ith day.\n3. You are give a number fee, representing the transaction fee for every transaction.\n4. You are required to print the maximum profit you can make if you are allowed infinite transactions, but has to pay \"fee\" for every closed transaction.\nNote - There can be no overlapping transaction. One transaction needs to be closed (a buy followed by a sell) before opening another transaction (another buy).\nInput Format\nA number n\n.. n more elements\nA number fee\nOutput Format\nA number representing the maximum profit you can make if you are allowed infinite transactions with transaction fee.\nQuestion Video\nCOMMENT\nConstraints\n0 <= n <= 20\n0 <= n1, n2, .. <= 10\n0 <= fee <= 5\nSample Input\n12\n10\n15\n17\n20\n16\n18\n22\n20\n22\n20\n23\n25\n3\n\nSample Output\n13\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/pTQB9wbIpfU?end=85&rel=0",
-  "solutionVideolink": ""
-}

@@ -1,8 +1,0 @@
-{
-  "name": "Count Encodings",
-  "slug": "dynamic-programming-and-greedy-count-encodings",
-  "description": "1. You are given a string str of digits. (will never start with a 0)\n2. You are required to encode the str as per following rules\n    1 -> a\n    2 -> b\n    3 -> c\n    ..\n    25 -> y\n    26 -> z\n3. You are required to calculate and print the count of encodings for the string str.\n\n     For 123 -> there are 3 encodings. abc, aw, lc\n     For 993 -> there is 1 encoding. iic \n     For 013 -> This is an invalid input. A string starting with 0 will not be passed.\n     For 103 -> there is 1 encoding. jc\n     For 303 -> there are 0 encodings. But such a string maybe passed. In this case \n     print 0.\nInput Format\nA string str\nOutput Format\ncount of encodings\nQuestion Video\nCOMMENT\nConstraints\n0 < str.length <= 10\nSample Input\n123\n\nSample Output\n3\n\n\n\nAsked in Companies\nRelated Topics\n\n\nDo you need more personalize experience while solving question along with doubt support.\n\nBUY NOW\n\n\n\n\n\n\n\n",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/jFZmBQ569So?end=51&rel=0",
-  "solutionVideolink": ""
-}

@@ -1,0 +1,127 @@
+[
+  {
+    "type": "Code",
+    "slug": "linked-lists-add-last-in-linked-list",
+    "name": "Add Last In Linked List"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-display-a-linkedlist",
+    "name": "Display A Linkedlist"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-remove-first-in-linkedlist",
+    "name": "Remove First In Linkedlist"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-get-value-in-linked-list",
+    "name": "Get Value In Linked List"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-add-first-in-linked-list",
+    "name": "Add First In Linked List"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-add-at-index-in-linked-list",
+    "name": "Add At Index In Linked List"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-remove-last-in-linked-list",
+    "name": "Remove Last In Linked List"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-remove-at-index-in-linked-list",
+    "name": "Remove At Index In Linked List"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-reverse-a-linked-list-data-iterative-",
+    "name": "Reverse A Linked List (data Iterative)"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-reverse-linked-list-pointer-iterative-",
+    "name": "Reverse Linked List (pointer Iterative)"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-linked-list-to-stack-adapter",
+    "name": "Linked List To Stack Adapter"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-linked-list-to-queue-adapter",
+    "name": "Linked List To Queue Adapter"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-kth-node-from-end-of-linked-list",
+    "name": "Kth Node From End Of Linked List"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-mid-of-linked-list",
+    "name": "Mid Of Linked List"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-merge-two-sorted-linked-lists",
+    "name": "Merge Two Sorted Linked Lists"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-merge-sort-a-linked-list",
+    "name": "Merge Sort A Linked List"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-remove-duplicates-in-a-sorted-linked-list",
+    "name": "Remove Duplicates In A Sorted Linked List"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-odd-even-linked-list",
+    "name": "Odd Even Linked List"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-k-reverse-in-linked-list",
+    "name": "K Reverse In Linked List"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-display-reverse-recursive-linked-list",
+    "name": "Display Reverse (recursive) - Linked List"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-reverse-linked-list-pointer-recursive-",
+    "name": "Reverse Linked List (pointer - Recursive)"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-is-linked-list-a-palindrome-",
+    "name": "Is Linked List A Palindrome?"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-fold-a-linked-list",
+    "name": "Fold A Linked List"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-add-two-linked-lists",
+    "name": "Add Two Linked Lists"
+  },
+  {
+    "type": "Code",
+    "slug": "linked-lists-intersection-point-of-linked-lists",
+    "name": "Intersection Point Of Linked Lists"
+  }
+]
