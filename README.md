@@ -1,12 +1,25 @@
 # Pepper: DSA Learning Platform
 
-Welcome to Pepper, a static DSA learning platform inspired by Pepcoding. Pepper aims to provide quality educational materials for learning Data Structures and Algorithms.
+**Pepper** is a static Data Structures and Algorithms (DSA) learning platform inspired by Pepcoding. It provides high-quality educational content and supports local code execution for hands-on practice.
+
+## How It Works
+
+1. Go to the website:  
+   👉 [https://diwakar-gupta.github.io/pepper/](https://diwakar-gupta.github.io/pepper/)
+
+2. To run code from the browser, you need to set up the **judge** on your computer.
+
+3. Follow the steps in [`judge/README.md`](judge/README.md) to install and run it.
+
+Once the judge is running, the website will automatically detect it and let you run or submit code.
+
+---
 
 ## Repository Structure
 
-- **frontend/**: The main web application, built with React and Parcel. Hosted at [diwakar-gupta.github.io/pepper/](https://diwakar-gupta.github.io/pepper/).
-- **judge/**: Local code execution backend supporting Java, Python, and C++. Run this locally to enable code execution from the frontend.
-- **scrapper/**: Tools for scraping course/problem data (optional for most users).
+- **frontend/** – The main web application, built with React and Parcel. Hosted at [diwakar-gupta.github.io/pepper](https://diwakar-gupta.github.io/pepper/).
+- **judge/** – Local code execution backend supporting Java, Python, and C++. You **must run this locally** to enable code execution from the frontend.
+- **scrapper/** – Tools for scraping course/problem data. Optional and used primarily for development or content updates.
 
 ## Quick Start
 
@@ -16,24 +29,9 @@ Welcome to Pepper, a static DSA learning platform inspired by Pepcoding. Pepper 
    cd pepper
    ```
 2. **Install frontend dependencies and run the web app:**
-   ```bash
-   cd frontend
-   yarn install
-   yarn start
-   # Visit http://localhost:1234/pepper/
-   ```
-3. **(Optional) Run the judge for local code execution:**
-   ```bash
-   cd ../judge
-   # Set up your Python environment, then:
-   python main.py
-   ```
-
-## Visit the Website
-
-The production site is hosted at: [https://diwakar-gupta.github.io/pepper/](https://diwakar-gupta.github.io/pepper/)
-
-- For code execution, you must run the judge locally (see [judge/README.md](judge/README.md)).
+Follow the steps in [`frontend/README.md`](frontend/README.md) to install and run it.
+3. **Run the judge for local code execution:**
+Follow the steps in [`judge/README.md`](judge/README.md) to install and run it.
 
 ## Subproject READMEs
 
