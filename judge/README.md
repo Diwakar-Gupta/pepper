@@ -13,13 +13,6 @@
    curl -O https://raw.githubusercontent.com/Diwakar-Gupta/pepper/main/judge/requirements.txt
    ```
 
-   Or using wget:
-   ```bash
-   mkdir pepper-judge && cd pepper-judge
-
-   wget https://raw.githubusercontent.com/Diwakar-Gupta/pepper/main/judge/main.py
-   wget https://raw.githubusercontent.com/Diwakar-Gupta/pepper/main/judge/requirements.txt
-   ```
 
 2. 🐍 Set up Python environment
    ```bash
