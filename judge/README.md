@@ -1,26 +1,45 @@
 # Pepper Judge Backend
 
-## Quick Start
+## Quick Setup
 
-1. **Clone the repository:**
+1. 📥 Download required files
+   Using curl:
    ```bash
-   git clone https://github.com/Diwakar-Gupta/pepper.git
-   cd pepper/judge
+   # Create a directory for the judge
+   mkdir pepper-judge && cd pepper-judge
+
+   # Download only the required files
+   curl -O https://raw.githubusercontent.com/Diwakar-Gupta/pepper/main/judge/main.py
+   curl -O https://raw.githubusercontent.com/Diwakar-Gupta/pepper/main/judge/requirements.txt
    ```
-2. **Set up Python environment:**
-   - (Recommended) Create a virtual environment:
-     ```bash
-     python -m venv venv
-     # On Windows:
-     venv\Scripts\activate
-     # On macOS/Linux:
-     source venv/bin/activate
-     ```
-3. **Install dependencies:**
+
+   Or using wget:
+   ```bash
+   mkdir pepper-judge && cd pepper-judge
+
+   wget https://raw.githubusercontent.com/Diwakar-Gupta/pepper/main/judge/main.py
+   wget https://raw.githubusercontent.com/Diwakar-Gupta/pepper/main/judge/requirements.txt
+   ```
+
+2. 🐍 Set up Python environment
+   ```bash
+   # Create a virtual environment
+   python -m venv venv
+   
+   # Activate the environment
+   # Windows:
+   venv\Scripts\activate
+   
+   # macOS/Linux:
+   source venv/bin/activate
+   ```
+
+3. 📦 Install dependencies
    ```bash
    pip install -r requirements.txt
    ```
-4. **Run the judge server:**
+
+4. 🚀 Run the Judge Server
    ```bash
    python main.py
    ```
