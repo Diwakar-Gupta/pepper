@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from "react";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet, Navigate } from "react-router-dom";
 import Progress from "./components/Progress";
+import TopNavigator from "./components/TopNavigator";
 
 const CoursesPage = lazy(() => import("./pages/CoursesPage"));
 const CourseDetailPage = lazy(() => import("./pages/CourseDetailPage"));
@@ -12,6 +13,7 @@ const AppLayout = () => {
   console.log("AppLayout Rendered");
   return (
     <div className="app">
+      <TopNavigator />
       <Outlet />
     </div>
   );
@@ -30,6 +32,10 @@ const appRouter = createBrowserRouter([
             <CoursesPage />
           </Suspense>
         ),
+      },
+      {
+        path: "/pepper/course",
+        element: <Navigate to="/pepper/" replace />,
       },
       {
         path: "/pepper/course/:courseSlug",
