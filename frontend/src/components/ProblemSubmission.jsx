@@ -2,6 +2,30 @@
 import React, { useState } from "react";
 
 const ProblemSubmission = ({ code, language, input, setInput, onRun, runResult, judgeAvailable }) => {
+  // Handle case when judge is not available
+  if (!judgeAvailable) {
+    return (
+      <div className="bg-gray-100 p-4 border border-gray-300 rounded-md shadow-md">
+        <div className="text-center text-gray-600">
+          <p className="font-medium mb-2">Code Execution Unavailable</p>
+          <p className="text-sm">Please start the judge server to enable code execution.</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Handle case when language is not selected
+  if (!language) {
+    return (
+      <div className="bg-gray-100 p-4 border border-gray-300 rounded-md shadow-md">
+        <div className="text-center text-gray-600">
+          <p className="font-medium mb-2">No Language Selected</p>
+          <p className="text-sm">Please select a programming language to run code.</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="bg-white p-4 border border-gray-300 rounded-md shadow-md relative">
       {/* Input box for stdin */}
@@ -19,15 +43,19 @@ const ProblemSubmission = ({ code, language, input, setInput, onRun, runResult, 
       {/* Run and Submit buttons */}
       <div className="flex space-x-4 mb-4">
         <button
-          className={`bg-blue-500 text-white px-4 py-2 rounded-md focus:outline-none`}
+          className={`bg-blue-500 text-white px-4 py-2 rounded-md focus:outline-none ${
+            !code || !language ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-600'
+          }`}
           onClick={onRun}
-          disabled={!code || !language || !judgeAvailable}
+          disabled={!code || !language}
         >
           Run
         </button>
         <button
-          className={`bg-green-500 text-white px-4 py-2 rounded-md focus:outline-none`}
-          disabled={!judgeAvailable}
+          className={`bg-green-500 text-white px-4 py-2 rounded-md focus:outline-none ${
+            !code || !language ? 'opacity-50 cursor-not-allowed' : 'hover:bg-green-600'
+          }`}
+          disabled={!code || !language}
         >
           Submit
         </button>

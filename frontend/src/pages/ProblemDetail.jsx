@@ -103,22 +103,31 @@ const ProblemDetails = () => {
               {judgeError}
             </div>
           )}
-          <ProblemEditor
-            code={code}
-            setCode={setCode}
-            languages={languages}
-            selectedLanguage={selectedLanguage}
-            setSelectedLanguage={setSelectedLanguage}
-          />
-          <ProblemSubmission
-            code={code}
-            language={selectedLanguage}
-            input={input}
-            setInput={setInput}
-            onRun={handleRun}
-            runResult={runResult}
-            judgeAvailable={judgeAvailable}
-          />
+          {judgeAvailable ? (
+            <>
+              <ProblemEditor
+                code={code}
+                setCode={setCode}
+                languages={languages}
+                selectedLanguage={selectedLanguage}
+                setSelectedLanguage={setSelectedLanguage}
+              />
+              <ProblemSubmission
+                code={code}
+                language={selectedLanguage}
+                input={input}
+                setInput={setInput}
+                onRun={handleRun}
+                runResult={runResult}
+                judgeAvailable={judgeAvailable}
+              />
+            </>
+          ) : (
+            <div className="bg-yellow-100 text-yellow-700 p-4 rounded-md text-center">
+              <p className="font-medium mb-2">Code Editor Unavailable</p>
+              <p className="text-sm">Please start the judge server to enable code execution.</p>
+            </div>
+          )}
         </div>
       </div>
     </div>

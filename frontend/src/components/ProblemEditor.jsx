@@ -57,6 +57,28 @@ const ProblemEditor = ({ code, setCode, languages = [], selectedLanguage, setSel
     setFontSize(Number(e.target.value));
   };
 
+  // Handle case when no languages are available
+  if (!languages || languages.length === 0) {
+    return (
+      <div className="mb-6">
+        <div className="bg-gray-100 p-4 rounded-md text-center">
+          <p className="text-gray-600">No programming languages available</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Handle case when selectedLanguage is empty
+  if (!selectedLanguage) {
+    return (
+      <div className="mb-6">
+        <div className="bg-gray-100 p-4 rounded-md text-center">
+          <p className="text-gray-600">Loading programming languages...</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="mb-6 relative">
       <div className="mb-4 flex justify-between items-center">
@@ -127,7 +149,7 @@ const ProblemEditor = ({ code, setCode, languages = [], selectedLanguage, setSel
 
       {/* Ace Editor */}
       <AceEditor
-        mode={selectedLanguage}
+        mode={selectedLanguage.toLowerCase()}
         theme={selectedTheme}
         onChange={(value) => setCode(value)}
         value={code}
