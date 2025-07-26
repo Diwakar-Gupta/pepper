@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const crumbNameMap = {
   course: "Course",
@@ -8,7 +8,7 @@ const crumbNameMap = {
 };
 
 function getCrumbs(pathname) {
-  // Remove leading/trailing slashes and split
+  // Remove leading /pepper and split
   const parts = pathname.replace(/^\/pepper\/?/, "").split("/").filter(Boolean);
   const crumbs = [];
   let path = "/pepper";
@@ -28,10 +28,11 @@ const TopNavigator = () => {
 
   return (
     <nav className="bg-gray-100 px-4 py-2 text-sm font-medium flex items-center gap-2 border-b border-gray-200">
-      <Link to="/pepper/" className="text-blue-600 hover:underline">Home</Link>
+      <a href="/" className="text-blue-600 hover:underline">Home</a>
+      {crumbs.length > 0 && <span className="mx-1 text-gray-400">/</span>}
       {crumbs.map((crumb, idx) => (
         <React.Fragment key={crumb.path}>
-          <span className="mx-1 text-gray-400">/</span>
+          {idx > 0 && <span className="mx-1 text-gray-400">/</span>}
           {idx === crumbs.length - 1 ? (
             <span className="text-gray-700">{crumb.name}</span>
           ) : (
