@@ -1,6 +1,12 @@
 import React from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 
+const crumbNameMap = {
+  course: "Course",
+  "dsa-fundamentals": "DSA Fundamentals",
+  "getting-started": "Getting Started",
+};
+
 function getCrumbs(pathname) {
   // Remove leading/trailing slashes and split
   const parts = pathname.replace(/^\/pepper\/?/, "").split("/").filter(Boolean);
@@ -9,7 +15,7 @@ function getCrumbs(pathname) {
   for (let i = 0; i < parts.length; i++) {
     path += `/${parts[i]}`;
     crumbs.push({
-      name: parts[i].replace(/-/g, " "),
+      name: crumbNameMap[parts[i]] || parts[i].replace(/-/g, " "),
       path,
     });
   }
