@@ -97,7 +97,7 @@ def execute_code():
     for i, test_case in enumerate(test_cases):
         input_text = test_case.get("input", "")
         expected_output = test_case.get("expectedOutput", "")
-        
+
         try:
             stdout, stderr = EXECUTORS[lang](code, input_text)
             actual_output = stdout.strip()
@@ -126,7 +126,7 @@ def execute_code():
                 "diff": None,
                 "error": str(e)
             })
-    
+
     return jsonify({
         "results": results,
         "summary": {
@@ -137,5 +137,68 @@ def execute_code():
         }
     })
 
+# --- HTTPS cert generation and loading below ---
+
+import pathlib
+
+CERT_DIR = pathlib.Path("./cert")
+CERT_DIR.mkdir(exist_ok=True)
+
+CERT_PATH = CERT_DIR / "cert.pem"
+KEY_PATH = CERT_DIR / "key.pem"
+
+def generate_self_signed_cert():
+    from cryptography import x509
+    from cryptography.x509.oid import NameOID
+    from cryptography.hazmat.primitives import hashes, serialization
+    from cryptography.hazmat.primitives.asymmetric import rsa
+    import datetime
+
+    key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
+
+    subject = issuer = x509.Name([
+        x509.NameAttribute(NameOID.COUNTRY_NAME, u"US"),
+        x509.NameAttribute(NameOID.STATE_OR_PROVINCE_NAME, u"California"),
+        x509.NameAttribute(NameOID.LOCALITY_NAME, u"San Francisco"),
+        x509.NameAttribute(NameOID.ORGANIZATION_NAME, u"My Org"),
+        x509.NameAttribute(NameOID.COMMON_NAME, u"localhost"),
+    ])
+
+    cert = (
+        x509.CertificateBuilder()
+        .subject_name(subject)
+        .issuer_name(issuer)
+        .public_key(key.public_key())
+        .serial_number(x509.random_serial_number())
+        .not_valid_before(datetime.datetime.utcnow())
+        .not_valid_after(datetime.datetime.utcnow() + datetime.timedelta(days=365))
+        .add_extension(
+            x509.SubjectAlternativeName([x509.DNSName(u"localhost")]),
+            critical=False,
+        )
+        .sign(key, hashes.SHA256())
+    )
+
+    with open(CERT_PATH, "wb") as cert_file:
+        cert_file.write(cert.public_bytes(serialization.Encoding.PEM))
+
+    with open(KEY_PATH, "wb") as key_file:
+        key_file.write(key.private_bytes(
+            encoding=serialization.Encoding.PEM,
+            format=serialization.PrivateFormat.TraditionalOpenSSL,
+            encryption_algorithm=serialization.NoEncryption(),
+        ))
+
+def generate_or_load_cert():
+    if CERT_PATH.exists() and KEY_PATH.exists():
+        print("Using existing cert and key")
+        return str(CERT_PATH), str(KEY_PATH)
+    else:
+        print("Generating new cert and key")
+        generate_self_signed_cert()
+        return str(CERT_PATH), str(KEY_PATH)
+
 if __name__ == "__main__":
-    app.run(port=5050)
+    cert_path, key_path = generate_or_load_cert()
+    print(f"Starting HTTPS server on port 5050 with cert {cert_path} and key {key_path}")
+    app.run(port=5050, ssl_context=(cert_path, key_path))
