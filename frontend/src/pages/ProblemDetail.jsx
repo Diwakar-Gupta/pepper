@@ -16,7 +16,7 @@ const ProblemDetails = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("");
   const [runResult, setRunResult] = useState({ stdout: "", stderr: "" });
   const [input, setInput] = useState("");
-  const [judgeAvailable, setJudgeAvailable] = useState(true);
+  const [judgeAvailable, setJudgeAvailable] = useState(false);
   const [judgeError, setJudgeError] = useState("");
 
   useEffect(() => {
