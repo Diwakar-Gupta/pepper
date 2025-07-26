@@ -8,7 +8,7 @@ const ProblemSubmission = ({ code, language, input, setInput, onRun, runResult, 
       <div className="bg-gray-100 p-4 border border-gray-300 rounded-md shadow-md">
         <div className="text-center text-gray-600">
           <p className="font-medium mb-2">Code Execution Unavailable</p>
-          <p className="text-sm">Please start the judge server to enable code execution.</p>
+          <p className="text-sm">Please start the judge server to enable code execution. <a href='https://github.com/Diwakar-Gupta/pepper/blob/main/judge/README.md' target='_blank' rel='noopener noreferrer' className='text-blue-600 underline hover:text-blue-800'>View setup instructions</a></p>
         </div>
       </div>
     );

@@ -68,7 +68,7 @@ const ProblemDetails = () => {
       } catch (e) {
         setLanguages([]);
         setJudgeAvailable(false);
-        setJudgeError("Code execution server is not running. Please start the judge server on your machine.");
+        setJudgeError("Code execution server is not running. Please start the judge server on your machine. <a href='https://github.com/Diwakar-Gupta/pepper/blob/main/judge/README.md' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline hover:text-blue-800'>View setup instructions</a>");
       }
     };
     fetchLanguages();
@@ -83,7 +83,7 @@ const ProblemDetails = () => {
     } catch (e) {
       setRunResult({ stdout: "", stderr: e.message });
       setJudgeAvailable(false);
-      setJudgeError("Code execution server is not running. Please start the judge server on your machine.");
+      setJudgeError("Code execution server is not running. Please start the judge server on your machine. <a href='https://github.com/Diwakar-Gupta/pepper/blob/main/judge/README.md' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline hover:text-blue-800'>View setup instructions</a>");
     }
   };
 
@@ -100,7 +100,7 @@ const ProblemDetails = () => {
         <div className="w-full md:w-1/2">
           {judgeError && (
             <div className="bg-red-100 text-red-700 p-2 mb-2 rounded-md text-center">
-              {judgeError}
+              <div dangerouslySetInnerHTML={{ __html: judgeError }} />
             </div>
           )}
           {judgeAvailable ? (
@@ -125,7 +125,7 @@ const ProblemDetails = () => {
           ) : (
             <div className="bg-yellow-100 text-yellow-700 p-4 rounded-md text-center">
               <p className="font-medium mb-2">Code Editor Unavailable</p>
-              <p className="text-sm">Please start the judge server to enable code execution.</p>
+              <p className="text-sm">Please start the judge server to enable code execution. <a href='https://github.com/Diwakar-Gupta/pepper/blob/main/judge/README.md' target='_blank' rel='noopener noreferrer' className='text-blue-600 underline hover:text-blue-800'>View setup instructions</a></p>
             </div>
           )}
         </div>
