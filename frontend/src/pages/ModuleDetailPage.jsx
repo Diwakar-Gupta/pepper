@@ -2,30 +2,39 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import getModuleDetails from "../repository/getModuleDetails";
 import TwoColListAndRankView from "../layouts/TwoColListAndRankView";
+import Progress from "../components/Progress";
 
 const ModuleDetail = () => {
   const { courseSlug, moduleSlug } = useParams();
   const [moduleProblems, setModuleProblems] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchModule = async () => {
       try {
+        setIsLoading(true);
         const moduleProblemsList = await getModuleDetails(
           courseSlug,
           moduleSlug,
         );
         setModuleProblems(moduleProblemsList);
       } catch (error) {
-        console.error("Error loading course:", error);
-        setCourse(null);
+        console.error("Error loading module:", error);
+        setModuleProblems(null);
+      } finally {
+        setIsLoading(false);
       }
     };
 
     fetchModule();
   }, [moduleSlug]);
 
+  if (isLoading) {
+    return <Progress />;
+  }
+
   if (!moduleProblems) {
-    return <div>Course not found</div>;
+    return <div>Module not found</div>;
   }
 
   return (

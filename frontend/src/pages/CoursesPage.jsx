@@ -4,16 +4,35 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faBook, faUsers } from "@fortawesome/free-solid-svg-icons";
 import getCourseList from "../repository/getCoursesList";
+import Progress from "../components/Progress";
 
 const CoursesPage = () => {
   const [courses, setCourses] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
-      setCourses(await getCourseList());
+      try {
+        setIsLoading(true);
+        const courseData = await getCourseList();
+        setCourses(courseData || []);
+      } catch (error) {
+        console.error("Error loading courses:", error);
+        setCourses([]);
+      } finally {
+        setIsLoading(false);
+      }
     };
     fetchData();
   }, []);
+
+  if (isLoading) {
+    return <Progress />;
+  }
+
+  if (!courses || courses.length === 0) {
+    return <div className="flex justify-center items-center h-screen">No courses found</div>;
+  }
 
   return (
     <div className="flex justify-center items-center h-screen">
