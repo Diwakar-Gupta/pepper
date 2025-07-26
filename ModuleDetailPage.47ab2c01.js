@@ -885,7 +885,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "url", ()=>url);
 parcelHelpers.export(exports, "JUDGE_API_BASE_URL", ()=>JUDGE_API_BASE_URL);
 const url = "/pepper";
-const JUDGE_API_BASE_URL = "http://127.0.0.1:5050";
+const JUDGE_API_BASE_URL = "https://127.0.0.1:5050";
 exports.default = {
     url,
     JUDGE_API_BASE_URL

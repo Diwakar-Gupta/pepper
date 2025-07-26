@@ -1013,16 +1013,6 @@ const ProblemDescription = /*#__PURE__*/ (0, _reactDefault.default).memo(_c = ({
                 lineNumber: 36,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactMarkdownPreviewDefault.default), {
-                source: problem.description,
-                wrapperElement: {
-                    "data-color-mode": "light"
-                }
-            }, void 0, false, {
-                fileName: "src/components/ProblemDescription.jsx",
-                lineNumber: 37,
-                columnNumber: 7
-            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "mt-4",
                 children: [
@@ -1033,7 +1023,7 @@ const ProblemDescription = /*#__PURE__*/ (0, _reactDefault.default).memo(_c = ({
                                 children: "Problem Video:"
                             }, void 0, false, {
                                 fileName: "src/components/ProblemDescription.jsx",
-                                lineNumber: 46,
+                                lineNumber: 47,
                                 columnNumber: 13
                             }, undefined),
                             " ",
@@ -1042,13 +1032,13 @@ const ProblemDescription = /*#__PURE__*/ (0, _reactDefault.default).memo(_c = ({
                                 opts: videoOptions
                             }, void 0, false, {
                                 fileName: "src/components/ProblemDescription.jsx",
-                                lineNumber: 47,
+                                lineNumber: 48,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/ProblemDescription.jsx",
-                        lineNumber: 45,
+                        lineNumber: 46,
                         columnNumber: 11
                     }, undefined),
                     problem.solutionVideolink && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1058,7 +1048,7 @@ const ProblemDescription = /*#__PURE__*/ (0, _reactDefault.default).memo(_c = ({
                                 children: "Solution Video:"
                             }, void 0, false, {
                                 fileName: "src/components/ProblemDescription.jsx",
-                                lineNumber: 56,
+                                lineNumber: 57,
                                 columnNumber: 13
                             }, undefined),
                             " ",
@@ -1067,19 +1057,19 @@ const ProblemDescription = /*#__PURE__*/ (0, _reactDefault.default).memo(_c = ({
                                 opts: videoOptions
                             }, void 0, false, {
                                 fileName: "src/components/ProblemDescription.jsx",
-                                lineNumber: 57,
+                                lineNumber: 58,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/ProblemDescription.jsx",
-                        lineNumber: 55,
+                        lineNumber: 56,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/ProblemDescription.jsx",
-                lineNumber: 43,
+                lineNumber: 44,
                 columnNumber: 7
             }, undefined),
             " "
@@ -81903,7 +81893,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "url", ()=>url);
 parcelHelpers.export(exports, "JUDGE_API_BASE_URL", ()=>JUDGE_API_BASE_URL);
 const url = "/pepper";
-const JUDGE_API_BASE_URL = "http://127.0.0.1:5050";
+const JUDGE_API_BASE_URL = "https://127.0.0.1:5050";
 exports.default = {
     url,
     JUDGE_API_BASE_URL
@@ -112452,7 +112442,7 @@ const ProblemSubmission = ({ code, language, input, setInput, onRun, runResult, 
         columnNumber: 5
     }, undefined);
 };
-_s(ProblemSubmission, "knle+qt467SSNjFcfNcnzuoN5aU=");
+_s(ProblemSubmission, "6ijEpDRgLeBHKioShEnDJwx80S8=");
 _c = ProblemSubmission;
 exports.default = ProblemSubmission;
 var _c;
