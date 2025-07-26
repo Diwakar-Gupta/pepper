@@ -2,6 +2,7 @@ import subprocess
 import shutil
 import tempfile
 import os
+import difflib
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
@@ -63,6 +64,16 @@ def run_java(code, input_text):
         run = subprocess.run(["java", "-cp", tempdir, "Main"], input=input_text.encode(), capture_output=True, timeout=5)
         return run.stdout.decode(), run.stderr.decode()
 
+def compare_outputs(actual, expected):
+    # Split into lines, strip each line, ignore line ending differences
+    actual_lines = [line.rstrip() for line in actual.strip().splitlines()]
+    expected_lines = [line.rstrip() for line in expected.strip().splitlines()]
+    passed = actual_lines == expected_lines
+    diff = None
+    if not passed:
+        diff = '\n'.join(difflib.unified_diff(expected_lines, actual_lines, fromfile='expected', tofile='output', lineterm=''))
+    return passed, diff
+
 @app.route("/languages", methods=["GET"])
 def get_languages():
     return jsonify(detect_languages())
@@ -72,15 +83,58 @@ def execute_code():
     data = request.json
     code = data.get("code")
     lang = data.get("language")
-    input_text = data.get("input", "")
+    test_cases = data.get("testCases", [])
+    
+    # For backward compatibility, if no test cases provided, use single input
+    if not test_cases:
+        input_text = data.get("input", "")
+        test_cases = [{"input": input_text, "expectedOutput": ""}]
 
     if lang not in EXECUTORS:
         return jsonify({"error": "Unsupported language"}), 400
 
-    stdout, stderr = EXECUTORS[lang](code, input_text)
+    results = []
+    for i, test_case in enumerate(test_cases):
+        input_text = test_case.get("input", "")
+        expected_output = test_case.get("expectedOutput", "")
+        
+        try:
+            stdout, stderr = EXECUTORS[lang](code, input_text)
+            actual_output = stdout.strip()
+            expected_output = expected_output.strip()
+            passed, diff = (None, None)
+            if expected_output:
+                passed, diff = compare_outputs(actual_output, expected_output)
+            results.append({
+                "testCase": i + 1,
+                "input": input_text,
+                "expectedOutput": expected_output,
+                "actualOutput": actual_output,
+                "stderr": stderr,
+                "passed": passed,
+                "diff": diff,
+                "error": None
+            })
+        except Exception as e:
+            results.append({
+                "testCase": i + 1,
+                "input": input_text,
+                "expectedOutput": expected_output,
+                "actualOutput": "",
+                "stderr": str(e),
+                "passed": False,
+                "diff": None,
+                "error": str(e)
+            })
+    
     return jsonify({
-        "stdout": stdout,
-        "stderr": stderr
+        "results": results,
+        "summary": {
+            "total": len(results),
+            "passed": sum(1 for r in results if r["passed"] is True),
+            "failed": sum(1 for r in results if r["passed"] is False),
+            "noExpectedOutput": sum(1 for r in results if r["passed"] is None)
+        }
     })
 
 if __name__ == "__main__":

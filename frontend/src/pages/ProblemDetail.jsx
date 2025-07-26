@@ -5,7 +5,7 @@ import Progress from "../components/Progress";
 import getProblemDetails from "../repository/getProblemDetails";
 import ProblemEditor from "../components/ProblemEditor";
 import ProblemSubmission from "../components/ProblemSubmission";
-import { getLanguages, executeCode } from "../repository/judgeApi";
+import { getLanguages, executeCode, executeCodeWithTestCases } from "../repository/judgeApi";
 
 const ProblemDetails = () => {
   const { problemSlug } = useParams();
@@ -74,9 +74,16 @@ const ProblemDetails = () => {
     fetchLanguages();
   }, []);
 
-  const handleRun = async () => {
+  const handleRun = async (testCases = null) => {
     try {
-      const data = await executeCode({ code, language: selectedLanguage, input });
+      let data;
+      if (Array.isArray(testCases) && testCases.length > 0) {
+        // Use new test cases API
+        data = await executeCodeWithTestCases({ code, language: selectedLanguage, testCases });
+      } else {
+        // Use legacy single input API
+        data = await executeCode({ code, language: selectedLanguage, input });
+      }
       setRunResult(data);
       setJudgeAvailable(true);
       setJudgeError("");
