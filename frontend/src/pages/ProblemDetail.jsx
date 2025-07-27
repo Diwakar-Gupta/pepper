@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import Progress from "../components/Progress";
 import getProblemDetails from "../repository/getProblemDetails";
 import ProblemEditor from "../components/ProblemEditor";
-import ProblemSubmission from "../components/ProblemSubmission";
+import TabbedTestCases from "../components/TabbedTestCases";
 import { useJudge } from "../contexts/JudgeContext";
 import EditLinks from "../components/EditLinks";
 
@@ -110,11 +110,9 @@ const ProblemDetails = () => {
                 selectedLanguage={selectedLanguage}
                 setSelectedLanguage={setSelectedLanguage}
               />
-              <ProblemSubmission
+              <TabbedTestCases
                 code={code}
                 language={selectedLanguage}
-                input={input}
-                setInput={setInput}
                 onRun={handleRun}
                 runResult={runResult}
                 judgeAvailable={isJudgeAvailable}
