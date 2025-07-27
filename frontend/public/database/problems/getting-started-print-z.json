@@ -6,6 +6,7 @@
   "problemVideoLink": "https://www.youtube.com/embed/_Mj-Pe86Zt8?rel=0",
   "solutionVideolink": "https://www.youtube.com/embed/7l0XEm3cQpw?rel=0&loop=1&playlist=7l0XEm3cQpw",
   "codes": {
-    "java": ""
+    "java": "",
+    "python": "print(\"*****\")\nprint(\"   *\")\nprint(\"  *\")\nprint(\" *\")\nprint(\"*****\")"
   }
 }
