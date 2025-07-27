@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faBook, faUsers } from "@fortawesome/free-solid-svg-icons";
 import getCourseList from "../repository/getCoursesList";
 import Progress from "../components/Progress";
+import EditLinks from "../components/EditLinks";
 
 const CoursesPage = () => {
   const [courses, setCourses] = useState([]);
@@ -36,6 +37,10 @@ const CoursesPage = () => {
 
   return (
     <div className="flex justify-center items-center h-screen">
+      <EditLinks 
+        uiPath="CoursesPage.jsx" 
+        dataPath="courses/meta.json" 
+      />
       <div className="flex flex-col md:flex-row gap-4">
         {courses.map((course, index) => (
           <Link

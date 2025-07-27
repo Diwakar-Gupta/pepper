@@ -6,6 +6,7 @@ import getProblemDetails from "../repository/getProblemDetails";
 import ProblemEditor from "../components/ProblemEditor";
 import ProblemSubmission from "../components/ProblemSubmission";
 import { useJudge } from "../contexts/JudgeContext";
+import EditLinks from "../components/EditLinks";
 
 const ProblemDetails = () => {
   const { problemSlug } = useParams();
@@ -82,6 +83,10 @@ const ProblemDetails = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <EditLinks 
+        uiPath="ProblemDetail.jsx" 
+        dataPath={`problems/${problemSlug}.json`} 
+      />
       <div className="bg-white min-h-screen shadow-md rounded-md p-2 w-full flex flex-col md:flex-row">
         {isLoading ? (
           <Progress />

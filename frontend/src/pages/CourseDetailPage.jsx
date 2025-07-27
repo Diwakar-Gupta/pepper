@@ -5,6 +5,7 @@ import Accordion from "../components/utils/Accordion";
 import getCourseDetails from "../repository/getCourseDetails";
 import TwoColListAndRankView from "../layouts/TwoColListAndRankView";
 import Progress from "../components/Progress";
+import EditLinks from "../components/EditLinks";
 
 const CourseDetailPage = () => {
   const { courseSlug } = useParams();
@@ -39,21 +40,27 @@ const CourseDetailPage = () => {
   console.log(course.categorys);
 
   return (
-    <TwoColListAndRankView
-      Component1={
-        <div className="flex flex-col justify-center md:grow">
-          <h1 className="font-medium text-3xl text-center">
-            Modules and Lectures
-          </h1>
-          {course.categorys.map((category) => {
-            const title = category.name;
-            const items = category.topics.map((topic) => topic.name);
+    <>
+      <EditLinks 
+        uiPath="CourseDetailPage.jsx" 
+        dataPath={`courses/${courseSlug}/meta.json`} 
+      />
+      <TwoColListAndRankView
+        Component1={
+          <div className="flex flex-col justify-center md:grow">
+            <h1 className="font-medium text-3xl text-center">
+              Modules and Lectures
+            </h1>
+            {course.categorys.map((category) => {
+              const title = category.name;
+              const items = category.topics.map((topic) => topic.name);
 
-            return <Accordion key={title} title={title} items={items} />;
-          })}
-        </div>
-      }
-    />
+              return <Accordion key={title} title={title} items={items} />;
+            })}
+          </div>
+        }
+      />
+    </>
   );
 };
 

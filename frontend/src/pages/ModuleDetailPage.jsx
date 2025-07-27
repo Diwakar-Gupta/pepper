@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import getModuleDetails from "../repository/getModuleDetails";
 import TwoColListAndRankView from "../layouts/TwoColListAndRankView";
 import Progress from "../components/Progress";
+import EditLinks from "../components/EditLinks";
 
 const ModuleDetail = () => {
   const { courseSlug, moduleSlug } = useParams();
@@ -38,8 +39,13 @@ const ModuleDetail = () => {
   }
 
   return (
-    <TwoColListAndRankView
-      Component1={
+    <>
+      <EditLinks 
+        uiPath="ModuleDetailPage.jsx" 
+        dataPath={`courses/${courseSlug}/${moduleSlug}.json`} 
+      />
+      <TwoColListAndRankView
+        Component1={
         <div className="bg-white shadow-md rounded-md">
           <h1 className="text-3xl font-bold mb-6 text-center">DSA Questions</h1>
 
@@ -88,6 +94,7 @@ const ModuleDetail = () => {
         </div>
       }
     />
+    </>
   );
 };
 
