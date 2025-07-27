@@ -65,12 +65,6 @@ echo -e "${GREEN}✅ Python $PYTHON_VERSION found${NC}"
 # Check Java
 if ! command_exists java; then
     echo -e "${RED}❌ Java is not installed or not in PATH${NC}"
-    echo "Please install JDK 8+ from https://adoptium.net/"
-    echo "Or use your package manager:"
-    echo "  Ubuntu/Debian: sudo apt install default-jdk"
-    echo "  CentOS/RHEL: sudo yum install java-11-openjdk-devel"
-    echo "  macOS: brew install openjdk"
-    exit 1
 fi
 
 echo -e "${GREEN}✅ Java found${NC}"
@@ -78,11 +72,6 @@ echo -e "${GREEN}✅ Java found${NC}"
 # Check GCC/G++
 if ! command_exists g++; then
     echo -e "${RED}❌ GCC/G++ is not installed or not in PATH${NC}"
-    echo "Please install build tools:"
-    echo "  Ubuntu/Debian: sudo apt install build-essential"
-    echo "  CentOS/RHEL: sudo yum groupinstall 'Development Tools'"
-    echo "  macOS: xcode-select --install"
-    exit 1
 fi
 
 echo -e "${GREEN}✅ GCC/G++ found${NC}"

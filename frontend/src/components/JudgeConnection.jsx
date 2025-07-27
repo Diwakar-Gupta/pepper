@@ -159,7 +159,7 @@ const JudgeConnection = () => {
       )}
 
       {/* New code button - only show when connected */}
-      {isConnected && (
+      {(isConnected || isConnecting) && (
         <button
           onClick={handleNewCode}
           className="px-2 py-1 text-xs text-gray-600 hover:text-gray-800 hover:bg-gray-50 rounded focus:outline-none focus:ring-1 focus:ring-gray-500"

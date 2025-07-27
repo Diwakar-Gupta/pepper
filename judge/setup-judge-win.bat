@@ -25,6 +25,18 @@ if %errorlevel% neq 0 (
     set PYTHON_CMD=python
 )
 
+:: Check if Java is installed
+java -version >nul 2>&1
+if %errorlevel% neq 0 (
+    echo ❌ Java is not installed or not in PATH
+)
+
+:: Check if GCC is installed
+g++ --version >nul 2>&1
+if %errorlevel% neq 0 (
+    echo ❌ GCC/G++ is not installed or not in PATH
+)
+
 echo ✅ All prerequisites found!
 echo.
 
