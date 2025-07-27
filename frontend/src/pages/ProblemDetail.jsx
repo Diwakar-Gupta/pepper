@@ -5,19 +5,25 @@ import Progress from "../components/Progress";
 import getProblemDetails from "../repository/getProblemDetails";
 import ProblemEditor from "../components/ProblemEditor";
 import ProblemSubmission from "../components/ProblemSubmission";
-import { getLanguages, executeCode, executeCodeWithTestCases } from "../repository/judgeApi";
+import { useJudgeStatus } from "../hooks/useJudgeStatus";
 
 const ProblemDetails = () => {
   const { problemSlug } = useParams();
   const [problem, setProblem] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [codeByLanguage, setCodeByLanguage] = useState({});
-  const [languages, setLanguages] = useState([]);
-  const [selectedLanguage, setSelectedLanguage] = useState("");
   const [runResult, setRunResult] = useState({ stdout: "", stderr: "" });
   const [input, setInput] = useState("");
-  const [judgeAvailable, setJudgeAvailable] = useState(false);
-  const [judgeError, setJudgeError] = useState("");
+
+  // Use the custom judge status hook
+  const {
+    isJudgeAvailable,
+    languages,
+    selectedLanguage,
+    setSelectedLanguage,
+    executeCodeWithLanguage,
+    error: judgeError
+  } = useJudgeStatus();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -56,41 +62,21 @@ const ProblemDetails = () => {
     setCodeByLanguage((prev) => ({ ...prev, [selectedLanguage]: newCode }));
   };
 
-  useEffect(() => {
-    const fetchLanguages = async () => {
-      try {
-        const data = await getLanguages();
-        const langs = Object.keys(data).filter((k) => data[k]);
-        setLanguages(langs);
-        setSelectedLanguage(langs[0] || "");
-        setJudgeAvailable(true);
-        setJudgeError("");
-      } catch (e) {
-        setLanguages([]);
-        setJudgeAvailable(false);
-        setJudgeError("Code execution server is not running. Please start the judge server on your machine. <a href='https://github.com/Diwakar-Gupta/pepper/blob/main/judge/README.md' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline hover:text-blue-800'>View setup instructions</a>");
-      }
-    };
-    fetchLanguages();
-  }, []);
-
   const handleRun = async (testCases = null) => {
+    if (!isJudgeAvailable) {
+      return;
+    }
+
     try {
-      let data;
-      if (Array.isArray(testCases) && testCases.length > 0) {
-        // Use new test cases API
-        data = await executeCodeWithTestCases({ code, language: selectedLanguage, testCases });
-      } else {
-        // Use legacy single input API
-        data = await executeCode({ code, language: selectedLanguage, input });
-      }
+      const data = await executeCodeWithLanguage({
+        code,
+        language: selectedLanguage,
+        input,
+        testCases
+      });
       setRunResult(data);
-      setJudgeAvailable(true);
-      setJudgeError("");
     } catch (e) {
       setRunResult({ stdout: "", stderr: e.message });
-      setJudgeAvailable(false);
-      setJudgeError("Code execution server is not running. Please start the judge server on your machine. <a href='https://github.com/Diwakar-Gupta/pepper/blob/main/judge/README.md' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline hover:text-blue-800'>View setup instructions</a>");
     }
   };
 
@@ -110,7 +96,7 @@ const ProblemDetails = () => {
               <div dangerouslySetInnerHTML={{ __html: judgeError }} />
             </div>
           )}
-          {judgeAvailable ? (
+          {isJudgeAvailable ? (
             <>
               <ProblemEditor
                 code={code}
@@ -126,13 +112,13 @@ const ProblemDetails = () => {
                 setInput={setInput}
                 onRun={handleRun}
                 runResult={runResult}
-                judgeAvailable={judgeAvailable}
+                judgeAvailable={isJudgeAvailable}
               />
             </>
           ) : (
             <div className="bg-yellow-100 text-yellow-700 p-4 rounded-md text-center">
               <p className="font-medium mb-2">Code Editor Unavailable</p>
-              <p className="text-sm">Please start the judge server to enable code execution. <a href='https://github.com/Diwakar-Gupta/pepper/blob/main/judge/README.md' target='_blank' rel='noopener noreferrer' className='text-blue-600 underline hover:text-blue-800'>View setup instructions</a></p>
+              <p className="text-sm">Please connect to the judge server using the connection panel in the top-right corner.</p>
             </div>
           )}
         </div>

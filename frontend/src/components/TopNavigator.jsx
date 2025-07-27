@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import JudgeConnection from "./JudgeConnection";
 
 const crumbNameMap = {
   course: "Course",
@@ -27,19 +28,24 @@ const TopNavigator = () => {
   const crumbs = getCrumbs(location.pathname);
 
   return (
-    <nav className="bg-gray-100 px-4 py-2 text-sm font-medium flex items-center gap-2 border-b border-gray-200">
-      <a href="/" className="text-blue-600 hover:underline">Home</a>
-      {crumbs.length > 0 && <span className="mx-1 text-gray-400">/</span>}
-      {crumbs.map((crumb, idx) => (
-        <React.Fragment key={crumb.path}>
-          {idx > 0 && <span className="mx-1 text-gray-400">/</span>}
-          {idx === crumbs.length - 1 ? (
-            <span className="text-gray-700">{crumb.name}</span>
-          ) : (
-            <Link to={crumb.path} className="text-blue-600 hover:underline">{crumb.name}</Link>
-          )}
-        </React.Fragment>
-      ))}
+    <nav className="bg-gray-100 px-4 py-2 text-sm font-medium flex items-center justify-between border-b border-gray-200">
+      <div className="flex items-center gap-2">
+        <a href="/" className="text-blue-600 hover:underline">Home</a>
+        {crumbs.length > 0 && <span className="mx-1 text-gray-400">/</span>}
+        {crumbs.map((crumb, idx) => (
+          <React.Fragment key={crumb.path}>
+            {idx > 0 && <span className="mx-1 text-gray-400">/</span>}
+            {idx === crumbs.length - 1 ? (
+              <span className="text-gray-700">{crumb.name}</span>
+            ) : (
+              <Link to={crumb.path} className="text-blue-600 hover:underline">{crumb.name}</Link>
+            )}
+          </React.Fragment>
+        ))}
+      </div>
+      <div className="flex items-center">
+        <JudgeConnection />
+      </div>
     </nav>
   );
 };
