@@ -879,19 +879,7 @@ const getModuleDetails = async (courseSlug, moduleSlug)=>{
 };
 exports.default = getModuleDetails;
 
-},{"../constants":"6Q7L8","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"6Q7L8":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "url", ()=>url);
-parcelHelpers.export(exports, "JUDGE_API_BASE_URL", ()=>JUDGE_API_BASE_URL);
-const url = "/pepper";
-const JUDGE_API_BASE_URL = "https://127.0.0.1:5050";
-exports.default = {
-    url,
-    JUDGE_API_BASE_URL
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jkpUs":[function(require,module,exports,__globalThis) {
+},{"../constants":"6Q7L8","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jkpUs":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$9ec4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$9ec4.init();
 var prevRefreshReg = globalThis.$RefreshReg$;

@@ -858,18 +858,6 @@ const getCourseList = async ()=>{
 };
 exports.default = getCourseList;
 
-},{"../constants":"6Q7L8","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"6Q7L8":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "url", ()=>url);
-parcelHelpers.export(exports, "JUDGE_API_BASE_URL", ()=>JUDGE_API_BASE_URL);
-const url = "/pepper";
-const JUDGE_API_BASE_URL = "https://127.0.0.1:5050";
-exports.default = {
-    url,
-    JUDGE_API_BASE_URL
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["gIJ0R"], null, "parcelRequire17b7", {})
+},{"../constants":"6Q7L8","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["gIJ0R"], null, "parcelRequire17b7", {})
 
 //# sourceMappingURL=CoursesPage.30d3df16.js.map

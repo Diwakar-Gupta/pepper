@@ -690,7 +690,7 @@ var _problemEditor = require("../components/ProblemEditor");
 var _problemEditorDefault = parcelHelpers.interopDefault(_problemEditor);
 var _problemSubmission = require("../components/ProblemSubmission");
 var _problemSubmissionDefault = parcelHelpers.interopDefault(_problemSubmission);
-var _judgeApi = require("../repository/judgeApi");
+var _judgeContext = require("../contexts/JudgeContext");
 var _s = $RefreshSig$();
 const ProblemDetails = ()=>{
     _s();
@@ -698,15 +698,13 @@ const ProblemDetails = ()=>{
     const [problem, setProblem] = (0, _react.useState)(null);
     const [isLoading, setIsLoading] = (0, _react.useState)(true);
     const [codeByLanguage, setCodeByLanguage] = (0, _react.useState)({});
-    const [languages, setLanguages] = (0, _react.useState)([]);
-    const [selectedLanguage, setSelectedLanguage] = (0, _react.useState)("");
     const [runResult, setRunResult] = (0, _react.useState)({
         stdout: "",
         stderr: ""
     });
     const [input, setInput] = (0, _react.useState)("");
-    const [judgeAvailable, setJudgeAvailable] = (0, _react.useState)(false);
-    const [judgeError, setJudgeError] = (0, _react.useState)("");
+    // Use the shared judge context
+    const { isJudgeAvailable, languages, selectedLanguage, setSelectedLanguage, executeCodeWithLanguage, error: judgeError } = (0, _judgeContext.useJudge)();
     (0, _react.useEffect)(()=>{
         const fetchData = async ()=>{
             const data = await (0, _getProblemDetailsDefault.default)(problemSlug);
@@ -744,48 +742,21 @@ const ProblemDetails = ()=>{
                 [selectedLanguage]: newCode
             }));
     };
-    (0, _react.useEffect)(()=>{
-        const fetchLanguages = async ()=>{
-            try {
-                const data = await (0, _judgeApi.getLanguages)();
-                const langs = Object.keys(data).filter((k)=>data[k]);
-                setLanguages(langs);
-                setSelectedLanguage(langs[0] || "");
-                setJudgeAvailable(true);
-                setJudgeError("");
-            } catch (e) {
-                setLanguages([]);
-                setJudgeAvailable(false);
-                setJudgeError("Code execution server is not running. Please start the judge server on your machine. <a href='https://github.com/Diwakar-Gupta/pepper/blob/main/judge/README.md' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline hover:text-blue-800'>View setup instructions</a>");
-            }
-        };
-        fetchLanguages();
-    }, []);
     const handleRun = async (testCases = null)=>{
+        if (!isJudgeAvailable) return;
         try {
-            let data;
-            if (Array.isArray(testCases) && testCases.length > 0) // Use new test cases API
-            data = await (0, _judgeApi.executeCodeWithTestCases)({
+            const data = await executeCodeWithLanguage({
                 code,
                 language: selectedLanguage,
+                input,
                 testCases
             });
-            else // Use legacy single input API
-            data = await (0, _judgeApi.executeCode)({
-                code,
-                language: selectedLanguage,
-                input
-            });
             setRunResult(data);
-            setJudgeAvailable(true);
-            setJudgeError("");
         } catch (e) {
             setRunResult({
                 stdout: "",
                 stderr: e.message
             });
-            setJudgeAvailable(false);
-            setJudgeError("Code execution server is not running. Please start the judge server on your machine. <a href='https://github.com/Diwakar-Gupta/pepper/blob/main/judge/README.md' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline hover:text-blue-800'>View setup instructions</a>");
         }
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -795,7 +766,7 @@ const ProblemDetails = ()=>{
             children: [
                 isLoading ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _progressDefault.default), {}, void 0, false, {
                     fileName: "src/pages/ProblemDetail.jsx",
-                    lineNumber: 101,
+                    lineNumber: 87,
                     columnNumber: 11
                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "w-full md:w-1/2 md:mr-2",
@@ -803,12 +774,12 @@ const ProblemDetails = ()=>{
                         problem: problem
                     }, void 0, false, {
                         fileName: "src/pages/ProblemDetail.jsx",
-                        lineNumber: 104,
+                        lineNumber: 90,
                         columnNumber: 13
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/pages/ProblemDetail.jsx",
-                    lineNumber: 103,
+                    lineNumber: 89,
                     columnNumber: 11
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -822,15 +793,15 @@ const ProblemDetails = ()=>{
                                 }
                             }, void 0, false, {
                                 fileName: "src/pages/ProblemDetail.jsx",
-                                lineNumber: 110,
+                                lineNumber: 96,
                                 columnNumber: 15
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/pages/ProblemDetail.jsx",
-                            lineNumber: 109,
+                            lineNumber: 95,
                             columnNumber: 13
                         }, undefined),
-                        judgeAvailable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                        isJudgeAvailable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _problemEditorDefault.default), {
                                     code: code,
@@ -840,7 +811,7 @@ const ProblemDetails = ()=>{
                                     setSelectedLanguage: setSelectedLanguage
                                 }, void 0, false, {
                                     fileName: "src/pages/ProblemDetail.jsx",
-                                    lineNumber: 115,
+                                    lineNumber: 101,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _problemSubmissionDefault.default), {
@@ -850,10 +821,10 @@ const ProblemDetails = ()=>{
                                     setInput: setInput,
                                     onRun: handleRun,
                                     runResult: runResult,
-                                    judgeAvailable: judgeAvailable
+                                    judgeAvailable: isJudgeAvailable
                                 }, void 0, false, {
                                     fileName: "src/pages/ProblemDetail.jsx",
-                                    lineNumber: 122,
+                                    lineNumber: 108,
                                     columnNumber: 15
                                 }, undefined)
                             ]
@@ -865,57 +836,45 @@ const ProblemDetails = ()=>{
                                     children: "Code Editor Unavailable"
                                 }, void 0, false, {
                                     fileName: "src/pages/ProblemDetail.jsx",
-                                    lineNumber: 134,
+                                    lineNumber: 120,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                     className: "text-sm",
-                                    children: [
-                                        "Please start the judge server to enable code execution. ",
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: "https://github.com/Diwakar-Gupta/pepper/blob/main/judge/README.md",
-                                            target: "_blank",
-                                            rel: "noopener noreferrer",
-                                            className: "text-blue-600 underline hover:text-blue-800",
-                                            children: "View setup instructions"
-                                        }, void 0, false, {
-                                            fileName: "src/pages/ProblemDetail.jsx",
-                                            lineNumber: 135,
-                                            columnNumber: 94
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
+                                    children: "Please connect to the judge server using the connection panel in the top-right corner."
+                                }, void 0, false, {
                                     fileName: "src/pages/ProblemDetail.jsx",
-                                    lineNumber: 135,
+                                    lineNumber: 121,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/ProblemDetail.jsx",
-                            lineNumber: 133,
+                            lineNumber: 119,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/ProblemDetail.jsx",
-                    lineNumber: 107,
+                    lineNumber: 93,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/pages/ProblemDetail.jsx",
-            lineNumber: 99,
+            lineNumber: 85,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/pages/ProblemDetail.jsx",
-        lineNumber: 98,
+        lineNumber: 84,
         columnNumber: 5
     }, undefined);
 };
-_s(ProblemDetails, "4wmFaXim932IR1jah8ukbqWcxUI=", false, function() {
+_s(ProblemDetails, "NyKlIXeuQ9YQd5p23MKldhPahNk=", false, function() {
     return [
-        (0, _reactRouterDom.useParams)
+        (0, _reactRouterDom.useParams),
+        (0, _judgeContext.useJudge)
     ];
 });
 _c = ProblemDetails;
@@ -928,7 +887,7 @@ $RefreshReg$(_c, "ProblemDetails");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../components/ProblemDescription":"41tiW","react-router-dom":"61z4w","../components/Progress":"jw8uh","../repository/getProblemDetails":"eY7eC","../components/ProblemEditor":"4Xcqp","../components/ProblemSubmission":"25QBX","../repository/judgeApi":"7uuQH","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"41tiW":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../components/ProblemDescription":"41tiW","react-router-dom":"61z4w","../components/Progress":"jw8uh","../repository/getProblemDetails":"eY7eC","../components/ProblemEditor":"4Xcqp","../components/ProblemSubmission":"25QBX","../contexts/JudgeContext":"lO9nN","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"41tiW":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$3dcb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$3dcb.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -1023,7 +982,7 @@ const ProblemDescription = /*#__PURE__*/ (0, _reactDefault.default).memo(_c = ({
                                 children: "Problem Video:"
                             }, void 0, false, {
                                 fileName: "src/components/ProblemDescription.jsx",
-                                lineNumber: 47,
+                                lineNumber: 46,
                                 columnNumber: 13
                             }, undefined),
                             " ",
@@ -1032,13 +991,13 @@ const ProblemDescription = /*#__PURE__*/ (0, _reactDefault.default).memo(_c = ({
                                 opts: videoOptions
                             }, void 0, false, {
                                 fileName: "src/components/ProblemDescription.jsx",
-                                lineNumber: 48,
+                                lineNumber: 47,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/ProblemDescription.jsx",
-                        lineNumber: 46,
+                        lineNumber: 45,
                         columnNumber: 11
                     }, undefined),
                     problem.solutionVideolink && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1048,7 +1007,7 @@ const ProblemDescription = /*#__PURE__*/ (0, _reactDefault.default).memo(_c = ({
                                 children: "Solution Video:"
                             }, void 0, false, {
                                 fileName: "src/components/ProblemDescription.jsx",
-                                lineNumber: 57,
+                                lineNumber: 56,
                                 columnNumber: 13
                             }, undefined),
                             " ",
@@ -1057,19 +1016,19 @@ const ProblemDescription = /*#__PURE__*/ (0, _reactDefault.default).memo(_c = ({
                                 opts: videoOptions
                             }, void 0, false, {
                                 fileName: "src/components/ProblemDescription.jsx",
-                                lineNumber: 58,
+                                lineNumber: 57,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/ProblemDescription.jsx",
-                        lineNumber: 56,
+                        lineNumber: 55,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/ProblemDescription.jsx",
-                lineNumber: 44,
+                lineNumber: 43,
                 columnNumber: 7
             }, undefined),
             " "
@@ -81362,12 +81321,12 @@ var YouTubePlayer = {};
 exports.default = YouTubePlayer;
 module.exports = exports['default'];
 
-},{"d666b3669dc861db":"aEBf2","2c53efa60e6c47a5":"jVM2I","9d738db9b6ef0302":"cOzdY","76c2169923072471":"9TXI9"}],"aEBf2":[function(require,module,exports,__globalThis) {
+},{"d666b3669dc861db":"gTdlW","2c53efa60e6c47a5":"jVM2I","9d738db9b6ef0302":"cOzdY","76c2169923072471":"9TXI9"}],"gTdlW":[function(require,module,exports,__globalThis) {
 /**
  * This is the web browser implementation of `debug()`.
  *
  * Expose `debug()` as the module.
- */ exports = module.exports = require("164b7987e493c35c");
+ */ exports = module.exports = require("76f79387d50f5378");
 exports.log = log;
 exports.formatArgs = formatArgs;
 exports.save = save;
@@ -81489,7 +81448,7 @@ exports.storage = 'undefined' != typeof chrome && 'undefined' != typeof chrome.s
     } catch (e) {}
 }
 
-},{"164b7987e493c35c":"3EuCn"}],"3EuCn":[function(require,module,exports,__globalThis) {
+},{"76f79387d50f5378":"bhJW1"}],"bhJW1":[function(require,module,exports,__globalThis) {
 /**
  * This is the common logic for both the Node.js and web browser
  * implementations of `debug()`.
@@ -81500,7 +81459,7 @@ exports.coerce = coerce;
 exports.disable = disable;
 exports.enable = enable;
 exports.enabled = enabled;
-exports.humanize = require("9e84ac15c703264e");
+exports.humanize = require("a2f5baaa230fafe4");
 /**
  * The currently active debug mode names, and names to skip.
  */ exports.names = [];
@@ -81632,7 +81591,7 @@ exports.skips = [];
     return val;
 }
 
-},{"9e84ac15c703264e":"6zT1x"}],"6zT1x":[function(require,module,exports,__globalThis) {
+},{"a2f5baaa230fafe4":"bV0k4"}],"bV0k4":[function(require,module,exports,__globalThis) {
 /**
  * Helpers.
  */ var s = 1000;
@@ -81887,19 +81846,7 @@ const getProblemDetails = async (problemSlug)=>{
 };
 exports.default = getProblemDetails;
 
-},{"../constants":"6Q7L8","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"6Q7L8":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "url", ()=>url);
-parcelHelpers.export(exports, "JUDGE_API_BASE_URL", ()=>JUDGE_API_BASE_URL);
-const url = "/pepper";
-const JUDGE_API_BASE_URL = "https://127.0.0.1:5050";
-exports.default = {
-    url,
-    JUDGE_API_BASE_URL
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"4Xcqp":[function(require,module,exports,__globalThis) {
+},{"../constants":"6Q7L8","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"4Xcqp":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$21b3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$21b3.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -112442,7 +112389,7 @@ const ProblemSubmission = ({ code, language, input, setInput, onRun, runResult, 
         columnNumber: 5
     }, undefined);
 };
-_s(ProblemSubmission, "6ijEpDRgLeBHKioShEnDJwx80S8=");
+_s(ProblemSubmission, "knle+qt467SSNjFcfNcnzuoN5aU=");
 _c = ProblemSubmission;
 exports.default = ProblemSubmission;
 var _c;
@@ -112453,60 +112400,6 @@ $RefreshReg$(_c, "ProblemSubmission");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@fortawesome/react-fontawesome":"iVKob","@fortawesome/free-solid-svg-icons":"gQz28","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"7uuQH":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "getLanguages", ()=>getLanguages);
-parcelHelpers.export(exports, "executeCode", ()=>executeCode);
-parcelHelpers.export(exports, "executeCodeWithTestCases", ()=>executeCodeWithTestCases);
-var _constants = require("../constants");
-const getLanguages = async ()=>{
-    const response = await fetch(`${(0, _constants.JUDGE_API_BASE_URL)}/languages`);
-    if (!response.ok) throw new Error(`Error fetching languages: ${response.statusText}`);
-    return await response.json();
-};
-const executeCode = async ({ code, language, input })=>{
-    const response = await fetch(`${(0, _constants.JUDGE_API_BASE_URL)}/execute`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            code,
-            language,
-            input
-        })
-    });
-    if (!response.ok) throw new Error(`Error executing code: ${response.statusText}`);
-    const data = await response.json();
-    // For backward compatibility, return the first result as stdout/stderr
-    if (data.results && data.results.length > 0) {
-        const firstResult = data.results[0];
-        return {
-            stdout: firstResult.actualOutput,
-            stderr: firstResult.stderr,
-            results: data.results,
-            summary: data.summary
-        };
-    }
-    return data;
-};
-const executeCodeWithTestCases = async ({ code, language, testCases })=>{
-    const response = await fetch(`${(0, _constants.JUDGE_API_BASE_URL)}/execute`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            code,
-            language,
-            testCases
-        })
-    });
-    if (!response.ok) throw new Error(`Error executing code: ${response.statusText}`);
-    return await response.json();
-};
-
-},{"../constants":"6Q7L8","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["dOOSt"], null, "parcelRequire17b7", {})
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@fortawesome/react-fontawesome":"iVKob","@fortawesome/free-solid-svg-icons":"gQz28","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["dOOSt"], null, "parcelRequire17b7", {})
 
 //# sourceMappingURL=ProblemDetail.c18ff3ef.js.map
