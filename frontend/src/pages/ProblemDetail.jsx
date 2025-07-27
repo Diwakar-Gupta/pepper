@@ -118,7 +118,21 @@ const ProblemDetails = () => {
           ) : (
             <div className="bg-yellow-100 text-yellow-700 p-4 rounded-md text-center">
               <p className="font-medium mb-2">Code Editor Unavailable</p>
-              <p className="text-sm">Please connect to the judge server using the connection panel in the top-right corner.</p>
+              <p className="text-sm mb-3">Please connect to the judge server using the connection panel in the top-right corner.</p>
+              <div className="text-sm">
+                <p className="mb-2">Need help setting up the judge?</p>
+                <a 
+                  href="https://github.com/Diwakar-Gupta/pepper/tree/main/judge#-first-time-user-seeing-code-editor-unavailable"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors duration-200 text-xs font-medium"
+                >
+                  📚 Judge Setup Guide
+                  <svg className="ml-1 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
             </div>
           )}
         </div>

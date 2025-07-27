@@ -4,6 +4,31 @@
 
 The Pepper Judge is a secure local server that executes user code submissions in multiple programming languages. It communicates with the frontend web application via WebRTC for real-time code execution and testing.
 
+## 🚨 First Time User? Seeing "Code Editor Unavailable"?
+
+**If you see this message on the website:**
+> Code Editor Unavailable
+> 
+> Please connect to the judge server using the connection panel in the top-right corner.
+
+**Follow these 2 simple steps:**
+
+### Step 1: 🏃‍♂️ Run the Local Judge Server
+1. Use the [Quick Start](#-quick-start-automated-setup) section below to set up the judge
+2. The judge will display an 8-character code (e.g., `ABCD-1234`)
+3. Keep the judge running in your terminal
+
+### Step 2: 🔗 Connect to the Judge in Your Browser
+1. Go to the Pepper website
+2. Click the **connection panel** in the **top-right corner**
+3. Enter the 8-character code from your judge
+4. Click "Connect"
+5. ✅ The code editor should now be available!
+
+**Need help?** Continue reading for detailed setup instructions below. ⬇️
+
+---
+
 ## 🎯 Quick Start (Automated Setup)
 
 ### Windows Users

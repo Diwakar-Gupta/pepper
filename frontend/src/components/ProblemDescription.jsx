@@ -1,7 +1,7 @@
 import React from "react";
 import MarkdownPreview from "@uiw/react-markdown-preview";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkAlt, faVideo } from "@fortawesome/free-solid-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import YouTube from "react-youtube";
 
 const videoOptions = {
@@ -39,7 +39,7 @@ const ProblemDescription = React.memo(({ problem }) => {
         wrapperElement={{
           "data-color-mode": "light",
         }}
-      />
+      /> 
       <div className="mt-4">
         {problem.problemVideoLink && (
           <div className="mb-2">
