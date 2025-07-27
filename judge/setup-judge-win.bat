@@ -25,26 +25,6 @@ if %errorlevel% neq 0 (
     set PYTHON_CMD=python
 )
 
-:: Check if Java is installed
-java -version >nul 2>&1
-if %errorlevel% neq 0 (
-    echo ❌ Java is not installed or not in PATH
-    echo Please install JDK 8+ from https://adoptium.net/
-    pause
-    exit /b 1
-)
-
-:: Check if GCC is installed
-g++ --version >nul 2>&1
-if %errorlevel% neq 0 (
-    echo ❌ GCC/G++ is not installed or not in PATH
-    echo Please install MinGW-w64 or Visual Studio Build Tools
-    echo MinGW-w64: https://www.mingw-w64.org/
-    echo VS Build Tools: https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022
-    pause
-    exit /b 1
-)
-
 echo ✅ All prerequisites found!
 echo.
 
