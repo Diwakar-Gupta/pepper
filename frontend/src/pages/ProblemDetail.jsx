@@ -5,7 +5,7 @@ import Progress from "../components/Progress";
 import getProblemDetails from "../repository/getProblemDetails";
 import ProblemEditor from "../components/ProblemEditor";
 import ProblemSubmission from "../components/ProblemSubmission";
-import { useJudgeStatus } from "../hooks/useJudgeStatus";
+import { useJudge } from "../contexts/JudgeContext";
 
 const ProblemDetails = () => {
   const { problemSlug } = useParams();
@@ -15,7 +15,7 @@ const ProblemDetails = () => {
   const [runResult, setRunResult] = useState({ stdout: "", stderr: "" });
   const [input, setInput] = useState("");
 
-  // Use the custom judge status hook
+  // Use the shared judge context
   const {
     isJudgeAvailable,
     languages,
@@ -23,7 +23,7 @@ const ProblemDetails = () => {
     setSelectedLanguage,
     executeCodeWithLanguage,
     error: judgeError
-  } = useJudgeStatus();
+  } = useJudge();
 
   useEffect(() => {
     const fetchData = async () => {

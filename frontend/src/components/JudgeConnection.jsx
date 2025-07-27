@@ -4,19 +4,22 @@ import {
   getJudgeCode, 
   disconnect
 } from '../repository/judgeRTCApi';
-import { useJudgeStatus } from '../hooks/useJudgeStatus';
+import { useJudge } from '../contexts/JudgeContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPowerOff, faSyncAlt } from '@fortawesome/free-solid-svg-icons';
+
 
 const JudgeConnection = () => {
   const [judgeCode, setJudgeCodeInput] = useState('');
   const [showCodeInput, setShowCodeInput] = useState(false);
 
-  // Use the custom judge status hook
+  // Use the shared judge context
   const {
     isConnected,
     isConnecting,
     connectionStatus,
     error: statusMessage
-  } = useJudgeStatus();
+  } = useJudge();
 
   useEffect(() => {
     console.log('JudgeConnection: useEffect - checking stored code');
@@ -69,19 +72,6 @@ const JudgeConnection = () => {
     setJudgeCodeInput('');
   };
 
-  const getStatusColor = () => {
-    switch (connectionStatus) {
-      case 'connected':
-        return 'text-green-600';
-      case 'connecting':
-        return 'text-yellow-600';
-      case 'error':
-        return 'text-red-600';
-      default:
-        return 'text-gray-600';
-    }
-  };
-
   const getStatusIcon = () => {
     switch (connectionStatus) {
       case 'connected':
@@ -95,73 +85,88 @@ const JudgeConnection = () => {
     }
   };
 
-  return (
-    <div className="bg-white p-4 rounded-lg shadow-md">
-      <div className="flex items-center justify-between mb-4">
-        <h3 className="text-lg font-semibold">Judge Connection</h3>
-        <div className={`flex items-center space-x-2 ${getStatusColor()}`}>
-          <span>{getStatusIcon()}</span>
-          <span className="text-sm font-medium">
-            {isConnected ? 'Connected' :
-             isConnecting ? 'Connecting...' :
-             connectionStatus === 'error' ? 'Error' : 'Disconnected'}
-          </span>
-        </div>
-      </div>
+  const getStatusText = () => {
+    switch (connectionStatus) {
+      case 'connected':
+        return 'Connected to Judge';
+      case 'connecting':
+        return 'Connecting...';
+      case 'error':
+        return 'Connection Error';
+      default:
+        return 'Disconnected';
+    }
+  };
 
-      {statusMessage && (
-        <div className="mb-4 p-2 bg-gray-100 rounded text-sm">
-          {statusMessage}
-        </div>
-      )}
+  const getStatusColor = () => {
+    switch (connectionStatus) {
+      case 'connected':
+        return 'text-green-600';
+      case 'connecting':
+        return 'text-yellow-600';
+      case 'error':
+        return 'text-red-600';
+      default:
+        return 'text-gray-400';
+    }
+  };
 
-      {showCodeInput ? (
-        <form onSubmit={handleCodeSubmit} className="space-y-3">
-          <div>
-            <label htmlFor="judgeCode" className="block text-sm font-medium text-gray-700 mb-1">
-              Enter Judge Code
-            </label>
-            <input
-              type="text"
-              id="judgeCode"
-              value={judgeCode}
-              onChange={(e) => setJudgeCodeInput(e.target.value)}
-              placeholder="XXXX-XXXX"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              maxLength={9}
-            />
-            <p className="text-xs text-gray-500 mt-1">
-              Enter the 8-character code shown in your local judge (format: XXXX-XXXX)
-            </p>
-          </div>
+  if (showCodeInput) {
+    return (
+      <div className="flex items-center space-x-2">
+        <form onSubmit={handleCodeSubmit} className="flex items-center space-x-2">
+          <input
+            type="text"
+            value={judgeCode}
+            onChange={(e) => setJudgeCodeInput(e.target.value)}
+            placeholder="XXXX-XXXX"
+            className="px-2 py-1 text-sm border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500"
+            maxLength={9}
+          />
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="px-3 py-1 text-sm bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-1 focus:ring-blue-500"
           >
             Connect
           </button>
         </form>
-      ) : (
-        <div className="space-y-3">
-          <div className="flex items-center justify-between p-3 bg-gray-50 rounded">
-            <span className="text-sm font-medium">Judge Code:</span>
-            <span className="font-mono text-sm">{judgeCode}</span>
-          </div>
-          <div className="flex space-x-2">
-            <button
-              onClick={handleDisconnect}
-              className="flex-1 bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
-            >
-              Disconnect
-            </button>
-            <button
-              onClick={handleNewCode}
-              className="flex-1 bg-gray-600 text-white py-2 px-4 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
-            >
-              New Code
-            </button>
-          </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex items-center space-x-2">
+      {/* Status indicator with hover tooltip */}
+      <div className="relative group">
+        <span className={`text-lg cursor-help ${getStatusColor()}`} title={getStatusText()}>
+          {getStatusIcon()}
+        </span>
+        {/* Tooltip */}
+        <div className="absolute bottom-full right-0 mb-2 px-2 py-1 text-xs text-white bg-gray-800 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
+          {getStatusText()}
         </div>
+      </div>
+
+      {/* Disconnect button - only show when connected */}
+      {isConnected && (
+        <button
+          onClick={handleDisconnect}
+          className="px-2 py-1 text-xs text-red-600 hover:text-red-800 hover:bg-red-50 rounded focus:outline-none focus:ring-1 focus:ring-red-500"
+          title="Disconnect"
+        >
+          <FontAwesomeIcon icon={faPowerOff} />
+        </button>
+      )}
+
+      {/* New code button - only show when connected */}
+      {isConnected && (
+        <button
+          onClick={handleNewCode}
+          className="px-2 py-1 text-xs text-gray-600 hover:text-gray-800 hover:bg-gray-50 rounded focus:outline-none focus:ring-1 focus:ring-gray-500"
+          title="New Code"
+        >
+          <FontAwesomeIcon icon={faSyncAlt} />
+        </button>
       )}
     </div>
   );

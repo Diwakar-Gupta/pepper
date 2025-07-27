@@ -66,6 +66,18 @@ export function setJudgeCode(code) {
   return cleanCode;
 }
 
+// Auto-connect if there's a stored code
+export function autoConnectIfStored() {
+  const storedCode = getStoredJudgeCode();
+  if (storedCode) {
+    console.log("Found stored judge code, auto-connecting...");
+    sessionId = storedCode;
+    connectRTC().catch(error => {
+      console.log("Auto-connection failed:", error);
+    });
+  }
+}
+
 export function getJudgeCode() {
   return getStoredJudgeCode();
 }
@@ -137,7 +149,7 @@ async function connectRTC() {
     console.log("DataChannel readyState:", dataChannel.readyState);
     console.log("DataChannel bufferedAmount:", dataChannel.bufferedAmount);
     connected = true;
-    updateConnectionStatus(CONNECTION_STATUS.CONNECTED, "Connected to judge");
+    updateConnectionStatus(CONNECTION_STATUS.CONNECTED);
     console.log("Calling pending queue functions...");
     pendingQueue.forEach((fn) => fn());
     pendingQueue = [];

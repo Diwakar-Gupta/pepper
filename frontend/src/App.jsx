@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider, Outlet, Navigate } from "react-router-dom";
 import Progress from "./components/Progress";
 import TopNavigator from "./components/TopNavigator";
+import { JudgeProvider } from "./contexts/JudgeContext";
 
 const CoursesPage = lazy(() => import("./pages/CoursesPage"));
 const CourseDetailPage = lazy(() => import("./pages/CourseDetailPage"));
@@ -12,10 +13,12 @@ const Error = lazy(() => import("./pages/Error"));
 const AppLayout = () => {
   console.log("AppLayout Rendered");
   return (
-    <div className="app">
-      <TopNavigator />
-      <Outlet />
-    </div>
+    <JudgeProvider>
+      <div className="app">
+        <TopNavigator />
+        <Outlet />
+      </div>
+    </JudgeProvider>
   );
 };
 
