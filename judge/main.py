@@ -80,7 +80,7 @@ def compare_outputs(actual, expected):
     return passed, diff
 
 if __name__ == "__main__":
-    SIGNALING_SERVER_URL = "http://localhost:8080"  # <-- replace with your deployed signaling server
+    SIGNALING_SERVER_URL = "https://pepper-isjb.onrender.com"  # <-- replace with your deployed signaling server
     JUDGE_CODE_FILE = ".judge_code"
 
     def generate_judge_code():
