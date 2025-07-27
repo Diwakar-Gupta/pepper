@@ -60955,7 +60955,7 @@ const JudgeConnection = ()=>{
                 lineNumber: 152,
                 columnNumber: 9
             }, undefined),
-            isConnected && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+            (isConnected || isConnecting) && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 onClick: handleNewCode,
                 className: "px-2 py-1 text-xs text-gray-600 hover:text-gray-800 hover:bg-gray-50 rounded focus:outline-none focus:ring-1 focus:ring-gray-500",
                 title: "New Code",

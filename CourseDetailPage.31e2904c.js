@@ -689,6 +689,8 @@ var _twoColListAndRankView = require("../layouts/TwoColListAndRankView");
 var _twoColListAndRankViewDefault = parcelHelpers.interopDefault(_twoColListAndRankView);
 var _progress = require("../components/Progress");
 var _progressDefault = parcelHelpers.interopDefault(_progress);
+var _editLinks = require("../components/EditLinks");
+var _editLinksDefault = parcelHelpers.interopDefault(_editLinks);
 var _s = $RefreshSig$();
 const CourseDetailPage = ()=>{
     _s();
@@ -714,52 +716,64 @@ const CourseDetailPage = ()=>{
     ]);
     if (isLoading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _progressDefault.default), {}, void 0, false, {
         fileName: "src/pages/CourseDetailPage.jsx",
-        lineNumber: 32,
+        lineNumber: 33,
         columnNumber: 12
     }, undefined);
     if (!course) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: "Course not found"
     }, void 0, false, {
         fileName: "src/pages/CourseDetailPage.jsx",
-        lineNumber: 36,
+        lineNumber: 37,
         columnNumber: 12
     }, undefined);
     console.log(course.categorys);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _twoColListAndRankViewDefault.default), {
-        Component1: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "flex flex-col justify-center md:grow",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    className: "font-medium text-3xl text-center",
-                    children: "Modules and Lectures"
-                }, void 0, false, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _editLinksDefault.default), {
+                uiPath: "CourseDetailPage.jsx",
+                dataPath: `courses/${courseSlug}/meta.json`
+            }, void 0, false, {
+                fileName: "src/pages/CourseDetailPage.jsx",
+                lineNumber: 44,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _twoColListAndRankViewDefault.default), {
+                Component1: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex flex-col justify-center md:grow",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "font-medium text-3xl text-center",
+                            children: "Modules and Lectures"
+                        }, void 0, false, {
+                            fileName: "src/pages/CourseDetailPage.jsx",
+                            lineNumber: 51,
+                            columnNumber: 13
+                        }, void 0),
+                        course.categorys.map((category)=>{
+                            const title = category.name;
+                            const items = category.topics.map((topic)=>topic.name);
+                            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _accordionDefault.default), {
+                                title: title,
+                                items: items
+                            }, title, false, {
+                                fileName: "src/pages/CourseDetailPage.jsx",
+                                lineNumber: 58,
+                                columnNumber: 22
+                            }, void 0);
+                        })
+                    ]
+                }, void 0, true, {
                     fileName: "src/pages/CourseDetailPage.jsx",
-                    lineNumber: 45,
+                    lineNumber: 50,
                     columnNumber: 11
-                }, void 0),
-                course.categorys.map((category)=>{
-                    const title = category.name;
-                    const items = category.topics.map((topic)=>topic.name);
-                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _accordionDefault.default), {
-                        title: title,
-                        items: items
-                    }, title, false, {
-                        fileName: "src/pages/CourseDetailPage.jsx",
-                        lineNumber: 52,
-                        columnNumber: 20
-                    }, void 0);
-                })
-            ]
-        }, void 0, true, {
-            fileName: "src/pages/CourseDetailPage.jsx",
-            lineNumber: 44,
-            columnNumber: 9
-        }, void 0)
-    }, void 0, false, {
-        fileName: "src/pages/CourseDetailPage.jsx",
-        lineNumber: 42,
-        columnNumber: 5
-    }, undefined);
+                }, void 0)
+            }, void 0, false, {
+                fileName: "src/pages/CourseDetailPage.jsx",
+                lineNumber: 48,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true);
 };
 _s(CourseDetailPage, "W6Pr1zJI5vI4qFvK1hcLD6iR0OQ=", false, function() {
     return [
@@ -776,7 +790,7 @@ $RefreshReg$(_c, "CourseDetailPage");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","../components/utils/Accordion":"axmNq","../repository/getCourseDetails":"1R8ol","../layouts/TwoColListAndRankView":"jkpUs","../components/Progress":"jw8uh","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"axmNq":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","../components/utils/Accordion":"axmNq","../repository/getCourseDetails":"1R8ol","../layouts/TwoColListAndRankView":"jkpUs","../components/Progress":"jw8uh","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../components/EditLinks":"ludgh"}],"axmNq":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$649b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$649b.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -976,6 +990,122 @@ $RefreshReg$(_c, "TwoColListAndRankView");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["bQYIG"], null, "parcelRequire17b7", {})
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"ludgh":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$3c0c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$3c0c.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3c0c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactFontawesome = require("@fortawesome/react-fontawesome");
+var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
+var _s = $RefreshSig$();
+const EditLinks = ({ uiPath, dataPath, className = "fixed bottom-4 right-4 z-50" })=>{
+    _s();
+    const [isOpen, setIsOpen] = (0, _react.useState)(false);
+    const githubBaseUrl = "https://github.com/Diwakar-Gupta/pepper/blob/main/frontend/src/pages";
+    const dataBaseUrl = "https://github.com/Diwakar-Gupta/pepper/blob/main/frontend/public/database";
+    const handleEditUI = ()=>{
+        window.open(`${githubBaseUrl}/${uiPath}`, '_blank');
+        setIsOpen(false);
+    };
+    const handleEditData = ()=>{
+        window.open(`${dataBaseUrl}/${dataPath}`, '_blank');
+        setIsOpen(false);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: className,
+        children: [
+            isOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "mb-2 flex flex-col gap-1",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: handleEditUI,
+                        className: "bg-gray-700 hover:bg-gray-800 text-white px-2 py-1 rounded text-xs transition-colors duration-200 flex items-center gap-1 opacity-90",
+                        title: "Edit UI Component",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
+                                icon: (0, _freeSolidSvgIcons.faCode),
+                                className: "text-xs"
+                            }, void 0, false, {
+                                fileName: "src/components/EditLinks.jsx",
+                                lineNumber: 34,
+                                columnNumber: 13
+                            }, undefined),
+                            "UI"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/EditLinks.jsx",
+                        lineNumber: 29,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: handleEditData,
+                        className: "bg-gray-700 hover:bg-gray-800 text-white px-2 py-1 rounded text-xs transition-colors duration-200 flex items-center gap-1 opacity-90",
+                        title: "Edit Data File",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
+                                icon: (0, _freeSolidSvgIcons.faEdit),
+                                className: "text-xs"
+                            }, void 0, false, {
+                                fileName: "src/components/EditLinks.jsx",
+                                lineNumber: 42,
+                                columnNumber: 13
+                            }, undefined),
+                            "Data"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/EditLinks.jsx",
+                        lineNumber: 37,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/EditLinks.jsx",
+                lineNumber: 28,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setIsOpen(!isOpen),
+                className: "bg-gray-600 hover:bg-gray-700 text-white p-2 rounded-full shadow-lg transition-all duration-200 opacity-70 hover:opacity-100",
+                title: "Edit Options",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
+                    icon: (0, _freeSolidSvgIcons.faCog),
+                    className: "text-sm"
+                }, void 0, false, {
+                    fileName: "src/components/EditLinks.jsx",
+                    lineNumber: 54,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/EditLinks.jsx",
+                lineNumber: 49,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/EditLinks.jsx",
+        lineNumber: 25,
+        columnNumber: 5
+    }, undefined);
+};
+_s(EditLinks, "+sus0Lb0ewKHdwiUhiTAJFoFyQ0=");
+_c = EditLinks;
+exports.default = EditLinks;
+var _c;
+$RefreshReg$(_c, "EditLinks");
+
+  $parcel$ReactRefreshHelpers$3c0c.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@fortawesome/react-fontawesome":"iVKob","@fortawesome/free-solid-svg-icons":"gQz28","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["bQYIG"], null, "parcelRequire17b7", {})
 
 //# sourceMappingURL=CourseDetailPage.31e2904c.js.map

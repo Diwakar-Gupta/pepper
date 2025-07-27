@@ -686,6 +686,8 @@ var _twoColListAndRankView = require("../layouts/TwoColListAndRankView");
 var _twoColListAndRankViewDefault = parcelHelpers.interopDefault(_twoColListAndRankView);
 var _progress = require("../components/Progress");
 var _progressDefault = parcelHelpers.interopDefault(_progress);
+var _editLinks = require("../components/EditLinks");
+var _editLinksDefault = parcelHelpers.interopDefault(_editLinks);
 var _s = $RefreshSig$();
 const ModuleDetail = ()=>{
     _s();
@@ -711,141 +713,153 @@ const ModuleDetail = ()=>{
     ]);
     if (isLoading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _progressDefault.default), {}, void 0, false, {
         fileName: "src/pages/ModuleDetailPage.jsx",
-        lineNumber: 33,
+        lineNumber: 34,
         columnNumber: 12
     }, undefined);
     if (!moduleProblems) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: "Module not found"
     }, void 0, false, {
         fileName: "src/pages/ModuleDetailPage.jsx",
-        lineNumber: 37,
+        lineNumber: 38,
         columnNumber: 12
     }, undefined);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _twoColListAndRankViewDefault.default), {
-        Component1: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "bg-white shadow-md rounded-md",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    className: "text-3xl font-bold mb-6 text-center",
-                    children: "DSA Questions"
-                }, void 0, false, {
-                    fileName: "src/pages/ModuleDetailPage.jsx",
-                    lineNumber: 44,
-                    columnNumber: 11
-                }, void 0),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
-                    className: "w-full divide-y divide-gray-200",
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _editLinksDefault.default), {
+                uiPath: "ModuleDetailPage.jsx",
+                dataPath: `courses/${courseSlug}/${moduleSlug}.json`
+            }, void 0, false, {
+                fileName: "src/pages/ModuleDetailPage.jsx",
+                lineNumber: 43,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _twoColListAndRankViewDefault.default), {
+                Component1: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "bg-white shadow-md rounded-md",
                     children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                                className: "bg-gray-200",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                        className: "py-2 px-4",
-                                        children: "Status"
-                                    }, void 0, false, {
-                                        fileName: "src/pages/ModuleDetailPage.jsx",
-                                        lineNumber: 49,
-                                        columnNumber: 17
-                                    }, void 0),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                        className: "py-2 px-4",
-                                        children: "Title"
-                                    }, void 0, false, {
-                                        fileName: "src/pages/ModuleDetailPage.jsx",
-                                        lineNumber: 50,
-                                        columnNumber: 17
-                                    }, void 0),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
-                                        className: "py-2 px-4",
-                                        children: "Difficulty"
-                                    }, void 0, false, {
-                                        fileName: "src/pages/ModuleDetailPage.jsx",
-                                        lineNumber: 51,
-                                        columnNumber: 17
-                                    }, void 0)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/pages/ModuleDetailPage.jsx",
-                                lineNumber: 48,
-                                columnNumber: 15
-                            }, void 0)
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            className: "text-3xl font-bold mb-6 text-center",
+                            children: "DSA Questions"
                         }, void 0, false, {
                             fileName: "src/pages/ModuleDetailPage.jsx",
-                            lineNumber: 47,
-                            columnNumber: 13
+                            lineNumber: 50,
+                            columnNumber: 11
                         }, void 0),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
-                            children: moduleProblems.map((problem, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
-                                    className: `${index % 2 === 0 ? "bg-gray-50" : "bg-white"} text-center`,
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                            className: "py-2 px-4",
-                                            children: "-"
-                                        }, void 0, false, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
+                            className: "w-full divide-y divide-gray-200",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("thead", {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                        className: "bg-gray-200",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                className: "py-2 px-4",
+                                                children: "Status"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/ModuleDetailPage.jsx",
+                                                lineNumber: 55,
+                                                columnNumber: 17
+                                            }, void 0),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                className: "py-2 px-4",
+                                                children: "Title"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/ModuleDetailPage.jsx",
+                                                lineNumber: 56,
+                                                columnNumber: 17
+                                            }, void 0),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
+                                                className: "py-2 px-4",
+                                                children: "Difficulty"
+                                            }, void 0, false, {
+                                                fileName: "src/pages/ModuleDetailPage.jsx",
+                                                lineNumber: 57,
+                                                columnNumber: 17
+                                            }, void 0)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/pages/ModuleDetailPage.jsx",
+                                        lineNumber: 54,
+                                        columnNumber: 15
+                                    }, void 0)
+                                }, void 0, false, {
+                                    fileName: "src/pages/ModuleDetailPage.jsx",
+                                    lineNumber: 53,
+                                    columnNumber: 13
+                                }, void 0),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
+                                    children: moduleProblems.map((problem, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tr", {
+                                            className: `${index % 2 === 0 ? "bg-gray-50" : "bg-white"} text-center`,
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                    className: "py-2 px-4",
+                                                    children: "-"
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/ModuleDetailPage.jsx",
+                                                    lineNumber: 68,
+                                                    columnNumber: 19
+                                                }, void 0),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                    className: "py-2 px-4",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                        to: `${problem.slug}`,
+                                                        className: "text-blue-500 hover:underline",
+                                                        children: problem.name
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/ModuleDetailPage.jsx",
+                                                        lineNumber: 70,
+                                                        columnNumber: 21
+                                                    }, void 0)
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/ModuleDetailPage.jsx",
+                                                    lineNumber: 69,
+                                                    columnNumber: 19
+                                                }, void 0),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
+                                                    className: "py-2 px-4",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: `${problem.difficulty === "Easy" ? "bg-green-500" : problem.difficulty === "Medium" ? "bg-yellow-500" : "bg-red-500"} text-white px-2 py-1 rounded-full`,
+                                                        children: problem.difficulty
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/ModuleDetailPage.jsx",
+                                                        lineNumber: 78,
+                                                        columnNumber: 21
+                                                    }, void 0)
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/ModuleDetailPage.jsx",
+                                                    lineNumber: 77,
+                                                    columnNumber: 19
+                                                }, void 0)
+                                            ]
+                                        }, problem.slug, true, {
                                             fileName: "src/pages/ModuleDetailPage.jsx",
                                             lineNumber: 62,
-                                            columnNumber: 19
-                                        }, void 0),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                            className: "py-2 px-4",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                                to: `${problem.slug}`,
-                                                className: "text-blue-500 hover:underline",
-                                                children: problem.name
-                                            }, void 0, false, {
-                                                fileName: "src/pages/ModuleDetailPage.jsx",
-                                                lineNumber: 64,
-                                                columnNumber: 21
-                                            }, void 0)
-                                        }, void 0, false, {
-                                            fileName: "src/pages/ModuleDetailPage.jsx",
-                                            lineNumber: 63,
-                                            columnNumber: 19
-                                        }, void 0),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
-                                            className: "py-2 px-4",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                className: `${problem.difficulty === "Easy" ? "bg-green-500" : problem.difficulty === "Medium" ? "bg-yellow-500" : "bg-red-500"} text-white px-2 py-1 rounded-full`,
-                                                children: problem.difficulty
-                                            }, void 0, false, {
-                                                fileName: "src/pages/ModuleDetailPage.jsx",
-                                                lineNumber: 72,
-                                                columnNumber: 21
-                                            }, void 0)
-                                        }, void 0, false, {
-                                            fileName: "src/pages/ModuleDetailPage.jsx",
-                                            lineNumber: 71,
-                                            columnNumber: 19
-                                        }, void 0)
-                                    ]
-                                }, problem.slug, true, {
+                                            columnNumber: 17
+                                        }, void 0))
+                                }, void 0, false, {
                                     fileName: "src/pages/ModuleDetailPage.jsx",
-                                    lineNumber: 56,
-                                    columnNumber: 17
-                                }, void 0))
-                        }, void 0, false, {
+                                    lineNumber: 60,
+                                    columnNumber: 13
+                                }, void 0)
+                            ]
+                        }, void 0, true, {
                             fileName: "src/pages/ModuleDetailPage.jsx",
-                            lineNumber: 54,
-                            columnNumber: 13
+                            lineNumber: 52,
+                            columnNumber: 11
                         }, void 0)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/ModuleDetailPage.jsx",
-                    lineNumber: 46,
-                    columnNumber: 11
+                    lineNumber: 49,
+                    columnNumber: 9
                 }, void 0)
-            ]
-        }, void 0, true, {
-            fileName: "src/pages/ModuleDetailPage.jsx",
-            lineNumber: 43,
-            columnNumber: 9
-        }, void 0)
-    }, void 0, false, {
-        fileName: "src/pages/ModuleDetailPage.jsx",
-        lineNumber: 41,
-        columnNumber: 5
-    }, undefined);
+            }, void 0, false, {
+                fileName: "src/pages/ModuleDetailPage.jsx",
+                lineNumber: 47,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true);
 };
 _s(ModuleDetail, "8EuG+ta1MDojRZyypLIVLXGhkjo=", false, function() {
     return [
@@ -862,7 +876,7 @@ $RefreshReg$(_c, "ModuleDetail");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","../repository/getModuleDetails":"93zsK","../layouts/TwoColListAndRankView":"jkpUs","../components/Progress":"jw8uh","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"93zsK":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","../repository/getModuleDetails":"93zsK","../layouts/TwoColListAndRankView":"jkpUs","../components/Progress":"jw8uh","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../components/EditLinks":"ludgh"}],"93zsK":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _constants = require("../constants");
@@ -944,6 +958,122 @@ $RefreshReg$(_c, "TwoColListAndRankView");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["g2kOm"], null, "parcelRequire17b7", {})
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"ludgh":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$3c0c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$3c0c.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3c0c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactFontawesome = require("@fortawesome/react-fontawesome");
+var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
+var _s = $RefreshSig$();
+const EditLinks = ({ uiPath, dataPath, className = "fixed bottom-4 right-4 z-50" })=>{
+    _s();
+    const [isOpen, setIsOpen] = (0, _react.useState)(false);
+    const githubBaseUrl = "https://github.com/Diwakar-Gupta/pepper/blob/main/frontend/src/pages";
+    const dataBaseUrl = "https://github.com/Diwakar-Gupta/pepper/blob/main/frontend/public/database";
+    const handleEditUI = ()=>{
+        window.open(`${githubBaseUrl}/${uiPath}`, '_blank');
+        setIsOpen(false);
+    };
+    const handleEditData = ()=>{
+        window.open(`${dataBaseUrl}/${dataPath}`, '_blank');
+        setIsOpen(false);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: className,
+        children: [
+            isOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "mb-2 flex flex-col gap-1",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: handleEditUI,
+                        className: "bg-gray-700 hover:bg-gray-800 text-white px-2 py-1 rounded text-xs transition-colors duration-200 flex items-center gap-1 opacity-90",
+                        title: "Edit UI Component",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
+                                icon: (0, _freeSolidSvgIcons.faCode),
+                                className: "text-xs"
+                            }, void 0, false, {
+                                fileName: "src/components/EditLinks.jsx",
+                                lineNumber: 34,
+                                columnNumber: 13
+                            }, undefined),
+                            "UI"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/EditLinks.jsx",
+                        lineNumber: 29,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: handleEditData,
+                        className: "bg-gray-700 hover:bg-gray-800 text-white px-2 py-1 rounded text-xs transition-colors duration-200 flex items-center gap-1 opacity-90",
+                        title: "Edit Data File",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
+                                icon: (0, _freeSolidSvgIcons.faEdit),
+                                className: "text-xs"
+                            }, void 0, false, {
+                                fileName: "src/components/EditLinks.jsx",
+                                lineNumber: 42,
+                                columnNumber: 13
+                            }, undefined),
+                            "Data"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/EditLinks.jsx",
+                        lineNumber: 37,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/EditLinks.jsx",
+                lineNumber: 28,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setIsOpen(!isOpen),
+                className: "bg-gray-600 hover:bg-gray-700 text-white p-2 rounded-full shadow-lg transition-all duration-200 opacity-70 hover:opacity-100",
+                title: "Edit Options",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
+                    icon: (0, _freeSolidSvgIcons.faCog),
+                    className: "text-sm"
+                }, void 0, false, {
+                    fileName: "src/components/EditLinks.jsx",
+                    lineNumber: 54,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/EditLinks.jsx",
+                lineNumber: 49,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/EditLinks.jsx",
+        lineNumber: 25,
+        columnNumber: 5
+    }, undefined);
+};
+_s(EditLinks, "+sus0Lb0ewKHdwiUhiTAJFoFyQ0=");
+_c = EditLinks;
+exports.default = EditLinks;
+var _c;
+$RefreshReg$(_c, "EditLinks");
+
+  $parcel$ReactRefreshHelpers$3c0c.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@fortawesome/react-fontawesome":"iVKob","@fortawesome/free-solid-svg-icons":"gQz28","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["g2kOm"], null, "parcelRequire17b7", {})
 
 //# sourceMappingURL=ModuleDetailPage.47ab2c01.js.map
