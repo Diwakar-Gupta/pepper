@@ -840,11 +840,61 @@ const ProblemDetails = ()=>{
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "text-sm",
+                                    className: "text-sm mb-3",
                                     children: "Please connect to the judge server using the connection panel in the top-right corner."
                                 }, void 0, false, {
                                     fileName: "src/pages/ProblemDetail.jsx",
                                     lineNumber: 121,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-sm",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "mb-2",
+                                            children: "Need help setting up the judge?"
+                                        }, void 0, false, {
+                                            fileName: "src/pages/ProblemDetail.jsx",
+                                            lineNumber: 123,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: "https://github.com/Diwakar-Gupta/pepper/tree/main/judge#-first-time-user-seeing-code-editor-unavailable",
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            className: "inline-flex items-center px-3 py-1 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors duration-200 text-xs font-medium",
+                                            children: [
+                                                "\uD83D\uDCDA Judge Setup Guide",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    className: "ml-1 w-3 h-3",
+                                                    fill: "none",
+                                                    stroke: "currentColor",
+                                                    viewBox: "0 0 24 24",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                        strokeLinecap: "round",
+                                                        strokeLinejoin: "round",
+                                                        strokeWidth: 2,
+                                                        d: "M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/ProblemDetail.jsx",
+                                                        lineNumber: 132,
+                                                        columnNumber: 21
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/pages/ProblemDetail.jsx",
+                                                    lineNumber: 131,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/pages/ProblemDetail.jsx",
+                                            lineNumber: 124,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/ProblemDetail.jsx",
+                                    lineNumber: 122,
                                     columnNumber: 15
                                 }, undefined)
                             ]

@@ -61028,7 +61028,6 @@ let socket = null;
 let sessionId = null;
 let onConnectionStatusChange = null;
 let onLanguagesReceived = null;
-let processedSignals = new Set(); // Track processed signals to prevent duplicates
 const CONNECTION_STATUS = {
     DISCONNECTED: "disconnected",
     CONNECTING: "connecting",
@@ -61094,8 +61093,6 @@ function disconnect() {
     }
     connected = false;
     sessionId = null;
-    // Clear processed signals to allow fresh connections
-    processedSignals.clear();
     // Clear stored languages
     window.judgeLanguages = null;
     updateConnectionStatus(CONNECTION_STATUS.DISCONNECTED);
@@ -61233,41 +61230,16 @@ async function connectRTC() {
         if (data.from === "judge") {
             const signal = data.signal;
             console.log("Signal type:", signal.type);
-            // Create a unique identifier for this signal to prevent duplicates
-            const signalId = `${signal.type}-${Date.now()}-${Math.random()}`;
             if (signal.type === "answer") {
-                // Check if we've already processed a similar answer or if connection is in wrong state
-                if (rtcPc.signalingState !== "have-local-offer") {
-                    console.log(`Ignoring answer signal - wrong state: ${rtcPc.signalingState}`);
-                    return;
-                }
-                try {
-                    console.log("Setting remote description from judge answer");
-                    console.log("Current signaling state:", rtcPc.signalingState);
-                    await rtcPc.setRemoteDescription(new window.RTCSessionDescription(signal.answer));
-                    console.log("Remote description set successfully");
-                    console.log("New signaling state:", rtcPc.signalingState);
-                } catch (error) {
-                    console.error("Error setting remote description:", error);
-                    console.log("RTCPeerConnection state:", {
-                        signalingState: rtcPc.signalingState,
-                        connectionState: rtcPc.connectionState,
-                        iceConnectionState: rtcPc.iceConnectionState
-                    });
-                    // Don't throw the error to prevent unhandled rejection
-                    return;
-                }
-            } else if (signal.type === "ice") {
-                // Only add ICE candidates if we're in a state that can accept them
-                if (rtcPc.remoteDescription) try {
-                    console.log("Adding ICE candidate from judge");
-                    await rtcPc.addIceCandidate(signal.candidate);
-                    console.log("ICE candidate added successfully");
-                } catch (e) {
-                    console.log("Error adding ICE candidate:", e);
-                // ICE candidate errors are usually not critical, so don't throw
-                }
-                else console.log("Ignoring ICE candidate - no remote description set yet");
+                console.log("Setting remote description from judge answer");
+                await rtcPc.setRemoteDescription(new window.RTCSessionDescription(signal.answer));
+                console.log("Remote description set successfully");
+            } else if (signal.type === "ice") try {
+                console.log("Adding ICE candidate from judge");
+                await rtcPc.addIceCandidate(signal.candidate);
+                console.log("ICE candidate added successfully");
+            } catch (e) {
+                console.log("Error adding ICE candidate:", e);
             }
         }
     });
