@@ -31,6 +31,8 @@ The Pepper Judge is a secure local server that executes user code submissions in
 
 ## 🎯 Quick Start (Automated Setup)
 
+> **New in v2.0**: Setup now uses Git to clone only the judge folder, making it faster and more efficient!
+
 ### Windows Users
 ```cmd
 # Download and run the Windows setup script
@@ -45,6 +47,12 @@ curl -O https://raw.githubusercontent.com/Diwakar-Gupta/pepper/main/judge/setup-
 chmod +x setup-judge-linux.sh
 ./setup-judge-linux.sh
 ```
+
+### What's New?
+- ✨ **Smart Cloning**: Only downloads the judge folder (not the entire heavy repository)
+- 🔄 **Auto-Updates**: Each time you run the judge, it automatically updates to the latest version
+- 🚀 **Faster Setup**: Reduced download size and improved performance
+- 🛡️ **Git-Based**: More reliable than direct file downloads
 
 ## 📋 Prerequisites
 

@@ -40,32 +40,54 @@ if %errorlevel% neq 0 (
 echo ✅ All prerequisites found!
 echo.
 
-:: Create directory
-echo 📁 Creating pepper-judge directory...
-if not exist "pepper-judge" mkdir pepper-judge
-cd pepper-judge
-
-:: Download files
-echo 📥 Downloading judge files...
-echo Downloading main.py...
-curl -s -O https://raw.githubusercontent.com/Diwakar-Gupta/pepper/main/judge/main.py
+:: Check if git is installed
+echo 📋 Checking git installation...
+git --version >nul 2>&1
 if %errorlevel% neq 0 (
-    echo ❌ Failed to download main.py
-    echo Please check your internet connection
+    echo ❌ Git is not installed or not in PATH
+    echo Please install Git from https://git-scm.com/downloads
     pause
     exit /b 1
 )
+echo ✅ Git found!
 
-echo Downloading requirements.txt...
-curl -s -O https://raw.githubusercontent.com/Diwakar-Gupta/pepper/main/judge/requirements.txt
-if %errorlevel% neq 0 (
-    echo ❌ Failed to download requirements.txt
-    echo Please check your internet connection
-    pause
-    exit /b 1
+:: Clone or update repository
+if exist "pepper-judge" (
+    echo 📁 Found existing pepper-judge directory, updating...
+    cd pepper-judge
+    echo 🔄 Updating judge files from repository...
+    git pull origin main
+    if %errorlevel% neq 0 (
+        echo ❌ Failed to update repository
+        echo Please check your internet connection
+        pause
+        exit /b 1
+    )
+    echo ✅ Repository updated successfully!
+) else (
+    echo 📁 Creating pepper-judge directory...
+    echo 📥 Cloning judge files from repository...
+    git clone --no-checkout --filter=blob:none https://github.com/Diwakar-Gupta/pepper.git pepper-judge
+    if %errorlevel% neq 0 (
+        echo ❌ Failed to clone repository
+        echo Please check your internet connection
+        pause
+        exit /b 1
+    )
+    cd pepper-judge
+    git sparse-checkout init --cone
+    git sparse-checkout set judge
+    git checkout main
+    if %errorlevel% neq 0 (
+        echo ❌ Failed to checkout judge folder
+        pause
+        exit /b 1
+    )
+    echo ✅ Repository cloned successfully!
 )
 
-echo ✅ Files downloaded successfully!
+:: Move to judge directory
+cd judge
 echo.
 
 :: Create virtual environment
@@ -98,9 +120,11 @@ if %errorlevel% neq 0 (
 echo ✅ Dependencies installed successfully!
 echo.
 
-:: Create run script
-echo 📝 Creating run script...
+:: Create run script with auto-update
+echo 📝 Creating run script with auto-update...
 echo @echo off > run-judge.bat
+echo echo Updating judge files... >> run-judge.bat
+echo git pull origin main ^>nul 2^>^&1 >> run-judge.bat
 echo call venv\Scripts\activate.bat >> run-judge.bat
 echo python main.py >> run-judge.bat
 echo pause >> run-judge.bat

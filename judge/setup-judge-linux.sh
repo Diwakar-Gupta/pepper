@@ -77,29 +77,49 @@ fi
 echo -e "${GREEN}✅ GCC/G++ found${NC}"
 echo
 
-# Create directory
-echo -e "${BLUE}📁 Creating pepper-judge directory...${NC}"
-mkdir -p pepper-judge
-cd pepper-judge
-
-# Download files
-echo -e "${BLUE}📥 Downloading judge files...${NC}"
-
-echo "Downloading main.py..."
-if ! curl -s -O https://raw.githubusercontent.com/Diwakar-Gupta/pepper/main/judge/main.py; then
-    echo -e "${RED}❌ Failed to download main.py${NC}"
-    echo "Please check your internet connection"
+# Check if git is installed
+echo -e "${BLUE}📋 Checking git installation...${NC}"
+if ! command_exists git; then
+    echo -e "${RED}❌ Git is not installed or not in PATH${NC}"
+    echo "Please install Git:"
+    echo "  Ubuntu/Debian: sudo apt update && sudo apt install git"
+    echo "  CentOS/RHEL: sudo yum install git"
+    echo "  macOS: brew install git"
     exit 1
 fi
+echo -e "${GREEN}✅ Git found${NC}"
 
-echo "Downloading requirements.txt..."
-if ! curl -s -O https://raw.githubusercontent.com/Diwakar-Gupta/pepper/main/judge/requirements.txt; then
-    echo -e "${RED}❌ Failed to download requirements.txt${NC}"
-    echo "Please check your internet connection"
-    exit 1
+# Clone or update repository
+if [ -d "pepper-judge" ]; then
+    echo -e "${BLUE}📁 Found existing pepper-judge directory, updating...${NC}"
+    cd pepper-judge
+    echo -e "${BLUE}🔄 Updating judge files from repository...${NC}"
+    if ! git pull origin main; then
+        echo -e "${RED}❌ Failed to update repository${NC}"
+        echo "Please check your internet connection"
+        exit 1
+    fi
+    echo -e "${GREEN}✅ Repository updated successfully!${NC}"
+else
+    echo -e "${BLUE}📁 Creating pepper-judge directory...${NC}"
+    echo -e "${BLUE}📥 Cloning judge files from repository...${NC}"
+    if ! git clone --no-checkout --filter=blob:none https://github.com/Diwakar-Gupta/pepper.git pepper-judge; then
+        echo -e "${RED}❌ Failed to clone repository${NC}"
+        echo "Please check your internet connection"
+        exit 1
+    fi
+    cd pepper-judge
+    git sparse-checkout init --cone
+    git sparse-checkout set judge
+    if ! git checkout main; then
+        echo -e "${RED}❌ Failed to checkout judge folder${NC}"
+        exit 1
+    fi
+    echo -e "${GREEN}✅ Repository cloned successfully!${NC}"
 fi
 
-echo -e "${GREEN}✅ Files downloaded successfully!${NC}"
+# Move to judge directory
+cd judge
 echo
 
 # Create virtual environment
@@ -130,11 +150,13 @@ fi
 echo -e "${GREEN}✅ Dependencies installed successfully!${NC}"
 echo
 
-# Create run script
-echo -e "${BLUE}📝 Creating run script...${NC}"
+# Create run script with auto-update
+echo -e "${BLUE}📝 Creating run script with auto-update...${NC}"
 cat > run-judge.sh << 'EOF'
 #!/bin/bash
 cd "$(dirname "$0")"
+echo "Updating judge files..."
+git pull origin main >/dev/null 2>&1
 source venv/bin/activate
 python main.py
 EOF
