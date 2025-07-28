@@ -111795,6 +111795,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
     const [problemTestCases, setProblemTestCases] = (0, _react.useState)([]);
     const [hasTestCases, setHasTestCases] = (0, _react.useState)(false);
     const [isSubmitting, setIsSubmitting] = (0, _react.useState)(false);
+    const [submissionResult, setSubmissionResult] = (0, _react.useState)(null);
     // Load test cases when problemSlug changes
     (0, _react.useEffect)(()=>{
         if (problemSlug) {
@@ -111840,7 +111841,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                     children: "Code Execution Unavailable"
                 }, void 0, false, {
                     fileName: "src/components/TabbedTestCases.jsx",
-                    lineNumber: 48,
+                    lineNumber: 49,
                     columnNumber: 11
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -111855,24 +111856,24 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                             children: "View setup instructions"
                         }, void 0, false, {
                             fileName: "src/components/TabbedTestCases.jsx",
-                            lineNumber: 49,
+                            lineNumber: 50,
                             columnNumber: 90
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/TabbedTestCases.jsx",
-                    lineNumber: 49,
+                    lineNumber: 50,
                     columnNumber: 11
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/TabbedTestCases.jsx",
-            lineNumber: 47,
+            lineNumber: 48,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/TabbedTestCases.jsx",
-        lineNumber: 46,
+        lineNumber: 47,
         columnNumber: 7
     }, undefined);
     // Handle case when language is not selected
@@ -111886,7 +111887,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                     children: "No Language Selected"
                 }, void 0, false, {
                     fileName: "src/components/TabbedTestCases.jsx",
-                    lineNumber: 60,
+                    lineNumber: 61,
                     columnNumber: 11
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -111894,18 +111895,18 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                     children: "Please select a programming language to run code."
                 }, void 0, false, {
                     fileName: "src/components/TabbedTestCases.jsx",
-                    lineNumber: 61,
+                    lineNumber: 62,
                     columnNumber: 11
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/TabbedTestCases.jsx",
-            lineNumber: 59,
+            lineNumber: 60,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/TabbedTestCases.jsx",
-        lineNumber: 58,
+        lineNumber: 59,
         columnNumber: 7
     }, undefined);
     const addTestCase = ()=>{
@@ -111965,9 +111966,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
             });
             // Handle the submission result
             console.log("Submission result:", result);
-            // You can add UI feedback here
-            if (result.allPassed) alert("\uD83C\uDF89 All test cases passed! Great job!");
-            else alert(`\u{274C} ${result.failedCount} test case(s) failed. Check the results below.`);
+            setSubmissionResult(result);
         } catch (error) {
             console.error("Submission error:", error);
             alert(`Submission failed: ${error.message}`);
@@ -111981,7 +111980,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
             className: "text-green-500"
         }, void 0, false, {
             fileName: "src/components/TabbedTestCases.jsx",
-            lineNumber: 144,
+            lineNumber: 140,
             columnNumber: 14
         }, undefined);
         else if (passed === false) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
@@ -111989,7 +111988,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
             className: "text-red-500"
         }, void 0, false, {
             fileName: "src/components/TabbedTestCases.jsx",
-            lineNumber: 146,
+            lineNumber: 142,
             columnNumber: 14
         }, undefined);
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -111997,7 +111996,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
             children: "-"
         }, void 0, false, {
             fileName: "src/components/TabbedTestCases.jsx",
-            lineNumber: 148,
+            lineNumber: 144,
             columnNumber: 12
         }, undefined);
     };
@@ -112030,7 +112029,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                     strokeWidth: "4"
                                 }, void 0, false, {
                                     fileName: "src/components/TabbedTestCases.jsx",
-                                    lineNumber: 166,
+                                    lineNumber: 162,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -112039,13 +112038,13 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                     d: "M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
                                 }, void 0, false, {
                                     fileName: "src/components/TabbedTestCases.jsx",
-                                    lineNumber: 167,
+                                    lineNumber: 163,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/TabbedTestCases.jsx",
-                            lineNumber: 165,
+                            lineNumber: 161,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -112053,18 +112052,18 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                             children: "Running test cases..."
                         }, void 0, false, {
                             fileName: "src/components/TabbedTestCases.jsx",
-                            lineNumber: 169,
+                            lineNumber: 165,
                             columnNumber: 13
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/TabbedTestCases.jsx",
-                    lineNumber: 164,
+                    lineNumber: 160,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/TabbedTestCases.jsx",
-                lineNumber: 163,
+                lineNumber: 159,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -112079,7 +112078,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                 children: "Test Cases"
                             }, void 0, false, {
                                 fileName: "src/components/TabbedTestCases.jsx",
-                                lineNumber: 177,
+                                lineNumber: 173,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -112089,13 +112088,13 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                 children: "Test Results"
                             }, void 0, false, {
                                 fileName: "src/components/TabbedTestCases.jsx",
-                                lineNumber: 187,
+                                lineNumber: 183,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/TabbedTestCases.jsx",
-                        lineNumber: 176,
+                        lineNumber: 172,
                         columnNumber: 9
                     }, undefined),
                     mainTab === 'testcases' && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -112112,7 +112111,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                         ]
                                     }, index, true, {
                                         fileName: "src/components/TabbedTestCases.jsx",
-                                        lineNumber: 205,
+                                        lineNumber: 201,
                                         columnNumber: 17
                                     }, undefined)),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -112123,23 +112122,23 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                         icon: (0, _freeSolidSvgIcons.faPlus)
                                     }, void 0, false, {
                                         fileName: "src/components/TabbedTestCases.jsx",
-                                        lineNumber: 222,
+                                        lineNumber: 218,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/TabbedTestCases.jsx",
-                                    lineNumber: 217,
+                                    lineNumber: 213,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/TabbedTestCases.jsx",
-                            lineNumber: 203,
+                            lineNumber: 199,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TabbedTestCases.jsx",
-                        lineNumber: 202,
+                        lineNumber: 198,
                         columnNumber: 11
                     }, undefined),
                     mainTab === 'results' && hasResults && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -112156,23 +112155,23 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                     ]
                                 }, index, true, {
                                     fileName: "src/components/TabbedTestCases.jsx",
-                                    lineNumber: 232,
+                                    lineNumber: 228,
                                     columnNumber: 17
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/components/TabbedTestCases.jsx",
-                            lineNumber: 230,
+                            lineNumber: 226,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/TabbedTestCases.jsx",
-                        lineNumber: 229,
+                        lineNumber: 225,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/TabbedTestCases.jsx",
-                lineNumber: 175,
+                lineNumber: 171,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -112192,7 +112191,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/TabbedTestCases.jsx",
-                                        lineNumber: 256,
+                                        lineNumber: 252,
                                         columnNumber: 15
                                     }, undefined),
                                     testCases.length > 1 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -112203,18 +112202,18 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                             icon: (0, _freeSolidSvgIcons.faTrash)
                                         }, void 0, false, {
                                             fileName: "src/components/TabbedTestCases.jsx",
-                                            lineNumber: 263,
+                                            lineNumber: 259,
                                             columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/TabbedTestCases.jsx",
-                                        lineNumber: 258,
+                                        lineNumber: 254,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/TabbedTestCases.jsx",
-                                lineNumber: 255,
+                                lineNumber: 251,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -112227,7 +112226,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                 children: "Input:"
                                             }, void 0, false, {
                                                 fileName: "src/components/TabbedTestCases.jsx",
-                                                lineNumber: 270,
+                                                lineNumber: 266,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
@@ -112242,13 +112241,13 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                 }
                                             }, void 0, false, {
                                                 fileName: "src/components/TabbedTestCases.jsx",
-                                                lineNumber: 273,
+                                                lineNumber: 269,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/TabbedTestCases.jsx",
-                                        lineNumber: 269,
+                                        lineNumber: 265,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -112258,7 +112257,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                 children: "Expected Output:"
                                             }, void 0, false, {
                                                 fileName: "src/components/TabbedTestCases.jsx",
-                                                lineNumber: 284,
+                                                lineNumber: 280,
                                                 columnNumber: 17
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
@@ -112273,25 +112272,25 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                 }
                                             }, void 0, false, {
                                                 fileName: "src/components/TabbedTestCases.jsx",
-                                                lineNumber: 287,
+                                                lineNumber: 283,
                                                 columnNumber: 17
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/TabbedTestCases.jsx",
-                                        lineNumber: 283,
+                                        lineNumber: 279,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/TabbedTestCases.jsx",
-                                lineNumber: 268,
+                                lineNumber: 264,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/TabbedTestCases.jsx",
-                        lineNumber: 254,
+                        lineNumber: 250,
                         columnNumber: 11
                     }, undefined),
                     mainTab === 'results' && hasResults && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -112305,7 +112304,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                         children: "Summary:"
                                     }, void 0, false, {
                                         fileName: "src/components/TabbedTestCases.jsx",
-                                        lineNumber: 306,
+                                        lineNumber: 302,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -112320,7 +112319,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/TabbedTestCases.jsx",
-                                                lineNumber: 308,
+                                                lineNumber: 304,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -112332,7 +112331,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/TabbedTestCases.jsx",
-                                                lineNumber: 309,
+                                                lineNumber: 305,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -112344,19 +112343,19 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/TabbedTestCases.jsx",
-                                                lineNumber: 310,
+                                                lineNumber: 306,
                                                 columnNumber: 19
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/TabbedTestCases.jsx",
-                                        lineNumber: 307,
+                                        lineNumber: 303,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/TabbedTestCases.jsx",
-                                lineNumber: 305,
+                                lineNumber: 301,
                                 columnNumber: 15
                             }, undefined),
                             runResult.results[activeResultTab] && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -112373,7 +112372,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/TabbedTestCases.jsx",
-                                                lineNumber: 319,
+                                                lineNumber: 315,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -112385,19 +112384,19 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                         children: getStatusText(runResult.results[activeResultTab].passed)
                                                     }, void 0, false, {
                                                         fileName: "src/components/TabbedTestCases.jsx",
-                                                        lineNumber: 322,
+                                                        lineNumber: 318,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/TabbedTestCases.jsx",
-                                                lineNumber: 320,
+                                                lineNumber: 316,
                                                 columnNumber: 19
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/TabbedTestCases.jsx",
-                                        lineNumber: 318,
+                                        lineNumber: 314,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -112410,7 +112409,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                         children: "Input:"
                                                     }, void 0, false, {
                                                         fileName: "src/components/TabbedTestCases.jsx",
-                                                        lineNumber: 333,
+                                                        lineNumber: 329,
                                                         columnNumber: 21
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("pre", {
@@ -112418,13 +112417,13 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                         children: runResult.results[activeResultTab].input || "(empty)"
                                                     }, void 0, false, {
                                                         fileName: "src/components/TabbedTestCases.jsx",
-                                                        lineNumber: 336,
+                                                        lineNumber: 332,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/TabbedTestCases.jsx",
-                                                lineNumber: 332,
+                                                lineNumber: 328,
                                                 columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -112434,7 +112433,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                         children: "Output:"
                                                     }, void 0, false, {
                                                         fileName: "src/components/TabbedTestCases.jsx",
-                                                        lineNumber: 342,
+                                                        lineNumber: 338,
                                                         columnNumber: 21
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("pre", {
@@ -112442,13 +112441,13 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                         children: runResult.results[activeResultTab].actualOutput || "(no output)"
                                                     }, void 0, false, {
                                                         fileName: "src/components/TabbedTestCases.jsx",
-                                                        lineNumber: 345,
+                                                        lineNumber: 341,
                                                         columnNumber: 21
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/TabbedTestCases.jsx",
-                                                lineNumber: 341,
+                                                lineNumber: 337,
                                                 columnNumber: 19
                                             }, undefined),
                                             runResult.results[activeResultTab].expectedOutput && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -112458,7 +112457,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                         children: "Expected Output:"
                                                     }, void 0, false, {
                                                         fileName: "src/components/TabbedTestCases.jsx",
-                                                        lineNumber: 352,
+                                                        lineNumber: 348,
                                                         columnNumber: 23
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("pre", {
@@ -112466,13 +112465,13 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                         children: runResult.results[activeResultTab].expectedOutput
                                                     }, void 0, false, {
                                                         fileName: "src/components/TabbedTestCases.jsx",
-                                                        lineNumber: 355,
+                                                        lineNumber: 351,
                                                         columnNumber: 23
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/TabbedTestCases.jsx",
-                                                lineNumber: 351,
+                                                lineNumber: 347,
                                                 columnNumber: 21
                                             }, undefined),
                                             runResult.results[activeResultTab].stderr && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -112482,7 +112481,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                         children: "Error:"
                                                     }, void 0, false, {
                                                         fileName: "src/components/TabbedTestCases.jsx",
-                                                        lineNumber: 363,
+                                                        lineNumber: 359,
                                                         columnNumber: 23
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("pre", {
@@ -112490,13 +112489,13 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                         children: runResult.results[activeResultTab].stderr
                                                     }, void 0, false, {
                                                         fileName: "src/components/TabbedTestCases.jsx",
-                                                        lineNumber: 366,
+                                                        lineNumber: 362,
                                                         columnNumber: 23
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/TabbedTestCases.jsx",
-                                                lineNumber: 362,
+                                                lineNumber: 358,
                                                 columnNumber: 21
                                             }, undefined),
                                             runResult.results[activeResultTab].passed === false && runResult.results[activeResultTab].diff && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -112506,7 +112505,7 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                         children: "Difference:"
                                                     }, void 0, false, {
                                                         fileName: "src/components/TabbedTestCases.jsx",
-                                                        lineNumber: 374,
+                                                        lineNumber: 370,
                                                         columnNumber: 23
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("pre", {
@@ -112514,38 +112513,234 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                                         children: runResult.results[activeResultTab].diff
                                                     }, void 0, false, {
                                                         fileName: "src/components/TabbedTestCases.jsx",
-                                                        lineNumber: 377,
+                                                        lineNumber: 373,
                                                         columnNumber: 23
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/TabbedTestCases.jsx",
-                                                lineNumber: 373,
+                                                lineNumber: 369,
                                                 columnNumber: 21
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/TabbedTestCases.jsx",
-                                        lineNumber: 331,
+                                        lineNumber: 327,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/TabbedTestCases.jsx",
-                                lineNumber: 317,
+                                lineNumber: 313,
                                 columnNumber: 15
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/TabbedTestCases.jsx",
-                        lineNumber: 302,
+                        lineNumber: 298,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/TabbedTestCases.jsx",
-                lineNumber: 251,
+                lineNumber: 247,
                 columnNumber: 7
+            }, undefined),
+            submissionResult && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "p-4 border-t border-gray-200",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        className: "font-medium text-gray-700 mb-2",
+                        children: "Submission Result:"
+                    }, void 0, false, {
+                        fileName: "src/components/TabbedTestCases.jsx",
+                        lineNumber: 388,
+                        columnNumber: 11
+                    }, undefined),
+                    submissionResult.failed ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "p-3 border border-red-200 rounded-md bg-red-50",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex items-center mb-2",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "text-red-600 font-medium",
+                                    children: [
+                                        "\u274C Test Case ",
+                                        submissionResult.testCaseNumber,
+                                        " Failed"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/TabbedTestCases.jsx",
+                                    lineNumber: 392,
+                                    columnNumber: 17
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/TabbedTestCases.jsx",
+                                lineNumber: 391,
+                                columnNumber: 15
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "grid grid-cols-1 md:grid-cols-2 gap-3 text-sm",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "font-medium text-gray-600",
+                                                children: "Input:"
+                                            }, void 0, false, {
+                                                fileName: "src/components/TabbedTestCases.jsx",
+                                                lineNumber: 396,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("pre", {
+                                                className: "bg-gray-100 p-2 rounded mt-1 whitespace-pre-wrap",
+                                                children: submissionResult.failedTestCase.input || "(empty)"
+                                            }, void 0, false, {
+                                                fileName: "src/components/TabbedTestCases.jsx",
+                                                lineNumber: 397,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/TabbedTestCases.jsx",
+                                        lineNumber: 395,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "font-medium text-gray-600",
+                                                children: "Expected Output:"
+                                            }, void 0, false, {
+                                                fileName: "src/components/TabbedTestCases.jsx",
+                                                lineNumber: 400,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("pre", {
+                                                className: "bg-gray-100 p-2 rounded mt-1 whitespace-pre-wrap",
+                                                children: submissionResult.failedTestCase.expectedOutput
+                                            }, void 0, false, {
+                                                fileName: "src/components/TabbedTestCases.jsx",
+                                                lineNumber: 401,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/TabbedTestCases.jsx",
+                                        lineNumber: 399,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "font-medium text-gray-600",
+                                                children: "Your Output:"
+                                            }, void 0, false, {
+                                                fileName: "src/components/TabbedTestCases.jsx",
+                                                lineNumber: 404,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("pre", {
+                                                className: "bg-gray-100 p-2 rounded mt-1 whitespace-pre-wrap",
+                                                children: submissionResult.failedTestCase.actualOutput || "(no output)"
+                                            }, void 0, false, {
+                                                fileName: "src/components/TabbedTestCases.jsx",
+                                                lineNumber: 405,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/TabbedTestCases.jsx",
+                                        lineNumber: 403,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    submissionResult.failedTestCase.stderr && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "font-medium text-red-600",
+                                                children: "Error:"
+                                            }, void 0, false, {
+                                                fileName: "src/components/TabbedTestCases.jsx",
+                                                lineNumber: 409,
+                                                columnNumber: 21
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("pre", {
+                                                className: "bg-red-100 p-2 rounded mt-1 whitespace-pre-wrap text-red-700",
+                                                children: submissionResult.failedTestCase.stderr
+                                            }, void 0, false, {
+                                                fileName: "src/components/TabbedTestCases.jsx",
+                                                lineNumber: 410,
+                                                columnNumber: 21
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/TabbedTestCases.jsx",
+                                        lineNumber: 408,
+                                        columnNumber: 19
+                                    }, undefined),
+                                    submissionResult.failedTestCase.diff && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "md:col-span-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "font-medium text-yellow-700",
+                                                children: "Difference:"
+                                            }, void 0, false, {
+                                                fileName: "src/components/TabbedTestCases.jsx",
+                                                lineNumber: 415,
+                                                columnNumber: 21
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("pre", {
+                                                className: "bg-yellow-50 p-2 rounded mt-1 whitespace-pre-wrap text-xs overflow-x-auto border border-yellow-200",
+                                                children: submissionResult.failedTestCase.diff
+                                            }, void 0, false, {
+                                                fileName: "src/components/TabbedTestCases.jsx",
+                                                lineNumber: 416,
+                                                columnNumber: 21
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/TabbedTestCases.jsx",
+                                        lineNumber: 414,
+                                        columnNumber: 19
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/TabbedTestCases.jsx",
+                                lineNumber: 394,
+                                columnNumber: 15
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/TabbedTestCases.jsx",
+                        lineNumber: 390,
+                        columnNumber: 13
+                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "p-3 border border-green-200 rounded-md bg-green-50",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex items-center",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "text-green-600 font-medium",
+                                children: "\uD83C\uDF89 All test cases passed!"
+                            }, void 0, false, {
+                                fileName: "src/components/TabbedTestCases.jsx",
+                                lineNumber: 424,
+                                columnNumber: 17
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/TabbedTestCases.jsx",
+                            lineNumber: 423,
+                            columnNumber: 15
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/TabbedTestCases.jsx",
+                        lineNumber: 422,
+                        columnNumber: 13
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/TabbedTestCases.jsx",
+                lineNumber: 387,
+                columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex space-x-2 p-4 border-t border-gray-200 bg-gray-50 rounded-b-md",
@@ -112559,14 +112754,14 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                                 icon: (0, _freeSolidSvgIcons.faPlay)
                             }, void 0, false, {
                                 fileName: "src/components/TabbedTestCases.jsx",
-                                lineNumber: 398,
+                                lineNumber: 440,
                                 columnNumber: 11
                             }, undefined),
                             isLoading ? 'Running...' : 'Run Tests'
                         ]
                     }, void 0, true, {
                         fileName: "src/components/TabbedTestCases.jsx",
-                        lineNumber: 391,
+                        lineNumber: 433,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -112576,23 +112771,23 @@ const TabbedTestCases = ({ code, language, onRun, runResult, judgeAvailable, pro
                         children: isSubmitting ? 'Submitting...' : 'Submit'
                     }, void 0, false, {
                         fileName: "src/components/TabbedTestCases.jsx",
-                        lineNumber: 401,
+                        lineNumber: 443,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/TabbedTestCases.jsx",
-                lineNumber: 390,
+                lineNumber: 432,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/TabbedTestCases.jsx",
-        lineNumber: 160,
+        lineNumber: 156,
         columnNumber: 5
     }, undefined);
 };
-_s(TabbedTestCases, "kiTTWcK49VLmVpFMSNXTdSskU8g=");
+_s(TabbedTestCases, "XTeraNOTntk10xAe58pGyb4ogxY=");
 _c = TabbedTestCases;
 exports.default = TabbedTestCases;
 var _c;

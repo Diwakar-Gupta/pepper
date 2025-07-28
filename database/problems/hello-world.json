@@ -1,1 +1,19 @@
- 
+{
+  "name": "Hello World",
+  "slug": "hello-world",
+  "description": "Write a program that prints 'Hello, World!' to the console.\n\n### Input Format\n```\nNo input required\n```\n\n### Output Format\n```\nHello, World!\n```\n\n### Constraints\n```\nNo Constraints\n```\n\n### Sample Output\n```\nHello, World!\n```",
+  "externalPlatforms": [],
+  "problemVideoLink": "",
+  "solutionVideolink": "",
+  "codes": {
+    "java": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}",
+    "python": "print(\"Hello, World!\")",
+    "cpp": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello, World!\" << endl;\n    return 0;\n}"
+  },
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+} 
