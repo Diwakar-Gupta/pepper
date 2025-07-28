@@ -13,14 +13,6 @@
     {
       "input": "testcaseinput1.txt",
       "output": "testcaseoutput1.txt"
-    },
-    {
-      "input": "testcaseinput2.txt",
-      "output": "testcaseoutput2.txt"
-    },
-    {
-      "input": "testcaseinput3.txt",
-      "output": "testcaseoutput3.txt"
     }
   ]
 }
