@@ -13,6 +13,7 @@ const ProblemSubmission = ({ code, language, input, setInput, onRun, runResult, 
   const [problemTestCases, setProblemTestCases] = useState([]);
   const [hasTestCases, setHasTestCases] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submissionResult, setSubmissionResult] = useState(null);
 
   // Load test cases when problemSlug changes
   useEffect(() => {
@@ -107,12 +108,7 @@ const ProblemSubmission = ({ code, language, input, setInput, onRun, runResult, 
       
       // Handle the submission result
       console.log("Submission result:", result);
-      // You can add UI feedback here
-      if (result.allPassed) {
-        alert("🎉 All test cases passed! Great job!");
-      } else {
-        alert(`❌ ${result.failedCount} test case(s) failed. Check the results below.`);
-      }
+      setSubmissionResult(result);
     } catch (error) {
       console.error("Submission error:", error);
       alert(`Submission failed: ${error.message}`);
@@ -251,6 +247,52 @@ const ProblemSubmission = ({ code, language, input, setInput, onRun, runResult, 
             <span className="text-red-600">✗ {runResult.summary.failed} Failed</span>
             <span className="text-gray-600">- {runResult.summary.noExpectedOutput} No Expected Output</span>
           </div>
+        </div>
+      )}
+
+      {/* Submission Result */}
+      {submissionResult && (
+        <div className="mb-4">
+          <h4 className="font-medium text-gray-700 mb-2">Submission Result:</h4>
+          {submissionResult.failed ? (
+            <div className="p-3 border border-red-200 rounded-md bg-red-50">
+              <div className="flex items-center mb-2">
+                <span className="text-red-600 font-medium">❌ Test Case {submissionResult.testCaseNumber} Failed</span>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                <div>
+                  <span className="font-medium text-gray-600">Input:</span>
+                  <pre className="bg-gray-100 p-2 rounded mt-1 whitespace-pre-wrap">{submissionResult.failedTestCase.input || "(empty)"}</pre>
+                </div>
+                <div>
+                  <span className="font-medium text-gray-600">Expected Output:</span>
+                  <pre className="bg-gray-100 p-2 rounded mt-1 whitespace-pre-wrap">{submissionResult.failedTestCase.expectedOutput}</pre>
+                </div>
+                <div>
+                  <span className="font-medium text-gray-600">Your Output:</span>
+                  <pre className="bg-gray-100 p-2 rounded mt-1 whitespace-pre-wrap">{submissionResult.failedTestCase.actualOutput || "(no output)"}</pre>
+                </div>
+                {submissionResult.failedTestCase.stderr && (
+                  <div>
+                    <span className="font-medium text-red-600">Error:</span>
+                    <pre className="bg-red-100 p-2 rounded mt-1 whitespace-pre-wrap text-red-700">{submissionResult.failedTestCase.stderr}</pre>
+                  </div>
+                )}
+                {submissionResult.failedTestCase.diff && (
+                  <div className="md:col-span-2">
+                    <span className="font-medium text-yellow-700">Difference:</span>
+                    <pre className="bg-yellow-50 p-2 rounded mt-1 whitespace-pre-wrap text-xs overflow-x-auto border border-yellow-200">{submissionResult.failedTestCase.diff}</pre>
+                  </div>
+                )}
+              </div>
+            </div>
+          ) : (
+            <div className="p-3 border border-green-200 rounded-md bg-green-50">
+              <div className="flex items-center">
+                <span className="text-green-600 font-medium">🎉 All test cases passed!</span>
+              </div>
+            </div>
+          )}
         </div>
       )}
 

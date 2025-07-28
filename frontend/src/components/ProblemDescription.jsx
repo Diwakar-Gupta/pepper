@@ -34,12 +34,12 @@ const ProblemDescription = React.memo(({ problem }) => {
         </div>
       )}
       <h2 className="text-2xl font-semibold mb-4">{problem.name}</h2>
-      <MarkdownPreview
+      {/* <MarkdownPreview
         source={problem.description}
         wrapperElement={{
           "data-color-mode": "light",
         }}
-      /> 
+      />  */}
       <div className="mt-4">
         {problem.problemVideoLink && (
           <div className="mb-2">

@@ -18,6 +18,7 @@ import urllib.request
 import hashlib
 
 SIGNALING_SERVER_URL = "https://pepper-isjb.onrender.com"
+TEST_CASES_SERVER_URL = "https://diwakar-gupta.github.io/pepper"
 JUDGE_CODE_FILE = ".judge_code"
 TEST_CASES_CACHE_DIR = ".test_cases_cache"
 
@@ -138,7 +139,7 @@ def fetch_test_cases(problem_slug):
     
     try:
         # Fetch problem details to get test case file names
-        problem_url = f"http://localhost:3000/database/problems/{problem_slug}.json"
+        problem_url = f"{TEST_CASES_SERVER_URL}/database/problems/{problem_slug}.json"
         with urllib.request.urlopen(problem_url) as response:
             problem_data = json.loads(response.read().decode())
         
@@ -149,12 +150,12 @@ def fetch_test_cases(problem_slug):
         for test_case in problem_data['testCases']:
             try:
                 # Fetch input file
-                input_url = f"http://localhost:3000/database/testcases/{problem_slug}/{test_case['input']}"
+                input_url = f"{TEST_CASES_SERVER_URL}/database/testcases/{problem_slug}/{test_case['input']}"
                 with urllib.request.urlopen(input_url) as response:
                     input_data = response.read().decode().strip()
                 
                 # Fetch output file
-                output_url = f"http://localhost:3000/database/testcases/{problem_slug}/{test_case['output']}"
+                output_url = f"{TEST_CASES_SERVER_URL}/database/testcases/{problem_slug}/{test_case['output']}"
                 with urllib.request.urlopen(output_url) as response:
                     output_data = response.read().decode().strip()
                 
@@ -411,6 +412,8 @@ if __name__ == "__main__":
                                         response = {"error": "No test cases found for this problem"}
                                     else:
                                         results = []
+                                        failed_test_case = None
+                                        
                                         for i, test_case in enumerate(test_cases):
                                             input_text = test_case.get("input", "")
                                             expected_output = test_case.get("expectedOutput", "")
@@ -419,7 +422,8 @@ if __name__ == "__main__":
                                                 actual_output = stdout.strip()
                                                 expected_output = expected_output.strip()
                                                 passed, diff = compare_outputs(actual_output, expected_output)
-                                                results.append({
+                                                
+                                                result = {
                                                     "testCase": i + 1,
                                                     "input": input_text,
                                                     "expectedOutput": expected_output,
@@ -428,9 +432,16 @@ if __name__ == "__main__":
                                                     "passed": passed,
                                                     "diff": diff,
                                                     "error": None
-                                                })
+                                                }
+                                                results.append(result)
+                                                
+                                                # If this test case failed, stop execution and return details
+                                                if not passed:
+                                                    failed_test_case = result
+                                                    break
+                                                    
                                             except Exception as e:
-                                                results.append({
+                                                result = {
                                                     "testCase": i + 1,
                                                     "input": input_text,
                                                     "expectedOutput": expected_output,
@@ -439,22 +450,26 @@ if __name__ == "__main__":
                                                     "passed": False,
                                                     "diff": None,
                                                     "error": str(e)
-                                                })
+                                                }
+                                                results.append(result)
+                                                failed_test_case = result
+                                                break
                                         
-                                        passed_count = sum(1 for r in results if r["passed"] is True)
-                                        failed_count = sum(1 for r in results if r["passed"] is False)
-                                        
-                                        response = {
-                                            "results": results,
-                                            "summary": {
-                                                "total": len(results),
-                                                "passed": passed_count,
-                                                "failed": failed_count,
-                                                "noExpectedOutput": 0
-                                            },
-                                            "allPassed": passed_count == len(results),
-                                            "failedCount": failed_count
-                                        }
+                                        if failed_test_case:
+                                            # Return the failed test case details
+                                            response = {
+                                                "failed": True,
+                                                "failedTestCase": failed_test_case,
+                                                "testCaseNumber": failed_test_case["testCase"],
+                                                "message": f"Test case {failed_test_case['testCase']} failed"
+                                            }
+                                        else:
+                                            # All test cases passed
+                                            response = {
+                                                "failed": False,
+                                                "allPassed": True,
+                                                "message": "All test cases passed!"
+                                            }
                             else:
                                 response = {"error": "Unknown type"}
                             
