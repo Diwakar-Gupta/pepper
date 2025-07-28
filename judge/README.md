@@ -115,6 +115,9 @@ When you first run the judge, it will:
 
 **Important:** You'll need this code to connect the frontend to your local judge.
 
+### Test Case Caching
+The judge automatically caches test cases in the `.test_cases_cache` directory to avoid re-downloading them on subsequent submissions. This improves performance and reduces network usage.
+
 ### Signaling Server
 The judge connects to a signaling server for WebRTC communication. The default server is:
 ```
@@ -129,6 +132,7 @@ To use a different signaling server, modify the `SIGNALING_SERVER_URL` in `main.
 - 🌐 **WebRTC Communication** - Real-time communication with the frontend
 - 🚀 **Multi-language Support** - Execute code in Python, Java, and C++
 - 🧪 **Test Case Validation** - Compare outputs with expected results
+- 💾 **Test Case Caching** - Caches test cases locally for faster subsequent runs
 - ⚡ **Fast Execution** - Optimized for quick code testing and validation
 - 🔄 **Auto-reconnection** - Handles connection drops gracefully
 

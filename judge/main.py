@@ -14,9 +14,12 @@ import string
 import signal
 import sys
 import time
+import urllib.request
+import hashlib
 
 SIGNALING_SERVER_URL = "https://pepper-isjb.onrender.com"
 JUDGE_CODE_FILE = ".judge_code"
+TEST_CASES_CACHE_DIR = ".test_cases_cache"
 
 # Retry configuration for Render webapp suspension
 MAX_RETRY_ATTEMPTS = 5
@@ -87,6 +90,90 @@ def compare_outputs(actual, expected):
     if not passed:
         diff = '\n'.join(difflib.unified_diff(expected_lines, actual_lines, fromfile='expected', tofile='output', lineterm=''))
     return passed, diff
+
+def get_cache_key(problem_slug):
+    """Generate a cache key for a problem"""
+    return hashlib.md5(problem_slug.encode()).hexdigest()
+
+def get_cached_test_cases(problem_slug):
+    """Get test cases from cache if available"""
+    try:
+        if not os.path.exists(TEST_CASES_CACHE_DIR):
+            return None
+        
+        cache_key = get_cache_key(problem_slug)
+        cache_file = os.path.join(TEST_CASES_CACHE_DIR, f"{cache_key}.json")
+        
+        if os.path.exists(cache_file):
+            with open(cache_file, 'r') as f:
+                return json.load(f)
+        return None
+    except Exception as e:
+        print(f"Error reading cache for {problem_slug}: {e}")
+        return None
+
+def cache_test_cases(problem_slug, test_cases):
+    """Cache test cases for a problem"""
+    try:
+        if not os.path.exists(TEST_CASES_CACHE_DIR):
+            os.makedirs(TEST_CASES_CACHE_DIR)
+        
+        cache_key = get_cache_key(problem_slug)
+        cache_file = os.path.join(TEST_CASES_CACHE_DIR, f"{cache_key}.json")
+        
+        with open(cache_file, 'w') as f:
+            json.dump(test_cases, f)
+        
+        print(f"Cached {len(test_cases)} test cases for {problem_slug}")
+    except Exception as e:
+        print(f"Error caching test cases for {problem_slug}: {e}")
+
+def fetch_test_cases(problem_slug):
+    """Fetch test cases for a problem from the frontend server with caching"""
+    # First try to get from cache
+    cached_test_cases = get_cached_test_cases(problem_slug)
+    if cached_test_cases is not None:
+        print(f"Using cached test cases for {problem_slug}")
+        return cached_test_cases
+    
+    try:
+        # Fetch problem details to get test case file names
+        problem_url = f"http://localhost:3000/database/problems/{problem_slug}.json"
+        with urllib.request.urlopen(problem_url) as response:
+            problem_data = json.loads(response.read().decode())
+        
+        if not problem_data.get('testCases'):
+            return []
+        
+        test_cases = []
+        for test_case in problem_data['testCases']:
+            try:
+                # Fetch input file
+                input_url = f"http://localhost:3000/database/testcases/{problem_slug}/{test_case['input']}"
+                with urllib.request.urlopen(input_url) as response:
+                    input_data = response.read().decode().strip()
+                
+                # Fetch output file
+                output_url = f"http://localhost:3000/database/testcases/{problem_slug}/{test_case['output']}"
+                with urllib.request.urlopen(output_url) as response:
+                    output_data = response.read().decode().strip()
+                
+                test_cases.append({
+                    'input': input_data,
+                    'expectedOutput': output_data
+                })
+            except Exception as e:
+                print(f"Error fetching test case: {e}")
+                continue
+        
+        # Cache the test cases for future use
+        if test_cases:
+            cache_test_cases(problem_slug, test_cases)
+        
+        return test_cases
+    except Exception as e:
+        print(f"Error fetching test cases for {problem_slug}: {e}")
+        return []
 
 def wake_up_render_app(url, timeout=WAKEUP_TIMEOUT):
     """Wake up a suspended Render webapp by making an HTTP request"""
@@ -308,6 +395,66 @@ if __name__ == "__main__":
                                             "noExpectedOutput": sum(1 for r in results if r["passed"] is None)
                                         }
                                     }
+                            elif data.get("type") == "submit":
+                                code = data.get("code")
+                                lang = data.get("language")
+                                problem_slug = data.get("problemSlug")
+                                
+                                if not problem_slug:
+                                    response = {"error": "Problem slug is required"}
+                                elif lang not in EXECUTORS:
+                                    response = {"error": "Unsupported language"}
+                                else:
+                                    # Fetch test cases for the problem
+                                    test_cases = fetch_test_cases(problem_slug)
+                                    if not test_cases:
+                                        response = {"error": "No test cases found for this problem"}
+                                    else:
+                                        results = []
+                                        for i, test_case in enumerate(test_cases):
+                                            input_text = test_case.get("input", "")
+                                            expected_output = test_case.get("expectedOutput", "")
+                                            try:
+                                                stdout, stderr = EXECUTORS[lang](code, input_text)
+                                                actual_output = stdout.strip()
+                                                expected_output = expected_output.strip()
+                                                passed, diff = compare_outputs(actual_output, expected_output)
+                                                results.append({
+                                                    "testCase": i + 1,
+                                                    "input": input_text,
+                                                    "expectedOutput": expected_output,
+                                                    "actualOutput": actual_output,
+                                                    "stderr": stderr,
+                                                    "passed": passed,
+                                                    "diff": diff,
+                                                    "error": None
+                                                })
+                                            except Exception as e:
+                                                results.append({
+                                                    "testCase": i + 1,
+                                                    "input": input_text,
+                                                    "expectedOutput": expected_output,
+                                                    "actualOutput": "",
+                                                    "stderr": str(e),
+                                                    "passed": False,
+                                                    "diff": None,
+                                                    "error": str(e)
+                                                })
+                                        
+                                        passed_count = sum(1 for r in results if r["passed"] is True)
+                                        failed_count = sum(1 for r in results if r["passed"] is False)
+                                        
+                                        response = {
+                                            "results": results,
+                                            "summary": {
+                                                "total": len(results),
+                                                "passed": passed_count,
+                                                "failed": failed_count,
+                                                "noExpectedOutput": 0
+                                            },
+                                            "allPassed": passed_count == len(results),
+                                            "failedCount": failed_count
+                                        }
                             else:
                                 response = {"error": "Unknown type"}
                             

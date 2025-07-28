@@ -357,4 +357,10 @@ export const executeCodeWithTestCases = async ({ code, language, testCases }) =>
   const resp = await sendMessage({ type: "execute", code, language, testCases });
   if (resp.error) throw new Error(resp.error);
   return resp;
+};
+
+export const submitCodeWithTestCases = async ({ code, language, problemSlug }) => {
+  const resp = await sendMessage({ type: "submit", code, language, problemSlug });
+  if (resp.error) throw new Error(resp.error);
+  return resp;
 }; 

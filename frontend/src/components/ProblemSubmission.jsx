@@ -1,14 +1,43 @@
 // ProblemSubmission.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faTrash, faCheck, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { getTestCases } from "../repository/getTestCases";
 
-const ProblemSubmission = ({ code, language, input, setInput, onRun, runResult, judgeAvailable }) => {
+const ProblemSubmission = ({ code, language, input, setInput, onRun, runResult, judgeAvailable, problemSlug }) => {
   const [testCases, setTestCases] = useState([
     { input: "", expectedOutput: "" }
   ]);
   const [showTestCases, setShowTestCases] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [problemTestCases, setProblemTestCases] = useState([]);
+  const [hasTestCases, setHasTestCases] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Load test cases when problemSlug changes
+  useEffect(() => {
+    if (problemSlug) {
+      const loadTestCases = async () => {
+        try {
+          const cases = await getTestCases(problemSlug);
+          setProblemTestCases(cases);
+          setHasTestCases(cases.length > 0);
+          
+          // Set the first test case as the default test case in the UI
+          if (cases.length > 0) {
+            setTestCases([cases[0]]);
+          } else {
+            setTestCases([{ input: "", expectedOutput: "" }]);
+          }
+        } catch (error) {
+          console.error('Error loading test cases:', error);
+          setHasTestCases(false);
+          setTestCases([{ input: "", expectedOutput: "" }]);
+        }
+      };
+      loadTestCases();
+    }
+  }, [problemSlug]);
 
   // Handle case when judge is not available
   if (!judgeAvailable) {
@@ -60,6 +89,38 @@ const ProblemSubmission = ({ code, language, input, setInput, onRun, runResult, 
     }
   };
 
+  const handleSubmit = async () => {
+    if (!hasTestCases) {
+      alert("No test cases available for this problem.");
+      return;
+    }
+    
+    setIsSubmitting(true);
+    try {
+      // Import the submit function
+      const { submitCodeWithTestCases } = await import("../repository/judgeApi");
+      const result = await submitCodeWithTestCases({
+        code,
+        language,
+        problemSlug
+      });
+      
+      // Handle the submission result
+      console.log("Submission result:", result);
+      // You can add UI feedback here
+      if (result.allPassed) {
+        alert("🎉 All test cases passed! Great job!");
+      } else {
+        alert(`❌ ${result.failedCount} test case(s) failed. Check the results below.`);
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert(`Submission failed: ${error.message}`);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   const getStatusIcon = (passed) => {
     if (passed === true) {
       return <FontAwesomeIcon icon={faCheck} className="text-green-500" />;
@@ -89,8 +150,16 @@ const ProblemSubmission = ({ code, language, input, setInput, onRun, runResult, 
           </div>
         </div>
       )}
-      {/* Test Cases Toggle */}
-      <div className="mb-4">
+      {/* Test Cases Status and Toggle */}
+      <div className="mb-4 flex justify-between items-center">
+        <div className="flex items-center space-x-2">
+          <span className="text-sm font-medium text-gray-700">Test Cases:</span>
+          {hasTestCases ? (
+            <span className="text-green-600 text-sm">✓ Available</span>
+          ) : (
+            <span className="text-gray-500 text-sm">✗ Not available</span>
+          )}
+        </div>
         <button
           onClick={() => setShowTestCases(!showTestCases)}
           className="text-blue-600 hover:text-blue-800 text-sm font-medium"
@@ -164,11 +233,12 @@ const ProblemSubmission = ({ code, language, input, setInput, onRun, runResult, 
         </button>
         <button
           className={`bg-green-500 text-white px-4 py-2 rounded-md focus:outline-none ${
-            !code || !language || isLoading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-green-600'
+            !code || !language || isLoading || !hasTestCases || isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-green-600'
           }`}
-          disabled={!code || !language || isLoading}
+          onClick={handleSubmit}
+          disabled={!code || !language || isLoading || !hasTestCases || isSubmitting}
         >
-          Submit
+          {isSubmitting ? 'Submitting...' : 'Submit'}
         </button>
       </div>
 

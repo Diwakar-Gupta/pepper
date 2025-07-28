@@ -1,2 +1,2 @@
-import { getLanguages, executeCode, executeCodeWithTestCases } from "./judgeRTCApi";
-export { getLanguages, executeCode, executeCodeWithTestCases };
+import { getLanguages, executeCode, executeCodeWithTestCases, submitCodeWithTestCases } from "./judgeRTCApi";
+export { getLanguages, executeCode, executeCodeWithTestCases, submitCodeWithTestCases };

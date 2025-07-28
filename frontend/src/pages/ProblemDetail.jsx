@@ -116,6 +116,7 @@ const ProblemDetails = () => {
                 onRun={handleRun}
                 runResult={runResult}
                 judgeAvailable={isJudgeAvailable}
+                problemSlug={problemSlug}
               />
             </>
           ) : (
