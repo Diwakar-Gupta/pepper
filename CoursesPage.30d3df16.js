@@ -853,7 +853,7 @@ $RefreshReg$(_c1, "%default%");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","@fortawesome/react-fontawesome":"iVKob","@fortawesome/free-solid-svg-icons":"gQz28","../repository/getCoursesList":"7xWO3","../components/Progress":"jw8uh","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../components/EditLinks":"ludgh"}],"7xWO3":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","@fortawesome/react-fontawesome":"iVKob","@fortawesome/free-solid-svg-icons":"gQz28","../repository/getCoursesList":"7xWO3","../components/Progress":"jw8uh","../components/EditLinks":"ludgh","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"7xWO3":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _constants = require("../constants");

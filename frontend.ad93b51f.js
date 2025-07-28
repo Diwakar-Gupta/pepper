@@ -61009,6 +61009,7 @@ parcelHelpers.export(exports, "disconnect", ()=>disconnect);
 parcelHelpers.export(exports, "getLanguages", ()=>getLanguages);
 parcelHelpers.export(exports, "executeCode", ()=>executeCode);
 parcelHelpers.export(exports, "executeCodeWithTestCases", ()=>executeCodeWithTestCases);
+parcelHelpers.export(exports, "submitCodeWithTestCases", ()=>submitCodeWithTestCases);
 var _socketIoClient = require("socket.io-client");
 var _socketIoClientDefault = parcelHelpers.interopDefault(_socketIoClient);
 var _constants = require("../constants");
@@ -61343,6 +61344,16 @@ const executeCodeWithTestCases = async ({ code, language, testCases })=>{
         code,
         language,
         testCases
+    });
+    if (resp.error) throw new Error(resp.error);
+    return resp;
+};
+const submitCodeWithTestCases = async ({ code, language, problemSlug })=>{
+    const resp = await sendMessage({
+        type: "submit",
+        code,
+        language,
+        problemSlug
     });
     if (resp.error) throw new Error(resp.error);
     return resp;

@@ -876,7 +876,7 @@ $RefreshReg$(_c, "ModuleDetail");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","../repository/getModuleDetails":"93zsK","../layouts/TwoColListAndRankView":"jkpUs","../components/Progress":"jw8uh","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../components/EditLinks":"ludgh"}],"93zsK":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","../repository/getModuleDetails":"93zsK","../layouts/TwoColListAndRankView":"jkpUs","../components/Progress":"jw8uh","../components/EditLinks":"ludgh","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"93zsK":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _constants = require("../constants");
