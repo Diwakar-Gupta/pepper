@@ -363,4 +363,32 @@ export const submitCodeWithTestCases = async ({ code, language, problemSlug }) =
   const resp = await sendMessage({ type: "submit", code, language, problemSlug });
   if (resp.error) throw new Error(resp.error);
   return resp;
-}; 
+};
+
+// Check status of multiple problems
+export const checkProblemsStatus = async (problemSlugs) => {
+  const resp = await sendMessage({ type: "check_problems_status", problemSlugs });
+  if (resp.error) throw new Error(resp.error);
+  return resp.problemStatuses;
+};
+
+// Get submission history for a specific problem
+export const getSubmissionHistory = async (problemSlug) => {
+  const resp = await sendMessage({ type: "submission_history", problemSlug });
+  if (resp.error) throw new Error(resp.error);
+  return resp;
+};
+
+// Get overall submission statistics
+export const getSubmissionStats = async () => {
+  const resp = await sendMessage({ type: "submission_stats" });
+  if (resp.error) throw new Error(resp.error);
+  return resp.stats;
+};
+
+// Get recent submissions
+export const getRecentSubmissions = async (limit = 10) => {
+  const resp = await sendMessage({ type: "recent_submissions", limit });
+  if (resp.error) throw new Error(resp.error);
+  return resp.recentSubmissions;
+};

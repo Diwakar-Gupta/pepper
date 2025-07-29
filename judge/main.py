@@ -16,6 +16,7 @@ import sys
 import time
 import urllib.request
 import hashlib
+from submission_db import SubmissionDB
 
 SIGNALING_SERVER_URL = "https://pepper-isjb.onrender.com"
 TEST_CASES_SERVER_URL = "https://diwakar-gupta.github.io/pepper"
@@ -38,6 +39,9 @@ EXECUTORS = {
     "java": lambda code, input_text: run_java(code, input_text),
     "cpp": lambda code, input_text: run_cpp(code, input_text)
 }
+
+# Initialize submission database
+submission_db = SubmissionDB()
 
 def detect_languages():
     result = {}
@@ -409,7 +413,19 @@ if __name__ == "__main__":
                                     # Fetch test cases for the problem
                                     test_cases = fetch_test_cases(problem_slug)
                                     if not test_cases:
-                                        response = {"error": "No test cases found for this problem"}
+                                        # Save error submission to database
+                                        error_message = "No test cases found for this problem"
+                                        submission_id = submission_db.add_submission(
+                                            problem_slug=problem_slug,
+                                            language=lang,
+                                            code=code,
+                                            status="error",
+                                            error_message=error_message
+                                        )
+                                        response = {
+                                            "error": error_message,
+                                            "submissionId": submission_id
+                                        }
                                     else:
                                         results = []
                                         failed_test_case = None
@@ -455,24 +471,112 @@ if __name__ == "__main__":
                                                 failed_test_case = result
                                                 break
                                         
+                                        # Determine submission status and save to database
                                         if failed_test_case:
+                                            # Submission failed
+                                            status = "failed"
+                                            test_results = {
+                                                "total_test_cases": len(test_cases),
+                                                "passed_test_cases": len(results) - 1,  # All except the failed one
+                                                "failed_test_case": failed_test_case
+                                            }
+                                            error_message = f"Test case {failed_test_case['testCase']} failed"
+                                            
+                                            # Save failed submission to database
+                                            submission_id = submission_db.add_submission(
+                                                problem_slug=problem_slug,
+                                                language=lang,
+                                                code=code,
+                                                status=status,
+                                                test_results=test_results,
+                                                error_message=error_message
+                                            )
+                                            
                                             # Return the failed test case details
                                             response = {
                                                 "failed": True,
                                                 "failedTestCase": failed_test_case,
                                                 "testCaseNumber": failed_test_case["testCase"],
-                                                "message": f"Test case {failed_test_case['testCase']} failed"
+                                                "message": error_message,
+                                                "submissionId": submission_id
                                             }
                                         else:
                                             # All test cases passed
+                                            status = "success"
+                                            test_results = {
+                                                "total_test_cases": len(test_cases),
+                                                "passed_test_cases": len(results),
+                                                "all_passed": True
+                                            }
+                                            
+                                            # Save successful submission to database
+                                            submission_id = submission_db.add_submission(
+                                                problem_slug=problem_slug,
+                                                language=lang,
+                                                code=code,
+                                                status=status,
+                                                test_results=test_results
+                                            )
+                                            
                                             response = {
                                                 "failed": False,
                                                 "allPassed": True,
-                                                "message": "All test cases passed!"
+                                                "message": "All test cases passed!",
+                                                "submissionId": submission_id
                                             }
+                            elif data.get("type") == "submission_history":
+                                        problem_slug = data.get("problemSlug")
+                                        if not problem_slug:
+                                            response = {"error": "Problem slug is required"}
+                                        else:
+                                            history = submission_db.get_submission_history(problem_slug)
+                                            # Remove code from history for lighter response (only include metadata)
+                                            history_summary = []
+                                            for submission in history:
+                                                summary = {
+                                                    "id": submission["id"],
+                                                    "language": submission["language"],
+                                                    "status": submission["status"],
+                                                    "timestamp": submission["timestamp"],
+                                                    "datetime": submission["datetime"],
+                                                    "error_message": submission.get("error_message")
+                                                }
+                                                if submission.get("test_results"):
+                                                    summary["test_results"] = submission["test_results"]
+                                                history_summary.append(summary)
+                                            
+                                            response = {
+                                                "problemSlug": problem_slug,
+                                                "history": history_summary,
+                                                "totalSubmissions": len(history_summary)
+                                            }
+                            elif data.get("type") == "check_problems_status":
+                                        problem_slugs = data.get("problemSlugs", [])
+                                        if not isinstance(problem_slugs, list):
+                                            response = {"error": "problemSlugs must be a list"}
+                                        else:
+                                            status_map = submission_db.check_problems_status(problem_slugs)
+                                            response = {
+                                                "problemStatuses": status_map,
+                                                "totalProblems": len(problem_slugs),
+                                                "solvedCount": sum(1 for status in status_map.values() if status == "success"),
+                                                "failedCount": sum(1 for status in status_map.values() if status == "failed"),
+                                                "errorCount": sum(1 for status in status_map.values() if status == "error"),
+                                                "notAttemptedCount": sum(1 for status in status_map.values() if status == "not_attempted")
+                                            }
+                            elif data.get("type") == "submission_stats":
+                                        stats = submission_db.get_submission_stats()
+                                        response = {"stats": stats}
+                            elif data.get("type") == "recent_submissions":
+                                        limit = data.get("limit", 10)
+                                        recent = submission_db.get_recent_submissions(limit)
+                                        response = {
+                                            "recentSubmissions": recent,
+                                            "count": len(recent)
+                                        }
                             else:
                                 response = {"error": "Unknown type"}
-                            
+                
                             # Include the _msgId in the response if it was provided
                             if msg_id is not None:
                                 response["_msgId"] = msg_id
@@ -486,7 +590,7 @@ if __name__ == "__main__":
                                 error_response["_msgId"] = msg_id
                             channel.send(json.dumps(error_response))
 
-                    channel_ready.set()
+                        channel_ready.set()
 
                 @rtc_pc.on("icecandidate")
                 def on_icecandidate(event):
