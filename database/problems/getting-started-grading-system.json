@@ -7,5 +7,11 @@
   "solutionVideolink": "https://www.youtube.com/embed/AHuh0LDSsUY?rel=0&loop=1&playlist=AHuh0LDSsUY",
   "codes": {
     "java": "import java\n.util.*;\npublic class \nMain {\n  public \nstatic void \nmain(String[\n] args) {\n    // input \n- don't \nchange this \ncode\n    Scanner \nscn = new \nScanner\n(System.in);\n    int \nmarks = scn\n.nextInt();\n    // input \n- don't \nchange this \ncode\n    // code \nhere\n  }\n}"
-  }
+  },
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

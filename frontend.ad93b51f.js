@@ -60978,7 +60978,7 @@ const JudgeConnection = ()=>{
         columnNumber: 5
     }, undefined);
 };
-_s(JudgeConnection, "Ih6UwsMjISmQAVBvpxrMRtC6VMc=", false, function() {
+_s(JudgeConnection, "y7PfrP9dH0ryoB//A93F3rT/QsY=", false, function() {
     return [
         (0, _judgeContext.useJudge)
     ];
@@ -61010,6 +61010,10 @@ parcelHelpers.export(exports, "getLanguages", ()=>getLanguages);
 parcelHelpers.export(exports, "executeCode", ()=>executeCode);
 parcelHelpers.export(exports, "executeCodeWithTestCases", ()=>executeCodeWithTestCases);
 parcelHelpers.export(exports, "submitCodeWithTestCases", ()=>submitCodeWithTestCases);
+parcelHelpers.export(exports, "checkProblemsStatus", ()=>checkProblemsStatus);
+parcelHelpers.export(exports, "getSubmissionHistory", ()=>getSubmissionHistory);
+parcelHelpers.export(exports, "getSubmissionStats", ()=>getSubmissionStats);
+parcelHelpers.export(exports, "getRecentSubmissions", ()=>getRecentSubmissions);
 var _socketIoClient = require("socket.io-client");
 var _socketIoClientDefault = parcelHelpers.interopDefault(_socketIoClient);
 var _constants = require("../constants");
@@ -61357,6 +61361,37 @@ const submitCodeWithTestCases = async ({ code, language, problemSlug })=>{
     });
     if (resp.error) throw new Error(resp.error);
     return resp;
+};
+const checkProblemsStatus = async (problemSlugs)=>{
+    const resp = await sendMessage({
+        type: "check_problems_status",
+        problemSlugs
+    });
+    if (resp.error) throw new Error(resp.error);
+    return resp.problemStatuses;
+};
+const getSubmissionHistory = async (problemSlug)=>{
+    const resp = await sendMessage({
+        type: "submission_history",
+        problemSlug
+    });
+    if (resp.error) throw new Error(resp.error);
+    return resp;
+};
+const getSubmissionStats = async ()=>{
+    const resp = await sendMessage({
+        type: "submission_stats"
+    });
+    if (resp.error) throw new Error(resp.error);
+    return resp.stats;
+};
+const getRecentSubmissions = async (limit = 10)=>{
+    const resp = await sendMessage({
+        type: "recent_submissions",
+        limit
+    });
+    if (resp.error) throw new Error(resp.error);
+    return resp.recentSubmissions;
 };
 
 },{"socket.io-client":"24OPJ","../constants":"6Q7L8","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"24OPJ":[function(require,module,exports,__globalThis) {

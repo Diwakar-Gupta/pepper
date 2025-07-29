@@ -112843,7 +112843,7 @@ const getTestCases = async (problemSlug)=>{
     }
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","../constants":"6Q7L8"}],"kPBoB":[function(require,module,exports,__globalThis) {
+},{"../constants":"6Q7L8","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"kPBoB":[function(require,module,exports,__globalThis) {
 module.exports = import("./judgeApi.86e86be2.js").then(()=>module.bundle.root('7uuQH'));
 
 },{"7uuQH":"7uuQH"}],"ludgh":[function(require,module,exports,__globalThis) {

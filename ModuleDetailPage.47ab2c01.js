@@ -688,18 +688,128 @@ var _progress = require("../components/Progress");
 var _progressDefault = parcelHelpers.interopDefault(_progress);
 var _editLinks = require("../components/EditLinks");
 var _editLinksDefault = parcelHelpers.interopDefault(_editLinks);
+var _judgeRTCApi = require("../repository/judgeRTCApi");
 var _s = $RefreshSig$();
 const ModuleDetail = ()=>{
     _s();
     const { courseSlug, moduleSlug } = (0, _reactRouterDom.useParams)();
     const [moduleProblems, setModuleProblems] = (0, _react.useState)(null);
     const [isLoading, setIsLoading] = (0, _react.useState)(true);
+    const [problemStatuses, setProblemStatuses] = (0, _react.useState)({});
+    const [statusLoading, setStatusLoading] = (0, _react.useState)(false);
+    // Function to fetch problem statuses from judge
+    const fetchProblemStatuses = async (problems)=>{
+        if (!problems || problems.length === 0) return;
+        try {
+            setStatusLoading(true);
+            const problemSlugs = problems.map((problem)=>problem.slug);
+            const statuses = await (0, _judgeRTCApi.checkProblemsStatus)(problemSlugs);
+            setProblemStatuses(statuses);
+            console.log("Problem statuses fetched:", statuses);
+        } catch (error) {
+            console.error("Error fetching problem statuses:", error);
+            // If judge is not connected, silently fail and show no status indicators
+            setProblemStatuses({});
+        } finally{
+            setStatusLoading(false);
+        }
+    };
+    // Component to render status indicator
+    const StatusIndicator = ({ status, isLoading })=>{
+        if (isLoading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "flex justify-center",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "animate-spin rounded-full h-4 w-4 border-b-2 border-blue-500"
+            }, void 0, false, {
+                fileName: "src/pages/ModuleDetailPage.jsx",
+                lineNumber: 40,
+                columnNumber: 11
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/pages/ModuleDetailPage.jsx",
+            lineNumber: 39,
+            columnNumber: 9
+        }, undefined);
+        switch(status){
+            case 'success':
+                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex justify-center",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "text-green-500 text-lg font-bold",
+                        title: "Solved",
+                        children: "\u2713"
+                    }, void 0, false, {
+                        fileName: "src/pages/ModuleDetailPage.jsx",
+                        lineNumber: 49,
+                        columnNumber: 13
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/pages/ModuleDetailPage.jsx",
+                    lineNumber: 48,
+                    columnNumber: 11
+                }, undefined);
+            case 'failed':
+                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex justify-center",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "text-red-500 text-lg font-bold",
+                        title: "Failed",
+                        children: "\u2717"
+                    }, void 0, false, {
+                        fileName: "src/pages/ModuleDetailPage.jsx",
+                        lineNumber: 55,
+                        columnNumber: 13
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/pages/ModuleDetailPage.jsx",
+                    lineNumber: 54,
+                    columnNumber: 11
+                }, undefined);
+            case 'error':
+                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex justify-center",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "text-orange-500 text-lg font-bold",
+                        title: "Error",
+                        children: "\u26A0"
+                    }, void 0, false, {
+                        fileName: "src/pages/ModuleDetailPage.jsx",
+                        lineNumber: 61,
+                        columnNumber: 13
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/pages/ModuleDetailPage.jsx",
+                    lineNumber: 60,
+                    columnNumber: 11
+                }, undefined);
+            case 'not_attempted':
+            default:
+                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex justify-center",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "text-gray-400",
+                        title: "Not attempted",
+                        children: "-"
+                    }, void 0, false, {
+                        fileName: "src/pages/ModuleDetailPage.jsx",
+                        lineNumber: 68,
+                        columnNumber: 13
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/pages/ModuleDetailPage.jsx",
+                    lineNumber: 67,
+                    columnNumber: 11
+                }, undefined);
+        }
+    };
     (0, _react.useEffect)(()=>{
         const fetchModule = async ()=>{
             try {
                 setIsLoading(true);
                 const moduleProblemsList = await (0, _getModuleDetailsDefault.default)(courseSlug, moduleSlug);
                 setModuleProblems(moduleProblemsList);
+                // Fetch problem statuses after loading module problems
+                if (moduleProblemsList && moduleProblemsList.length > 0) fetchProblemStatuses(moduleProblemsList);
             } catch (error) {
                 console.error("Error loading module:", error);
                 setModuleProblems(null);
@@ -713,14 +823,14 @@ const ModuleDetail = ()=>{
     ]);
     if (isLoading) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _progressDefault.default), {}, void 0, false, {
         fileName: "src/pages/ModuleDetailPage.jsx",
-        lineNumber: 34,
+        lineNumber: 100,
         columnNumber: 12
     }, undefined);
     if (!moduleProblems) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: "Module not found"
     }, void 0, false, {
         fileName: "src/pages/ModuleDetailPage.jsx",
-        lineNumber: 38,
+        lineNumber: 104,
         columnNumber: 12
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -730,19 +840,71 @@ const ModuleDetail = ()=>{
                 dataPath: `courses/${courseSlug}/${moduleSlug}.json`
             }, void 0, false, {
                 fileName: "src/pages/ModuleDetailPage.jsx",
-                lineNumber: 43,
+                lineNumber: 109,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _twoColListAndRankViewDefault.default), {
                 Component1: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "bg-white shadow-md rounded-md",
                     children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: "text-3xl font-bold mb-6 text-center",
-                            children: "DSA Questions"
-                        }, void 0, false, {
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex justify-between items-center mb-6",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                    className: "text-3xl font-bold",
+                                    children: "DSA Questions"
+                                }, void 0, false, {
+                                    fileName: "src/pages/ModuleDetailPage.jsx",
+                                    lineNumber: 117,
+                                    columnNumber: 13
+                                }, void 0),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex items-center gap-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-sm text-gray-600",
+                                            children: Object.keys(problemStatuses).length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                children: [
+                                                    "\u2713 ",
+                                                    Object.values(problemStatuses).filter((s)=>s === 'success').length,
+                                                    " solved, \u2717 ",
+                                                    Object.values(problemStatuses).filter((s)=>s === 'failed').length,
+                                                    " failed"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/pages/ModuleDetailPage.jsx",
+                                                lineNumber: 121,
+                                                columnNumber: 19
+                                            }, void 0)
+                                        }, void 0, false, {
+                                            fileName: "src/pages/ModuleDetailPage.jsx",
+                                            lineNumber: 119,
+                                            columnNumber: 15
+                                        }, void 0),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                            onClick: ()=>fetchProblemStatuses(moduleProblems),
+                                            disabled: statusLoading,
+                                            className: "px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 disabled:opacity-50 text-sm",
+                                            title: "Refresh problem statuses from judge",
+                                            children: [
+                                                statusLoading ? "\u21BB" : "\uD83D\uDD04",
+                                                " Refresh Status"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/pages/ModuleDetailPage.jsx",
+                                            lineNumber: 127,
+                                            columnNumber: 15
+                                        }, void 0)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/pages/ModuleDetailPage.jsx",
+                                    lineNumber: 118,
+                                    columnNumber: 13
+                                }, void 0)
+                            ]
+                        }, void 0, true, {
                             fileName: "src/pages/ModuleDetailPage.jsx",
-                            lineNumber: 50,
+                            lineNumber: 116,
                             columnNumber: 11
                         }, void 0),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("table", {
@@ -757,7 +919,7 @@ const ModuleDetail = ()=>{
                                                 children: "Status"
                                             }, void 0, false, {
                                                 fileName: "src/pages/ModuleDetailPage.jsx",
-                                                lineNumber: 55,
+                                                lineNumber: 141,
                                                 columnNumber: 17
                                             }, void 0),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -765,7 +927,7 @@ const ModuleDetail = ()=>{
                                                 children: "Title"
                                             }, void 0, false, {
                                                 fileName: "src/pages/ModuleDetailPage.jsx",
-                                                lineNumber: 56,
+                                                lineNumber: 142,
                                                 columnNumber: 17
                                             }, void 0),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("th", {
@@ -773,18 +935,18 @@ const ModuleDetail = ()=>{
                                                 children: "Difficulty"
                                             }, void 0, false, {
                                                 fileName: "src/pages/ModuleDetailPage.jsx",
-                                                lineNumber: 57,
+                                                lineNumber: 143,
                                                 columnNumber: 17
                                             }, void 0)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/pages/ModuleDetailPage.jsx",
-                                        lineNumber: 54,
+                                        lineNumber: 140,
                                         columnNumber: 15
                                     }, void 0)
                                 }, void 0, false, {
                                     fileName: "src/pages/ModuleDetailPage.jsx",
-                                    lineNumber: 53,
+                                    lineNumber: 139,
                                     columnNumber: 13
                                 }, void 0),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("tbody", {
@@ -793,10 +955,17 @@ const ModuleDetail = ()=>{
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
                                                     className: "py-2 px-4",
-                                                    children: "-"
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(StatusIndicator, {
+                                                        status: problemStatuses[problem.slug],
+                                                        isLoading: statusLoading
+                                                    }, void 0, false, {
+                                                        fileName: "src/pages/ModuleDetailPage.jsx",
+                                                        lineNumber: 155,
+                                                        columnNumber: 21
+                                                    }, void 0)
                                                 }, void 0, false, {
                                                     fileName: "src/pages/ModuleDetailPage.jsx",
-                                                    lineNumber: 68,
+                                                    lineNumber: 154,
                                                     columnNumber: 19
                                                 }, void 0),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -807,12 +976,12 @@ const ModuleDetail = ()=>{
                                                         children: problem.name
                                                     }, void 0, false, {
                                                         fileName: "src/pages/ModuleDetailPage.jsx",
-                                                        lineNumber: 70,
+                                                        lineNumber: 161,
                                                         columnNumber: 21
                                                     }, void 0)
                                                 }, void 0, false, {
                                                     fileName: "src/pages/ModuleDetailPage.jsx",
-                                                    lineNumber: 69,
+                                                    lineNumber: 160,
                                                     columnNumber: 19
                                                 }, void 0),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("td", {
@@ -822,46 +991,46 @@ const ModuleDetail = ()=>{
                                                         children: problem.difficulty
                                                     }, void 0, false, {
                                                         fileName: "src/pages/ModuleDetailPage.jsx",
-                                                        lineNumber: 78,
+                                                        lineNumber: 169,
                                                         columnNumber: 21
                                                     }, void 0)
                                                 }, void 0, false, {
                                                     fileName: "src/pages/ModuleDetailPage.jsx",
-                                                    lineNumber: 77,
+                                                    lineNumber: 168,
                                                     columnNumber: 19
                                                 }, void 0)
                                             ]
                                         }, problem.slug, true, {
                                             fileName: "src/pages/ModuleDetailPage.jsx",
-                                            lineNumber: 62,
+                                            lineNumber: 148,
                                             columnNumber: 17
                                         }, void 0))
                                 }, void 0, false, {
                                     fileName: "src/pages/ModuleDetailPage.jsx",
-                                    lineNumber: 60,
+                                    lineNumber: 146,
                                     columnNumber: 13
                                 }, void 0)
                             ]
                         }, void 0, true, {
                             fileName: "src/pages/ModuleDetailPage.jsx",
-                            lineNumber: 52,
+                            lineNumber: 138,
                             columnNumber: 11
                         }, void 0)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/ModuleDetailPage.jsx",
-                    lineNumber: 49,
+                    lineNumber: 115,
                     columnNumber: 9
                 }, void 0)
             }, void 0, false, {
                 fileName: "src/pages/ModuleDetailPage.jsx",
-                lineNumber: 47,
+                lineNumber: 113,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(ModuleDetail, "8EuG+ta1MDojRZyypLIVLXGhkjo=", false, function() {
+_s(ModuleDetail, "Il8LE354fSJg8j5/6YpgzHwerpU=", false, function() {
     return [
         (0, _reactRouterDom.useParams)
     ];
@@ -876,7 +1045,7 @@ $RefreshReg$(_c, "ModuleDetail");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","../repository/getModuleDetails":"93zsK","../layouts/TwoColListAndRankView":"jkpUs","../components/Progress":"jw8uh","../components/EditLinks":"ludgh","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"93zsK":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router-dom":"61z4w","../repository/getModuleDetails":"93zsK","../layouts/TwoColListAndRankView":"jkpUs","../components/Progress":"jw8uh","../components/EditLinks":"ludgh","../repository/judgeRTCApi":"1pGio","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"93zsK":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _constants = require("../constants");
