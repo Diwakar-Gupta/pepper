@@ -526,11 +526,12 @@ if __name__ == "__main__":
                                             }
                             elif data.get("type") == "submission_history":
                                         problem_slug = data.get("problemSlug")
+                                        include_code = data.get("includeCode", False)
                                         if not problem_slug:
                                             response = {"error": "Problem slug is required"}
                                         else:
                                             history = submission_db.get_submission_history(problem_slug)
-                                            # Remove code from history for lighter response (only include metadata)
+                                            # Include code if requested, otherwise only metadata
                                             history_summary = []
                                             for submission in history:
                                                 summary = {
@@ -543,6 +544,8 @@ if __name__ == "__main__":
                                                 }
                                                 if submission.get("test_results"):
                                                     summary["test_results"] = submission["test_results"]
+                                                if include_code:
+                                                    summary["code"] = submission["code"]
                                                 history_summary.append(summary)
                                             
                                             response = {

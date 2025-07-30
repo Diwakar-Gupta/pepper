@@ -373,8 +373,8 @@ export const checkProblemsStatus = async (problemSlugs) => {
 };
 
 // Get submission history for a specific problem
-export const getSubmissionHistory = async (problemSlug) => {
-  const resp = await sendMessage({ type: "submission_history", problemSlug });
+export const getSubmissionHistory = async (problemSlug, includeCode = false) => {
+  const resp = await sendMessage({ type: "submission_history", problemSlug, includeCode });
   if (resp.error) throw new Error(resp.error);
   return resp;
 };
