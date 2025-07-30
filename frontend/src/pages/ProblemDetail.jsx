@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
-import ProblemDescription from "../components/ProblemDescription";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import { useParams } from "react-router-dom";
 import Progress from "../components/Progress";
 import getProblemDetails from "../repository/getProblemDetails";
 import ProblemEditor from "../components/ProblemEditor";
-import TabbedTestCases from "../components/TabbedTestCases";
 import { useJudge } from "../contexts/JudgeContext";
 import EditLinks from "../components/EditLinks";
+
+const ProblemDescription = lazy(() => import("../components/ProblemDescription"));
+const TabbedTestCases = lazy(() => import("../components/TabbedTestCases"));
+
 
 const ProblemDetails = () => {
   const { problemSlug } = useParams();
@@ -83,9 +85,9 @@ const ProblemDetails = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <EditLinks 
-        uiPath="ProblemDetail.jsx" 
-        dataPath={`problems/${problemSlug}.json`} 
+      <EditLinks
+        uiPath="ProblemDetail.jsx"
+        dataPath={`problems/${problemSlug}.json`}
       />
       <div className="bg-white min-h-screen shadow-md rounded-md p-2 w-full flex flex-col md:flex-row">
         {isLoading ? (
@@ -103,21 +105,25 @@ const ProblemDetails = () => {
           )}
           {isJudgeAvailable ? (
             <>
-              <ProblemEditor
-                code={code}
-                setCode={setCode}
-                languages={languages}
-                selectedLanguage={selectedLanguage}
-                setSelectedLanguage={setSelectedLanguage}
-              />
-              <TabbedTestCases
-                code={code}
-                language={selectedLanguage}
-                onRun={handleRun}
-                runResult={runResult}
-                judgeAvailable={isJudgeAvailable}
-                problemSlug={problemSlug}
-              />
+              <Suspense fallback={<Progress />}>
+                <ProblemEditor
+                  code={code}
+                  setCode={setCode}
+                  languages={languages}
+                  selectedLanguage={selectedLanguage}
+                  setSelectedLanguage={setSelectedLanguage}
+                />
+              </Suspense>
+              <Suspense fallback={<Progress />}>
+                <TabbedTestCases
+                  code={code}
+                  language={selectedLanguage}
+                  onRun={handleRun}
+                  runResult={runResult}
+                  judgeAvailable={isJudgeAvailable}
+                  problemSlug={problemSlug}
+                />
+              </Suspense>
             </>
           ) : (
             <div className="bg-yellow-100 text-yellow-700 p-4 rounded-md text-center">
@@ -125,7 +131,7 @@ const ProblemDetails = () => {
               <p className="text-sm mb-3">Please connect to the judge server using the connection panel in the top-right corner.</p>
               <div className="text-sm">
                 <p className="mb-2">Need help setting up the judge?</p>
-                <a 
+                <a
                   href="https://github.com/Diwakar-Gupta/pepper/tree/main/judge#-first-time-user-seeing-code-editor-unavailable"
                   target="_blank"
                   rel="noopener noreferrer"
