@@ -8,10 +8,42 @@
   "codes": {
     "java": "import java\n.util.*;\npublic class \nMain {\n  public \nstatic void \nmain(String[\n] args) {\n    // input \n- don't \nchange this \ncode\n    Scanner \nscn = new \nScanner\n(System.in);\n    int \nmarks = scn\n.nextInt();\n    // input \n- don't \nchange this \ncode\n    // code \nhere\n  }\n}"
   },
-  "testCases": [
-    {
-      "input": "testcaseinput1.txt",
-      "output": "testcaseoutput1.txt"
-    }
+    "testCases": [
+      {
+          "input": "testcaseinput1.txt",
+          "output": "testcaseoutput1.txt"
+      },
+      {
+          "input": "testcaseinput2.txt",
+          "output": "testcaseoutput2.txt"
+      },
+      {
+          "input": "testcaseinput3.txt",
+          "output": "testcaseoutput3.txt"
+      },
+      {
+          "input": "testcaseinput4.txt",
+          "output": "testcaseoutput4.txt"
+      },
+      {
+          "input": "testcaseinput5.txt",
+          "output": "testcaseoutput5.txt"
+      },
+      {
+          "input": "testcaseinput6.txt",
+          "output": "testcaseoutput6.txt"
+      },
+      {
+          "input": "testcaseinput7.txt",
+          "output": "testcaseoutput7.txt"
+      },
+      {
+          "input": "testcaseinput8.txt",
+          "output": "testcaseoutput8.txt"
+      },
+      {
+          "input": "testcaseinput9.txt",
+          "output": "testcaseoutput9.txt"
+      }
   ]
 }
