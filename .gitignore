@@ -5,3 +5,4 @@ scrapper/scrappedData
 judge/.judge_code
 judge/.test_cases_cache/
 judge/submissions.db
+__pycache__/
