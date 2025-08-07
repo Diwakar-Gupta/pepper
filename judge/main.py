@@ -96,49 +96,117 @@ def compare_outputs(actual, expected):
         diff = '\n'.join(difflib.unified_diff(expected_lines, actual_lines, fromfile='expected', tofile='output', lineterm=''))
     return passed, diff
 
+
+def test_case_file_path(problem_slug, filename):
+    """Generate file path for a test case input or output file"""
+    if not os.path.exists(TEST_CASES_CACHE_DIR):
+        os.makedirs(TEST_CASES_CACHE_DIR)
+    
+    # Sanitize problem_slug for filesystem
+    safe_slug = problem_slug.replace("/", "_").replace("\\", "_")
+    return os.path.join(TEST_CASES_CACHE_DIR, f"{safe_slug}__{filename}")
+
+
+def fetch_and_cache_test_case_file(problem_slug, filename):
+    """Fetch and cache a single test case file (input or output)"""
+    file_path = test_case_file_path(problem_slug, filename)
+    
+    # If file already exists, return the path
+    if os.path.exists(file_path):
+        return file_path
+    
+    try:
+        # Fetch the file from server
+        url = f"{TEST_CASES_SERVER_URL}/database/testcases/{problem_slug}/{filename}"
+        with urllib.request.urlopen(url) as response:
+            data = response.read().decode().strip()
+        
+        # Save to cache
+        with open(file_path, 'w') as f:
+            f.write(data)
+        
+        print(f"Cached test case file: {filename} for problem {problem_slug}")
+        return file_path
+    except Exception as e:
+        print(f"Error fetching test case file {filename} for {problem_slug}: {e}")
+        return None
+
+
+def load_test_case_file(problem_slug, filename):
+    """Load a test case file, fetching if not cached"""
+    file_path = test_case_file_path(problem_slug, filename)
+    
+    # If file doesn't exist, try to fetch it
+    if not os.path.exists(file_path):
+        file_path = fetch_and_cache_test_case_file(problem_slug, filename)
+        if not file_path:
+            return None
+    
+    try:
+        with open(file_path, 'r') as f:
+            return f.read().strip()
+    except Exception as e:
+        print(f"Error reading test case file {file_path}: {e}")
+        return None
+
+
 def get_cache_key(problem_slug):
     """Generate a cache key for a problem"""
     return hashlib.md5(problem_slug.encode()).hexdigest()
 
+
 def get_cached_test_cases(problem_slug):
     """Get test cases from cache if available"""
     try:
-        if not os.path.exists(TEST_CASES_CACHE_DIR):
+        # Fetch problem details to get test case file names
+        problem_url = f"{TEST_CASES_SERVER_URL}/database/problems/{problem_slug}.json"
+        with urllib.request.urlopen(problem_url) as response:
+            problem_data = json.loads(response.read().decode())
+        
+        if not problem_data.get('testCases'):
             return None
         
-        cache_key = get_cache_key(problem_slug)
-        cache_file = os.path.join(TEST_CASES_CACHE_DIR, f"{cache_key}.json")
+        # Check if all test case files are cached
+        all_cached = True
+        for test_case in problem_data['testCases']:
+            input_path = test_case_file_path(problem_slug, test_case['input'])
+            output_path = test_case_file_path(problem_slug, test_case['output'])
+            if not os.path.exists(input_path) or not os.path.exists(output_path):
+                all_cached = False
+                break
         
-        if os.path.exists(cache_file):
-            with open(cache_file, 'r') as f:
-                return json.load(f)
+        if all_cached:
+            # Load test cases from individual files
+            test_cases = []
+            for test_case in problem_data['testCases']:
+                input_data = load_test_case_file(problem_slug, test_case['input'])
+                output_data = load_test_case_file(problem_slug, test_case['output'])
+                if input_data is not None and output_data is not None:
+                    test_cases.append({
+                        'input': input_data,
+                        'expectedOutput': output_data
+                    })
+            return test_cases if test_cases else None
+        
         return None
     except Exception as e:
-        print(f"Error reading cache for {problem_slug}: {e}")
+        print(f"Error checking cached test cases for {problem_slug}: {e}")
         return None
+
 
 def cache_test_cases(problem_slug, test_cases):
-    """Cache test cases for a problem"""
-    try:
-        if not os.path.exists(TEST_CASES_CACHE_DIR):
-            os.makedirs(TEST_CASES_CACHE_DIR)
-        
-        cache_key = get_cache_key(problem_slug)
-        cache_file = os.path.join(TEST_CASES_CACHE_DIR, f"{cache_key}.json")
-        
-        with open(cache_file, 'w') as f:
-            json.dump(test_cases, f)
-        
-        print(f"Cached {len(test_cases)} test cases for {problem_slug}")
-    except Exception as e:
-        print(f"Error caching test cases for {problem_slug}: {e}")
+    """Cache test cases for a problem (legacy function - now handled individually)"""
+    # This function is no longer needed as files are cached individually
+    # when fetched, but keeping for compatibility
+    print(f"Test cases for {problem_slug} are now cached individually")
+
 
 def fetch_test_cases(problem_slug):
-    """Fetch test cases for a problem from the frontend server with caching"""
-    # First try to get from cache
+    """Fetch test cases for a problem from the server, storing each file individually"""
+    # First try to get from individual file cache
     cached_test_cases = get_cached_test_cases(problem_slug)
     if cached_test_cases is not None:
-        print(f"Using cached test cases for {problem_slug}")
+        print(f"Using cached test case files for {problem_slug}")
         return cached_test_cases
     
     try:
@@ -153,32 +221,62 @@ def fetch_test_cases(problem_slug):
         test_cases = []
         for test_case in problem_data['testCases']:
             try:
-                # Fetch input file
-                input_url = f"{TEST_CASES_SERVER_URL}/database/testcases/{problem_slug}/{test_case['input']}"
-                with urllib.request.urlopen(input_url) as response:
-                    input_data = response.read().decode().strip()
+                # Fetch and cache input file
+                input_data = load_test_case_file(problem_slug, test_case['input'])
+                if input_data is None:
+                    print(f"Failed to load input file: {test_case['input']}")
+                    continue
                 
-                # Fetch output file
-                output_url = f"{TEST_CASES_SERVER_URL}/database/testcases/{problem_slug}/{test_case['output']}"
-                with urllib.request.urlopen(output_url) as response:
-                    output_data = response.read().decode().strip()
+                # Fetch and cache output file
+                output_data = load_test_case_file(problem_slug, test_case['output'])
+                if output_data is None:
+                    print(f"Failed to load output file: {test_case['output']}")
+                    continue
                 
                 test_cases.append({
                     'input': input_data,
                     'expectedOutput': output_data
                 })
             except Exception as e:
-                print(f"Error fetching test case: {e}")
+                print(f"Error processing test case for {problem_slug}: {e}")
                 continue
         
-        # Cache the test cases for future use
-        if test_cases:
-            cache_test_cases(problem_slug, test_cases)
-        
+        print(f"Loaded {len(test_cases)} test cases for {problem_slug} from individual files")
         return test_cases
     except Exception as e:
         print(f"Error fetching test cases for {problem_slug}: {e}")
         return []
+
+
+def fetch_and_cache_all_test_case_files(problem_slug):
+    """Fetch and cache all test case files for a problem"""
+    try:
+        # Fetch problem details to get test case file names
+        problem_url = f"{TEST_CASES_SERVER_URL}/database/problems/{problem_slug}.json"
+        with urllib.request.urlopen(problem_url) as response:
+            problem_data = json.loads(response.read().decode())
+        
+        if not problem_data.get('testCases'):
+            return []
+        
+        cached_files = []
+        for test_case in problem_data['testCases']:
+            # Cache input file
+            input_path = fetch_and_cache_test_case_file(problem_slug, test_case['input'])
+            if input_path:
+                cached_files.append(input_path)
+            
+            # Cache output file
+            output_path = fetch_and_cache_test_case_file(problem_slug, test_case['output'])
+            if output_path:
+                cached_files.append(output_path)
+        
+        print(f"Cached {len(cached_files)} test case files for {problem_slug}")
+        return cached_files
+    except Exception as e:
+        print(f"Error caching all test case files for {problem_slug}: {e}")
+        return []
+
 
 def wake_up_render_app(url, timeout=WAKEUP_TIMEOUT):
     """Wake up a suspended Render webapp by making an HTTP request"""
@@ -200,6 +298,7 @@ def wake_up_render_app(url, timeout=WAKEUP_TIMEOUT):
     except Exception as e:
         print(f"⚠ Error waking up Render app: {e}")
         return False
+
 
 def connect_with_retry(sio, url, max_attempts=MAX_RETRY_ATTEMPTS):
     """Connect to signaling server with retry logic for suspended Render apps"""
@@ -239,16 +338,20 @@ def connect_with_retry(sio, url, max_attempts=MAX_RETRY_ATTEMPTS):
     
     return False
 
+
 if __name__ == "__main__":
+
 
     def generate_judge_code():
         """Generate 8-character alphanumeric code"""
         chars = string.ascii_uppercase + string.digits
         return ''.join(random.choice(chars) for _ in range(8))
 
+
     def format_judge_code(code):
         """Format code as XXXX-XXXX"""
         return f"{code[:4]}-{code[4:]}"
+
 
     def get_or_create_judge_code():
         """Get existing code or create new one"""
@@ -264,9 +367,11 @@ if __name__ == "__main__":
             f.write(code)
         return code
 
+
     # Global variables for cleanup
     sio = None
     loop = None
+
 
     def signal_handler(sig, frame):
         print("\nShutting down judge...")
@@ -276,8 +381,10 @@ if __name__ == "__main__":
             loop.stop()
         sys.exit(0)
 
+
     # Set up signal handler
     signal.signal(signal.SIGINT, signal_handler)
+
 
     def start_webrtc_signaling():
         global sio, loop
@@ -288,22 +395,27 @@ if __name__ == "__main__":
         print("=" * 40)
         print("Press Ctrl+C to exit")
 
+
         rtc_pc = None
         data_channel = None
         ice_candidates = []
         browser_ice_candidates = []
         loop = asyncio.new_event_loop()
 
+
         def run_loop():
             asyncio.set_event_loop(loop)
             loop.run_forever()
 
+
         threading.Thread(target=run_loop, daemon=True).start()
+
 
         @sio.event
         def connect():
             print("Connected to signaling server.")
             sio.emit("join", {"sessionId": session_id})
+
 
         @sio.on("signal")
         def on_signal(data):
@@ -328,6 +440,7 @@ if __name__ == "__main__":
                 
                 channel_ready = asyncio.Event()
 
+
                 @rtc_pc.on("datachannel")
                 def on_datachannel(channel):
                     nonlocal data_channel
@@ -339,6 +452,7 @@ if __name__ == "__main__":
                     initial_languages = {"languages": detect_languages()}
                     print(f"Initial languages: {initial_languages}")
                     channel.send(json.dumps(initial_languages))
+
 
                     @channel.on("message")
                     def on_message(message):
@@ -410,7 +524,7 @@ if __name__ == "__main__":
                                 elif lang not in EXECUTORS:
                                     response = {"error": "Unsupported language"}
                                 else:
-                                    # Fetch test cases for the problem
+                                    # Fetch test cases for the problem (now uses individual file caching)
                                     test_cases = fetch_test_cases(problem_slug)
                                     if not test_cases:
                                         # Save error submission to database
@@ -593,7 +707,9 @@ if __name__ == "__main__":
                                 error_response["_msgId"] = msg_id
                             channel.send(json.dumps(error_response))
 
+
                         channel_ready.set()
+
 
                 @rtc_pc.on("icecandidate")
                 def on_icecandidate(event):
@@ -604,6 +720,7 @@ if __name__ == "__main__":
                             "from": "judge",
                             "signal": {"type": "ice", "candidate": event.candidate}
                         })
+
 
                 # Handle the offer immediately
                 async def process_offer():
@@ -636,6 +753,7 @@ if __name__ == "__main__":
                         import traceback
                         traceback.print_exc()
 
+
                 # Run the offer processing
                 asyncio.run_coroutine_threadsafe(process_offer(), loop)
             elif signal["type"] == "ice":
@@ -663,6 +781,7 @@ if __name__ == "__main__":
                             print(f"signal: {signal}")
                     asyncio.run_coroutine_threadsafe(add_ice(), loop)
 
+
         # Use retry logic to handle Render webapp suspension
         if connect_with_retry(sio, SIGNALING_SERVER_URL):
             print("\n🎯 Judge is ready and waiting for connections...")
@@ -676,6 +795,7 @@ if __name__ == "__main__":
         else:
             print("\n❌ Could not establish connection to signaling server.")
             print("Please check the server status and try again.")
+
 
     # Start signaling
     start_webrtc_signaling()
