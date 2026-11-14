@@ -1,0 +1,25 @@
+{
+  "name": "Take A Guess",
+  "slug": "interview-prep-interactive-problems-take-a-guess",
+  "course": "interview-prep",
+  "module": "interactive-problems",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://codeforces.com/problemset/problem/1556/D\" target=\"_blank\" rel=\"noopener\">https://codeforces.com/problemset/problem/1556/D</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "1",
+  "sampleOutput": "1",
+  "questionVideo": "xYNNs1ddJkU",
+  "solutionVideo": "xYNNs1ddJkU",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args) throws IOException {\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/interactive-problems/take-a-guess/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

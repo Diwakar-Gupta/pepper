@@ -1,0 +1,18 @@
+{
+  "name": "All Possible Full Binary Trees",
+  "slug": "levelup-trees-all-possible-full-binary-trees",
+  "course": "levelup",
+  "module": "trees",
+  "difficulty": "Easy",
+  "statement": "https://leetcode.com/problems/all-possible-full-binary-trees/#:~:text=Given%20an%20integer%20n%20%2C%20return,val%20%3D%3D%200%20.&amp;text=A%20full%20binary%20tree%20is,exactly%200%20or%202%20children.",
+  "inputFormat": "check the link",
+  "outputFormat": "check the link",
+  "constraints": "check the link",
+  "questionVideo": "VYczyMiMTqA",
+  "solutionVideo": "VYczyMiMTqA",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static Scanner scn = new Scanner(System.in);\n\n  public static void main(String[] args) {\n\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/all-possible-full-binary-trees-official/ojquestion",
+  "testCases": []
+}

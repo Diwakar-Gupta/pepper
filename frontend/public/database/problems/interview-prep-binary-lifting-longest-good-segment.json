@@ -1,0 +1,18 @@
+{
+  "name": "Longest Good Segment",
+  "slug": "interview-prep-binary-lifting-longest-good-segment",
+  "course": "interview-prep",
+  "module": "binary-lifting",
+  "difficulty": "Easy",
+  "statement": "<a href=\"https://www.codechef.com/problems/LGSEG\" target=\"_blank\" rel=\"noopener\">https://www.codechef.com/problems/LGSEG</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "questionVideo": "x84LARr8B3g",
+  "solutionVideo": "x84LARr8B3g",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\nclass Main {\n  static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));\n  static PrintWriter out = new PrintWriter(System.out);\n  /*\n  use in for reading input\n  use out for printing output\n  */\n\n  public static void main(String[] args) throws IOException {\n\n    // write your code here.\n\n\n\n    out.close();\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/binary-lifting/longest-good-segment/ojquestion",
+  "testCases": []
+}

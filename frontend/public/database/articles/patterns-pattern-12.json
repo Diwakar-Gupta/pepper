@@ -1,0 +1,8 @@
+{
+  "name": "Pattern 12",
+  "slug": "patterns-pattern-12",
+  "course": "dsa-fundamentals",
+  "module": "patterns",
+  "html": "Solution Approach:   <p>We have to print a triangle of Fibonacci sequence numbers in the given problem. Now, we have already discussed how to print Fibonacci series and triangle of stars on the way to this problem.<br> Using that knowledge, we will move forward to combine them and implement it in our program.</p>     import java.util.*; public class Main{ public static void main(String[] args) { Scanner scn = new Scanner(System.in); int n = scn.nextInt(); int a = 0,b = 1; // First two Fibonacci numbers for(int i =1;i&lt;=n;i++) { for(int j = 1;j&lt;=i;j++) { System.out.print(a + &quot; &quot;); int c = a + b; //Since next fibonacci number is sum of a = b; //previous two fibonacci numbers b = c; } System.out.println(); } } }  <pre>                                            </pre> java; true&quot;;   <img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"img\">     <p>Share this article</p>  <i></i> <p>Facebook</p>  <i></i> <p>Twitter</p>  <i></i> <p>Instagram</p>  <i></i> <p>Whatsapp</p>  <i></i> <p>Linkedin</p>      <i></i> <img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\">",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/patterns/pattern_12/topic"
+}

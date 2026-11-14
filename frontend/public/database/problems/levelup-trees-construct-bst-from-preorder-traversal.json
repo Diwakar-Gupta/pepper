@@ -1,0 +1,26 @@
+{
+  "name": "Construct Bst From Preorder Traversal",
+  "slug": "levelup-trees-construct-bst-from-preorder-traversal",
+  "course": "levelup",
+  "module": "trees",
+  "difficulty": "Easy",
+  "statement": "1. You are given a partially written function to solve(Refer question video).\n2. Task : Construct Binary Search Tree from given PreOrder Traversal.\n3. you will be given an array representing a valid PreOrder of a Binary Search Tree. Program is required to create a unique Binary Search Tree.",
+  "inputFormat": "Input is managed for you.",
+  "outputFormat": "Output is managed for you.",
+  "constraints": "0 &lt;= Number of Nodes &lt;= 10^9\n-10^9 &lt;= value of Node data &lt;= 10^9\nValid PreOrder traversal.",
+  "sampleInput": "6\n3 2 1 6 5 7",
+  "sampleOutput": "2 -> 3 <- 6\n1 -> 2 <- .\n. -> 1 <- .\n5 -> 6 <- 7\n. -> 5 <- .\n. -> 7 <- .",
+  "questionVideo": "Bexswo4pqZQ",
+  "solutionVideo": "Bexswo4pqZQ",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nclass TreeNode\n{\npublic:\n    int val = 0;\n    TreeNode *left = nullptr;\n    TreeNode *right = nullptr;\n\n    TreeNode(int val)\n    {\n        this->val = val;\n    }\n};\n\nTreeNode *bstFromPreorder(vector<int> &preorder)\n{\n    return nullptr;\n}\n\n// input_Section_====================================================================\n\nvoid display(TreeNode *node)\n{\n    if (node == nullptr)\n        return;\n\n    string str = \"\";\n    str += ((node->left != nullptr ? to_string(node->left->val) : \".\"));\n    str += (\" -> \" + to_string(node->val) + \" <- \");\n    str += ((node->right != nullptr ? to_string(node->right->val) : \".\"));\n\n    cout << str << endl;\n\n    display(node->left);\n    display(node->right);\n}\n\nvoid solve()\n{\n    int n;\n    cin >> n;\n    vector<int> pre(n, 0);\n    for (int i = 0; i < n; i++)\n    {\n        cin >> pre[i];\n    }\n\n    TreeNode *root = bstFromPreorder(pre);\n    display(root);\n}\n\nint main()\n{\n    solve();\n    return 0;\n}",
+    "java": "import java.util.Scanner;\n\npublic class Main {\n    public static Scanner scn = new Scanner(System.in);\n\n    public static class TreeNode {\n        int val = 0;\n        TreeNode left = null;\n        TreeNode right = null;\n\n        TreeNode(int val) {\n            this.val = val;\n        }\n    }\n\n    public static TreeNode bstFromPreorder(int[] preorder) {\n        return null;\n    }\n\n    // input_section=================================================\n\n    public static void display(TreeNode node) {\n        if (node == null)\n            return;\n\n        StringBuilder sb = new StringBuilder();\n        sb.append((node.left != null ? node.left.val : \".\"));\n        sb.append(\" -> \" + node.val + \" <- \");\n        sb.append((node.right != null ? node.right.val : \".\"));\n\n        System.out.println(sb.toString());\n\n        display(node.left);\n        display(node.right);\n\n    }\n\n    public static void solve() {\n        int n = scn.nextInt();\n        int[] pre = new int[n];\n        for (int i = 0; i < n; i++)\n            pre[i] = scn.nextInt();\n\n        TreeNode root = bstFromPreorder(pre);\n        display(root);\n    }\n\n    public static void main(String[] args) {\n        solve();\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/construct-bst-from-preorder-traversal/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Super Ugly Number",
+  "slug": "levelup-dynamic-programming-super-ugly-number",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given an array(arr) of size k which contains prime numbers in ascending order, and an integer N.\n2. You have to find Nth super ugly number.\n3. Super ugly number is defined as the number whose prime factors are elements of the given array.\n\nAssumption -&gt; 1 is the first super ugly number.",
+  "inputFormat": "A number K\narr1\narr2.. K prime numbers in ascending order\nA number N",
+  "outputFormat": "A number representing Nth super ugly number.",
+  "constraints": "1 &lt;= K &lt;= 100\n1 &lt;= arr[i] &lt;= 1000\n1 &lt;= N &lt;= 10^6",
+  "sampleInput": "4\n3 5 7 11\n13",
+  "sampleOutput": "45",
+  "questionVideo": "0FMKNDEopR0",
+  "solutionVideo": "0FMKNDEopR0",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static int solution(int[] primes, int n) {\n    // write your code here\n\n  }\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    int k = scn.nextInt();\n    int[] primes = new int[k];\n    for (int i = 0 ; i < k; i++) {\n      primes[i] = scn.nextInt();\n    }\n    int n = scn.nextInt();\n    System.out.println(solution(primes, n));\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/super-ugly-number-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

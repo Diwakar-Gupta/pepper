@@ -1,0 +1,25 @@
+{
+  "name": "Count Of Common Divisors",
+  "slug": "interview-prep-number-theory-count-of-common-divisors",
+  "course": "interview-prep",
+  "module": "number-theory",
+  "difficulty": "Easy",
+  "statement": "Given two integer numbers, your task is to find count of all common divisors of given numbers",
+  "inputFormat": "The first line contains an integer T, number of test cases.\nThe next t lines contain two numbers a and b each.",
+  "outputFormat": "Print number of common divisors in next t lines.",
+  "constraints": "1&lt;= t &lt;= 10^5\n1&lt;= a, b &lt;= 10^5",
+  "sampleInput": "3\n100000 100000\n12 24\n747794 238336",
+  "sampleOutput": "36\n6\n2",
+  "questionVideo": "ALfvwFMjiJo",
+  "solutionVideo": "ALfvwFMjiJo",
+  "templates": {
+    "java": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.util.ArrayList;\n\npublic class Main {\n\n  public static void main(String[] args) throws NumberFormatException, IOException {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/number-theory/count-of-common-divisors-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

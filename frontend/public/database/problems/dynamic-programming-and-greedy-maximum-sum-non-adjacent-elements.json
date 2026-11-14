@@ -1,11 +1,25 @@
 {
   "name": "Maximum Sum Non Adjacent Elements",
   "slug": "dynamic-programming-and-greedy-maximum-sum-non-adjacent-elements",
-  "description": "1. You are given a number n, representing the count of elements.\n2. You are given n numbers, representing n elements.\n3. You are required to find the maximum sum of a subsequence with no adjacent elements.\n\n### Input Format\n```\nA number n\nn1\nn2\n.. n number of elements\n```\n\n### Output Format\n```\nA number representing the maximum sum of a subsequence with no adjacent elements.\n```\n\n### Constraints\n```\n1 <= n <= 1000\n-1000 <= n1, n2, .. n elements <= 1000\n```\n\n### Sample Input\n```\n6\n5\n10\n10\n100\n5\n6\n```\n\n### Sample Output\n```\n116\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/VT4bZV24QNo?end=69&rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/VT4bZV24QNo?start=69&rel=0&loop=1&playlist=VT4bZV24QNo",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "dynamic-programming-and-greedy",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n, representing the count of elements.\n2. You are given n numbers, representing n elements.\n3. You are required to find the maximum sum of a subsequence with no adjacent elements.",
+  "inputFormat": "A number n\nn1\nn2\n.. n number of elements",
+  "outputFormat": "A number representing the maximum sum of a subsequence with no adjacent elements.",
+  "constraints": "1 &lt;= n &lt;= 1000\n-1000 &lt;= n1, n2, .. n elements &lt;= 1000",
+  "sampleInput": "6\n5\n10\n10\n100\n5\n6",
+  "sampleOutput": "116",
+  "questionVideo": "VT4bZV24QNo",
+  "solutionVideo": "VT4bZV24QNo",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/maximum-sum-non-adjacent-elements-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

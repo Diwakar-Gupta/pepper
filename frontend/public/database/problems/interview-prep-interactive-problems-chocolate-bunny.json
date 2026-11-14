@@ -1,0 +1,23 @@
+{
+  "name": "Chocolate Bunny",
+  "slug": "interview-prep-interactive-problems-chocolate-bunny",
+  "course": "interview-prep",
+  "module": "interactive-problems",
+  "difficulty": "Medium",
+  "statement": "https://codeforces.com/problemset/problem/1407/C",
+  "inputFormat": "Check the link",
+  "outputFormat": "Check the link",
+  "constraints": "Check the link",
+  "sampleInput": "Check the link",
+  "sampleOutput": "Check the link",
+  "questionVideo": "qJuFCyxvbFc",
+  "solutionVideo": "qJuFCyxvbFc",
+  "templates": {},
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/interactive-problems/chocolate-bunny-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

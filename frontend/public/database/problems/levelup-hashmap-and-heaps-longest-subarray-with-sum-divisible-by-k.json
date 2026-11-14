@@ -1,0 +1,25 @@
+{
+  "name": "Longest Subarray With Sum Divisible By K",
+  "slug": "levelup-hashmap-and-heaps-longest-subarray-with-sum-divisible-by-k",
+  "course": "levelup",
+  "module": "hashmap-and-heaps",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array of integers(arr) and a number K.\n2. You have to find length of the longest subarray whose sum is divisible by K.",
+  "inputFormat": "A number N\narr1\narr2.. N numbers\nA number K",
+  "outputFormat": "A number representing length of the longest subarray whose sum is divisible by K.",
+  "constraints": "1 &lt;= N,K &lt;= 10^5\n-1000 &lt;= arr[i] &lt;= 1000",
+  "sampleInput": "6\n2 7 6 1 4 5\n3",
+  "sampleOutput": "4",
+  "questionVideo": "GrV3MTR_Uk0",
+  "solutionVideo": "GrV3MTR_Uk0",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n\n    public static int solution(int[] arr, int k) {\n        // write your code here\n\n        return 0;\n    }\n    \n    public static void main(String[] args) {\n        Scanner scn = new Scanner(System.in);\n        int n = scn.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++) {\n            arr[i] = scn.nextInt();\n        }\n        int k = scn.nextInt();\n        System.out.println(solution(arr, k));\n    }\n\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/hashmap-and-heaps/longest-subarray-with-sum-divisible-by-k-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

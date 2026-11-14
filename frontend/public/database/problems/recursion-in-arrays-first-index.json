@@ -1,11 +1,27 @@
 {
   "name": "First Index",
   "slug": "recursion-in-arrays-first-index",
-  "description": "1. You are given a number n, representing the count of elements.\n2. You are given n numbers.\n3. You are given a number x. \n4. You are required to find the first index at which x occurs in array a.\n5. If x exists in array, print the first index where it is found otherwise print -1.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA number n\nn1\nn2\n.. n number of elements\nA number x\n```\n\n### Output Format\n```\nA number representing first index of occurence of x in array a or -1 if not found at all.\n```\n\n### Constraints\n```\n1 <= n <= 10^4\n0 <= n1, n2, .. n elements <= 10 ^ 3\n0 <= x <= 10 ^ 3\n```\n\n### Sample Input\n```\n6\n15\n11\n40\n4\n4\n9\n4\n```\n\n### Sample Output\n```\n3\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/OD39jBFjgdI?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/TU0xUG9eO3Y?rel=0&loop=1&playlist=TU0xUG9eO3Y",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "recursion-in-arrays",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n, representing the count of elements.\n2. You are given n numbers.\n3. You are given a number x. \n4. You are required to find the first index at which x occurs in array a.\n5. If x exists in array, print the first index where it is found otherwise print -1.\n\nNote -&gt; The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.",
+  "inputFormat": "A number n\nn1\nn2\n.. n number of elements\nA number x",
+  "outputFormat": "A number representing first index of occurence of x in array a or -1 if not found at all.",
+  "constraints": "1 &lt;= n &lt;= 10^4\n0 &lt;= n1, n2, .. n elements &lt;= 10 ^ 3\n0 &lt;= x &lt;= 10 ^ 3",
+  "sampleInput": "6\n15\n11\n40\n4\n4\n9\n4",
+  "sampleOutput": "3",
+  "questionVideo": "OD39jBFjgdI",
+  "solutionVideo": "TU0xUG9eO3Y",
+  "templates": {
+    "cpp": "#include<iostream>\nusing namespace std;\n\nint firstIndex(int arr[], int idx, int x, int n){\n    // write your code here\n    \n}\n\nint main()\n{\n    int n;\n    cin >> n;\n    int d;\n    int arr[n];\n    for (int i = 0; i < n; i++)\n        cin >> arr[i];\n    cin >> d;\n    int p = firstIndex(arr, 0, d, n);\n    cout << p << endl;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // write your code here\n    }\n\n    public static int firstIndex(int[] arr, int idx, int x){\n        return 0;\n    }\n\n}",
+    "python": "def Firstindex(arr, idx, x, n):\n# Write your code here\n\n  def main():\n  n = int(input())\n      arr = []\n            for i in range(n) :\n              arr.append(int(input()))\n              x = int(input())\n                  ans = Firstindex(arr, 0, x, n)\n                        print(ans)\n                        main()"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/recursion-in-arrays/first-index-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

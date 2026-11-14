@@ -1,0 +1,25 @@
+{
+  "name": "Count Brackets",
+  "slug": "levelup-dynamic-programming-count-brackets",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n, representing the number of opening brackets ( and closing brackets )\n2. You are required to find the number of ways in which you can arrange the brackets if the closing brackets should never exceed opening brackets\ne.g.\nfor 1, answer is 1 -&gt; ()\nfor 2, answer is 2 -&gt; ()(), (())\nfor 3, asnwer is 5 -&gt; ()()(), () (()), (())(), (()()), ((()))",
+  "inputFormat": "A number n",
+  "outputFormat": "A number representing the number of ways in which you can arrange the brackets if the closing brackets should never exceed opening brackets",
+  "constraints": "0 &lt;= n &lt;= 15",
+  "sampleInput": "4",
+  "sampleOutput": "14",
+  "questionVideo": "n-8R95-5MXw",
+  "solutionVideo": "n-8R95-5MXw",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main{\n\npublic static void main(String[] args) throws Exception {\n    // write your code here\n }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/count-brackets-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

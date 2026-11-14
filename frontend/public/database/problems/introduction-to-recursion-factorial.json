@@ -1,11 +1,27 @@
 {
   "name": "Factorial",
   "slug": "introduction-to-recursion-factorial",
-  "description": "1. You are given a number n.\n2. You are required to calculate the factorial of the number. Don't change the signature of factorial function.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is.Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\nfactorial of n\n```\n\n### Constraints\n```\n0 <= n <= 10\n```\n\n### Sample Input\n```\n5\n```\n\n### Sample Output\n```\n120\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/zEwwEQi9FAc?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/m4rdYPuisKc?rel=0&loop=1&playlist=m4rdYPuisKc",
-  "codes": {
-    "java": "im\npo\nrt \nja\nva\n.i\no.\n*;\nim\npo\nrt \nja\nva\n.u\nti\nl.\n*;\npu\nbl\nic \ncl\nas\ns \nMa\nin \n{\n  \n  \npu\nbl\nic \nst\nat\nic \nvo\nid \nma\nin\n(S\ntr\nin\ng[\n] \nar\ngs\n) \nth\nro\nws \nEx\nce\npt\nio\nn \n{"
-  }
+  "course": "dsa-fundamentals",
+  "module": "introduction-to-recursion",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n.\n2. You are required to calculate the factorial of the number. Don't change the signature of factorial function.\n\nNote -&gt; The online judge can't force you to write the function recursively but that is what the spirit of question is.Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.",
+  "inputFormat": "A number n",
+  "outputFormat": "factorial of n",
+  "constraints": "0 &lt;= n &lt;= 10",
+  "sampleInput": "5",
+  "sampleOutput": "120",
+  "questionVideo": "zEwwEQi9FAc",
+  "solutionVideo": "m4rdYPuisKc",
+  "templates": {
+    "cpp": "#include<iostream>\nusing namespace std;\n\nint factorial(int n){\n    // write your code here\n    \n}\n\n\nint main(){\n    int n; cin>>n;\n    cout<<factorial(n);\n}\n",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // write your code here\n    }\n\n    public static int factorial(int n){\n        return 0;\n    }\n\n}",
+    "python": "def factorial(x):\n# write your code here\n\n  num = int(input())\n        print(factorial(num))"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/introduction-to-recursion/factorial-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

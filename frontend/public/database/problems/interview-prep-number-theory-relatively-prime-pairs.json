@@ -1,0 +1,25 @@
+{
+  "name": "Relatively Prime Pairs",
+  "slug": "interview-prep-number-theory-relatively-prime-pairs",
+  "course": "interview-prep",
+  "module": "number-theory",
+  "difficulty": "Medium",
+  "statement": "You are given a set of all integers from l to r inclusive (r - l  is odd).You want to split these numbers into exactly (r-l+1)/2 pairs in such a way that for each pair (i,j), the greates common divisor of i and j is equal to 1.\nEach pair should appear in exactly one of the pairs.\n\nPrint the resulting pairs or output that no solution exists.",
+  "inputFormat": "The only line contains two integer l and r.",
+  "outputFormat": "If any solution exists, print &quot;YES&quot; in the first line. Each of next (r-l+1)/2 line contains some pair of integers. GCD of each pair of integers should be equal to 1.\nIf there exists no solution print &quot;NO&quot;.",
+  "constraints": "1 &lt;= l, r, &lt;= 10^8\nr-l+1 &lt;= 10^5 and r-l is odd",
+  "sampleInput": "1 8",
+  "sampleOutput": "YES\n1 2\n3 4\n5 6\n7 8",
+  "questionVideo": "7wlqNxFJJfw",
+  "solutionVideo": "7wlqNxFJJfw",
+  "templates": {
+    "java": "import java.util.*;\nimport java.util.function.Function;\nimport java.util.stream.Collectors;\nimport java.io.*;\nimport java.math.*;\n\npublic class Main {\n\t\tpublic static void main(String[] args) {\n\n\t}\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/number-theory/relatively-prime-pairs-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

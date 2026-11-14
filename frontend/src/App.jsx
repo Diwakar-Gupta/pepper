@@ -1,73 +1,51 @@
 import React, { lazy, Suspense } from "react";
-import { createBrowserRouter, RouterProvider, Outlet, Navigate } from "react-router-dom";
-import Progress from "./components/Progress";
-import TopNavigator from "./components/TopNavigator";
+import { createBrowserRouter, Outlet, RouterProvider, ScrollRestoration } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import { ErrorState, Spinner } from "./components/ui";
+import { BASE } from "./constants";
 import { JudgeProvider } from "./contexts/JudgeContext";
 
-const CoursesPage = lazy(() => import("./pages/CoursesPage"));
-const CourseDetailPage = lazy(() => import("./pages/CourseDetailPage"));
-const ModuleDetail = lazy(() => import("./pages/ModuleDetailPage"));
-const ProblemDetails = lazy(() => import("./pages/ProblemDetail"));
-const Error = lazy(() => import("./pages/Error"));
+const HomePage = lazy(() => import("./pages/HomePage"));
+const CoursePage = lazy(() => import("./pages/CoursePage"));
+const ModulePage = lazy(() => import("./pages/ModulePage"));
+const LessonPage = lazy(() => import("./pages/LessonPage"));
+const ProblemPage = lazy(() => import("./pages/ProblemPage"));
 
-const AppLayout = () => {
-  console.log("AppLayout Rendered");
+function Layout() {
   return (
     <JudgeProvider>
-      <div className="app">
-        <TopNavigator />
-        <Outlet />
+      <div className="flex min-h-screen flex-col bg-slate-50">
+        <Navbar />
+        <main className="flex-1">
+          <Suspense fallback={<Spinner />}>
+            <Outlet />
+          </Suspense>
+        </main>
       </div>
+      <ScrollRestoration />
     </JudgeProvider>
   );
-};
+}
 
-const appRouter = createBrowserRouter([
-  {
-    path: "/pepper/",
-    element: <AppLayout />,
-    errorElement: <Error />,
-    children: [
-      {
-        path: "/pepper/",
-        element: (
-          <Suspense fallback={<Progress />}>
-            <CoursesPage />
-          </Suspense>
-        ),
-      },
-      {
-        path: "/pepper/course",
-        element: <Navigate to="/pepper/" replace />,
-      },
-      {
-        path: "/pepper/course/:courseSlug",
-        element: (
-          <Suspense fallback={<Progress />}>
-            <CourseDetailPage />
-          </Suspense>
-        ),
-      },
-      {
-        path: "/pepper/course/:courseSlug/:moduleSlug",
-        element: (
-          <Suspense fallback={<Progress />}>
-            <ModuleDetail />
-          </Suspense>
-        ),
-      },
-      ,
-      {
-        path: "/pepper/course/:courseSlug/:moduleSlug/:problemSlug",
-        element: (
-          <Suspense fallback={<Progress />}>
-            <ProblemDetails />
-          </Suspense>
-        ),
-      },
-    ],
-  },
-]);
-const AppRouter = () => <RouterProvider router={appRouter} />;
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Layout />,
+      errorElement: <ErrorState title="Something went wrong">Try reloading the page.</ErrorState>,
+      children: [
+        { index: true, element: <HomePage /> },
+        { path: "course/:courseSlug", element: <CoursePage /> },
+        { path: "course/:courseSlug/:moduleSlug", element: <ModulePage /> },
+        { path: "course/:courseSlug/:moduleSlug/learn/:itemSlug", element: <LessonPage /> },
+        { path: "course/:courseSlug/:moduleSlug/:problemSlug", element: <ProblemPage /> },
+        { path: "*", element: <ErrorState title="Page not found">That page does not exist.</ErrorState> },
+      ],
+    },
+  ],
+  { basename: BASE }
+);
 
-export default AppRouter;
+export default function App() {
+  return <RouterProvider router={router} />;
+}

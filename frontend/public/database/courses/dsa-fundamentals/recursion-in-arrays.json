@@ -1,32 +1,84 @@
-[
-  {
-    "type": "Code",
-    "slug": "recursion-in-arrays-display-array",
-    "name": "Display Array"
+{
+  "name": "Recursion in Arrays",
+  "slug": "recursion-in-arrays",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 6,
+    "articles": 6,
+    "videos": 0
   },
-  {
-    "type": "Code",
-    "slug": "recursion-in-arrays-display-array-in-reverse",
-    "name": "Display Array In Reverse"
-  },
-  {
-    "type": "Code",
-    "slug": "recursion-in-arrays-max-of-an-array",
-    "name": "Max Of An Array"
-  },
-  {
-    "type": "Code",
-    "slug": "recursion-in-arrays-first-index",
-    "name": "First Index"
-  },
-  {
-    "type": "Code",
-    "slug": "recursion-in-arrays-last-index",
-    "name": "Last Index"
-  },
-  {
-    "type": "Code",
-    "slug": "recursion-in-arrays-all-indices-of-array",
-    "name": "All Indices Of Array"
-  }
-]
+  "items": [
+    {
+      "type": "article",
+      "slug": "recursion-in-arrays-display-arrays",
+      "name": "Display Arrays"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-in-arrays-display-array",
+      "name": "Display Array",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "recursion-in-arrays-display-array-in-reverse",
+      "name": "Display Array In Reverse"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-in-arrays-display-array-in-reverse",
+      "name": "Display Array In Reverse",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "recursion-in-arrays-max-of-an-array",
+      "name": "Max of an Array"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-in-arrays-max-of-an-array",
+      "name": "Max Of An Array",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "recursion-in-arrays-first-index",
+      "name": "First Index"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-in-arrays-first-index",
+      "name": "First Index",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "recursion-in-arrays-last-index",
+      "name": "Last Index"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-in-arrays-last-index",
+      "name": "Last Index",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-in-arrays-all-indices-of-array",
+      "name": "All Indices Of Array",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "recursion-in-arrays-all-indices-in-an-array",
+      "name": "All Indices In An Array"
+    }
+  ]
+}

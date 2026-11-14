@@ -1,11 +1,27 @@
 {
   "name": "Search In A Sorted 2d Array",
   "slug": "2d-arrays-search-in-a-sorted-2d-array",
-  "description": "1. You are given a number n, representing the number of rows and columns of a square matrix.\n2. You are given n * n numbers, representing elements of 2d array a. \nNote - Each row and column is sorted in increasing order.\n3. You are given a number x.\n4. You are required to find x in the matrix and print it's location int (row, col) format as discussed in output format below.\n5. In case element is not found, print \"Not Found\".\n\n### Input Format\n```\nA number n\ne11\ne12..\ne21\ne22..\n.. n * n number of elements of array a\nA number x\n```\n\n### Output Format\n```\nrow\ncol of the location where element is found or \"Not Found\" if element is not in the matrix\n```\n\n### Constraints\n```\n1 <= n <= 10^2\n-10^9 <= e11, e12, .. n * m elements <= 10^9\nAll rows and columns are sorted in increasing order\n```\n\n### Sample Input\n```\n4\n11\n12\n13\n14\n21\n22\n23\n24\n31\n32\n33\n34\n41\n42\n43\n44\n43\n```\n\n### Sample Output\n```\n3\n2\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/N1RyGhXJ7Zc?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/5vP0-g94xEA?rel=0&loop=1&playlist=5vP0-g94xEA",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "2d-arrays",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number n, representing the number of rows and columns of a square matrix.\n2. You are given n * n numbers, representing elements of 2d array a. \nNote - Each row and column is sorted in increasing order.\n3. You are given a number x.\n4. You are required to find x in the matrix and print it's location int (row, col) format as discussed in output format below.\n5. In case element is not found, print &quot;Not Found&quot;.",
+  "inputFormat": "A number n\ne11\ne12..\ne21\ne22..\n.. n * n number of elements of array a\nA number x",
+  "outputFormat": "row\ncol of the location where element is found or &quot;Not Found&quot; if element is not in the matrix",
+  "constraints": "1 &lt;= n &lt;= 10^2\n-10^9 &lt;= e11, e12, .. n * m elements &lt;= 10^9\nAll rows and columns are sorted in increasing order",
+  "sampleInput": "4\n11\n12\n13\n14\n21\n22\n23\n24\n31\n32\n33\n34\n41\n42\n43\n44\n43",
+  "sampleOutput": "3\n2",
+  "questionVideo": "N1RyGhXJ7Zc",
+  "solutionVideo": "5vP0-g94xEA",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nbool searchMatrix(vector<vector<int>>& matrix, int target)\n{\n  // write your code here\n}\n\nint main()\n{\n  int n, target;\n  cin >> n;\n  vector<vector<int>> mat(n, vector<int> (n));\n  for (int i = 0; i < n; i++)\n    for (int j = 0; j < n; j++)\n      cin >> mat[i][j];\n  cin >> target;\n\n  if (!searchMatrix(mat, target)) cout << \"Not Found\\n\";\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // write your code here\n    }\n\n}",
+    "python": "def search(mat, n, x):\n#write your code here\n\n\n\n  n = int(input())\n      arr = []\n            for i in range(n) :\n              a = []\n                  for j in range(n) :\n                    a.append(int(input()));\narr.append(a)\nx = int(input())\n\n    search(arr, n, x)"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/2d-arrays/search-in-a-sorted-2d-array-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

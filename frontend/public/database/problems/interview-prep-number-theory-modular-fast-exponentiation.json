@@ -1,0 +1,25 @@
+{
+  "name": "Modular Fast Exponentiation",
+  "slug": "interview-prep-number-theory-modular-fast-exponentiation",
+  "course": "interview-prep",
+  "module": "number-theory",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number x.\n2. You are given another number n.\n3. You are required to calculate x raised to the power n mod 10^9 + 7 in logn complexity.",
+  "inputFormat": "The first line contains the integer x and n.",
+  "outputFormat": "Output an integer in a line containing x^n mod 10^9+7.",
+  "constraints": "1 &lt;= x &lt;= 10^9\n0 &lt;= n &lt;= 10^9",
+  "sampleInput": "10 5",
+  "sampleOutput": "100000",
+  "questionVideo": "kcE1EV8UKCo",
+  "solutionVideo": "kcE1EV8UKCo",
+  "templates": {
+    "java": "import java.io.IOException;\nimport java.util.Scanner;\n\npublic class Main {\n\tpublic static int xpown(long x, long n, long p) {\n\t\t\n\t}\n\n\tpublic static void main(String[] args) throws NumberFormatException, IOException {\n\t\tScanner scn = new Scanner(System.in);\n\t\tStringBuilder sb = new StringBuilder();\n\t\t\n\t\t\tint x = scn.nextInt();\n\t\t\tint n = scn.nextInt();\n\n            int ans = xpown(x,n,1000000007);\n\t\t\tSystem.out.println(ans);\n\t\t}\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/number-theory/modular-fast-exponentiation-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

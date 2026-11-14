@@ -1,0 +1,377 @@
+{
+  "name": "Bit Manipulation",
+  "slug": "bit-manipulation",
+  "course": "levelup",
+  "counts": {
+    "problems": 35,
+    "articles": 24,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-basics-of-bit-manipulation",
+      "name": "Basics Of Bit Manipulation",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-print-value-of-rsb-mask",
+      "name": "Print Value Of Rsb Mask",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-kernighans-algorithm",
+      "name": "Kernighans Algorithm",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-josephus-special",
+      "name": "Josephus Special",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-gray-code",
+      "name": "Gray Code",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-minimum-number-of-software-developers",
+      "name": "Minimum Number Of Software Developers",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-number-of-valid-words",
+      "name": "Number Of Valid Words",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-all-repeating-except-one",
+      "name": "All Repeating Except One",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-all-repeating-except-two",
+      "name": "All Repeating Except Two",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-one-repeating-and-one-missing",
+      "name": "One Repeating And One Missing",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-all-repeating-three-times-except-one",
+      "name": "All Repeating Three Times Except One",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-triplets-1",
+      "name": "Triplets - 1",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-reduce-n-to-1",
+      "name": "Reduce N To 1",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-pepcoder-and-bits",
+      "name": "Pepcoder And Bits",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-xor-of-sum-of-all-pairs",
+      "name": "Xor Of Sum Of All Pairs",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-abbreviation-1-using-bits",
+      "name": "Abbreviation 1 - Using Bits",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-utf-8-encoding",
+      "name": "Utf - 8 Encoding",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-sudoku-using-bit-manipulation",
+      "name": "Sudoku Using Bit Manipulation",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-n-queens-using-bit",
+      "name": "N Queens Using Bit",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-flip-bits-to-convert-a-to-b",
+      "name": "Flip Bits To Convert A To B",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-flip-bits-to-convert-a-to-b-2",
+      "name": "Flip Bits To Convert A To B",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-copy-set-bits-in-a-range",
+      "name": "Copy Set Bits In A Range",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-is-a-power-of-2",
+      "name": "Is A Power Of 2",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-is-a-power-of-4",
+      "name": "Is A Power Of 4",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-solve-7n-by-8",
+      "name": "Solve 7n By 8",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-swap-all-odd-and-even-bits",
+      "name": "Swap All Odd And Even Bits",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-sum-of-bit-differences-of-all-pairs",
+      "name": "Sum Of Bit Differences Of All Pairs",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-check-divisibility-by-3",
+      "name": "Check Divisibility By 3",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-count-set-bits-in-first-n-natural-numbers",
+      "name": "Count Set Bits In First N Natural Numbers",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-print-binary-and-reverse-bits",
+      "name": "Print Binary And Reverse Bits",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-min-xor-pairs",
+      "name": "Min Xor Pairs",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-nth-palindromic-binary",
+      "name": "Nth Palindromic Binary",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-xor-queries-of-a-subarray",
+      "name": "Xor Queries Of A Subarray",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-minimum-flips-to-make-a-or-b-equal-to-c",
+      "name": "Minimum Flips To Make A Or B Equal To C",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-bit-manipulation-find-longest-awesome-substring",
+      "name": "Find Longest Awesome Substring",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-flip-bits-to-convert-a-to-b",
+      "name": "FLIP BITS TO CONVERT A TO B"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-gray-code",
+      "name": "Gray Code"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-sudoku-using-bit-manipulation",
+      "name": "Sudoku using bit Manipulation"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-abbreviation-1-using-bits",
+      "name": "Abbreviation 1 - Using Bits"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-all-repeating-three-times-except-one",
+      "name": "All Repeating Three times except One"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-number-of-valid-words",
+      "name": "Number of Valid Words"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-one-repeating-and-one-missing",
+      "name": "One Repeating And One Missing"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-solve-7n-by-8",
+      "name": "Solve 7n By 8"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-reduce-n-to-1",
+      "name": "Reduce N to 1"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-swap-all-odd-and-even-bits",
+      "name": "Swap All Odd And Even Bits"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-sum-of-bit-difference-of-all-pairs",
+      "name": "Sum of Bit Difference of All Pairs"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-is-a-power-of-two",
+      "name": "Is a Power of Two"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-copy-set-bits-in-a-range",
+      "name": "Copy Set Bits in a Range"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-xor-of-sum-of-all-pairs",
+      "name": "XOR of Sum of All Pairs"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-all-repeating-except-two",
+      "name": "All Repeating Except Two"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-basics-of-bit-manipulation",
+      "name": "Basics of Bit Manipulation"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-minimum-number-of-software-developers",
+      "name": "Minimum Number of Software Developers"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-triplets-1",
+      "name": "Triplets-1"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-pepcoder-and-bits",
+      "name": "Pepcoder and Bits"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-utf-8-encoding",
+      "name": "UTF-8 Encoding"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-count-set-bits-in-first-n-natural-numbers",
+      "name": "Count Set Bits in First N Natural Numbers"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-print-binary-and-reverse-bits",
+      "name": "Print Binary and Reverse Bits"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-min-xor-pairs",
+      "name": "Min XOR pairs"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-bit-manipulation-nth-palindromic-binary",
+      "name": "Nth Palindromic Binary"
+    }
+  ]
+}

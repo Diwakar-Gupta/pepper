@@ -1,0 +1,25 @@
+{
+  "name": "Minimum Cost To Make Two Strings Identical",
+  "slug": "levelup-dynamic-programming-minimum-cost-to-make-two-strings-identical",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given two strings S1, S2, and two numbers x and y.\n2. The cost of deleting a character from S1 is x and the cost of deleting a character from S2 is y.\n3. You can delete characters from both the strings.\n4. You have to find the minimum cost required to make the given two strings identical.",
+  "inputFormat": "Two Strings S1, S2\nTwo numbers x and y",
+  "outputFormat": "A number representing the minimum cost of making the given two strings identical.",
+  "constraints": "1 &lt;= length of strings S1 and S2 &lt;= 1000\n1 &lt;= x,y &lt;= 1000",
+  "sampleInput": "sea\neat\n10\n7",
+  "sampleOutput": "17",
+  "questionVideo": null,
+  "solutionVideo": null,
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int solution(String s1, String s2, int c1, int c2) {\n\t\t// write your code here\n\n\t\treturn 0;\n\t}\n\t\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tString s1 = scn.next();\n\t\tString s2 = scn.next();\n\t\tint x = scn.nextInt();\n\t\tint y = scn.nextInt();\n\t\tSystem.out.println(solution(s1, s2,x, y));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/minimum-cost-to-make-two-strings-identical-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,22 +1,40 @@
-[
-  {
-    "type": "Code",
-    "slug": "flood-fill-easy",
-    "name": "Flood Fill Easy"
+{
+  "name": "Recursion Backtracking",
+  "slug": "recursion-backtracking",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 1,
+    "articles": 0,
+    "videos": 0
   },
-  {
-    "type": "Code",
-    "slug": "target-sum-subsets-easy",
-    "name": "Target Sum Subsets Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "n-queens-easy",
-    "name": "N Queens Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "knights-tour-easy",
-    "name": "Knights Tour Easy"
-  }
-]
+  "items": [
+    {
+      "type": "problem",
+      "slug": "recursion-backtracking-flood-fill",
+      "name": "Flood Fill",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-backtracking-target-sum-subsets",
+      "name": "Target Sum Subsets",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-backtracking-n-queens",
+      "name": "N Queens",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-backtracking-knights-tour",
+      "name": "Knights Tour",
+      "difficulty": "Easy",
+      "unavailable": true
+    }
+  ]
+}

@@ -1,11 +1,27 @@
 {
   "name": "Get Subsequence",
   "slug": "recursion-with-arraylists-get-subsequence",
-  "description": "1. You are given a string str.\n2. Complete the body of getSS function - without changing signature - to calculate all subsequences of str.\nUse sample input and output to take idea about subsequences.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is.\nWrite recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA string str\n```\n\n### Output Format\n```\nContents of the arraylist containing subsequences as shown in sample output\n```\n\n### Constraints\n```\n0 <= str.length <= 20\n```\n\n### Sample Input\n```\nabc\n```\n\n### Sample Output\n```\n[, c, b, bc, a, ac, ab, abc]\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/Sa5PmCFF_zI?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/Sa5PmCFF_zI?rel=0&loop=1&playlist=Sa5PmCFF_zI",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "recursion-with-arraylists",
+  "difficulty": "Easy",
+  "statement": "1. You are given a string str.\n2. Complete the body of getSS function - without changing signature - to calculate all subsequences of str.\nUse sample input and output to take idea about subsequences.\n\nNote -&gt; The online judge can't force you to write the function recursively but that is what the spirit of question is.\nWrite recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.",
+  "inputFormat": "A string str",
+  "outputFormat": "Contents of the arraylist containing subsequences as shown in sample output",
+  "constraints": "0 &lt;= str.length &lt;= 20",
+  "sampleInput": "abc",
+  "sampleOutput": "[, c, b, bc, a, ac, ab, abc]",
+  "questionVideo": "Sa5PmCFF_zI",
+  "solutionVideo": "Sa5PmCFF_zI",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nvector<string> gss(string s){\n    // write your code here\n    \n}\n\nint main(){\n    string s;\n    cin >> s;\n    vector<string> ans = gss(s);\n    int cnt = 0;\n\n    cout << '[';\n    for (string str : ans){\n        if (cnt != ans.size() - 1)\n            cout << str << \", \";\n        else\n            cout << str;\n        cnt++;\n    }\n    cout << ']';\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n    }\n\n    public static ArrayList<String> gss(String str) {\n        return null;\n    }\n\n}",
+    "python": "s = input()\n\n    def getSS(s):\n#Write your code here\n\n      ans = getSS(s)\n\n            print(\"[\" + ', '.join(ans) + \"]\")"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/recursion-with-arraylists/get-subsequence-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

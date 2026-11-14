@@ -1,0 +1,8 @@
+{
+  "name": "Pattern 14",
+  "slug": "patterns-pattern-14",
+  "course": "dsa-fundamentals",
+  "module": "patterns",
+  "html": "Solution Approach:   <p>We have to print a multiplication table of given number &quot;x&quot;. We run a loop until 10. Saving results of multiplication for print command convenience and write the print command according to the output format.</p>     import java.util.*; public class Main{ public static void main(String[] args) { Scanner scn = new Scanner(System.in); int x = scn.nextInt(); for(int i=1;i&lt;=10;i++) { int val = x*i; System.out.println(x + &quot; * &quot; + i + &quot; = &quot; + val ); } } }  <pre>                                            </pre> java; true&quot;;   <img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"img\">     <p>Share this article</p>  <i></i> <p>Facebook</p>  <i></i> <p>Twitter</p>  <i></i> <p>Instagram</p>  <i></i> <p>Whatsapp</p>  <i></i> <p>Linkedin</p>      <i></i> <img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\">",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/patterns/pattern_14/topic"
+}

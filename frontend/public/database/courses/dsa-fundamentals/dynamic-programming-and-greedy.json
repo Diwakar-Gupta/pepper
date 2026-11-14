@@ -1,152 +1,362 @@
-[
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-fibonacci-dp",
-    "name": "Fibonacci-dp"
+{
+  "name": "Dynamic Programming and Greedy",
+  "slug": "dynamic-programming-and-greedy",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 30,
+    "articles": 28,
+    "videos": 0
   },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-climb-stairs",
-    "name": "Climb Stairs"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-climb-stairs-with-variable-jumps",
-    "name": "Climb Stairs With Variable Jumps"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-climb-stairs-with-minimum-moves",
-    "name": "Climb Stairs With Minimum Moves"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-min-cost-in-maze-traversal",
-    "name": "Min Cost In Maze Traversal"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-goldmine",
-    "name": "Goldmine"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-target-sum-subsets-dp",
-    "name": "Target Sum Subsets - Dp"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-coin-change-combination",
-    "name": "Coin Change Combination"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-coin-change-permutations",
-    "name": "Coin Change Permutations"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-zero-one-knapsack",
-    "name": "Zero One Knapsack"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-unbounded-knapsack",
-    "name": "Unbounded Knapsack"
-  },
-  {
-    "type": "Code",
-    "slug": "fractional-knapsack-official-easy",
-    "name": "Fractional Knapsack - Official Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-count-binary-strings",
-    "name": "Count Binary Strings"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-arrange-buildings",
-    "name": "Arrange Buildings"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-count-encodings",
-    "name": "Count Encodings"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-count-a-b-c-subsequences",
-    "name": "Count A+b+c+ Subsequences"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-maximum-sum-non-adjacent-elements",
-    "name": "Maximum Sum Non Adjacent Elements"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-paint-house",
-    "name": "Paint House"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-paint-house-many-colors",
-    "name": "Paint House - Many Colors"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-paint-fence",
-    "name": "Paint Fence"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-tiling-with-2-1-tiles",
-    "name": "Tiling With 2 * 1 Tiles"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-tiling-with-m-1-tiles",
-    "name": "Tiling With M * 1 Tiles"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-friends-pairing",
-    "name": "Friends Pairing"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-partition-into-subsets",
-    "name": "Partition Into Subsets"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-one-transaction-allowed",
-    "name": "Buy And Sell Stocks - One Transaction Allowed"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-infinite-transactions-allowed",
-    "name": "Buy And Sell Stocks - Infinite Transactions Allowed"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-with-transaction-fee-infinite-transactions-allowed",
-    "name": "Buy And Sell Stocks With Transaction Fee - Infinite Transactions Allowed"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-with-cooldown-infinite-transaction-allowed",
-    "name": "Buy And Sell Stocks With Cooldown - Infinite Transaction Allowed"
-  },
-  {
-    "type": "Code",
-    "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-two-transactions-allowed",
-    "name": "Buy And Sell Stocks - Two Transactions Allowed"
-  },
-  {
-    "type": "Code",
-    "slug": "buy-and-sell-stocks-k-transactions-allowed-easy",
-    "name": "Buy And Sell Stocks - K Transactions Allowed Easy"
-  }
-]
+  "items": [
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-fibonacci-dp",
+      "name": "Fibonacci-dp"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-fibonacci-dp",
+      "name": "Fibonacci-dp",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-climb-stairs",
+      "name": "Climb Stairs"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-climb-stairs",
+      "name": "Climb Stairs",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-climb-stairs-with-variable-jumps",
+      "name": "Climb Stairs With Variable Jumps"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-climb-stairs-with-variable-jumps",
+      "name": "Climb Stairs With Variable Jumps",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-climb-stairs-with-minimum-moves",
+      "name": "Climb Stairs With Minimum Moves"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-climb-stairs-with-minimum-moves",
+      "name": "Climb Stairs With Minimum Moves",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-min-cost-in-maze-traversal",
+      "name": "Min cost In Maze Traversal"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-min-cost-in-maze-traversal",
+      "name": "Min Cost In Maze Traversal",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-goldmine",
+      "name": "Goldmine"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-goldmine",
+      "name": "Goldmine",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-target-sum-subsets-dp",
+      "name": "Target Sum Subsets - DP"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-target-sum-subsets-dp",
+      "name": "Target Sum Subsets - Dp",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-coin-change-combinations",
+      "name": "Coin Change Combinations"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-coin-change-combination",
+      "name": "Coin Change Combination",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-coin-change-permutations",
+      "name": "Coin Change Permutations"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-coin-change-permutations",
+      "name": "Coin Change Permutations",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-zero-one-knapsack",
+      "name": "Zero One Knapsack"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-zero-one-knapsack",
+      "name": "Zero One Knapsack",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-unbounded-knapsack",
+      "name": "Unbounded Knapsack"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-unbounded-knapsack",
+      "name": "Unbounded Knapsack",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-fractional-knapsack-official",
+      "name": "Fractional Knapsack - Official",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-count-binary-strings",
+      "name": "Count Binary Strings"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-count-binary-strings",
+      "name": "Count Binary Strings",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-arrange-buildings",
+      "name": "Arrange Buildings"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-arrange-buildings",
+      "name": "Arrange Buildings",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-count-encodings",
+      "name": "Count Encodings"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-count-encodings",
+      "name": "Count Encodings",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-count-a-b-c-subsequences",
+      "name": "Count A+B+C subsequences"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-count-a-b-c-subsequences",
+      "name": "Count A+b+c+ Subsequences",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-maximum-sum-non-adjacent-elements",
+      "name": "Maximum Sum Non Adjacent Elements"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-maximum-sum-non-adjacent-elements",
+      "name": "Maximum Sum Non Adjacent Elements",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-paint-house",
+      "name": "Paint House"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-paint-house",
+      "name": "Paint House",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-paint-house-many-colors",
+      "name": "Paint House-Many colors"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-paint-house-many-colors",
+      "name": "Paint House - Many Colors",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-paint-fence",
+      "name": "Paint Fence"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-paint-fence",
+      "name": "Paint Fence",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-tiling-with-2-1-tiles",
+      "name": "Tiling with 2*1 Tiles"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-tiling-with-2-1-tiles",
+      "name": "Tiling With 2 * 1 Tiles",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-tiling-with-m-1-tiles",
+      "name": "Tiling with M*1 Tiles"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-tiling-with-m-1-tiles",
+      "name": "Tiling With M * 1 Tiles",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-friends-pairing",
+      "name": "Friends Pairing",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-partition-into-subsets",
+      "name": "Partition Into Subsets"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-partition-into-subsets",
+      "name": "Partition Into Subsets",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-1-transaction-allowed",
+      "name": "Buy And Sell Stocks - 1 Transaction Allowed"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-one-transaction-allowed",
+      "name": "Buy And Sell Stocks - One Transaction Allowed",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-infinite-transaction-allowed",
+      "name": "Buy and sell Stocks - Infinite Transaction Allowed"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-infinite-transactions-allowed",
+      "name": "Buy And Sell Stocks - Infinite Transactions Allowed",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-buy-sell-stocks-with-transaction-fee-infinite-transactions-allowed",
+      "name": "Buy & Sell Stocks With Transaction Fee - Infinite Transactions Allowed"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-with-transaction-fee-infinite-transactions-allowed",
+      "name": "Buy And Sell Stocks With Transaction Fee - Infinite Transactions Allowed",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-buy-sell-stock-cooldown",
+      "name": "Buy & Sell Stock - Cooldown"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-with-cooldown-infinite-transaction-allowed",
+      "name": "Buy And Sell Stocks With Cooldown - Infinite Transaction Allowed",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-two-transactions-allowed",
+      "name": "Buy and Sell Stocks- Two Transactions Allowed"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-two-transactions-allowed",
+      "name": "Buy And Sell Stocks - Two Transactions Allowed",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-k-transactions-allowed",
+      "name": "Buy and Sell Stocks- K Transactions Allowed"
+    },
+    {
+      "type": "problem",
+      "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-k-transactions-allowed",
+      "name": "Buy And Sell Stocks - K Transactions Allowed",
+      "difficulty": "Easy",
+      "tests": 1
+    }
+  ]
+}

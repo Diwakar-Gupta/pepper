@@ -1,0 +1,25 @@
+{
+  "name": "Vitaly And Strings",
+  "slug": "interview-prep-text-processing-vitaly-and-strings",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://codeforces.com/contest/518/problem/A\" target=\"_blank\" rel=\"noopener\"><i> Link -&gt; Vitaly and Strings</i></a>",
+  "inputFormat": "check the link",
+  "outputFormat": "check the link",
+  "constraints": "check the link",
+  "sampleInput": "a\nc",
+  "sampleOutput": "b",
+  "questionVideo": "WgOHPYTMsLU",
+  "solutionVideo": "WgOHPYTMsLU",
+  "templates": {
+    "java": "import java.util.Scanner;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner sc = new Scanner(System.in);\n\n    //Code here\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/vitaly-and-strings/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+addLast 10
+getFirst
+addLast 20
+addLast 30
+getFirst
+getLast
+getAt 1
+addLast 40
+kthFromEnd 3
+getLast
+addLast 50
+removeFirst
+getFirst
+removeFirst
+removeFirst
+kthFromEnd 0
+removeFirst
+removeFirst
+getFirst
+quit

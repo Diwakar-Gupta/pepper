@@ -1,0 +1,25 @@
+{
+  "name": "Find String Roots",
+  "slug": "interview-prep-text-processing-find-string-roots",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Hard",
+  "statement": "In mathematics, the N-th root of a number M, is a number K such that K^N=M, i.e. KKK...K=M where k is multiplied N times.\nGiven a string S you have to find the maximum N such that the N-th root of S exists.\nFor ex :\nIf S= &quot;sumsumsumsum&quot;,  for N=2 the string T=&quot;sumsum&quot; is the N-th root of S, While for N=4 its N-th root is T= &quot;sum&quot;.  \nThe actual answer would be 4, because there is no N-th root of S=&quot;sumsumsumsum&quot; for N&gt;4.\n\nNote that for N=1 any string S is the N-th root of itself.",
+  "inputFormat": "One line containing a non empty string S.",
+  "outputFormat": "Output a single line with the greatest integer N such that there exists a string T that concatenated N times is equal to S.",
+  "constraints": "1&lt;= length of string &lt;= 10^5",
+  "sampleInput": "sumsumsumsum",
+  "sampleOutput": "4",
+  "questionVideo": "TlVeF4JfdgA",
+  "solutionVideo": "TlVeF4JfdgA",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main{\n\tpublic static void main(String[] args) throws NumberFormatException, IOException {\n\t\tBufferedReader br = new BufferedReader(new InputStreamReader(System.in)); \n\t\tString st = br.readLine();\n                solution(st);\n                br.readLine();\n\t\t\n\t}\n\n\n  public static void solution(String st) {\n    // write your code here\n\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/find-string-roots-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

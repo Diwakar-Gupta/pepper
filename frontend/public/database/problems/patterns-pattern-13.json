@@ -1,11 +1,27 @@
 {
   "name": "Pattern 13",
   "slug": "patterns-pattern-13",
-  "description": "1. You are given a number n.\n2. You've to create a pattern as shown in output format\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\n\n```\n\n### Constraints\n```\n1 <= n <= 10\n```\n\n### Sample Input\n```\n5\n```\n\n### Sample Output\n```\n1\t\n1\t1\t\n1\t2\t1\t\n1\t3\t3\t1\t\n1\t4\t6\t4\t1\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/zAnV4KZ6uDk?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/8Cyb3X5j1Rw?rel=0&loop=1&playlist=8Cyb3X5j1Rw",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "patterns",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n.\n2. You've to create a pattern as shown in output format",
+  "inputFormat": "A number n",
+  "outputFormat": "",
+  "constraints": "1 &lt;= n &lt;= 10",
+  "sampleInput": "5",
+  "sampleOutput": "1\t\n1\t1\t\n1\t2\t1\t\n1\t3\t3\t1\t\n1\t4\t6\t4\t1",
+  "questionVideo": "zAnV4KZ6uDk",
+  "solutionVideo": "8Cyb3X5j1Rw",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nint main(int argc, char **argv){\n    int n;\n    cin >> n;\n    \n    //write your code here\n    \n}\n",
+    "java": "import java.util.*;\npublic class Main{\n    public static void main(String[] args){\n        Scanner scn = new Scanner(System.in);\n\n        //write your code here\n\n    }\n}"
+  },
+  "editorial": "<p><i>&quot;The last thing one discovers in composing a work is what to put first.&quot;</i></p><p><b><u>Question:</u></b></p><p>1. You are given a number n.</p><p>2. You have to create a pattern as shown in the output format.</p><p><b><u>Input format:</u></b><b><u></u></b></p><p>A number n</p><p><b><u>Output format:</u></b></p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"></p><p><b><u>Constraints:</u></b></p><p>1 &lt;= n &lt;= 10</p><p><b><u>Solution Approach:</u></b></p><p>We need a triangle of numbers, so let us focus on the aspects of content of the pattern and shape of the pattern one by one. We know that we need the shape of a triangle like we created with stars, so let us first give our pattern a shape first, and then think about what the contents of that pattern should be.</p><pre>import java.util.*;public class Main{\n                                    public static void main(String[] args)\n                                    {\n                                        Scanner scn = new Scanner(System.in);\n                                        int n = scn.nextInt();\n                                        for(int i =1;i&lt;=n;i++)\n                                        {\n                                            for(int j = 1;j&lt;=i;j++)\n                                            {\n                                                System.out.print( &quot;*\t&quot;);\n                                                \n                                            }\n                                            System.out.println();\n                                        }\n                                    }\n                                }</pre><p>The above program will provide us with the required shape &quot;star-filled&quot;. Now that we have dealt with the shape issue, let us move on to the content analysis.</p><p>Up until now, we have been initializing outer loop iterator 'i' as 1 and running it until it was equal to input value n. Now, we make a slight change to it and understand why.</p><p>[1,5] <b>-&gt; </b>means 5 objects (1,2,3,4,5)</p><p>[0,5) <b>-&gt; </b>also means 5 objects (0,1,2,3,4) <b>-&gt;</b> so 'i' = 0 to i&lt; n will still display 'n' rows</p><p>In this program, we are going to start 'i' from 0 to less than n. We also start 'j' from 0 but run it till less than or equal to 'i' only because for each row, the number of columns is one more than row number. The output shows symmetry in the elements it prints. First and last entry on each row is '1'. We know that C_0^n = 1= C_n^n.</p><p>Comparing the last row to</p><p>C_0^5=1;C_1^n=5;C_2^n=10</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"></p><p>And after 10, the pattern is symmetric.</p><p>We also know that the mathematical relation C_k^n=C_(n-k)^n also holds true; which is the basis on which we can say that the pattern is symmetric, because then: C_3^5=10; C_4^5=5; C_1^5=1 </p><p>Now to get the required pattern printed in our code, using our outer and inner loop, we are going to use the formula C_(k+1)^n=(C_k^n.(n-k))/(k+1).</p><p>We modify it to suit our 'i' and 'j' variables as:C_(j+1)^i=(C_j^i.(i-j))/(j+1) .</p><p>Integrating this formula into our code; </p><pre>import java.util.*;\n                                public class Main{\n                                    public static void main(String[] args)\n                                    {\n                                        Scanner scn = new Scanner(System.in);\n                                        int n = scn.nextInt();\n                                        for(int i =0;i &lt; n ;i++)\n                                        {\n                                            int icj = 1;\n                                            for(int j = 0;j &lt; = i;j++)\n                                            {\n                                                System.out.print( icj + &quot;\t&quot;);\n                                                int icjp1 = (icj*(i-j))/(j+1);\n                                                icj = icjp1;\n                                                \n                                            }\n                                            System.out.println();\n                                        }\n                                    }\n                                }</pre><p>This code yields us the required output:</p><p>(Example n = 5)</p>",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/patterns/design-pattern-13-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

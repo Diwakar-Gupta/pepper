@@ -1,0 +1,25 @@
+{
+  "name": "Print All Paths With Maximum Gold",
+  "slug": "levelup-dynamic-programming-print-all-paths-with-maximum-gold",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number n, representing the number of rows.\n2. You are given a number m, representing the number of columns.\n3. You are given n*m numbers, representing elements of 2d array a, which represents a gold mine.\n4. You are standing in front of left wall and are supposed to dig to the right wall. You can start from any row in the left wall.\n5. You are allowed to move 1 cell right-up (d1), 1 cell right (d2) or 1 cell right-down(d3).\n6. Each cell has a value that is the amount of gold available in the cell.\n7. You are required to identify the maximum amount of gold that can be dug out from the mine.\n8. Also, you have to print all paths with maximum gold.",
+  "inputFormat": "A number n\nA number m\ne11\ne12..\ne21\ne22..\n.. n * m number of elements",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= n &lt;= 10^2\n1 &lt;= m &lt;= 10^2\n0 &lt;= e1, e2, .. n * m elements &lt;= 1000",
+  "sampleInput": "6\n6\n0 1 4 2 8 2\n4 3 6 5 0 4\n1 2 4 1 4 6\n2 0 7 3 2 2\n3 1 5 9 2 4\n2 7 0 8 5 1",
+  "sampleOutput": "33\n4 d3 d1 d2 d3 d1",
+  "questionVideo": "mme6Tqj8tyY",
+  "solutionVideo": "mme6Tqj8tyY",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n   private static class Pair {\n      String psf;\n      int i;\n      int j;\n\n      public Pair(String psf, int i, int j) {\n         this.psf = psf;\n         this.i = i;\n         this.j = j;\n      }\n   }\n   public static void main(String[] args) throws Exception {\n      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n      int n = Integer.parseInt(br.readLine());\n      int m = Integer.parseInt(br.readLine());\n      int[][] arr = new int[n][m];\n\n      for (int i = 0; i < n; i++) {\n         String str = br.readLine();\n         for (int j = 0; j < m; j++) {\n            arr[i][j] = Integer.parseInt(str.split(\" \")[j]);\n         }\n      }\n\n      //write your code here\n   }\n\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/goldmine-re-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

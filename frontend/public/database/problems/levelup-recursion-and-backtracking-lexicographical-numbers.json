@@ -1,0 +1,26 @@
+{
+  "name": "Lexicographical Numbers",
+  "slug": "levelup-recursion-and-backtracking-lexicographical-numbers",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number.\n2. You have to print all the numbers from 1 to n in lexicographical order.\n\nNote -&gt; Check out the question video and write the recursive code as it is intended without \n               changing signature. The judge can't force you but intends you to teach a concept.",
+  "inputFormat": "A number",
+  "outputFormat": "Check the sample output and question video",
+  "constraints": "1 &lt;= n &lt;= 50000",
+  "sampleInput": "14",
+  "sampleOutput": "1\n10\n11\n12\n13\n14\n2\n3\n4\n5\n6\n7\n8\n9",
+  "questionVideo": "gRo86WqFYSE",
+  "solutionVideo": "gRo86WqFYSE",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\n\t\t//write your code here\n\t}\n\t\n}"
+  },
+  "editorial": "<p>When there is no character then, first the family of 1 (1,10,100,1000,...11,110,1100,...,12,...19,190,1900,....1999....) will be printed less than N, next the family of 2(2,20,20,200,2000,....,21,210,2100,..22,.....29,290,2900,.....2999) will be printed less than N and so on till 9.</p><p>The above said thing will be clearer from recursion diagram.</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"></p><p>As we see, first we will call the recursion function for all the numbers from 1 to 9.</p><p>Then if the number is more than N, we will return, else we will print it and call the recursion function again to generate all the families for the current number.</p><p>Code Signature:</p><p><b>public static void dfs(int cur, int n)</b></p><p>cur - our current number</p><p>n - the input number till which we have to print the numbers in lexicographical order.</p><p><b>Code:</b> </p><pre>public class Main {\n                                \tpublic static void main(String[] args) {\n                                \t\tScanner scn = new Scanner(System.in);\n                                \t\tint n = scn.nextInt();\n                                \t\tfor(int i = 1; i &lt; 10;i++){\n                                \t\t\tdfs(i,n);\n                                \t\t}\n                                \t}\n                                \t\n                                \tpublic static void dfs(int cur, int n){\n                                \t\tif(cur &gt; n){\n                                \t\t\treturn;\n                                \t\t}\n                                        \telse{\n                                \t            System.out.println(cur);\n                                        \t    for(int i = 0;i &lt; 10;i++){\n                                                \tdfs(10 * cur + i, n);\n                                \t            }\n                                        \t}\n                                        }\n                                }</pre><p><b>Code Explained:</b></p><p>From the main function, we will first call the recursion function for all the numbers from 1 to 9.</p><p>Dry running the code for n = 20.</p><p>First cur will be 1, as it less than 20, it will be printed. With the help of the loop in the recursion function, we are generating the family of the current number(cur).</p><p>If cur = 1, then at next level, it will be - (1*10 + 0), (1 * 10 + 1), ..... (1 * 10 + 9).</p><p>That is 10 ,11 ,12, 13,.....19. In pre order the cur will be first 10. As it is less than 20, it will be printed. Then with the help of loop in recursion, we will call recursion function for 100,101,102,.....109. As they all are greater than 20, we will return. Similarly, next will be 11 and the family of 11. As only 11 is smaller in the family of 11, only 11 will be printed. This will happen till 19. After that 2 will be called and it will be printed. Then from the family of 2, only 20 is less than equal to 20, so it will be printed and in rest all cases, we will return. Then from the family of 3, only 3 is less than 20, so only 3 will be printed. Similarly, for 4,5, 6,..... 9 and we will have our final output.</p><p><b>Base Case:</b></p><p>When the cur will be more than n, it means we do not need to include it as it is more than n. Also, we would not consider it is family as it is family will also be greater than n.</p><p><b>Time Complexity O(n):</b></p><p>As we are calling out recursive function n * 10 times, the time complexity will be O(n).</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/lexicographical-numbers-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

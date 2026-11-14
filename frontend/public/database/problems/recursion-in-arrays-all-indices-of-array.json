@@ -1,11 +1,26 @@
 {
   "name": "All Indices Of Array",
   "slug": "recursion-in-arrays-all-indices-of-array",
-  "description": "1. You are given a number n, representing the count of elements.\n2. You are given n numbers.\n3. You are given a number x. \n4. You are required to find the all indices at which x occurs in array a.\n5. Return an array of appropriate size which contains all indices at which x occurs in array a.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA number n\nn1\nn2\n.. n number of elements\nA number x\n```\n\n### Output Format\n```\nReturn the array of indices from the allIndices function. Display is managed for you.\n```\n\n### Constraints\n```\n1 <= n <= 10^4\n0 <= n1, n2, .. n elements <= 10 ^ 3\n0 <= x <= 10 ^ 3\n```\n\n### Sample Input\n```\n6\n15\n11\n40\n4\n4\n9\n4\n```\n\n### Sample Output\n```\n3\n4\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/TYIZmI5FesU?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/bQkwHBaNioE?rel=0&loop=1&playlist=bQkwHBaNioE",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "recursion-in-arrays",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n, representing the count of elements.\n2. You are given n numbers.\n3. You are given a number x. \n4. You are required to find the all indices at which x occurs in array a.\n5. Return an array of appropriate size which contains all indices at which x occurs in array a.\n\nNote -&gt; The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.",
+  "inputFormat": "A number n\nn1\nn2\n.. n number of elements\nA number x",
+  "outputFormat": "Return the array of indices from the allIndices function. Display is managed for you.",
+  "constraints": "1 &lt;= n &lt;= 10^4\n0 &lt;= n1, n2, .. n elements &lt;= 10 ^ 3\n0 &lt;= x &lt;= 10 ^ 3",
+  "sampleInput": "6\n15\n11\n40\n4\n4\n9\n4",
+  "sampleOutput": "3\n4",
+  "questionVideo": "TYIZmI5FesU",
+  "solutionVideo": "bQkwHBaNioE",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nvector<int> allIndex(vector<int>& arr, int idx, int data, int count)\n{\n\n}\n\nint main() {\n  int n ;\n  cin >> n;\n  vector<int> arr;\n  for (int i = 0; i < n; i++) {\n    int d;\n    cin >> d;\n    arr.push_back(d);\n  }\n  int data;\n  cin >> data;\n  vector<int> ans = allIndex(arr, 0, data, 0);\n  if (ans.size() == 0) {\n    cout << endl;\n    return 0;\n  }\n  for (int ele : ans) cout << ele << endl;\n\n  return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n        int n = Integer.parseInt(br.readLine());\n        int[] arr = new int[n];\n\n        for (int i = 0; i < n; i++) {\n            arr[i] = Integer.parseInt(br.readLine());\n        }\n        int x = Integer.parseInt(br.readLine());\n        int[] iarr = allIndices(arr, x, 0, 0);\n\n        if(iarr.length == 0){\n            System.out.println();\n            return;\n        }\n\n        for(int i = 0; i < iarr.length; i++){\n            System.out.println(iarr[i]);\n        }\n    }\n\n    public static int[] allIndices(int[] arr, int x, int idx, int fsf) {\n        // write ur code here\n    }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/recursion-in-arrays/all-indices-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

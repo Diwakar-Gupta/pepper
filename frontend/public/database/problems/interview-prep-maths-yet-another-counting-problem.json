@@ -1,0 +1,25 @@
+{
+  "name": "Yet Another Counting Problem",
+  "slug": "interview-prep-maths-yet-another-counting-problem",
+  "course": "interview-prep",
+  "module": "maths",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://codeforces.com/problemset/problem/1342/C\" target=\"_blank\" rel=\"noopener\"><i> Link -&gt; Yet Another Counting Problem</i></a>",
+  "inputFormat": "check the link",
+  "outputFormat": "check the link",
+  "constraints": "check the link",
+  "sampleInput": "2\n4 6 5\n1 1\n1 3\n1 5\n1 7\n1 9\n7 10 2\n7 8\n100 200",
+  "sampleOutput": "0 0 0 2 4 \n0 91",
+  "questionVideo": "TucZBLd6YLE",
+  "solutionVideo": "TucZBLd6YLE",
+  "templates": {
+    "java": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        //Code\n\n    }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/maths/yet-another-counting-problem-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

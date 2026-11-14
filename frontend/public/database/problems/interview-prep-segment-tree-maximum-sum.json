@@ -1,0 +1,25 @@
+{
+  "name": "Maximum Sum",
+  "slug": "interview-prep-segment-tree-maximum-sum",
+  "course": "interview-prep",
+  "module": "segment-tree",
+  "difficulty": "Medium",
+  "statement": "You are given an array(of integers) of length n.\nYou are required to answer q queries.\n\nQueries can be of two types :-\nUpdate\n0 idx val : set arr[idx] to val.\nQuery\n1 l r: find i,j such that l &lt;= i &lt; j &lt;= r, such that arr[i]+arr[j] is maximized. return arr[i]+arr[j].",
+  "inputFormat": "A number n\nn1\nn2\n.. n number of elements\nA number q\nfollowing q lines contains queries of format either of two \n0 idx val\n1 l r",
+  "outputFormat": "for each query of type 1 print a single integer in seperate line",
+  "constraints": "1. 1 &lt;= n, q &lt;= 10^5\n2. 0 &lt;= l &lt; r &lt; n\n3. 0 &lt;= idx &lt; n\n4. 1 &lt;= arr[i], val &lt;= 10^4.",
+  "sampleInput": "8\n2\n6\n1\n5\n4\n10\n10\n9\n5\n1 0 4\n0 0 10\n1 0 4\n1 0 7\n1 3 4",
+  "sampleOutput": "11\n16\n20\n9",
+  "questionVideo": "cwG-Jn3sUOc",
+  "solutionVideo": "cwG-Jn3sUOc",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args) throws Exception {\n    BufferedReader read = new BufferedReader(new InputStreamReader(System.in));\n\n\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/segment-tree/maximum-sum-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

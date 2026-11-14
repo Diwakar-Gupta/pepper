@@ -1,0 +1,27 @@
+{
+  "name": "Target Sum Subsets",
+  "slug": "recursion-backtracking-target-sum-subsets",
+  "course": "dsa-fundamentals",
+  "module": "recursion-backtracking",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n, representing the count of elements.\n2. You are given n numbers.\n3. You are given a number &quot;tar&quot;.\n4. Complete the body of printTargetSumSubsets function - without changing signature - to calculate and print all subsets of given elements, the contents of which sum to &quot;tar&quot;. Use sample input and output to get more idea.\n\nNote -&gt; The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.",
+  "inputFormat": "Input Format\nA number n\nn1\nn2\n.. n number of elements\nA number tar",
+  "outputFormat": "Comma separated elements of the subset, the contents of which add to &quot;tar&quot;\n.. all such subsets, each in a single line (the elements of each subset should be comma separated)",
+  "constraints": "1 &lt;= n &lt;= 30\n0 &lt;= n1, n2, .. n elements &lt;= 20\n0 &lt;= tar &lt;= 50",
+  "sampleInput": "5\n10\n20\n30\n40\n50\n60",
+  "sampleOutput": "10, 20, 30, .\n10, 50, .\n20, 40, .",
+  "questionVideo": "zNxDJJW40_k",
+  "solutionVideo": "HGDmj5NrrjM",
+  "templates": {
+    "cpp": "#include<bits/stdc++.h>\nusing namespace std;\n\n// set is the subset\n// sos is sum of subset\n// tar is target\nvoid printTargetSumSubsets(vector<int> arr, int idx, string set, int sos, int tar) {\n  //write your code here\n\n}\n\n\nint main() {\n\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n    }\n\n    // set is the subset\n    // sos is sum of subset\n    // tar is target\n    public static void printTargetSumSubsets(int[] arr, int idx, String set, int sos, int tar) {\n        \n    }\n\n}",
+    "python": "# asf is the subset\n# sos is sum of subset\n# tar is target\ndef printTargetSumSubsets(arr, idx, asf, sos, tar):\n#write your code here\n\n\n\n\n\n\n\n\n  def main():\n  n = int(input());\narr = []\n      for i in range(n) :\n          arr.append(int(input()));\n\ntar = int(input());\n\nmain()"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/recursion-backtracking/target-sum-subsets-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

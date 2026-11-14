@@ -1,0 +1,25 @@
+{
+  "name": "Kmp Pattern Searching",
+  "slug": "interview-prep-text-processing-kmp-pattern-searching",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Hard",
+  "statement": "1. You are given two strings s1 and s2.\n2. s1 represents a text and s2 represents a pattern. \n3. You have to print the starting index for all occurrences of the pattern in the given text string.",
+  "inputFormat": "Two strings s1 and s2 in two different lines.",
+  "outputFormat": "Starting index for all occurrences of the pattern in the given text string.",
+  "constraints": "1 &lt;= length of the strings &lt;= 10^4",
+  "sampleInput": "abab\nab",
+  "sampleOutput": "0\n2",
+  "questionVideo": "__Cu92rei1s",
+  "solutionVideo": "__Cu92rei1s",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void solution(String txt, String pat) {\n    // write your code here\n    \n    System.out.println();\n  }\n  \n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    String s1 = scn.nextLine();\n    String s2 = scn.nextLine();\n\t\tsolution(s1, s2);\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/kmp-pattern-searching-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

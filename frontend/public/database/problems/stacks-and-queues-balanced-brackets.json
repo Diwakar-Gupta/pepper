@@ -1,11 +1,27 @@
 {
   "name": "Balanced Brackets",
   "slug": "stacks-and-queues-balanced-brackets",
-  "description": "1. You are given a string exp representing an expression.\n2. You are required to check if the expression is balanced i.e. closing brackets and opening brackets match up well.\n\ne.g.\n[(a + b) + {(c + d) * (e / f)}] -> true\n[(a + b) + {(c + d) * (e / f)]} -> false\n[(a + b) + {(c + d) * (e / f)} -> false\n([(a + b) + {(c + d) * (e / f)}] -> false\n\n### Input Format\n```\nA string str\n```\n\n### Output Format\n```\ntrue or false\n```\n\n### Constraints\n```\n0 <= str.length <= 100\n```\n\n### Sample Input\n```\n[(a + b) + {(c + d) * (e / f)}]\n```\n\n### Sample Output\n```\ntrue\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/p-RbQyQevTQ?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/uuE2pEjLiEI?rel=0&loop=1&playlist=uuE2pEjLiEI",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "stacks-and-queues",
+  "difficulty": "Easy",
+  "statement": "1. You are given a string exp representing an expression.\n2. You are required to check if the expression is balanced i.e. closing brackets and opening brackets match up well.\n\ne.g.\n[(a + b) + {(c + d) * (e / f)}] -&gt; true\n[(a + b) + {(c + d) * (e / f)]} -&gt; false\n[(a + b) + {(c + d) * (e / f)} -&gt; false\n([(a + b) + {(c + d) * (e / f)}] -&gt; false",
+  "inputFormat": "A string str",
+  "outputFormat": "true or false",
+  "constraints": "0 &lt;= str.length &lt;= 100",
+  "sampleInput": "[(a + b) + {(c + d) * (e / f)}]",
+  "sampleOutput": "true",
+  "questionVideo": "p-RbQyQevTQ",
+  "solutionVideo": "uuE2pEjLiEI",
+  "templates": {
+    "cpp": "#include <bits/stdc++.h>\nusing namespace std;\nint main(int argc, char** argv)\n{\n  //write your code\n  return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n    }\n\n}",
+    "python": "from sys import stdin\nexpression = stdin.readline()\n#write your code here"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/stacks-and-queues/balanced-brackets-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

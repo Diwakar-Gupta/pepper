@@ -1,0 +1,26 @@
+{
+  "name": "Segregate Node Of Linkedlist Over Last Index.",
+  "slug": "levelup-linked-list-segregate-node-of-linkedlist-over-last-index",
+  "course": "levelup",
+  "module": "linked-list",
+  "difficulty": "Easy",
+  "statement": "1. Given a singly linklist, Segregate Node of LinkedList over lastindex and return pivot node of linkedlist.\n2. pivot is always be last index of linkedlist.\n3. After segregation pivot Element should have to be present at correct position as in sorted linkedlist.",
+  "inputFormat": "1-&gt;5-&gt;2-&gt;9-&gt;5-&gt;14-&gt;11-&gt;1-&gt;10-&gt;10-&gt;1-&gt;3-&gt;null",
+  "outputFormat": "3-&gt;5-&gt;9-&gt;5-&gt;14-&gt;11-&gt;10-&gt;10-&gt;null",
+  "constraints": "-10^6 &lt;= size Of LinkedList &lt;= 10^6",
+  "sampleInput": "12\n1 5 2 9 5 14 11 1 10 10 1 3",
+  "sampleOutput": "3 5 9 5 14 11 10 10",
+  "questionVideo": "R9ak6JgWMAw",
+  "solutionVideo": "R9ak6JgWMAw",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nclass ListNode\n{\npublic:\n    int val = 0;\n    ListNode *next = nullptr;\n\n    ListNode(int val)\n    {\n        this->val = val;\n    }\n};\n\nListNode *segregateOnLastIndex(ListNode *head)\n{\n    return nullptr;\n}\n\nvoid printList(ListNode *node)\n{\n    ListNode *curr = node;\n    while (curr != nullptr)\n    {\n        cout << curr->val << \" \";\n        curr = curr->next;\n    }\n    cout << endl;\n}\n\nListNode *createList(int n)\n{\n    ListNode *dummy = new ListNode(-1);\n    ListNode *prev = dummy;\n    while (n-- > 0)\n    {\n        int val;\n        cin >> val;\n        prev->next = new ListNode(val);\n        prev = prev->next;\n    }\n    return dummy->next\n}\n\nint main()\n{\n    int n;\n    cin >> n;\n    ListNode *h1 = createList(n);\n    h1 = segregateOnLastIndex(h1);\n    printList(h1);\n\n    return 0;\n}",
+    "java": "import java.util.*;\n\nclass Main {\n    public static Scanner scn = new Scanner(System.in);\n\n    public static class ListNode {\n        int val = 0;\n        ListNode next = null;\n\n        ListNode(int val) {\n            this.val = val;\n        }\n    }\n\n    public static ListNode segregateOnLastIndex(ListNode head) {\n        return null;\n    }\n\n    public static void printList(ListNode node) {\n        while (node != null) {\n            System.out.print(node.val + \" \");\n            node = node.next;\n        }\n    }\n\n    public static ListNode createList(int n) {\n        ListNode dummy = new ListNode(-1);\n        ListNode prev = dummy;\n        while (n-- > 0) {\n            prev.next = new ListNode(scn.nextInt());\n            prev = prev.next;\n        }\n\n        return dummy.next;\n    }\n\n    public static void main(String[] args) {\n        int n = scn.nextInt();\n        ListNode h1 = createList(n);\n        h1 = segregateOnLastIndex(h1);\n        printList(h1);\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/segregate-node-of-linkedlist-over-last-index./ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Quick Sort",
+  "slug": "time-and-space-complexity-quick-sort",
+  "course": "dsa-fundamentals",
+  "module": "time-and-space-complexity",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array(arr) of integers.\n2. You have to sort the given array in increasing order using quick-sort.",
+  "inputFormat": "An Integer n \narr1\narr2..\nn integers",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 100000\n-10^9 &lt;= arr[i] &lt;= 10^9",
+  "sampleInput": "5\n7 \n-2 \n4 \n1 \n3",
+  "sampleOutput": "pivot -> 3\nSwapping -2 and 7\nSwapping 1 and 7\nSwapping 3 and 4\npivot index -> 2\npivot -> 1\nSwapping -2 and -2\nSwapping 1 and 1\npivot index -> 1\npivot -> -2\nSwapping -2 and -2\npivot index -> 0\npivot -> 4\nSwapping 4 and 7\npivot index -> 3\npivot -> 7\nSwapping 7 and 7\npivot index -> 4\n-2 1 3 4 7",
+  "questionVideo": "kdO5Q0nmPjU",
+  "solutionVideo": "kdO5Q0nmPjU",
+  "templates": {
+    "cpp": "#include<iostream>\n#include<vector>\n\nusing namespace std;\n\n\nvoid swap(vector<int>& arr, int i, int j) {\n  cout << \"Swapping \" << arr[i] << \" and \" << arr[j] << endl;\n  int temp = arr[i];\n  arr[i] = arr[j];\n  arr[j] = temp;\n}\n\nint partition(vector<int>& arr, int pivot, int lo, int hi) {\n  cout << \"pivot -> \" << pivot << endl;\n  int curr = lo;\n  int prev = lo - 1;\n  while (curr <= hi) {\n    if (arr[curr] <= pivot) {\n      prev++;\n      swap(arr, curr, prev);\n    }\n    curr++;\n  }\n  cout << \"pivot index -> \" << prev << endl;\n  return prev;\n}\n\nvoid quicksort(vector<int>& arr, int lo, int hi) {\n  // write your code here\n}\n\nvoid Display(vector<int>& arr) {\n  for (int ele : arr) {\n    cout << ele << \" \";\n  }\n}\n\nint main() {\n  int n;\n  cin >> n;\n  vector<int> arr(n, 0);\n  for (int i = 0; i < arr.size(); i++) {\n    cin >> arr[i];\n  }\n  quicksort(arr, 0, n - 1);\n  Display(arr);\n  return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void quickSort(int[] arr, int lo, int hi) {\n    //write your code here\n    \n  }\n\n  public static int partition(int[] arr, int pivot, int lo, int hi) {\n    System.out.println(\"pivot -> \" + pivot);\n    int i = lo, j = lo;\n    while (i <= hi) {\n      if (arr[i] <= pivot) {\n        swap(arr, i, j);\n        i++;\n        j++;\n      } else {\n        i++;\n      }\n    }\n    System.out.println(\"pivot index -> \" + (j - 1));\n    return (j - 1);\n  }\n\n  // used for swapping ith and jth elements of array\n  public static void swap(int[] arr, int i, int j) {\n    System.out.println(\"Swapping \" + arr[i] + \" and \" + arr[j]);\n    int temp = arr[i];\n    arr[i] = arr[j];\n    arr[j] = temp;\n  }\n\n  public static void print(int[] arr) {\n    for (int i = 0; i < arr.length; i++) {\n      System.out.print(arr[i] + \" \");\n    }\n    System.out.println();\n  }\n\n  public static void main(String[] args) throws Exception {\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    for (int i = 0; i < n; i++) {\n      arr[i] = scn.nextInt();\n    }\n    quickSort(arr, 0, arr.length - 1);\n    print(arr);\n  }\n\n}",
+    "python": "def swap(arr, i, j):\n  print(\"Swapping\", arr[i], \"and\", arr[j]);\ntemp = arr[i];\narr[i] = arr[j];\narr[j] = temp;\n\n\ndef partition(arr, pivot, lo, hi):\n  print(\"pivot ->\", pivot);\ncurr = lo;\nprev = lo - 1;\nwhile (curr <= hi):\n    if (arr[curr] <= pivot):\n      prev = prev + 1;\nswap(arr, curr, prev);\ncurr = curr + 1;\n\nprint(\"pivot index ->\", prev);\nreturn prev;\n\ndef quicksort(arr, lo, hi):\n# write your code here\n\n  def Display(arr):\n  for i in range(0, len(arr)) :\n    print(arr[i], end = \" \");\n\ndef main():\n  n = int(input());\narr = []\n      for i in range(0, n) :\n          ele = int(input());\narr.append(ele);\n\nquicksort(arr, 0, n - 1);\nDisplay(arr);\n\n\nif __name__ == \"__main__\":\nmain()"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/time-and-space-complexity/quick-sort-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

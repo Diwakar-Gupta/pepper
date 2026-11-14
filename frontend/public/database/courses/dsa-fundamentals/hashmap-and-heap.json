@@ -1,52 +1,176 @@
-[
-  {
-    "type": "Code",
-    "slug": "hashmap-and-heap-highest-frequency-character",
-    "name": "Highest Frequency Character"
+{
+  "name": "Hashmap And Heap",
+  "slug": "hashmap-and-heap",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 10,
+    "articles": 14,
+    "videos": 4
   },
-  {
-    "type": "Code",
-    "slug": "hashmap-and-heap-get-common-elements-1",
-    "name": "Get Common Elements - 1"
-  },
-  {
-    "type": "Code",
-    "slug": "hashmap-and-heap-get-common-elements-2",
-    "name": "Get Common Elements - 2"
-  },
-  {
-    "type": "Code",
-    "slug": "hashmap-and-heap-longest-consecutive-sequence-of-elements",
-    "name": "Longest Consecutive Sequence Of Elements"
-  },
-  {
-    "type": "Code",
-    "slug": "hashmap-and-heap-k-largest-elements",
-    "name": "K Largest Elements"
-  },
-  {
-    "type": "Code",
-    "slug": "hashmap-and-heap-sort-k-sorted-array",
-    "name": "Sort K-sorted Array"
-  },
-  {
-    "type": "Code",
-    "slug": "hashmap-and-heap-median-priority-queue",
-    "name": "Median Priority Queue"
-  },
-  {
-    "type": "Code",
-    "slug": "hashmap-and-heap-merge-k-sorted-lists",
-    "name": "Merge K Sorted Lists"
-  },
-  {
-    "type": "Code",
-    "slug": "hashmap-and-heap-write-priority-queue-using-heap",
-    "name": "Write Priority Queue Using Heap"
-  },
-  {
-    "type": "Code",
-    "slug": "hashmap-and-heap-write-hashmap",
-    "name": "Write Hashmap"
-  }
-]
+  "items": [
+    {
+      "type": "article",
+      "slug": "hashmap-and-heap-hashmap-introduction",
+      "name": "Hashmap Introduction"
+    },
+    {
+      "type": "video",
+      "slug": "hashmap-and-heap-hashmap-introduction",
+      "name": "Hashmap - Introduction",
+      "youtubeId": "ukTRZD-WJH4"
+    },
+    {
+      "type": "article",
+      "slug": "hashmap-and-heap-highest-frequency-character",
+      "name": "Highest Frequency Character"
+    },
+    {
+      "type": "problem",
+      "slug": "hashmap-and-heap-highest-frequency-character",
+      "name": "Highest Frequency Character",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "hashmap-and-heap-get-common-elements-1",
+      "name": "Get Common Elements-1"
+    },
+    {
+      "type": "problem",
+      "slug": "hashmap-and-heap-get-common-elements-1",
+      "name": "Get Common Elements - 1",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "hashmap-and-heap-get-common-elements-2",
+      "name": "Get Common Elements - 2",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "hashmap-and-heap-longest-consecutive-sequence-of-elements",
+      "name": "Longest Consecutive Sequence Of Elements",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "video",
+      "slug": "hashmap-and-heap-heaps-introduction-and-usage",
+      "name": "Heaps - Introduction And Usage",
+      "youtubeId": "eSwIfy2xJ1g"
+    },
+    {
+      "type": "problem",
+      "slug": "hashmap-and-heap-k-largest-elements",
+      "name": "K Largest Elements",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "hashmap-and-heap-sort-k-sorted-array",
+      "name": "Sort K-sorted Array",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "hashmap-and-heap-median-priority-queue",
+      "name": "Median Priority Queue",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "hashmap-and-heap-merge-k-sorted-lists",
+      "name": "Merge K Sorted Lists",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "hashmap-and-heap-write-priority-queue-using-heap",
+      "name": "Write Priority Queue Using Heap",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "hashmap-and-heap-write-hashmap",
+      "name": "Write Hashmap",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "video",
+      "slug": "hashmap-and-heap-efficient-heap-constructor",
+      "name": "Efficient Heap Constructor",
+      "youtubeId": "VFLNBh0bK2A"
+    },
+    {
+      "type": "video",
+      "slug": "hashmap-and-heap-heap-comparable-v-s-comparator",
+      "name": "Heap - Comparable V/s Comparator",
+      "youtubeId": "DE835GvxZMQ"
+    },
+    {
+      "type": "article",
+      "slug": "hashmap-and-heap-heap-introduction-and-usage",
+      "name": "Heap Introduction And Usage"
+    },
+    {
+      "type": "article",
+      "slug": "hashmap-and-heap-get-common-elements-2",
+      "name": "Get Common Elements-2"
+    },
+    {
+      "type": "article",
+      "slug": "hashmap-and-heap-longest-consecutive-sequence",
+      "name": "Longest Consecutive Sequence"
+    },
+    {
+      "type": "article",
+      "slug": "hashmap-and-heap-k-largest-elements",
+      "name": "K Largest Elements"
+    },
+    {
+      "type": "article",
+      "slug": "hashmap-and-heap-heap-comparable-v-s-comparator",
+      "name": "Heap - Comparable V/s Comparator"
+    },
+    {
+      "type": "article",
+      "slug": "hashmap-and-heap-sort-a-k-sorted-array",
+      "name": "Sort a K Sorted Array"
+    },
+    {
+      "type": "article",
+      "slug": "hashmap-and-heap-median-priority-queue",
+      "name": "Median Priority Queue"
+    },
+    {
+      "type": "article",
+      "slug": "hashmap-and-heap-merge-k-sorted-lists",
+      "name": "Merge K Sorted Lists"
+    },
+    {
+      "type": "article",
+      "slug": "hashmap-and-heap-priority-queue-using-heap",
+      "name": "Priority Queue Using Heap"
+    },
+    {
+      "type": "article",
+      "slug": "hashmap-and-heap-write-hashmap",
+      "name": "Write Hashmap"
+    },
+    {
+      "type": "article",
+      "slug": "hashmap-and-heap-efficient-heap-construction",
+      "name": "Efficient Heap Construction"
+    }
+  ]
+}

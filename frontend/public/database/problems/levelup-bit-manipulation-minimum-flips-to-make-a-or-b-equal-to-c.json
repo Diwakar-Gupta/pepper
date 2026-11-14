@@ -1,0 +1,25 @@
+{
+  "name": "Minimum Flips To Make A Or B Equal To C",
+  "slug": "levelup-bit-manipulation-minimum-flips-to-make-a-or-b-equal-to-c",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/",
+  "inputFormat": "Check Link",
+  "outputFormat": "Check Link",
+  "constraints": "Check Link",
+  "sampleInput": "Check Link",
+  "sampleOutput": "Check Link",
+  "questionVideo": "oLZL8dheuzc",
+  "solutionVideo": "oLZL8dheuzc",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    // Write Code here\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/minimum-flips-abc/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

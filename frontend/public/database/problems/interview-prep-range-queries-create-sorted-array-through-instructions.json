@@ -1,0 +1,25 @@
+{
+  "name": "Create Sorted Array Through Instructions",
+  "slug": "interview-prep-range-queries-create-sorted-array-through-instructions",
+  "course": "interview-prep",
+  "module": "range-queries",
+  "difficulty": "Hard",
+  "statement": "1.Given an integer array instructions.\n2.you are asked to create a sorted array from the elements in instructions. You start with another empty array nums. For each element from left to right in instructions, insert it into nums.\n3. The cost of each insertion is the minimum of the following:\n     a)The number of elements currently in nums that are strictly less than instructions[i].\n     b)The number of elements currently in nums that are strictly greater than instructions[i].\n\n4.For example, if inserting element 4 into nums = [2,3,4,5], the cost of insertion is min(2, 1) (elements 2 and 3 are less than 4, element 5 is greater than 4) and nums will become [2,3,4,4,5].\n5.Return the total cost to insert all elements from instructions into nums.",
+  "inputFormat": "The first line of the input contains n,the length of instruction array.The next line contains n integers.",
+  "outputFormat": "Return the total cost to insert all elements from instructions into nums.",
+  "constraints": "1 &lt;= instructions.length &lt;= 10^5\n1 &lt;= instructions[i] &lt;= 10^5",
+  "sampleInput": "6\n1 2 3 6 5 4",
+  "sampleOutput": "3",
+  "questionVideo": "0KuZRxsHUjM",
+  "solutionVideo": "0KuZRxsHUjM",
+  "templates": {
+    "java": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\n\npublic class Main {\n\n\tpublic static void main(String[] args) throws NumberFormatException, IOException {\n\t\t\n\t}\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/range-queries/create-sorted-array-through-instructions/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

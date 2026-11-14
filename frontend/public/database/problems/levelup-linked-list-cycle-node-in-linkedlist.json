@@ -1,0 +1,26 @@
+{
+  "name": "Cycle Node In Linkedlist",
+  "slug": "levelup-linked-list-cycle-node-in-linkedlist",
+  "course": "levelup",
+  "module": "linked-list",
+  "difficulty": "Easy",
+  "statement": "1. Given a linked list, return the node where the cycle begins. If there is no cycle, return null.\n2. There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer.\n\nNotice that you should not modify the linked list.",
+  "inputFormat": "input is handle for you",
+  "outputFormat": "output is handle for you",
+  "constraints": "0 &lt;= N &lt;= 10^6",
+  "sampleInput": "8\n1\n18\n1\n8\n-1\n138\n31\n84\n3",
+  "sampleOutput": "8",
+  "questionVideo": "1O3q70OAPlQ",
+  "solutionVideo": "1O3q70OAPlQ",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nclass ListNode\n{\npublic:\n    int val = 0;\n    ListNode *next = nullptr;\n\n    ListNode(int val)\n    {\n        this->val = val;\n    }\n};\n\nListNode *CycleNode(ListNode *head)\n{\n    return nullptr;\n}\n\nListNode *takeInput()\n{\n    int n;\n    cin >> n;\n    ListNode *dummy = new ListNode(-1);\n    ListNode *prev = dummy;\n    while (n-- > 0)\n    {\n        int val;\n        cin >> val;\n        prev->next = new ListNode(val);\n        prev = prev->next;\n    }\n    int idx;\n    cin >> idx;\n    if (idx >= 0)\n    {\n        ListNode *curr = dummy->next;\n        while (idx-- > 0)\n        {\n            curr = curr->next;\n        }\n        prev->next = curr;\n    }\n    return dummy->next;\n}\n\nint main()\n{\n    ListNode *head = takeInput();\n    ListNode *ans = CycleNode(head);\n    cout << (ans != nullptr ? ans->val : -1) << endl;\n    return 0;\n}",
+    "java": "import java.util.*;\n\nclass Main {\n    public static Scanner scn = new Scanner(System.in);\n\n    public static class ListNode {\n        int val = 0;\n        ListNode next = null;\n\n        ListNode(int val) {\n            this.val = val;\n        }\n    }\n\n    public static ListNode CycleNode(ListNode head) {\n        return null;\n    }\n\n    public static ListNode takeInput() {\n        int n = scn.nextInt();\n        ListNode dummy = new ListNode(-1);\n        ListNode prev = dummy;\n        while (n-- > 0) {\n            prev.next = new ListNode(scn.nextInt());\n            prev = prev.next;\n        }\n        int idx = scn.nextInt();\n        if (idx >= 0) {\n            ListNode curr = dummy.next;\n            while (idx-- > 0) {\n                curr = curr.next;\n            }\n            prev.next = curr;\n        }\n        return dummy.next;\n    }\n\n    public static void main(String[] args) {\n        ListNode head = takeInput();\n        ListNode ans = CycleNode(head);\n        System.out.println(ans!=null?ans.val:-1);\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/cycle-node-in-linkedlist/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

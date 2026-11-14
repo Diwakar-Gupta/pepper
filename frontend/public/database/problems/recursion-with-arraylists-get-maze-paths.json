@@ -1,11 +1,27 @@
 {
   "name": "Get Maze Paths",
   "slug": "recursion-with-arraylists-get-maze-paths",
-  "description": "1. You are given a number n and a number m representing number of rows and columns in a maze.\n2. You are standing in the top-left corner and have to reach the bottom-right corner. Only two moves are allowed 'h' (1-step horizontal) and 'v' (1-step vertical).\n3. Complete the body of getMazePath function - without changing signature - to get the list of all paths that can be used to move from top-left to bottom-right.\nUse sample input and output to take idea about output.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA number n\nA number m\n```\n\n### Output Format\n```\nContents of the arraylist containing paths as shown in sample output\n```\n\n### Constraints\n```\n0 <= n <= 10\n0 <= m <= 10\n```\n\n### Sample Input\n```\n3\n3\n```\n\n### Sample Output\n```\n[hhvv, hvhv, hvvh, vhhv, vhvh, vvhh]\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/ox3TswFFKDI?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/7i41gZLXe5k?rel=0&loop=1&playlist=7i41gZLXe5k",
-  "codes": {
-    "java": "im\npo\nrt \nja\nva\n.i\no.\n*;\nim\npo\nrt \nja\nva\n.u\nti\nl.\n*;\npu\nbl\nic \ncl\nas\ns \nMa\nin \n{\n  \n  \npu\nbl\nic \nst\nat\nic \nvo\nid \nma\nin\n(S\ntr\nin\ng[\n] \nar\ngs\n) \nth\nro\nws \nEx\nce\npt\nio\nn \n{"
-  }
+  "course": "dsa-fundamentals",
+  "module": "recursion-with-arraylists",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n and a number m representing number of rows and columns in a maze.\n2. You are standing in the top-left corner and have to reach the bottom-right corner. Only two moves are allowed 'h' (1-step horizontal) and 'v' (1-step vertical).\n3. Complete the body of getMazePath function - without changing signature - to get the list of all paths that can be used to move from top-left to bottom-right.\nUse sample input and output to take idea about output.\n\nNote -&gt; The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.",
+  "inputFormat": "A number n\nA number m",
+  "outputFormat": "Contents of the arraylist containing paths as shown in sample output",
+  "constraints": "0 &lt;= n &lt;= 10\n0 &lt;= m &lt;= 10",
+  "sampleInput": "3\n3",
+  "sampleOutput": "[hhvv, hvhv, hvvh, vhhv, vhvh, vvhh]",
+  "questionVideo": "ox3TswFFKDI",
+  "solutionVideo": "7i41gZLXe5k",
+  "templates": {
+    "cpp": "#include<iostream>\n#include<vector>\n\nusing namespace std;\n\n// sr - source row\n// sc - source column\n// dr - destination row\n// dc - destination column\nvector <string> getMazePaths(int sr, int sc, int dr, int dc) {\n\n}\n\nvoid display(vector<string>& arr){\n    cout << \"[\";\n    for(int i = 0;i < arr.size();i++){\n        cout << arr[i];\n        if(i < arr.size() -1) cout << \", \";\n    }\n    \n    cout << \"]\"<<endl;\n}\n\n\nint main() {\n    int n,m; cin >> n >> m;\n    vector<string> ans = getMazePaths(0,0,n-1,m-1);\n    display(ans);\n\n    return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n    }\n\n    // sr - source row\n    // sc - source column\n    // dr - destination row\n    // dc - destination column\n    public static ArrayList<String> getMazePaths(int sr, int sc, int dr, int dc) {\n        return null;\n    }\n\n}",
+    "python": "n = int(input())\n\n    m = int(input())\n\n        def get_maze_path(sr, sc, dr, dc):\n#Write your code here\n\n          ans = get_maze_path(0, 0, n - 1, m - 1)\n\n                print(\"[\" + ', '.join(ans) + \"]\")"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/recursion-with-arraylists/get-maze-paths-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

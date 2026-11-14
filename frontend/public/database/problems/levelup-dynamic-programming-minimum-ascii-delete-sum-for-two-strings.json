@@ -1,0 +1,25 @@
+{
+  "name": "Minimum Ascii Delete Sum For Two Strings",
+  "slug": "levelup-dynamic-programming-minimum-ascii-delete-sum-for-two-strings",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given two strings S1 and S2.\n2. You have to make these two strings equal by deleting characters. You can delete characters from any of the two strings.\n3. The cost of deleting a character from any string is the ASCII value of that character.\n4. You have to find the minimum ASCII sum of deleted characters.",
+  "inputFormat": "Two Strings S1 and S2",
+  "outputFormat": "A number representing the minimum ASCII sum of deleted characters.",
+  "constraints": "1 &lt;= length of strings S1 and S2 &lt;= 1000",
+  "sampleInput": "sea\neat",
+  "sampleOutput": "231",
+  "questionVideo": "GPePWKCEy24",
+  "solutionVideo": "GPePWKCEy24",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int solution(String s1, String s2) {\n\t\t//write your code here\n\n\t\treturn 0;\n\t}\n\t\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tString s1 = scn.next();\n\t\tString s2 = scn.next();\n\t\tSystem.out.println(solution(s1, s2));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/minimum-ascii-delete-sum-for-two-strings-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

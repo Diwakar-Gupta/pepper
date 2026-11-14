@@ -1,0 +1,26 @@
+{
+  "name": "All Repeating Except One",
+  "slug": "levelup-bit-manipulation-all-repeating-except-one",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array of numbers.\n2. All numbers occur twice in the array except one.\n3. You have to find that number by traversing only once in the array and without using any extra \n     space.",
+  "inputFormat": "A number n\na1\na2..\nn numbers",
+  "outputFormat": "Non-repeating number",
+  "constraints": "1 &lt;= n &lt;= 10^9\n1 &lt;= a1,a2.. &lt;= 10^9",
+  "sampleInput": "5\n23 27 23 17 17",
+  "sampleOutput": "27",
+  "questionVideo": "Ch1Mq58f3yQ",
+  "solutionVideo": "Ch1Mq58f3yQ",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args){\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    for(int i = 0 ; i < n; i++){\n      arr[i] = scn.nextInt();\n    }\n    //write your code here\n    \n  }\n\n}"
+  },
+  "editorial": "<p>The problem here deals with finding the non-repeating number in the input array wherein every other number repeats itself exactly twice. Here we will use the property of XOR to get our result.</p><p>The truth table of XOR clearly depicts that for same operands it returns 0 and for different operands it returns 1. So as 1 ^ 1 = 0 and 0 ^ 0 = 0 then 5 ^ 5 = 0101 ^ 0101 = 0000. One more thing to keep in mind is that XOR operator is cumulative in nature i.e., say 5 ^ 3 ^ 5 is same as 5 ^ 5 ^ 3.</p><p>Now coming back to our problem as we know that every number repeats twice except our desired number, this implies that the XOR of the number with itself will lead to zero, so if we take the XOR of the entire array then all the duplicates would get cancelled out and the one that will be remaining will be our desired result.</p><p><b>Time Complexity: O(n)</b></p><p>The time complexity for the function is linear as we are traversing on every element of the array.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/all-repeating-except-one-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

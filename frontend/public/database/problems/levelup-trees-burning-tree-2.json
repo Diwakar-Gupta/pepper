@@ -1,0 +1,25 @@
+{
+  "name": "Burning Tree 2",
+  "slug": "levelup-trees-burning-tree-2",
+  "course": "levelup",
+  "module": "trees",
+  "difficulty": "Medium",
+  "statement": "1. Given a binary tree and target. \n2. Find the minimum time required to burn the complete binary tree if the target is set on fire. \n3. It is known that in 1 second all nodes connected to a given node get burned. That is, its left child, right child and parent.",
+  "inputFormat": "Input is managed for you.",
+  "outputFormat": "Output is managed for you.",
+  "constraints": "1. The number of nodes in the tree is in the range [1, 10000].\n2. -1000 &lt;= Node.val &lt;= 1000\n3. All the values Node.val are unique.\n4. target is the value of one of the nodes in the tree.",
+  "sampleInput": "15\n4\n2\n1\n-1\n-1\n3\n-1\n-1\n6\n5\n-1\n-1\n7\n-1\n-1\n2",
+  "sampleOutput": "2 \n1 3 4 \n6 \n5 7",
+  "questionVideo": "Uxb4REGHJgQ",
+  "solutionVideo": "Uxb4REGHJgQ",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static Scanner scn = new Scanner(System.in);\n\n  public static class TreeNode {\n    int val = 0;\n    TreeNode left = null;\n    TreeNode right = null;\n\n    TreeNode(int val) {\n      this.val = val;\n    }\n  }\n\n  public static ArrayList<ArrayList<Integer>> burningTree(TreeNode root, int data) {\n\n  }\n\n  // input_section=================================================\n\n  public static TreeNode createTree(int[] arr, int[] IDX) {\n    if (IDX[0] > arr.length || arr[IDX[0]] == -1) {\n      IDX[0]++;\n      return null;\n    }\n    TreeNode Treenode = new TreeNode(arr[IDX[0]++]);\n    Treenode.left = createTree(arr, IDX);\n    Treenode.right = createTree(arr, IDX);\n\n    return Treenode;\n  }\n\n  public static void solve() {\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    for (int i = 0; i < n; i++)\n      arr[i] = scn.nextInt();\n\n    int[] IDX = new int[1];\n    TreeNode root = createTree(arr, IDX);\n    int fireNode = scn.nextInt();\n\n    ArrayList<ArrayList<Integer>> ans = burningTree(root, fireNode);\n    if (ans.size() == 0)\n      System.out.println();\n    for (ArrayList<Integer> ar : ans) {\n      for (Integer ele : ar)\n        System.out.print(ele + \" \");\n      System.out.println();\n    }\n  }\n\n  public static void main(String[] args) {\n    solve();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/burning-tree-2/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

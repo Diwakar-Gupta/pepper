@@ -1,0 +1,25 @@
+{
+  "name": "No Max No Min",
+  "slug": "interview-prep-number-theory-no-max-no-min",
+  "course": "interview-prep",
+  "module": "number-theory",
+  "difficulty": "Hard",
+  "statement": "You have an array with n elements. you have to create all subsequences of this array with length K. For each subsequence, you have to write down the product of k-2 integers, all elements of this sequence except the minimum and maximum element.\nyour work will be considered done if you will be able to write down all these numbers and tell PepBoss their product mod 10^9+7.",
+  "inputFormat": "The first line contains integer N (length of array) and K.\nThe second line contains N space separated integers.",
+  "outputFormat": "Print a single line containing one integer - the product of all numbers written down by you modulo 10^9+7.",
+  "constraints": "1&lt;= N &lt;= 5000\n3 &lt;= K &lt;= N\n1 &lt;= arr[i] &lt;= 10000",
+  "sampleInput": "4 3 \n1 2 3 4",
+  "sampleOutput": "36",
+  "questionVideo": "-kHjBEhm3QI",
+  "solutionVideo": "-kHjBEhm3QI",
+  "templates": {
+    "java": "import java.util.Arrays;\nimport java.util.Scanner;\n\npublic class Main {\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n\n    int n = scn.nextInt();\n    int k = scn.nextInt();\n\n    long[] arr = new long[n];\n    for (int z = 0; z < n; z++) {\n      arr[z] = scn.nextInt();\n    }\n  }\n\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/number-theory/-no-max-no-min-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

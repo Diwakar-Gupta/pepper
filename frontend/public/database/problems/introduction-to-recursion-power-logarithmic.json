@@ -1,11 +1,27 @@
 {
   "name": "Power-logarithmic",
   "slug": "introduction-to-recursion-power-logarithmic",
-  "description": "1. You are given a number x.\n2. You are given another number n.\n3. You are required to calculate x raised to the power n. Don't change the signature of power function.\n\nNote1 -> The previous version expects the call stack to be of n height. This function expects call function to be only log(n) high.\n\nNote2 -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA number x\nA number n\n```\n\n### Output Format\n```\nx raised to the power n\n```\n\n### Constraints\n```\n1 <= x <= 10\n0 <= n <= 9\n```\n\n### Sample Input\n```\n2\n5\n```\n\n### Sample Output\n```\n32\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/O84uumjBOMY?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/O84uumjBOMY?rel=0&loop=1&playlist=O84uumjBOMY",
-  "codes": {
-    "java": "im\npo\nrt \nja\nva\n.i\no.\n*;\nim\npo\nrt \nja\nva\n.u\nti\nl.\n*;\npu\nbl\nic \ncl\nas\ns \nMa\nin \n{\n  \n  \npu\nbl\nic \nst\nat\nic \nvo\nid \nma\nin\n(S\ntr\nin\ng[\n] \nar\ngs\n) \nth\nro\nws \nEx\nce\npt\nio\nn \n{"
-  }
+  "course": "dsa-fundamentals",
+  "module": "introduction-to-recursion",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number x.\n2. You are given another number n.\n3. You are required to calculate x raised to the power n. Don't change the signature of power function.\n\nNote1 -&gt; The previous version expects the call stack to be of n height. This function expects call function to be only log(n) high.\n\nNote2 -&gt; The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.",
+  "inputFormat": "A number x\nA number n",
+  "outputFormat": "x raised to the power n",
+  "constraints": "1 &lt;= x &lt;= 10\n0 &lt;= n &lt;= 9",
+  "sampleInput": "2\n5",
+  "sampleOutput": "32",
+  "questionVideo": "O84uumjBOMY",
+  "solutionVideo": "O84uumjBOMY",
+  "templates": {
+    "cpp": "#include<iostream>\nusing namespace std;\n\nint powerLogarithmic(int x,int n){\n    // write your code here\n    \n}\n\nint main(){\n    int x,n; cin>>x>>n;\n    cout<<powerLogarithmic(x,n);\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // write your code here\n    }\n\n    public static int power(int x, int n){\n        return 0;\n    }\n\n}",
+    "python": "import sys\nsys.setrecursionlimit(1500)\n\ndef powerLog(x, n):\n# write your code here\n\n  num = int(input())\n        power = int(input())\n                print(powerLog(num, power))"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/introduction-to-recursion/power-logarithmic-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

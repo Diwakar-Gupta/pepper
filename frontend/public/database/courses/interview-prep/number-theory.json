@@ -1,0 +1,124 @@
+{
+  "name": "Number Theory",
+  "slug": "number-theory",
+  "course": "interview-prep",
+  "counts": {
+    "problems": 16,
+    "articles": 0,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "interview-prep-number-theory-extended-euclidean-algorithm",
+      "name": "Extended Euclidean Algorithm",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-number-theory-linear-diophantine-equation",
+      "name": "Linear Diophantine Equation",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-number-theory-eulers-totient-function",
+      "name": "Eulers Totient Function",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-number-theory-wilsons-theorem",
+      "name": "Wilsons Theorem",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-number-theory-modular-fast-exponentiation",
+      "name": "Modular Fast Exponentiation",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-number-theory-modular-c-n-r",
+      "name": "Modular C(n,r)",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-number-theory-no-max-no-min",
+      "name": "No Max No Min",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-number-theory-prime-factors-using-sieve",
+      "name": "Prime Factors Using Sieve",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-number-theory-all-factors-using-sieve",
+      "name": "All Factors Using Sieve",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-number-theory-count-of-common-divisors",
+      "name": "Count Of Common Divisors",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-number-theory-sum-of-factors",
+      "name": "Sum Of Factors",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-number-theory-i-hate-1111",
+      "name": "I Hate 1111",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-number-theory-gcd-length",
+      "name": "Gcd Length",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-number-theory-relatively-prime-pairs",
+      "name": "Relatively Prime Pairs",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-number-theory-chinese-remainder-theorem",
+      "name": "Chinese Remainder Theorem",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-number-theory-monkey-tradition",
+      "name": "Monkey Tradition",
+      "difficulty": "Easy",
+      "tests": 1
+    }
+  ]
+}

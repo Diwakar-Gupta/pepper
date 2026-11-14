@@ -1,11 +1,27 @@
 {
   "name": "Print Fibonacci Numbers Till N",
   "slug": "getting-started-print-fibonacci-numbers-till-n",
-  "description": "1. You've to print first n fibonacci numbers.\n2. Take as input \"n\", the count of fibonacci numbers to print.\n3. Print first n fibonacci numbers.\n\n### Input Format\n```\nn\n```\n\n### Output Format\n```\n0\n1\n1\n2\n3\n5\n8\n.. first n fibonaccis\n```\n\n### Constraints\n```\n1 <= n < 40\n```\n\n### Sample Input\n```\n10\n```\n\n### Sample Output\n```\n0\n1\n1\n2\n3\n5\n8\n13\n21\n34\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/JbLEpRy_vTk?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/P07sxSfcF40?rel=0&loop=1&playlist=P07sxSfcF40",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "getting-started",
+  "difficulty": "Easy",
+  "statement": "1. You've to print first n fibonacci numbers.\n2. Take as input &quot;n&quot;, the count of fibonacci numbers to print.\n3. Print first n fibonacci numbers.",
+  "inputFormat": "n",
+  "outputFormat": "0\n1\n1\n2\n3\n5\n8\n.. first n fibonaccis",
+  "constraints": "1 &lt;= n &lt; 40",
+  "sampleInput": "10",
+  "sampleOutput": "0\n1\n1\n2\n3\n5\n8\n13\n21\n34",
+  "questionVideo": "JbLEpRy_vTk",
+  "solutionVideo": "P07sxSfcF40",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nint main(int argc, char **argv)\n{\n    int n;\n    cin >> n;\n    \n    //write your code here\n    \n}",
+    "java": "import java.util.*;\n  \n  public class Main{\n  \n  public static void main(String[] args) {\n      // write your code here\n   }\n  }"
+  },
+  "editorial": "<p><i>&quot;Our life is like Fibonacci numbers. Everything that happened in the past, is added to the Present, to make the future.&quot;</i></p><p><b><u>Question:</u></b></p><ol><li>You've to print first n fibonacci numbers.</li><li>Take as input &quot;n&quot;, the count of fibonacci numbers to print.</li><li>Print first n fibonacci numbers.</li></ol><p><b><u>Input format:</u></b></p><p>n</p><p><b><u>Output format:</u></b></p><p>0</p><p>1</p><p>1</p><p>2</p><p>3</p><p>5</p><p>8</p><p>.. first n fibonaccis</p><p><b><u>Constraints:</u></b></p><p>1 &lt;= n &lt; 40</p><p><b><u>Solution Approach:</u></b></p><p>In mathematics, the <b>Fibonacci numbers</b>, commonly denoted Fn, form a sequence, called the <b>Fibonacci sequence</b>, such that each number is the sum of the two preceding ones, starting from 0 and 1.</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/b2a50c4f521458da.png\" alt=\"\"> And <img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"> For n &gt; 1</p><p>Therefore the first few terms of the sequence go like this:</p><p>0 , 1 , 1 , 2 , 3 , 5 , 8 , 13 , 21 , 34 , 55 , 89 , 144 ,...</p><p>Fibonacci numbers are named after Italian mathematician Leonardo of Pisa, later known as Fibonacci.</p><p>The base condition for the Fibonacci series is that it starts with 0 and 1, and then keeps on adding the preceding two terms to form the next term.</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/fd6a202ce99148cf.png\" alt=\"\"><b><u>The simple algorithm for this would be as follows:</u></b></p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/ba324601beab6213.png\" alt=\"\"></p><p>We first print a, the first fibonacci number(starting with 0) and then constantly update the variables a,b and c according to the fibonacci series rules.</p><p>In this way, everytime a is printed, it is the succeeding fibonacci number in the series and we can print upto the n fibonacci numbers.</p><p><b><u>The programming implementation for the same would be as:</u></b></p><pre>import java.util.*;\n                                  \n                                  public class Main{\n                                  \n                                  public static void main(String[] args) {\n                                      Scanner scn = new Scanner(System.in);\n                                      int n = scn.nextInt();\n                                      \n                                      int a = 0;\n                                      int b = 1;\n                                      for(int i = 0; i &lt; n; i++){\n                                          System.out.println(a);\n                                           int c = a + b;\n                                           a = b;\n                                           b = c;\n                                      }\n                                   }\n                                  }</pre><p><b><u>Sample Test Case:</u></b></p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"></p><p><b><u>Output:</u></b></p>",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/getting-started/fibonacci-till-n-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

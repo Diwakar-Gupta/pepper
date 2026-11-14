@@ -1,0 +1,26 @@
+{
+  "name": "Josephus Problem",
+  "slug": "levelup-recursion-and-backtracking-josephus-problem",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Easy",
+  "statement": "1. You are given two numbers N and K.\n2. N represents the total number of soldiers standing in a circle having position marked from 0 to N-1.\n3. A cruel king wants to execute them but in a different way.\n4. He starts executing soldiers from 0th position and proceeds around the circle in clockwise direction.\n5. In each step, k-1 soldiers are skipped and the k-th soldier is executed.\n6. The elimination proceeds around the circle (which is becoming smaller and smaller as the executed soldiers are removed), until only the last soldier remains, who is given freedom.\n7. You have to find the position of that lucky soldier.\n\nNote -&gt; Check out the question video and write the recursive code as it is intended without  changing signature. The judge can't force you but intends you to teach a concept.",
+  "inputFormat": "2 numbers N and K",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "1 &lt;= N,K &lt;= 200",
+  "sampleInput": "4\n2",
+  "sampleOutput": "0",
+  "questionVideo": "dzYq5VEMZIg",
+  "solutionVideo": "dzYq5VEMZIg",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static int solution(int n, int k){\n    //write your code here\n    return 0;\n  }\n  public static void main(String[] args){\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int k = scn.nextInt();\n    System.out.println(solution(n,k));\n  }\n  \n\n}"
+  },
+  "editorial": "<p>After killing the first soldier, we will append the first k - 1 soldiers to the end. Because of the circular effect, there is nothing wrong with this.</p><p>Example -</p><p>N = 5 , K = 3</p><p>0 1 2 3 4</p><p>After executing 3, our soldiers will be arranged like this.</p><p>3 4 0 1 ----------------------------(y)</p><p>Initially the problem was for 5 soldiers, now it is for 4 soldiers. Let us transform the remaining soldiers such that 3 will now be 0, 4 will be 1 , 0 will be 2 and 1 will be 3. We will later find the relation between (y) and (x).</p><p>0 1 2 3 ---------------------------- (x)</p><p>Now after executing the Kth soldier ,</p><p>0 1 2 3</p><p>3 0 1 ---------------(y)</p><p> /</p><p>Again we will transform the remaining soldiers, |</p><p> /</p><p> 0 1 2 ---------------(x) </p><p>Now executing the kth soldier again and transforming till only one soldier is left, </p><p>0 1 2 0 1</p><p> /</p><p> |</p><p> /</p><p> 0 1</p><p> /</p><p> |</p><p> /</p><p> 0</p><p>The relation between (y) and (x) is -</p><p><b>y = (x + k) % n ---------------------- (1)</b></p><p>Where n is the remaining soldiers at the y level. We see that n reduces at every level but k remains constant.</p><p>After executing the kth soldier at nth level, we keep faith that recursion will return us the answer for n-1 soldiers. To meet our expectation, we will convert the ans returned to us from the recursion by using the equation (1).</p><p>When only one soldier is left, 0 will be the answer, so we will return 0(BASE CASE).</p><p><b>Recursion Tree -</b></p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/26dc998f0c253d8c.png\" alt=\"\"></p><p><b>Code -</b></p><pre>public static int solution(int n, int k){\n                                    if(n == 1){ // base case\n                                      return 0;\n                                    }else{\n                                      int x =  (solution(n - 1, k); // faith\n                                      int y = (x + k) % n; // meeting our expectation\t\n                                    }\n                                }</pre><p><b>Code Explained -</b></p><p>When n is not equal to 1, then we will keep faith that recursion will return us the answer for n-1 soldiers.</p><p>We will find answer for n-1 soldiers (x)</p><p>Then to meet our expectation we will convert (x) to (y) with the help of equation (1).</p><p><b>Base Case -</b></p><p>When n is equal to 1, then we have to return 0 as only one soldier survives and that is the answer.</p><p><b>Time Complexity - O(n)</b></p><p>We call recursive function n times. Therefore, the time complexity will be equal to O(n).</p><p><b>Space Complexity - O(n)</b></p><p>As we call recursive function n times, therefore the recursion stack will be filled n times . Therefore, the space complexity will be O(n).</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/josephus-problem-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

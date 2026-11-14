@@ -1,0 +1,27 @@
+{
+  "name": "Is Graph Connected",
+  "slug": "graphs-is-graph-connected",
+  "course": "dsa-fundamentals",
+  "module": "graphs",
+  "difficulty": "Easy",
+  "statement": "1. You are given a graph.\n2. You are required to find and print if the graph is connected (there is a path from \n     every vertex to every other).",
+  "inputFormat": "Input has been managed for you",
+  "outputFormat": "true if the graph is connected, false otherwise",
+  "constraints": "None",
+  "sampleInput": "7\n5\n0 1 10\n2 3 10\n4 5 10\n5 6 10\n4 6 10",
+  "sampleOutput": "false",
+  "questionVideo": "dRqO3s14_2s",
+  "solutionVideo": "dRqO3s14_2s",
+  "templates": {
+    "cpp": "#include<bits/stdc++.h>\nusing namespace std;\nclass Edge {\npublic:\n  int src;\n  int nbr;\n  int wt;\n\n  Edge(int src, int nbr, int wt) {\n    this->src = src;\n    this->nbr = nbr;\n    this->wt = wt;\n  }\n};\n\nint main() {\n  int vtces;\n  cin >> vtces;\n  vector<Edge>graph[vtces];\n\n  int edges;\n  cin >> edges;\n  for (int i = 0; i < edges; i++) {\n    int v1 ;\n    int v2 ;\n    int wt ;\n    cin >> v1 >> v2 >> wt;\n    graph[v1].push_back( Edge(v1, v2, wt));\n    graph[v2].push_back( Edge(v2, v1, wt));\n  }\n\n  int src;\n  cin >> src;\n  int dest;\n  cin >> dest;\n  // write your code here\n\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n   static class Edge {\n      int src;\n      int nbr;\n      int wt;\n\n      Edge(int src, int nbr, int wt) {\n         this.src = src;\n         this.nbr = nbr;\n         this.wt = wt;\n      }\n   }\n\n   public static void main(String[] args) throws Exception {\n      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n      int vtces = Integer.parseInt(br.readLine());\n      ArrayList<Edge>[] graph = new ArrayList[vtces];\n      for (int i = 0; i < vtces; i++) {\n         graph[i] = new ArrayList<>();\n      }\n\n      int edges = Integer.parseInt(br.readLine());\n      for (int i = 0; i < edges; i++) {\n         String[] parts = br.readLine().split(\" \");\n         int v1 = Integer.parseInt(parts[0]);\n         int v2 = Integer.parseInt(parts[1]);\n         int wt = Integer.parseInt(parts[2]);\n         graph[v1].add(new Edge(v1, v2, wt));\n         graph[v2].add(new Edge(v2, v1, wt));\n      }\n\n      // write your code here\n   }\n}",
+    "python": "class Edge:\n    def __init__(self,src,nbr,wt):\n        self.src = src\n        self.nbr = nbr\n        self.wt = wt\n\ndef main():\n    vtces = int(input())\n    edges = int(input())\n    graph = {}\n    for i in range(vtces):\n        graph[i] = []\n    \n    for i in range(edges):\n        values = input().split(\" \")\n        v1 = int(values[0])\n        v2 = int(values[1])\n        wt = int(values[2])\n        e1 = Edge(v1 , v2 , wt)\n        e2 = Edge(v2 , v1 , wt)\n        graph[e1.src].append(e1)\n        graph[e2.src].append(e2)\n        \n    vis = [False]*vtces\n    \n    # write your code here\n    \n        \nif __name__ == \"__main__\":\n    main()"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/graphs/is-graph-connected-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

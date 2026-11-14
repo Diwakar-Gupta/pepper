@@ -1,0 +1,25 @@
+{
+  "name": "Words - K Selection - 2",
+  "slug": "levelup-recursion-and-backtracking-words-k-selection-2",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Easy",
+  "statement": "1. You are given a word (may have one character repeat more than once).\n2. You are given an integer k.\n2. You are required to generate and print all ways you can select k distinct characters out of the \n     word.\n \nNote -&gt; Use the code snippet and follow the algorithm discussed in question video. The judge can't \n               force you but the intention is to teach a concept. Play in spirit of the question.",
+  "inputFormat": "Input is managed for you",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "0 &lt; str.length() &lt; 15\n0 &lt; k &lt;= str.length()",
+  "sampleInput": "aabbbccdde\n3",
+  "sampleOutput": "abc\nabd\nabe\nacd\nace\nade\nbcd\nbce\nbde\ncde",
+  "questionVideo": "fy5mFaHVuRs",
+  "solutionVideo": "fy5mFaHVuRs",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args){\n\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/word-kselection-2-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

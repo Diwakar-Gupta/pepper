@@ -1,129 +1,218 @@
 {
-    "name": "Level 1: DSA Fundamentals",
-    "categorys": [
-      {
-        "name": "Basics of Programming",
-        "topics": [
-          {
-            "name": "Getting Started",
-            "slug": "getting-started"
-          },
-          {
-            "name": "JAVA for C++ Coders",
-            "slug": "java-for-c-coders"
-          },
-          {
-            "name": "Patterns",
-            "slug": "patterns"
-          },
-          {
-            "name": "Function and Arrays",
-            "slug": "function-and-arrays"
-          },
-          {
-            "name": "2D Arrays",
-            "slug": "2d-arrays"
-          },
-          {
-            "name": "String, String Builder and ArrayList",
-            "slug": "string-string-builder-and-arraylist"
+  "name": "Level 1: DSA Fundamentals",
+  "slug": "dsa-fundamentals",
+  "description": "For beginners: programming basics, recursion, DP, stacks, queues, trees, hashmaps and graphs.",
+  "duration": "2 months",
+  "counts": {
+    "problems": 210,
+    "articles": 244,
+    "videos": 35
+  },
+  "categories": [
+    {
+      "name": "Basics of Programming",
+      "modules": [
+        {
+          "name": "JAVA for C++ Coders",
+          "slug": "java-for-c-coders",
+          "counts": {
+            "problems": 0,
+            "articles": 0,
+            "videos": 4
           }
-        ]
-      },
-      {
-        "name": "Recursion and Backtracking",
-        "topics": [
-          {
-            "name": "Introduction to Recursion",
-            "slug": "introduction-to-recursion"
-          },
-          {
-            "name": "Recursion in Arrays",
-            "slug": "recursion-in-arrays"
-          },
-          {
-            "name": "Recursion with Arraylists",
-            "slug": "recursion-with-arraylists"
-          },
-          {
-            "name": "Recursion on the way up",
-            "slug": "recursion-on-the-way-up"
-          },
-          {
-            "name": "Recursion Backtracking",
-            "slug": "recursion-backtracking"
+        },
+        {
+          "name": "Getting Started",
+          "slug": "getting-started",
+          "counts": {
+            "problems": 12,
+            "articles": 20,
+            "videos": 4
           }
-        ]
-      },
-      {
-        "name": "Dynamic Programming",
-        "topics": [
-          {
-            "name": "Time and Space Complexity",
-            "slug": "time-and-space-complexity"
-          },
-          {
-            "name": "Dynamic Programming and Greedy",
-            "slug": "dynamic-programming-and-greedy"
+        },
+        {
+          "name": "Patterns",
+          "slug": "patterns",
+          "counts": {
+            "problems": 17,
+            "articles": 17,
+            "videos": 0
           }
-        ]
-      },
-      {
-        "name": "OOPS",
-        "topics": [
-          {
-            "name": "OOPS",
-            "slug": "oops"
+        },
+        {
+          "name": "Function and Arrays",
+          "slug": "function-and-arrays",
+          "counts": {
+            "problems": 1,
+            "articles": 1,
+            "videos": 0
           }
-        ]
-      },
-      {
-        "name": "Basic Data Structures",
-        "topics": [
-          {
-            "name": "Stacks and Queues",
-            "slug": "stacks-and-queues"
-          },
-          {
-            "name": "Linked Lists",
-            "slug": "linked-lists"
-          },
-          {
-            "name": "Generic Tree",
-            "slug": "generic-tree"
-          },
-          {
-            "name": "Binary Tree",
-            "slug": "binary-tree"
-          },
-          {
-            "name": "Binary Search Tree",
-            "slug": "binary-search-tree"
+        },
+        {
+          "name": "2D Arrays",
+          "slug": "2d-arrays",
+          "counts": {
+            "problems": 10,
+            "articles": 10,
+            "videos": 0
           }
-        ]
-      },
-      {
-        "name": "Advanced Data Structure",
-        "topics": [
-          {
-            "name": "Hashmap And Heap",
-            "slug": "hashmap-and-heap"
-          },
-          {
-            "name": "Graphs",
-            "slug": "graphs"
+        },
+        {
+          "name": "String, String Builder and ArrayList",
+          "slug": "string-string-builder-and-arraylist",
+          "counts": {
+            "problems": 6,
+            "articles": 10,
+            "videos": 4
           }
-        ]
-      },
-      {
-        "name": "Miscellaneous",
-        "topics": [
-          {
-            "name": "JAVA for C++ Coders",
-            "slug": "java-for-c-coders"
+        }
+      ]
+    },
+    {
+      "name": "Recursion and Backtracking",
+      "modules": [
+        {
+          "name": "Introduction to Recursion",
+          "slug": "introduction-to-recursion",
+          "counts": {
+            "problems": 8,
+            "articles": 7,
+            "videos": 0
           }
-        ]
-      }
-    ]
-  }
-  
+        },
+        {
+          "name": "Recursion in Arrays",
+          "slug": "recursion-in-arrays",
+          "counts": {
+            "problems": 6,
+            "articles": 6,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Recursion with Arraylists",
+          "slug": "recursion-with-arraylists",
+          "counts": {
+            "problems": 5,
+            "articles": 5,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Recursion on the way up",
+          "slug": "recursion-on-the-way-up",
+          "counts": {
+            "problems": 7,
+            "articles": 7,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Recursion Backtracking",
+          "slug": "recursion-backtracking",
+          "counts": {
+            "problems": 1,
+            "articles": 0,
+            "videos": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dynamic Programming",
+      "modules": [
+        {
+          "name": "Dynamic Programming and Greedy",
+          "slug": "dynamic-programming-and-greedy",
+          "counts": {
+            "problems": 30,
+            "articles": 28,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Time and Space Complexity",
+          "slug": "time-and-space-complexity",
+          "counts": {
+            "problems": 9,
+            "articles": 12,
+            "videos": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Basic Data Structures",
+      "modules": [
+        {
+          "name": "Stacks and Queues",
+          "slug": "stacks-and-queues",
+          "counts": {
+            "problems": 24,
+            "articles": 29,
+            "videos": 7
+          }
+        },
+        {
+          "name": "Linked Lists",
+          "slug": "linked-lists",
+          "counts": {
+            "problems": 25,
+            "articles": 26,
+            "videos": 1
+          }
+        },
+        {
+          "name": "Generic Tree",
+          "slug": "generic-tree",
+          "counts": {
+            "problems": 23,
+            "articles": 29,
+            "videos": 7
+          }
+        },
+        {
+          "name": "Binary Tree",
+          "slug": "binary-tree",
+          "counts": {
+            "problems": 0,
+            "articles": 1,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Binary Search Tree",
+          "slug": "binary-search-tree",
+          "counts": {
+            "problems": 7,
+            "articles": 10,
+            "videos": 3
+          }
+        }
+      ]
+    },
+    {
+      "name": "Advanced Data Structure",
+      "modules": [
+        {
+          "name": "Hashmap And Heap",
+          "slug": "hashmap-and-heap",
+          "counts": {
+            "problems": 10,
+            "articles": 14,
+            "videos": 4
+          }
+        },
+        {
+          "name": "Graphs",
+          "slug": "graphs",
+          "counts": {
+            "problems": 9,
+            "articles": 12,
+            "videos": 1
+          }
+        }
+      ]
+    }
+  ]
+}

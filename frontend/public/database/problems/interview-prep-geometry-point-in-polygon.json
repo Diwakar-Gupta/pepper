@@ -1,0 +1,26 @@
+{
+  "name": "Point In Polygon",
+  "slug": "interview-prep-geometry-point-in-polygon",
+  "course": "interview-prep",
+  "module": "geometry",
+  "difficulty": "Hard",
+  "statement": "https://cses.fi/problemset/task/2192",
+  "inputFormat": "Check Link",
+  "outputFormat": "Check Link",
+  "constraints": "Check Link",
+  "sampleInput": "4 3\n1 1\n4 2\n3 5\n1 4\n2 3\n3 1\n1 3",
+  "sampleOutput": "INSIDE\nOUTSIDE\nBOUNDARY",
+  "questionVideo": "7lhC2kg8szc",
+  "solutionVideo": "7lhC2kg8szc",
+  "templates": {
+    "cpp": "#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n  ios::sync_with_stdio(0);\n  cin.tie(0);\n\n}",
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    // Write Code here\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/geometry/geometry-point-in-polygon/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

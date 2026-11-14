@@ -1,11 +1,27 @@
 {
   "name": "Saddle Price",
   "slug": "2d-arrays-saddle-price",
-  "description": "1. You are given a square matrix of size 'n'. You are given n*n elements of the square matrix. \n2. You are required to find the saddle price of the given matrix and print the saddle price. \n3. The saddle price is defined as the least price in the row but the maximum price in the column of the matrix.\n\n### Input Format\n```\nA number n\ne11\ne12..\ne21\ne22..\n.. n * n number of elements of array a\n```\n\n### Output Format\n```\nSaddle point of the matrix if available or \"Invalid input\" if no saddle point is there.\n```\n\n### Constraints\n```\n1 <= n <= 10^2\n-10^9 <= e11, e12, .. n * m elements <= 10^9\n```\n\n### Sample Input\n```\n4\n11\n12\n13\n14\n21\n22\n23\n24\n31\n32\n33\n34\n41\n42\n43\n44\n```\n\n### Sample Output\n```\n41\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/xt0Og8YaON4?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/6YIWq2JGzEQ?rel=0&loop=1&playlist=6YIWq2JGzEQ",
-  "codes": {
-    "java": "import \njava.io\n.*;\nimport \njava.util\n.*;\npublic \nclass \nMain {\n    \npublic \nstatic \nvoid main\n(String[] \nargs) \nthrows \nException \n{\n        \n// write \nyour code \nhere\n    }\n}"
-  }
+  "course": "dsa-fundamentals",
+  "module": "2d-arrays",
+  "difficulty": "Easy",
+  "statement": "1. You are given a square matrix of size 'n'. You are given n*n elements of the square matrix. \n2. You are required to find the saddle price of the given matrix and print the saddle price. \n3. The saddle price is defined as the least price in the row but the maximum price in the column of the matrix.",
+  "inputFormat": "A number n\ne11\ne12..\ne21\ne22..\n.. n * n number of elements of array a",
+  "outputFormat": "Saddle point of the matrix if available or &quot;Invalid input&quot; if no saddle point is there.",
+  "constraints": "1 &lt;= n &lt;= 10^2\n-10^9 &lt;= e11, e12, .. n * m elements &lt;= 10^9",
+  "sampleInput": "4\n11\n12\n13\n14\n21\n22\n23\n24\n31\n32\n33\n34\n41\n42\n43\n44",
+  "sampleOutput": "41",
+  "questionVideo": "xt0Og8YaON4",
+  "solutionVideo": "6YIWq2JGzEQ",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nvoid saddle_point(int n, vector<vector<int>>& arr)\n{\n  // write your code here\n}\n\nint main()\n{\n  int n;\n  cin >> n;\n  vector<vector<int>> arr(n, vector<int>(n));\n  for (int i = 0; i < n; i++)\n    for (int j = 0; j < n; j++)\n      cin >> arr[i][j];\n\n  saddle_point(n, arr);\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // write your code here\n    }\n\n}",
+    "python": "def findSaddlePoint(mat, n):\n\n\n#write your code here\n\n\n\n  matrix = []\n           n = int(input());\n\nfor i in range(n) :\n    a = []\n        for j in range(n) :\n\n          a.append(int(input()))\n          matrix.append(a)\n\n# invalid case is handle for you\n\n          if (findSaddlePoint(matrix, n) == False):\n            print(\"Invalid input\");"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/2d-arrays/saddle-price-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

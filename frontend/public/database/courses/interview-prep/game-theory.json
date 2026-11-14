@@ -1,0 +1,208 @@
+{
+  "name": "Game Theory",
+  "slug": "game-theory",
+  "course": "interview-prep",
+  "counts": {
+    "problems": 28,
+    "articles": 0,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-one-two-three-game",
+      "name": "One Two Three Game",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-nim-game",
+      "name": "Nim Game",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-buddy-nim",
+      "name": "Buddy Nim",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-first-move-in-a-nim-game",
+      "name": "First Move In A Nim Game",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-a-modified-game-of-nim",
+      "name": "A Modified Game Of Nim",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-winner-in-nim-game",
+      "name": "Winner In Nim Game",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-number-game",
+      "name": "Number Game",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-grundy-number",
+      "name": "Grundy Number",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-two-pile-with-grundy-number",
+      "name": "Two Pile With Grundy Number",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-plate-games",
+      "name": "Plate Games",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-stoned-games",
+      "name": "Stoned Games",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-naming-company",
+      "name": "Naming-company",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-tic-tac-toe",
+      "name": "Tic-tac-toe",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-alice-and-bob",
+      "name": "Alice And Bob",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-permutation-game",
+      "name": "Permutation Game",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-circle-game",
+      "name": "Circle Game",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-madmax",
+      "name": "Madmax",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-palindrome-game-easy-version",
+      "name": "Palindrome Game (easy Version)",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-palindrome-game-hard-version",
+      "name": "Palindrome Game (hard Version)",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-deleting-divisors",
+      "name": "Deleting Divisors",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-game-on-leaves",
+      "name": "Game On Leaves",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-win-or-freeze",
+      "name": "Win Or Freeze",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-a-compatible-pair",
+      "name": "A Compatible Pair",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-soldier-and-cards",
+      "name": "Soldier And Cards",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-yet-another-array-partitioning-task",
+      "name": "Yet Another Array Partitioning Task",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-arena-of-greed",
+      "name": "Arena Of Greed",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-pie-rules",
+      "name": "Pie Rules",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-game-theory-weird-game",
+      "name": "Weird Game",
+      "difficulty": "Easy",
+      "tests": 1
+    }
+  ]
+}

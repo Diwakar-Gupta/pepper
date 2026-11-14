@@ -1,0 +1,75 @@
+{
+  "name": "Ternary Search",
+  "slug": "ternary-search",
+  "course": "interview-prep",
+  "counts": {
+    "problems": 9,
+    "articles": 0,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "interview-prep-ternary-search-searching-an-element-in-a-sorted-array",
+      "name": "Searching An Element In A Sorted Array",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-ternary-search-is-this-jee",
+      "name": "Is This Jee",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-ternary-search-building-construction",
+      "name": "Building Construction",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-ternary-search-restorer-distance",
+      "name": "Restorer Distance",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-ternary-search-trick-or-treat",
+      "name": "Trick Or Treat",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-ternary-search-rescuer",
+      "name": "Rescuer",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-ternary-search-closest-distance",
+      "name": "Closest Distance",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-ternary-search-race-time",
+      "name": "Race Time!",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-ternary-search-weakness-and-poorness",
+      "name": "Weakness And Poorness",
+      "difficulty": "Medium",
+      "tests": 1
+    }
+  ]
+}

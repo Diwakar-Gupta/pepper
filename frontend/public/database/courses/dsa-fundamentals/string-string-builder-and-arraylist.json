@@ -1,32 +1,128 @@
-[
-  {
-    "type": "Code",
-    "slug": "string-string-builder-and-arraylist-print-all-palindromic-substrings",
-    "name": "Print All Palindromic Substrings"
+{
+  "name": "String, String Builder and ArrayList",
+  "slug": "string-string-builder-and-arraylist",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 6,
+    "articles": 10,
+    "videos": 4
   },
-  {
-    "type": "Code",
-    "slug": "string-string-builder-and-arraylist-string-compression",
-    "name": "String Compression"
-  },
-  {
-    "type": "Code",
-    "slug": "string-string-builder-and-arraylist-toggle-case",
-    "name": "Toggle Case"
-  },
-  {
-    "type": "Code",
-    "slug": "string-string-builder-and-arraylist-string-with-difference-of-every-two-consecutive-characters",
-    "name": "String With Difference Of Every Two Consecutive Characters"
-  },
-  {
-    "type": "Code",
-    "slug": "string-string-builder-and-arraylist-print-all-permutations-of-a-string-iteratively",
-    "name": "Print All Permutations Of A String Iteratively"
-  },
-  {
-    "type": "Code",
-    "slug": "string-string-builder-and-arraylist-remove-primes",
-    "name": "Remove Primes"
-  }
-]
+  "items": [
+    {
+      "type": "video",
+      "slug": "string-string-builder-and-arraylist-introduction-to-strings-stringbuilders-and-arraylists",
+      "name": "Introduction To Strings, Stringbuilders And Arraylists",
+      "youtubeId": "4ZOV3PYe0y0"
+    },
+    {
+      "type": "article",
+      "slug": "string-string-builder-and-arraylist-introduction-to-strings",
+      "name": "Introduction to Strings"
+    },
+    {
+      "type": "article",
+      "slug": "string-string-builder-and-arraylist-print-all-palindromic-substrings",
+      "name": "Print All Palindromic Substrings"
+    },
+    {
+      "type": "problem",
+      "slug": "string-string-builder-and-arraylist-print-all-palindromic-substrings",
+      "name": "Print All Palindromic Substrings",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "string-string-builder-and-arraylist-string-compression",
+      "name": "String Compression"
+    },
+    {
+      "type": "problem",
+      "slug": "string-string-builder-and-arraylist-string-compression",
+      "name": "String Compression",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "video",
+      "slug": "string-string-builder-and-arraylist-string-interning-and-immutability",
+      "name": "String - Interning And Immutability",
+      "youtubeId": "NcQd0cN0JC4"
+    },
+    {
+      "type": "article",
+      "slug": "string-string-builder-and-arraylist-string-interning-immutability",
+      "name": "String - Interning & Immutability"
+    },
+    {
+      "type": "article",
+      "slug": "string-string-builder-and-arraylist-stringbuilder-usage-and-performance",
+      "name": "Stringbuilder - Usage And Performance"
+    },
+    {
+      "type": "video",
+      "slug": "string-string-builder-and-arraylist-stringbuilder-usage-and-performance",
+      "name": "Stringbuilder - Usage And Performance",
+      "youtubeId": "OWVuQEs3xF8"
+    },
+    {
+      "type": "problem",
+      "slug": "string-string-builder-and-arraylist-toggle-case",
+      "name": "Toggle Case",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "string-string-builder-and-arraylist-toggle-case",
+      "name": "Toggle Case"
+    },
+    {
+      "type": "problem",
+      "slug": "string-string-builder-and-arraylist-string-with-difference-of-every-two-consecutive-characters",
+      "name": "String With Difference Of Every Two Consecutive Characters",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "string-string-builder-and-arraylist-print-all-permutations-of-a-string-iteratively",
+      "name": "Print All Permutations Of A String Iteratively"
+    },
+    {
+      "type": "article",
+      "slug": "string-string-builder-and-arraylist-string-with-difference-of-every-two-consecutive-characters",
+      "name": "String With Difference Of Every Two Consecutive Characters"
+    },
+    {
+      "type": "problem",
+      "slug": "string-string-builder-and-arraylist-print-all-permutations-of-a-string-iteratively",
+      "name": "Print All Permutations Of A String Iteratively",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "video",
+      "slug": "string-string-builder-and-arraylist-introduction-to-arraylists-usage-and-demo",
+      "name": "Introduction To Arraylists - Usage And Demo",
+      "youtubeId": "PjTHKWlkP6c"
+    },
+    {
+      "type": "article",
+      "slug": "string-string-builder-and-arraylist-introduction-to-arraylists",
+      "name": "Introduction to Arraylists"
+    },
+    {
+      "type": "article",
+      "slug": "string-string-builder-and-arraylist-remove-all-primes",
+      "name": "Remove All Primes"
+    },
+    {
+      "type": "problem",
+      "slug": "string-string-builder-and-arraylist-remove-primes",
+      "name": "Remove Primes",
+      "difficulty": "Easy",
+      "tests": 1
+    }
+  ]
+}

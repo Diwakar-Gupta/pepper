@@ -1,0 +1,31 @@
+5
+add 10
+display
+add 20
+display
+add 30
+display
+add 40
+display
+add 50
+display
+add 60
+display
+peek
+remove
+display
+peek
+remove
+display
+peek
+remove
+display
+peek
+remove
+display
+peek
+remove
+display
+peek
+remove
+quit

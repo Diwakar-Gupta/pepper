@@ -1,11 +1,27 @@
 {
   "name": "Buy And Sell Stocks - Infinite Transactions Allowed",
   "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-infinite-transactions-allowed",
-  "description": "1. You are given a number n, representing the number of days.\n2. You are given n numbers, where ith number represents price of stock on ith day.\n3. You are required to print the maximum profit you can make if you are allowed infinite transactions.\nNote - There can be no overlapping transaction. One transaction needs to be closed (a buy followed by a sell) before opening another transaction (another buy)\n\n### Input Format\n```\nA number n\n.. n more elements\n```\n\n### Output Format\n```\nA number representing the maximum profit you can make if you are allowed infinite transactions.\n```\n\n### Constraints\n```\n0 <= n <= 20\n0 <= n1, n2, .. <= 10\n```\n\n### Sample Input\n```\n9\n11\n6\n7\n19\n4\n1\n6\n18\n4\n```\n\n### Sample Output\n```\n30\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/HWJ9kIPpzXs?end=82&rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/HWJ9kIPpzXs?start=82&rel=0&loop=1&playlist=HWJ9kIPpzXs",
-  "codes": {
-    "java": "import java.io.*;\nimport java.util.*;\npublic class Main {\n    public static void main\n(String[] args) throws \nException {\n        // write your code \nhere\n    }\n}"
-  }
+  "course": "dsa-fundamentals",
+  "module": "dynamic-programming-and-greedy",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n, representing the number of days.\n2. You are given n numbers, where ith number represents price of stock on ith day.\n3. You are required to print the maximum profit you can make if you are allowed infinite transactions.\nNote - There can be no overlapping transaction. One transaction needs to be closed (a buy followed by a sell) before opening another transaction (another buy)",
+  "inputFormat": "A number n\n.. n more elements",
+  "outputFormat": "A number representing the maximum profit you can make if you are allowed infinite transactions.",
+  "constraints": "0 &lt;= n &lt;= 20\n0 &lt;= n1, n2, .. &lt;= 10",
+  "sampleInput": "9\n11\n6\n7\n19\n4\n1\n6\n18\n4",
+  "sampleOutput": "30",
+  "questionVideo": "HWJ9kIPpzXs",
+  "solutionVideo": "HWJ9kIPpzXs",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\n\nusing namespace std;\n\nvoid transactions(vector<int> arr) {\n\n// write your code here\n\n}\n\nint main() {\n  int n ;\n  cin >> n;\n  vector<int> arr(n, 0);\n  for (int i = 0; i < arr.size(); i++) {\n    cin >> arr[i];\n  }\n\n  transactions(arr);\n  return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // write your code here\n    }\n\n}",
+    "python": "def InfiniteTransaction(arr,n):\n    # write your code here\n\ndef main():\n    n = int(input())\n    array = []\n    for i in range(n):\n        array.append(int(input()))\n        \n    InfiniteTransaction(array,n)\n\nif __name__ == '__main__':\n    main()"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/buy-and-sell-stocks-ita-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

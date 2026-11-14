@@ -1,27 +1,72 @@
-[
-  {
-    "type": "Code",
-    "slug": "recursion-with-arraylists-get-subsequence",
-    "name": "Get Subsequence"
+{
+  "name": "Recursion with Arraylists",
+  "slug": "recursion-with-arraylists",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 5,
+    "articles": 5,
+    "videos": 0
   },
-  {
-    "type": "Code",
-    "slug": "recursion-with-arraylists-get-kpc",
-    "name": "Get Kpc"
-  },
-  {
-    "type": "Code",
-    "slug": "recursion-with-arraylists-get-stair-paths",
-    "name": "Get Stair Paths"
-  },
-  {
-    "type": "Code",
-    "slug": "recursion-with-arraylists-get-maze-paths",
-    "name": "Get Maze Paths"
-  },
-  {
-    "type": "Code",
-    "slug": "recursion-with-arraylists-get-maze-path-with-jumps",
-    "name": "Get Maze Path With Jumps"
-  }
-]
+  "items": [
+    {
+      "type": "article",
+      "slug": "recursion-with-arraylists-get-subsequence",
+      "name": "Get Subsequence"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-with-arraylists-get-subsequence",
+      "name": "Get Subsequence",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "recursion-with-arraylists-get-kpc",
+      "name": "Get Kpc"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-with-arraylists-get-kpc",
+      "name": "Get Kpc",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "recursion-with-arraylists-get-stair-paths",
+      "name": "Get Stair Paths"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-with-arraylists-get-stair-paths",
+      "name": "Get Stair Paths",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "recursion-with-arraylists-get-maze-paths",
+      "name": "Get Maze Paths"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-with-arraylists-get-maze-paths",
+      "name": "Get Maze Paths",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "recursion-with-arraylists-get-maze-paths-with-jumps",
+      "name": "Get Maze Paths With Jumps"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-with-arraylists-get-maze-path-with-jumps",
+      "name": "Get Maze Path With Jumps",
+      "difficulty": "Easy",
+      "tests": 1
+    }
+  ]
+}

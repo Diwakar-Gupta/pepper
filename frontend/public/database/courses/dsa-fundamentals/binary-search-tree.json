@@ -1,37 +1,129 @@
-[
-  {
-    "type": "Code",
-    "slug": "binary-search-tree-size-sum-max-min-find-in-bst",
-    "name": "Size, Sum, Max, Min, Find In Bst"
+{
+  "name": "Binary Search Tree",
+  "slug": "binary-search-tree",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 7,
+    "articles": 10,
+    "videos": 3
   },
-  {
-    "type": "Code",
-    "slug": "binary-search-tree-add-node-to-bst",
-    "name": "Add Node To Bst"
-  },
-  {
-    "type": "Code",
-    "slug": "binary-search-tree-remove-node-from-bst",
-    "name": "Remove Node From Bst"
-  },
-  {
-    "type": "Code",
-    "slug": "binary-search-tree-replace-with-sum-of-larger",
-    "name": "Replace With Sum Of Larger"
-  },
-  {
-    "type": "Code",
-    "slug": "binary-search-tree-lca-of-bst",
-    "name": "Lca Of Bst"
-  },
-  {
-    "type": "Code",
-    "slug": "binary-search-tree-print-in-range",
-    "name": "Print In Range"
-  },
-  {
-    "type": "Code",
-    "slug": "binary-search-tree-target-sum-pair-in-bst",
-    "name": "Target Sum Pair In Bst"
-  }
-]
+  "items": [
+    {
+      "type": "video",
+      "slug": "binary-search-tree-binary-search-tree-introduction",
+      "name": "Binary Search Tree - Introduction",
+      "youtubeId": "wE5nFfdr7Ls"
+    },
+    {
+      "type": "video",
+      "slug": "binary-search-tree-binary-search-tree-constructor",
+      "name": "Binary Search Tree - Constructor",
+      "youtubeId": "yGrs-VuPCYg"
+    },
+    {
+      "type": "problem",
+      "slug": "binary-search-tree-size-sum-max-min-find-in-bst",
+      "name": "Size, Sum, Max, Min, Find In Bst",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "binary-search-tree-add-node-to-bst",
+      "name": "Add Node To Bst",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "binary-search-tree-remove-node-from-bst",
+      "name": "Remove Node From Bst",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "binary-search-tree-replace-with-sum-of-larger",
+      "name": "Replace With Sum Of Larger",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "binary-search-tree-lca-of-bst",
+      "name": "Lca Of Bst",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "binary-search-tree-print-in-range",
+      "name": "Print In Range",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "binary-search-tree-target-sum-pair-in-bst",
+      "name": "Target Sum Pair In Bst",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "video",
+      "slug": "binary-search-tree-target-sum-pair-bst-alternate-approaches",
+      "name": "Target Sum Pair - Bst - Alternate Approaches",
+      "youtubeId": "iK2VFYxFC4o"
+    },
+    {
+      "type": "article",
+      "slug": "binary-search-tree-add-node-to-bst",
+      "name": "Add Node To BST"
+    },
+    {
+      "type": "article",
+      "slug": "binary-search-tree-remove-node-from-bst",
+      "name": "Remove Node From BST"
+    },
+    {
+      "type": "article",
+      "slug": "binary-search-tree-replace-with-sum-of-larger",
+      "name": "Replace With Sum Of Larger"
+    },
+    {
+      "type": "article",
+      "slug": "binary-search-tree-lca-of-bst",
+      "name": "Lca Of Bst"
+    },
+    {
+      "type": "article",
+      "slug": "binary-search-tree-print-in-range",
+      "name": "Print In Range"
+    },
+    {
+      "type": "article",
+      "slug": "binary-search-tree-target-sum-pair-in-bst",
+      "name": "Target Sum Pair In BST"
+    },
+    {
+      "type": "article",
+      "slug": "binary-search-tree-target-sum-pair-in-bst-alternate-approaches",
+      "name": "Target Sum Pair in BST-Alternate Approaches"
+    },
+    {
+      "type": "article",
+      "slug": "binary-search-tree-size-sum-max-min-find-in-bst",
+      "name": "Size, Sum, Max, Min, Find In Bst"
+    },
+    {
+      "type": "article",
+      "slug": "binary-search-tree-binary-search-tree-introduction",
+      "name": "Binary Search Tree-Introduction"
+    },
+    {
+      "type": "article",
+      "slug": "binary-search-tree-binary-search-tree-constructor",
+      "name": "Binary Search Tree- Constructor"
+    }
+  ]
+}

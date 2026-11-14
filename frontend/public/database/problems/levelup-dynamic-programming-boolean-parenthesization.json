@@ -1,0 +1,25 @@
+{
+  "name": "Boolean Parenthesization",
+  "slug": "levelup-dynamic-programming-boolean-parenthesization",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given a boolean expression with symbols T,F, and operators &amp;,|,^ , where\n   T represents True\n   F represents False\n   &amp; represents boolean AND\n   | represents boolean OR\n   ^ represents boolean XOR.\n2. You have to find the number of ways in which the expression can be parenthesized so that the value of expression evaluates to true.",
+  "inputFormat": "Two strings s1 and s2",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "2 &lt;= length of s1 &lt;= 100\n1 &lt;= length of s2 &lt;= 99",
+  "sampleInput": "TFT\n^&",
+  "sampleOutput": "2",
+  "questionVideo": "JbRsM2X2_pg",
+  "solutionVideo": "JbRsM2X2_pg",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int solution(String str1, String str2) {\n\t\t//write your code here\n\n\t\treturn 0;\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tString s1 = scn.next();\n\t\tString s2 = scn.next();\n\t\tSystem.out.println(solution(s1, s2));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/boolean-parenthesization-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

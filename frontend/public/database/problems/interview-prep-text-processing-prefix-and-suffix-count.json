@@ -1,0 +1,25 @@
+{
+  "name": "Prefix And Suffix Count",
+  "slug": "interview-prep-text-processing-prefix-and-suffix-count",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Hard",
+  "statement": "Given a string s, Your task is, for any prefix of string s which matches a suffix of string s, print the number of times it occurs in string s as a substring.\nExpected Complexity: O(n)",
+  "inputFormat": "The first line contains string s.",
+  "outputFormat": "In the first line, print integer k (0&lt;=k&lt;=|s|) - the number of prefixes that match a suffix of string s. Next print k lines, in each line print two integers li ci. Numbers li ci mean that the prefix of the length li matches the suffix of length li and occurs in string s as a substring ci times. Print pairs li ci in the order of increasing li.",
+  "constraints": "1&lt;= s.length() &lt;= 10^5",
+  "sampleInput": "ABABABAB",
+  "sampleOutput": "4\n2 4\n4 3\n6 2\n8 1",
+  "questionVideo": "-g2keRF4E4k",
+  "solutionVideo": "-g2keRF4E4k",
+  "templates": {
+    "java": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\n\npublic class Main {\n\tpublic static void main(String[] args) throws NumberFormatException, IOException {\n\t\t\n\t}\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/prefix_and_suffix_count/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

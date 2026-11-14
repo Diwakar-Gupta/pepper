@@ -1,0 +1,25 @@
+{
+  "name": "Plasticine Zebra",
+  "slug": "interview-prep-constructive-algorithm-plasticine-zebra",
+  "course": "interview-prep",
+  "module": "constructive-algorithm",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://codeforces.com/problemset/problem/1025/C\" target=\"_blank\" rel=\"noopener\">https://codeforces.com/problemset/problem/1025/C</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "bwwwbwwbw",
+  "sampleOutput": "5",
+  "questionVideo": "xvuImWVs9OA",
+  "solutionVideo": "xvuImWVs9OA",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args) throws IOException {\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/constructive-algorithm/plasticine-zebra/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

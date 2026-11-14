@@ -1,0 +1,25 @@
+{
+  "name": "Largest Square Sub-matrix With All 1's",
+  "slug": "levelup-dynamic-programming-largest-square-sub-matrix-with-all-1-s",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given a matrix of 0's and 1's.\n2. You have to find the maximum size square sub-matrix with all 1's.",
+  "inputFormat": "A number N, which represents number of rows in matrix\nA number M, which represents number of columns in matrix\narr1\narr2...N*M numbers",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N,M &lt;= 100\n0&lt;= arr[i][j] &lt;= 1",
+  "sampleInput": "5 6\n0 1 0 1 0 1 \n1 0 1 0 1 0 \n0 1 1 1 1 0 \n0 0 1 1 1 0 \n1 1 1 1 1 1",
+  "sampleOutput": "3",
+  "questionVideo": "UagRoA3C5VQ",
+  "solutionVideo": "UagRoA3C5VQ",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int solution(int[][] arr) {\n\t\t//write your code here\n\n\t\treturn 0;\n\t}\n\t\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tint m =scn.nextInt();\n\t\tint[][] arr = new int[n][m];\n\t\tfor(int i = 0 ; i < n; i++){\n\t\t\tfor(int j = 0 ; j < m; j++){\n\t\t\t\tarr[i][j] = scn.nextInt();\n\t\t\t}\n\t\t}\n\t\tSystem.out.println(solution(arr));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/largest-square-sub-matrix-with-all-ones-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

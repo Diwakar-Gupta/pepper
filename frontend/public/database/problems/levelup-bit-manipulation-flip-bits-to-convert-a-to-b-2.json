@@ -1,0 +1,26 @@
+{
+  "name": "Flip Bits To Convert A To B",
+  "slug": "levelup-bit-manipulation-flip-bits-to-convert-a-to-b-2",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given two numbers A and B.\n2. You have to print the count of bits needed to be flipped to convert 'A' to 'B'.",
+  "inputFormat": "2 numbers A and B",
+  "outputFormat": "A number",
+  "constraints": "-10^9 &lt;= A,B &lt;= 10^9",
+  "sampleInput": "57\n76",
+  "sampleOutput": "5",
+  "questionVideo": "YvYGhJjQPTI",
+  "solutionVideo": "YvYGhJjQPTI",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args){\n    Scanner scn = new Scanner(System.in);\n    int a = scn.nextInt();\n    int b = scn.nextInt();\n\n    //write your code here\n  }\n\n}"
+  },
+  "editorial": "<p>The problem here deals with calculating the number of bits that are needed to be flipped to convert an integer A to B. Flipping a bit means updating a bit with value 0 to 1 or to update a bit with value 1 to 0.</p><p>For example:</p><p>57 -&gt; 0 1 1 1 0 0 1</p><p>76 -&gt; 1 0 0 1 1 0 0</p><p>So we need to flip bits at positions 0, 1, 2, 4 and 6 (order is considered from left to right) to convert 57 to 76. Hence total 5 operations will be performed.</p><p>The problem can be solved by taking the XOR of the two numbers, as we know that XOR gives a set bit at positions where there is an odd number of 1s, this is exactly what we desired, we need the positions that needed to be flipped and by performing XOR operation we achieved the task. Now all that is left is to count the number of set bits in the XOR integer by using Kerninghams algorithm to count the number of set bits.</p><p><b>Time Complexity: O(k)</b></p><p>The time complexity for the function is proportional to the number of set bits in the XOR integer.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/flip-bits-to-convert-a-to-b-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

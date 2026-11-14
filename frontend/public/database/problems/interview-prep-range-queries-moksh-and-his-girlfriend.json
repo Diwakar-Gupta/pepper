@@ -1,0 +1,26 @@
+{
+  "name": "Moksh And His Girlfriend",
+  "slug": "interview-prep-range-queries-moksh-and-his-girlfriend",
+  "course": "interview-prep",
+  "module": "range-queries",
+  "difficulty": "Hard",
+  "statement": "Recently Moksh(HR of Pepcoding) invented a serum which can increase height of plant by 1 unit. Moksh's girlfriend birthday is next month.\nHe is planning something amazing as a gift for her.His girlfriend's favourite Integer is M.\n\nInitially Moksh has N (1 to N) no. of beautiful Rose plants, Each plant can have an Integer height,Initially the height of each plant is zero.\nSubhesh gives Moksh Q number of operations,In each operation Moksh got two integer start and end and he increases the height of all the plants between start and end position (including start and end) by 1.\nAs Moksh wasn't happy with the pattern of height of the plants formed, He went to Rajneesh and asked him to remove any 1 operation from the Q operations such that the count of plants with height M is maximum possible.\nOutput the maximum possible number of plants with height M.\n\nExpected Complexity : O(n+q)",
+  "inputFormat": "First line contains three space separated integer N(no. of Rose plants), Q(number of operations), M.\nEach of the next Q lines contains two space-separated integers L and R describing one operation.",
+  "outputFormat": "print a single line containing one integer - the maximum possible number of Trees with height M.",
+  "constraints": "Constraint : \n2&lt;=N&lt;=100000.\n2&lt;=Q&lt;=100000.\n1&lt;=M1&lt;=L&lt;=R&lt;=N.",
+  "sampleInput": "10 3 2\n2 6\n4 9\n1 4",
+  "sampleOutput": "3",
+  "questionVideo": "f43qOr8eTlU",
+  "solutionVideo": "f43qOr8eTlU",
+  "templates": {
+    "cpp": " #include using namespace std;\n int main(){ }",
+    "java": "import java.io.*;\n import java.util.*;\n public class main {\n public static void main(String[] args) {\n }\n }\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/range-queries/moksh-and-his-girlfriend/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

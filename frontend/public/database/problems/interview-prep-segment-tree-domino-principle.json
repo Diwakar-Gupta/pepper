@@ -1,0 +1,25 @@
+{
+  "name": "Domino Principle",
+  "slug": "interview-prep-segment-tree-domino-principle",
+  "course": "interview-prep",
+  "module": "segment-tree",
+  "difficulty": "Hard",
+  "statement": "<a href=\"https://codeforces.com/contest/56/problem/E\" target=\"_blank\" rel=\"noopener\">https://codeforces.com/contest/56/problem/E</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "4\n16 5\n20 5\n10 10\n18 2",
+  "sampleOutput": "3 1 4 1",
+  "questionVideo": "iw6H8C9FbrU",
+  "solutionVideo": "iw6H8C9FbrU",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n  static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));\n  static PrintWriter out = new PrintWriter(System.out);\n  /*\n  use in for reading input\n  use out for printing output\n  */\n\n  public static void main(String[] args) throws IOException {\n\n    // write your code here.\n\n\n\n    out.close();\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/segment-tree/domino-principle/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

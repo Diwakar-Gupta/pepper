@@ -1,11 +1,27 @@
 {
   "name": "Climb Stairs",
   "slug": "dynamic-programming-and-greedy-climb-stairs",
-  "description": "1. You are given a number n, representing the number of stairs in a staircase.\n2. You are on the 0th step and are required to climb to the top.\n3. In one move, you are allowed to climb 1, 2 or 3 stairs.\n4. You are required to print the number of different paths via which you can climb to the top.\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\nA number representing the number of ways to climb the stairs from 0 to top.\n```\n\n### Constraints\n```\n0 <= n <= 20\n```\n\n### Sample Input\n```\n4\n```\n\n### Sample Output\n```\n7\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/A6mOASLl2Dg?end=194&rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/A6mOASLl2Dg?start=194&rel=0&loop=1&playlist=A6mOASLl2Dg",
-  "codes": {
-    "java": "import java\n.io.*;\nimport java\n.util.*;\npublic \nclass Main \n{\n    public \nstatic void \nmain\n(String[] \nargs) \nthrows \nException {\n        // \nwrite your \ncode here\n    }\n}"
-  }
+  "course": "dsa-fundamentals",
+  "module": "dynamic-programming-and-greedy",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n, representing the number of stairs in a staircase.\n2. You are on the 0th step and are required to climb to the top.\n3. In one move, you are allowed to climb 1, 2 or 3 stairs.\n4. You are required to print the number of different paths via which you can climb to the top.",
+  "inputFormat": "A number n",
+  "outputFormat": "A number representing the number of ways to climb the stairs from 0 to top.",
+  "constraints": "0 &lt;= n &lt;= 20",
+  "sampleInput": "4",
+  "sampleOutput": "7",
+  "questionVideo": "A6mOASLl2Dg",
+  "solutionVideo": "A6mOASLl2Dg",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nint cs(int n){\n    // write your code here\n\n    return 0;\n\n}\n\nint main(){\n    int n;\n    cin>>n;\n    cout<<cs(n)<<endl;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // write your code here\n    }\n\n}",
+    "python": "def fun(n, dp):\n# write code here\n\n\n  return 0\n\n\n# driver code\n         def main():\n         n = int(input())\n\n             dp = [] * (n + 1)\n                  print(fun(n, dp))\n\n                if __name__ == \"__main__\":\n                  main()"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/climb-stairs-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

@@ -1,11 +1,28 @@
 {
   "name": "Prefix Evaluation And Conversions",
   "slug": "stacks-and-queues-prefix-evaluation-and-conversions",
-  "description": "1. You are given a prefix expression.\n2. You are required to evaluate it and print it's value.\n3. You are required to convert it to infix and print it.\n4. You are required to convert it to postfix and print it.\n\nNote -> Use brackets in infix expression for indicating precedence. Check sample input output for more details.\n\n### Input Format\n```\nInput is managed for you\n```\n\n### Output Format\n```\nvalue, a number\ninfix\nprefix\n```\n\n### Constraints\n```\n1. Expression is a valid prefix expression\n2. The only operators used are +, -, *, /\n3. All operands are single digit numbers.\n```\n\n### Sample Input\n```\n-+2/*6483\n```\n\n### Sample Output\n```\n2\n((2+((6*4)/8))-3)\n264*8/+3-\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/YmdDsEZ9paw?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/Q-Nw-dTApjk?rel=0&loop=1&playlist=Q-Nw-dTApjk",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "stacks-and-queues",
+  "difficulty": "Easy",
+  "statement": "1. You are given a prefix expression.\n2. You are required to evaluate it and print it's value.\n3. You are required to convert it to infix and print it.\n4. You are required to convert it to postfix and print it.\n\nNote -&gt; Use brackets in infix expression for indicating precedence. Check sample input output for more details.",
+  "inputFormat": "Input is managed for you",
+  "outputFormat": "value, a number\ninfix\nprefix",
+  "constraints": "1. Expression is a valid prefix expression\n2. The only operators used are +, -, *, /\n3. All operands are single digit numbers.",
+  "sampleInput": "-+2/*6483",
+  "sampleOutput": "2\n((2+((6*4)/8))-3)\n264*8/+3-",
+  "questionVideo": "YmdDsEZ9paw",
+  "solutionVideo": "Q-Nw-dTApjk",
+  "templates": {
+    "cpp": "#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n  string exp;\n  cin >> exp;\n\n  // write yout code here\n\n  return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main{\n  \n\npublic static void main(String[] args) throws Exception {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n    String exp = br.readLine();\n\n    // code\n }\n}",
+    "python": "def infix(exp):\n# write your code here\n\n  exp = list(input())\n\n        infix(exp)"
+  },
+  "editorial": "<p>We will require three stacks in this question too, one for evaluation, another for postfix, and the last one for infix expression.</p><p><b><u>Logic:</u></b></p><p>In this question, we will traverse from the back of the expression and we will push the operands into the stack and whenever we come across an operand we will pop out two operands such that the top most one will be value1 and the next removed operand will be value2.</p><p>Infix - (value1 operator value2)</p><p>Postfix - value1 value2 operator</p><p>Let us solve this expression: -+2/*6483</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/844cf43cba5ad345.png\" alt=\"\"></p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/f0ff112a84deaed3.png\" alt=\"\"></p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/ef52c3f635460e37.png\" alt=\"\"></p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/157c6339ce842e13.png\" alt=\"\"></p><p>We got * operator so we will pop. Remember value1= 6 and value2= 4</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/a2a7900517a0311a.png\" alt=\"\"></p><p>Evaluation=6*4= 24, infix= (6*4), postfix= 64*</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/581d51a2a8736637.png\" alt=\"\"></p><p>We got / operator so we will pop.</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/0ee0f3f9c50719f4.png\" alt=\"\"></p><p>Evaluation= 24/8= 3, infix= ((6*4)/8), postfix= 64*8/</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/ecfd02cf44801d61.png\" alt=\"\"></p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/0788660f2bdb0c36.png\" alt=\"\"></p><p>+ Operator is there so we will pop again</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/6b6f7b1e4ee28442.png\" alt=\"\"></p><p>Evaluation = 2+3=5, infix= (2+ ((6*4)/8)), postfix= 264*8/+</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/1d146a01e7896e91.png\" alt=\"\"></p><p>We got - operator so we will pop again</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/43a1a03f96fa429e.png\" alt=\"\"></p><p>Evaluation= 5-3=2, infix= ((2+ ((6*4)/8))-3), postfix=264*8/+3-</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/2caf1eacd1a68724.png\" alt=\"\"></p><p>At last, we got our answers in respective stacks.</p><p>Evaluation= 2</p><p>Infix expression= ((2+ ((6*4)/8))-3)</p><p>Postfix expression= 264*8/+3-</p><p><b><u>Code:</u></b></p><p>In the code, we are converting character into an integer for evaluation stack (ch - '0') and character into a string for infix and postfix stacks (ch + &quot; &quot;).</p><pre>String ival = &quot;(&quot; + iv1 + ch + iv2 + &quot;)&quot;;\n                                is.push(ival);\n                                \n                                 String pv2 = ps.pop();\n                                 String pv1 = ps.pop();\n                                 String pval = ch + pv1 + pv2;\n                                 ps.push(pval);\n                                 }else {\n                                 vs.push(ch - '0');\n                                 is.push(ch + &quot;&quot;);\n                                 ps.push(ch + &quot;&quot;);\n                                 }</pre>",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/stacks-and-queues/prefix-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

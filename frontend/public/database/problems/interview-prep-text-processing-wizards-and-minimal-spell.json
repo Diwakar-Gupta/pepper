@@ -1,0 +1,18 @@
+{
+  "name": "Wizards And Minimal Spell",
+  "slug": "interview-prep-text-processing-wizards-and-minimal-spell",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Easy",
+  "statement": "https://codeforces.com/problemset/problem/168/B",
+  "inputFormat": "Check the link",
+  "outputFormat": "Check the link",
+  "constraints": "Check the link",
+  "questionVideo": "v9PUDLVLUKU",
+  "solutionVideo": "v9PUDLVLUKU",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\nimport static java.lang.Math.*;\n\npublic class Main {\n\n  static BufferedReader in;\n  static StringTokenizer st;\n  static PrintWriter out;\n\n  static void solve() throws IOException {\n\n\n  }\n\n\n\n\n\n  // in = new BufferedReader(new FileReader(\"test.txt\"));\n\n\n\n  static String ns() throws IOException {\n    while (st == null || !st.hasMoreTokens())\n      st = new StringTokenizer(in.readLine());\n    return st.nextToken();\n  }\n\n  static int ni() throws IOException {\n    return Integer.valueOf(ns());\n  }\n\n  static long nl() throws IOException {\n    return Long.valueOf(ns());\n  }\n\n  static double nd() throws IOException {\n    return Double.valueOf(ns());\n  }\n\n  public static void main(String[] args) throws IOException {\n    in = new BufferedReader(new InputStreamReader(System.in));\n    out = new PrintWriter(System.out);\n    solve();\n    in.close();\n    out.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/wizards-and-minimal-spell-official/ojquestion",
+  "testCases": []
+}

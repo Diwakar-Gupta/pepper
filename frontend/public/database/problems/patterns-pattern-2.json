@@ -1,11 +1,27 @@
 {
   "name": "Pattern 2",
   "slug": "patterns-pattern-2",
-  "description": "1. You are given a number n.\n2. You've to create a pattern of * and separated by tab as shown in output format.\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\n\n```\n\n### Constraints\n```\n1 <= n <= 100\n```\n\n### Sample Input\n```\n5\n```\n\n### Sample Output\n```\n*\t*\t*\t*\t*\t\n*\t*\t*\t*\t\n*\t*\t*\t\n*\t*\t\n*\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/Y-AePs3E7FU?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/7dxaR4q8SIU?rel=0&loop=1&playlist=7dxaR4q8SIU",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "patterns",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n.\n2. You've to create a pattern of * and separated by tab as shown in output format.",
+  "inputFormat": "A number n",
+  "outputFormat": "",
+  "constraints": "1 &lt;= n &lt;= 100",
+  "sampleInput": "5",
+  "sampleOutput": "*\t*\t*\t*\t*\t\n*\t*\t*\t*\t\n*\t*\t*\t\n*\t*\t\n*",
+  "questionVideo": "Y-AePs3E7FU",
+  "solutionVideo": "7dxaR4q8SIU",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nint main(int argc, char **argv){\n    int n;\n    cin >> n;\n    \n    //write your code here\n    \n}",
+    "java": "import java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        Scanner scn = new Scanner(System.in);\n\n        // write ur code here\n\n    }\n}"
+  },
+  "editorial": "<p><i>&quot;There are only two ways to write an error-free program, Only the third one works!&quot;</i></p><p><b><u>Question:</u></b></p><p>1. You are given a number n.</p><p>2. You've to create a pattern of * and separated it by tab as shown in the output format.</p><p><b><u>Input format:</u></b></p><p>A number n</p><p><b><u>Output format:</u></b></p><p>* * * * *</p><p>* * * *</p><p>* * *</p><p>* *</p><p>*</p><p><b><u>Constraints:</u></b></p><p>1 &lt;= n &lt;= 100</p><p><b><u>Solution Approach:</u></b></p><p>In the given problem, we need an &quot;n&quot; number of stars in the first row and one less in the preceding rows.</p><p>Let us analyze a familiar code:</p><p>for(int j =1;j&lt;=i;j++)</p><p>{</p><p>System.out.print(&quot;*&quot;); //magic</p><p>}</p><p>This &quot;magic&quot; loop will print the number of stars equal to the value of i.</p><p>That is, if i = 2, there will be 2 iterations and 2 stars will be printed, one in each iteration.</p><p>We need to have &quot;<i>faith</i>&quot; that the value of &quot;i&quot; that will be provided to this loop, it will print that many stars for us.</p><p>Now since this resolves the printing of stars part of our problem, we put our focus on the spacing of these stars aspect of the problem.</p><p>Given to us in the output format, we see that the problem expects us to print the stars in different &quot;n&quot; lines each containing &quot;n&quot; number of stars will n reduce in each preceding line by 1.</p><p>Furthermore, between each star, it requires us to put a tab space ( 4 spaces together), which is solved in the &quot;magic&quot; loop itself.</p><p>Now we work on giving the magic loop (which will be our inner loop), the values of &quot;i&quot; through an outer loop, which provides the iteration conditions for the inner loop.</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"></p><p>The inner loop prints the number of stars in a row with proper spacing, but the outer loop provides the termination condition of the inner loop as the number of stars required on the particular line.</p><p>For the above example, we take n = 5 and then dry run the process we require.</p><p>Programming for the same will be done as follows:</p><p>The illustration below showcases the inner loop and the spacing of each star. </p><pre>import java.util.*;\n                                \n                                public class Main{\n                                \tpublic static void main(String[] args)\n                                \t{\n                                \t\tScanner scn = new Scanner(System.in);\n                                \t\tint n = scn.nextInt();\n                                \n                                \t\tint nstars = n;\n                                \t\tfor(int j = 1;j&lt;=nstars; j++)\n                                \t\t{\n                                \t\t\tSystem.out.print(&quot;*\t&quot;);\n                                \t\t}\n                                \t}\n                                }</pre><p>Writing the outer loop and thus concluding the programming implementation: </p><pre>import java.util.*;\n                                \n                                public class Main{\n                                \tpublic static void main(String[] args)\n                                \t{\n                                \t\tScanner scn = new Scanner(System.in);\n                                \t\tint n = scn.nextInt();\n                                \n                                \t\tint nstars = n;\n                                \t\t\n                                \t\tfor(int i = 1; i &lt;= n ;i++)\n                                \t\t{\n                                \t\t\tfor(int j = 1;j &lt;= nstars; j++)\n                                \t\t\t{\n                                \t\t\t\tSystem.out.print(&quot;*\t&quot;);\n                                \t\t\t}\n                                \t\t\tnstars--;\n                                \t\t\tSystem.out.println();\n                                \t\t}\n                                \t}\n                                }</pre><p>Abstraction is a very important concept used for understanding how we approach the solution. We wrote the inner loop first, defining its functioning and having complete faith that it will work without failure. Then we nest it inside an outer loop, which uses it according to convenience, having faith that upon giving input to the inner loop, the inner loop will always produce the correct output.</p><p>It is this layered programming methodology, which helped us solve this problem, and this modeling of solution for implementation in the programming language is known as <b>Abstraction</b>.</p>",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/patterns/pattern-type-2-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

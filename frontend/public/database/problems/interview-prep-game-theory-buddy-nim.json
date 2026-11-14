@@ -1,0 +1,25 @@
+{
+  "name": "Buddy Nim",
+  "slug": "interview-prep-game-theory-buddy-nim",
+  "course": "interview-prep",
+  "module": "game-theory",
+  "difficulty": "Medium",
+  "statement": "Three players Alice and Bob and Charlie are playing a game. There are two tables, on the first table, there are N heaps containing A[1],A[2].... A[n] coins, on the second table , there are M heaps containing B[1], B[2]... B[m] coins.\nInitially, Alice is playing at the first table and Bob is playing at the second table. The players take their turns in this order: Charlie, Alice, Bob, Charlie, etc.\nBob and alice in their turn can remove as much coin as they want(min is 1) from any one pile of their respective tables. Whoever cannot remove any stone from a pile loses.\nCharlie does not play at any table. Instead, on his turn, he decides if Alice and Bob should keep playing at their respective tables or swap places.\nAlice and Charlie are buddies and they cooperate, playing in the optimal way that results in Alice's victory (if possible). Find out whether alice will win or bob.",
+  "inputFormat": "The first line contains two space separated integers n and m.\nThe second line contains n space separated integers a[1],a[2]...a[n].\nThe third line contains m space separated integers b[1], b[2]....b[n].",
+  "outputFormat": "Print the winner (ALICE or BOB).",
+  "constraints": "1&lt;= n,m &lt;= 10^5\n1&lt;= A[i] &lt;= 10^8\n1&lt;= B[i] &lt;= 10^8",
+  "sampleInput": "6 7\n24 6 10 56 9 1\n0 6 24 1 9 56 10",
+  "sampleOutput": "BOB",
+  "questionVideo": "KFuNZkNIftc",
+  "solutionVideo": "KFuNZkNIftc",
+  "templates": {
+    "java": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.util.Arrays;\n\npublic class Main {\n\n  public static void main(String[] args) throws NumberFormatException, IOException {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n    int t = 1;\n    StringBuilder sb = new StringBuilder();\n    while (t-- > 0) {\n      String[] st = br.readLine().split(\" \");\n      int n = Integer.parseInt(st[0]);\n      int m = Integer.parseInt(st[1]);\n\n      int[] arr1 = new int[n];\n      int[] arr2 = new int[m];\n\n      st = br.readLine().split(\" \");\n      for (int i = 0; i < n; i++) {\n        arr1[i] = Integer.parseInt(st[i]);\n      }\n      st = br.readLine().split(\" \");\n      for (int i = 0; i < m; i++) {\n        arr2[i] = Integer.parseInt(st[i]);\n      }\n    }\n\n  }\n\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/game-theory/buddy--nim-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

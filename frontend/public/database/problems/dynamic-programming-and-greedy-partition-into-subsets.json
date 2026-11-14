@@ -1,11 +1,27 @@
 {
   "name": "Partition Into Subsets",
   "slug": "dynamic-programming-and-greedy-partition-into-subsets",
-  "description": "1. You are given a number n, representing the number of elements.\n2. You are given a number k, representing the number of subsets.\n3. You are required to print the number of ways in which these elements can be partitioned in k non-empty subsets.\nE.g.\nFor n = 4 and k = 3 total ways is 6\n12-3-4\n1-23-4\n13-2-4\n14-2-3\n1-24-3\n1-2-34\n\n### Input Format\n```\nA number n\nA number k\n```\n\n### Output Format\n```\nA number representing the number of ways in which these elements can be partitioned in k non-empty subsets.\n```\n\n### Constraints\n```\n0 <= n <= 20\n0 <= k <= n\n```\n\n### Sample Input\n```\n4\n3\n```\n\n### Sample Output\n```\n6\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/IiAsqfjhZnY?end=99&rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/IiAsqfjhZnY?start=99&rel=0&loop=1&playlist=IiAsqfjhZnY",
-  "codes": {
-    "java": "import java.io.*;\nimport java.util.*;\npublic class Main {\n        \n    public static long \npartitionKSubset(int n, int \nk) {\n        // write your code \nhere\n    }\n    \n    public static void main\n(String[] args) throws \nException {\n        Scanner scn = new \nScanner(System.in);\n        int n = scn.nextInt\n();\n        int k = scn.nextInt\n();\n        \n        long res = \npartitionKSubset(n, k);\n        System.out.println\n(res);\n    }\n}"
-  }
+  "course": "dsa-fundamentals",
+  "module": "dynamic-programming-and-greedy",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n, representing the number of elements.\n2. You are given a number k, representing the number of subsets.\n3. You are required to print the number of ways in which these elements can be partitioned in k non-empty subsets.\nE.g.\nFor n = 4 and k = 3 total ways is 6\n12-3-4\n1-23-4\n13-2-4\n14-2-3\n1-24-3\n1-2-34",
+  "inputFormat": "A number n\nA number k",
+  "outputFormat": "A number representing the number of ways in which these elements can be partitioned in k non-empty subsets.",
+  "constraints": "0 &lt;= n &lt;= 20\n0 &lt;= k &lt;= n",
+  "sampleInput": "4\n3",
+  "sampleOutput": "6",
+  "questionVideo": "IiAsqfjhZnY",
+  "solutionVideo": "IiAsqfjhZnY",
+  "templates": {
+    "cpp": "def Partition_into_subsets(n, k):\n# write your code here\n  return 0\n\n       if __name__ == '__main__':\n         n = int(input())\n               k = int(input())\n\n                   print(Partition_into_subsets(n, k))",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n        \n    public static long partitionKSubset(int n, int k) {\n        // write your code here\n    }\n    \n    public static void main(String[] args) throws Exception {\n        Scanner scn = new Scanner(System.in);\n        int n = scn.nextInt();\n        int k = scn.nextInt();\n        \n        long res = partitionKSubset(n, k);\n        System.out.println(res);\n    }\n}",
+    "python": "#include <iostream> \n#include <vector>\n\nusing namespace std ;\n\n   int main() {\n      int n ;\n      cin>>n ;\n      int k ;\n      cin>>k ;\n\n     // write your code here\n   }"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/partition-into-subsets-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

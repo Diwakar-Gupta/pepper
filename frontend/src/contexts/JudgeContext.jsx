@@ -1,28 +1,84 @@
-import React, { createContext, useContext, useEffect } from 'react';
-import { useJudgeStatus } from '../hooks/useJudgeStatus';
-import { autoConnectIfStored } from '../repository/judgeRTCApi';
+import React, { createContext, useCallback, useContext, useEffect, useRef, useState } from "react";
+import * as judge from "../lib/judge";
+import { load, mergeProgress, save } from "../lib/storage";
 
-const JudgeContext = createContext();
+/**
+ * Detects the local judge by polling http://127.0.0.1:<port>/health.
+ *
+ * Probing is "activated" lazily (first visit to a problem page, or after the
+ * judge has been seen once) so visitors who never run the judge are not shown
+ * a browser "local network access" prompt on the home page.
+ */
+const JudgeContext = createContext(null);
 
-export const useJudge = () => {
-  const context = useContext(JudgeContext);
-  if (!context) {
-    throw new Error('useJudge must be used within a JudgeProvider');
-  }
-  return context;
-};
+export const useJudge = () => useContext(JudgeContext);
 
-export const JudgeProvider = ({ children }) => {
-  const judgeStatus = useJudgeStatus();
+export function JudgeProvider({ children }) {
+  const [status, setStatus] = useState("idle"); // idle | checking | connected | offline
+  const [info, setInfo] = useState(null);
+  const [active, setActive] = useState(() => Boolean(load("judgeSeen", false)));
+  const timer = useRef(null);
+  const failures = useRef(0);
 
-  // Auto-connect on mount if there's a stored code
-  useEffect(() => {
-    autoConnectIfStored();
+  const check = useCallback(async () => {
+    clearTimeout(timer.current);
+    setStatus((s) => (s === "connected" ? s : "checking"));
+    let ok = false;
+    try {
+      const data = await judge.health();
+      ok = data && data.name === "pepper-judge";
+      if (ok) {
+        setInfo(data);
+        setStatus("connected");
+        failures.current = 0;
+        save("judgeSeen", true);
+        judge.progress().then(mergeProgress).catch(() => {});
+      }
+    } catch {
+      /* not running */
+    }
+    if (!ok) {
+      failures.current++;
+      setInfo(null);
+      setStatus("offline");
+    }
+    // Poll quickly while waiting for the user to start the judge, slower once connected.
+    const delay = ok ? 15000 : Math.min(3000 * failures.current, 15000);
+    timer.current = setTimeout(() => {
+      if (document.visibilityState === "visible") check();
+      else timer.current = setTimeout(check, 30000);
+    }, delay);
   }, []);
 
-  return (
-    <JudgeContext.Provider value={judgeStatus}>
-      {children}
-    </JudgeContext.Provider>
-  );
-}; 
+  useEffect(() => {
+    if (!active) return undefined;
+    check();
+    const onFocus = () => {
+      failures.current = 0;
+      check();
+    };
+    window.addEventListener("focus", onFocus);
+    return () => {
+      clearTimeout(timer.current);
+      window.removeEventListener("focus", onFocus);
+    };
+  }, [active, check]);
+
+  const activate = useCallback(() => setActive(true), []);
+  const recheck = useCallback(() => {
+    failures.current = 0;
+    if (!active) setActive(true);
+    else check();
+  }, [active, check]);
+
+  const value = {
+    status,
+    connected: status === "connected",
+    languages: info ? info.languages : {},
+    version: info ? info.version : null,
+    port: judge.judgePort(),
+    activate,
+    recheck,
+  };
+  return <JudgeContext.Provider value={value}>{children}</JudgeContext.Provider>;
+}

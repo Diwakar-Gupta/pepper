@@ -1,0 +1,27 @@
+{
+  "name": "Breadth First Traversal",
+  "slug": "graphs-breadth-first-traversal",
+  "course": "dsa-fundamentals",
+  "module": "graphs",
+  "difficulty": "Easy",
+  "statement": "1. You are given a graph, and a src vertex.\n2. You are required to do a breadth first traversal and print which vertex is reached via which path, \n     starting from the src.\n\nNote -&gt; for output, check the sample output and question video.",
+  "inputFormat": "Input has been managed for you",
+  "outputFormat": "Check the sample output",
+  "constraints": "None",
+  "sampleInput": "7\n8\n0 1 10\n1 2 10\n2 3 10\n0 3 10\n3 4 10\n4 5 10\n5 6 10\n4 6 10\n2",
+  "sampleOutput": "2@2\n1@21\n3@23\n0@210\n4@234\n5@2345\n6@2346",
+  "questionVideo": "GHnC5qHexsk",
+  "solutionVideo": "GHnC5qHexsk",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\n#include <queue>\n#include<string>\nusing namespace std;\n\nclass Edge\n{\npublic:\n  int src = 0;\n  int nbr = 0;\n\n  Edge(int src, int nbr)\n  {\n    this->src = src;\n    this->nbr = nbr;\n  }\n};\n\n\n\nint main() {\n  int vtces;\n  cin >> vtces;\n  vector<vector<Edge>> graph(vtces, vector<Edge>());\n\n\n  int edges;\n  cin >> edges;\n\n  for (int i = 0; i < edges; i++ ) {\n    int u, v, w;\n    cin >> u >> v >> w;\n    graph[u].push_back(Edge(u, v));\n    graph[v].push_back(Edge(v, u));\n  }\n\n  int src;\n  cin >> src;\n  // write your code here\n\n  return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n   static class Edge {\n      int src;\n      int nbr;\n\n      Edge(int src, int nbr) {\n         this.src = src;\n         this.nbr = nbr;\n      }\n   }\n\n   public static void main(String[] args) throws Exception {\n      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n      int vtces = Integer.parseInt(br.readLine());\n      ArrayList<Edge>[] graph = new ArrayList[vtces];\n      for (int i = 0; i < vtces; i++) {\n         graph[i] = new ArrayList<>();\n      }\n\n      int edges = Integer.parseInt(br.readLine());\n      for (int i = 0; i < edges; i++) {\n         String[] parts = br.readLine().split(\" \");\n         int v1 = Integer.parseInt(parts[0]);\n         int v2 = Integer.parseInt(parts[1]);\n         graph[v1].add(new Edge(v1, v2));\n         graph[v2].add(new Edge(v2, v1));\n      }\n\n      int src = Integer.parseInt(br.readLine());\n\n      // write your code here  \n   }\n}",
+    "python": "class Edge:\n  def __init__(self, src, nbr):\n    self.src = src\n               self.nbr = nbr\n\n\n                          def main():\n                          vtces = int(input())\n                                  edges = int(input())\n                                          graph = {}\nfor i in range(vtces) :\n    graph[i] = []\n\n               for i in range(edges) :\n                 lines = input().split(\" \")\n                         v1 = int(lines[0])\n                              v2 = int(lines[1])\n                                   e1 = Edge(v1, v2)\n                                        e2 = Edge(v2, v1)\n                                             graph[e1.src].append(e1)\n                                             graph[e2.src].append(e2)\n\n                                             src = int(input())\n#write your code here\n\n                                           if __name__ == \"__main__\":\n                                                 main()\n"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/graphs/bfs-graph-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,49 +1,59 @@
 {
   "name": "Grading System",
   "slug": "getting-started-grading-system",
-  "description": "1. You are given as input marks of a student.\n2. Display an appropriate message based on the following rules:\n  \t  2.1 for marks above 90, print excellent.\n  \t  2.2 for marks above 80 and less than equal to 90, print good.\n  \t  2.3 for marks above 70 and less than equal to 80, print fair.\n  \t  2.4 for marks above 60 and less than equal to 70, print meets expectations.\n  \t  2.5 for marks less than equal to 60, print below par.\n\nNote -> Only change the code in area after - // code here\n\n### Input Format\n```\nInput is handled for you and provided as variable marks\n```\n\n### Output Format\n```\nAppropriate message as per student's marks\n```\n\n### Constraints\n```\nNo constraints\n```\n\n### Sample Input\n```\n92\n```\n\n### Sample Output\n```\nexcellent\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/zCC3QcXKM3o?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/AHuh0LDSsUY?rel=0&loop=1&playlist=AHuh0LDSsUY",
-  "codes": {
-    "java": "import java\n.util.*;\npublic class \nMain {\n  public \nstatic void \nmain(String[\n] args) {\n    // input \n- don't \nchange this \ncode\n    Scanner \nscn = new \nScanner\n(System.in);\n    int \nmarks = scn\n.nextInt();\n    // input \n- don't \nchange this \ncode\n    // code \nhere\n  }\n}"
+  "course": "dsa-fundamentals",
+  "module": "getting-started",
+  "difficulty": "Easy",
+  "statement": "1. You are given as input marks of a student.\n2. Display an appropriate message based on the following rules:\n  \t  2.1 for marks above 90, print excellent.\n  \t  2.2 for marks above 80 and less than equal to 90, print good.\n  \t  2.3 for marks above 70 and less than equal to 80, print fair.\n  \t  2.4 for marks above 60 and less than equal to 70, print meets expectations.\n  \t  2.5 for marks less than equal to 60, print below par.\n\nNote -&gt; Only change the code in area after - // code here",
+  "inputFormat": "Input is handled for you and provided as variable marks",
+  "outputFormat": "Appropriate message as per student's marks",
+  "constraints": "No constraints",
+  "sampleInput": "92",
+  "sampleOutput": "excellent",
+  "questionVideo": "zCC3QcXKM3o",
+  "solutionVideo": "AHuh0LDSsUY",
+  "templates": {
+    "cpp": "#include<iostream>\nusing namespace std;\nint main(int argc, char**argv){\n    int marks;\n    cin>>marks;\n    \n    //write your code here\n    \n}",
+    "java": "import java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args) {\n    // input - don't change this code\n    Scanner scn = new Scanner(System.in);\n    int marks = scn.nextInt();\n    // input - don't change this code\n\n    // code here\n  }\n}"
   },
-    "testCases": [
-      {
-          "input": "testcaseinput1.txt",
-          "output": "testcaseoutput1.txt"
-      },
-      {
-          "input": "testcaseinput2.txt",
-          "output": "testcaseoutput2.txt"
-      },
-      {
-          "input": "testcaseinput3.txt",
-          "output": "testcaseoutput3.txt"
-      },
-      {
-          "input": "testcaseinput4.txt",
-          "output": "testcaseoutput4.txt"
-      },
-      {
-          "input": "testcaseinput5.txt",
-          "output": "testcaseoutput5.txt"
-      },
-      {
-          "input": "testcaseinput6.txt",
-          "output": "testcaseoutput6.txt"
-      },
-      {
-          "input": "testcaseinput7.txt",
-          "output": "testcaseoutput7.txt"
-      },
-      {
-          "input": "testcaseinput8.txt",
-          "output": "testcaseoutput8.txt"
-      },
-      {
-          "input": "testcaseinput9.txt",
-          "output": "testcaseoutput9.txt"
-      }
+  "editorial": "<p><i>&quot;What makes a child gifted and talented may not be good grades in school, but a different way of looking at the world and learning!&quot;</i></p><p><b><u>Question:</u></b></p><p>1. You are given as input marks of a student.</p><p>2. Display an appropriate message based on the following rules:</p><p> 2.1 for marks above 90 print excellent.</p><p> 2.2 for marks above 80 and less than equal to 90 print good.</p><p> 2.3 for marks above 70 and less than equal to 80, print fair.</p><p> 2.4 for marks above 60 and less than equal to 70, print meets expectations.</p><p> 2.5 for marks less than equal to 60, print below par.</p><p><b><u>Input format:</u></b></p><p>Input is handled for you and provided as variable marks</p><p><b><u>Output format:</u></b><b><u></u></b></p><p>Appropriate message as per student's marks</p><p><b><u>Constraints:</u></b></p><p>No Constraints</p><p><b><u>Given code segment to be completed:</u></b></p><pre>import java.util.*;\n                                public class Main {\n                                \tpublic static void main(String[] args) {\n                                \t\t// input - don't change this code\n                                \t\tScanner scn = new Scanner(System.in);\n                                \t\tint marks = scn.nextInt();\n                                \t\t// input - don't change this code\n                                \n                                \t\t// code here\n                                \t}\n                                \n                                }</pre><p>This is a classical conditional problem where the output is dependent on the conditions that are placed on the user input.</p><p>In programming, conditional problems are solved using an if-else-then method or a switch case method. But here, we use the if-then-else methodology to find the solution to the given problem.</p><p>An if-else-then problem is tackled on the basis of the given conditions and the instructions that are to be executed on the basis of these conditions:</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/ebe14152a0995f97.png\" alt=\"\"><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"></p><p>The condition first meets an <b>IF-block </b>which compares the condition or required parameters accordingly and on the basis of the result of that comparison, instructions as to what to follow are written in that if block.</p><p>If the conditions are not met or the comparison turns out to be false in nature, the program flow ignores the &quot;if block&quot; entirely and moves onto the next program lines.</p><p>Now, after this, we provide either an else-if block for further comparison or write an else block which basically means as to what the program is supposed to do if or when the comparison in the if-block done turns out to be false.</p><p>The else-if block further makes a comparison according to the parameters provided to it and works like an if-block only.</p><p>But the else block does not require any comparisons or comparing conditions.</p><p>It executes its instructions only if the &quot;if block&quot; comparison comes out false, else it is disregarded completely in a similar fashion as to how if-block instructions are ignored when the if condition comes out false.</p><pre>//Syntax-wise if-else-then methodology\n                                \n                                if (some conditional comparison) { // like x == 5\n                                    // Instructions to be executed if the conditional comparison met is true\n                                } else if (some comparison) { // x == 7\n                                    // Instructions to be executed\n                                } else { // No comparison required here\n                                    //Instructions to be executed if the above two come out false\n                                }</pre><p>So this is how the if-else-then methodology is implemented in java.</p><p>Now we move forward to our problem at hand and chalk out a well-designed algorithm to be followed up by programming.</p><p>The problem-solving approach for the given problem will be as illustrated:</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/04dc401d860fcd89.png\" alt=\"\"></p><p>Now we have to fuse the above algorithm with the governing laws of our programming language (Java here) for the completion of the required code:</p><pre>import java.util.*;\n                                public class Main {\n                                    public static void main(String[] args) {\n                                        Scanner scn = new Scanner(System.in);\n                                        int marks = scn.nextInt();\n                                        if (marks &gt; 90) {\n                                            System.out.print(&quot;excellent&quot;);\n                                        } else if (marks &gt; 80 &amp;&amp; marks &lt;= 90) {\n                                            System.out.print(&quot;good&quot;);\n                                        } else if (marks &gt; 70 &amp;&amp; marks &lt;= 80) {\n                                            System.out.print(&quot;fair&quot;);\n                                        } else if (marks &gt; 60 &amp;&amp; marks &lt;= 70) {\n                                            System.out.print(&quot;meets expectations&quot;);\n                                        } else {\n                                            System.out.print(&quot;below par&quot;);\n                                        }\n                                    }\n                                }</pre>",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/getting-started/grading-system-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    },
+    {
+      "input": "testcaseinput2.txt",
+      "output": "testcaseoutput2.txt"
+    },
+    {
+      "input": "testcaseinput3.txt",
+      "output": "testcaseoutput3.txt"
+    },
+    {
+      "input": "testcaseinput4.txt",
+      "output": "testcaseoutput4.txt"
+    },
+    {
+      "input": "testcaseinput5.txt",
+      "output": "testcaseoutput5.txt"
+    },
+    {
+      "input": "testcaseinput6.txt",
+      "output": "testcaseoutput6.txt"
+    },
+    {
+      "input": "testcaseinput7.txt",
+      "output": "testcaseoutput7.txt"
+    },
+    {
+      "input": "testcaseinput8.txt",
+      "output": "testcaseoutput8.txt"
+    },
+    {
+      "input": "testcaseinput9.txt",
+      "output": "testcaseoutput9.txt"
+    }
   ]
 }

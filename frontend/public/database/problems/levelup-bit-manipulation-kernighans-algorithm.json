@@ -1,0 +1,26 @@
+{
+  "name": "Kernighans Algorithm",
+  "slug": "levelup-bit-manipulation-kernighans-algorithm",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n.\n2. You have to count the number of set bits in the given number.",
+  "inputFormat": "A number n",
+  "outputFormat": "Number of set bits in n",
+  "constraints": "1 &lt;= n &lt;= 10^9",
+  "sampleInput": "58",
+  "sampleOutput": "4",
+  "questionVideo": "I475waWiTK4",
+  "solutionVideo": "I475waWiTK4",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args){\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    \n    //write your code here\n  }\n\n}"
+  },
+  "editorial": "<p>The problem here deals with counting the number of set bits present in the given input number. For example, n = 58 =&gt; [ 1 1 1 0 1 0 ] then the output should be 4.</p><p>There can be many approaches to solve the problem, one of them can be to traverse over the entire 32 bits and count the number of set bits by making the mask for every bit and checking for is the bit set or not. This would have a time complexity of 32 * constant.</p><p>This can be further optimized by using <b>Kernighans Algorithm</b> which makes use of an RSB mask. So with every iteration, we calculate the RSB mask of the number and then subtract it from the number until the number becomes zero. In this way, we have a time complexity of k * constant where k is the number of set bits in n. Hence in this algorithm our code <b>jumps over set bits from right to left</b> to count the set bits.</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/fd90de6bcae77f49.png\" alt=\"\"></p><p> <b><u>Time Complexity: O(k)</u></b></p><p>The time complexity for the function is nearly constant proportional to the number of set bits.</p><p><b><u>Space Complexity: O(1)</u></b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/kernighans-algo-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

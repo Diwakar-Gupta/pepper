@@ -1,0 +1,23 @@
+{
+  "name": "Rpd And Rap Sheet",
+  "slug": "interview-prep-interactive-problems-rpd-and-rap-sheet",
+  "course": "interview-prep",
+  "module": "interactive-problems",
+  "difficulty": "Medium",
+  "statement": "https://codeforces.com/problemset/problem/1543/D1",
+  "inputFormat": "Check the link",
+  "outputFormat": "Check the link",
+  "constraints": "Check the link",
+  "sampleInput": "Check the link",
+  "sampleOutput": "Check the link",
+  "questionVideo": "zBhypEu5XCU",
+  "solutionVideo": "zBhypEu5XCU",
+  "templates": {},
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/interactive-problems/rpd-and-rap-sheet-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

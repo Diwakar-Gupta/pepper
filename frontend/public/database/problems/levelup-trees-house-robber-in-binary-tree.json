@@ -1,0 +1,26 @@
+{
+  "name": "House Robber In Binary Tree",
+  "slug": "levelup-trees-house-robber-in-binary-tree",
+  "course": "levelup",
+  "module": "trees",
+  "difficulty": "Easy",
+  "statement": "1. You are given a partially written function to solve.\n2. The thief has found himself a new place for his thievery again. There is only one entrance to this area, called the &quot;root.&quot; Besides the root, each house has one and only one parent house. After a tour, the smart thief realized that &quot;all houses in this place forms a binary tree&quot;. \nIt will automatically contact the police if two directly-linked houses were broken into on the same night.\nDetermine the maximum amount of money the thief can rob tonight without alerting the police.\n3. Input and Output is managed for you.",
+  "inputFormat": "Input is managed for you.",
+  "outputFormat": "Output is managed for you.",
+  "constraints": "0 &lt;= Number of Nodes &lt;= 10^9\n-10^9 &lt;= value of Node data &lt;= 10^9",
+  "sampleInput": "15\n1\n1\n-1\n1\n1\n-1\n1\n-1\n-1\n1\n-1\n-1\n1\n-1\n-1",
+  "sampleOutput": "4",
+  "questionVideo": "kTL5LhCTL1c",
+  "solutionVideo": "kTL5LhCTL1c",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nclass TreeNode\n{\npublic:\n    int val = 0;\n    TreeNode *left = nullptr;\n    TreeNode *right = nullptr;\n\n    TreeNode(int val)\n    {\n        this->val = val;\n    }\n};\n\nint HouseRobber(TreeNode *root)\n{\n    return 0;\n}\n\n// input_Section_====================================================================\n\nTreeNode *createTree(vector<int> &arr, vector<int> &IDX)\n{\n    if (IDX[0] > arr.size() || arr[IDX[0]] == -1)\n    {\n        IDX[0]++;\n        return nullptr;\n    }\n\n    TreeNode *node = new TreeNode(arr[IDX[0]++]);\n    node->left = createTree(arr, IDX);\n    node->right = createTree(arr, IDX);\n\n    return node;\n}\n\nvoid solve()\n{\n    int n;\n    cin >> n;\n    vector<int> arr(n, 0);\n    for (int i = 0; i < n; i++)\n    {\n        cin >> arr[i];\n    }\n\n    vector<int> IDX(1, 0);\n    TreeNode *root = createTree(arr, IDX);\n    cout << HouseRobber(root) << endl;\n}\n\nint main()\n{\n    solve();\n    return 0;\n}",
+    "java": "import java.util.Scanner;\n\npublic class Main {\n    public static Scanner scn = new Scanner(System.in);\n\n    public static class TreeNode {\n        int val = 0;\n        TreeNode left = null;\n        TreeNode right = null;\n\n        TreeNode(int val) {\n            this.val = val;\n        }\n    }\n\n    public static int HouseRobber(TreeNode root) {\n        return 0;\n    }\n\n    // input_Section_====================================================================\n\n    public static TreeNode createTree(int[] arr, int[] IDX) {\n        if (IDX[0] > arr.length || arr[IDX[0]] == -1){\n            IDX[0]++;\n            return null;\n        }\n\n        TreeNode node = new TreeNode(arr[IDX[0]++]);\n        node.left = createTree(arr, IDX);\n        node.right = createTree(arr, IDX);\n\n        return node;\n    }\n\n    public static void solve() {\n        int n = scn.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++)\n            arr[i] = scn.nextInt();\n\n        int[] IDX = new int[1];\n        TreeNode root = createTree(arr, IDX);\n        System.out.println(HouseRobber(root));\n    }\n\n    public static void main(String[] args) {\n        solve();\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/levelup_house-robber-in-binary-tree/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

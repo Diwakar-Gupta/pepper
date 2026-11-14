@@ -1,0 +1,25 @@
+{
+  "name": "All Factors Using Sieve",
+  "slug": "interview-prep-number-theory-all-factors-using-sieve",
+  "course": "interview-prep",
+  "module": "number-theory",
+  "difficulty": "Medium",
+  "statement": "Given t test cases and in each test case you have a positive integer n, we have to find the total number of divisors for n.",
+  "inputFormat": "The first line of input contains integer t.\nThe next t lines of the input contains integer n.",
+  "outputFormat": "Print number of divisors in a line for each test case.",
+  "constraints": "1 &lt;= t &lt;= 1000\n1 &lt;= n &lt;= 10^5",
+  "sampleInput": "10\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30",
+  "sampleOutput": "4\n4\n2\n8\n3\n4\n4\n6\n2\n8",
+  "questionVideo": "xs82BW7IlEw",
+  "solutionVideo": "xs82BW7IlEw",
+  "templates": {
+    "java": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.util.ArrayList;\n\npublic class Main {\n\n\n  public static void main(String[] args) throws NumberFormatException, IOException {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/number-theory/al--factors-using-sieve-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

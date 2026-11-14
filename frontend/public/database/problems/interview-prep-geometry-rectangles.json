@@ -1,0 +1,25 @@
+{
+  "name": "Rectangles",
+  "slug": "interview-prep-geometry-rectangles",
+  "course": "interview-prep",
+  "module": "geometry",
+  "difficulty": "Easy",
+  "statement": "<a href=\"https://codeforces.com/contest/1028/problem/C\" target=\"_blank\" rel=\"noopener\">https://codeforces.com/contest/1028/problem/C</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "5\n0 0 10 8\n1 2 6 7\n2 3 5 6\n3 4 4 5\n8 1 9 2",
+  "sampleOutput": "3 4",
+  "questionVideo": "OO1Povuwfh8",
+  "solutionVideo": "OO1Povuwfh8",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args) throws Exception {\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/geometry/rectangles/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

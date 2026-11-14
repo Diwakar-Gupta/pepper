@@ -1,0 +1,26 @@
+{
+  "name": "Permutation - 1",
+  "slug": "levelup-recursion-and-backtracking-permutation-1",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Easy",
+  "statement": "1. You are give a number of boxes (nboxes) and number of non-identical items (ritems).\n2. You are required to place the items in those boxes and print all such configurations possible.\n\nItems are numbered from 1 to ritems.\nNote 1 -&gt; Number of boxes is greater than number of items, hence some of the boxes may remain empty.\nNote 2 -&gt; Check out the question video and write the recursive code as it is intended without changing signature. The judge can't \n                   force you but intends you to teach a concept.",
+  "inputFormat": "Input is managed for you",
+  "outputFormat": "Check the sample ouput and question video. 0 means empty box.",
+  "constraints": "0 &lt; nboxes &lt;= 10\n0 &lt;= ritems &lt;= nboxes",
+  "sampleInput": "5\n3",
+  "sampleOutput": "12300\n12030\n12003\n13200\n10230\n10203\n13020\n10320\n10023\n13002\n10302\n10032\n21300\n21030\n21003\n31200\n01230\n01203\n31020\n01320\n01023\n31002\n01302\n01032\n23100\n20130\n20103\n32100\n02130\n02103\n30120\n03120\n00123\n30102\n03102\n00132\n23010\n20310\n20013\n32010\n02310\n02013\n30210\n03210\n00213\n30012\n03012\n00312\n23001\n20301\n20031\n32001\n02301\n02031\n30201\n03201\n00231\n30021\n03021\n00321",
+  "questionVideo": "QKkHCS5bq0I",
+  "solutionVideo": "QKkHCS5bq0I",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void permutations(int[] boxes, int ci, int ti){\n    // write your code here\n  }\n\n  public static void main(String[] args) throws Exception {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n    int nboxes = Integer.parseInt(br.readLine());\n    int ritems = Integer.parseInt(br.readLine());\n    permutations(new int[nboxes], 1, ritems);\n  }\n\n}"
+  },
+  "editorial": "<p>The number of ways to arrange r items in n boxes is nPr. The ith item (1 &lt;= i &lt;=r) will be kept at level. The options will be to place the ith item in all empty boxes one by one and call the recursive function for the next level. When the number of items will be equal to the r, print the answer and return.</p><p><b><u>Signature -</u></b></p><p>public static void permutations(int[] boxes, int ci, int ti)</p><p>boxes - array to store which box stores which item</p><p>ci - current item.</p><p>ri - total items.</p><p><b><u>Code -</u></b> </p><pre><b>public static void permutations(int[] boxes, int ci, int ti) {</b>\n                                        if (ci &gt; ti) { // ci = 1 intitially\n                                            for (int i = 0; i &lt; boxes.length; i++) {\n                                                System.out.print(boxes[i]);\n                                            }\n                                            System.out.println();\n                                            return;\n                                        }\n                                        for (int i = 0; i &lt; boxes.length; i++) {\n                                            if (boxes[i] == 0) {\n                                                boxes[i] = ci;\n                                                permutations(boxes, ci + 1, ti);\n                                                boxes[i] = 0;\n                                            }\n                                        }\n                                    }</pre><p>At each level iterate through the boxes array and check which box is empty. If it is empty, place the current item in that box in pre-order, make a recursive call and increase the current item. In post - order, empty that box so it can be used again. When the current item is more than the total item, base case is reached.</p><p><b><u>Base Case -</u></b></p><p>When the current item is more than the total item, it means all the items are placed, print the array and return.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/permutation-i-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

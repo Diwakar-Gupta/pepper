@@ -1,0 +1,25 @@
+{
+  "name": "Longest Palindromic Subsequences",
+  "slug": "levelup-dynamic-programming-longest-palindromic-subsequences",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given a string str.\n2. You are required to print the length of longest palindromic subsequence of string str.",
+  "inputFormat": "A string str",
+  "outputFormat": "A number representing the length of longest palindromic subsequence of string str.",
+  "constraints": "0 &lt;= str.length &lt;= 10",
+  "sampleInput": "abcgackbc",
+  "sampleOutput": "5",
+  "questionVideo": "RiNzHfoA2Lo",
+  "solutionVideo": "RiNzHfoA2Lo",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n    }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/lps-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

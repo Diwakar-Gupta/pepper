@@ -1,0 +1,25 @@
+{
+  "name": "Distinct Transformations",
+  "slug": "levelup-dynamic-programming-distinct-transformations",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given two strings S1 and S2.\n2. You have to find the number of unique ways in which you can transform S1 to S2.\n3. Transformation can be achieved by removing 0 or more characters from S1, such that the sequence formed by the remaining characters of S1 is identical to S2.",
+  "inputFormat": "Two Strings S1 and S2",
+  "outputFormat": "A number representing the count of distinct transformations.",
+  "constraints": "1 &lt;= length of strings S1 and S2 &lt;= 1000",
+  "sampleInput": "abcccdf\nabccdf",
+  "sampleOutput": "3",
+  "questionVideo": null,
+  "solutionVideo": null,
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int solution(String s, String t) {\n\t\t// write your code here\n\n\t\treturn 0;\n\t}\n\t\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tString s1 = scn.next();\n\t\tString s2 = scn.next();\n\t\tSystem.out.println(solution(s1, s2));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/distinct-transformations-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

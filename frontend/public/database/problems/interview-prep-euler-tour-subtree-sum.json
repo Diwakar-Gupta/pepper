@@ -1,0 +1,25 @@
+{
+  "name": "Subtree Sum",
+  "slug": "interview-prep-euler-tour-subtree-sum",
+  "course": "interview-prep",
+  "module": "euler-tour",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://cses.fi/problemset/task/1137/\" target=\"_blank\" rel=\"noopener\">https://cses.fi/problemset/task/1137/</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "5 3\n4 2 5 2 1\n1 2\n1 3\n3 4\n3 5\n2 3\n1 5 3\n2 3",
+  "sampleOutput": "8\n10",
+  "questionVideo": "MfAEfhyD1oM",
+  "solutionVideo": "MfAEfhyD1oM",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n  static InputReader in = new InputReader(System.in);\n  static PrintWriter out = new PrintWriter(System.out);\n  /*\n  input_functions in.nextInt();     in.nextIntArray(n);      in.nextIntArray1(n);\n  output_functions out.println();    out.print();\n  */\n\n\n  public static void main(String[] args) throws IOException {\n\n    // write your code here.\n\n\n    out.close();\n  }\n\n  private static class InputReader implements AutoCloseable {\n\n    private static final int DEFAULT_BUFFER_SIZE = 1 << 16;\n\n\n    private static final InputStream DEFAULT_STREAM = System.in;\n\n    private static final int MAX_DECIMAL_PRECISION = 21;\n\n    private int c;\n\n    private final byte[] buf;\n    private final int bufferSize;\n    private int bufIndex;\n    private int numBytesRead;\n\n    private final InputStream stream;\n\n    private static final byte EOF = -1;\n\n    private static final byte NEW_LINE = 10;\n\n    private static final byte SPACE = 32;\n\n    private static final byte DASH = 45;\n\n    private static final byte DOT = 46;\n    private char[] charBuffer;\n    private static final byte[] bytes = new byte[58];\n    private static final int[] ints = new int[58];\n    private static final char[] chars = new char[128];\n\n    static {\n      char ch = ' ';\n      int value = 0;\n      byte _byte = 0;\n      for (int i = 48; i < 58; i++)\n        bytes[i] = _byte++;\n      for (int i = 48; i < 58; i++)\n        ints[i] = value++;\n      for (int i = 32; i < 128; i++)\n        chars[i] = ch++;\n    }\n\n    public InputReader() {\n      this(DEFAULT_STREAM, DEFAULT_BUFFER_SIZE);\n    }\n    public InputReader(int bufferSize) {\n      this(DEFAULT_STREAM, bufferSize);\n    }\n    public InputReader(InputStream stream) {\n      this(stream, DEFAULT_BUFFER_SIZE);\n    }\n    public InputReader(InputStream stream, int bufferSize) {\n      if (stream == null || bufferSize <= 0)\n        throw new IllegalArgumentException();\n      buf = new byte[bufferSize];\n      charBuffer = new char[128];\n      this.bufferSize = bufferSize;\n      this.stream = stream;\n    }\n    private byte read() throws IOException {\n\n      if (numBytesRead == EOF)\n        throw new IOException();\n\n      if (bufIndex >= numBytesRead) {\n        bufIndex = 0;\n        numBytesRead = stream.read(buf);\n        if (numBytesRead == EOF)\n          return EOF;\n      }\n\n      return buf[bufIndex++];\n    }\n    private int readJunk(int token) throws IOException {\n\n      if (numBytesRead == EOF)\n        return EOF;\n      do {\n\n        while (bufIndex < numBytesRead) {\n          if (buf[bufIndex] > token)\n            return 0;\n          bufIndex++;\n        }\n        numBytesRead = stream.read(buf);\n        if (numBytesRead == EOF)\n          return EOF;\n        bufIndex = 0;\n\n      } while (true);\n\n    }\n    public byte nextByte() throws IOException {\n      return (byte) nextInt();\n    }\n    public int nextInt() throws IOException {\n\n      if (readJunk(DASH - 1) == EOF)\n        throw new IOException();\n      int sgn = 1, res = 0;\n\n      c = buf[bufIndex];\n      if (c == DASH) {\n        sgn = -1;\n        bufIndex++;\n      }\n\n      do {\n\n        while (bufIndex < numBytesRead) {\n          if (buf[bufIndex] > SPACE) {\n            res = (res << 3) + (res << 1);\n            res += ints[buf[bufIndex++]];\n          } else {\n            bufIndex++;\n            return res * sgn;\n          }\n        }\n        numBytesRead = stream.read(buf);\n        if (numBytesRead == EOF)\n          return res * sgn;\n        bufIndex = 0;\n\n      } while (true);\n\n    }\n    public int[] nextIntArray(int n) throws IOException {\n      int[] ar = new int[n];\n      for (int i = 0; i < n; i++)\n        ar[i] = nextInt();\n      return ar;\n    }\n    public int[] nextIntArray1(int n) throws IOException {\n      int[] ar = new int[n + 1];\n      for (int i = 1; i <= n; i++)\n        ar[i] = nextInt();\n      return ar;\n    }\n    public void close() throws IOException {\n      stream.close();\n    }\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/euler-tour/subtree-sum/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

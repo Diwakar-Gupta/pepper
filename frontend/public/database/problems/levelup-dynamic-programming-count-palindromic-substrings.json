@@ -1,0 +1,25 @@
+{
+  "name": "Count Palindromic Substrings",
+  "slug": "levelup-dynamic-programming-count-palindromic-substrings",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given a string str.\n2. You are required to print the count of palindromic substrings in string str.",
+  "inputFormat": "A string str",
+  "outputFormat": "A number representing the count of palindromic substrings in string str.",
+  "constraints": "0 &lt;= str.length &lt;= 10",
+  "sampleInput": "abccbc",
+  "sampleOutput": "9",
+  "questionVideo": "XmSOWnL6T_I",
+  "solutionVideo": "XmSOWnL6T_I",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n    }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/cpss-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

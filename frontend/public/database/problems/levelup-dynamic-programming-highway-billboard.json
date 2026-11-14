@@ -1,0 +1,25 @@
+{
+  "name": "Highway Billboard",
+  "slug": "levelup-dynamic-programming-highway-billboard",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number M representing length of highway(range).\n2. You are given a number N representing number of bill boards.\n3. You are given N space separated numbers representing (P)position of bill-boards.\n4. You are given N space separated numbers representing (R)revenue corresponding to each (P)position.\n5. You are given a number T such that bill-boards can only be placed after specific distance(T).\n6. Find the maximum revenue that can be generated.",
+  "inputFormat": "A number M(length of highway)\nA number N(number of bill boards)\nP1 ,P2 ,P3 ,P4 ,P5 .... Pn (placement of N bill-boards)\nR1 ,R2 ,R3 ,R4 ,R5 .... Rn (revenue from each bill-board)\nA number T (neccessary distance b/w two bill-board)",
+  "outputFormat": "Find the maximum revenue that can be generated.\nCheck the sample output and question video.",
+  "constraints": "1 &lt;= M &lt;= 100000\n1 &lt;= N &lt;= 50000\n1 &lt;= Pi &lt;= M\n1 &lt;= Ri &lt;= 100\n1 &lt;= T",
+  "sampleInput": "20\n5\n6 7 12 14 15\n5 8 5 3 1\n5",
+  "sampleOutput": "11",
+  "questionVideo": "SiGqwJOvflE",
+  "solutionVideo": "SiGqwJOvflE",
+  "templates": {
+    "java": "import java.util.Scanner;\npublic class Main{\n    public static int solution(int m , int[] x, int[] rev, int t) {\n        // write your code here\n        return -1;\n    }\n    public static void input(int []arr,Scanner scn){\n        for(int i = 0;i<arr.length;i++){\n            arr[i] = scn.nextInt();\n        }\n    }\n    public static void main(String []args){\n        Scanner scn = new Scanner(System.in);   \n        int m = scn.nextInt();\n        int n = scn.nextInt();\n        \n        int x[] = new int[n];\n        input(x, scn);\n\n        int revenue[] = new int[n];\n        input(revenue,scn);\n\n        int t = scn.nextInt();\n\n        System.out.println(solution(m, x, revenue, t));\n        scn.close();\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/highway-billboard-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

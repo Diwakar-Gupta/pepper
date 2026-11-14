@@ -1,47 +1,149 @@
 {
-  "categorys": [
-    {
-      "name": "Class Videos",
-      "topics": [{ "name": "Demo Classes", "slug": "demo-classes" }]
-    },
-    { "name": "Data Structures", "topics": [] },
+  "name": "Level 3: Interview Preparation",
+  "slug": "interview-prep",
+  "description": "For interview preparation: company-style problems across every major topic.",
+  "duration": "3 months",
+  "counts": {
+    "problems": 202,
+    "articles": 12,
+    "videos": 0
+  },
+  "categories": [
     {
       "name": "Competitive",
-      "topics": [
-        { "name": "Number Theory", "slug": "number-theory" },
-        { "name": "Game Theory", "slug": "game-theory" },
-        { "name": "Text Processing", "slug": "text-processing" },
-        { "name": "Maths", "slug": "maths" },
-        { "name": "Constructive algorithm", "slug": "constructive-algorithm" },
-        { "name": "Range Queries", "slug": "range-queries" },
-        { "name": "Segment Tree", "slug": "segment-tree" },
-        { "name": "Binary Lifting", "slug": "binary-lifting" },
-        { "name": "Euler Tour", "slug": "euler-tour" },
+      "modules": [
         {
-          "name": "Heavy Light Decomposition",
-          "slug": "heavy-light-decomposition"
+          "name": "Number Theory",
+          "slug": "number-theory",
+          "counts": {
+            "problems": 16,
+            "articles": 0,
+            "videos": 0
+          }
         },
-        { "name": "Interactive problems", "slug": "interactive-problems" },
-        { "name": "Geometry", "slug": "geometry" },
-        { "name": "Ternary Search", "slug": "ternary-search" },
-        { "name": "Digit DP", "slug": "digit-dp" }
+        {
+          "name": "Game Theory",
+          "slug": "game-theory",
+          "counts": {
+            "problems": 28,
+            "articles": 0,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Text Processing",
+          "slug": "text-processing",
+          "counts": {
+            "problems": 40,
+            "articles": 0,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Maths",
+          "slug": "maths",
+          "counts": {
+            "problems": 2,
+            "articles": 0,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Constructive algorithm",
+          "slug": "constructive-algorithm",
+          "counts": {
+            "problems": 38,
+            "articles": 0,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Range Queries",
+          "slug": "range-queries",
+          "counts": {
+            "problems": 8,
+            "articles": 0,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Segment Tree",
+          "slug": "segment-tree",
+          "counts": {
+            "problems": 18,
+            "articles": 0,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Binary Lifting",
+          "slug": "binary-lifting",
+          "counts": {
+            "problems": 6,
+            "articles": 0,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Euler Tour",
+          "slug": "euler-tour",
+          "counts": {
+            "problems": 4,
+            "articles": 0,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Interactive problems",
+          "slug": "interactive-problems",
+          "counts": {
+            "problems": 19,
+            "articles": 0,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Geometry",
+          "slug": "geometry",
+          "counts": {
+            "problems": 12,
+            "articles": 0,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Ternary Search",
+          "slug": "ternary-search",
+          "counts": {
+            "problems": 9,
+            "articles": 0,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Digit DP",
+          "slug": "digit-dp",
+          "counts": {
+            "problems": 2,
+            "articles": 0,
+            "videos": 0
+          }
+        }
       ]
     },
-    { "name": "Arrays and Strings", "topics": [] },
     {
       "name": "Core",
-      "topics": [
-        { "name": "Operating Systems", "slug": "operating-systems" },
-        { "name": "DBMS", "slug": "dbms" }
-      ]
-    },
-    { "name": "Design", "topics": [] },
-    {
-      "name": "Projects",
-      "topics": [
-        { "name": "Data Structure Based", "slug": "data-structure-based" }
+      "modules": [
+        {
+          "name": "DBMS",
+          "slug": "dbms",
+          "counts": {
+            "problems": 0,
+            "articles": 12,
+            "videos": 0
+          }
+        }
       ]
     }
-  ],
-  "slug": "data-structures-and-algorithms-in-java-interview-prep"
+  ]
 }

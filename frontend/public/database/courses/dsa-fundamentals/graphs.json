@@ -1,87 +1,197 @@
-[
-  {
-    "type": "Code",
-    "slug": "has-path-easy",
-    "name": "Has Path? Easy"
+{
+  "name": "Graphs",
+  "slug": "graphs",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 9,
+    "articles": 12,
+    "videos": 1
   },
-  {
-    "type": "Code",
-    "slug": "print-all-paths-easy",
-    "name": "Print All Paths Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "multisolver-smallest-longest-ceil-floor-kthlargest-path-easy",
-    "name": "Multisolver - Smallest, Longest, Ceil, Floor, Kthlargest Path Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "get-connected-components-of-a-graph-easy",
-    "name": "Get Connected Components Of A Graph Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "is-graph-connected-easy",
-    "name": "Is Graph Connected Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "number-of-islands-easy",
-    "name": "Number Of Islands Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "perfect-friends-easy",
-    "name": "Perfect Friends Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "hamiltonian-path-and-cycle-easy",
-    "name": "Hamiltonian Path And Cycle Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "knights-tour-easy",
-    "name": "Knights Tour Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "breadth-first-traversal-easy",
-    "name": "Breadth First Traversal Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "is-graph-cyclic-easy",
-    "name": "Is Graph Cyclic Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "is-graph-bipartite-easy",
-    "name": "Is Graph Bipartite Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "spread-of-infection-easy",
-    "name": "Spread Of Infection Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "shortest-path-in-weights-easy",
-    "name": "Shortest Path In Weights Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "minimum-wire-required-to-connect-all-pcs-easy",
-    "name": "Minimum Wire Required To Connect All Pcs Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "order-of-compilation-easy",
-    "name": "Order Of Compilation Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "iterative-depth-first-traversal-easy",
-    "name": "Iterative Depth First Traversal Easy"
-  }
-]
+  "items": [
+    {
+      "type": "video",
+      "slug": "graphs-introduction-to-graphs-and-its-representation",
+      "name": "Introduction To Graphs And Its Representation",
+      "youtubeId": "t0r04fYdT7U"
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-has-path",
+      "name": "Has Path?",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-print-all-paths",
+      "name": "Print All Paths",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-multisolver-smallest-longest-ceil-floor-kthlargest-path",
+      "name": "Multisolver - Smallest, Longest, Ceil, Floor, Kthlargest Path",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-get-connected-components-of-a-graph",
+      "name": "Get Connected Components Of A Graph",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-is-graph-connected",
+      "name": "Is Graph Connected",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-number-of-islands",
+      "name": "Number Of Islands",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-perfect-friends",
+      "name": "Perfect Friends",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-hamiltonian-path-and-cycle",
+      "name": "Hamiltonian Path And Cycle",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-knights-tour",
+      "name": "Knights Tour",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-breadth-first-traversal",
+      "name": "Breadth First Traversal",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-is-graph-cyclic",
+      "name": "Is Graph Cyclic",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-is-graph-bipartite",
+      "name": "Is Graph Bipartite",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-spread-of-infection",
+      "name": "Spread Of Infection",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-shortest-path-in-weights",
+      "name": "Shortest Path In Weights",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-minimum-wire-required-to-connect-all-pcs",
+      "name": "Minimum Wire Required To Connect All Pcs",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-order-of-compilation",
+      "name": "Order Of Compilation",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "graphs-iterative-depth-first-traversal",
+      "name": "Iterative Depth First Traversal",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "article",
+      "slug": "graphs-spread-of-infection",
+      "name": "Spread Of Infection"
+    },
+    {
+      "type": "article",
+      "slug": "graphs-shortest-path-in-weights",
+      "name": "Shortest Path In Weights"
+    },
+    {
+      "type": "article",
+      "slug": "graphs-perfect-friends",
+      "name": "Perfect friends"
+    },
+    {
+      "type": "article",
+      "slug": "graphs-minimum-wire-required-to-connect-all-pcs",
+      "name": "Minimum Wire Required To Connect All Pcs"
+    },
+    {
+      "type": "article",
+      "slug": "graphs-hamiltonian-path-and-cycle",
+      "name": "Hamiltonian Path and Cycle"
+    },
+    {
+      "type": "article",
+      "slug": "graphs-order-of-compilation",
+      "name": "Order Of Compilation"
+    },
+    {
+      "type": "article",
+      "slug": "graphs-knights-tours",
+      "name": "Knights Tours"
+    },
+    {
+      "type": "article",
+      "slug": "graphs-breadth-first-traversal",
+      "name": "Breadth First Traversal"
+    },
+    {
+      "type": "article",
+      "slug": "graphs-find-all-paths-in-a-graph",
+      "name": "Find All Paths In A Graph"
+    },
+    {
+      "type": "article",
+      "slug": "graphs-introduction-to-graphs-and-its-representation",
+      "name": "Introduction To Graphs And Its Representation"
+    },
+    {
+      "type": "article",
+      "slug": "graphs-multisolver",
+      "name": "Multisolver"
+    },
+    {
+      "type": "article",
+      "slug": "graphs-get-connected-components",
+      "name": "Get connected components"
+    }
+  ]
+}

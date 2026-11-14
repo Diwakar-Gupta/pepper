@@ -1,127 +1,323 @@
-[
-  {
-    "type": "Code",
-    "slug": "linked-lists-add-last-in-linked-list",
-    "name": "Add Last In Linked List"
+{
+  "name": "Linked Lists",
+  "slug": "linked-lists",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 25,
+    "articles": 26,
+    "videos": 1
   },
-  {
-    "type": "Code",
-    "slug": "linked-lists-display-a-linkedlist",
-    "name": "Display A Linkedlist"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-remove-first-in-linkedlist",
-    "name": "Remove First In Linkedlist"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-get-value-in-linked-list",
-    "name": "Get Value In Linked List"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-add-first-in-linked-list",
-    "name": "Add First In Linked List"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-add-at-index-in-linked-list",
-    "name": "Add At Index In Linked List"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-remove-last-in-linked-list",
-    "name": "Remove Last In Linked List"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-remove-at-index-in-linked-list",
-    "name": "Remove At Index In Linked List"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-reverse-a-linked-list-data-iterative-",
-    "name": "Reverse A Linked List (data Iterative)"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-reverse-linked-list-pointer-iterative-",
-    "name": "Reverse Linked List (pointer Iterative)"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-linked-list-to-stack-adapter",
-    "name": "Linked List To Stack Adapter"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-linked-list-to-queue-adapter",
-    "name": "Linked List To Queue Adapter"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-kth-node-from-end-of-linked-list",
-    "name": "Kth Node From End Of Linked List"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-mid-of-linked-list",
-    "name": "Mid Of Linked List"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-merge-two-sorted-linked-lists",
-    "name": "Merge Two Sorted Linked Lists"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-merge-sort-a-linked-list",
-    "name": "Merge Sort A Linked List"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-remove-duplicates-in-a-sorted-linked-list",
-    "name": "Remove Duplicates In A Sorted Linked List"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-odd-even-linked-list",
-    "name": "Odd Even Linked List"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-k-reverse-in-linked-list",
-    "name": "K Reverse In Linked List"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-display-reverse-recursive-linked-list",
-    "name": "Display Reverse (recursive) - Linked List"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-reverse-linked-list-pointer-recursive-",
-    "name": "Reverse Linked List (pointer - Recursive)"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-is-linked-list-a-palindrome-",
-    "name": "Is Linked List A Palindrome?"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-fold-a-linked-list",
-    "name": "Fold A Linked List"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-add-two-linked-lists",
-    "name": "Add Two Linked Lists"
-  },
-  {
-    "type": "Code",
-    "slug": "linked-lists-intersection-point-of-linked-lists",
-    "name": "Intersection Point Of Linked Lists"
-  }
-]
+  "items": [
+    {
+      "type": "video",
+      "slug": "linked-lists-linked-lists-introduction",
+      "name": "Linked Lists - Introduction",
+      "youtubeId": "GVwbTCnZ5kk"
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-linkedlist-introduction",
+      "name": "LinkedList Introduction"
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-add-last-in-linkedlist",
+      "name": "Add Last In LinkedList"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-add-last-in-linked-list",
+      "name": "Add Last In Linked List",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-display-a-linked-list",
+      "name": "Display a Linked List"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-display-a-linkedlist",
+      "name": "Display A Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-remove-first-in-linked-list",
+      "name": "Remove First In Linked List"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-remove-first-in-linkedlist",
+      "name": "Remove First In Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-get-value-in-linked-list",
+      "name": "Get Value in Linked List"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-get-value-in-linked-list",
+      "name": "Get Value In Linked List",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-add-first-in-linked-list",
+      "name": "Add First in Linked List"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-add-first-in-linked-list",
+      "name": "Add First In Linked List",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-add-at-index-in-linked-list",
+      "name": "Add At Index In Linked List"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-add-at-index-in-linked-list",
+      "name": "Add At Index In Linked List",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-remove-last-in-linked-list",
+      "name": "Remove Last In Linked List"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-remove-last-in-linked-list",
+      "name": "Remove Last In Linked List",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-remove-at-index-in-linked-list",
+      "name": "Remove At Index in Linked List"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-remove-at-index-in-linked-list",
+      "name": "Remove At Index In Linked List",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-reverse-a-linked-list-data-iterative",
+      "name": "Reverse A Linked List Data Iterative"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-reverse-a-linked-list-data-iterative",
+      "name": "Reverse A Linked List (data Iterative)",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-reverse-linked-list-pointer-iterative",
+      "name": "Reverse Linked List Pointer Iterative"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-reverse-linked-list-pointer-iterative",
+      "name": "Reverse Linked List (pointer Iterative)",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-linked-list-to-stack-adapter",
+      "name": "Linked List to Stack Adapter"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-linked-list-to-stack-adapter",
+      "name": "Linked List To Stack Adapter",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-linked-list-to-queue-adapter",
+      "name": "Linked List To Queue Adapter"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-linked-list-to-queue-adapter",
+      "name": "Linked List To Queue Adapter",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-kth-node-from-end-of-linked-list",
+      "name": "Kth Node From End Of Linked List"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-kth-node-from-end-of-linked-list",
+      "name": "Kth Node From End Of Linked List",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-mid-of-linked-list",
+      "name": "Mid of Linked List"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-mid-of-linked-list",
+      "name": "Mid Of Linked List",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-merge-two-sorted-linked-list",
+      "name": "Merge Two Sorted Linked List"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-merge-two-sorted-linked-lists",
+      "name": "Merge Two Sorted Linked Lists",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-merge-sort-a-linked-list",
+      "name": "Merge Sort A Linked List"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-merge-sort-a-linked-list",
+      "name": "Merge Sort A Linked List",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-remove-duplicates-in-sorted-linked-list",
+      "name": "Remove Duplicates in Sorted Linked List"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-remove-duplicates-in-a-sorted-linked-list",
+      "name": "Remove Duplicates In A Sorted Linked List",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-odd-even-linked-list",
+      "name": "Odd Even Linked List"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-odd-even-linked-list",
+      "name": "Odd Even Linked List",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-k-reverse-in-linked-list",
+      "name": "K Reverse In Linked List"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-k-reverse-in-linked-list",
+      "name": "K Reverse In Linked List",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-display-reverse-recursive",
+      "name": "Display Reverse Recursive"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-display-reverse-recursive-linked-list",
+      "name": "Display Reverse (recursive) - Linked List",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-reverse-linked-list-pointer-recursive",
+      "name": "Reverse Linked List Pointer Recursive"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-reverse-linked-list-pointer-recursive",
+      "name": "Reverse Linked List (pointer - Recursive)",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-is-linked-list-a-palindrome",
+      "name": "Is Linked List A Palindrome"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-is-linked-list-a-palindrome",
+      "name": "Is Linked List A Palindrome?",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-fold-a-linked-list",
+      "name": "Fold A Linked List"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-fold-a-linked-list",
+      "name": "Fold A Linked List",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-add-two-linked-lists",
+      "name": "Add Two Linked Lists"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-add-two-linked-lists",
+      "name": "Add Two Linked Lists",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "linked-lists-intersection-point-of-linkedlist",
+      "name": "Intersection point of Linkedlist"
+    },
+    {
+      "type": "problem",
+      "slug": "linked-lists-intersection-point-of-linked-lists",
+      "name": "Intersection Point Of Linked Lists",
+      "difficulty": "Easy",
+      "tests": 1
+    }
+  ]
+}

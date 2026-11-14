@@ -1,0 +1,25 @@
+{
+  "name": "Weird Game",
+  "slug": "interview-prep-game-theory-weird-game",
+  "course": "interview-prep",
+  "module": "game-theory",
+  "difficulty": "Easy",
+  "statement": "<a href=\"https://codeforces.com/problemset/problem/293/A\" target=\"_blank\" rel=\"noopener\">https://codeforces.com/problemset/problem/293/A</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "4\n01100000\n10010011",
+  "sampleOutput": "Second",
+  "questionVideo": "XCGH8TNjKFA",
+  "solutionVideo": "XCGH8TNjKFA",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args) throws Exception {\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/game-theory/weird-game/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

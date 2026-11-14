@@ -1,0 +1,25 @@
+{
+  "name": "Balls And Boxes",
+  "slug": "interview-prep-constructive-algorithm-balls-and-boxes",
+  "course": "interview-prep",
+  "module": "constructive-algorithm",
+  "difficulty": "Medium",
+  "statement": "https://codeforces.com/problemset/problem/260/C",
+  "inputFormat": "Check Link",
+  "outputFormat": "Check Link",
+  "constraints": "Check Link",
+  "sampleInput": "4 4\n4 3 1 6",
+  "sampleOutput": "3 2 5 4",
+  "questionVideo": "FnGV9m86cko",
+  "solutionVideo": "FnGV9m86cko",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    // Write Code here\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/constructive-algorithm/contructive-algorithm-balls-and-boxes/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,11 +1,27 @@
 {
   "name": "String With Difference Of Every Two Consecutive Characters",
   "slug": "string-string-builder-and-arraylist-string-with-difference-of-every-two-consecutive-characters",
-  "description": "1. You are given a string that contains only lowercase and uppercase alphabets. \n2. You have to form a string that contains the difference of ASCII values of every two consecutive characters between those characters.\n   For \"abecd\", the answer should be \"a1b3e-2c1d\", as \n   'b'-'a' = 1\n   'e'-'b' = 3\n   'c'-'e' = -2\n   'd'-'c' = 1\n\n### Input Format\n```\nA String\n```\n\n### Output Format\n```\nA String\n```\n\n### Constraints\n```\n1 <= length of string <= 1000\n```\n\n### Sample Input\n```\npepCODinG\n```\n\n### Sample Output\n```\np-11e11p-45C12O-11D37i5n-39G\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/PHtNm0B9Ig4?end=99&rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/PHtNm0B9Ig4?start=99&rel=0&loop=1&playlist=PHtNm0B9Ig4",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "string-string-builder-and-arraylist",
+  "difficulty": "Easy",
+  "statement": "1. You are given a string that contains only lowercase and uppercase alphabets. \n2. You have to form a string that contains the difference of ASCII values of every two consecutive characters between those characters.\n   For &quot;abecd&quot;, the answer should be &quot;a1b3e-2c1d&quot;, as \n   'b'-'a' = 1\n   'e'-'b' = 3\n   'c'-'e' = -2\n   'd'-'c' = 1",
+  "inputFormat": "A String",
+  "outputFormat": "A String",
+  "constraints": "1 &lt;= length of string &lt;= 1000",
+  "sampleInput": "pepCODinG",
+  "sampleOutput": "p-11e11p-45C12O-11D37i5n-39G",
+  "questionVideo": "PHtNm0B9Ig4",
+  "solutionVideo": "PHtNm0B9Ig4",
+  "templates": {
+    "cpp": "#include<iostream>\n#include<string.h>\n\nusing namespace std;\n\nvoid printstr(string str)\n{\n  //write your code here\n}\nint main()\n{\n  string str;\n  getline(cin, str);\n  printstr(str);\n  return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static String solution(String str){\n\t\t// write your code here\n\n\t\treturn null;\n\t}\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tString str = scn.next();\n\t\tSystem.out.println(solution(str));\n\t}\n\n}",
+    "python": "def printstring(st):\n#write your code here\n\n\n\n  st = input()\n       printstring(st)\n"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/string,-string-builder-and-arraylist/string-with-difference-of-every-two-consecutive-characters-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

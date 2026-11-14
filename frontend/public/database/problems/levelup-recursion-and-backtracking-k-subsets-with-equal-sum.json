@@ -1,0 +1,25 @@
+{
+  "name": "K Subsets With Equal Sum",
+  "slug": "levelup-recursion-and-backtracking-k-subsets-with-equal-sum",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Medium",
+  "statement": "1. You are given an array of n distinct integers.\n2. You have to divide these n integers into k non-empty subsets such that sum of integers of every \n     subset is same.\n3. If it is not possible to divide, then print &quot;-1&quot;.\n\nNote -&gt; Check out the question video and write the recursive code as it is intended without \n               changing signature. The judge can't force you but intends you to teach a concept.",
+  "inputFormat": "A number n\nn distinct integers \nA number k",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "1 &lt;= n &lt;= 20\n1 &lt;= arr[i] &lt;= 100\n1 &lt;= k &lt;= n",
+  "sampleInput": "6\n1\n2\n3\n4\n5\n6\n3",
+  "sampleOutput": "[1, 6] [2, 5] [3, 4]",
+  "questionVideo": "rszwy53vaP0",
+  "solutionVideo": "rszwy53vaP0",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\n\tpublic static void solution(int[] arr, int vidx,int n , int k,int[] subsetSum,int ssssf, ArrayList<ArrayList<Integer>> ans) {\n\t\t//write your code here\n\t}\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tint[] arr = new int[n];\n\t\tint sum = 0;\n\t\tfor(int i =  0 ; i < arr.length; i++) {\n\t\t\tarr[i] = scn.nextInt();\n\t\t\tsum += arr[i];\n\t\t}\n\t\tint k = scn.nextInt();\n\t\t// if k is equal to 1, then whole array is your answer \n\t\tif(k == 1) {\n\t\t\tSystem.out.print(\"[\");\n\t\t\tfor(int i = 0 ; i  < arr.length; i++) {\n\t\t\t\tSystem.out.print(arr[i] + \", \");\n\t\t\t}\n\t\t\tSystem.out.println(\"]\");\n\t\t\treturn;\n\t\t}\n\t\t//if there are more subsets than no. of elements in array or sum of all elements is not divisible by k\n\t\tif(k > n || sum % k != 0) {\n\t\t\tSystem.out.println(\"-1\");\n\t\t\treturn;\n\t\t}\n\t\tint[] subsetSum = new int[k];\n\t\tArrayList<ArrayList<Integer>> ans = new ArrayList<>();\n\t\tfor(int i = 0; i < k; i++) {\n\t\t\tans.add(new ArrayList<>());\n\t\t}\n\t\tsolution(arr,0,n,k,subsetSum,0,ans);\n\t}\n\t\n\t\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/k-subsets-with-equal-sum-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

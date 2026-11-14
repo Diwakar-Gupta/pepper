@@ -1,0 +1,26 @@
+{
+  "name": "Line Segment Intersection",
+  "slug": "interview-prep-geometry-line-segment-intersection",
+  "course": "interview-prep",
+  "module": "geometry",
+  "difficulty": "Medium",
+  "statement": "https://cses.fi/problemset/task/2190/",
+  "inputFormat": "Check Link",
+  "outputFormat": "Check Link",
+  "constraints": "Check Link",
+  "sampleInput": "5\n1 1 5 3 1 2 4 3\n1 1 5 3 1 1 4 3\n1 1 5 3 2 3 4 1\n1 1 5 3 2 4 4 1\n1 1 5 3 3 2 7 4",
+  "sampleOutput": "NO\nYES\nYES\nYES\nYES",
+  "questionVideo": "BiN7seIFLEM",
+  "solutionVideo": "BiN7seIFLEM",
+  "templates": {
+    "cpp": "#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n  ios::sync_with_stdio(0);\n  cin.tie(0);\n\n}",
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    // Write Code here\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/geometry/geometry-line-segment-intersection/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

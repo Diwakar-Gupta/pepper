@@ -1,11 +1,28 @@
 {
   "name": "Buy And Sell Stocks - One Transaction Allowed",
   "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-one-transaction-allowed",
-  "description": "1. You are given a number n, representing the number of days.\n2. You are given n numbers, where ith number represents price of stock on ith day.\n3. You are required to print the maximum profit you can make if you are allowed a single transaction.\n\n### Input Format\n```\nA number n\n.. n more elements\n```\n\n### Output Format\n```\nA number representing the maximum profit you can make if you are allowed a single transaction.\n```\n\n### Constraints\n```\n0 <= n <= 20\n0 <= n1, n2, .. <= 10\n```\n\n### Sample Input\n```\n9\n11\n6\n7\n19\n4\n1\n6\n18\n4\n```\n\n### Sample Output\n```\n17\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/4YjEHmw1MX0?end=31&rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/4YjEHmw1MX0?start=31&rel=0&loop=1&playlist=4YjEHmw1MX0",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "dynamic-programming-and-greedy",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n, representing the number of days.\n2. You are given n numbers, where ith number represents price of stock on ith day.\n3. You are required to print the maximum profit you can make if you are allowed a single transaction.",
+  "inputFormat": "A number n\n.. n more elements",
+  "outputFormat": "A number representing the maximum profit you can make if you are allowed a single transaction.",
+  "constraints": "0 &lt;= n &lt;= 20\n0 &lt;= n1, n2, .. &lt;= 10",
+  "sampleInput": "9\n11\n6\n7\n19\n4\n1\n6\n18\n4",
+  "sampleOutput": "17",
+  "questionVideo": "4YjEHmw1MX0",
+  "solutionVideo": "4YjEHmw1MX0",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\n\nusing namespace std;\n\nvoid Transaction(vector<int> arr) {\n  //write your code here\n}\n\nint  main() {\n  int n;\n  cin >> n;\n  vector<int>arr(n, 0);\n  for (int i = 0; i < arr.size(); i++) {\n    cin >> arr[i];\n  }\n  Transaction(arr);\n  return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // write your code here\n    }\n\n}",
+    "python": "def oneTransaction(arr,n):\n    # write your code here\n\ndef main():\n    n = int(input())\n    array = []\n    for i in range(n):\n        array.append(int(input()))\n        \n    oneTransaction(array,n)\n\nif __name__ == '__main__':\n    main()"
+  },
+  "editorial": "<p>One transaction =&gt; Buy and sell only once</p><p>To get the maximum profit we should buy at minimum price and sell at the maximum price and buy date is before the selling date.</p><p>Let profit_i be the maximum profit that can be earned by selling on the ith day and can be evaluated as follows.</p><p><b>profit_i = ( price_i ) - ( minimum_price till ith day )</b></p><p>Finally the required maximum profit will be the maximum value of the profit_i where i is all the valid days.</p><p><b>Example:</b></p><p>Given the prices array where index represent the day number and the value represent the price on that day</p><p>prices = { 11, 6, 7, 19, 4, 1, 6, 18, 4 }</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/dcde01c44b844d75.png\" alt=\"\"></p><p>Thus the maximum profit is 17 </p><pre><p>int buy_and_sell_one_trnx(int n, vector</p><p> &amp;prices)\n                                {\n                                    int min_price = INT_MAX; //To store minimum price found so far\n                                    int max_profit = 0;      //To store the overall maximum profit\n                                    for (int curr_price : prices)\n                                    {\n                                        if (curr_price &lt; min_price)\n                                            min_price = curr_price;\n                                        //curr profit is the max profit that\n                                        // can be earned by selling it on curr_price\n                                        int curr_profit = curr_price - min_price;\n                                        if (curr_profit &gt; max_profit)\n                                            max_profit = curr_profit;\n                                    }\n                                    return max_profit;\n                                }</p></pre><p><b>Time complexity:</b></p><p>As we have traversed through prices array only once</p><p>Time complexity = O( n ).</p>",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/buy-and-sell-stocks-ota-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

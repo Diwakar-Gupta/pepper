@@ -1,0 +1,29 @@
+addFirst 4
+addFirst 4
+addLast 5
+addFirst 7
+getAt 4 3
+addAt 4 34
+addAt 0 43
+removeAt 4
+addAfter 2 33
+addAfter 0 33
+addAfter 4 33
+removeNode 0
+removeAt 0
+removeAfter 3
+removeBefore 3
+addAt 8 545
+addLast 1
+removeFirst
+removeFirst
+size
+isEmpty
+getFirst
+removeFirst
+removeLast
+getLast
+removeFirst
+removeFirst
+addAt 0 345
+stop

@@ -1,0 +1,145 @@
+{
+  "name": "Segment Tree",
+  "slug": "segment-tree",
+  "course": "interview-prep",
+  "counts": {
+    "problems": 18,
+    "articles": 0,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-max-in-an-interval-range-query",
+      "name": "Max In An Interval - Range Query",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-max-in-a-interval-range-query-point-update",
+      "name": "Max In A Interval - Range Query Point Update",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-sum-of-interval",
+      "name": "Sum Of Interval",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-what-s-at-idx-point-query-range-update",
+      "name": "What's At Idx - Point Query Range Update",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-sum-of-range-range-query-range-update",
+      "name": "Sum Of Range - Range Query Range Update",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-maximum-sum",
+      "name": "Maximum Sum",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-sum-of-squares",
+      "name": "Sum Of Squares",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-toggle-bulbs",
+      "name": "Toggle Bulbs",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-2d-segment-tree",
+      "name": "2d Segment Tree",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-prime-divide",
+      "name": "Prime Divide",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-multiples-of-3",
+      "name": "Multiples Of 3",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-k-increasing-subsequence-1",
+      "name": "K Increasing Subsequence 1",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-k-increasing-subsequence-2",
+      "name": "K Increasing Subsequence 2",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-domino-principle",
+      "name": "Domino Principle",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-xor-on-segment",
+      "name": "Xor On Segment",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-interesting-array",
+      "name": "Interesting Array",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-persistent-segment-tree",
+      "name": "Persistent Segment Tree",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-kquery",
+      "name": "Kquery",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-segment-tree-complex-queries",
+      "name": "Complex Queries",
+      "difficulty": "Hard",
+      "unavailable": true
+    }
+  ]
+}

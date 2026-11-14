@@ -1,37 +1,96 @@
-[
-  {
-    "type": "Code",
-    "slug": "recursion-on-the-way-up-print-subsequence",
-    "name": "Print Subsequence"
+{
+  "name": "Recursion on the way up",
+  "slug": "recursion-on-the-way-up",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 7,
+    "articles": 7,
+    "videos": 0
   },
-  {
-    "type": "Code",
-    "slug": "recursion-on-the-way-up-print-kpc",
-    "name": "Print Kpc"
-  },
-  {
-    "type": "Code",
-    "slug": "recursion-on-the-way-up-print-stair-paths",
-    "name": "Print Stair Paths"
-  },
-  {
-    "type": "Code",
-    "slug": "recursion-on-the-way-up-print-maze-paths",
-    "name": "Print Maze Paths"
-  },
-  {
-    "type": "Code",
-    "slug": "recursion-on-the-way-up-print-maze-paths-with-jumps",
-    "name": "Print Maze Paths With Jumps"
-  },
-  {
-    "type": "Code",
-    "slug": "recursion-on-the-way-up-print-permutations",
-    "name": "Print Permutations"
-  },
-  {
-    "type": "Code",
-    "slug": "recursion-on-the-way-up-print-encodings",
-    "name": "Print Encodings"
-  }
-]
+  "items": [
+    {
+      "type": "article",
+      "slug": "recursion-on-the-way-up-print-subsequence",
+      "name": "Print Subsequence"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-on-the-way-up-print-subsequence",
+      "name": "Print Subsequence",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "recursion-on-the-way-up-print-kpc",
+      "name": "Print Kpc"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-on-the-way-up-print-kpc",
+      "name": "Print Kpc",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "recursion-on-the-way-up-print-stairs-paths",
+      "name": "Print Stairs Paths"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-on-the-way-up-print-stair-paths",
+      "name": "Print Stair Paths",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "recursion-on-the-way-up-print-maze-path",
+      "name": "Print Maze Path"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-on-the-way-up-print-maze-paths",
+      "name": "Print Maze Paths",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "recursion-on-the-way-up-print-maze-path-with-jumps",
+      "name": "Print Maze Path With Jumps"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-on-the-way-up-print-maze-paths-with-jumps",
+      "name": "Print Maze Paths With Jumps",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "recursion-on-the-way-up-print-permutation",
+      "name": "Print Permutation"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-on-the-way-up-print-permutations",
+      "name": "Print Permutations",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "recursion-on-the-way-up-print-encodings",
+      "name": "Print Encodings"
+    },
+    {
+      "type": "problem",
+      "slug": "recursion-on-the-way-up-print-encodings",
+      "name": "Print Encodings",
+      "difficulty": "Easy",
+      "tests": 1
+    }
+  ]
+}

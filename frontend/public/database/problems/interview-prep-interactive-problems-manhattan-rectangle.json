@@ -1,0 +1,25 @@
+{
+  "name": "Manhattan Rectangle",
+  "slug": "interview-prep-interactive-problems-manhattan-rectangle",
+  "course": "interview-prep",
+  "module": "interactive-problems",
+  "difficulty": "Hard",
+  "statement": "https://www.codechef.com/FEB19B/problems/MANRECT",
+  "inputFormat": "check the link",
+  "outputFormat": "check the link",
+  "constraints": "check the link",
+  "sampleInput": "1",
+  "sampleOutput": "1",
+  "questionVideo": "bW-hV0DCSKc",
+  "solutionVideo": "bW-hV0DCSKc",
+  "templates": {
+    "java": "import java.util.*;\nimport java.lang.*;\nimport java.io.*;\n\nclass Main {\n\n  public static void main(String[] args) throws Exception {\n\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/interactive-problems/manhattan-rectangle-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

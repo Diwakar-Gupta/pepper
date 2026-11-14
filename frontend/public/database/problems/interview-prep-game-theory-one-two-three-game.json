@@ -1,0 +1,25 @@
+{
+  "name": "One Two Three Game",
+  "slug": "interview-prep-game-theory-one-two-three-game",
+  "course": "interview-prep",
+  "module": "game-theory",
+  "difficulty": "Easy",
+  "statement": "Two players Alice and Bob are playing a game. They have a pile with n coins in it. They can pick either 1 or 2 coins in one turn. Alice goes first and they take alternate turns.The player who picks the last coin is the winner. Can you find out the winner.",
+  "inputFormat": "The first line contains integer n(no. of coins in the pile).",
+  "outputFormat": "Print the winner (ALICE or BOB).",
+  "constraints": "1&lt;= n &lt;= 10^18",
+  "sampleInput": "10",
+  "sampleOutput": "ALICE",
+  "questionVideo": "r3OXH9exiHI",
+  "solutionVideo": "r3OXH9exiHI",
+  "templates": {
+    "java": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\n\npublic class Main {\n\n  public static void main(String[] args) throws NumberFormatException, IOException {\n\n\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/game-theory/one-two-three-game-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

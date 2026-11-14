@@ -1,0 +1,26 @@
+{
+  "name": "Minimum Cost For Tickets",
+  "slug": "levelup-dynamic-programming-minimum-cost-for-tickets",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are going on a vacation for a year, you've decided certain days for travelling in the city, given to you as a strictly increasing array from day 1....365\n 2. There are 3 kinds of passes you can take in this city for transport: \n     a) A single day pass, cost of which is in an array at cost[0]\n     b) A week's pass, cost of which  is in an array at cost[1]\n     c) A month's pass, cost of which  is in an array at cost[2]\n 3. Find and return minimum amount it'll cost you for travelling in the city according to the given days\n 4. Input and output is handled for you\n 5. It is a functional problem ,please do not modify main()",
+  "inputFormat": "Input is handled for you",
+  "outputFormat": "Output is handled for you",
+  "constraints": "array contains strictly increasing positive integers\n 1&lt;=Days.length &lt;=365\n 1&lt;=Days[i]&lt;=365",
+  "sampleInput": "9\n2 3 8 9 10 11 12 14 27\n1 5 25",
+  "sampleOutput": "8",
+  "questionVideo": "YNe1fsHgEOI",
+  "solutionVideo": "YNe1fsHgEOI",
+  "templates": {
+    "cpp": "#include<iostream>\n #include<vector>\n #include<algorithm>\n using namespace std;\n \n // -----------------------------------------------------\n // This is a functional problem. Only this function has to be written.\n // This function takes as input 2 integer arrays\n // It should return the required output\n \n int mincostTickets(vector<int> &days, vector<int> &costs) {\n     //Write your code here\n }\n \n int main(int argc, char** argv){\n     int n;\n     cin>>n;\n     vector<int> days(n);\n     for (int i = 0; i < n; i++)\n         cin>>days[i];\n     vector<int> cost(3);\n     for (int i = 0; i < 3; i++)\n         cin>>cost[i];\n     sort(days.begin(), days.end());\n     cout<<mincostTickets(days, cost)<<endl;\n }",
+    "java": "import java.util.*;\n \n public class Main {\n \n \t public static void main(String[] args) {\n \t \t // TODO Auto-generated method stub\n         Scanner scn= new Scanner(System.in);\n         int n=scn.nextInt();\n         int[] days= new int[n];\n         for(int i=0;i<n;i++){\n             days[i]=scn.nextInt();\n         }\n         int[] costs = new int[3];\n         for(int i=0;i<3;i++){\n             costs[i]=scn.nextInt();\n \t \t }\n \t \t Arrays.sort(days);\n         System.out.println(mincostTickets(days, costs));\n \t }\n \t // -----------------------------------------------------\n \t // This is a functional problem. Only this function has to be written.\n \t // This function takes as input 2 integer arrays\n \t // It should return the required output\n \n \t public static int mincostTickets(int[] days, int[] costs) {\n \t \t //Write your code here\n \t }\n }"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/minimum-cost-for-tickets/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

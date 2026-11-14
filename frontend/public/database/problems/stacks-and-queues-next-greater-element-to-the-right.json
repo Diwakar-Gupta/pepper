@@ -1,11 +1,27 @@
 {
   "name": "Next Greater Element To The Right",
   "slug": "stacks-and-queues-next-greater-element-to-the-right",
-  "description": "1. You are given a number n, representing the size of array a.\n2. You are given n numbers, representing elements of array a.\n3. You are required to \"next greater element on the right\" for all elements of array\n4. Input and output is handled for you.\n\n\"Next greater element on the right\" of an element x is defined as the first element to right of x having value greater than x.\nNote -> If an element does not have any element on it's right side greater than it, consider -1 as it's \"next greater element on right\"\ne.g.\nfor the array [2 5 9 3 1 12 6 8 7]\nNext greater for 2 is 5\nNext greater for 5 is 9\nNext greater for 9 is 12\nNext greater for 3 is 12\nNext greater for 1 is 12\nNext greater for 12 is -1\nNext greater for 6 is 8\nNext greater for 8 is -1\nNext greater for 7 is -1\n\n### Input Format\n```\nInput is managed for you\n```\n\n### Output Format\n```\nOutput is managed for you\n```\n\n### Constraints\n```\n0 <= n < 10^5\n-10^9 <= a[i] <= 10^9\n```\n\n### Sample Input\n```\n5\n5\n3\n8\n-2\n7\n```\n\n### Sample Output\n```\n8\n8\n-1\n7\n-1\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/Zy9XnXw8E7U?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/rSf9vPtKcmI?rel=0&loop=1&playlist=rSf9vPtKcmI",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "stacks-and-queues",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number n, representing the size of array a.\n2. You are given n numbers, representing elements of array a.\n3. You are required to &quot;next greater element on the right&quot; for all elements of array\n4. Input and output is handled for you.\n\n&quot;Next greater element on the right&quot; of an element x is defined as the first element to right of x having value greater than x.\nNote -&gt; If an element does not have any element on it's right side greater than it, consider -1 as it's &quot;next greater element on right&quot;\ne.g.\nfor the array [2 5 9 3 1 12 6 8 7]\nNext greater for 2 is 5\nNext greater for 5 is 9\nNext greater for 9 is 12\nNext greater for 3 is 12\nNext greater for 1 is 12\nNext greater for 12 is -1\nNext greater for 6 is 8\nNext greater for 8 is -1\nNext greater for 7 is -1",
+  "inputFormat": "Input is managed for you",
+  "outputFormat": "Output is managed for you",
+  "constraints": "0 &lt;= n &lt; 10^5\n-10^9 &lt;= a[i] &lt;= 10^9",
+  "sampleInput": "5\n5\n3\n8\n-2\n7",
+  "sampleOutput": "8\n8\n-1\n7\n-1",
+  "questionVideo": "Zy9XnXw8E7U",
+  "solutionVideo": "rSf9vPtKcmI",
+  "templates": {
+    "cpp": "#include <bits/stdc++.h>\nusing namespace std;\nvoid display(vector<int>a) {\n  for (int i = 0; i < a.size(); i++)\n  {\n    cout << a[i] << endl;\n  }\n}\nvector<int> solve(vector<int>arr)\n{\n  //write your code here\n}\nint main(int argc, char** argv)\n{\n  int n;\n  cin >> n;\n  vector<int>arr(n, 0);\n  for (int i = 0; i < n; i++)\n  {\n    cin >> arr[i];\n  }\n  vector<int>nge(n, 0);\n  nge = solve(arr);\n  display(nge);\n  return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main{\n  public static void display(int[] a){\n    StringBuilder sb = new StringBuilder();\n\n    for(int val: a){\n      sb.append(val + \"\\n\");\n    }\n    System.out.println(sb);\n  }\n\npublic static void main(String[] args) throws Exception {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n    int n = Integer.parseInt(br.readLine());\n    int[] a = new int[n];\n    for(int i = 0; i < n; i++){\n       a[i] = Integer.parseInt(br.readLine());\n    }\n\n    int[] nge = solve(a);\n    display(nge);\n }\n\n public static int[] solve(int[] arr){\n   // solve\n   return null;\n }\n\n}",
+    "python": "from sys import stdin\ndef display(arr) :\n\tfor i in range(len(arr)) :\n\t\tprint(arr[i], end = \"\\n\")\ndef solve(arr2):\n    #write your code here\n\nn = int(input())\narr =[]\nfor i in range (n):\n    x = int(input())\n    arr.append(x)\n\nnge = solve(arr)\ndisplay(nge)"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/stacks-and-queues/next-greater-element-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

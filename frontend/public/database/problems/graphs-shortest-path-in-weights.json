@@ -1,0 +1,25 @@
+{
+  "name": "Shortest Path In Weights",
+  "slug": "graphs-shortest-path-in-weights",
+  "course": "dsa-fundamentals",
+  "module": "graphs",
+  "difficulty": "Easy",
+  "statement": "1. You are given a graph and a source vertex. The vertices represent cities and the edges represent \n    distance in kms.\n2. You are required to find the shortest path to each city (in terms of kms) from the source city along \n    with the total distance on path from source to destinations.\n\nNote -&gt; For output, check the sample output and question video.",
+  "inputFormat": "Input has been managed for you",
+  "outputFormat": "Check the sample output",
+  "constraints": "None",
+  "sampleInput": "7\n9\n0 1 10\n1 2 10\n2 3 10\n0 3 40\n3 4 2\n4 5 3\n5 6 3\n4 6 8\n2 5 5\n0",
+  "sampleOutput": "0 via 0 @ 0\n1 via 01 @ 10\n2 via 012 @ 20\n5 via 0125 @ 25\n4 via 01254 @ 28\n6 via 01256 @ 28\n3 via 012543 @ 30",
+  "questionVideo": "sD0lLYlGCJE",
+  "solutionVideo": "sD0lLYlGCJE",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n   static class Edge {\n      int src;\n      int nbr;\n      int wt;\n\n      Edge(int src, int nbr, int wt) {\n         this.src = src;\n         this.nbr = nbr;\n         this.wt = wt;\n      }\n   }\n\n   public static void main(String[] args) throws Exception {\n      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n      int vtces = Integer.parseInt(br.readLine());\n      ArrayList<Edge>[] graph = new ArrayList[vtces];\n      for (int i = 0; i < vtces; i++) {\n         graph[i] = new ArrayList<>();\n      }\n\n      int edges = Integer.parseInt(br.readLine());\n      for (int i = 0; i < edges; i++) {\n         String[] parts = br.readLine().split(\" \");\n         int v1 = Integer.parseInt(parts[0]);\n         int v2 = Integer.parseInt(parts[1]);\n         int wt = Integer.parseInt(parts[2]);\n         graph[v1].add(new Edge(v1, v2, wt));\n         graph[v2].add(new Edge(v2, v1, wt));\n      }\n\n      int src = Integer.parseInt(br.readLine());\n      // write your code here\n      \n   }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/graphs/shortest-path-in-weights-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

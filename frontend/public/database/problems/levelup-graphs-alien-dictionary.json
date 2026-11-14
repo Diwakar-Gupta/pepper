@@ -1,0 +1,25 @@
+{
+  "name": "Alien Dictionary",
+  "slug": "levelup-graphs-alien-dictionary",
+  "course": "levelup",
+  "module": "graphs",
+  "difficulty": "Medium",
+  "statement": "You are given a list of strings from the alien language's dictionary, where the strings in words are sorted lexicographically by the rules of this new language.\nReturn a string of the unique letters in the new alien language sorted in lexicographically increasing order by the new language's rules. If there is no solution, return &quot;&quot;. If there are multiple solutions, return any of them.",
+  "inputFormat": "First line contains one integer N. \nNext line contains n Strings.",
+  "outputFormat": "Return a string of the unique letters in the new alien language sorted in lexicographically increasing order.",
+  "constraints": "1 &lt;= number of words &lt;= 100\n1 &lt;= length of each word &lt;= 100\nword consists of only lowercase English letters",
+  "sampleInput": "5\nwrt wrf er ett rftt",
+  "sampleOutput": "wertf",
+  "questionVideo": "_u1Mn4_2hIo",
+  "solutionVideo": "_u1Mn4_2hIo",
+  "templates": {
+    "java": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args) throws NumberFormatException, IOException {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n    int n = Integer.parseInt(br.readLine());\n\n    String[] words = br.readLine().split(\" \");\n\n    System.out.println(alienOrder(words));\n  }\n\n  public static String alienOrder(String[] words) {\n\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/graphs/alien-dictionary-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

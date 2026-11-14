@@ -1,11 +1,27 @@
 {
   "name": "Max Of An Array",
   "slug": "recursion-in-arrays-max-of-an-array",
-  "description": "1. You are given a number n, representing the count of elements.\n2. You are given n numbers.\n3. You are required to find the maximum of input. \n4. For the purpose complete the body of maxOfArray function. Don't change the signature.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA number n\nn1\nn2\n.. n number of elements\n```\n\n### Output Format\n```\nA number representing max\n```\n\n### Constraints\n```\n1 <= n <= 10^4\n0 <= n1, n2, .. n elements <= 10 ^9\n```\n\n### Sample Input\n```\n6\n15\n30\n40\n4\n11\n9\n```\n\n### Sample Output\n```\n40\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/obrreX-sQWo?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/XpUiZg9YZQg?rel=0&loop=1&playlist=XpUiZg9YZQg",
-  "codes": {
-    "java": "im\npo\nrt \nja\nva\n.i\no.\n*;\nim\npo\nrt \nja\nva\n.u\nti\nl.\n*;\npu\nbl\nic \ncl\nas\ns \nMa\nin \n{\n  \n  \npu\nbl\nic \nst\nat\nic \nvo\nid \nma\nin\n(S\ntr\nin\ng[\n] \nar\ngs\n) \nth\nro\nws \nEx\nce\npt\nio\nn \n{"
-  }
+  "course": "dsa-fundamentals",
+  "module": "recursion-in-arrays",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n, representing the count of elements.\n2. You are given n numbers.\n3. You are required to find the maximum of input. \n4. For the purpose complete the body of maxOfArray function. Don't change the signature.\n\nNote -&gt; The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.",
+  "inputFormat": "A number n\nn1\nn2\n.. n number of elements",
+  "outputFormat": "A number representing max",
+  "constraints": "1 &lt;= n &lt;= 10^4\n0 &lt;= n1, n2, .. n elements &lt;= 10 ^9",
+  "sampleInput": "6\n15\n30\n40\n4\n11\n9",
+  "sampleOutput": "40",
+  "questionVideo": "obrreX-sQWo",
+  "solutionVideo": "XpUiZg9YZQg",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nint max(int arr[], int idx, int n){\n    // write your code here\n    \n}\n\nint main(){\n    int n;\n    cin >> n;\n    int arr[n];\n    for (int i = 0; i < n; i++)\n        cin >> arr[i];\n    int p = max(arr, 0, n);\n    cout << p << endl;\n}\n",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // write your code here\n    }\n\n    public static int maxOfArray(int[] arr, int idx){\n        return 0;\n    }\n\n}",
+    "python": "import sys\nsys.setrecursionlimit (10000)\n\ndef max(arr, idx, n):\n# Write your code here\n\n\n  def main():\n  n = int(input())\n      arr = []\n            for i in range(n) :\n              arr.append(int(input()))\n              res = max(arr, 0, n)\n                    print(res)\n                    main()"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/recursion-in-arrays/max-of-an-array-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

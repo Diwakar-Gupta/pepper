@@ -1,0 +1,26 @@
+{
+  "name": "Middle Of A Linked List",
+  "slug": "levelup-linked-list-middle-of-a-linked-list",
+  "course": "levelup",
+  "module": "linked-list",
+  "difficulty": "Easy",
+  "statement": "given a singly linked list with head node head, return a middle node of linked list.\nif there is 2 mid node then return first mid node.",
+  "inputFormat": "1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;7-&gt;null\n1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;null",
+  "outputFormat": "4-&gt;5-&gt;6-&gt;7-&gt;null\n3-&gt;4-&gt;5-&gt;6-&gt;null",
+  "constraints": "0 &lt;= N &lt;= 10^6",
+  "sampleInput": "7\n1 2 3 4 5 6 7",
+  "sampleOutput": "4 5 6 7",
+  "questionVideo": "aiFAbMOHqIc",
+  "solutionVideo": "aiFAbMOHqIc",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nclass ListNode\n{\npublic:\n    int val = 0;\n    ListNode *next = nullptr;\n\n    ListNode(int val)\n    {\n        this->val = val;\n    }\n};\n\nListNode *midNode(ListNode *head)\n{\n    return nullptr;\n}\n\nint main()\n{\n    int n;\n    cin >> n;\n    ListNode *dummy = new ListNode(-1);\n    ListNode *prev = dummy;\n    while (n-- > 0)\n    {\n        int val;\n        cin >> val;\n        prev->next = new ListNode(val);\n        prev = prev->next;\n    }\n\n    ListNode *head = midNode(dummy->next);\n    while (head != nullptr)\n    {\n        cout << head->val << \" \";\n        head = head->next;\n    }\n\n    return 0;\n}",
+    "java": "import java.util.*;\n\nclass Main {\n    public static class ListNode {\n        int val = 0;\n        ListNode next = null;\n\n        ListNode(int val) {\n            this.val = val;\n        }\n    }\n\n    public static ListNode midNode(ListNode head) {\n    \n        return null;\n    }\n\n    public static void main(String[] args) {\n        Scanner scn = new Scanner(System.in);\n        int n = scn.nextInt();\n        ListNode dummy = new ListNode(-1);\n        ListNode prev = dummy;\n        while (n-- > 0) {\n            prev.next = new ListNode(scn.nextInt());\n            prev = prev.next;\n        }\n\n        ListNode head = midNode(dummy.next);\n        while (head != null) {\n            System.out.print(head.val + \" \");\n            head = head.next;\n        }\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/middle-of-a-linked-list/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

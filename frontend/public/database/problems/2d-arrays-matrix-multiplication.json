@@ -1,11 +1,25 @@
 {
   "name": "Matrix Multiplication",
   "slug": "2d-arrays-matrix-multiplication",
-  "description": "1. You are given a number n1, representing the number of rows of 1st matrix.\n2. You are given a number m1, representing the number of columns of 1st matrix.\n3. You are given n1*m1 numbers, representing elements of 2d array a1.\n4. You are given a number n2, representing the number of rows of 2nd matrix.\n5. You are given a number m2, representing the number of columns of 2nd matrix.\n6. You are given n2*m2 numbers, representing elements of 2d array a2.\n7. If the two arrays representing two matrices of dimensions n1 * m1 and n2 * m2 can be multiplied, display the contents of prd array as specified in output Format.\n8. If the two arrays can't be multiplied, print \"Invalid input\".\n\n### Input Format\n```\nA number n1\nA number m1\ne11\ne12..\ne21\ne22..\n.. n1 * m1 number of elements of array a1\nA number n2\nA number m2\ne11'\ne12'..\ne21'\ne22'..\n.. n2 * m2 number of elements of array a2\n```\n\n### Output Format\n```\ne11' e12' e13' ..\ne21' e22' e23' ..\n.. elements of prd array\n```\n\n### Constraints\n```\n1 <= n1 <= 10^2\n1 <= m1 <= 10^2\n-10^9 <= e11, e12, .. n1 * m1 elements <= 10^9\n1 <= n2 <= 10^2\n1 <= m2 <= 10^2\n-10^9 <= e11', e12', .. n2 * m2 elements <= 10^9\n```\n\n### Sample Input\n```\n2\n3\n10\n0\n0\n0\n20\n0\n3\n4\n1\n0\n1\n0\n0\n1\n1\n2\n1\n1\n0\n0\n```\n\n### Sample Output\n```\n10 0 10 0\n0 20 20 40\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/eLIT5fnKmMI?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/0dGuTLr6xT4?rel=0&loop=1&playlist=0dGuTLr6xT4",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "2d-arrays",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n1, representing the number of rows of 1st matrix.\n2. You are given a number m1, representing the number of columns of 1st matrix.\n3. You are given n1*m1 numbers, representing elements of 2d array a1.\n4. You are given a number n2, representing the number of rows of 2nd matrix.\n5. You are given a number m2, representing the number of columns of 2nd matrix.\n6. You are given n2*m2 numbers, representing elements of 2d array a2.\n7. If the two arrays representing two matrices of dimensions n1 * m1 and n2 * m2 can be multiplied, display the contents of prd array as specified in output Format.\n8. If the two arrays can't be multiplied, print &quot;Invalid input&quot;.",
+  "inputFormat": "A number n1\nA number m1\ne11\ne12..\ne21\ne22..\n.. n1 * m1 number of elements of array a1\nA number n2\nA number m2\ne11'\ne12'..\ne21'\ne22'..\n.. n2 * m2 number of elements of array a2",
+  "outputFormat": "e11' e12' e13' ..\ne21' e22' e23' ..\n.. elements of prd array",
+  "constraints": "1 &lt;= n1 &lt;= 10^2\n1 &lt;= m1 &lt;= 10^2\n-10^9 &lt;= e11, e12, .. n1 * m1 elements &lt;= 10^9\n1 &lt;= n2 &lt;= 10^2\n1 &lt;= m2 &lt;= 10^2\n-10^9 &lt;= e11', e12', .. n2 * m2 elements &lt;= 10^9",
+  "sampleInput": "2\n3\n10\n0\n0\n0\n20\n0\n3\n4\n1\n0\n1\n0\n0\n1\n1\n2\n1\n1\n0\n0",
+  "sampleOutput": "10 0 10 0\n0 20 20 40",
+  "questionVideo": "eLIT5fnKmMI",
+  "solutionVideo": "0dGuTLr6xT4",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main{\n\npublic static void main(String[] args) throws Exception {\n    // write your code here\n }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/2d-arrays/matrix-multiplication-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

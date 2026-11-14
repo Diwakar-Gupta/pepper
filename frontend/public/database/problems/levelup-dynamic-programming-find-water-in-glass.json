@@ -1,0 +1,25 @@
+{
+  "name": "Find Water In Glass",
+  "slug": "levelup-dynamic-programming-find-water-in-glass",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. Pepcoder arranged some glasses in the form of pascal triangle.\n2. Capacity of each glass is 1 litre. If you pour K amount of water in a glass, it will retain 1 litre and\n   rest of it gets equally distributed in left bottom glass and right bottom glass.\n3. If pepcoder pours K litres of water in the topmost glass, you have to find out the amount of water in Cth glass of Rth row.\n\nAssumption -&gt; There are enough glasses in the triangle till no glass overflows.",
+  "inputFormat": "A number K representing amount of water poured in topmost glass.\nTwo numbers R and C",
+  "outputFormat": "A number representing the amount of water present in Cth glass of Rth row.",
+  "constraints": "1 &lt;= K &lt;= 500\n1 &lt;= R,C &lt;= K",
+  "sampleInput": "3\n1\n0",
+  "sampleOutput": "1.0",
+  "questionVideo": "TTdEaEQCPik",
+  "solutionVideo": "TTdEaEQCPik",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static double solution(int k, int r, int c) {\n    // write your code here\n\n  }\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    int k = scn.nextInt();\n    int r = scn.nextInt();\n    int c = scn.nextInt();\n    System.out.println(solution(k, r, c));\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/find-water-in-glass-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

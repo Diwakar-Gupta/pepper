@@ -1,11 +1,27 @@
 {
   "name": "Tiling With M * 1 Tiles",
   "slug": "dynamic-programming-and-greedy-tiling-with-m-1-tiles",
-  "description": "1. You are given a number n and a number m separated by line-break representing the length and breadth of a m * n floor.\n2. You've an infinite supply of m * 1 tiles.\n3. You are required to calculate and print the number of ways floor can be tiled using tiles.\n\n### Input Format\n```\nA number n\nA number m\n```\n\n### Output Format\n```\nA number representing the number of ways in which the number of ways floor can be tiled using tiles.\n```\n\n### Constraints\n```\n1 <= n <= 100\n1 <= m <= 50\n```\n\n### Sample Input\n```\n39\n16\n```\n\n### Sample Output\n```\n61\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/_c_R-uIi-zU?end=52&rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/_c_R-uIi-zU?start=52&rel=0&loop=1&playlist=_c_R-uIi-zU",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "dynamic-programming-and-greedy",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n and a number m separated by line-break representing the length and breadth of a m * n floor.\n2. You've an infinite supply of m * 1 tiles.\n3. You are required to calculate and print the number of ways floor can be tiled using tiles.",
+  "inputFormat": "A number n\nA number m",
+  "outputFormat": "A number representing the number of ways in which the number of ways floor can be tiled using tiles.",
+  "constraints": "1 &lt;= n &lt;= 100\n1 &lt;= m &lt;= 50",
+  "sampleInput": "39\n16",
+  "sampleOutput": "61",
+  "questionVideo": "_c_R-uIi-zU",
+  "solutionVideo": "_c_R-uIi-zU",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\n\nusing namespace std ;\n\nint main() {\n  int n ;\n  cin >> n ;\n  int m ;\n  cin >> m ;\n  //   write your code here\n\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n    }\n}",
+    "python": "def No_of_ways(n, m):\n#Write your code here\n\nif __name__ == '__main__':\n\n  n = int(input())\n        m = int(input())\n\n            print(No_of_ways(n, m))"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/tiling2-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

@@ -1,11 +1,27 @@
 {
   "name": "Remove Primes",
   "slug": "string-string-builder-and-arraylist-remove-primes",
-  "description": "1. You are given an ArrayList of positive integers.\n2. You have to remove prime numbers from the given ArrayList and return the updated ArrayList.\n\nNote -> The order of elements should remain same.\n\n### Input Format\n```\nA number N\narr1\narr2.. N numbers\n```\n\n### Output Format\n```\nAn Arraylist\n```\n\n### Constraints\n```\n1 <= N <= 10000\n```\n\n### Sample Input\n```\n4\n3 12 13 15\n```\n\n### Sample Output\n```\n[12, 15]\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/jj90JZ_wLoo?end=251&rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/jj90JZ_wLoo?start=251&rel=0&loop=1&playlist=jj90JZ_wLoo",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "string-string-builder-and-arraylist",
+  "difficulty": "Easy",
+  "statement": "1. You are given an ArrayList of positive integers.\n2. You have to remove prime numbers from the given ArrayList and return the updated ArrayList.\n\nNote -&gt; The order of elements should remain same.",
+  "inputFormat": "A number N\narr1\narr2.. N numbers",
+  "outputFormat": "An Arraylist",
+  "constraints": "1 &lt;= N &lt;= 10000",
+  "sampleInput": "4\n3 12 13 15",
+  "sampleOutput": "[12, 15]",
+  "questionVideo": "jj90JZ_wLoo",
+  "solutionVideo": "jj90JZ_wLoo",
+  "templates": {
+    "cpp": "#include<iostream>\n#include<vector>\nusing namespace std;\n\nvoid removeprimes(vector<int> v)\n{\n  //write your code here\n}\nint main()\n{\n  int n;\n  cin >> n;\n  vector<int> v(n, 0);\n  for (int i = 0; i < n; i++)\n  {\n    cin >> v[i];\n  }\n  removeprimes(v);\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static void solution(ArrayList<Integer> al){\n\t\t// write your code here\n\t\t\n\t}\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tArrayList<Integer> al = new ArrayList<>();\n\t\tfor(int i = 0 ; i < n; i++){\n\t\t\tal.add(scn.nextInt());\n\t\t}\n\t\tsolution(al);\n\t\tSystem.out.println(al);\n\t}\n\n}",
+    "python": "def solution(al):\n#write your code here\n\n\n  n = int(input())\n      al = []\n           al = list(map(int, input().split()))\n                solution(al)\n                print(al)\n"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/string,-string-builder-and-arraylist/remove-primes-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

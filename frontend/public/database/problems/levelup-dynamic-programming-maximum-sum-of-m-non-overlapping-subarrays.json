@@ -1,0 +1,25 @@
+{
+  "name": "Maximum Sum Of M Non-overlapping Subarrays",
+  "slug": "levelup-dynamic-programming-maximum-sum-of-m-non-overlapping-subarrays",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Hard",
+  "statement": "1. You are given an array(arr) of positive numbers and two numbers M and K.\n2. You have to find the maximum sum of M non-overlapping subarrays of size K.\n3. The size of the given array(arr) is greater than M*K.",
+  "inputFormat": "A number N\narr1\narr2.. N numbers\nTwo numbers M and K",
+  "outputFormat": "A number representing maximum sum of M non-overlapping subarrays of size K.",
+  "constraints": "1 &lt;= N &lt;= 10^3\n1 &lt;= arr[i] &lt;= 10^3\nM &gt;= 1\nK &gt;= 1\nN &gt;= M*K",
+  "sampleInput": "7\n2 10 7 18 5 33 0\n3\n1",
+  "sampleOutput": "61",
+  "questionVideo": "Nkgylsa5DY8",
+  "solutionVideo": "Nkgylsa5DY8",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int solution(int[] arr, int m, int k){\n\t\t// write your code here\n\t\t\n\t\treturn 0;\n\t}\n\t\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tint[] arr = new int[n];\n\t\tfor(int i = 0 ; i < arr.length; i++){\n\t\t\tarr[i] = scn.nextInt();\n\t\t}\n        int m = scn.nextInt();\n        int k = scn.nextInt();\n        System.out.println(solution(arr, m , k));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/maximum-sum-of-m-non-overlapping-subarrays-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Sum Of Factors",
+  "slug": "interview-prep-number-theory-sum-of-factors",
+  "course": "interview-prep",
+  "module": "number-theory",
+  "difficulty": "Medium",
+  "statement": "Given a number n, output the summation of all its proper Factors.\n\nNote: A proper Factor of a natural number is the divisor that is strictly less than the number.",
+  "inputFormat": "The first line contains integer t stating number of test cases. \nFor next t lines, each line contains an integer n.",
+  "outputFormat": "In each of t lines, print the summation of Factors of the Integer given.",
+  "constraints": "1&lt;= t &lt;= 10^5\n1&lt;= n &lt;= 10^5",
+  "sampleInput": "3\n2\n10\n20",
+  "sampleOutput": "1\n8\n22",
+  "questionVideo": "Cr_wjSsO1ys",
+  "solutionVideo": "Cr_wjSsO1ys",
+  "templates": {
+    "java": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.util.ArrayList;\n\npublic class Main {\n\n  public static void main(String[] args) throws NumberFormatException, IOException {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/number-theory/sum-of-factors-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

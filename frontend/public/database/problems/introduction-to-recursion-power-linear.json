@@ -1,11 +1,27 @@
 {
   "name": "Power-linear",
   "slug": "introduction-to-recursion-power-linear",
-  "description": "1. You are given a number x.\n2. You are given another number n.\n3. You are required to calculate x raised to the power n. Don't change the signature of power function .\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA number x\nA number n\n```\n\n### Output Format\n```\nx raised to the power n\n```\n\n### Constraints\n```\n1 <= x <= 10\n0 <= n <= 9\n```\n\n### Sample Input\n```\n2\n5\n```\n\n### Sample Output\n```\n32\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/KYke5cn9jAk?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/EohIyWnQYBY?rel=0&loop=1&playlist=EohIyWnQYBY",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "introduction-to-recursion",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number x.\n2. You are given another number n.\n3. You are required to calculate x raised to the power n. Don't change the signature of power function .\n\nNote -&gt; The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.",
+  "inputFormat": "A number x\nA number n",
+  "outputFormat": "x raised to the power n",
+  "constraints": "1 &lt;= x &lt;= 10\n0 &lt;= n &lt;= 9",
+  "sampleInput": "2\n5",
+  "sampleOutput": "32",
+  "questionVideo": "KYke5cn9jAk",
+  "solutionVideo": "EohIyWnQYBY",
+  "templates": {
+    "cpp": "#include<iostream>\nusing namespace std;\n\nint power(int x,int n){\n   // write your code here\n\n}\n\n\nint main(){\n    int n,x; cin>>x>>n;\n    cout<<power(x,n);\n}\n",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // write your code here\n    }\n\n    public static int power(int x, int n){\n        return 0;\n    }\n\n}",
+    "python": "def powerLinear(x, n):\n# write your code here\n\n\n  num = int(input())\n        power = int(input())\n                print(powerLinear(num, power))"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/introduction-to-recursion/power-linear-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

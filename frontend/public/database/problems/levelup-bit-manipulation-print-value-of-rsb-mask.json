@@ -1,0 +1,26 @@
+{
+  "name": "Print Value Of Rsb Mask",
+  "slug": "levelup-bit-manipulation-print-value-of-rsb-mask",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n.\n2. You have to print the right-most set bit mask.",
+  "inputFormat": "A number n",
+  "outputFormat": "A number",
+  "constraints": "1 &lt;= n &lt;= 10^9",
+  "sampleInput": "58",
+  "sampleOutput": "10",
+  "questionVideo": "XcSr6TIMl7w",
+  "solutionVideo": "XcSr6TIMl7w",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args){\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n\n    //write your code here\n  }\n\n}"
+  },
+  "editorial": "<p>The problem here deals with getting the rightmost set bit of the given input number. For example, n = 58 =&gt; [ 1 1 1 0 1 0 ], the answer should be 2 =&gt; [ 0 0 0 0 1 0 ] as the rightmost set bit for n is at 1st index.</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/f6288c8a3a958c73.png\" alt=\"\"></p><p>To achieve this we need to follow two steps firstly we need to flip the bits of the input number and store it in a mask. Thereafter we need to add 1 to the mask to get our desired mask. AND operation with this mask will yield us the RSB of the given input number. </p><p><b>Generalised Case for RSB:</b></p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/486d98d00cf1afcf.png\" alt=\"\"></p><p><b>Time Complexity: O(1)</b></p><p>The time complexity for the function is constant as basic bit operations are involved.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/print-value-of-rsb-mask-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

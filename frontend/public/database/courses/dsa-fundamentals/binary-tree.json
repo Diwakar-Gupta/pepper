@@ -1,67 +1,129 @@
-[
-  {
-    "type": "Code",
-    "slug": "size-sum-maximum-and-height-of-a-binary-tree-easy",
-    "name": "Size, Sum, Maximum And Height Of A Binary Tree Easy"
+{
+  "name": "Binary Tree",
+  "slug": "binary-tree",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 0,
+    "articles": 1,
+    "videos": 0
   },
-  {
-    "type": "Code",
-    "slug": "levelorder-traversal-of-binary-tree-easy",
-    "name": "Levelorder Traversal Of Binary Tree Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "iterative-pre-post-and-inorder-traversals-of-binary-tree-easy",
-    "name": "Iterative Pre, Post And Inorder Traversals Of Binary Tree Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "find-and-nodetorootpath-in-binary-tree-easy",
-    "name": "Find And Nodetorootpath In Binary Tree Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "print-k-levels-down-easy",
-    "name": "Print K Levels Down Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "print-nodes-k-distance-away-easy",
-    "name": "Print Nodes K Distance Away Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "path-to-leaf-from-root-in-range-easy",
-    "name": "Path To Leaf From Root In Range Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "transform-to-left-cloned-tree-easy",
-    "name": "Transform To Left-cloned Tree Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "transform-to-normal-from-left-cloned-tree-easy",
-    "name": "Transform To Normal From Left-cloned Tree Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "print-single-child-nodes-easy",
-    "name": "Print Single Child Nodes Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "remove-leaves-in-binary-tree-easy",
-    "name": "Remove Leaves In Binary Tree Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "diameter-of-a-binary-tree-easy",
-    "name": "Diameter Of A Binary Tree Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "tilt-of-binary-tree-easy",
-    "name": "Tilt Of Binary Tree Easy"
-  }
-]
+  "items": [
+    {
+      "type": "problem",
+      "slug": "binary-tree-size-sum-maximum-and-height-of-a-binary-tree",
+      "name": "Size, Sum, Maximum And Height Of A Binary Tree",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "binary-tree-levelorder-traversal-of-binary-tree",
+      "name": "Levelorder Traversal Of Binary Tree",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "binary-tree-iterative-pre-post-and-inorder-traversals-of-binary-tree",
+      "name": "Iterative Pre, Post And Inorder Traversals Of Binary Tree",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "binary-tree-find-and-nodetorootpath-in-binary-tree",
+      "name": "Find And Nodetorootpath In Binary Tree",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "binary-tree-print-k-levels-down",
+      "name": "Print K Levels Down",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "binary-tree-print-nodes-k-distance-away",
+      "name": "Print Nodes K Distance Away",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "binary-tree-path-to-leaf-from-root-in-range",
+      "name": "Path To Leaf From Root In Range",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "binary-tree-transform-to-left-cloned-tree",
+      "name": "Transform To Left-cloned Tree",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "binary-tree-transform-to-normal-from-left-cloned-tree",
+      "name": "Transform To Normal From Left-cloned Tree",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "binary-tree-print-single-child-nodes",
+      "name": "Print Single Child Nodes",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "article",
+      "slug": "binary-tree-remove-leaves-in-binary-tree",
+      "name": "Remove Leaves In Binary Tree"
+    },
+    {
+      "type": "problem",
+      "slug": "binary-tree-remove-leaves-in-binary-tree",
+      "name": "Remove Leaves In Binary Tree",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "binary-tree-diameter-of-a-binary-tree",
+      "name": "Diameter Of A Binary Tree",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "binary-tree-tilt-of-binary-tree",
+      "name": "Tilt Of Binary Tree",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "binary-tree-is-a-binary-search-tree",
+      "name": "Is A Binary Search Tree",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "binary-tree-is-balanced-tree",
+      "name": "Is Balanced Tree",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "binary-tree-largest-bst-subtree",
+      "name": "Largest Bst Subtree",
+      "difficulty": "Medium",
+      "unavailable": true
+    }
+  ]
+}

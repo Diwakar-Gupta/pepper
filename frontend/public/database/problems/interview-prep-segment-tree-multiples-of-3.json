@@ -1,0 +1,25 @@
+{
+  "name": "Multiples Of 3",
+  "slug": "interview-prep-segment-tree-multiples-of-3",
+  "course": "interview-prep",
+  "module": "segment-tree",
+  "difficulty": "Medium",
+  "statement": "There are N numbers(indexed from 1 to N) initially all are 0.\nYou have to perform Q operations of two types:\n1. 1 A B: increase all numbers in range from index A to B by 1.\n2. 2 A B: count how many numbers in range from index A to B are divisible by 3.",
+  "inputFormat": "First line contains one integer N\nSecond line contains one integer Q\nfollowing Q lines contains queries of format either :\n1 A B or \n2 A B",
+  "outputFormat": "for all query of type 2 A B print in seperate lines count of numbers.",
+  "constraints": "1. 1 &lt;= N &lt;= 10^5\n2. 1 &lt;= A &lt;= B &lt;= N",
+  "sampleInput": "4\n7\n2 1 4\n1 2 3\n1 2 4\n2 1 1\n1 1 4\n2 4 4\n2 1 4",
+  "sampleOutput": "4\n1\n0\n2",
+  "questionVideo": "FxC3N5PBk8Q",
+  "solutionVideo": "FxC3N5PBk8Q",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args) throws Exception {\n    BufferedReader read = new BufferedReader(new InputStreamReader(System.in));\n\n    int n = Integer.parseInt(read.readLine());\n    int q = Integer.parseInt(read.readLine());\n\n    // write your code here\n\n\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/segment-tree/multiples-of-3-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

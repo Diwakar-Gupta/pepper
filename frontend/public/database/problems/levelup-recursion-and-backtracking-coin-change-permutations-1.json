@@ -1,0 +1,25 @@
+{
+  "name": "Coin Change - Permutations - 1",
+  "slug": "levelup-recursion-and-backtracking-coin-change-permutations-1",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number n, representing the count of coins.\n2. You are given n numbers, representing the denominations of n coins.\n3. You are given a number &quot;amt&quot;.\n4. You are required to calculate and print the permutations of the n coins (non-duplicate) using which the amount &quot;amt&quot; can be paid.\n\nNote -&gt; Use the code snippet and follow the algorithm discussed in question video. The judge can't force you but the intention is to teach a concept. Play in spirit of the question.",
+  "inputFormat": "A number n\nn1\nn2\n.. n number of elements\nA number amt",
+  "outputFormat": "Check the sample output and question video",
+  "constraints": "1 &lt;= n &lt;= 30\n0 &lt;= n1, n2, .. n elements &lt;= 20\n0 &lt;= amt &lt;= 50",
+  "sampleInput": "5\n2\n3\n5\n6\n7\n12",
+  "sampleOutput": "2-3-7-.\n2-7-3-.\n3-2-7-.\n3-7-2-.\n5-7-.\n7-2-3-.\n7-3-2-.\n7-5-.",
+  "questionVideo": "aqepijUkV6w",
+  "solutionVideo": "aqepijUkV6w",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void coinChange(int[] coins, int amtsf, int tamt, String asf, boolean[] used){\n       // write your code here\n    }\n    public static void main(String[] args) throws Exception {\n        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n        int n = Integer.parseInt(br.readLine());\n        int[] coins = new int[n];\n        for (int i = 0; i < n; i++) {\n            coins[i] = Integer.parseInt(br.readLine());\n        }\n        int amt = Integer.parseInt(br.readLine());\n        boolean[] used = new boolean[coins.length];\n        coinChange(coins, 0, amt, \"\", used);\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/coin-change-permutations-1-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

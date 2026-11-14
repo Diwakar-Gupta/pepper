@@ -1,0 +1,25 @@
+{
+  "name": "Construct Binary Tree From Inorder And Levelorder Traversal",
+  "slug": "levelup-trees-construct-binary-tree-from-inorder-and-levelorder-traversal",
+  "course": "levelup",
+  "module": "trees",
+  "difficulty": "Medium",
+  "statement": "1. You are given a partially written function to solve(Refer question video).\n2. Task : Construct Binary Tree from InOrder and LevelOrder Traversal.\n3. you will be given two arrays representing a valid InOrder &amp; LevelOrder of a Binary Tree. Program is required to create a unique Binary Tree.",
+  "inputFormat": "Input is managed for you.",
+  "outputFormat": "Output is managed for you.",
+  "constraints": "0 &lt;= Number of Nodes &lt;= 10^9\n-10^9 &lt;= value of Node data &lt;= 10^9\nValid InOrder and LevelOrder traversals.",
+  "sampleInput": "9\n2 7 15 12 6 9 5 11 4\n12 7 5 6 11 2 15 4 9",
+  "sampleOutput": "7 -> 12 <- 5\n2 -> 7 <- 15\n. -> 2 <- .\n. -> 15 <- .\n6 -> 5 <- 11\n. -> 6 <- 9\n. -> 9 <- .\n. -> 11 <- 4\n. -> 4 <- .",
+  "questionVideo": "mfEs11IKEes",
+  "solutionVideo": "mfEs11IKEes",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static Scanner scn = new Scanner(System.in);\n\n  static class TreeNode {\n    int val;\n    TreeNode left = null, right = null;\n\n    TreeNode(int val) {\n      this.val = val;\n    }\n  }\n\n  public static TreeNode buildTree(int[] inorder, int[] levelOrder)\n}\n\n// input_section=================================================\n\npublic static void display(TreeNode node) {\n  if (node == null)\n    return;\n\n  StringBuilder sb = new StringBuilder();\n  sb.append((node.left != null ? node.left.val : \".\"));\n  sb.append(\" -> \" + node.val + \" <- \");\n  sb.append((node.right != null ? node.right.val : \".\"));\n\n  System.out.println(sb.toString());\n\n  display(node.left);\n  display(node.right);\n\n}\n\npublic static void solve() {\n  int n = scn.nextInt();\n\n  int[] InOrder = new int[n];\n  for (int i = 0; i < n; i++)\n    InOrder[i] = scn.nextInt();\n\n  int[] LevelOrder = new int[n];\n  for (int i = 0; i < n; i++)\n    LevelOrder[i] = scn.nextInt();\n\n  TreeNode root = buildTree(InOrder, LevelOrder);\n  display(root);\n}\n\npublic static void main(String[] args) {\n  solve();\n}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/construct-binarytree-from-inorder-and-levelorder-traversal/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

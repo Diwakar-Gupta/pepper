@@ -1,0 +1,25 @@
+{
+  "name": "Lost Tree",
+  "slug": "interview-prep-interactive-problems-lost-tree",
+  "course": "interview-prep",
+  "module": "interactive-problems",
+  "difficulty": "Hard",
+  "statement": "https://codeforces.com/problemset/problem/1534/D",
+  "inputFormat": "Check the link",
+  "outputFormat": "Check the link",
+  "constraints": "Check the link",
+  "sampleInput": "1",
+  "sampleOutput": "1",
+  "questionVideo": "FWcdnLpifMo",
+  "solutionVideo": "FWcdnLpifMo",
+  "templates": {
+    "java": "import java.util.*;\nimport java.lang.*;\nimport java.io.*;\n\nclass Main {\n\n  public static void main(String[] args) throws Exception {\n\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/interactive-problems/lost-tree-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

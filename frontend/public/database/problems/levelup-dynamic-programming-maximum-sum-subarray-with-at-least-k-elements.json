@@ -1,0 +1,25 @@
+{
+  "name": "Maximum Sum Subarray With At Least K Elements",
+  "slug": "levelup-dynamic-programming-maximum-sum-subarray-with-at-least-k-elements",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given an array(arr) of integers and a number k.\n2. You have to find maximum subarray sum in the given array.\n3. The subarray must have at least k elements.",
+  "inputFormat": "A number N\na1\na2.. N integers\nA number K",
+  "outputFormat": "A number representing maximum subarray sum with subarray having at least K elements.",
+  "constraints": "1 &lt;= N &lt;= 10^5\n1 &lt;= arr[i] &lt;= 10^5\n1 &lt;= K &lt;= N",
+  "sampleInput": "3\n1\n2\n3\n2",
+  "sampleOutput": "6",
+  "questionVideo": null,
+  "solutionVideo": null,
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static int solution(int[] arr, int k) {\n    // write your code here\n\n    return 0;\n  }\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    for (int i = 0; i < arr.length; i++) {\n      arr[i] = scn.nextInt();\n    }\n    int k = scn.nextInt();\n    System.out.println(solution(arr, k));\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/maximum-sum-subarray-with-at-least-k-elements-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

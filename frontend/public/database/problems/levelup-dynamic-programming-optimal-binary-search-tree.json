@@ -1,0 +1,25 @@
+{
+  "name": "Optimal Binary Search Tree",
+  "slug": "levelup-dynamic-programming-optimal-binary-search-tree",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given two arrays - \n     The first array(keys), which is sorted and has distinct integers, represents search keys.\n   Second one(freq) represents frequency counts, where freq[i] is the number of searches to keys[i].\n2. A binary search tree is constructed containing all keys and the total cost of searches is minimum. \n3. The cost of a BST node is the level of that node multiplied by its frequency.\n4. You have to find the minimum cost of all searches.",
+  "inputFormat": "A number N\na1\na2.. N integers\nb1\nb2.. N numbers",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 1000\n1 &lt;= keys[i],freq[i] &lt;= 1000",
+  "sampleInput": "9\n1\n3\n4\n5\n6\n7\n8\n9\n11\n3\n6\n4\n8\n7\n3\n7\n4\n7",
+  "sampleOutput": "125",
+  "questionVideo": "HnslzEs8dbY",
+  "solutionVideo": "HnslzEs8dbY",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n  \n  private static void optimalbst(int[] keys, int[] frequency, int n) {\n    //write your code here\n    \n\t}\n\n    public static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\tint[] keys = new int[n];\n\tint[] frequency = new int[n];\n    for(int i= 0 ;i < n ; i++) {\n\t\tkeys[i] = scn.nextInt();\n\t}\n\tfor(int i = 0 ; i < n; i++){\n      frequency[i] = scn.nextInt();\n    }\n\toptimalbst(keys,frequency,n);\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/optimal-bst-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

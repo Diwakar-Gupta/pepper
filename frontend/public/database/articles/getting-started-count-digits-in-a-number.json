@@ -1,0 +1,8 @@
+{
+  "name": "Count Digits In A Number",
+  "slug": "getting-started-count-digits-in-a-number",
+  "course": "dsa-fundamentals",
+  "module": "getting-started",
+  "html": "Solution Approach:  <p>Dear reader, we have to count the number of digits in the given number. For finding this, we count the number of times that number is divisible by 10.<br>The count would give us the number of digits constituting the given number.<br>For example: we are given <b>9543</b><br>It is divided 4 times by 10 &amp; contains 4 digits.</p> <p><b>&quot;Every division strips out the last digit&quot;</b></p> <img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"img\">  <p>So, we can effectively conclude that by continuously dividing a number and keeping a count of number of division operations until the dividend turns to 0 will give us the number of digits it is composed of in the form of number of division operations executed.<br>The algorithm for the same can be illustrated as:</p> <img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"img\">  <p>Please refer YouTube video Count Digits in a Number </p>  <a data-yt=\"Ue3MTpyPHoU\" href=\"https://www.youtube.com/watch?v=Ue3MTpyPHoU\">Watch video</a>  <p> We hope after going through this article and the video, the question is clear to you. See you in the next question.</p>    Author:  Shreeya Gupta     <p>Share this article</p>  <i></i> <p>Facebook</p>  <i></i> <p>Twitter</p>  <i></i> <p>Instagram</p>  <i></i> <p>Whatsapp</p>  <i></i> <p>Linkedin</p>      <i></i> <img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\">",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/getting-started/counting_digits_in_a_number/topic"
+}

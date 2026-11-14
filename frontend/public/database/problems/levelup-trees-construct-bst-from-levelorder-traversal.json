@@ -1,0 +1,26 @@
+{
+  "name": "Construct Bst From Levelorder Traversal",
+  "slug": "levelup-trees-construct-bst-from-levelorder-traversal",
+  "course": "levelup",
+  "module": "trees",
+  "difficulty": "Medium",
+  "statement": "1. You are given a partially written function to solve(Refer question video).\n2. Task : Construct Binary Search Tree from given LevelOrder Traversal.\n3. you will be given an array representing a valid LevelOrder of a Binary Search Tree. Program is required to create a unique Binary Search Tree.",
+  "inputFormat": "Input is managed for you.",
+  "outputFormat": "Output is managed for you.",
+  "constraints": "0 &lt;= Number of Nodes &lt;= 10^9\n-10^9 &lt;= value of Node data &lt;= 10^9\nValid LevelOrder traversal.",
+  "sampleInput": "6\n3 2 5 1 6 7",
+  "sampleOutput": "2 -> 3 <- 5\n1 -> 2 <- .\n. -> 1 <- .\n. -> 5 <- 6\n. -> 6 <- 7\n. -> 7 <- .",
+  "questionVideo": "8w_NSKo9e74",
+  "solutionVideo": "8w_NSKo9e74",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\n#include <queue>\nusing namespace std;\n\nclass TreeNode\n{\npublic:\n    int val = 0;\n    TreeNode *left = nullptr;\n    TreeNode *right = nullptr;\n\n    TreeNode(int val)\n    {\n        this->val = val;\n    }\n};\n\nclass levelPair\n{\npublic:\n    TreeNode *par = nullptr;\n    int lb = -(int)1e8;\n    int rb = (int)1e8;\n\n    levelPair()\n    {\n    }\n\n    levelPair(TreeNode *par, int lb, int rb)\n    {\n        this->par = par;\n        this->lb = lb;\n        this->rb = rb;\n    }\n};\n\nTreeNode *constructBSTFromLevelOrder(vector<int> &arr)\n{\n    return nullptr;\n}\n\n// input_Section_====================================================================\n\nvoid display(TreeNode *node)\n{\n    if (node == nullptr)\n        return;\n\n    string str = \"\";\n    str += ((node->left != nullptr ? to_string(node->left->val) : \".\"));\n    str += (\" -> \" + to_string(node->val) + \" <- \");\n    str += ((node->right != nullptr ? to_string(node->right->val) : \".\"));\n\n    cout << str << endl;\n\n    display(node->left);\n    display(node->right);\n}\n\nvoid solve()\n{\n    int n;\n    cin >> n;\n    vector<int> pre(n, 0);\n    for (int i = 0; i < n; i++)\n    {\n        cin >> pre[i];\n    }\n\n    TreeNode *root = constructBSTFromLevelOrder(pre);\n    display(root);\n}\n\nint main()\n{\n    solve();\n    return 0;\n}",
+    "java": "import java.util.Scanner;\n\npublic class Main {\n    public static Scanner scn = new Scanner(System.in);\n\n    public static class TreeNode {\n        int val = 0;\n        TreeNode left = null;\n        TreeNode right = null;\n\n        TreeNode(int val) {\n            this.val = val;\n        }\n    }\n\n    public static TreeNode constructBSTFromLevelOrder(int[] LevelOrder) {\n        return null;\n    }\n\n    // input_section=================================================\n\n    public static void display(TreeNode node) {\n        if (node == null)\n            return;\n\n        StringBuilder sb = new StringBuilder();\n        sb.append((node.left != null ? node.left.val : \".\"));\n        sb.append(\" -> \" + node.val + \" <- \");\n        sb.append((node.right != null ? node.right.val : \".\"));\n\n        System.out.println(sb.toString());\n\n        display(node.left);\n        display(node.right);\n\n    }\n\n    public static void solve() {\n        int n = scn.nextInt();\n        int[] level = new int[n];\n        for (int i = 0; i < n; i++)\n            level[i] = scn.nextInt();\n\n        TreeNode root = constructBSTFromLevelOrder(level);\n        display(root);\n    }\n\n    public static void main(String[] args) {\n        solve();\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/construct-bst-from-levelorder-traversal/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

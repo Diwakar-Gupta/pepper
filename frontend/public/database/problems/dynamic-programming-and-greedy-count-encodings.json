@@ -1,11 +1,25 @@
 {
   "name": "Count Encodings",
   "slug": "dynamic-programming-and-greedy-count-encodings",
-  "description": "1. You are given a string str of digits. (will never start with a 0)\n2. You are required to encode the str as per following rules\n    1 -> a\n    2 -> b\n    3 -> c\n    ..\n    25 -> y\n    26 -> z\n3. You are required to calculate and print the count of encodings for the string str.\n\n     For 123 -> there are 3 encodings. abc, aw, lc\n     For 993 -> there is 1 encoding. iic \n     For 013 -> This is an invalid input. A string starting with 0 will not be passed.\n     For 103 -> there is 1 encoding. jc\n     For 303 -> there are 0 encodings. But such a string maybe passed. In this case \n     print 0.\n\n### Input Format\n```\nA string str\n```\n\n### Output Format\n```\ncount of encodings\n```\n\n### Constraints\n```\n0 < str.length <= 10\n```\n\n### Sample Input\n```\n123\n```\n\n### Sample Output\n```\n3\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/jFZmBQ569So?end=51&rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/jFZmBQ569So?start=51&rel=0&loop=1&playlist=jFZmBQ569So",
-  "codes": {
-    "java": "import java.io.*;\nimport java.util.*;\npublic class Main {\n    public static void main\n(String[] args) throws \nException {\n    }\n}"
-  }
+  "course": "dsa-fundamentals",
+  "module": "dynamic-programming-and-greedy",
+  "difficulty": "Easy",
+  "statement": "1. You are given a string str of digits. (will never start with a 0)\n2. You are required to encode the str as per following rules\n    1 -&gt; a\n    2 -&gt; b\n    3 -&gt; c\n    ..\n    25 -&gt; y\n    26 -&gt; z\n3. You are required to calculate and print the count of encodings for the string str.\n\n     For 123 -&gt; there are 3 encodings. abc, aw, lc\n     For 993 -&gt; there is 1 encoding. iic \n     For 013 -&gt; This is an invalid input. A string starting with 0 will not be passed.\n     For 103 -&gt; there is 1 encoding. jc\n     For 303 -&gt; there are 0 encodings. But such a string maybe passed. In this case \n     print 0.",
+  "inputFormat": "A string str",
+  "outputFormat": "count of encodings",
+  "constraints": "0 &lt; str.length &lt;= 10",
+  "sampleInput": "123",
+  "sampleOutput": "3",
+  "questionVideo": "jFZmBQ569So",
+  "solutionVideo": "jFZmBQ569So",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/count-encodings-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

@@ -1,11 +1,27 @@
 {
   "name": "Climb Stairs With Minimum Moves",
   "slug": "dynamic-programming-and-greedy-climb-stairs-with-minimum-moves",
-  "description": "1. You are given a number n, representing the number of stairs in a staircase.\n2. You are on the 0th step and are required to climb to the top.\n3. You are given n numbers, where ith element's value represents - till how far from the step you \n     could jump to in a single move.  You can of-course fewer number of steps in the move.\n4. You are required to print the number of minimum moves in which you can reach the top of \n     staircase.\nNote -> If there is no path through the staircase print null.\n\n### Input Format\n```\nA number n\n.. n more elements\n```\n\n### Output Format\n```\nA number representing the number of ways to climb the stairs from 0 to top.\n```\n\n### Constraints\n```\n0 <= n <= 20\n0 <= n1, n2, .. <= 20\n```\n\n### Sample Input\n```\n10\n3\n3\n0\n2\n1\n2\n4\n2\n0\n0\n```\n\n### Sample Output\n```\n4\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/d42uDPBOXSw?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/Zobz9BXpwYE?rel=0&loop=1&playlist=Zobz9BXpwYE",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "dynamic-programming-and-greedy",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n, representing the number of stairs in a staircase.\n2. You are on the 0th step and are required to climb to the top.\n3. You are given n numbers, where ith element's value represents - till how far from the step you \n     could jump to in a single move.  You can of-course fewer number of steps in the move.\n4. You are required to print the number of minimum moves in which you can reach the top of \n     staircase.\nNote -&gt; If there is no path through the staircase print null.",
+  "inputFormat": "A number n\n.. n more elements",
+  "outputFormat": "A number representing the number of ways to climb the stairs from 0 to top.",
+  "constraints": "0 &lt;= n &lt;= 20\n0 &lt;= n1, n2, .. &lt;= 20",
+  "sampleInput": "10\n3\n3\n0\n2\n1\n2\n4\n2\n0\n0",
+  "sampleOutput": "4",
+  "questionVideo": "d42uDPBOXSw",
+  "solutionVideo": "Zobz9BXpwYE",
+  "templates": {
+    "cpp": "#include<bits/stdc++.h>\nusing namespace std;\n\nint jumpT(int i, int n, vector<int>& jumps, vector<int>& dp)\n{\n  // write your code here\n\n\n}\n\nint main() {\n\n  int n;\n  cin >> n;\n\n  vector<int> jumps(n);\n\n  for (int i = 0; i < n; i++)\n  {\n    cin >> jumps[i];\n  }\n\n  vector<int> dp(n + 1, 0);\n\n  int ans = jumpT(0, n, jumps, dp);\n\n  if (ans < 30)\n    cout << ans;\n  else\n    cout << \"null\";\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // write your code here\n    }\n\n}",
+    "python": "def fun(n, jumps, dp):\n# write code here\n\n\n  return 0\n\n\n\n\n\n# driver code\n         def main():\n         n = int(input())\n\n             jumps = []\n\n                     for i in range(n) :\n                       jumps.append(int(input()))\n\n                       dp = [0] * (n + 1)\n\n                            ans = fun( n, jumps, dp)\n\n                                  if (ans < 30):\n                                    print(ans)\n                              else:\n                                      print(\"null\")\n\n                              if __name__ == \"__main__\":\n                                      main()"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/climb-stairs-with-minimum-moves-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

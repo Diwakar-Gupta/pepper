@@ -1,0 +1,25 @@
+{
+  "name": "Count Distinct Subsequences",
+  "slug": "levelup-dynamic-programming-count-distinct-subsequences",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given a string.\n2. You have to print the count of distinct and non-empty subsequences of the given string. \n\nNote -&gt; String contains only lowercase letters.",
+  "inputFormat": "A String",
+  "outputFormat": "A number",
+  "constraints": "1 &lt;= length of string &lt;= 60",
+  "sampleInput": "abc",
+  "sampleOutput": "7",
+  "questionVideo": "9UEHPiK53BA",
+  "solutionVideo": "9UEHPiK53BA",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main{\n    public static void main(String[] args){\n        Scanner scn = new Scanner(System.in);\n        String str = scn.next();\n        \n        //write your code here\n\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/count-distinct-subsequences-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

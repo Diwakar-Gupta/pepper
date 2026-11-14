@@ -1,0 +1,25 @@
+{
+  "name": "Catalan Number",
+  "slug": "levelup-dynamic-programming-catalan-number",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n.\n2. You are required to find the value of nth catalan number.\nC0 -&gt; 1\nC1 -&gt; 1\nC2 -&gt; 2\nC3 -&gt; 5\n..\nCn -&gt; C0.Cn-1 + C1.Cn-2 + .. + Cn-2.C1 + Cn-1.C0",
+  "inputFormat": "A number n",
+  "outputFormat": "A number representing the value of nth catalan number.",
+  "constraints": "0 &lt;= n &lt;= 15",
+  "sampleInput": "4",
+  "sampleOutput": "14",
+  "questionVideo": "eUw9A1wsFg8",
+  "solutionVideo": "eUw9A1wsFg8",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main{\n\npublic static void main(String[] args) throws Exception {\n    // write your code here\n }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/catalan-number-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

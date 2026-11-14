@@ -1,0 +1,25 @@
+{
+  "name": "Edit Distance",
+  "slug": "levelup-dynamic-programming-edit-distance",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Hard",
+  "statement": "1. You are given two strings s1 and s2.\n2. You have to find the minimum number of operations needed to convert s1 to s2.\n   Operations allowed are - \n   Insert - You can insert any character in s1.\n   Remove - You can remove any character in s1.\n   Replace - You can replace any character in s1 with any other character.",
+  "inputFormat": "Two strings s1 and s2",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= length of s1,s2 &lt;= 100",
+  "sampleInput": "pepperatcoding\npepcoding",
+  "sampleOutput": "5",
+  "questionVideo": null,
+  "solutionVideo": null,
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\t\n\tpublic static int solution(String str1, String str2) {\n\t\t//write your code here\n\n\t\treturn 0;\n\t}\n\t\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tString s1 = scn.next();\n\t\tString s2 = scn.next();\n\t\tSystem.out.println(solution(s1,s2));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/edit-distance-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,11 +1,26 @@
 {
   "name": "Print Subsequence",
   "slug": "recursion-on-the-way-up-print-subsequence",
-  "description": "1. You are given a string str.\n2. Complete the body of printSS function - without changing signature - to calculate and print all subsequences of str.\nUse sample input and output to take idea about subsequences.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA string str\n```\n\n### Output Format\n```\nSubsequences of str in order hinted by Sample output\n```\n\n### Constraints\n```\n0 <= str.length <= 7\n```\n\n### Sample Input\n```\nyvTA\n```\n\n### Sample Output\n```\nyvTA\nyvT\nyvA\nyv\nyTA\nyT\nyA\ny\nvTA\nvT\nvA\nv\nTA\nT\nA\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/Ke8TPhHdHMw?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/Ke8TPhHdHMw?rel=0&loop=1&playlist=Ke8TPhHdHMw",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "recursion-on-the-way-up",
+  "difficulty": "Easy",
+  "statement": "1. You are given a string str.\n2. Complete the body of printSS function - without changing signature - to calculate and print all subsequences of str.\nUse sample input and output to take idea about subsequences.\n\nNote -&gt; The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.",
+  "inputFormat": "A string str",
+  "outputFormat": "Subsequences of str in order hinted by Sample output",
+  "constraints": "0 &lt;= str.length &lt;= 7",
+  "sampleInput": "yvTA",
+  "sampleOutput": "yvTA\nyvT\nyvA\nyv\nyTA\nyT\nyA\ny\nvTA\nvT\nvA\nv\nTA\nT\nA",
+  "questionVideo": "Ke8TPhHdHMw",
+  "solutionVideo": "Ke8TPhHdHMw",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nvoid printSS(string ques, string ans){\n    // write your code here\n    \n}\n\nint main(){\n    string str;\n    cin >> str;\n    printSS(str, \"\");\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n    }\n\n    public static void printSS(String str, String ans) {\n        \n    }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/recursion-on-the-way-up/print-subsequence-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

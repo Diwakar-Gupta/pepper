@@ -1,0 +1,297 @@
+{
+  "name": "Graphs",
+  "slug": "graphs",
+  "course": "levelup",
+  "counts": {
+    "problems": 11,
+    "articles": 1,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-coloring-a-border",
+      "name": "Coloring A Border",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-number-of-enclaves",
+      "name": "Number Of Enclaves",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-number-of-distinct-island",
+      "name": "Number Of Distinct Island",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-zero-one-matrix",
+      "name": "Zero One Matrix",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-rotting-oranges",
+      "name": "Rotting Oranges",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-as-far-from-land-as-possible",
+      "name": "As Far From Land As Possible",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-shortest-bridge",
+      "name": "Shortest Bridge",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-bus-routes",
+      "name": "Bus Routes",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-sliding-puzzle",
+      "name": "Sliding Puzzle",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-minimum-number-of-swaps-required-to-sort-an-array",
+      "name": "Minimum Number Of Swaps Required To Sort An Array",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-pepcoder-and-reversing",
+      "name": "Pepcoder And Reversing",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-pepcoding-course-schedule",
+      "name": "Pepcoding Course Schedule",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-alien-dictionary",
+      "name": "Alien Dictionary",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-kruskal-algorithm",
+      "name": "Kruskal Algorithm",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-optimize-water-distribution",
+      "name": "Optimize Water Distribution",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-swim-in-rising-water",
+      "name": "Swim In Rising Water",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-minimum-cost-to-connect-all-cities",
+      "name": "Minimum Cost To Connect All Cities",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-bellman-ford",
+      "name": "Bellman Ford",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-negative-weight-cycle-detection",
+      "name": "Negative Weight Cycle Detection",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-kosaraju-algorithm",
+      "name": "Kosaraju Algorithm",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-mother-vertex",
+      "name": "Mother Vertex",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-articulation-point",
+      "name": "Articulation Point",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-critical-connection",
+      "name": "Critical Connection",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-remove-max-number-of-edges-to-keep-graph-fully-traversable",
+      "name": "Remove Max Number Of Edges To Keep Graph Fully Traversable",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-number-of-island-2",
+      "name": "Number Of Island 2",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-regions-cut-by-slashes",
+      "name": "Regions Cut By Slashes",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-reconstruct-itinerary",
+      "name": "Reconstruct Itinerary",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-rank-transform-of-a-matrix",
+      "name": "Rank Transform Of A Matrix",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-accounts-merge",
+      "name": "Accounts Merge",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-minimize-malware-spread",
+      "name": "Minimize Malware Spread",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-minimize-malware-spread-2",
+      "name": "Minimize Malware Spread 2",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-redundant-connection",
+      "name": "Redundant Connection",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-minimize-hamming-distance-after-swap-operations",
+      "name": "Minimize Hamming Distance After Swap Operations",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-redundant-connection-2",
+      "name": "Redundant Connection 2",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-satisfiability-of-equality-equation",
+      "name": "Satisfiability Of Equality Equation",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-sentence-similarity",
+      "name": "Sentence Similarity",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-park-regions",
+      "name": "Park Regions",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-kill-the-most-monsters",
+      "name": "Kill The Most Monsters",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-number-of-connections-to-make-pipeline-connected",
+      "name": "Number Of Connections To Make Pipeline Connected",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-graphs-number-of-provinces",
+      "name": "Number Of Provinces",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "article",
+      "slug": "levelup-graphs-mother-vertex",
+      "name": "Mother Vertex"
+    }
+  ]
+}

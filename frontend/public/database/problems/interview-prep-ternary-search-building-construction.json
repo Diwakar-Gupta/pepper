@@ -1,0 +1,25 @@
+{
+  "name": "Building Construction",
+  "slug": "interview-prep-ternary-search-building-construction",
+  "course": "interview-prep",
+  "module": "ternary-search",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://www.spoj.com/problems/KOPC12A/\" target=\"_blank\" rel=\"noopener\"><i> Link -&gt; Building Construction | SPOJ - KOPC12A - K12</i></a>",
+  "inputFormat": "Check the link",
+  "outputFormat": "Check the link",
+  "constraints": "Check the link",
+  "sampleInput": "1\n3\n1 2 3\n10 100 1000",
+  "sampleOutput": "120",
+  "questionVideo": "3Si3SITPlCs",
+  "solutionVideo": "3Si3SITPlCs",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n  public static void main(String[] args) throws Exception\n  {\n    //Code Here;\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/ternary-search/building-construction-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

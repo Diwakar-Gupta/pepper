@@ -1,7 +1,7 @@
 node_modules
 .parcel-cache/
 dist/
-scrapper/scrappedData
+scraper/.cache
 judge/.judge_code
 judge/.test_cases_cache/
 judge/submissions.db

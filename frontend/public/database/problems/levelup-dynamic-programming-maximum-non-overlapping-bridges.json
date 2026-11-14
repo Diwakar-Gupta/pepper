@@ -1,0 +1,25 @@
+{
+  "name": "Maximum Non-overlapping Bridges",
+  "slug": "levelup-dynamic-programming-maximum-non-overlapping-bridges",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n, representing the number of bridges on a river.\n2. You are given n pair of numbers, representing the north bank and south bank co-ordinates of each bridge.\n3. You are required to print the count of maximum number of non-overlapping bridges.",
+  "inputFormat": "A number n\n.. n pair of number each on a separate line (and pair separated by space)",
+  "outputFormat": "A number representing the count of maximum number of non-overlapping bridges.",
+  "constraints": "0 &lt;= n &lt;= 20\n0 &lt;= n1n, n1s, n2n, n2s, .. &lt;= 100",
+  "sampleInput": "10\n10 20\n2 7\n8 15\n17 3\n21 40\n50 4\n41 57\n60 80\n80 90\n1 30",
+  "sampleOutput": "7",
+  "questionVideo": "o1h3aoeSTOU",
+  "solutionVideo": "o1h3aoeSTOU",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // write your code here\n    }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/max-non-overlapping-bridges-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

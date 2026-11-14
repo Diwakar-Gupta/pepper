@@ -1,0 +1,6 @@
+aboveyz -> 1
+abrodyz -> 1
+abslute -> 3
+absoryz -> 2
+actresz -> 4
+gaswxyz -> 0

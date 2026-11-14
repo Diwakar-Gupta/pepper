@@ -1,0 +1,25 @@
+{
+  "name": "Fenwick Tree",
+  "slug": "interview-prep-range-queries-fenwick-tree",
+  "course": "interview-prep",
+  "module": "range-queries",
+  "difficulty": "Hard",
+  "statement": "Mr. Pepcoder has an array A, and his Friend love to do operations on the\narray. The operations can be a query or an update.\n\nFor each query the Friend say two indices l and r , and their father answers back with the sum\nof the elements from indices l to r (both included).\n\nWhen there is an update, the friend says an index i and a value x , and Pepcoder will add x to\nith index of array (so the new value of arr[i]  is arr[i] + x ).\n\nBecause indexing the array from zero is too obscure for children, all indices start from 1.",
+  "inputFormat": "The first line of the input contains N. The second line contains N integers, the initial values of the array. The third line contains Q, the number of operations that will be made. Each of the next Q lines contains an operation. \nQuery operations are of the form (q l r )  , while update operations are of the form (u i x)  .",
+  "outputFormat": "You have to print the answer for every query in a different line, in the same order of the input.",
+  "constraints": "1 &lt;= N &lt;= 10^6\n1 &lt;= Q &lt;= 10^5\n1 &lt;= l,r,i &lt;= N\n-10^9 &lt;=  arr[i]  &lt;= 10^9",
+  "sampleInput": "10\n1 23 4 10 24 33 -1 -9 7 4\n6\nq 2 5\nq 1 9\nu 3 -2\nq 4 5\nu 6 10\nq 4 9",
+  "sampleOutput": "61\n92\n34\n74",
+  "questionVideo": "pTg7NezkV28",
+  "solutionVideo": "pTg7NezkV28",
+  "templates": {
+    "java": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\n\npublic class Main {\n\n\tpublic static void main(String[] args) throws NumberFormatException, IOException {\n\t\t\n\t}\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/range-queries/fenwick_tree_official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

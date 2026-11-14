@@ -1,0 +1,25 @@
+{
+  "name": "Queens Combinations - 2d As 2d - Box Chooses",
+  "slug": "levelup-recursion-and-backtracking-queens-combinations-2d-as-2d-box-chooses",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number n, representing the size of a n * n chess board.\n2. You are required to calculate and print the combinations in which n queens can be placed on the \n     n * n chess-board. \n\nNote -&gt; Use the code snippet and follow the algorithm discussed in question video. The judge can't \n               force you but the intention is to teach a concept. Play in spirit of the question.",
+  "inputFormat": "A number n",
+  "outputFormat": "Check the sample output and question video",
+  "constraints": "1 &lt;= n &lt;= 5",
+  "sampleInput": "2",
+  "sampleOutput": "qq\n--\n\nq-\nq-\n\nq-\n-q\n\n-q\nq-\n\n-q\n-q\n\n--\nqq",
+  "questionVideo": "Ra_fCLyWtr0",
+  "solutionVideo": "Ra_fCLyWtr0",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void queensCombinations(int qpsf, int tq, int row, int col, String asf){\n        // write your code here\n    }\n    public static void main(String[] args) throws Exception {\n        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n        int n = Integer.parseInt(br.readLine());\n        \n        queensCombinations(0, n, 0, 0, \"\");\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/queens-combinations-2das2d-box-chooses-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

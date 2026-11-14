@@ -1,0 +1,25 @@
+{
+  "name": "Arithmetic Slices 2",
+  "slug": "levelup-dynamic-programming-arithmetic-slices-2",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Hard",
+  "statement": "1. You are given an array(arr) of integers.\n2. You have to find the count of arithmetic slices in the given array.\n3. Arithmetic slice is defined as the sub-sequence of an array having all its elements in A.P and length of sub-sequence should be greater than or equal to 3.",
+  "inputFormat": "A number N\narr1\narr2.. N numbers",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 1000\n-10^8 &lt;= arr[i] &lt;= 10^8",
+  "sampleInput": "4\n1\n2\n3\n4",
+  "sampleOutput": "3",
+  "questionVideo": "XjLT4TaXsgw",
+  "solutionVideo": "XjLT4TaXsgw",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int solution(int[] arr) {\n\t\t//write your code here\n\t\t\n\t\treturn 0;\n\t}\n\t\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tint[] arr = new int[n];\n\t\tfor(int i = 0 ; i < n; i++){\n\t\t\tarr[i] = scn.nextInt();\n\t\t}\n\t\tSystem.out.println(solution(arr));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/arithmetic-slices-2-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

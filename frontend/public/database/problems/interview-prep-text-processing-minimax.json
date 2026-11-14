@@ -1,0 +1,25 @@
+{
+  "name": "Minimax",
+  "slug": "interview-prep-text-processing-minimax",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Hard",
+  "statement": "https://codeforces.com/problemset/problem/1530/E",
+  "inputFormat": "Check Link",
+  "outputFormat": "Check Link",
+  "constraints": "Check Link",
+  "sampleInput": "3\nvkcup\nabababa\nzzzzzz",
+  "sampleOutput": "ckpuv\naababab\nzzzzzz",
+  "questionVideo": "7scv-0ydJH4",
+  "solutionVideo": "7scv-0ydJH4",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    // Write Code here\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/textprocessing-minimax/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

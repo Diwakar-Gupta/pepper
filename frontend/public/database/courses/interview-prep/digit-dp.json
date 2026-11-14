@@ -1,0 +1,26 @@
+{
+  "name": "Digit DP",
+  "slug": "digit-dp",
+  "course": "interview-prep",
+  "counts": {
+    "problems": 2,
+    "articles": 0,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "interview-prep-digit-dp-classy-numbers",
+      "name": "Classy Numbers",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-digit-dp-total-palindromic-numbers",
+      "name": "Total Palindromic Numbers",
+      "difficulty": "Hard",
+      "tests": 1
+    }
+  ]
+}

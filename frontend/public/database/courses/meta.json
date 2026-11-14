@@ -1,23 +1,35 @@
 [
   {
-    "name": "Level 1: DSA Fundamentals",
     "slug": "dsa-fundamentals",
-    "contents": "300 DSA Questions",
+    "name": "Level 1: DSA Fundamentals",
+    "description": "For beginners: programming basics, recursion, DP, stacks, queues, trees, hashmaps and graphs.",
     "duration": "2 months",
-    "description": "Ideal for beginners wanting to build a strong foundation in Data Structures and Algorithms."
+    "counts": {
+      "problems": 210,
+      "articles": 244,
+      "videos": 35
+    }
   },
   {
-    "name": "Level 2: LevelUp",
     "slug": "levelup",
-    "contents": "Core Subject Notes",
+    "name": "Level 2: LevelUp",
+    "description": "For intermediate coders: advanced recursion, DP, graphs, trees, bit manipulation and more.",
     "duration": "3 months",
-    "description": "Designed for intermediate developers looking to level up their problem-solving skills."
+    "counts": {
+      "problems": 273,
+      "articles": 128,
+      "videos": 1
+    }
   },
   {
-    "name": "Level 3: Interview Preparation",
     "slug": "interview-prep",
-    "contents": "System Design Notes",
+    "name": "Level 3: Interview Preparation",
+    "description": "For interview preparation: company-style problems across every major topic.",
     "duration": "3 months",
-    "description": "Tailored for experienced developers preparing for technical interviews."
+    "counts": {
+      "problems": 202,
+      "articles": 12,
+      "videos": 0
+    }
   }
 ]

@@ -1,11 +1,26 @@
 {
   "name": "Print Encodings",
   "slug": "recursion-on-the-way-up-print-encodings",
-  "description": "1. You are given a string str of digits. (will never start with a 0)\n2. You are required to encode the str as per following rules\n    1 -> a\n    2 -> b\n    3 -> c\n    ..\n    25 -> y\n    26 -> z\n3. Complete the body of printEncodings function - without changing signature - to calculate and print all encodings of str.\nUse the input-output below to get more understanding on what is required\n123 -> abc, aw, lc\n993 -> iic\n013 -> Invalid input. A string starting with 0 will not be passed.\n103 -> jc\n303 -> No output possible. But such a string maybe passed. In this case print nothing.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA string str\n```\n\n### Output Format\n```\nPermutations of str in order hinted by Sample output\n```\n\n### Constraints\n```\n0 <= str.length <= 10\n```\n\n### Sample Input\n```\n655196\n```\n\n### Sample Output\n```\nfeeaif\nfeesf\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/jUo0Qis4FKU?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/2ClSccwnq1Y?rel=0&loop=1&playlist=2ClSccwnq1Y",
-  "codes": {
-    "java": "im\npo\nrt \nja\nva\n.i\no.\n*;\nim\npo\nrt \nja\nva\n.u\nti\nl.\n*;\npu\nbl\nic \ncl\nas\ns \nMa\nin \n{\n  \n  \npu\nbl\nic \nst\nat\nic \nvo\nid \nma\nin\n(S\ntr\nin\ng[\n] \nar\ngs\n) \nth\nro\nws \nEx\nce\npt\nio\nn \n{"
-  }
+  "course": "dsa-fundamentals",
+  "module": "recursion-on-the-way-up",
+  "difficulty": "Easy",
+  "statement": "1. You are given a string str of digits. (will never start with a 0)\n2. You are required to encode the str as per following rules\n    1 -&gt; a\n    2 -&gt; b\n    3 -&gt; c\n    ..\n    25 -&gt; y\n    26 -&gt; z\n3. Complete the body of printEncodings function - without changing signature - to calculate and print all encodings of str.\nUse the input-output below to get more understanding on what is required\n123 -&gt; abc, aw, lc\n993 -&gt; iic\n013 -&gt; Invalid input. A string starting with 0 will not be passed.\n103 -&gt; jc\n303 -&gt; No output possible. But such a string maybe passed. In this case print nothing.\n\nNote -&gt; The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.",
+  "inputFormat": "A string str",
+  "outputFormat": "Permutations of str in order hinted by Sample output",
+  "constraints": "0 &lt;= str.length &lt;= 10",
+  "sampleInput": "655196",
+  "sampleOutput": "feeaif\nfeesf",
+  "questionVideo": "jUo0Qis4FKU",
+  "solutionVideo": "2ClSccwnq1Y",
+  "templates": {
+    "cpp": "#include <iostream>\n#include<string>\nusing namespace std;\n\nvoid printEncoding(string str, string asf){\n    // write your code here\n    \n}\n\nint main(){\n    string str;\n    cin>>str;\n    printEncoding(str,\"\");\n    \n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n    }\n\n    public static void printEncodings(String str) {\n        \n    }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/recursion-on-the-way-up/print-encodings-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

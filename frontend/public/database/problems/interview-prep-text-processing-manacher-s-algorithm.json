@@ -1,0 +1,25 @@
+{
+  "name": "Manacher's Algorithm",
+  "slug": "interview-prep-text-processing-manacher-s-algorithm",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Hard",
+  "statement": "1. You are given one string s1.\n2. You have to find the longest palindromic substring in s1.\n3. Expected Complexity : O(n)",
+  "inputFormat": "one string s1",
+  "outputFormat": "Print the length of the longest palindrome substring in the first line. In the second line print the longest palindromic substring in s1. If there is more than one palindromic substring with the maximum length, output the first one.",
+  "constraints": "1 &lt;= length of the string &lt;= 10^5",
+  "sampleInput": "abadxd",
+  "sampleOutput": "3\naba",
+  "questionVideo": "06QIlUBLTz4",
+  "solutionVideo": "06QIlUBLTz4",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void solution(String s1) {\n    // write your code here\n\n  }\n  \n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    String s1 = scn.next();\n    solution(s1);\n    System.out.println();\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/manacher-algorithm-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,11 +1,27 @@
 {
   "name": "Print All Permutations Of A String Iteratively",
   "slug": "string-string-builder-and-arraylist-print-all-permutations-of-a-string-iteratively",
-  "description": "1. You are given a string. \n2. You have to print all permutations of the given string iteratively.\n\n### Input Format\n```\nA String\n```\n\n### Output Format\n```\nAll permutations of the given string(one in a line).\n```\n\n### Constraints\n```\n1 <= length of string <= 15\n```\n\n### Sample Input\n```\nabc\n```\n\n### Sample Output\n```\nabc\nbac\ncab\nacb\nbca\ncba\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/39SKIuA-ieY?end=286&rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/39SKIuA-ieY?start=286&rel=0&loop=1&playlist=39SKIuA-ieY",
-  "codes": {
-    "java": "import java\n.io.*;\nimport java\n.util.*;\npublic class \nMain {\n    public \nstatic void \nsolution\n(String str\n){\n        // \nwrite your \ncode here\n        \n    }\n    public \nstatic void \nmain(String[\n] args) {\n        \nScanner scn \n= new \nScanner\n(System.in);\n        \nString str = \nscn.next();\n        \nsolution(str\n);\n    }\n}"
-  }
+  "course": "dsa-fundamentals",
+  "module": "string-string-builder-and-arraylist",
+  "difficulty": "Easy",
+  "statement": "1. You are given a string. \n2. You have to print all permutations of the given string iteratively.",
+  "inputFormat": "A String",
+  "outputFormat": "All permutations of the given string(one in a line).",
+  "constraints": "1 &lt;= length of string &lt;= 15",
+  "sampleInput": "abc",
+  "sampleOutput": "abc\nbac\ncab\nacb\nbca\ncba",
+  "questionVideo": "39SKIuA-ieY",
+  "solutionVideo": "39SKIuA-ieY",
+  "templates": {
+    "cpp": "#include<iostream>\n#include<string>\nusing namespace std;\n\n\nvoid printallperm(string str)\n{\n  //write your code here\n}\nint main()\n{\n  string str;\n  getline(cin, str);\n\n  printallperm(str);\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static void solution(String str){\n\t\t// write your code here\n\t\t\n\t}\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tString str = scn.next();\n\t\tsolution(str);\n\t}\n\n}",
+    "python": "def printallperm(st):\n#write your code here\n\n  st = input()\n       printallperm(st)"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/string,-string-builder-and-arraylist/print-all-permutations-of-a-string-iteratively-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

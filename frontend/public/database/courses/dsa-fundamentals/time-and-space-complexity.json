@@ -1,77 +1,177 @@
-[
-  {
-    "type": "Code",
-    "slug": "bubble-sort-easy",
-    "name": "Bubble Sort Easy"
+{
+  "name": "Time and Space Complexity",
+  "slug": "time-and-space-complexity",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 9,
+    "articles": 12,
+    "videos": 0
   },
-  {
-    "type": "Code",
-    "slug": "selection-sort-easy",
-    "name": "Selection Sort Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "insertion-sort-easy",
-    "name": "Insertion Sort Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "merge-two-sorted-arrays-easy",
-    "name": "Merge Two Sorted Arrays Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "merge-sort-easy",
-    "name": "Merge Sort Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "partition-an-array-easy",
-    "name": "Partition An Array Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "quick-sort-easy",
-    "name": "Quick Sort Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "quick-select-easy",
-    "name": "Quick Select Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "count-sort-easy",
-    "name": "Count Sort Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "radix-sort-easy",
-    "name": "Radix Sort Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "sort-dates-easy",
-    "name": "Sort Dates Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "sort-01-easy",
-    "name": "Sort 01 Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "sort-012-easy",
-    "name": "Sort 012 Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "target-sum-pair-1-easy",
-    "name": "Target Sum Pair 1 Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "pivot-in-sorted-and-rotated-array-easy",
-    "name": "Pivot In Sorted And Rotated Array Easy"
-  }
-]
+  "items": [
+    {
+      "type": "article",
+      "slug": "time-and-space-complexity-bubble-sort",
+      "name": "Bubble sort"
+    },
+    {
+      "type": "problem",
+      "slug": "time-and-space-complexity-bubble-sort",
+      "name": "Bubble Sort",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "article",
+      "slug": "time-and-space-complexity-selection-sort",
+      "name": "Selection sort"
+    },
+    {
+      "type": "problem",
+      "slug": "time-and-space-complexity-selection-sort",
+      "name": "Selection Sort",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "time-and-space-complexity-insertion-sort",
+      "name": "Insertion Sort",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "time-and-space-complexity-merge-two-sorted-arrays",
+      "name": "Merge two sorted arrays"
+    },
+    {
+      "type": "problem",
+      "slug": "time-and-space-complexity-merge-two-sorted-arrays",
+      "name": "Merge Two Sorted Arrays",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "article",
+      "slug": "time-and-space-complexity-merge-sort",
+      "name": "Merge sort"
+    },
+    {
+      "type": "problem",
+      "slug": "time-and-space-complexity-merge-sort",
+      "name": "Merge Sort",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "article",
+      "slug": "time-and-space-complexity-partition-an-array",
+      "name": "Partition An Array"
+    },
+    {
+      "type": "problem",
+      "slug": "time-and-space-complexity-partition-an-array",
+      "name": "Partition An Array",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "article",
+      "slug": "time-and-space-complexity-quick-sort",
+      "name": "Quick sort"
+    },
+    {
+      "type": "problem",
+      "slug": "time-and-space-complexity-quick-sort",
+      "name": "Quick Sort",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "time-and-space-complexity-quick-select",
+      "name": "Quick Select"
+    },
+    {
+      "type": "problem",
+      "slug": "time-and-space-complexity-quick-select",
+      "name": "Quick Select",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "time-and-space-complexity-count-sort",
+      "name": "Count sort"
+    },
+    {
+      "type": "problem",
+      "slug": "time-and-space-complexity-count-sort",
+      "name": "Count Sort",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "time-and-space-complexity-radix-sort",
+      "name": "Radix Sort"
+    },
+    {
+      "type": "problem",
+      "slug": "time-and-space-complexity-radix-sort",
+      "name": "Radix Sort",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "time-and-space-complexity-sort-dates",
+      "name": "Sort Dates",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "time-and-space-complexity-sort-01",
+      "name": "Sort 01"
+    },
+    {
+      "type": "problem",
+      "slug": "time-and-space-complexity-sort-01",
+      "name": "Sort 01",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "article",
+      "slug": "time-and-space-complexity-sort-012",
+      "name": "Sort 012"
+    },
+    {
+      "type": "problem",
+      "slug": "time-and-space-complexity-sort-012",
+      "name": "Sort 012",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "time-and-space-complexity-target-sum-pair-1",
+      "name": "Target Sum Pair 1",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "time-and-space-complexity-pivot-of-sorted-and-rotated-array",
+      "name": "Pivot of sorted and rotated array"
+    },
+    {
+      "type": "problem",
+      "slug": "time-and-space-complexity-pivot-in-sorted-and-rotated-array",
+      "name": "Pivot In Sorted And Rotated Array",
+      "difficulty": "Easy",
+      "unavailable": true
+    }
+  ]
+}

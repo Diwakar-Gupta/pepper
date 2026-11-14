@@ -1,0 +1,8 @@
+{
+  "name": "Pattern 9",
+  "slug": "patterns-pattern-9",
+  "course": "dsa-fundamentals",
+  "module": "patterns",
+  "html": "Solution Approach:   <p>This problem is a combination of the two problems we have already faced, a diagonal of stars that leans down from left to right <b>(Pattern 7)</b> and a diagonal of stars that rise up from left to right <b>(Pattern 8)</b>. <br>So we combine the printing conditions of both the loops by an &quot;or&quot; operator to create the required program to print the &quot;Cross of stars&quot;. We use &quot;or&quot; operator so that the star is printed if either of the conditions is true. </p>     import java.util.*; public class Main{ public static void main(String[] args) { Scanner scn = new Scanner(System.in); int n = scn.nextInt(); for(int i =1;i&lt;=n;i++) //decides the number of rows for output printing { for(int j =1;j&lt;=n;j++) //prints the stars in the row { if(i == j || i + j == n + 1) { System.out.print(&quot;* &quot;); } else System.out.print(&quot; &quot;); } System.out.println(); //changes the row on output console } } }  <pre>                                            </pre> java; true&quot;;   <p><b>Output</b> for input value n = 5: </p> <img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"img\">     <p>Share this article</p>  <i></i> <p>Facebook</p>  <i></i> <p>Twitter</p>  <i></i> <p>Instagram</p>  <i></i> <p>Whatsapp</p>  <i></i> <p>Linkedin</p>      <i></i> <img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\">",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/patterns/pattern_9/topic"
+}

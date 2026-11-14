@@ -1,0 +1,25 @@
+{
+  "name": "Crossword Puzzle",
+  "slug": "levelup-recursion-and-backtracking-crossword-puzzle",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Easy",
+  "statement": "1. You are given a 10*10 2-D array(arr) containing only '+' and '-' characters, which represents a \n    crossword puzzle. \n2. You are also given n number of words which need to be filled into the crossword.\n3. Cells containing '-' are to be filled with the given words.\n\nNote -&gt; Check out the question video and write the recursive code as it is intended without \n               changing signature. The judge can't force you but intends you to teach a concept.",
+  "inputFormat": "10 * 10 grid of characters containing only '+' and '-' \nA number n\nstr1\nstr2\n...n strings",
+  "outputFormat": "Check the sample output and question video",
+  "constraints": "1 &lt;= n &lt;= 10",
+  "sampleInput": "+-++++++++\n+-++++++++\n+-++++++++\n+-----++++\n+-+++-++++\n+-+++-++++\n+++++-++++\n++------++\n+++++-++++\n+++++-++++\n4\nLONDON\nDELHI \nICELAND \nANKARA",
+  "sampleOutput": "+L++++++++\n+O++++++++\n+N++++++++\n+DELHI++++\n+O+++C++++\n+N+++E++++\n+++++L++++\n++ANKARA++\n+++++N++++\n+++++D++++",
+  "questionVideo": "bmxH9h-q67o",
+  "solutionVideo": "bmxH9h-q67o",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void solution(char[][] arr, String[] words, int vidx) {\n    //write your code here\n\n  }\n\n\n  public static void print(char[][] arr) {\n    for (int i = 0 ; i < arr.length; i++) {\n      for (int j = 0 ; j < arr.length; j++) {\n        System.out.print(arr[i][j]);\n      }\n      System.out.println();\n    }\n\n  }\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    char[][] arr = new char[10][10];\n    for (int i = 0 ; i < arr.length; i++) {\n      String str = scn.next();\n      arr[i] = str.toCharArray();\n    }\n    int n = scn.nextInt();\n    String[] words = new String[n];\n    for (int i = 0 ; i  < words.length; i++) {\n      words[i] = scn.next();\n    }\n    solution(arr, words, 0);\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/crossword-puzzle-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Copy Linkedlist With Random Pointers",
+  "slug": "levelup-linked-list-copy-linkedlist-with-random-pointers",
+  "course": "levelup",
+  "module": "linked-list",
+  "difficulty": "Easy",
+  "statement": "1. Given a singly linklist with an additional random pointer which could point to any node in the list or NULL.\n2. Return a deep copy of the list.\n3. For More Details watch Video.",
+  "inputFormat": "input is handle for you",
+  "outputFormat": "output is handle for you.",
+  "constraints": "0 &lt;= N &lt;= 10^6",
+  "sampleInput": "5\n7 -1\n15 0\n18 4\n10 2\n5 0",
+  "sampleOutput": "(7, -1) (15, 7) (18, 5) (10, 18) (5, 7)",
+  "questionVideo": "IGWJg9wDaF0",
+  "solutionVideo": "IGWJg9wDaF0",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nclass ListNode\n{\npublic:\n    int val = 0;\n    ListNode *next = nullptr;\n    ListNode *random = nullptr;\n\n    ListNode(int val)\n    {\n        this->val = val;\n    }\n};\n\nListNode *copyRandomList(ListNode *head)\n{\n    return nullptr;\n}\n\nint main()\n{\n    int n;\n    cin >> n;\n\n    vector<ListNode *> arr(n);\n    ListNode *prev = nullptr;\n    for (int i = 0; i < n; i++)\n    {\n        arr[i] = new ListNode(0);\n        if (prev != nullptr)\n            prev->next = arr[i];\n        prev = arr[i];\n    }\n    for (int i = 0; i < n; i++)\n    {\n        int val, idx;\n        cin >> val >> idx;\n\n        arr[i]->val = val;\n        if (idx != -1)\n            arr[i]->random = arr[idx];\n    }\n\n    ListNode *head = copyRandomList(arr[0]);\n    while (head != nullptr)\n    {\n        cout << \"(\" + to_string(head->val) + \", \" + (head->random != nullptr ? to_string(head->random->val) : to_string(-1)) + \") \";\n        head = head->next;\n    }\n    return 0;\n}",
+    "java": "import java.util.*;\n\nclass Main {\n    public static class ListNode {\n        int val = 0;\n        ListNode next = null;\n        ListNode random = null;\n\n        ListNode(int val) {\n            this.val = val;\n        }\n    }\n\n    public static ListNode copyRandomList(ListNode head) {\n        return null;\n    }\n\n    public static void main(String[] args) {\n        Scanner scn = new Scanner(System.in);\n        int n = scn.nextInt();\n\n        ListNode[] arr = new ListNode[n];\n        ListNode prev = null;\n\n        for (int i = 0; i < n; i++) {\n            arr[i] = new ListNode(0);\n            if (prev != null)\n                prev.next = arr[i];\n            prev = arr[i];\n        }\n\n        for (int i = 0; i < n; i++) {\n            int val = scn.nextInt();\n            int idx = scn.nextInt();\n\n            arr[i].val = val;\n            if(idx != -1) arr[i].random = arr[idx];\n        }\n\n        ListNode head = copyRandomList(arr[0]);\n        while (head != null) {\n            System.out.print(\"(\" + head.val + \", \" + (head.random != null ? head.random.val : -1) + \") \");\n            head = head.next;\n        }\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/copy-linkedlist-with-random-pointers/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

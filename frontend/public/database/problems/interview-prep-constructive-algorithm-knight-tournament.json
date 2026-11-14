@@ -1,0 +1,25 @@
+{
+  "name": "Knight Tournament",
+  "slug": "interview-prep-constructive-algorithm-knight-tournament",
+  "course": "interview-prep",
+  "module": "constructive-algorithm",
+  "difficulty": "Medium",
+  "statement": "https://codeforces.com/contest/357/problem/C",
+  "inputFormat": "Check Link",
+  "outputFormat": "Check Link",
+  "constraints": "Check Link",
+  "sampleInput": "4 3\n1 2 1\n1 3 3\n1 4 4",
+  "sampleOutput": "3 1 4 0",
+  "questionVideo": "ELq-zy1u6t4",
+  "solutionVideo": "ELq-zy1u6t4",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    // Write Code here\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/constructive-algorithm/constructive-algorithm-knightt/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

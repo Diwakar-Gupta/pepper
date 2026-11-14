@@ -1,0 +1,25 @@
+{
+  "name": "Bellman Ford",
+  "slug": "levelup-graphs-bellman-ford",
+  "course": "levelup",
+  "module": "graphs",
+  "difficulty": "Medium",
+  "statement": "You are given 2 integers N and M , N is the number of vertices, M is the number of edges. You'll also be given ai, bi and wi where ai and bi represents an edge from a vertex ai to a vertex bi and wi respresents the weight of that edge.\nYour task is to find the shortest path from source vertex (vertex number 1) to all other vertices.\n\nNote : use bellman ford algo.",
+  "inputFormat": "First line contains two space separated integers,N and M. Then M lines follow, each line has 3 space separated integers ai, bi and wi.",
+  "outputFormat": "Print the shortest distances from the source vertex (vertex number 1) to all other vertices in a line. Print 10^9 in case the vertex can't be reached form the source vertex.",
+  "constraints": "1&lt;= N &lt;= 10^4\n1&lt;= M &lt;= 10^6\n1&lt;= ai, bi &lt;= N\n-1000 &lt;= wi &lt;= 1000",
+  "sampleInput": "5 5\n1 2 5\n1 3 2\n3 4 1\n1 4 6\n3 5 5",
+  "sampleOutput": "5 2 3 7",
+  "questionVideo": "IjEX4rgxsvI",
+  "solutionVideo": "IjEX4rgxsvI",
+  "templates": {
+    "java": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.util.Arrays;\nimport java.util.LinkedList;\n\npublic class Main {\n\tpublic static void main(String[] args) throws NumberFormatException, IOException {\n        \n\t\t\t}\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/graphs/bellman-ford-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

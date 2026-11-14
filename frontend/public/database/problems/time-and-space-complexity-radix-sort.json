@@ -1,0 +1,27 @@
+{
+  "name": "Radix Sort",
+  "slug": "time-and-space-complexity-radix-sort",
+  "course": "dsa-fundamentals",
+  "module": "time-and-space-complexity",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array(arr) of integers.\n2. You have to sort the given array in increasing order using radix sort.",
+  "inputFormat": "An Integer n \narr1\narr2..\nn integers",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "1 &lt;= N &lt;= 10000\n0 &lt;= arr[i] &lt;= 10^8",
+  "sampleInput": "5\n7 \n2 \n4 \n1 \n3",
+  "sampleOutput": "After sorting on 1 place -> 1 2 3 4 7 \n1 2 3 4 7",
+  "questionVideo": "a5e7RgCdel0",
+  "solutionVideo": "a5e7RgCdel0",
+  "templates": {
+    "cpp": "#include<iostream>\n#include<vector>\n#include<climits>\n#include<algorithm>\n\nusing namespace std;\n\nvoid Display(vector<int>& arr) {\n  for (int ele : arr) {\n    cout << ele << \" \";\n  }\n}\n\nvoid countsort(vector<int>& arr, int d) {\n  // write your code here\n\n  cout << \"After sorting on \" << d << \" place -> \";\n  Display(arr);\n  cout << endl;\n}\n\nvoid radixSort(vector<int>& arr) {\n  // write your code here\n\n}\n\n\nint main() {\n  int n;\n  cin >> n;\n  vector<int> arr(n, 0);\n\n  for (int i = 0; i < n; i++) {\n    cin >> arr[i];\n  }\n\n  radixSort(arr);\n  Display(arr);\n  return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void radixSort(int[] arr) {\n    // write code here    \n  }\n\n  public static void countSort(int[] arr, int exp) {\n    // write code here\n    System.out.print(\"After sorting on \" + exp + \" place -> \");\n    print(arr);\n  }\n\n  public static void print(int[] arr) {\n    for (int i = 0; i < arr.length; i++) {\n      System.out.print(arr[i] + \" \");\n    }\n    System.out.println();\n  }\n\n  public static void main(String[] args) throws Exception {\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    for (int i = 0; i < n; i++) {\n      arr[i] = scn.nextInt();\n    }\n    radixSort(arr);\n    print(arr);\n  }\n\n}",
+    "python": "import math;\n\ndef Display(arr):\nfor i in arr :\n  print(i, end = \" \");\n\ndef countsort(arr, d):\n# write your code here\n\n  print(\"After sorting on\", d, \"place ->\", end = \" \");\nDisplay(arr);\nprint();\n\n\ndef radixSort(arr):\n# write your code here\n\n\n  def main():\n  n = int(input());\narr = []\n      for i in range(0, n) :\n          ele = int(input());\narr.append(ele);\n\n\nradixSort(arr);\nDisplay(arr);\n\n\nif __name__ == \"__main__\":\nmain()"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/time-and-space-complexity/radix-sort-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

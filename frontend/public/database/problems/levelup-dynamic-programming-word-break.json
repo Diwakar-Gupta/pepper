@@ -1,0 +1,25 @@
+{
+  "name": "Word Break",
+  "slug": "levelup-dynamic-programming-word-break",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given n space-separated strings, which represents a dictionary of words.\n2. You are given another string that represents a sentence.\n3. You have to determine if this sentence can be segmented into a space-separated sequence of one or more dictionary words.",
+  "inputFormat": "A number n \nn strings representing words\nA string representing a sentence",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "1 &lt;= number of words &lt;= 10\n1 &lt;= length of each word &lt;= 15\n1 &lt;= length of sentence &lt;= 1000",
+  "sampleInput": "2\npep coding\npepcoding",
+  "sampleOutput": "true",
+  "questionVideo": null,
+  "solutionVideo": null,
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static boolean solution(String sentence, HashSet<String> dictionary) {\n\t\t//write your code here\n\n\t\treturn false;\n\t}\n\t\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tHashSet<String> dictionary = new HashSet<String>();\n\t\tfor (int i = 0; i < n; i++) {\n\t\t\tdictionary.add(scn.next());\n\t\t}\n\t\tString sentence = scn.next();\n\t\tSystem.out.println(solution(sentence, dictionary));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/word-break-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

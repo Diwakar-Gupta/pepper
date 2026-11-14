@@ -1,0 +1,26 @@
+{
+  "name": "Check Divisibility By 3",
+  "slug": "levelup-bit-manipulation-check-divisibility-by-3",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given a binary string which represents a number.\n2. You have to check whether this number is divisible by 3 or not.\n3. Print 'true' if it is divisible by 3, otherwise print 'false'.",
+  "inputFormat": "A binary string",
+  "outputFormat": "true or false",
+  "constraints": "1 &lt;= length of binary string &lt;= 10000",
+  "sampleInput": "10010101010001",
+  "sampleOutput": "false",
+  "questionVideo": null,
+  "solutionVideo": null,
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args){\n    Scanner scn = new Scanner(System.in);\n    String str = scn.nextLine();\n\n    //write your code here\n  }\n\n}"
+  },
+  "editorial": "<p>In this problem, we need to check whether the given input binary representation is divisible by 3(decimal) or not using bit manipulation.</p><p>As we are provided with a binary representation so if that representation would be divisible by <b>0b11</b> (binary representation of 3) then that number would be divisible by 3.</p><p>The result obtained is that if the sum of bits at even position subtracted by the sum of bits at odd position is divisible by 11 then the entire number is divisible by 3.</p><p>Say we have the given string as abcdef</p><p>105a + 104b + 103c + 102d + 101e + 100f</p><p>100001a - a + 9999b + b + 1001c - c + 99d + d - 11e - e + f</p><p>100001a + 9999b + 1001c + 99d +11e - ((a + c + e) - (b + d + f))</p><p>11(9091a + 909b + 91c + 9d + e) - ((a + c + e) - (b + d + f))</p><p>So <b>if ((a + c + e) - (b + d + f)) is a multiple of 11</b> then the entire expression will be divisible by 11.</p><p>As we know that 11 is the binary representation of 3 so if a binary number gets divisible by 11 then it is divisible by 3(decimal).</p><p>Henceforth in this problem we need to check whether ((a + c + e) - (b + d + f)) % 3 == 0 or not, if true then the string abcdef is divisible by 3.</p><p><b>Time Complexity: O(n)</b></p><p>The time complexity for the function is linear as we are traversing on every character of the input binary string.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/check-divisibility-by-3-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Add Last In Doubly Linkedlist",
+  "slug": "levelup-linked-list-add-last-in-doubly-linkedlist",
+  "course": "levelup",
+  "module": "linked-list",
+  "difficulty": "Easy",
+  "statement": "1. You are given a partially written DoublyLinkedList class.\n2. You are required to complete the body of addLast function. This function is supposed to add an element to the front of LinkedList. You are required to update head, tail and size as required.\n3. Input and Output is managed for you. Just update the code in addLast function.\n\nNote -&gt; Use the code snippet and follow the algorithm discussed in question video. The judge can't \n        force you but the intention is to teach a concept. Play in spirit of the question.",
+  "inputFormat": "input in managed for you.",
+  "outputFormat": "output in managed for you.",
+  "constraints": "0 &lt;= N &lt;= 10^6",
+  "sampleInput": "addFirst 4\naddFirst 4\naddLast 5\naddFirst 7\naddLast 1\nstop",
+  "sampleOutput": "[7, 4, 4, 5, 1]",
+  "questionVideo": "bMXgF_tUMHE",
+  "solutionVideo": "bMXgF_tUMHE",
+  "templates": {
+    "cpp": "#include <bits/stdc++.h>\nusing namespace std;\n\nclass DoublyLinkedList\n{\n  class Node\n  {\n  public:\n    int data = 0;\n    Node* prev = nullptr;\n    Node* next = nullptr;\n\n    Node(int data)\n    {\n      this->data = data;\n    }\n  };\n\n  Node* head = nullptr;\n  Node* tail = nullptr;\n  int size = 0;\n\npublic:\n  void display()\n  {\n    string str = \"\";\n    Node* curr = this->head;\n    str += \"[\";\n    while (curr != nullptr)\n    {\n      str += to_string(curr->data);\n      if (curr->next != nullptr)\n        str += \", \";\n      curr = curr->next;\n    }\n    str += \"]\";\n\n    cout << str << endl;\n  }\n\nprivate:\n  void addFirstNode(Node* node)\n  {\n    if (this->size == 0)\n      this->head = this->tail = node;\n    else\n    {\n      node->next = this->head;\n      this->head->prev = node;\n      this->head = node;\n    }\n    this->size++;\n  }\n\npublic:\n  void addFirst(int data)\n  {\n    Node* node = new Node(data);\n    addFirstNode(node);\n  }\n\n  void addLast(int data)\n  {\n    // complete this function.\n  }\n};\n\nint main()\n{\n  DoublyLinkedList dll;\n  string s;\n  while (getline(cin, s))\n  {\n    stringstream ss(s);\n    string word;\n    ss >> word;\n    if (word == \"stop\")\n      break;\n    if (word == \"addFirst\")\n    {\n      int data;\n      ss >> data;\n      dll.addFirst(data);\n    }\n    else if (word == \"addLast\")\n    {\n      int data;\n      ss >> data;\n      dll.addLast(data);\n    }\n  }\n\n  dll.display();\n\n  return 0;\n}",
+    "java": "import java.util.*;\n\nclass Main {\n\n  public static class DoublyLinkedList {\n    private class Node {\n      int data = 0;\n      Node prev = null;\n      Node next = null;\n\n      Node(int data) {\n        this.data = data;\n      }\n\n    }\n\n    private Node head = null;\n    private Node tail = null;\n    private int size = 0;\n\n    public String toString() {\n      StringBuilder sb = new StringBuilder();\n      Node curr = this.head;\n      sb.append(\"[\");\n      while (curr != null) {\n        sb.append(curr.data);\n        if (curr.next != null)\n          sb.append(\", \");\n        curr = curr.next;\n      }\n      sb.append(\"]\");\n\n      return sb.toString();\n    }\n\n    private void addFirstNode(Node node) {\n      if (this.size == 0)\n        this.head = this.tail = node;\n      else {\n        node.next = this.head;\n        this.head.prev = node;\n        this.head = node;\n      }\n      this.size++;\n    }\n\n    public void addFirst(int val) {\n      Node node = new Node(val);\n      addFirstNode(node);\n    }\n\n    public void addLast(int val) {\n      // complete this function.\n    }\n\n  }\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    DoublyLinkedList dll = new DoublyLinkedList();\n\n    String str = scn.nextLine();\n    while (!str.equals(\"stop\")) {\n      String[] s = str.split(\" \");\n      if (s[0].equals(\"addFirst\"))\n        dll.addFirst(Integer.parseInt(s[1]));\n      else if (s[0].equals(\"addLast\"))\n        dll.addLast(Integer.parseInt(s[1]));\n\n      str = scn.nextLine();\n    }\n\n    System.out.println(dll);\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/addlast-in-doubly-linkedlist/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

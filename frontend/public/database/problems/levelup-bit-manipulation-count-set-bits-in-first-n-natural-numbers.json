@@ -1,0 +1,26 @@
+{
+  "name": "Count Set Bits In First N Natural Numbers",
+  "slug": "levelup-bit-manipulation-count-set-bits-in-first-n-natural-numbers",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n.\n2. You have to print the count of set bits of first n natural numbers.",
+  "inputFormat": "A number n",
+  "outputFormat": "A number",
+  "constraints": "1 &lt;= n &lt;= 10^9",
+  "sampleInput": "17",
+  "sampleOutput": "35",
+  "questionVideo": "g6OxU-hRGtY",
+  "solutionVideo": "g6OxU-hRGtY",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args){\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    System.out.println(solution(n));\n  }\n\n  public static int solution(int n){\n    //write your code here\n    \n    return 0;\n  }\n\n}"
+  },
+  "editorial": "<p>The problem here deals with counting the set bits for the first N natural numbers.</p><p>A brute force approach can be to traverse from 1 to N and for every integer count the number of set bits using Kerninghams algorithm and add that to the result.</p><p>Now let us try to optimize the solution. For that let us try to approach the solution with the help of an example:</p><p>N = 11</p><p>Binary Representation of Numbers from 0 to 11</p><p>0 -&gt; 0 0 0 0</p><p>1 -&gt; 0 0 0 1</p><p>2 -&gt; 0 0 1 0</p><p>3 -&gt; 0 0 1 1</p><p>4 -&gt; 0 1 0 0</p><p>5 -&gt; 0 1 0 1</p><p>6 -&gt; 0 1 1 0</p><p>7 -&gt; 0 1 1 1</p><p>---------------</p><p> 8 -&gt; 1 0 0 0</p><p> 9 -&gt; 1 0 0 1</p><p>10 -&gt; 1 0 1 0</p><p>11 -&gt; 1 0 1 1</p><p>Now we wish to calculate all the bits which are having a value of 1 in this set of binary numbers. If we observe the numbers from 0 -7 then they are a complete set for a 3-bit number which means that it contains all the arrangements of the bits for a size of 3, this also implies that for every bit position the bit has been valued 0 and 1 equally so for a length of 8 the number of set bits becomes 8/2 + 8/2 + 8/2 = 12 = 23-1 * 3 = <b>2x-1 * x </b>where x represents the highest power of 2 so that 2x is less than or equal to N.</p><p>Also after a complete set of 3-bits, the values at the lower 3 bits tend to repeat whereas the MSB sets to 1, so we can compute the MSB bits from 8 - 11 can as <b>N - 2x + 1</b> = 11 - 8 + 1 = 4.</p><p>Now all that remains is a 3-bit range from 8 - 11 which can now be visualized as 0 - 3 after removing the MSB, which we can recursively check by changing N to <b>(N - 2x)</b>.</p><p>These observations conclude us to our approach which deals with checking for a complete set before the number and computing its result, later on, computing the MSB bit result from the range <b>2x to N </b>and then recursively calling the function for the range (N - 2x).</p><p><b>Time Complexity: O(logn)</b></p><p>The time complexity for the function is logarithmic which is due tin calculating the largestPowerOfTwo() function.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/count-setbits-in-first-n-natural-numbers-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

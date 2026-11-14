@@ -1,0 +1,25 @@
+{
+  "name": "Sliding Puzzle",
+  "slug": "levelup-graphs-sliding-puzzle",
+  "course": "levelup",
+  "module": "graphs",
+  "difficulty": "Hard",
+  "statement": "On an 2 x 3 board, there are five tiles labeled from 1 to 5, and an empty square represented by 0. A move consists of choosing 0 and a 4 directionally adjacent number and swapping it.\nGiven the puzzle board, print the least number of moves required so that the state of the board is solved. If it is impossible for the state of the board to be solved, print -1.\n\nsolved state is : {{1,2,3},{4,5,0}}",
+  "inputFormat": "Each of next 2 lines contain 3 integer.",
+  "outputFormat": "Min number of moves required to achieve solved state.",
+  "constraints": "rows = 2\ncols = 3",
+  "sampleInput": "1 2 3\n4 0 5",
+  "sampleOutput": "1",
+  "questionVideo": "-7zxQzs3D2A",
+  "solutionVideo": "-7zxQzs3D2A",
+  "templates": {
+    "java": "\nimport java.io.*;\nimport java.util.*;\n\nclass Main {\n  public static void main(String[] args) throws NumberFormatException, IOException {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n    int[][] arr = new int[2][3];\n\n    for (int i = 0; i < 2; i++) {\n      String[] st = br.readLine().split(\" \");\n      for (int j = 0; j < 3; j++) {\n        arr[i][j] = Integer.parseInt(st[j]);\n      }\n    }\n\n    System.out.println(slidingPuzzle(arr));\n  }\n\n  public static int slidingPuzzle(int[][] board) {\n\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/graphs/sliding-puzzle-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

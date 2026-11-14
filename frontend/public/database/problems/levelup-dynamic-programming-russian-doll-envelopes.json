@@ -1,0 +1,25 @@
+{
+  "name": "Russian Doll Envelopes",
+  "slug": "levelup-dynamic-programming-russian-doll-envelopes",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Hard",
+  "statement": "1. You are given a number n, representing the number of envelopes.\n2. You are given n pair of numbers, representing the width and height of each envelope.\n3. You are required to print the count of maximum number of envelopes that can be nested inside each other.\nNote -&gt; Rotation is not allowed.",
+  "inputFormat": "A number n\n.. n pair of number each on a separate line (and pair separated by space)",
+  "outputFormat": "A number representing the count of maximum number of envelopes that can be nested inside each other.",
+  "constraints": "0 &lt;= n &lt;= 20\n0 &lt;= n1w, n1h, n2w, n2h, .. &lt;= 100",
+  "sampleInput": "11\n17 5\n26 18\n25 34\n48 84\n63 72\n42 86\n9 55\n4 70\n21 45\n68 76\n58 51",
+  "sampleOutput": "5",
+  "questionVideo": "Mud_QjUwbw8",
+  "solutionVideo": "Mud_QjUwbw8",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // write your code here\n    }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/russian-doll-envelopes-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

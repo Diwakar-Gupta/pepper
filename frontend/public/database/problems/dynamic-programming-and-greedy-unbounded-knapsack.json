@@ -1,11 +1,27 @@
 {
   "name": "Unbounded Knapsack",
   "slug": "dynamic-programming-and-greedy-unbounded-knapsack",
-  "description": "1. You are given a number n, representing the count of items.\n2. You are given n numbers, representing the values of n items.\n3. You are given n numbers, representing the weights of n items.\n3. You are given a number \"cap\", which is the capacity of a bag you've.\n4. You are required to calculate and print the maximum value that can be created in the bag without \n    overflowing it's capacity.\nNote -> Each item can be taken any number of times. You are allowed to put the same item again \n                  and again.\n\n### Input Format\n```\nA number n\nv1 v2 .. n number of elements\nw1 w2 .. n number of elements\nA number cap\n```\n\n### Output Format\n```\nA number representing the maximum value that can be created in the bag without overflowing it's capacity\n```\n\n### Constraints\n```\n1 <= n <= 20\n0 <= v1, v2, .. n elements <= 50\n0 < w1, w2, .. n elements <= 10\n0 < cap <= 10\n```\n\n### Sample Input\n```\n5\n15 14 10 45 30\n2 5 1 3 4\n7\n```\n\n### Sample Output\n```\n100\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/jgps7MXtKRQ?end=133&rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/jgps7MXtKRQ?start=133&rel=0&loop=1&playlist=jgps7MXtKRQ",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "dynamic-programming-and-greedy",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n, representing the count of items.\n2. You are given n numbers, representing the values of n items.\n3. You are given n numbers, representing the weights of n items.\n3. You are given a number &quot;cap&quot;, which is the capacity of a bag you've.\n4. You are required to calculate and print the maximum value that can be created in the bag without \n    overflowing it's capacity.\nNote -&gt; Each item can be taken any number of times. You are allowed to put the same item again \n                  and again.",
+  "inputFormat": "A number n\nv1 v2 .. n number of elements\nw1 w2 .. n number of elements\nA number cap",
+  "outputFormat": "A number representing the maximum value that can be created in the bag without overflowing it's capacity",
+  "constraints": "1 &lt;= n &lt;= 20\n0 &lt;= v1, v2, .. n elements &lt;= 50\n0 &lt; w1, w2, .. n elements &lt;= 10\n0 &lt; cap &lt;= 10",
+  "sampleInput": "5\n15 14 10 45 30\n2 5 1 3 4\n7",
+  "sampleOutput": "100",
+  "questionVideo": "jgps7MXtKRQ",
+  "solutionVideo": "jgps7MXtKRQ",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\n\nusing namespace std;\n\nvoid unboundedKnapsack(int n, vector<int> val, vector<int> weight, int cap) {\n\n// write your code here\n\n}\n\n\nint main() {\n\n  int n;\n  cin >> n;\n  vector<int> val(n);\n  for (int i = 0; i < n; i++) {\n\n    cin >> val[i];\n  }\n  vector<int> weight(n);\n  for (int i = 0; i < n; i++) {\n    cin >> weight[i];\n  }\n  int cap;\n  cin >> cap;\n\n  unboundedKnapsack(n, val, weight, cap);\n\n\n}",
+    "java": "\timport java.io.*;\n\timport java.util.*;\n\n\tpublic class Main {\n\n\t    public static void main(String[] args) throws Exception {\n\n\t    }\n\t}",
+    "python": "def unbounded_knapSack(cap, wt, val, n):\n\n# write your code here\n\nn = int(input())\n\nst1 = input()\nv=st1.split()\nval=[int(i) for i in v]\n\nst2 = input()\nw = st2.split()\nwt = [int(j) for j in w]\n\ncap = int(input()) \n \nprint(unbounded_knapSack(cap, wt, val, n))"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/unbounded-knapsack-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

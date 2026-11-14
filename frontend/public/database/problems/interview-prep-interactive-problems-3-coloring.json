@@ -1,0 +1,23 @@
+{
+  "name": "3 Coloring",
+  "slug": "interview-prep-interactive-problems-3-coloring",
+  "course": "interview-prep",
+  "module": "interactive-problems",
+  "difficulty": "Easy",
+  "statement": "https://codeforces.com/problemset/problem/1503/B",
+  "inputFormat": "Check the link",
+  "outputFormat": "Check the link",
+  "constraints": "Check the link",
+  "sampleInput": "Check the link",
+  "sampleOutput": "Check the link",
+  "questionVideo": "104PA3iWGE8",
+  "solutionVideo": "104PA3iWGE8",
+  "templates": {},
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/interactive-problems/3-coloring-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

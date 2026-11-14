@@ -1,0 +1,26 @@
+{
+  "name": "Remove Nth Node From End Of Linkedlist",
+  "slug": "levelup-linked-list-remove-nth-node-from-end-of-linkedlist",
+  "course": "levelup",
+  "module": "linked-list",
+  "difficulty": "Easy",
+  "statement": "Given a singly linklist, remove the nth node from the end of the list and return its head.",
+  "inputFormat": "1-&gt;7-&gt;2-&gt;6-&gt;3-&gt;5-&gt;4-&gt;null\n2",
+  "outputFormat": "1-&gt;7-&gt;2-&gt;6-&gt;3-&gt;4-&gt;null",
+  "constraints": "1 &lt;= size Of LinkedList &lt;= 10^6\n1 &lt;= n &lt;= 10^6",
+  "sampleInput": "9\n18 1 16 11 15 7 9 16 4 \n1",
+  "sampleOutput": "18 1 16 11 15 7 9 16",
+  "questionVideo": null,
+  "solutionVideo": null,
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nclass ListNode\n{\npublic:\n  int val = 0;\n  ListNode* next = nullptr;\n\n  ListNode(int val)\n  {\n    this->val = val;\n  }\n};\n\nListNode* removeNthFromEnd(ListNode* head, int n)\n{\n  return nullptr;\n}\n\nvoid printList(ListNode* node)\n{\n  ListNode* curr = node;\n  while (curr != nullptr)\n  {\n    cout << curr->val << \" \";\n    curr = curr->next;\n  }\n  cout << endl;\n}\n\nListNode* createList(int n)\n{\n  ListNode* dummy = new ListNode(-1);\n  ListNode* prev = dummy;\n  while (n-- > 0)\n  {\n    int val;\n    cin >> val;\n    prev->next = new ListNode(val);\n    prev = prev->next;\n  }\n  return dummy->next\n}\n\nint main()\n{\n  int n;\n  cin >> n;\n  ListNode* h1 = createList(n);\n  int m;\n  cin >> m;\n  h1 = removeNthFromEnd(h1, m);\n  printList(h1);\n\n  return 0;\n}",
+    "java": "import java.util.*;\n\nclass Main {\n  public static Scanner scn = new Scanner(System.in);\n\n  public static class ListNode {\n    int val = 0;\n    ListNode next = null;\n\n    ListNode(int val) {\n      this.val = val;\n    }\n  }\n\n  public static ListNode removeNthFromEnd(ListNode head, int n) {\n    return null;\n  }\n\n  public static void printList(ListNode node) {\n    while (node != null) {\n      System.out.print(node.val + \" \");\n      node = node.next;\n    }\n  }\n\n  public static ListNode createList(int n) {\n    ListNode dummy = new ListNode(-1);\n    ListNode prev = dummy;\n    while (n-- > 0) {\n      prev.next = new ListNode(scn.nextInt());\n      prev = prev.next;\n    }\n\n    return dummy.next;\n  }\n\n  public static void main(String[] args) {\n    int n = scn.nextInt();\n    ListNode h1 = createList(n);\n\n    int m = scn.nextInt();\n    h1 = removeNthFromEnd(h1, m);\n    printList(h1);\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/remove-nth-node-from-end-of-linkedlist/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

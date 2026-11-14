@@ -1,0 +1,26 @@
+{
+  "name": "Convert Sorted Doubly Linked List To Binary Search Tree",
+  "slug": "levelup-trees-convert-sorted-doubly-linked-list-to-binary-search-tree",
+  "course": "levelup",
+  "module": "trees",
+  "difficulty": "Medium",
+  "statement": "1. Convert a sorted Doubly-Linked List to a Balanced Binary Search Tree in place.\n2. The previous and next pointers in nodes are to be used as left and right pointers respectively in converted Binary Search Tree. \n3. The tree must be constructed in-place (No new node should be allocated for tree conversion)",
+  "inputFormat": "Input is managed for you.",
+  "outputFormat": "Output is managed for you.",
+  "constraints": "0 &lt;= Number of Nodes &lt;= 10^9\n-10^9 &lt;= value of Node data &lt;= 10^9",
+  "sampleInput": "7\n1 2 3 4 5 6 7",
+  "sampleOutput": "2 -> 4 <- 6\n1 -> 2 <- 3\n. -> 1 <- .\n. -> 3 <- .\n5 -> 6 <- 7\n. -> 5 <- .\n. -> 7 <- .",
+  "questionVideo": "Knynb5QOSMg",
+  "solutionVideo": "Knynb5QOSMg",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nclass TreeNode\n{\npublic:\n    int val = 0;\n    Node *left = nullptr;\n    Node *right = nullptr;\n\n    Node(int val)\n    {\n        this->val = val;\n    }\n};\n\nNode *SortedDLLToBST(Node* head)\n{\n    return nullptr;\n}\n\n// input_Section_====================================================================\n\nvoid display(TreeNode *node)\n{\n    if (node == nullptr)\n        return;\n\n    string str = \"\";\n    str += ((node->left != nullptr ? to_string(node->left->val) : \".\"));\n    str += (\" -> \" + to_string(node->val) + \" <- \");\n    str += ((node->right != nullptr ? to_string(node->right->val) : \".\"));\n\n    cout << str << endl;\n\n    display(node->left);\n    display(node->right);\n}\n\nNode* makeList(int n) {\n        Node* dummy = new Node(-1);\n        Node* prev = dummy;\n        while (n-- > 0) {\n            int val; cin >> val;\n            Node* node = new Node(val);\n            prev->right = node;\n            node->left = prev;\n            prev = prev->right;\n        }\n\n        Node head = dummy->right;\n        head->left = dummy->right = nullptr;\n\n        return head;\n    }\n\nvoid solve()\n{\n    int n;\n    cin >> n;\n    Node* head = makeList(n);\n    \n    head = SortedDLLToBST(head);\n    display(head);\n}\n\nint main()\n{\n    solve();\n    return 0;\n}",
+    "java": "import java.util.*;\n\nclass Main {\n  public static Scanner scn = new Scanner(System.in);\n\n  public static class Node {\n    int val = 0;\n    Node left = null;\n    Node right = null;\n\n    Node(int val) {\n      this.val = val;\n    }\n  }\n\n  // left : prev, right : next\n  public static Node SortedDLLToBST(Node head) {\n    return null;\n  }\n\n  // Input_code===================================================\n\n  public static void display(Node node) {\n    if (node == null)\n      return;\n\n    StringBuilder sb = new StringBuilder();\n    sb.append((node.left != null ? node.left.val : \".\"));\n    sb.append(\" -> \" + node.val + \" <- \");\n    sb.append((node.right != null ? node.right.val : \".\"));\n\n    System.out.println(sb.toString());\n\n    display(node.left);\n    display(node.right);\n\n  }\n\n  public static Node makeList(int n) {\n    Node dummy = new Node(-1);\n    Node prev = dummy;\n    while (n-- > 0) {\n      Node node = new Node(scn.nextInt());\n      prev.right = node;\n      node.left = prev;\n      prev = prev.right;\n    }\n\n    Node head = dummy.right;\n    head.left = dummy.right = null;\n\n    return head;\n  }\n\n  public static void main(String[] args) {\n    Node head = makeList(scn.nextInt());\n\n    head = SortedDLLToBST(head);\n    display(head);\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/convert-sorted-dll-to-bst/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Longest Prefix Suffix",
+  "slug": "interview-prep-text-processing-longest-prefix-suffix",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Medium",
+  "statement": "Given a string S, print the longest Prefix which is also a suffix.\nTry doing it using constant space.",
+  "inputFormat": "A string S",
+  "outputFormat": "Print the answer, print &quot;&quot; (without quotes) if no answer found.",
+  "constraints": "2 &lt;= |S| &lt;= 10^5",
+  "sampleInput": "abcab",
+  "sampleOutput": "ab",
+  "questionVideo": "8f_JcbwoBQY",
+  "solutionVideo": "8f_JcbwoBQY",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    // Write Code here\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/longest-prefix-suffix-constant-space-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

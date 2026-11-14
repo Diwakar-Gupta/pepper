@@ -1,0 +1,25 @@
+{
+  "name": "Matrix Chain Multiplication",
+  "slug": "levelup-dynamic-programming-matrix-chain-multiplication",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given an array(arr) of positive integers of length N which represents the dimensions of N-1 matrices such that the ith matrix is of dimension arr[i-1] x arr[i].\n2. You have to find the minimum number of multiplications needed to multiply the given chain of matrices.",
+  "inputFormat": "A number N\narr1\narr2.. N integers",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "2 &lt;= N &lt;= 1000\n1 &lt;= arr[i] &lt;= 500",
+  "sampleInput": "3\n1\n2\n3",
+  "sampleOutput": "6",
+  "questionVideo": "pEYwLmGJcvs",
+  "solutionVideo": "pEYwLmGJcvs",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int mcm(int[] arr){\n\t\t//write your code here\n\n\t\treturn 0;\n\t}\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tint[] arr = new int[n];\n\t\tfor(int i = 0 ; i < n; i++){\n\t\t\tarr[i] = scn.nextInt();\n\t\t}\n\t\tSystem.out.println(mcm(arr));\n\t}\n\n\t\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/matrix-chain-multiplication-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,11 +1,26 @@
 {
   "name": "Are Trees Similar In Shape",
   "slug": "generic-tree-are-trees-similar-in-shape",
-  "description": "1. You are given a partially written GenericTree class.\n2. You are required to complete the body of areSimilar function. The function is expected to check if the two trees passed to it are similar in shape or not.\n3. Input and Output is managed for you.\n\n### Input Format\n```\nInput is managed for you\n```\n\n### Output Format\n```\nOutput is managed for you\n```\n\n### Constraints\n```\nNone\n```\n\n### Sample Input\n```\n24\n10 20 50 -1 60 -1 -1 30 70 -1 80 110 -1 120 -1 -1 90 -1 -1 40 100 -1 -1 -1\n24\n1 2 5 -1 6 -1 -1 3 7 -1 8 11 -1 12 -1 -1 9 -1 -1 4 10 -1 -1 -1\n```\n\n### Sample Output\n```\ntrue\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/rumfdyFR-_A?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/y_PIhsd9vt0?rel=0&loop=1&playlist=y_PIhsd9vt0",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "generic-tree",
+  "difficulty": "Easy",
+  "statement": "1. You are given a partially written GenericTree class.\n2. You are required to complete the body of areSimilar function. The function is expected to check if the two trees passed to it are similar in shape or not.\n3. Input and Output is managed for you.",
+  "inputFormat": "Input is managed for you",
+  "outputFormat": "Output is managed for you",
+  "constraints": "None",
+  "sampleInput": "24\n10 20 50 -1 60 -1 -1 30 70 -1 80 110 -1 120 -1 -1 90 -1 -1 40 100 -1 -1 -1\n24\n1 2 5 -1 6 -1 -1 3 7 -1 8 11 -1 12 -1 -1 9 -1 -1 4 10 -1 -1 -1",
+  "sampleOutput": "true",
+  "questionVideo": "rumfdyFR-_A",
+  "solutionVideo": "y_PIhsd9vt0",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n  private static class Node {\n    int data;\n    ArrayList<Node> children = new ArrayList<>();\n  }\n\n  public static void display(Node node) {\n    String str = node.data + \" -> \";\n    for (Node child : node.children) {\n      str += child.data + \", \";\n    }\n    str += \".\";\n    System.out.println(str);\n\n    for (Node child : node.children) {\n      display(child);\n    }\n  }\n\n  public static Node construct(int[] arr) {\n    Node root = null;\n\n    Stack<Node> st = new Stack<>();\n    for (int i = 0; i < arr.length; i++) {\n      if (arr[i] == -1) {\n        st.pop();\n      } else {\n        Node t = new Node();\n        t.data = arr[i];\n\n        if (st.size() > 0) {\n          st.peek().children.add(t);\n        } else {\n          root = t;\n        }\n\n        st.push(t);\n      }\n    }\n\n    return root;\n  }\n\n  public static int size(Node node) {\n    int s = 0;\n\n    for (Node child : node.children) {\n      s += size(child);\n    }\n    s += 1;\n\n    return s;\n  }\n\n  public static int max(Node node) {\n    int m = Integer.MIN_VALUE;\n\n    for (Node child : node.children) {\n      int cm = max(child);\n      m = Math.max(m, cm);\n    }\n    m = Math.max(m, node.data);\n\n    return m;\n  }\n\n  public static int height(Node node) {\n    int h = -1;\n\n    for (Node child : node.children) {\n      int ch = height(child);\n      h = Math.max(h, ch);\n    }\n    h += 1;\n\n    return h;\n  }\n\n  public static boolean areSimilar(Node n1, Node n2) {\n    // write your code here\n  }\n\n  public static void main(String[] args) throws Exception {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n    int n1 = Integer.parseInt(br.readLine());\n    int[] arr1 = new int[n1];\n    String[] values1 = br.readLine().split(\" \");\n    for (int i = 0; i < n1; i++) {\n      arr1[i] = Integer.parseInt(values1[i]);\n    }\n    Node root1 = construct(arr1);\n\n    int n2 = Integer.parseInt(br.readLine());\n    int[] arr2 = new int[n2];\n    String[] values2 = br.readLine().split(\" \");\n    for (int i = 0; i < n2; i++) {\n      arr2[i] = Integer.parseInt(values2[i]);\n    }\n    Node root2 = construct(arr2);\n\n    boolean similar = areSimilar(root1, root2);\n    System.out.println(similar);\n  }\n\n}"
+  },
+  "editorial": "<p>The problem here is to check whether the given two input generic trees are similar in shape or not. The similarity in shape means that they have the same number of nodes at each level and the same connections for every node, values of the node are not a consideration for this particular problem.</p><p>The idea is to traverse both the trees simultaneously and check for every node if the number of children for both the nodes are the same or not, if not then there is no way that the tree can have a similar shape hence we return a false value and return from the code, but if yes, we continue to recursively call for all children of the nodes to check whether the subtree are similar in shape or not.</p><p>Below is the implementation in Java: </p><pre>public static boolean areSimilar(Node n1, Node n2) {\n                                    if (n1.children.size() != n2.children.size()) {\n                                        return false;\n                                    }\n                                    for (int i = 0; i &lt; n1.children.size(); i++) {\n                                        Node c1 = n1.children.get(i);\n                                        Node c2 = n2.children.get(i);\n                                        if (areSimilar(c1, c2) == false) {\n                                            return false;\n                                        }\n                                    }\n                                    return true;\n                                }</pre><p><b>Time Complexity: O(n)</b></p><p>The time complexity for the function is linear as tree traversal is involved which is linear in terms of time complexity.</p><p><b>Space Complexity: O(logn)</b></p><p>The space complexity for the function is proportional to the height of the tree due to the recursion stack.</p>",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/generic-tree/are-generic-trees-similar-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

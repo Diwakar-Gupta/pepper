@@ -1,0 +1,27 @@
+{
+  "name": "Sort 012",
+  "slug": "time-and-space-complexity-sort-012",
+  "course": "dsa-fundamentals",
+  "module": "time-and-space-complexity",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array(arr) containing only 0's, 1's, and 2's.\n2. You have to sort the given array in increasing order and in linear time.",
+  "inputFormat": "An Integer N \narr1\narr2..\nn integers",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 10000\narr[i] = 0,1,2",
+  "sampleInput": "10\n1\n0\n2\n2\n1\n0\n2\n1\n0\n2",
+  "sampleOutput": "Swapping index 1 and index 0\nSwapping index 2 and index 9\nSwapping index 2 and index 8\nSwapping index 2 and index 1\nSwapping index 3 and index 7\nSwapping index 5 and index 2\nSwapping index 6 and index 6\n0\n0\n0\n1\n1\n1\n2\n2\n2\n2",
+  "questionVideo": "MbV26HWqxrs",
+  "solutionVideo": "MbV26HWqxrs",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\n\nusing namespace std;\n\nvoid input(vector<int> &arr)\n{\n    for (int i = 0; i < arr.size(); i++)\n    {\n        cin >> arr[i];\n    }\n}\n\nvoid print(vector<int> &arr)\n{\n    for (int i = 0; i < arr.size(); i++)\n    {\n        cout << arr[i] << endl;\n    }\n    cout << endl;\n}\n\n// used for swapping ith and jth elements of array\nvoid swap(vector<int> &arr, int i, int j)\n{\n    cout << (\"Swapping index \" + to_string(i) + \" and index \" + to_string(j)) << endl;\n    int temp = arr[i];\n    arr[i] = arr[j];\n    arr[j] = temp;\n}\n\nvoid sort012(vector<int> &arr)\n{\n\n}\n\nint main()\n{\n    int n, m;\n    cin >> n;\n    vector<int> A(n, 0);\n    input(A);\n\n    sort012(A);\n    print(A);\n    return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void sort012(int[] arr){\n    //write your code here\n    \n  }\n\n  // used for swapping ith and jth elements of array\n  public static void swap(int[] arr, int i, int j) {\n    System.out.println(\"Swapping index \" + i + \" and index \" + j);\n    int temp = arr[i];\n    arr[i] = arr[j];\n    arr[j] = temp;\n  }\n\n  public static void print(int[] arr){\n    for(int i = 0 ; i < arr.length; i++){\n      System.out.println(arr[i]);\n    }\n  }\n  public static void main(String[] args) throws Exception {\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    for(int i = 0 ;i < n; i++){\n      arr[i] = scn.nextInt();\n    }\n    sort012(arr);\n    print(arr);\n  }\n\n}",
+    "python": "def printlist(arr):\nfor i in arr :\n  print(i)\n\n# used for swapping ith and jth elements of array\n    def swap(arr, i, j) :\n    print(\"Swapping index\", i, \"and index\", j);\ntemp = arr[i];\narr[i] = arr[j];\narr[j] = temp;\n\ndef sort012(arr):\n#write your code here\n\n\n  n = int(input());\nA = [];\nfor i in range(0, n) :\n    val = int(input());\nA.append(val) ;\nsort012(A);\nprintlist(A);"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/time-and-space-complexity/sort-012-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

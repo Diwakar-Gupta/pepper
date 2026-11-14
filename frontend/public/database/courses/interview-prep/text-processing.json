@@ -1,0 +1,299 @@
+{
+  "name": "Text Processing",
+  "slug": "text-processing",
+  "course": "interview-prep",
+  "counts": {
+    "problems": 40,
+    "articles": 0,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-kmp-pattern-searching",
+      "name": "Kmp Pattern Searching",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-z-algorithm-for-pattern-searching",
+      "name": "Z Algorithm For Pattern Searching",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-shortest-palindrome",
+      "name": "Shortest Palindrome",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-manacher-s-algorithm",
+      "name": "Manacher's Algorithm",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-find-string-roots",
+      "name": "Find String Roots",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-string-rotation",
+      "name": "String Rotation",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-prefix-and-suffix-count",
+      "name": "Prefix And Suffix Count",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-string-polynomial-hashing",
+      "name": "String Polynomial Hashing",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-rabin-karp-pattern-find-spoj",
+      "name": "Rabin Karp Pattern Find (spoj)",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-password",
+      "name": "Password",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-good-substrings",
+      "name": "Good Substrings",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-longest-duplicate-substring",
+      "name": "Longest Duplicate Substring",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-longest-prefix-suffix",
+      "name": "Longest Prefix Suffix",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-lexicographical-suffixes",
+      "name": "Lexicographical Suffixes",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-longest-common-substring-2-strings",
+      "name": "Longest Common Substring (2 Strings)",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-repeated-substrings-kattis",
+      "name": "Repeated Substrings - Kattis",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-longest-palindromic-substring",
+      "name": "Longest Palindromic Substring",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-hidden-password-icpc-regionals",
+      "name": "Hidden Password - Icpc Regionals",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-dfs-in-suffix-tree",
+      "name": "Dfs In Suffix Tree",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-sufix-tree-application-1-pattern-find",
+      "name": "Sufix Tree - Application 1 - Pattern Find",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-suffix-tree-application-2-longest-repeated-substrings",
+      "name": "Suffix Tree - Application 2 - Longest Repeated Substrings",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-suffix-tree-application-3-longest-common-substring",
+      "name": "Suffix Tree - Application 3 - Longest Common Substring",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-suffix-tree-dictionary-queries",
+      "name": "Suffix Tree - Dictionary Queries",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-aho-corasick-application",
+      "name": "Aho Corasick - Application",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-obscene-words-filter",
+      "name": "Obscene Words Filter",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-substring-problem",
+      "name": "Substring Problem",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-vitaly-and-strings",
+      "name": "Vitaly And Strings",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-remove-adjacent",
+      "name": "Remove Adjacent",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-phoenix-and-distribution",
+      "name": "Phoenix And Distribution",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-make-palindrome",
+      "name": "Make Palindrome",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-wizards-and-minimal-spell",
+      "name": "Wizards And Minimal Spell",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-exponential-notation",
+      "name": "Exponential Notation",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-one-more-name",
+      "name": "One More Name",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-ab-string",
+      "name": "Ab-string",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-print-1337-string",
+      "name": "Print 1337 String",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-string-reversal",
+      "name": "String Reversal",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-calender",
+      "name": "Calender",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-minimax",
+      "name": "Minimax",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-diane",
+      "name": "Diane",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-say-no-to-palindrome",
+      "name": "Say No To Palindrome",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-text-processing-codeforces-subsequence",
+      "name": "Codeforces Subsequence",
+      "difficulty": "Medium",
+      "tests": 0
+    }
+  ]
+}

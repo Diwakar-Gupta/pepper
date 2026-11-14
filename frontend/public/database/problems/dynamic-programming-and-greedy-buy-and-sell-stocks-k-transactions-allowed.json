@@ -1,0 +1,27 @@
+{
+  "name": "Buy And Sell Stocks - K Transactions Allowed",
+  "slug": "dynamic-programming-and-greedy-buy-and-sell-stocks-k-transactions-allowed",
+  "course": "dsa-fundamentals",
+  "module": "dynamic-programming-and-greedy",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n, representing the number of days.\n2. You are given n numbers, where ith number represents price of stock on ith day.\n3. You are given a number k, representing the number of transactions allowed.\n3. You are required to print the maximum profit you can make if you are allowed k transactions at-most.\nNote - There can be no overlapping transaction. One transaction needs to be closed (a buy followed by a sell) before opening another transaction (another buy).",
+  "inputFormat": "A number n\n.. n more elements\nA number k",
+  "outputFormat": "A number representing the maximum profit you can make if you are allowed a single transaction.",
+  "constraints": "0 &lt;= n &lt;= 20\n0 &lt;= n1, n2, .. &lt;= 10\n0 &lt;= k &lt;= n / 2",
+  "sampleInput": "6\n9\n6\n7\n6\n3\n8\n1",
+  "sampleOutput": "5",
+  "questionVideo": "3YILP-PdEJA",
+  "solutionVideo": "3YILP-PdEJA",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\n#include <climits>\n\nusing namespace std;\n\nvoid transactions(vector<int> arr, int k) {\n  //write your code here\n}\n\nint main() {\n\n  int n;\n  cin >> n;\n  vector<int> arr(n, 0);\n\n  for (int i = 0; i < n; i++)\n  {\n    cin >> arr[i];\n  }\n  int k ;\n  cin >> k;\n\n  transactions(arr, k);\n\n  return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // write your code here\n    }\n\n}",
+    "python": "import math\n\ndef kTransactions(arr, n, k):\n  write your code here\n\n  def main():\n  n = int(input())\n      array = []\n              for i in range(n) :\n                array.append(int(input()))\n\n                k = int(input())\n                    kTransactions(array, n, k)\n\n                if __name__ == '__main__':\n                    main()\n"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/buy-and-sell-stocks-kta-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

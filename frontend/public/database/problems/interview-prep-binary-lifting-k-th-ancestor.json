@@ -1,0 +1,25 @@
+{
+  "name": "K'th Ancestor",
+  "slug": "interview-prep-binary-lifting-k-th-ancestor",
+  "course": "interview-prep",
+  "module": "binary-lifting",
+  "difficulty": "Medium",
+  "statement": "You are given a tree of n nodes numbered from 0 to n-1 and is rooted at 0.\nYou are given an array parent of length n where parent[i] denotes parent of i'th node (in case of root it's parent is itself).\n\nNow you have to answer q queries of format:\na k\nanswer to this query is k'th ancistor of node a if k'th ancistor does not exist simply print root.\nIn simple words you have to find k'th ancistor of a node.\n\nTask: could u do it in log(n) or better time complexity.",
+  "inputFormat": "n\np1\np2\np3\n... n numbers till pn\nq\na1 k1\na2 k2\n... q queries till a(q) k(q)",
+  "outputFormat": "for each query print in single line value of k'th ancistor",
+  "constraints": "1. 2 &lt;= n &lt;= 10^5\n2. parent[0] = 0\n3. 1 &lt;= q &lt;= 10^5\n4. 0 &lt;= a &lt;= n-1\n5. 1 &lt;= k &lt;= n",
+  "sampleInput": "7\n0\n0\n0\n1\n3\n2\n3\n6\n5 1\n6 2\n3 2\n3 3\n6 3\n4 1",
+  "sampleOutput": "2\n1\n0\n0\n0\n3",
+  "questionVideo": "PE-kQVZxvWA",
+  "solutionVideo": "PE-kQVZxvWA",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args) throws Exception {\n    BufferedReader read = new BufferedReader(new InputStreamReader(System.in));\n\n    int n = Integer.parseInt(read.readLine());\n\n    int[] parent = new int[n];\n\n    for (int i = 0; i < n; i++) {\n      parent[i] = Integer.parseInt(read.readLine());\n    }\n    int q = Integer.parseInt(read.readLine());\n    // write your code here\n\n\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/binary-lifting/kth-ancestor-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

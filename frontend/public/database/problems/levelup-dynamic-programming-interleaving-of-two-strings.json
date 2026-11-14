@@ -1,0 +1,25 @@
+{
+  "name": "Interleaving Of Two Strings",
+  "slug": "levelup-dynamic-programming-interleaving-of-two-strings",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given three strings - s1, s2 and s3.\n2. You have to find whether s3 is formed by interleaving of s1 and s2.\n3. s3 is interleaving if it contains all characters of s1 and s2, and order of all characters in individual string is preserved.",
+  "inputFormat": "String s1\nString s2\nString s3",
+  "outputFormat": "true/false",
+  "constraints": "1 &lt;= s1.length() &lt;= 100\n1 &lt;= s2.length() &lt;= 100\n1 &lt;= s3.length() &lt;= 200",
+  "sampleInput": "aabcc\ndbbca\naadbbcbcac",
+  "sampleOutput": "true",
+  "questionVideo": "79g3LJoQk_U",
+  "solutionVideo": "79g3LJoQk_U",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static boolean solution(String s1, String s2, String s3) {\n    // write your code here\n\n  }\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    String s1 = scn.nextLine();\n    String s2 = scn.nextLine();\n    String s3 = scn.nextLine();\n    System.out.println(solution(s1, s2, s3));\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/interleaving-of-two-strings-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

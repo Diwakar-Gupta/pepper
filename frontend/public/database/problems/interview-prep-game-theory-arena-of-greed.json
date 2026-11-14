@@ -1,0 +1,25 @@
+{
+  "name": "Arena Of Greed",
+  "slug": "interview-prep-game-theory-arena-of-greed",
+  "course": "interview-prep",
+  "module": "game-theory",
+  "difficulty": "Easy",
+  "statement": "<a href=\"https://codeforces.com/problemset/problem/1425/A\" target=\"_blank\" rel=\"noopener\">https://codeforces.com/problemset/problem/1425/A</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "2\n5\n6",
+  "sampleOutput": "2\n4",
+  "questionVideo": "zBl7_WS_iTs",
+  "solutionVideo": "zBl7_WS_iTs",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args) throws Exception {\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/game-theory/arena-of-greed/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Merge Two Sorted Linkedlist",
+  "slug": "levelup-linked-list-merge-two-sorted-linkedlist",
+  "course": "levelup",
+  "module": "linked-list",
+  "difficulty": "Easy",
+  "statement": "1. Merge two sorted linkedlists and return head of a sorted linkedlist. The list should be made by splicing together the nodes of the first two lists\n2. Both list are sorted in increasing order.",
+  "inputFormat": "1-&gt;2-&gt;6-&gt;7-&gt;15-&gt;24-&gt;null\n-1-&gt;0-&gt;6-&gt;17-&gt;25-&gt;null",
+  "outputFormat": "-1-&gt;0-&gt;1-&gt;2-&gt;6-&gt;6-&gt;7-&gt;15-&gt;17-&gt;24-&gt;25-&gt;null",
+  "constraints": "0 &lt;= size of linkedlist &lt;= 10^6",
+  "sampleInput": "2\n1 5 \n4\n1 3 6 10",
+  "sampleOutput": "1 1 3 5 6 10",
+  "questionVideo": "mBUcaPvEawI",
+  "solutionVideo": "mBUcaPvEawI",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nclass ListNode\n{\npublic:\n    int val = 0;\n    ListNode *next = nullptr;\n\n    ListNode(int val)\n    {\n        this->val = val;\n    }\n};\n\nListNode *mergeTwoLists(ListNode *l1, ListNode *l2)\n{\n    return nullptr;\n}\nvoid printList(ListNode *node)\n{\n    ListNode *curr = node;\n    while (curr != nullptr)\n    {\n        cout << curr->val << \" \";\n        curr = curr->next;\n    }\n    cout << endl;\n}\n\nListNode *createList(int n)\n{\n    ListNode *dummy = new ListNode(-1);\n    ListNode *prev = dummy;\n    while (n-- > 0)\n    {\n        int val;\n        cin >> val;\n        prev->next = new ListNode(val);\n        prev = prev->next;\n    }\n    return dummy->next;\n}\n\nint main()\n{\n    int n, m;\n    cin >> n ;\n    ListNode *h1 = createList(n);\n    cin >> m;\n    ListNode *h2 = createList(m);\n\n    ListNode *head = mergeTwoLists(h1, h2);\n    printList(head);\n\n    return 0;\n}",
+    "java": "import java.util.*;\n\nclass Main {\n    public static Scanner scn = new Scanner(System.in);\n\n    public static class ListNode {\n        int val = 0;\n        ListNode next = null;\n\n        ListNode(int val) {\n            this.val = val;\n        }\n    }\n\n    public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {\n        return null;\n    }\n\n    public static void printList(ListNode node) {\n        while (node != null) {\n            System.out.print(node.val + \" \");\n            node = node.next;\n        }\n    }\n\n    public static ListNode createList(int n) {\n        ListNode dummy = new ListNode(-1);\n        ListNode prev = dummy;\n        while (n-- > 0) {\n            prev.next = new ListNode(scn.nextInt());\n            prev = prev.next;\n        }\n\n        return dummy.next;\n    }\n\n    public static void main(String[] args) {\n        int n = scn.nextInt();\n        ListNode h1 = createList(n);\n        int m = scn.nextInt();\n        ListNode h2 = createList(m);\n\n\n        ListNode head = mergeTwoLists(h1, h2);\n        printList(head);\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/merge-two-sorted-linkedlist/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Triplets - 1",
+  "slug": "levelup-bit-manipulation-triplets-1",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array(arr) of N numbers.\n2. You have to select three indices i,j,k following this condition -&gt; \n      0 &lt;= i &lt; j &lt;= k &lt; arr.length\n3. Two numbers X and Y as defined as :\n      X = arr[i] ^ arr[i+1] ^ ... ^ arr[j - 1]\n      Y = arr[j] ^ arr[j+1] ^ ... ^ arr[k]\n4. You have to print the number of triplets where X is equal to Y.",
+  "inputFormat": "A number N\narr1\narr2..\nn numbers",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "1 &lt;= N &lt;= 1000\n0 &lt;= arr[i] &lt;= 10^9",
+  "sampleInput": "3\n1 2 3",
+  "sampleOutput": "2",
+  "questionVideo": "sdJBPdoD3OY",
+  "solutionVideo": "sdJBPdoD3OY",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static void solution(int[] arr){\n\t\t//write your code here\n\t\t\n    }\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n        int[] arr = new int[n];\n        for(int i = 0 ; i < arr.length; i++){\n            arr[i] = scn.nextInt();\n        }\n        solution(arr);\n    }\n\t\n\t\n}"
+  },
+  "editorial": "<p>The problem here deals with finding the number of triplets for which X = Y where,</p><p>X = arr[i] + arr[i+1] + arr[i+2] + ... + arr[j-1] and</p><p>Y = arr[j] + arr[j+1] + arr[j+2] + ... + arr[k]</p><p>Here 0 &lt;= i &lt; j &lt;= k &lt; arr.length</p><p>Consider the following example:</p><p>Input array: [ 1, 3, 2, 5, 7, 2, 7, 5, 6, 4 ]</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/d8327a113c6dee22.png\" alt=\"\"></p><p>The general approach to solve this problem will be to have 3 nested loops for each i, j, and k and then calculate X and Y and henceforth check for equality. This approach would give us a time complexity of O(n3), but we wish to optimize it to time complexity of O(n2).</p><p>The idea behind the optimized approach is to find the <b>sub-array where the XOR would be zero</b>. Suppose the sub-array with zero XOR is:</p><p>[ 2, 3, 3, 2]</p><p>This means that 2 ^ 3 ^ 3 ^ 2 = 0</p><p>Also 2 = 3 ^ 3 ^ 2.</p><p>Also we have, 2 ^ 3 = 3 ^ 2</p><p>And lastly, 2 ^ 3 ^ 2 = 3</p><p>This depiction is nothing but the <b>positioning of the j variable</b>. Consider placing i at 0th index and k at 3rd index. Now we can have values of index j ranging from 1 &lt;= j &lt;= 3.</p><p>So for j = 1, we have X = 2 and Y = 3 ^ 3 ^ 2 =&gt; X = Y.</p><p>So for j = 2, we have X = 2 ^ 3 and Y = 3 ^ 2 =&gt; X = Y.</p><p>So for j = 3, we have X = 2 ^ 3 ^ 3 and Y = 2 =&gt; X = Y.</p><p>So for sub-array starting from i till k we can have <b>(k-i) triplets</b> satisfying X = Y.</p><p>Now coming back to our example, we have I placed at index 2nd and k placed at 7th index so we can directly compute that we can have (7-2) = 5 triplets satisfying X = Y in this sub-array.</p><p>So all we need to do is to have a nested looping where we would develop every sub-array and then check whether that sub-array has a zero result if yes then we would add the number of triplets to our result.</p><p><b>Time Complexity: O(n2)</b></p><p>The time complexity for the function is n2 as we are having a nested loop to generate all sub-arrays possible.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/triplets-1-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Rabin Karp Pattern Find (spoj)",
+  "slug": "interview-prep-text-processing-rabin-karp-pattern-find-spoj",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Medium",
+  "statement": "https://www.spoj.com/problems/NAJPF/",
+  "inputFormat": "Check Link in Description",
+  "outputFormat": "Check Link in Description",
+  "constraints": "Check Link in Description",
+  "sampleInput": "3\nababab ab\naaaaa bbb\naafafaasf aaf",
+  "sampleOutput": "3\n1 3 5\n\nNot Found\n\n1\n1",
+  "questionVideo": "gNDIOqdAJiw",
+  "solutionVideo": "gNDIOqdAJiw",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/rabin-karp-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

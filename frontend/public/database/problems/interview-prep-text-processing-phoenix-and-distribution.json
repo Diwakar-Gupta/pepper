@@ -1,0 +1,25 @@
+{
+  "name": "Phoenix And Distribution",
+  "slug": "interview-prep-text-processing-phoenix-and-distribution",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Easy",
+  "statement": "<a href=\"https://codeforces.com/problemset/problem/1348/C\" target=\"_blank\" rel=\"noopener\"><i> Link -&gt; Phoenix and Distribution</i></a>",
+  "inputFormat": "check the link",
+  "outputFormat": "check the link",
+  "constraints": "check the link",
+  "sampleInput": "6\n4 2\nbaba\n5 2\nbaacb\n5 3\nbaacb\n5 3\naaaaa\n6 4\naaxxzz\n7 1\nphoenix",
+  "sampleOutput": "ab\nabbc\nb\naa\nx\nehinopx",
+  "questionVideo": "0IJZRgRC1BI",
+  "solutionVideo": "0IJZRgRC1BI",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner sc = new Scanner(System.in);\n\n    //Code here\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/phoenix-and-distribution/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

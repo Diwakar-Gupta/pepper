@@ -1,0 +1,862 @@
+{
+  "name": "Dynamic Programming",
+  "slug": "dynamic-programming",
+  "course": "levelup",
+  "counts": {
+    "problems": 77,
+    "articles": 61,
+    "videos": 1
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-largest-square-sub-matrix-with-all-1-s",
+      "name": "Largest Square Sub-matrix With All 1's",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-print-all-paths-with-minimum-jumps",
+      "name": "Print All Paths With Minimum Jumps",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-print-all-paths-with-minimum-cost",
+      "name": "Print All Paths With Minimum Cost",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-print-all-paths-with-maximum-gold",
+      "name": "Print All Paths With Maximum Gold",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-print-all-paths-with-target-sum-subset",
+      "name": "Print All Paths With Target Sum Subset",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-print-all-results-in-0-1-knapsack",
+      "name": "Print All Results In 0-1 Knapsack",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-2-key-keyboard",
+      "name": "2 Key Keyboard",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-4-key-keyboard",
+      "name": "4 Key Keyboard",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-longest-increasing-subsequence",
+      "name": "Longest Increasing Subsequence",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-print-all-longest-increasing-subsequences",
+      "name": "Print All Longest Increasing Subsequences",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-maximum-sum-increasing-subsequence",
+      "name": "Maximum Sum Increasing Subsequence",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-longest-bitonic-subsequence",
+      "name": "Longest Bitonic Subsequence",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-maximum-non-overlapping-bridges",
+      "name": "Maximum Non-overlapping Bridges",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-russian-doll-envelopes",
+      "name": "Russian Doll Envelopes",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-min-squares",
+      "name": "Min Squares",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-catalan-number",
+      "name": "Catalan Number",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-number-of-bsts",
+      "name": "Number Of Bsts",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-count-of-valleys-and-mountains",
+      "name": "Count Of Valleys And Mountains",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-count-brackets",
+      "name": "Count Brackets",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-circle-and-chords",
+      "name": "Circle And Chords",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-number-of-ways-of-triangulation",
+      "name": "Number Of Ways Of Triangulation",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "video",
+      "slug": "levelup-dynamic-programming-catalan-numbers-variation",
+      "name": "Catalan Numbers Variation",
+      "youtubeId": "qqcN4ROOusM"
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-matrix-chain-multiplication",
+      "name": "Matrix Chain Multiplication",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-burst-balloons",
+      "name": "Burst Balloons",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-minimum-score-of-triangulation",
+      "name": "Minimum Score Of Triangulation",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-boolean-parenthesization",
+      "name": "Boolean Parenthesization",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-optimal-binary-search-tree",
+      "name": "Optimal Binary Search Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-rod-cutting",
+      "name": "Rod Cutting",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-minimum-palindromic-cut",
+      "name": "Minimum Palindromic Cut",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-longest-common-subsequence",
+      "name": "Longest Common Subsequence",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-longest-palindromic-subsequences",
+      "name": "Longest Palindromic Subsequences",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-count-palindromic-subsequences",
+      "name": "Count Palindromic Subsequences",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-count-palindromic-substrings",
+      "name": "Count Palindromic Substrings",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-longest-palindromic-substring",
+      "name": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-count-distinct-subsequences",
+      "name": "Count Distinct Subsequences",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-count-of-distinct-palindromic-subsequences",
+      "name": "Count Of Distinct Palindromic Subsequences",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-wildcard-pattern-matching",
+      "name": "Wildcard Pattern Matching",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-regular-expression-matching",
+      "name": "Regular Expression Matching",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-longest-common-substring",
+      "name": "Longest Common Substring",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-longest-repeating-subsequence",
+      "name": "Longest Repeating Subsequence",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-edit-distance",
+      "name": "Edit Distance",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-scramble-string",
+      "name": "Scramble String",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-minimum-ascii-delete-sum-for-two-strings",
+      "name": "Minimum Ascii Delete Sum For Two Strings",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-minimum-cost-to-make-two-strings-identical",
+      "name": "Minimum Cost To Make Two Strings Identical",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-kadane-s-algorithm",
+      "name": "Kadane's Algorithm",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-k-concatenation",
+      "name": "K Concatenation",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-maximum-sum-subarray-with-at-least-k-elements",
+      "name": "Maximum Sum Subarray With At Least K Elements",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-egg-drop",
+      "name": "Egg Drop",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-optimal-strategy-for-a-game",
+      "name": "Optimal Strategy For A Game",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-cherry-pickup",
+      "name": "Cherry Pickup",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-probability-of-knight-in-the-chessboard",
+      "name": "Probability Of Knight In The Chessboard",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-highway-billboard",
+      "name": "Highway Billboard",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-distinct-transformations",
+      "name": "Distinct Transformations",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-numeric-keypad",
+      "name": "Numeric Keypad",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-maximum-difference-of-zeros-and-ones-in-binary-string",
+      "name": "Maximum Difference Of Zeros And Ones In Binary String",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-maximum-sum-of-two-non-overlapping-subarrays",
+      "name": "Maximum Sum Of Two Non-overlapping Subarrays",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-maximum-sum-of-three-non-overlapping-subarrays",
+      "name": "Maximum Sum Of Three Non-overlapping Subarrays",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-maximum-sum-of-m-non-overlapping-subarrays",
+      "name": "Maximum Sum Of M Non-overlapping Subarrays",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-arithmetic-slices-1",
+      "name": "Arithmetic Slices 1",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-arithmetic-slices-2",
+      "name": "Arithmetic Slices 2",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-word-break",
+      "name": "Word Break",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-temple-offerings",
+      "name": "Temple Offerings",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-minimum-insertions-to-make-palindrome",
+      "name": "Minimum Insertions To Make Palindrome",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-ugly-number",
+      "name": "Ugly Number",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-super-ugly-number",
+      "name": "Super Ugly Number",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-find-water-in-glass",
+      "name": "Find Water In Glass",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-frog-jump",
+      "name": "Frog Jump",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-interleaving-of-two-strings",
+      "name": "Interleaving Of Two Strings",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-maximum-length-of-repeated-subarray",
+      "name": "Maximum Length Of Repeated Subarray",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-distinct-echo-substrings",
+      "name": "Distinct Echo Substrings",
+      "difficulty": "Hard",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-minimum-cost-to-cut-a-stick",
+      "name": "Minimum Cost To Cut A Stick",
+      "difficulty": "Hard",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-delete-and-earn",
+      "name": "Delete And Earn",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-number-of-good-ways-to-split-a-string",
+      "name": "Number Of Good Ways To Split A String",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-minimum-cost-for-tickets",
+      "name": "Minimum Cost For Tickets",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-minimum-ascii-delete-sum-for-two-strings-2",
+      "name": "Minimum Ascii Delete Sum For Two Strings",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-maximum-alternating-subsequence-sum",
+      "name": "Maximum Alternating Subsequence Sum",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-stone-game",
+      "name": "Stone Game",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-dynamic-programming-largest-multiple-of-three",
+      "name": "Largest Multiple Of Three",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-longest-increasing-subsequence",
+      "name": "Longest Increasing Subsequence"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-maximum-sum-increasing-subsequence",
+      "name": "Maximum Sum Increasing Subsequence"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-longest-bitonic-subsequence",
+      "name": "Longest Bitonic Subsequence"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-temple-offerings",
+      "name": "Temple Offerings"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-count-palindromic-substrings",
+      "name": "Count Palindromic Substrings"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-minimum-score-of-triangulation",
+      "name": "Minimum Score Of Triangulation"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-catalan-numbers-variation",
+      "name": "Catalan Numbers Variation"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-print-all-paths-with-minimum-jumps",
+      "name": "Print All Paths With Minimum Jumps"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-maximum-sum-of-two-non-overlapping-subarrays",
+      "name": "Maximum Sum Of Two Non-overlapping Subarrays"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-arithmetic-slices-2",
+      "name": "Arithmetic Slices - 2"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-longest-common-substring",
+      "name": "Longest Common Substring"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-count-brackets",
+      "name": "Count Brackets"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-minimum-cost-to-make-two-strings-identical",
+      "name": "Minimum Cost To Make Two Strings Identical"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-number-of-ways-of-triangulation",
+      "name": "Number of Ways of Triangulation"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-russian-doll-envelopes",
+      "name": "Russian Doll Envelopes"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-maximum-non-overlapping-bridges",
+      "name": "Maximum Non - Overlapping Bridges"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-kadanes-algorithm",
+      "name": "Kadanes Algorithm"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-count-palindromic-subsequence",
+      "name": "Count Palindromic Subsequence"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-circle-and-chords",
+      "name": "Circle and Chords"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-maximum-sum-of-3-non-overlapping-subarrays",
+      "name": "Maximum Sum of 3 Non-Overlapping Subarrays"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-print-all-paths-with-target-sum-subset",
+      "name": "Print All Paths With Target Sum Subset"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-regular-expression-matching",
+      "name": "Regular Expression Matching"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-number-of-bsts",
+      "name": "Number of BSTs"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-count-of-valleys-and-mountains",
+      "name": "Count of Valleys and Mountains"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-longest-palindromic-substrings",
+      "name": "Longest Palindromic Substrings"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-distinct-transformations",
+      "name": "Distinct Transformations"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-find-water-in-glass",
+      "name": "Find Water In Glass"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-arithmetic-slices-1",
+      "name": "Arithmetic Slices - 1"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-largest-square-sub-matrix-with-all-1s",
+      "name": "Largest Square Sub Matrix with all 1s"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-maximum-length-of-repeated-subarray",
+      "name": "Maximum Length of Repeated Subarray"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-all-repeating-except-one",
+      "name": "All Repeating Except One"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-min-squares",
+      "name": "Min Squares"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-numeric-keypad",
+      "name": "Numeric Keypad"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-word-break-2",
+      "name": "Word Break-2"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-minimum-palindromic-cuts",
+      "name": "Minimum Palindromic Cuts"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-rod-cutting",
+      "name": "Rod Cutting"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-burst-balloons",
+      "name": "Burst Balloons"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-maximum-sum-of-m-non-overlapping-subarrays",
+      "name": "Maximum Sum Of M Non-overlapping Subarrays"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-print-all-longest-increasing-subsequences",
+      "name": "Print All Longest Increasing Subsequences"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-longest-common-subsequence",
+      "name": "Longest Common Subsequence"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-count-distinct-subsequences",
+      "name": "Count Distinct Subsequences"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-print-all-paths-with-minimum-counts",
+      "name": "Print All Paths With Minimum Counts"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-print-all-paths-with-maximum-gold",
+      "name": "Print all Paths with Maximum Gold"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-print-all-results-in-0-1-knapsack",
+      "name": "Print All Results In 0-1 Knapsack"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-wildcard-pattern-matching",
+      "name": "Wildcard Pattern Matching"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-catalan-numbers",
+      "name": "Catalan Numbers"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-boolean-parenthesization",
+      "name": "Boolean Parenthesization"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-optimal-binary-search-tree",
+      "name": "Optimal Binary Search Tree"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-longest-repeating-subsequence",
+      "name": "Longest Repeating Subsequence"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-minimum-ascii-delete-sum-for-two-strings",
+      "name": "Minimum Ascii Delete Sum for Two Strings"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-edit-distance",
+      "name": "Edit Distance"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-k-concatenation",
+      "name": "K Concatenation"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-maximum-sum-subarray-with-at-least-k-elements",
+      "name": "Maximum Sum Subarray With At Least K Elements"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-egg-drop",
+      "name": "Egg Drop"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-scramble-string",
+      "name": "Scramble String"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-highway-billboard",
+      "name": "Highway Billboard"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-minimum-insertions-to-make-palindrome",
+      "name": "Minimum Insertions To Make Palindrome"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-ugly-number",
+      "name": "Ugly Number"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-super-ugly-number",
+      "name": "Super Ugly Number"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-frog-jump",
+      "name": "Frog Jump"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-dynamic-programming-interleaving-of-two-strings",
+      "name": "Interleaving of two strings"
+    }
+  ]
+}

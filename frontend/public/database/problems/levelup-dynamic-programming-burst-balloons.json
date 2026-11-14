@@ -1,0 +1,25 @@
+{
+  "name": "Burst Balloons",
+  "slug": "levelup-dynamic-programming-burst-balloons",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Hard",
+  "statement": "1. You are given an array(arr) of length N which represents N number of balloons.\n2. Each balloon is painted with a number on it.\n3. You have to collect maximum coins by bursting all the balloons.\n4. If you burst a balloon with index i, you will get (arr[i-1] * arr[i] * arr[i+1]) number of coins.\n5. If arr[i-1] and arr[i+1] don't exist, then you may assume their value as 1.",
+  "inputFormat": "A number N\na1\na2.. N integers",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 1000\n1 &lt;= arr[i] &lt;= 100",
+  "sampleInput": "3\n1\n2\n3",
+  "sampleOutput": "12",
+  "questionVideo": "YzvF8CqPafI",
+  "solutionVideo": "YzvF8CqPafI",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static int solution(int[] arr) {\n    //write your code here\n\n    return 0;\n  }\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    for (int i = 0; i < arr.length; i++) {\n      arr[i] = scn.nextInt();\n    }\n    System.out.println(solution(arr));\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/burst-balloons-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

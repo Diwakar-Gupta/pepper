@@ -1,0 +1,23 @@
+{
+  "name": "Guess The Array",
+  "slug": "interview-prep-interactive-problems-guess-the-array",
+  "course": "interview-prep",
+  "module": "interactive-problems",
+  "difficulty": "Medium",
+  "statement": "https://codeforces.com/problemset/problem/727/C",
+  "inputFormat": "click the link",
+  "outputFormat": "click the link",
+  "constraints": "click the link",
+  "sampleInput": "1",
+  "sampleOutput": "1",
+  "questionVideo": "x2GGdZeH6v4",
+  "solutionVideo": "x2GGdZeH6v4",
+  "templates": {},
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/interactive-problems/guess-the-array/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

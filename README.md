@@ -1,43 +1,66 @@
-# Pepper: DSA Learning Platform
+# Pepper: learn DSA, one problem at a time
 
-**Pepper** is a static Data Structures and Algorithms (DSA) learning platform inspired by Pepcoding. It provides high-quality educational content and supports local code execution for hands-on practice.
+**Pepper** keeps the Pepcoding data structures & algorithms curriculum alive after the original site shut down:
+video lectures, notes, and hundreds of problems you can solve in the browser.
 
-## How It Works
+👉 **https://diwakar-gupta.github.io/pepper/**
 
-1. Go to the website:  
-   👉 [https://diwakar-gupta.github.io/pepper/](https://diwakar-gupta.github.io/pepper/)
+It costs nothing to run: the website is static (GitHub Pages) and your code runs on **your own computer** through a
+small local judge.
 
-2. To run code from the browser, you need to set up the **judge** on your computer.
+## Run your code in 30 seconds
 
-3. Follow the steps in [`judge/README.md`](judge/README.md) to install and run it.
+You need Python 3.8+ (and the compilers for the languages you want: JDK, g++, Node…).
 
-Once the judge is running, the website will automatically detect it and let you run or submit code.
+```bash
+# macOS / Linux
+curl -fsSL https://raw.githubusercontent.com/Diwakar-Gupta/pepper/main/judge/pepper_judge.py | python3 -
+```
 
----
+```powershell
+# Windows PowerShell
+(irm https://raw.githubusercontent.com/Diwakar-Gupta/pepper/main/judge/pepper_judge.py) | python -
+```
 
-## Repository Structure
+Open the website: it detects the judge automatically. More in [`judge/README.md`](judge/README.md).
 
-- **frontend/** – The main web application, built with React and Parcel. Hosted at [diwakar-gupta.github.io/pepper](https://diwakar-gupta.github.io/pepper/).
-- **judge/** – Local code execution backend supporting Java, Python, and C++. You **must run this locally** to enable code execution from the frontend.
-- **scrapper/** – Tools for scraping course/problem data. Optional and used primarily for development or content updates.
+## How it fits together
 
-## Quick Start
+```
+ Browser (GitHub Pages)                       Your computer
+ ┌───────────────────────────┐   fetch()    ┌──────────────────────────────┐
+ │ React app                 │ ───────────▶ │ pepper_judge.py              │
+ │ problems, videos, notes   │ 127.0.0.1    │ compiles + runs your code     │
+ │ from public/database/*.json│ ◀─────────── │ ~/.pepper/submissions.db      │
+ └───────────────────────────┘   verdicts   └──────────────────────────────┘
+           ▲
+           │ built from
+ ┌───────────────────────────┐
+ │ scraper/ (Wayback Machine)│
+ └───────────────────────────┘
+```
 
-1. **Clone the repository:**
-   ```bash
-   git clone git@github.com:Diwakar-Gupta/pepper.git
-   cd pepper
-   ```
-2. **Install frontend dependencies and run the web app:**
-Follow the steps in [`frontend/README.md`](frontend/README.md) to install and run it.
-3. **Run the judge for local code execution:**
-Follow the steps in [`judge/README.md`](judge/README.md) to install and run it.
+No signaling server, no WebRTC, no backend to host.
 
-## Subproject READMEs
+## Repository layout
 
-- [frontend/README.md](frontend/README.md): Web app details, development, and deployment.
-- [judge/README.md](judge/README.md): Local code execution backend setup and usage.
+| Folder      | What it is                                                                                              |
+| ----------- | ------------------------------------------------------------------------------------------------------- |
+| `frontend/` | React + Tailwind site (Parcel). All content is static JSON in `frontend/public/database/`.               |
+| `judge/`    | `pepper_judge.py`: single-file, dependency-free local code runner.                                      |
+| `scraper/`  | Rebuilds the database from Internet Archive snapshots of pepcoding.com.                                 |
+
+## Contributing
+
+- **Fix content or add test cases.** Problems are in `frontend/public/database/problems/<slug>.json`, tests in
+  `frontend/public/database/testcases/<slug>/testcaseinputN.txt` + `testcaseoutputN.txt`.
+  After adding test files run `cd scraper && npm run index-tests` to update the problem JSON.
+  Most problems only have the archived sample as a test today, so more test cases are the most useful contribution.
+- **Work on the site:** see [`frontend/README.md`](frontend/README.md).
+- **Re-scrape:** see [`scraper/README.md`](scraper/README.md).
+
+Pushing to `main` builds and deploys the site through GitHub Actions.
 
 ## License
 
-This project is licensed under the [Apache License](LICENSE).
+[Apache 2.0](LICENSE). Course content belongs to its original authors and is preserved here for learning.

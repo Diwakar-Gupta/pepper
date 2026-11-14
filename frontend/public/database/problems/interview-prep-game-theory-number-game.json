@@ -1,0 +1,25 @@
+{
+  "name": "Number Game",
+  "slug": "interview-prep-game-theory-number-game",
+  "course": "interview-prep",
+  "module": "game-theory",
+  "difficulty": "Hard",
+  "statement": "Alice and Bob play a game.\n\nThey start with a number n and play in turns. In each turn, a player can make any one of the following moves:\n1. Divide n by any of its odd divisors greater than 1.\n2. Subtract 1 from n if n is greater than 1.\n\nDivisors of a number include the number itself.\nThe player who is unable to make a move loses the game.\nAlice moves first. Determine the winner of the game if both of them play optimally.",
+  "inputFormat": "The first line contains integer t, no. of test cases.\nEach of next t lines contain a number n.",
+  "outputFormat": "Print the winner ALICE or BOB.",
+  "constraints": "1&lt;= t &lt;= 100\n1&lt;= n &lt;= 10^9",
+  "sampleInput": "7\n1\n2\n3\n4\n5\n6\n12",
+  "sampleOutput": "BOB\nALICE\nALICE\nBOB\nALICE\nBOB\nALICE",
+  "questionVideo": "eDbR66fJqPI",
+  "solutionVideo": "eDbR66fJqPI",
+  "templates": {
+    "java": "import java.util.*;\nimport java.io.*;\nimport java.math.*;\n\npublic class Main {\n  public static void main(String[] args) throws NumberFormatException, IOException {\n\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/game-theory/number-game-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

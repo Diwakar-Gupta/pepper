@@ -1,0 +1,26 @@
+{
+  "name": "Copy Set Bits In A Range",
+  "slug": "levelup-bit-manipulation-copy-set-bits-in-a-range",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given two numbers A and B.\n2. You are given two more numbers left and right, representing a range [left,right].\n3. You have to set bits in B which are set in A lying in the above mentioned range.\n4. Print the updated number B.",
+  "inputFormat": "4 numbers representing A,B,left and right.",
+  "outputFormat": "A number",
+  "constraints": "-10^9 &lt;= A,B &lt;= 10^9\n1 &lt; left &lt; right &lt; 32",
+  "sampleInput": "10\n13\n2\n3",
+  "sampleOutput": "15",
+  "questionVideo": "v7pUZw-ZOYU",
+  "solutionVideo": "v7pUZw-ZOYU",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args){\n    Scanner scn = new Scanner(System.in);\n    int a = scn.nextInt();\n    int b = scn.nextInt();\n    int left = scn.nextInt();\n    int right = scn.nextInt();\n\n   //write your code here\n    \n  }\n\n}"
+  },
+  "editorial": "<p>The problem states that we are provided with two numbers say A and B and we are also provided with valid index positions for integer A. These positions are bit positions for the 4-byte integer. The task is to update the bits which are set in this range in integer A to B and then return the updated B.</p><p>Let us take an example to understand the problem better:</p><p>A = 10 -&gt; 1 0 1 0</p><p>Index -&gt; 4 3 2 1 {Index positions provided in the question are 1 based}</p><p>B = 13 -&gt; 1 1 0 1</p><p>leftPos = 2</p><p>rightPos = 3</p><p>In the range of leftPos &lt;= k &lt;= rightPos at k = 2 there is a set bit so we update the B integer and we get,</p><p>B = 15 -&gt; 1 1 1 1</p><p>To implement the solution we need to traverse every bit position from leftPos to rightPos and for every position we will have to make a mask and then check whether the bit of integer A is set at this position or not, if true then we will be updating B integer else we will continue the iteration for the next position.</p><p><b>Time Complexity: O(k)</b></p><p>The time complexity for the function is proportional to the range of index to traverse.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/copy-set-bits-in-a-range-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}
