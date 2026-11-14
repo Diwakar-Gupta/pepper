@@ -1,97 +1,157 @@
-[
-  {
-    "type": "Code",
-    "slug": "digit-frequency-easy",
-    "name": "Digit Frequency Easy"
+{
+  "name": "Function and Arrays",
+  "slug": "function-and-arrays",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 1,
+    "articles": 1,
+    "videos": 0
   },
-  {
-    "type": "Code",
-    "slug": "decimal-to-any-base-easy",
-    "name": "Decimal To Any Base Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "any-base-to-decimal-easy",
-    "name": "Any Base To Decimal Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "function-and-arrays-any-base-to-any-base",
-    "name": "Any Base To Any Base"
-  },
-  {
-    "type": "Code",
-    "slug": "any-base-addition-easy",
-    "name": "Any Base Addition Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "any-base-subtraction-easy",
-    "name": "Any Base Subtraction Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "any-base-multiplication-easy",
-    "name": "Any Base Multiplication Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "span-of-array-easy",
-    "name": "Span Of Array Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "find-element-in-an-array-easy",
-    "name": "Find Element In An Array Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "bar-chart-easy",
-    "name": "Bar Chart Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "sum-of-two-arrays-easy",
-    "name": "Sum Of Two Arrays Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "difference-of-two-arrays-easy",
-    "name": "Difference Of Two Arrays Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "reverse-an-array-easy",
-    "name": "Reverse An Array Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "rotate-an-array-easy",
-    "name": "Rotate An Array Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "inverse-of-an-array-easy",
-    "name": "Inverse Of An Array Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "subarray-problem-easy",
-    "name": "Subarray Problem Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "broken-economy-easy",
-    "name": "Broken Economy Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "first-index-and-last-index-easy",
-    "name": "First Index And Last Index Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "subsets-of-array-easy",
-    "name": "Subsets Of Array Easy"
-  }
-]
+  "items": [
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-digit-frequency",
+      "name": "Digit Frequency",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-decimal-to-any-base",
+      "name": "Decimal To Any Base",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-any-base-to-decimal",
+      "name": "Any Base To Decimal",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-any-base-to-any-base",
+      "name": "Any Base To Any Base",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-any-base-addition",
+      "name": "Any Base Addition",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-any-base-subtraction",
+      "name": "Any Base Subtraction",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-any-base-multiplication",
+      "name": "Any Base Multiplication",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "article",
+      "slug": "function-and-arrays-arrays-memory-management",
+      "name": "Arrays - Memory Management"
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-span-of-array",
+      "name": "Span Of Array",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-find-element-in-an-array",
+      "name": "Find Element In An Array",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-bar-chart",
+      "name": "Bar Chart",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-sum-of-two-arrays",
+      "name": "Sum Of Two Arrays",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-difference-of-two-arrays",
+      "name": "Difference Of Two Arrays",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-reverse-an-array",
+      "name": "Reverse An Array",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-rotate-an-array",
+      "name": "Rotate An Array",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-inverse-of-an-array",
+      "name": "Inverse Of An Array",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-subarray-problem",
+      "name": "Subarray Problem",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-broken-economy",
+      "name": "Broken Economy",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-first-index-and-last-index",
+      "name": "First Index And Last Index",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-subsets-of-array",
+      "name": "Subsets Of Array",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "function-and-arrays-inverted-bar-chart",
+      "name": "Inverted Bar Chart",
+      "difficulty": "Easy",
+      "unavailable": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "I Hate 1111",
+  "slug": "interview-prep-number-theory-i-hate-1111",
+  "course": "interview-prep",
+  "module": "number-theory",
+  "difficulty": "Medium",
+  "statement": "You are given an integer x. Can you make x by summing up some number of 11,111,1111,11111,..?(You can use any number among them any number of times)",
+  "inputFormat": "The first line contains an integer T, number of test cases.\nThe next t lines contain an integer a.",
+  "outputFormat": "For each test case print &quot;YES&quot; or &quot;NO&quot;.",
+  "constraints": "1 &lt;= t &lt;= 10000\n1 &lt;= x &lt;= 10^9",
+  "sampleInput": "3\n33\n144\n69",
+  "sampleOutput": "YES\nYES\nNO",
+  "questionVideo": "_Tp-5cW5HZQ",
+  "solutionVideo": "_Tp-5cW5HZQ",
+  "templates": {
+    "java": "\nimport java.util.*;\nimport java.util.function.Function;\nimport java.util.stream.Collectors;\nimport java.io.*;\nimport java.math.*;\n\npublic class Main {\n\t\tpublic static void main(String[] args) {\n\n\t}\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/number-theory/-i-hate-1111-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "K Increasing Subsequence 1",
+  "slug": "interview-prep-segment-tree-k-increasing-subsequence-1",
+  "course": "interview-prep",
+  "module": "segment-tree",
+  "difficulty": "Medium",
+  "statement": "For the given sequence A with n different elements find the number of increasing subsequences with k  elements.",
+  "inputFormat": "First line contains one integer n\nSecond line contains one integer k\nfollowing n lines contains elements of sequence\nA[1]\nA[2]\n....A[n]",
+  "outputFormat": "Print one number the andwer to question",
+  "constraints": "1. 1 &lt;= n &lt;= 10^5\n2. 1 &lt;= k &lt;= 11\n3. 1 &lt;= A[i] &lt;= n\n4. Output may not fit in 32 bit signed integer",
+  "sampleInput": "5\n3\n1\n2\n3\n5\n4",
+  "sampleOutput": "7",
+  "questionVideo": "4z26kdilTYE",
+  "solutionVideo": "4z26kdilTYE",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args) throws Exception {\n    BufferedReader read = new BufferedReader(new InputStreamReader(System.in));\n\n    int n = Integer.parseInt(read.readLine());\n    int k = Integer.parseInt(read.readLine());\n\n    int ar[] = new int[n];\n\n    for (int i = 0; i < n; i++) {\n      ar[i] = Integer.parseInt(read.readLine());\n    }\n    // write your code here\n\n\n\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/segment-tree/k-increasing-subsequence-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

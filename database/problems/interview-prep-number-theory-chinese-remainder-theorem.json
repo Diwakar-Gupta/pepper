@@ -1,0 +1,25 @@
+{
+  "name": "Chinese Remainder Theorem",
+  "slug": "interview-prep-number-theory-chinese-remainder-theorem",
+  "course": "interview-prep",
+  "module": "number-theory",
+  "difficulty": "Easy",
+  "statement": "We are given a set of congruence equations.\na = a1 (mod n1)\na = a2 (mod n2)\n\nWhere ai are some given constants, which indicates ai = a % ni. \nThe original form of CRT(Chinese Remainder Theorem) states that the given set of congruence equations always has one and exactly one solution modulo m. where m = lcm(n1, n2).\n\nFind exactly one value of a.\nIf it's not possible to find the value of a then print &quot;no solution&quot;;",
+  "inputFormat": "The first line of input consists of four integers a1, n1, a2, n2.",
+  "outputFormat": "Print two integers a, M, where M = lcm(n1, n2) and 0 &lt;= a &lt; M, giving the solution a (mod M) to the equations\na = a1 (mod n1)\na = a2 (mod n2)\nPrint &quot;no solution&quot; if there is no solution for a given set of congruence equations;",
+  "constraints": "1 &lt;= n1, n2 &lt;= 10^9\n0 &lt;= a1 &lt; n1\n0 &lt;= a2 &lt; n2",
+  "sampleInput": "10000 23000 10000 23000",
+  "sampleOutput": "10000 23000",
+  "questionVideo": "34DomEjzcsY",
+  "solutionVideo": "34DomEjzcsY",
+  "templates": {
+    "java": "import java.util.Scanner;\n\npublic class Main {\n  public static void main(String[] args) {\n    //Write code here\n\n\n  }\n\n//========= Extended Euclidean Algorithm =========//\n//------------------------------------------------//\n\n  public static class Pair {\n    long x;\n    long y;\n    long gcd;\n\n    public Pair(long x, long y, long gcd) {\n      this.x = x;\n      this.y = y;\n      this.gcd = gcd;\n    }\n  }\n\n  public static Pair euclids(long a, long b) {\n    if (b == 0) {\n      return new Pair(1, 0, a);\n    }\n    Pair dash = euclids(b, a % b);\n\n    return new Pair(dash.y, dash.x - ((a / b) * dash.y), dash.gcd);\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/number-theory/chinese-remainder-theorem-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

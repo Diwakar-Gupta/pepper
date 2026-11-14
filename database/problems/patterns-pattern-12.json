@@ -1,11 +1,27 @@
 {
   "name": "Pattern 12",
   "slug": "patterns-pattern-12",
-  "description": "1. You are given a number n.\n2. You've to create a pattern as shown in output format.\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\n\n```\n\n### Constraints\n```\n1 <= n <= 5\n```\n\n### Sample Input\n```\n5\n```\n\n### Sample Output\n```\n0\t\n1\t1\t\n2\t3\t5\t\n8\t13\t21\t34\t\n55\t89\t144\t233\t377\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/W5jFT6sjpyU?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/XzIM_xS9bgM?rel=0&loop=1&playlist=XzIM_xS9bgM",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "patterns",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n.\n2. You've to create a pattern as shown in output format.",
+  "inputFormat": "A number n",
+  "outputFormat": "",
+  "constraints": "1 &lt;= n &lt;= 5",
+  "sampleInput": "5",
+  "sampleOutput": "0\t\n1\t1\t\n2\t3\t5\t\n8\t13\t21\t34\t\n55\t89\t144\t233\t377",
+  "questionVideo": "W5jFT6sjpyU",
+  "solutionVideo": "XzIM_xS9bgM",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nint main(int argc, char **argv){\n    int n;\n    cin >> n;\n    \n    //write your code here\n    \n}",
+    "java": "import java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        Scanner scn = new Scanner(System.in);\n\n        // write ur code here\n\n    }\n}"
+  },
+  "editorial": "<p><i>&quot;Why do java programmers always wear glasses? Because they do not C#.&quot;</i><br></p><p><b><u>Question:</u></b><br></p><p>1. You are given a number n.<br></p><p>2. You have to create a pattern as shown in the output format.<br></p><p><b><u>Input format:</u></b><br></p><p>A number n<br></p><p><b><u>Output format:</u></b><br></p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><br></p><p><b><u>Constraints:</u></b><br></p><p>1 &lt;= n &lt;= 5<br></p><p><b><u>Solution Approach:</u></b><b><u></u></b><br></p><p>We have to print a triangle of Fibonacci sequence numbers in the given problem. Now, we have already discussed how to print the Fibonacci series and triangle of stars on the way to this problem.<br></p><p>Using that knowledge, we will move forward to combine them and implement it in our program.<br></p><pre>import java.util.*;\n                                public class Main{\n                                    public static void main(String[] args)\n                                    {\n                                        Scanner scn = new Scanner(System.in);\n                                        int n = scn.nextInt();\n                                        int a = 0,b = 1; // First two Fibonacci numbers\n                                \n                                        for(int i =1;i&lt;=n;i++)\n                                        {\n                                            for(int j = 1;j&lt;=i;j++)\n                                            {\n                                                System.out.print(a + &quot;\t&quot;);\n                                                int c = a + b;  //Since next fibonacci number is sum of                    \n                                                a = b;         //previous two fibonacci numbers\n                                                b = c;\n                                            }\n                                            System.out.println();\n                                        }\n                                    }\n                                }<br></pre><p><b><u>Output for input value n = 5:</u></b></p><p><b><u><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"></u></b></p>",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/patterns/design-pattern-12-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

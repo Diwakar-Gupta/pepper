@@ -1,0 +1,25 @@
+{
+  "name": "Min Jumps With +i -i Moves",
+  "slug": "levelup-arrays-and-strings-min-jumps-with-i-i-moves",
+  "course": "levelup",
+  "module": "arrays-and-strings",
+  "difficulty": "Easy",
+  "statement": "1. Given an integers X. \n2. The task is to find the minimum number of jumps to reach a point X in the number line starting from zero.\n3. The first jump made can be of length one unit and each successive jump will be exactly one unit longer than the previous jump in length. \n4. It is allowed to go either left or right in each jump.",
+  "inputFormat": "X = 8\nX = 9",
+  "outputFormat": "4\n-1 -&gt; 2 -&gt; 3 -&gt; 4 (order of jumps)\n\n5\n1 -&gt; 2 -&gt; -3 -&gt; 4 -&gt; 5 (prder of jumps)",
+  "constraints": "None",
+  "sampleInput": "9",
+  "sampleOutput": "5",
+  "questionVideo": "fsips_0hwEA",
+  "solutionVideo": "fsips_0hwEA",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n    // ~~~~~~~~~~~~User Section~~~~~~~~~~~\n    public static int minJumps(int x) {\n        // Write your code here\n    }\n\n    //~~~~~~~~~~~~~~~~~~Input Management~~~~~~~~~~~~~~\n    public static void main(String[] args) {\n        Scanner scn = new Scanner(System.in);\n        int x = scn.nextInt();\n\n        int jumps = minJumps(x);\n        System.out.println(jumps);\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/arrays-and-strings/min_jumps_with_+i_-i_moves/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

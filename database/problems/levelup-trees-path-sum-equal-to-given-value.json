@@ -1,0 +1,26 @@
+{
+  "name": "Path Sum Equal To Given Value",
+  "slug": "levelup-trees-path-sum-equal-to-given-value",
+  "course": "levelup",
+  "module": "trees",
+  "difficulty": "Medium",
+  "statement": "1. Given the root of a binary tree and an integer targetSum, return the number of paths where the sum of the values along the path equals targetSum.\n2. The path does not need to start or end at the root or a leaf,path can start from any where but it must go downwards",
+  "inputFormat": "Input is managed for you.",
+  "outputFormat": "Output is managed for you.",
+  "constraints": "0 &lt;= Number of Nodes &lt;= 10^5\n-1000 &lt;= value of Node data &lt;= 1000",
+  "sampleInput": "10 5 3 3 null null -2 null null 2 null 1 null null -3 null 11 null null\n8",
+  "sampleOutput": "3",
+  "questionVideo": "3LKHFfuqlIg",
+  "solutionVideo": "3LKHFfuqlIg",
+  "templates": {
+    "cpp": "// #include <iostream>\n// #include <vector>\n// #include <queue>\n// #include <stringstream>\n#include <bits/stdc++.h>\nusing namespace std;\n\nclass TreeNode\n{\npublic:\n  int val = 0;\n  TreeNode* left = nullptr;\n  TreeNode* right = nullptr;\n\n  TreeNode(int val)\n  {\n    this->val = val;\n  }\n};\n\nint pathSum(TreeNode* root, int sum)\n{\n}\n\n// input_Section_====================================================================\n\nvoid display(TreeNode* node)\n{\n  if (node == nullptr)\n    return;\n\n  string str = \"\";\n  str += ((node->left != nullptr ? to_string(node->left->val) : \".\"));\n  str += (\" -> \" + to_string(node->val) + \" <- \");\n  str += ((node->right != nullptr ? to_string(node->right->val) : \".\"));\n\n  cout << str << endl;\n\n  display(node->left);\n  display(node->right);\n}\n\nint idx = 0;\nTreeNode* deserialize(vector<string>& arr)\n{\n  if (idx >= arr.size() || arr[idx].compare(\"null\") == 0)\n  {\n    idx++;\n    return nullptr;\n  }\n\n  TreeNode* node = new TreeNode(stoi(arr[idx++]));\n  node->left = deserialize(arr);\n  node->right = deserialize(arr);\n\n  return node;\n}\n\nTreeNode* deserialize(string s)\n{\n  stringstream ss(s);\n  string word;\n  vector<string> arr;\n  while (ss >> word)\n  {\n    arr.push_back(word);\n  }\n  return deserialize(arr);\n}\n\nvoid solve()\n{\n  string s;\n  cin >> s;\n  TreeNode* root = deserialize(s);\n  int tar;\n  cin >> tar;\n\n  cout << pathSum(root, tar) << endl;\n}\n\nint main()\n{\n  solve();\n  return 0;\n}",
+    "java": "import java.util.*;\n\npublic class Main {\n  public static Scanner scn = new Scanner(System.in);\n\n  public static class TreeNode {\n    int val = 0;\n    TreeNode left = null;\n    TreeNode right = null;\n\n    TreeNode(int val) {\n      this.val = val;\n    }\n  }\n\n  public static int pathSum(TreeNode root, int K) {\n\n  }\n\n  // input_section=================================================\n\n  public static void display(TreeNode node) {\n    if (node == null)\n      return;\n\n    StringBuilder sb = new StringBuilder();\n    sb.append((node.left != null ? node.left.val : \".\"));\n    sb.append(\" -> \" + node.val + \" <- \");\n    sb.append((node.right != null ? node.right.val : \".\"));\n\n    System.out.println(sb.toString());\n\n    display(node.left);\n    display(node.right);\n  }\n\n  public static int idx = 0;\n\n  private static TreeNode deserialize(String[] arr) {\n    if (idx >= arr.length || arr[idx].equals(\"null\")) {\n      idx++;\n      return null;\n    }\n\n    TreeNode node = new TreeNode(Integer.parseInt(arr[idx++]));\n    node.left = deserialize(arr);\n    node.right = deserialize(arr);\n\n    return node;\n  }\n\n  public static TreeNode deserialize(String str) {\n    String[] arr = str.split(\" \");\n    return deserialize(arr);\n  }\n\n  public static void solve() {\n    String str = scn.nextLine();\n    TreeNode root = deserialize(str);\n    int tar = scn.nextInt();\n\n    int ans = pathSum(root, tar);\n    System.out.println(ans);\n  }\n\n  public static void main(String[] args) {\n    solve();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/path-sum-equal-to-given-value/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

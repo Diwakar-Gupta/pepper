@@ -1,0 +1,25 @@
+{
+  "name": "Temple Offerings",
+  "slug": "levelup-dynamic-programming-temple-offerings",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. Pepcoder is wishing to give offerings to all the temples along a mountain range. \n2. The temples are located in a row at different heights.\n3. You have to find the minimum number of offerings such that these conditions are fulfilled - \n    -&gt; If two adjacent temples are at different heights, then the temple which is situated at greater height should receive more offerings.\n    -&gt; If two adjacent temples are at the same height, then their offerings relative to each other does not matter.",
+  "inputFormat": "A number N, which represents number of temples.\nAn array of positive integers, where every element of array represents height of temple from ground level.",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 10^8\n1 &lt;= arr[i] &lt;= 10^3",
+  "sampleInput": "6\n1 3 2 5 2 1",
+  "sampleOutput": "10",
+  "questionVideo": "q40s16m5FD0",
+  "solutionVideo": "q40s16m5FD0",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\t\n\tpublic static int totaloffering(int[] height) {\n\t\t// write your code here\n\t\t\n\t\treturn 0;\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tint height[] = new int[n];\n\t\tfor (int i = 0; i < n; i++) {\n\t\t\theight[i] = scn.nextInt();\n\t\t}\n\t\tSystem.out.println(totaloffering(height));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/temple-offerings-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

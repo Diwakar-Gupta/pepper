@@ -1,0 +1,26 @@
+{
+  "name": "Nth Palindromic Binary",
+  "slug": "levelup-bit-manipulation-nth-palindromic-binary",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given an integer N.\n2. You have to find the N-th number whose binary representation is a palindrome.\n\nNote -&gt; First binary number whose representation is a palindrome is 1.",
+  "inputFormat": "A number N",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= n &lt;= 2*10^4",
+  "sampleInput": "17",
+  "sampleOutput": "85",
+  "questionVideo": "QYoWR8hDCyQ",
+  "solutionVideo": "QYoWR8hDCyQ",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static int NthPalindromicBinary(int n) {\n        //write your code here\n        \n        return 0;\n    }\n\n    public static void main(String[] args) {\n        Scanner scn = new Scanner(System.in);\n        int n = scn.nextInt();\n        System.out.println(NthPalindromicBinary(n));\n    }\n\n}"
+  },
+  "editorial": "<p>In this problem, we are given an integer number N and we need to find the corresponding <b>Nth Palindromic Binary Number</b>.</p><p>For example: N = 1 =&gt; 1</p><p>N = 2 =&gt; 3</p><p>N = 5 =&gt; 9</p><p>To understand the problem better we need to understand the nature of palindrome for a string of length L.</p><p>Say L = 5 =&gt; abcde to be a binary string of length 5 a must be 1 and to be palindrome e must be equal to a. So now we have our string as 1bcd1. Also, d must be equal to b. So string equals 1bcb1. So we have only two places which we can alter which can be done in 22 = 4 ways i.e. from 00 - 11. Hence palindromes for length 5 can be 1 0 0 0 1, 1 0 1 0 1, 1 1 0 1 1, and 1 1 1 1 1.</p><p>Similarly, for length L = 10 we can have palindromes of the form:</p><p>1 _ _ _ _ * * * * 1 so we can have 24 = 16 palindromes possible.</p><p>For length L = 7 we can have palindromes of the form:</p><p>1 _ _ _ * * 1 so we can have 23 = 8 palindromes possible.</p><p>Hence, <b>the number of palindromes in a string of length n is 2(n-1)/2</b>.</p><p>Now suppose we wish to find N = 13th palindromic binary so we need to know two things first the length of the string at that position and then the offset, which is the position of this binary in its length group.</p><p>So firstly to calculate the group, we will start with len = 1 and count = 1 and iterate till count &lt; N and for every iteration, we will update the len and add its number of palindromes by the formula 2(n-1)/2</p><p>Now to calculate offset, it can be calculated by subtracting N from the last group count (or position).</p><p>For N = 13,</p><p>Len = 1 count = 1</p><p>Len = 2 count = 2</p><p>Len = 3 count = 4</p><p>Len = 4 count = 6</p><p>Len = 5 count = 10</p><p>Len = 6 count = 14 &gt; 13 break</p><p>Count = count - 2(len-2)/2 = 10</p><p>Offset = 13 - 10 - 1 = 2</p><p>By doing this we get information that our string is of type</p><p>1 b c c b 1</p><p>And its position is 2.</p><p><b>Insight</b>: Observe the following palindromes-</p><p>----------------------</p><p>1 -&gt; 1</p><p>----------------------</p><p>2 -&gt; 1 1</p><p>----------------------</p><p>3 -&gt; 1 0 1</p><p>4 -&gt; 1 1 1</p><p>----------------------</p><p>5 - &gt; 1 0 0 1</p><p>6 -&gt; 1 1 1 1</p><p>----------------------</p><p>7 -&gt; 1 0 0 0 1</p><p>8 -&gt; 1 0 1 0 1</p><p>9 -&gt; 1 1 0 1 1</p><p>10 -&gt; 1 1 1 1 1</p><p>----------------------</p><p>11 -&gt; 1 0 0 0 0 1</p><p>12 -&gt; 1 0 1 1 0 1</p><p>13 -&gt; 1 1 0 0 1 1</p><p>14 -&gt; 1 1 1 1 1 1</p><p>----------------------</p><p>The palindromes above are divided into their groups which are decided by the length of the palindrome. Now if we observe we can notice for any group having size say k then its left half elements are of the type:</p><p><b>1 [ 0 - (k-1) ]</b></p><p>For example group 6 from 11 -14 are of the type:</p><p>1 <b>0 0</b></p><p>1 <b>0 1</b></p><p>1 <b>1 0</b></p><p>1 <b>1 1</b></p><p>Which is the same as [0 - 3] in binary.</p><p>Therefore <b>the value of offset received is equal to the binary representation to be displayed</b> in that palindrome.</p><p>So for N = 13 we have offset = 2 so we would have a string as 1 1 0 _ _ 1</p><p>Now to fill up the remaining space we just need to do XOR with the reverse of the answer so far.</p><p><b>Time Complexity: O(1)</b></p><p>The time complexity for the function is constant.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/nth-palindromic-binary-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,11 +1,27 @@
 {
   "name": "Write Priority Queue Using Heap",
   "slug": "hashmap-and-heap-write-priority-queue-using-heap",
-  "description": "1. You are required to complete the code of our Priority Queue class using the heap data structure. Please watch the question video carefully. The theoretical details of required functionality is explained in detail there. Implement the functions to achieve what is explained in the theoretical discussion in question video.\n2. Here is the list of functions that you are supposed to complete:\n    2.1. add -> Should accept new data.\n    2.2. remove -> Should remove and return smallest value, if available or print \n     \"Underflow\" otherwise and return -1.\n     2.3. peek -> Should return smallest value, if available or print \"Underflow\" \n     otherwise and return -1.\n     2.4. size -> Should return the number of elements available.\n3. Input and Output is managed for you.\n\n### Input Format\n```\nInput is managed for you\n```\n\n### Output Format\n```\nOutput is managed for you\n```\n\n### Constraints\n```\nNone\n```\n\n### Sample Input\n```\nadd 10\nadd 20\nadd 30\nadd 40\npeek\nadd 50\npeek\nremove\npeek\nremove\npeek\nremove\npeek\nremove\npeek\nquit\n```\n\n### Sample Output\n```\n10\n10\n10\n20\n20\n30\n30\n40\n40\n50\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/qroD9lvgGQ4?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/RIjxT24gUv4?rel=0&loop=1&playlist=RIjxT24gUv4",
-  "codes": {
-    "java": "import java.io.*;\nimport java.util.*;\npublic class Main {\n  public static class PriorityQueue {\n    ArrayList<Integer> data;\n    public PriorityQueue() {\n      data = new ArrayList<>();\n    }\n    public void add(int val) {\n      // write your code here\n    }\n    public int remove() {\n      // write your code here\n    }\n    public int peek() {\n      // write your code here\n    }\n    public int size() {\n      // write your code here\n    }\n  }\n  public static void main(String[] args) throws Exception {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n    PriorityQueue qu = new PriorityQueue();\n    String str = br.readLine();\n    while (str.equals(\"quit\") == false) {\n      if (str.startsWith(\"add\")) {"
-  }
+  "course": "dsa-fundamentals",
+  "module": "hashmap-and-heap",
+  "difficulty": "Easy",
+  "statement": "1. You are required to complete the code of our Priority Queue class using the heap data structure. Please watch the question video carefully. The theoretical details of required functionality is explained in detail there. Implement the functions to achieve what is explained in the theoretical discussion in question video.\n2. Here is the list of functions that you are supposed to complete:\n    2.1. add -&gt; Should accept new data.\n    2.2. remove -&gt; Should remove and return smallest value, if available or print \n     &quot;Underflow&quot; otherwise and return -1.\n     2.3. peek -&gt; Should return smallest value, if available or print &quot;Underflow&quot; \n     otherwise and return -1.\n     2.4. size -&gt; Should return the number of elements available.\n3. Input and Output is managed for you.",
+  "inputFormat": "Input is managed for you",
+  "outputFormat": "Output is managed for you",
+  "constraints": "None",
+  "sampleInput": "add 10\nadd 20\nadd 30\nadd 40\npeek\nadd 50\npeek\nremove\npeek\nremove\npeek\nremove\npeek\nremove\npeek\nquit",
+  "sampleOutput": "10\n10\n10\n20\n20\n30\n30\n40\n40\n50",
+  "questionVideo": "qroD9lvgGQ4",
+  "solutionVideo": "RIjxT24gUv4",
+  "templates": {
+    "cpp": "#include<bits/stdc++.h>\nusing namespace std;\n\nvector<int> data;\n\nint _size() {\n  //write your code here\n  return 0;\n}\n\n\n\n\nvoid add(int val) {\n  // write your code here\n}\n\n\n\n\nint _remove() {\n  //write your code here\n  return 0;\n}\n\n\n\nint peek() {\n  //write your code here\n\n  return 0;\n}\n\n\n\n\n\nint main() {\n\n\n  while (1) {\n    string str;\n    getline(cin, str);\n    if (str[0] == 'a') {\n      string num = str.substr(4, str.length());\n      int val = stoi(num);\n      add(val);\n    } else if (str[0] == 'r') {\n      int val = _remove();\n      if (val != -1) {\n        cout << val << endl;\n      }\n    } else if (str[0] == 'p') {\n      int val = peek();\n      if (val != -1) {\n        cout << val << endl;\n      }\n    } else break;\n  }\n\n\n\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static class PriorityQueue {\n    ArrayList<Integer> data;\n\n    public PriorityQueue() {\n      data = new ArrayList<>();\n    }\n\n    public void add(int val) {\n      // write your code here\n    }\n\n    public int remove() {\n      // write your code here\n    }\n\n    public int peek() {\n      // write your code here\n    }\n\n    public int size() {\n      // write your code here\n    }\n  }\n\n  public static void main(String[] args) throws Exception {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n    PriorityQueue qu = new PriorityQueue();\n\n    String str = br.readLine();\n    while (str.equals(\"quit\") == false) {\n      if (str.startsWith(\"add\")) {\n        int val = Integer.parseInt(str.split(\" \")[1]);\n        qu.add(val);\n      } else if (str.startsWith(\"remove\")) {\n        int val = qu.remove();\n        if (val != -1) {\n          System.out.println(val);\n        }\n      } else if (str.startsWith(\"peek\")) {\n        int val = qu.peek();\n        if (val != -1) {\n          System.out.println(val);\n        }\n      } else if (str.startsWith(\"size\")) {\n        System.out.println(qu.size());\n      }\n      str = br.readLine();\n    }\n  }\n}",
+    "python": "data = []\n\n\n\n       def size():\n#write your code here\n\n\n         def add(val):\n#write your code here\n\n\n\n         def _remove():\n#write your code here\n\n\n         def peek():\n#write your code here\n\n\n\n         while (1):\n           s = input()\n           if s[0] == 'a':\n                 num = s[4:]\n                       val = int(num)\n                             add(val)\n\n                       elif s[0] == 'r':\n                             val = _remove()\n                             if val != -1:\n                                   print(val, end = \"\\n\")\n\n                             elif s[0] == 'p':\n                                     val = peek()\n                                   if val != -1:\n                                           print(val, end = \"\\n\")\n\n                                   else:\n                                               break\n"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/hashmap-and-heap/priority-queue-using-heap-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

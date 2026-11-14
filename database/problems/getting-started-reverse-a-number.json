@@ -1,11 +1,27 @@
 {
   "name": "Reverse A Number",
   "slug": "getting-started-reverse-a-number",
-  "description": "1. You've to display the digits of a number in reverse.\n2. Take as input \"n\", the number for which digits have to be display in reverse.\n3. Print the digits of the number line-wise, but in reverse order.\n\n### Input Format\n```\n\"n\" where n is any integer.\n```\n\n### Output Format\n```\nd1\nd2\nd3\n... digits of the number in reverse\n```\n\n### Constraints\n```\n1 <= n < 10^9\n```\n\n### Sample Input\n```\n65784383\n```\n\n### Sample Output\n```\n3\n8\n3\n4\n8\n7\n5\n6\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/uYOIb1-47qw?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/D_yKIOnhMRc?rel=0&loop=1&playlist=D_yKIOnhMRc",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "getting-started",
+  "difficulty": "Easy",
+  "statement": "1. You've to display the digits of a number in reverse.\n2. Take as input &quot;n&quot;, the number for which digits have to be display in reverse.\n3. Print the digits of the number line-wise, but in reverse order.",
+  "inputFormat": "&quot;n&quot; where n is any integer.",
+  "outputFormat": "d1\nd2\nd3\n... digits of the number in reverse",
+  "constraints": "1 &lt;= n &lt; 10^9",
+  "sampleInput": "65784383",
+  "sampleOutput": "3\n8\n3\n4\n8\n7\n5\n6",
+  "questionVideo": "uYOIb1-47qw",
+  "solutionVideo": "D_yKIOnhMRc",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nint main(int argc, char **argv){\n    int n;\n    cin >> n;\n\n    //write your code here\n    \n}",
+    "java": "import java.util.*;\n   \n   public class Main{\n   \n   public static void main(String[] args) {\n     // write your code here  \n    }\n   }"
+  },
+  "editorial": "<p><i>&quot;You do not have to be a mathematician to have a feel for numbers.&quot;</i></p><p><b><u>Question:</u></b></p><ol><li>You've to display the digits of a number in reverse.</li><li>Take as input &quot;n&quot;, the number for which digits have to be displayed in reverse.</li><li>Print the digits of the number line-wise but in reverse order.</li></ol><p><b><u>Input format:</u></b></p><p>&quot;n&quot; where n is an integer.</p><p><b><u>Output format:</u></b></p><p>d1</p><p>d2</p><p>d3</p><p>... digits of the number in reverse</p><p><b><u>Constraints:</u></b></p><p>1 &lt;= n &lt; 10^9</p><p><b><u>Solution Approach:</u></b></p><p>Take 754 for instance &amp; Keep dividing it by 10 and extracting the digit for display by storing the remainder of the division until the dividend becomes 0 or while the dividend is greater than zero.</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"></p><p><b><u>An algorithmic approach for the same:</u></b></p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"></p><p><b><u>Programming implementation for the same:</u></b> </p><pre>import java.util.*;\n                                   \n                                   public class Main {\n                                   \n                                       public static void main(String[] args) {\n                                           Scanner scn = new Scanner(System.in);\n                                           int n = scn.nextInt();\n                                   \n                                           while(n != 0){\n                                               int digit = n % 10;\n                                               n = n / 10;\n                                   \n                                               System.out.println(digit);\n                                           }\n                                       }\n                                   }</pre>",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/getting-started/reverse-a-number-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

@@ -1,0 +1,26 @@
+{
+  "name": "Design Lru Chache",
+  "slug": "levelup-linked-list-design-lru-chache",
+  "course": "levelup",
+  "module": "linked-list",
+  "difficulty": "Medium",
+  "statement": "1. Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.\n\n2. Discards the least recently used items first. This algorithm requires keeping track of what \n   was used when, which is expensive if one wants to make sure the algorithm always discards \n   the least recently used item. General implementations of this technique require keeping \n   &quot;age bits&quot; for cache-lines and track the &quot;Least Recently Used&quot; cache-line based on age-bits. \n   In such an implementation, every time a cache-line is used, the age of all other cache-lines changes\n   \n3. mplement the LRUCache class: \n      3.1 LRUCache(int capacity) Initialize the LRU cache with positive size capacity.\n      3.2 int get(int key) Return the value of the key if the key exists, otherwise return -1.\n      3.3 void put(int key, int value) Update the value of the key if the key exists. Otherwise, \n          add the key-value pair to the cache. If the number of keys exceeds the capacity from this \n          operation, evict the least recently used key.\n\n4. Could you do get and put in O(1) time complexity? \n\nNote -&gt; Use the code snippet and follow the algorithm discussed in question video. The judge can't \n        force you but the intention is to teach a concept. Play in spirit of the question.",
+  "inputFormat": "input in managed for you.",
+  "outputFormat": "output in managed for you.",
+  "constraints": "1 &lt;= N &lt;= 10^6\n1 &lt;= capacity &lt;= 10^3",
+  "sampleInput": "5 2\n0 5 2\n0 6 8\n0 5 3\n0 4 7\n1 5",
+  "sampleOutput": "3",
+  "questionVideo": "JxtmaAFfVBo",
+  "solutionVideo": "JxtmaAFfVBo",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <unordered_map>\nusing namespace std;\n\nclass LRUCache\n{\npublic:\n  LRUCache(int capacity)\n  {\n  }\n\n  int get(int key)\n  {\n    return 0;\n  }\n\n  void put(int key, int value)\n  {\n  }\n};\n\nint main()\n{\n  int n, size; // no of operations\n  cin >> n >> size;\n  // 0 stand for put, 1 stand for get\n  LRUCache lru(size);\n\n  while (n-- > 0)\n  {\n    int op, val, key;\n    cin >> op;\n    if (op == 0)\n    {\n      cin >> val;\n      cin >> key;\n      lru.put(val, key);\n    }\n    else\n    {\n      cin >> val;\n      cout << lru.get(val) << endl;\n    }\n  }\n\n  return 0;\n}",
+    "java": "import java.util.*;\n\nclass Main {\n  public static class LRUCache {\n    public LRUCache(int capacity) {\n\n    }\n\n    public int get(int key) {\n      return 0;\n    }\n\n    // app name, app state\n    public void put(int key, int value) {\n    }\n\n  }\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n\n    int n = scn.nextInt(); // no of operations\n    // 0 stand for put, 1 stand for get\n    int size = scn.nextInt();\n    LRUCache lru = new LRUCache(size);\n\n    while (n-- > 0) {\n      int op = scn.nextInt();\n      if (op == 0)\n        lru.put(scn.nextInt(), scn.nextInt());\n      else\n        System.out.println(lru.get(scn.nextInt()));\n    }\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/design-lru-chache/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

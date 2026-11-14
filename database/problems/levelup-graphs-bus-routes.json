@@ -1,0 +1,25 @@
+{
+  "name": "Bus Routes",
+  "slug": "levelup-graphs-bus-routes",
+  "course": "levelup",
+  "module": "graphs",
+  "difficulty": "Hard",
+  "statement": "You are given an array routes representing bus routes where routes[i] is a bus route that the ith bus repeats forever.\n\nFor example, if routes[1] = [1, 5, 7], this means that the 1st bus travels in the sequence 1 -&gt; 5 -&gt; 7 -&gt; 1 -&gt; 5 -&gt; 7 -&gt; 1 -&gt; ... forever.\n\nYou will start at the bus stop source (You are not on any bus initially), and you want to go to the bus stop target. You can travel between bus stops by buses only.\nReturn the least number of buses you must take to travel from source to target. Return -1 if it is not possible.",
+  "inputFormat": "Input is already handled for you.",
+  "outputFormat": "return theleast number of buses you need to take.",
+  "constraints": "1 &lt;= routes.length &lt;= 500.\n1 &lt;= routes[i].length &lt;= 10^5.\nAll the values of routes[i] are unique.\n0 &lt;= routes[i][j] &lt; 10^6.\n0 &lt;= source, target &lt; 10^6.",
+  "sampleInput": "2\n3\n1 2 7\n3 6 7\n1 6",
+  "sampleOutput": "2",
+  "questionVideo": "WhuiqhMXhxM",
+  "solutionVideo": "WhuiqhMXhxM",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\nclass Main {\n  public static void main(String[] args) throws NumberFormatException, IOException {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n    int n = Integer.parseInt(br.readLine());\n    int m = Integer.parseInt(br.readLine());\n\n    int[][] arr = new int[n][m];\n\n    for (int i = 0; i < n; i++) {\n      String[] st = br.readLine().split(\" \");\n      for (int j = 0; j < m; j++) {\n        arr[i][j] = Integer.parseInt(st[j]);\n      }\n    }\n\n    String[] st1 = br.readLine().split(\" \");\n    int src = Integer.parseInt(st1[0]);\n    int dest = Integer.parseInt(st1[1]);\n    System.out.println(numBusesToDestination(arr, src, dest));\n\n  }\n\n  public static int numBusesToDestination(int[][] routes, int S, int T) {\n\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/graphs/bus-routes-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

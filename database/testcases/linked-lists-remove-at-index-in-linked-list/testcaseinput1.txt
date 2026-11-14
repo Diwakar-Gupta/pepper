@@ -1,0 +1,22 @@
+addFirst 10
+getFirst
+addAt 0 20
+getFirst
+getLast
+display
+size
+addAt 2 40
+getLast
+addAt 1 50
+addFirst 30
+removeAt 2
+getFirst
+removeAt 0
+removeAt 1
+addAt 2 60
+display
+size
+removeAt 0
+removeAt 1
+getFirst
+quit

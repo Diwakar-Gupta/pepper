@@ -1,0 +1,25 @@
+{
+  "name": "Count Of Distinct Palindromic Subsequences",
+  "slug": "levelup-dynamic-programming-count-of-distinct-palindromic-subsequences",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given a string.\n2. You have to print the count of distinct and non-empty palindromic subsequences in the given string.\n3. Two sequences s1 and s2 are distinct if here is some i, for which ith character in s1 and s2 are different.\n\nNote -&gt; String contains only lowercase letters.\n          -&gt; The answer will be in the integer range only.",
+  "inputFormat": "A String",
+  "outputFormat": "An Integer",
+  "constraints": "1 &lt;= length of string &lt;= 10000",
+  "sampleInput": "bccb",
+  "sampleOutput": "6",
+  "questionVideo": "fvYlinirmFg",
+  "solutionVideo": "fvYlinirmFg",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int solution(String str) {\n\t\t// write your code here\n\t\t\n\t\treturn 0;\n\t}\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tString str = scn.next();\n\t\tSystem.out.println(solution(str));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/count-of-distinct-palindromic-subsequences-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

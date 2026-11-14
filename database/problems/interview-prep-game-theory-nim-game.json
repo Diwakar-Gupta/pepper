@@ -1,0 +1,25 @@
+{
+  "name": "Nim Game",
+  "slug": "interview-prep-game-theory-nim-game",
+  "course": "interview-prep",
+  "module": "game-theory",
+  "difficulty": "Medium",
+  "statement": "Two players Alice and Bob are playing a game. They have n piles. ith pile conatins arr[i] no. of coins. In each move a player can choose a pile and remove as many coins as he wants (minimum 1 coin). The player who removes the last set of coins from table will win. Alice goes first.",
+  "inputFormat": "The first line contains integer n, no. of piles.\nsecond line contains n integer containing number of coins in each pile.",
+  "outputFormat": "Print the winner (ALICE or BOB).",
+  "constraints": "1&lt;= n &lt;= 10^5\n1&lt;= arr[i] &lt;= 10^8",
+  "sampleInput": "3\n1 2 3",
+  "sampleOutput": "BOB",
+  "questionVideo": "uI8bXZEFZNY",
+  "solutionVideo": "uI8bXZEFZNY",
+  "templates": {
+    "java": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\n\npublic class Main {\n\n  public static void main(String[] args) throws NumberFormatException, IOException {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/game-theory/nim-game-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

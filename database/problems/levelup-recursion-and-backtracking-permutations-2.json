@@ -1,0 +1,25 @@
+{
+  "name": "Permutations - 2",
+  "slug": "levelup-recursion-and-backtracking-permutations-2",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Medium",
+  "statement": "1. You are give a number of boxes (nboxes) and number of non-identical items (ritems).\n2. You are required to place the items in those boxes and print all such configurations possible.\n\nItems are numbered from 1 to ritems.\nNote 1 -&gt; Number of boxes is greater than number of items, hence some of the boxes may remain \n                   empty.\nNote 2 -&gt; Check out the question video and write the recursive code as it is intended without \n                   changing signature. The judge can't force you but intends you to teach a concept.",
+  "inputFormat": "Input is managed for you",
+  "outputFormat": "Check the sample ouput and question video. 0 means empty box.",
+  "constraints": "0 &lt; nboxes &lt;= 10\n0 &lt;= ritems &lt;= nboxes",
+  "sampleInput": "5\n3",
+  "sampleOutput": "12300\n12030\n12003\n13200\n13020\n13002\n10230\n10203\n10320\n10302\n10023\n10032\n21300\n21030\n21003\n23100\n23010\n23001\n20130\n20103\n20310\n20301\n20013\n20031\n31200\n31020\n31002\n32100\n32010\n32001\n30120\n30102\n30210\n30201\n30012\n30021\n01230\n01203\n01320\n01302\n01023\n01032\n02130\n02103\n02310\n02301\n02013\n02031\n03120\n03102\n03210\n03201\n03012\n03021\n00123\n00132\n00213\n00231\n00312\n00321",
+  "questionVideo": "NWFpebVkmTI",
+  "solutionVideo": "NWFpebVkmTI",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void permutations(int cb, int tb, int[] items, int ssf, int ts, String asf){\n    // write your code here\n  }\n\n  public static void main(String[] args) throws Exception {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n    int nboxes = Integer.parseInt(br.readLine());\n    int ritems = Integer.parseInt(br.readLine());\n    permutations(1, nboxes, new int[ritems], 0, ritems, \"\");\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/permutations-ii-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

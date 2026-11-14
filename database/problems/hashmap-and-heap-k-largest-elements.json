@@ -1,11 +1,27 @@
 {
   "name": "K Largest Elements",
   "slug": "hashmap-and-heap-k-largest-elements",
-  "description": "1. You are given a number n, representing the size of array a.\n2. You are given n numbers, representing elements of array a.\n3. You are given a number k.\n4. You are required to find and print the k largest elements of array in increasing order.\n\n### Input Format\n```\nInput is managed for you\n```\n\n### Output Format\n```\nPrint the k largest elements of array in increasing order in separate lines.\n```\n\n### Constraints\n```\n1 <= n <= 30\n0 <= n1, n2, .. n elements <= 100\n0 < k <= n\n```\n\n### Sample Input\n```\n13\n12\n62\n22\n15\n37\n99\n11\n37\n98\n67\n31\n84\n99\n4\n```\n\n### Sample Output\n```\n84\n98\n99\n99\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/MJBYYuWK0LM?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/taL2G6jDLog?rel=0&loop=1&playlist=taL2G6jDLog",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "hashmap-and-heap",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number n, representing the size of array a.\n2. You are given n numbers, representing elements of array a.\n3. You are given a number k.\n4. You are required to find and print the k largest elements of array in increasing order.",
+  "inputFormat": "Input is managed for you",
+  "outputFormat": "Print the k largest elements of array in increasing order in separate lines.",
+  "constraints": "1 &lt;= n &lt;= 30\n0 &lt;= n1, n2, .. n elements &lt;= 100\n0 &lt; k &lt;= n",
+  "sampleInput": "13\n12\n62\n22\n15\n37\n99\n11\n37\n98\n67\n31\n84\n99\n4",
+  "sampleOutput": "84\n98\n99\n99",
+  "questionVideo": "MJBYYuWK0LM",
+  "solutionVideo": "taL2G6jDLog",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\n#include <queue>\nusing namespace std;\n\nint findKthLargest(vector<int> const& arr, int k) {\n\n  //write your code here\n\n  return;\n\n}\n\nint main()\n{\n  vector<int>arr;\n  int n;\n  cin >> n;\n  for (int i = 0 ; i < n; i++) {\n    int data;\n    cin >> data;\n    arr.push_back(data);\n  }\n  int k;\n  cin >> k;\n  for (int i = k; i > 0; i--)\n    cout << findKthLargest(arr, i) << endl;\n\n  return 0;\n\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n   public static void main(String[] args) throws Exception {\n      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n      int n = Integer.parseInt(br.readLine());\n      int[] arr = new int[n];\n\n      for (int i = 0; i < n; i++) {\n         arr[i] = Integer.parseInt(br.readLine());\n      }\n\n      int k = Integer.parseInt(br.readLine());\n      // write your code here\n    }\n\n}",
+    "python": "import sys\n\ndef kLargest(arr, size, k):\n\n# write your code here\n\n\n  def main():\n  ints = []\n         n = int(input())\n             for i in range(0, n) :\n               ele = int(input())\n                     ints.append(ele)\n                     size = len(ints)\n\n                            k = int(input())\n                                kLargest(ints, size, k)\n\n                            if __name__ == '__main__':\n                                main()"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/hashmap-and-heap/k-largest-elements-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

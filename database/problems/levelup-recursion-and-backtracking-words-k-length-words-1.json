@@ -1,0 +1,25 @@
+{
+  "name": "Words - K Length Words - 1",
+  "slug": "levelup-recursion-and-backtracking-words-k-length-words-1",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Easy",
+  "statement": "1. You are given a word (may have one character repeat more than once).\n2. You are given an integer k.\n3. You are required to generate and print all k length words (of distinct chars) by using chars of the \n     word.\n\nNote -&gt; Use the code snippet and follow the algorithm discussed in question video. The judge can't \n               force you but the intention is to teach a concept. Play in spirit of the question.",
+  "inputFormat": "Input is managed for you",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "0 &lt; str.length() &lt; 15\n0 &lt; k &lt;= str.length()",
+  "sampleInput": "aabbbccdde\n3",
+  "sampleOutput": "abc\nabd\nabe\nacb\nadb\naeb\nacd\nace\nadc\naec\nade\naed\nbac\nbad\nbae\ncab\ndab\neab\ncad\ncae\ndac\neac\ndae\nead\nbca\nbda\nbea\ncba\ndba\neba\ncda\ncea\ndca\neca\ndea\neda\nbcd\nbce\nbdc\nbec\nbde\nbed\ncbd\ncbe\ndbc\nebc\ndbe\nebd\ncdb\nceb\ndcb\necb\ndeb\nedb\ncde\nced\ndce\necd\ndec\nedc",
+  "questionVideo": "ZmAoj7wpMvM",
+  "solutionVideo": "ZmAoj7wpMvM",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n \n\n  public static void main(String[] args) throws Exception {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n    String str = br.readLine();\n    int k = Integer.parseInt(br.readLine());\n\n    HashSet<Character> unique = new HashSet<>();\n    String ustr = \"\";\n    for (char ch : str.toCharArray()) {\n      if (unique.contains(ch) == false) {\n        unique.add(ch);\n        ustr += ch;\n      }\n    }\n\n    \n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/words-klength-words-1-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

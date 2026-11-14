@@ -1,0 +1,25 @@
+{
+  "name": "Marina And Vasya",
+  "slug": "interview-prep-constructive-algorithm-marina-and-vasya",
+  "course": "interview-prep",
+  "module": "constructive-algorithm",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://codeforces.com/problemset/problem/584/C\" target=\"_blank\" rel=\"noopener\">https://codeforces.com/problemset/problem/584/C</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "3 2\nabc\nxyc",
+  "sampleOutput": "ayd",
+  "questionVideo": "bEx6AwNvphY",
+  "solutionVideo": "bEx6AwNvphY",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args) throws IOException {\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/constructive-algorithm/marina-and-vasya/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

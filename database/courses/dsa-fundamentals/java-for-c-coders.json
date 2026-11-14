@@ -1,1 +1,36 @@
-[]
+{
+  "name": "JAVA for C++ Coders",
+  "slug": "java-for-c-coders",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 0,
+    "articles": 0,
+    "videos": 4
+  },
+  "items": [
+    {
+      "type": "video",
+      "slug": "java-for-c-coders-java-introduction-and-architecture",
+      "name": "Java - Introduction And Architecture",
+      "youtubeId": "tYpNedWhBZg"
+    },
+    {
+      "type": "video",
+      "slug": "java-for-c-coders-input-output-loops-and-conditionals-in-java",
+      "name": "Input, Output, Loops And Conditionals In Java",
+      "youtubeId": "acs-SZzNpGU"
+    },
+    {
+      "type": "video",
+      "slug": "java-for-c-coders-data-types-and-functions-java",
+      "name": "Data Types And Functions - Java",
+      "youtubeId": "nwtrJfrypCw"
+    },
+    {
+      "type": "video",
+      "slug": "java-for-c-coders-arrays-in-java",
+      "name": "Arrays In Java",
+      "youtubeId": "04ZxqFHU9OI"
+    }
+  ]
+}

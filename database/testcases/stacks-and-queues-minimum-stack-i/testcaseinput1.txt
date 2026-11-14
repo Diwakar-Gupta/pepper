@@ -1,0 +1,29 @@
+push 10
+push 20
+push 5
+push 8
+push 2
+push 4
+push 11
+top
+min
+pop
+top
+min
+pop
+top
+min
+pop
+top
+min
+pop
+top
+min
+pop
+top
+min
+pop
+top
+min
+pop
+quit

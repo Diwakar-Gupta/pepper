@@ -1,0 +1,6 @@
+addFirst 4
+addFirst 4
+addFirst 5
+addFirst 7
+addFirst 1
+stop

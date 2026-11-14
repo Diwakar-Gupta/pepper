@@ -1,0 +1,26 @@
+{
+  "name": "Solve 7n By 8",
+  "slug": "levelup-bit-manipulation-solve-7n-by-8",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n.\n2. You have to calculate the value of 7n/8 without using division and multiplication.",
+  "inputFormat": "A number n",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "1 &lt;= n &lt;= 10^9",
+  "sampleInput": "15",
+  "sampleOutput": "13",
+  "questionVideo": "k9Yxy-NhSTA",
+  "solutionVideo": "k9Yxy-NhSTA",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args){\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    //write your code here\n    \n  }\n\n}"
+  },
+  "editorial": "<p>The problem here deals with solving a particular expression of the type 7*N/8 using bit manipulation only i.e. we are not allowed to use mathematical tools such as multiplication or division.</p><p>Mathematical analysis:</p><p>=&gt; 7*N/8 = (8*N - N)/8</p><p>=&gt; (8*N - N)/8 = (((N &lt;&lt; 3) - N) &gt;&gt; 3)</p><p>Here (N &lt;&lt; 3) is a left shift to 3 positions and as we know that a left shift of bits is same as multiplication of a decimal integer by 2 so shifting by 3 positions is same as multiplying a number by 8. Now we simply subtract N from this result which will result in 7*N in our numerator.</p><p>Now as we know that right shift by a position is equivalent to division by 2 in decimal number system so as we need to divide the numerator by 8 so we will be shifting the numerator to right by 3 positions.</p><p>Here we just need to compute the above gained expression to get our result.</p><p><b>Time Complexity: O(1)</b></p><p>The time complexity for the function is constant.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/solve-7nby8-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

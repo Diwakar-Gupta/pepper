@@ -1,0 +1,25 @@
+{
+  "name": "Minimum Palindromic Cut",
+  "slug": "levelup-dynamic-programming-minimum-palindromic-cut",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given a string.\n2. You have to find the minimum number of cuts required to convert the given string into palindromic partitions.\n3. Partitioning of the string is a palindromic partitioning if every substring of the partition is a palindrome.",
+  "inputFormat": "A string",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= length of string &lt;= 10^4",
+  "sampleInput": "abccbc",
+  "sampleOutput": "2",
+  "questionVideo": "qmTtAbOTqcg",
+  "solutionVideo": "qmTtAbOTqcg",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int minPalindromicCut(String s) {\n\t\t//write your code here\n\n\t\treturn 0;\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tString str = scn.nextLine();\n\t\tSystem.out.println(minPalindromicCut(str));\n\t}\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/min-palindromic-cut-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

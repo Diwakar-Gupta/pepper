@@ -1,0 +1,25 @@
+{
+  "name": "Print All Results In 0-1 Knapsack",
+  "slug": "levelup-dynamic-programming-print-all-results-in-0-1-knapsack",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number n, representing the count of items.\n2. You are given n numbers, representing the values of n items.\n3. You are given n numbers, representing the weights of n items.\n3. You are given a number &quot;cap&quot;, which is the capacity of a bag you've.\n4. You are required to calculate and print the maximum value that can be created in the bag without overflowing it's capacity.\n5. Also, you have to print the indices of items that should be selected to make maximum profit.\n6. You have to print all such configurations.\n\nNote -&gt; Each item can be taken 0 or 1 number of times. You are not allowed to put the same item again and again.",
+  "inputFormat": "A number n\nA number m\ne11\ne12..\ne21\ne22..\n.. n * m number of elements",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= n &lt;= 10^2\n1 &lt;= m &lt;= 10^2\n0 &lt;= e1, e2, .. n * m elements &lt;= 1000",
+  "sampleInput": "5\n15 14 10 45 30\n2 5 1 3 4\n7",
+  "sampleOutput": "75\n3 4",
+  "questionVideo": "YH6M9WFp02g",
+  "solutionVideo": "YH6M9WFp02g",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n        int n = Integer.parseInt(br.readLine());\n\n        int[] values = new int[n];\n        String str1 = br.readLine();\n        for (int i = 0; i < n; i++) {\n            values[i] = Integer.parseInt(str1.split(\" \")[i]);\n        }\n\n        int[] wts = new int[n];\n        String str2 = br.readLine();\n        for (int i = 0; i < n; i++) {\n            wts[i] = Integer.parseInt(str2.split(\" \")[i]);\n        }\n\n        int cap = Integer.parseInt(br.readLine());\n\n        //write your code here\n        \n    }\n}\n\n\n                        \n\n\n                        \n\n\n                        "
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/zero-one-knapsack-re-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Extended Euclidean Algorithm",
+  "slug": "interview-prep-number-theory-extended-euclidean-algorithm",
+  "course": "interview-prep",
+  "module": "number-theory",
+  "difficulty": "Medium",
+  "statement": "You have been given two Integers a and b. you need to find an integral solution of x and y such that a*x + b*y= gcd(a,b).\nIt can be proven that solution always exist.",
+  "inputFormat": "The first line contains 2 integer a and b",
+  "outputFormat": "output integral value of x and y in a single line.",
+  "constraints": "1 &lt;= a, b &lt;= 10^6",
+  "sampleInput": "34\n24",
+  "sampleOutput": "5 -7",
+  "questionVideo": "H4AuhS7pN48",
+  "solutionVideo": "H4AuhS7pN48",
+  "templates": {
+    "java": "import java.util.Scanner;\n\npublic class Main {\n\n\tpublic static void main(String[] args) {\n\t\n\t}\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/number-theory/extended-euclidean-algorithm-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Convex Hull",
+  "slug": "interview-prep-geometry-convex-hull",
+  "course": "interview-prep",
+  "module": "geometry",
+  "difficulty": "Hard",
+  "statement": "Given a set of n points in the two-dimensional plane, your task is to determine the convex hull of the points.",
+  "inputFormat": "First Line contains integer n, number of vertices of polygon.\nNext line contains x and y of that vertex",
+  "outputFormat": "Print the number of points in convex hull.",
+  "constraints": "|n|&lt; 10^5",
+  "sampleInput": "6\n2 1\n2 5\n3 3\n4 3\n4 4\n6 3",
+  "sampleOutput": "4",
+  "questionVideo": "GhCQMRiPBqc",
+  "solutionVideo": "GhCQMRiPBqc",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    // Write Code here\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/geometry/geometry-convex-hull/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

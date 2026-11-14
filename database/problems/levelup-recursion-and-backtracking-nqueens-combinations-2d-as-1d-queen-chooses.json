@@ -1,0 +1,25 @@
+{
+  "name": "Nqueens Combinations - 2d As 1d - Queen Chooses",
+  "slug": "levelup-recursion-and-backtracking-nqueens-combinations-2d-as-1d-queen-chooses",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number n, representing the size of a n * n chess board.\n2. You are required to calculate and print the combinations in which n queens can be placed on the \n     n * n chess-board. \n3. No queen shall be able to kill another.\n\nNote -&gt; Use the code snippet and follow the algorithm discussed in question video. The judge can't \n               force you but the intention is to teach a concept. Play in spirit of the question.",
+  "inputFormat": "A number n",
+  "outputFormat": "Check the sample output and question video",
+  "constraints": "1 &lt;= n &lt;= 5",
+  "sampleInput": "4",
+  "sampleOutput": "-\tq\t-\t-\t\n-\t-\t-\tq\t\nq\t-\t-\t-\t\n-\t-\tq\t-\t\n\n-\t-\tq\t-\t\nq\t-\t-\t-\t\n-\t-\t-\tq\t\n-\tq\t-\t-",
+  "questionVideo": "U0dg2X14gYc",
+  "solutionVideo": "U0dg2X14gYc",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static boolean IsQueenSafe(boolean[][] chess, int row, int col) {\n        // write your code here\n    }\n\n    public static void nqueens(int qpsf, int tq, boolean[][] chess, int lcno) {\n        if (qpsf == tq) {\n            for (int row = 0; row < chess.length; row++) {\n                for (int col = 0; col < chess.length; col++) {\n                    System.out.print(chess[row][col] ? \"q\\t\" : \"-\\t\");\n                }\n                System.out.println();\n            }\n            System.out.println();\n            return;\n        }\n\n        for (int i = lcno + 1; i < chess.length * chess.length; i++) {\n            int row = i / chess.length;\n            int col = i % chess.length;\n\n            if (chess[row][col] == false && IsQueenSafe(chess, row, col)) {\n                chess[row][col] = true;\n                nqueens(qpsf + 1, tq, chess, row * chess.length + col);\n                chess[row][col] = false;\n            }\n        }\n    }\n\n    public static void main(String[] args) throws Exception {\n        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n        int n = Integer.parseInt(br.readLine());\n        boolean[][] chess = new boolean[n][n];\n\n        nqueens(0, n, chess, -1);\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/nqueens-combinations-2das1d-queen-chooses-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

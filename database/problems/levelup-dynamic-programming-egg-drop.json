@@ -1,0 +1,25 @@
+{
+  "name": "Egg Drop",
+  "slug": "levelup-dynamic-programming-egg-drop",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Hard",
+  "statement": "1. You are given two integers N and K. N represents the number of eggs and K represents the number of floors in a building.\n2. You have to find the minimum number of attempts you need in order to find the critical floor in the worst case while using the best strategy.\n3. The critical floor is defined as the lowest floor from which you drop an egg and it doesn't break. \n4. There are certain which you have to follow -\n   a. All eggs are identical.\n   b. An egg that survives a fall can be used again.\n   c. A broken egg can't be used again.\n   d. If the egg doesn't break at a certain floor, it will not break at any floor below.\n   e. If the egg breaks at a certain floor, it will break at any floor above.",
+  "inputFormat": "Two integers N and K",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 100\n1 &lt;= k &lt;= 50",
+  "sampleInput": "3\n10",
+  "sampleOutput": "4",
+  "questionVideo": "UvksR0hR9nA",
+  "solutionVideo": "UvksR0hR9nA",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int eggDrop(int n, int k){\n\t\t//write your code here\n\n\t\treturn 0;\n\t} \n\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\t//n -> number of eggs and k -> number of floors\n\t\tint n = scn.nextInt();\n\t\tint k = scn.nextInt();\n\t\tSystem.out.println(eggDrop(n,k));\n\t}\n\t\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/egg-drop-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

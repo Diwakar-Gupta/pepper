@@ -1,0 +1,54 @@
+{
+  "name": "Binary Lifting",
+  "slug": "binary-lifting",
+  "course": "interview-prep",
+  "counts": {
+    "problems": 6,
+    "articles": 0,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "interview-prep-binary-lifting-k-th-ancestor",
+      "name": "K'th Ancestor",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-binary-lifting-lca-lowest-common-ancestor",
+      "name": "Lca - Lowest Common Ancestor",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-binary-lifting-cats-and-tree",
+      "name": "Cats And Tree",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-binary-lifting-learning-dishes",
+      "name": "Learning Dishes",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-binary-lifting-longest-good-segment",
+      "name": "Longest Good Segment",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-binary-lifting-tree-and-extra-edge",
+      "name": "Tree And Extra Edge",
+      "difficulty": "Hard",
+      "tests": 1
+    }
+  ]
+}

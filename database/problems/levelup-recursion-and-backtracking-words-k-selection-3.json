@@ -1,0 +1,25 @@
+{
+  "name": "Words - K Selection - 3",
+  "slug": "levelup-recursion-and-backtracking-words-k-selection-3",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Easy",
+  "statement": "1. You are given a word (may have one character repeat more than once).\n2. You are given an integer k.\n2. You are required to generate and print all ways you can select k characters out of the word.\n\nNote -&gt; Use the code snippet and follow the algorithm discussed in question video. The judge can't force you but the intention is to teach a concept. Play in spirit of the question.",
+  "inputFormat": "Input is managed for you",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "0 &lt; str.length() &lt; 15\n0 &lt; k &lt;= str.length()",
+  "sampleInput": "aabbbccdde\n3",
+  "sampleOutput": "aab\naac\naad\naae\nabb\nabc\nabd\nabe\nacc\nacd\nace\nadd\nade\nbbb\nbbc\nbbd\nbbe\nbcc\nbcd\nbce\nbdd\nbde\nccd\ncce\ncdd\ncde\ndde",
+  "questionVideo": null,
+  "solutionVideo": null,
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  \n  public static void main(String[] args) throws Exception {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n    String str = br.readLine();\n    int k = Integer.parseInt(br.readLine());\n\n    HashMap<Character, Integer> unique = new HashMap<>();\n    String ustr = \"\";\n    for (char ch : str.toCharArray()) {\n      if (unique.containsKey(ch) == false) {\n        unique.put(ch, 1);\n        ustr += ch;\n      } else {\n        unique.put(ch, unique.get(ch) + 1);\n      }\n    }\n\n   \n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/words-kselection-3-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

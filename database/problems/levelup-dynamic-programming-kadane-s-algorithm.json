@@ -1,0 +1,25 @@
+{
+  "name": "Kadane's Algorithm",
+  "slug": "levelup-dynamic-programming-kadane-s-algorithm",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array(arr) of integers.\n2. You have to find maximum subarray sum in the given array.\n3. The subarray must have at least one element.",
+  "inputFormat": "A number N\na1\na2.. N integers",
+  "outputFormat": "A number representing maximum subarray sum in the given array.",
+  "constraints": "1 &lt;= N &lt;= 10000\n-2^31 &lt;= arr[i] &lt;= 2^31 - 1",
+  "sampleInput": "3\n1\n2\n3",
+  "sampleOutput": "6",
+  "questionVideo": "VMtyGnNcdPw",
+  "solutionVideo": "VMtyGnNcdPw",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static int solution(int[] arr) {\n    // write your code here\n\n    return 0;\n  }\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    for (int i = 0; i < arr.length; i++) {\n      arr[i] = scn.nextInt();\n    }\n    System.out.println(solution(arr));\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/kadanes-algorithm-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

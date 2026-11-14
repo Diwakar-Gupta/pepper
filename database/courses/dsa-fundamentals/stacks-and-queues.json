@@ -1,122 +1,367 @@
-[
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-duplicate-brackets",
-    "name": "Duplicate Brackets"
+{
+  "name": "Stacks and Queues",
+  "slug": "stacks-and-queues",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 24,
+    "articles": 29,
+    "videos": 7
   },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-balanced-brackets",
-    "name": "Balanced Brackets"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-next-greater-element-to-the-right",
-    "name": "Next Greater Element To The Right"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-stock-span",
-    "name": "Stock Span"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-largest-area-histogram",
-    "name": "Largest Area Histogram"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-sliding-window-maximum",
-    "name": "Sliding Window Maximum"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-infix-evaluation",
-    "name": "Infix Evaluation"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-infix-conversions",
-    "name": "Infix Conversions"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-postfix-evaluation-and-conversions",
-    "name": "Postfix Evaluation And Conversions"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-prefix-evaluation-and-conversions",
-    "name": "Prefix Evaluation And Conversions"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-celebrity-problem",
-    "name": "Celebrity Problem"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-merge-overlapping-interval",
-    "name": "Merge Overlapping Interval"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-smallest-number-following-pattern",
-    "name": "Smallest Number Following Pattern"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-normal-stack",
-    "name": "Normal Stack"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-dynamic-stack",
-    "name": "Dynamic Stack"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-minimum-stack-i",
-    "name": "Minimum Stack - I"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-minimum-stack-constant-space",
-    "name": "Minimum Stack - Constant Space"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-normal-queue",
-    "name": "Normal Queue"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-dynamic-queue",
-    "name": "Dynamic Queue"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-queue-to-stack-adapter-push-efficient",
-    "name": "Queue To Stack Adapter - Push Efficient"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-queue-to-stack-adapter-pop-efficient",
-    "name": "Queue To Stack Adapter - Pop Efficient"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-stack-to-queue-adapter-add-efficient",
-    "name": "Stack To Queue Adapter - Add Efficient"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-stack-to-queue-adapter-remove-efficient",
-    "name": "Stack To Queue Adapter - Remove Efficient"
-  },
-  {
-    "type": "Code",
-    "slug": "stacks-and-queues-two-stacks-in-an-array",
-    "name": "Two Stacks In An Array"
-  }
-]
+  "items": [
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-introduction-to-stack",
+      "name": "Introduction to stack"
+    },
+    {
+      "type": "video",
+      "slug": "stacks-and-queues-introduction-to-stack",
+      "name": "Introduction To Stack",
+      "youtubeId": "Fu03UXZgI9s"
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-duplicate-brackets",
+      "name": "Duplicate Brackets"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-duplicate-brackets",
+      "name": "Duplicate Brackets",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-balanced-brackets",
+      "name": "Balanced Brackets"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-balanced-brackets",
+      "name": "Balanced Brackets",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-next-greater-element-to-the-right",
+      "name": "Next Greater element to the Right"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-next-greater-element-to-the-right",
+      "name": "Next Greater Element To The Right",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-stock-span",
+      "name": "Stock Span"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-stock-span",
+      "name": "Stock Span",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-largest-area-histogram",
+      "name": "Largest Area Histogram"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-largest-area-histogram",
+      "name": "Largest Area Histogram",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-sliding-window-maximum",
+      "name": "Sliding Window Maximum"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-sliding-window-maximum",
+      "name": "Sliding Window Maximum",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-infix-evaluation",
+      "name": "Infix Evaluation"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-infix-evaluation",
+      "name": "Infix Evaluation",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-infix-conversion",
+      "name": "Infix Conversion"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-infix-conversions",
+      "name": "Infix Conversions",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-postfix-evaluation-conversions",
+      "name": "Postfix Evaluation & Conversions"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-postfix-evaluation-and-conversions",
+      "name": "Postfix Evaluation And Conversions",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-prefix-evaluation-and-conversions",
+      "name": "Prefix Evaluation and Conversions"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-prefix-evaluation-and-conversions",
+      "name": "Prefix Evaluation And Conversions",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-celebrity-problem",
+      "name": "Celebrity Problem"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-celebrity-problem",
+      "name": "Celebrity Problem",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-merge-overlapping-interval",
+      "name": "Merge Overlapping Interval"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-merge-overlapping-interval",
+      "name": "Merge Overlapping Interval",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-smallest-number-following-pattern",
+      "name": "Smallest Number Following Pattern"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-smallest-number-following-pattern",
+      "name": "Smallest Number Following Pattern",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "video",
+      "slug": "stacks-and-queues-oops-classes-and-objects",
+      "name": "Oops - Classes And Objects",
+      "youtubeId": "TTE-CIBFL9w"
+    },
+    {
+      "type": "video",
+      "slug": "stacks-and-queues-oops-swap-game-1",
+      "name": "Oops - Swap Game 1",
+      "youtubeId": "6qSBKZeG2NI"
+    },
+    {
+      "type": "video",
+      "slug": "stacks-and-queues-oops-swap-game-2",
+      "name": "Oops - Swap Game 2",
+      "youtubeId": "-k8VdIqzepA"
+    },
+    {
+      "type": "video",
+      "slug": "stacks-and-queues-oops-swap-game-3",
+      "name": "Oops - Swap Game 3",
+      "youtubeId": "GLkE2wSNiYM"
+    },
+    {
+      "type": "video",
+      "slug": "stacks-and-queues-oops-constructors-and-this",
+      "name": "Oops - Constructors And This",
+      "youtubeId": "YpwUNCNAxo8"
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-normal-stack",
+      "name": "Normal Stack"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-normal-stack",
+      "name": "Normal Stack",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-dynamic-stack",
+      "name": "Dynamic Stack"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-dynamic-stack",
+      "name": "Dynamic Stack",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-minimum-stack-1",
+      "name": "Minimum Stack -1"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-minimum-stack-i",
+      "name": "Minimum Stack - I",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-minimum-stack-constant-space",
+      "name": "Minimum Stack - Constant Space"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-minimum-stack-constant-space",
+      "name": "Minimum Stack - Constant Space",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "video",
+      "slug": "stacks-and-queues-queues-introduction-and-usage",
+      "name": "Queues - Introduction And Usage",
+      "youtubeId": "8IECyHndytk"
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-queues-introduction-and-usage",
+      "name": "Queues - Introduction And Usage"
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-normal-queue",
+      "name": "Normal Queue"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-normal-queue",
+      "name": "Normal Queue",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-dynamic-queue",
+      "name": "Dynamic Queue"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-dynamic-queue",
+      "name": "Dynamic Queue",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-queue-to-stack-adapter-push-efficient",
+      "name": "Queue to stack Adapter-Push efficient"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-queue-to-stack-adapter-push-efficient",
+      "name": "Queue To Stack Adapter - Push Efficient",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-queue-to-stack-adapter-pop-efficient",
+      "name": "Queue to Stack Adapter - Pop Efficient"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-queue-to-stack-adapter-pop-efficient",
+      "name": "Queue To Stack Adapter - Pop Efficient",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-stack-to-queue-adapter-add-efficient",
+      "name": "Stack to Queue Adapter- Add efficient"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-stack-to-queue-adapter-add-efficient",
+      "name": "Stack To Queue Adapter - Add Efficient",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-stack-to-queue-adapter-remove-efficient",
+      "name": "Stack To Queue Adapter- Remove Efficient"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-stack-to-queue-adapter-remove-efficient",
+      "name": "Stack To Queue Adapter - Remove Efficient",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-two-stacks-in-an-array",
+      "name": "Two Stacks In An Array"
+    },
+    {
+      "type": "problem",
+      "slug": "stacks-and-queues-two-stacks-in-an-array",
+      "name": "Two Stacks In An Array",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-oops-swap-game-3",
+      "name": "OOPS Swap Game-3"
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-oops-constructors-and-this",
+      "name": "Oops - Constructors And This"
+    },
+    {
+      "type": "article",
+      "slug": "stacks-and-queues-oops-classes-and-objects",
+      "name": "Oops - Classes And Objects"
+    }
+  ]
+}

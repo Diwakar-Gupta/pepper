@@ -1,0 +1,25 @@
+{
+  "name": "Point Update In Square Root Decomposition",
+  "slug": "interview-prep-range-queries-point-update-in-square-root-decomposition",
+  "course": "interview-prep",
+  "module": "range-queries",
+  "difficulty": "Hard",
+  "statement": "You are given a list of N numbers and Q queries. There are two types of queries:\n\n1. f l r : In a line, the first character would be f, and 2 index l and r, you have to find the sum of numbers between l and r.\n2. u i d : In a line, the first character would be u, and we have to change the value at index i in the original array by d.",
+  "inputFormat": "The first line contains N. The next line holds N numbers. Following the list is a number Q. The next Q lines each contain one of the 2 queries.",
+  "outputFormat": "Output the sum from l to r for type 1 query and update the value at index i for type 2 query.",
+  "constraints": "1 &lt;= N &lt;= 10^6\n1 &lt;= Q &lt;= 10^5\n1 &lt;= arr[i] &lt;= 10^9",
+  "sampleInput": "5\n1 5 3 9 -2\n3\nf 0 4\nu 2 3\nf 0 4",
+  "sampleOutput": "16\n19",
+  "questionVideo": "yP48ylKOsA8",
+  "solutionVideo": "yP48ylKOsA8",
+  "templates": {
+    "java": "\nimport java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.util.Arrays;\n\npublic class Main {\n\n\tpublic static void main(String[] args) throws NumberFormatException, IOException {\n\t\t\n\t}\n\n\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/range-queries/point-update-in-square-root-decomposition-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

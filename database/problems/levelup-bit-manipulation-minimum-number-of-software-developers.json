@@ -1,0 +1,26 @@
+{
+  "name": "Minimum Number Of Software Developers",
+  "slug": "levelup-bit-manipulation-minimum-number-of-software-developers",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given N strings which represents N different skills related to I.T field.\n2. You are working on a project and you want to hire a team of software developers for that project.\n3. There are N applicants. Every applicant has mentioned his/her skills in resume.\n4. You have to select the minimum number of developers such that for every required skill, there is \n     at least one person in the team who has that skill.\n5. It is guaranteed that you can form a team which covers all the required skills.\n\nNote -&gt; Check out the question video for details.",
+  "inputFormat": "A number N representing number of required skills\nN space separated strings \nA number M representing number of applicants\nFor every applicant : A number T representing number of skills of an applicant and then T number of space separated strings.",
+  "outputFormat": "An arraylist containing the indices of selected applicants.\nCheck the sample ouput and question video.",
+  "constraints": "1 &lt;= N &lt;= 16\n1 &lt;= length of string &lt;= 16\n1 &lt;= M &lt;= 60",
+  "sampleInput": "3\njava nodejs reactjs\n3\n1\njava\n1\nnodejs\n2\nnodejs\nreactjs",
+  "sampleOutput": "[0, 2]",
+  "questionVideo": "5gXNMGiqQbU",
+  "solutionVideo": "5gXNMGiqQbU",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tstatic ArrayList<Integer> sol = new ArrayList<>();\n\n\tpublic static void solution(int[] people, int nskills, int cp, ArrayList<Integer> onesol, int skills) {\n\t\t// write your code here\n\t}\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tHashMap<String, Integer> smap = new HashMap<>();\n\t\tfor (int i = 0; i < n; i++) {\n\t\t\tsmap.put(scn.next(), i);\n\t\t}\n\t\t\n\t\tint np = scn.nextInt();\n\t\tint[] people = new int[np];\n\t\tfor (int i = 0; i < np; i++) {\n\t\t\tint personSkills = scn.nextInt();\n\t\t\tfor (int j = 0; j < personSkills; j++) {\n\t\t\t\tString skill = scn.next();\n\t\t\t\tint snum = smap.get(skill);\n\t\t\t\tpeople[i] = people[i] | (1 << snum);\n\t\t\t}\n\t\t}\n\n\t\tsolution(people, n, 0, new ArrayList<>(), 0);\n\t\tSystem.out.println(sol);\n\t\t\n\t}\n}"
+  },
+  "editorial": "<p>In this problem, we are provided with N skills and we are N employees with their respective skills, we need to tell how to select the employees so that they contain all N skills and their count is minimum.</p><p>For this we need to generate all the combinations of employees which is the same as getting all the subsequences of N employees, hence <b>total subsequences will be 2n</b>. Now for every subsequence, we need to check that does this subsequence has relevant skills or not.</p><p>We can optimize the search operation which checks that the given subsequence satisfies N skills with the help of bit manipulation. This can be achieved by assigning all N skills as specific bit positions, so our question now turns out to find the minimum number of employees for which all N bits are set.</p><p>This can be achieved by finding all subsequences and then checking for all N set bits by comparing res == (1 &lt;&lt; N) - 1.</p><p><b>Time Complexity: O(2n)</b></p><p>The time complexity for the function is exponential as generating subsequences is an exponential task.</p><p><b>Space Complexity: O(n)</b></p><p>The space complexity for the function is linear as we maintaining ArrayList for storing the result.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/minimum-number-of-software-developers-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

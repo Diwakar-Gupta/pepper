@@ -1,0 +1,25 @@
+{
+  "name": "Lca - Lowest Common Ancestor",
+  "slug": "interview-prep-binary-lifting-lca-lowest-common-ancestor",
+  "course": "interview-prep",
+  "module": "binary-lifting",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://www.spoj.com/problems/LCA/\" target=\"_blank\" rel=\"noopener\">https://www.spoj.com/problems/LCA/</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "1\n7\n3 2 3 4\n0\n3 5 6 7\n0\n0\n0\n0\n2\n5 7\n2 7",
+  "sampleOutput": "Case 1:\n3\n1",
+  "questionVideo": "FzOSaw55Tp8",
+  "solutionVideo": "FzOSaw55Tp8",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\nclass Main {\n  static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));\n  static PrintWriter out = new PrintWriter(System.out);\n  /*\n  use in for reading input\n  use out for printing output\n  */\n\n  public static void main(String[] args) throws IOException {\n\n    // write your code here.\n\n\n\n    out.close();\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/binary-lifting/lca-lowest-common-ancestor/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

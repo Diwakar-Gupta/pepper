@@ -1,0 +1,25 @@
+{
+  "name": "Rescuer",
+  "slug": "interview-prep-ternary-search-rescuer",
+  "course": "interview-prep",
+  "module": "ternary-search",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://www.hackerearth.com/problem/algorithm/rescuer-2d2495cb/\" target=\"_blank\" rel=\"noopener\"><i> Link -&gt; Rescuer</i></a>",
+  "inputFormat": "check the link",
+  "outputFormat": "check the link",
+  "constraints": "check the link",
+  "sampleInput": "1\n3 -20 3 25 40 5",
+  "sampleOutput": "5.50000",
+  "questionVideo": "ZWdzMFZe_-E",
+  "solutionVideo": "ZWdzMFZe_-E",
+  "templates": {
+    "java": "import java.util.Scanner;\n\npublic class Main {\n  public static void main(String[] args) {\n\n    //Code Here\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/ternary-search/rescuer-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

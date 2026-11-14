@@ -1,0 +1,4 @@
+addFirst 10
+addFirst 20
+addFirst 30
+stop

@@ -1,0 +1,25 @@
+{
+  "name": "Print All Paths With Target Sum Subset",
+  "slug": "levelup-dynamic-programming-print-all-paths-with-target-sum-subset",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number n, representing the count of elements.\n2. You are given n numbers.\n3. You are given a number &quot;tar&quot;.\n4. You are required to calculate and print true or false, if there is a subset the elements of which add up to &quot;tar&quot; or not.\n5. Also, you have to print the indices of elements that should be selected to achieve the given target.\n6. You have to print all such configurations.",
+  "inputFormat": "A number n\nn1\nn2\n.. n number of elements\nA number tar",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= n &lt;= 30\n0 &lt;= n1, n2, .. n elements &lt;= 20\n0 &lt;= tar &lt;= 50",
+  "sampleInput": "5\n4\n2\n7\n1\n3\n10",
+  "sampleOutput": "true\n2 4 \n1 2 3 \n0 1 3 4",
+  "questionVideo": "qtqMTgmDpQg",
+  "solutionVideo": "qtqMTgmDpQg",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static class Pair{\n        int i;\n        int j;\n        String psf;\n\n        public Pair(int i, int j, String psf){\n            this.i = i;\n            this.j = j;\n            this.psf = psf;\n        }\n    }\n    public static void main(String[] args) throws Exception {\n        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n        int n = Integer.parseInt(br.readLine());\n        int[] arr = new int[n];\n\n        for (int i = 0; i < n; i++) {\n            arr[i] = Integer.parseInt(br.readLine());\n        }\n\n        int tar = Integer.parseInt(br.readLine());\n\n        //write your code here\n\n    }\n}\n\n\n                        \n\n\n                        "
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/print-all-paths-with-target-sum-subset-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

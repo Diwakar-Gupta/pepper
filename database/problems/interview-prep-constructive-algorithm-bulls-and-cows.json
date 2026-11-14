@@ -1,0 +1,25 @@
+{
+  "name": "Bulls And Cows",
+  "slug": "interview-prep-constructive-algorithm-bulls-and-cows",
+  "course": "interview-prep",
+  "module": "constructive-algorithm",
+  "difficulty": "Medium",
+  "statement": "https://codeforces.com/contest/63/problem/C",
+  "inputFormat": "Check Link",
+  "outputFormat": "Check Link",
+  "constraints": "Check Link",
+  "sampleInput": "2\n1263 1 2\n8103 2 1",
+  "sampleOutput": "Need more data",
+  "questionVideo": "E9ARYbx1FgI",
+  "solutionVideo": "E9ARYbx1FgI",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    // Write Code here\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/constructive-algorithm/constructive-algorithm-bulls-and-cows/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

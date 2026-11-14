@@ -1,0 +1,25 @@
+{
+  "name": "Probability Of Knight In The Chessboard",
+  "slug": "levelup-dynamic-programming-probability-of-knight-in-the-chessboard",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given a N*N chessboard and the starting position of the knight in the chessboard.\n2. The rows and columns are 0 indexed, so the top-left square is (0, 0), and the bottom-right square is (N-1, N-1).\n3. You have to find the probability of knight to remain in the chessboard after exactly k number of moves.\n\nNote -&gt; The knight continues moving until it has made exactly K moves or has moved off the chessboard.",
+  "inputFormat": "A number N\nA number K\nTwo numbers r and c(starting row and column position of knight in the chessboard).",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 25\n0 &lt;= K &lt;= 100\n0 &lt;= r,c &lt;= N-1",
+  "sampleInput": "3\n2\n0\n0",
+  "sampleOutput": "0.0625",
+  "questionVideo": "54nJhM2AZv4",
+  "solutionVideo": "54nJhM2AZv4",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static void solution(int r, int c, int n, int k) {\n\t\t//write your code here\n\t\t\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tint k = scn.nextInt();\n\t\tint r = scn.nextInt();\n\t\tint c = scn.nextInt();\n\t\tsolution(r, c, n, k);\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/probability-of-knight-in-the-chessboard-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

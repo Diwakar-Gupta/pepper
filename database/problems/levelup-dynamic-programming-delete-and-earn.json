@@ -1,0 +1,25 @@
+{
+  "name": "Delete And Earn",
+  "slug": "levelup-dynamic-programming-delete-and-earn",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://leetcode.com/problems/delete-and-earn/\" target=\"_blank\" rel=\"noopener\">https://leetcode.com/problems/delete-and-earn/</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "1",
+  "sampleOutput": "1",
+  "questionVideo": "qVfjmkL1naw",
+  "solutionVideo": "qVfjmkL1naw",
+  "templates": {
+    "java": "class Solution {\n  public int deleteAndEarn(int[] nums) {\n\n    return 0;\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/delete-and-earn/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

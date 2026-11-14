@@ -1,0 +1,25 @@
+{
+  "name": "Maximum Sum Of Three Non-overlapping Subarrays",
+  "slug": "levelup-dynamic-programming-maximum-sum-of-three-non-overlapping-subarrays",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Hard",
+  "statement": "1. You are given an array(arr) of positive numbers and a number K.\n2. You have to find the maximum sum of elements in three non-overlapping subarrays.\n3. Also, you have to print indices representing the starting position of every subarray.\n4. If there are multiple answers, print the lexicographically smallest one.",
+  "inputFormat": "A number N\narr1\narr2.. N numbers\nA number K",
+  "outputFormat": "4 space-separated numbers, where first number represents the maximum sum of three non-overlapping subarrays and rest three represents the starting position of every subarray.",
+  "constraints": "1 &lt;= N &lt;= 20000\n1 &lt;= arr[i] &lt;= 10^5\n1 &lt;= K &lt;= N/3",
+  "sampleInput": "8\n1 2 1 2 6 7 5 1 \n2",
+  "sampleOutput": "23 0 3 5",
+  "questionVideo": "mXeT7-oZeQQ",
+  "solutionVideo": "mXeT7-oZeQQ",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static void solution(int[] arr, int k){\n\t\t// write your code here\n\t\t\n\t}\n\t\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tint[] arr = new int[n];\n\t\tfor(int i = 0 ; i < arr.length; i++){\n\t\t\tarr[i] = scn.nextInt();\n\t\t}\n\t\tint k = scn.nextInt();\n\t\tsolution(arr,k);\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/maximum-sum-of-three-non-ovarlapping-subarrays-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

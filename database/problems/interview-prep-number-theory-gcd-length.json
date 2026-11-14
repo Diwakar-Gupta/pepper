@@ -1,0 +1,25 @@
+{
+  "name": "Gcd Length",
+  "slug": "interview-prep-number-theory-gcd-length",
+  "course": "interview-prep",
+  "module": "number-theory",
+  "difficulty": "Medium",
+  "statement": "You are given three integers a,b and c.\n\nFind two positive integers x and y (x&gt;0 &amp; y&gt;0) such that:\n\n1.the decimal representation of x without leading zeroes consists of &quot;a&quot; digits;\n2.the decimal representation of y without leading zeroes consists of &quot;b&quot; digits;\n3.the decimal representation of gcd(x,y) without leading zeroes consists of c digits.\ngcd(x,y) denotes the greatest common divisor (GCD) of integers x and y.\n\nOutput x and y.",
+  "inputFormat": "The first line contains an integer T, number of test cases.\nThe next t lines contain three integers a and b and c.",
+  "outputFormat": "For each test case print two positive integers x and y.",
+  "constraints": "1 &lt;= t &lt;= 200\n1 &lt;= a,b &lt;= 9\n1&lt;= c &lt;= min(a,b)",
+  "sampleInput": "4\n2 3 1\n2 2 2\n6 6 2\n1 1 1",
+  "sampleOutput": "16 243\n10 10\n163840 196830\n1 1",
+  "questionVideo": "rLsTTviV7Q0",
+  "solutionVideo": "rLsTTviV7Q0",
+  "templates": {
+    "java": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\n\npublic class Main {\n\n  public static void main(String[] args) throws NumberFormatException, IOException {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/number-theory/gcd-length-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

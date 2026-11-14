@@ -1,11 +1,27 @@
 {
   "name": "Print Maze Paths",
   "slug": "recursion-on-the-way-up-print-maze-paths",
-  "description": "1. You are given a number n and a number m representing number of rows and columns in a maze.\n2. You are standing in the top-left corner and have to reach the bottom-right corner. Only two moves are allowed 'h' (1-step horizontal) and 'v' (1-step vertical).\n3. Complete the body of pri tMazePath function - without changing signature - to print the list of all paths that can be used to move from top-left to bottom-right.\nUse sample input and output to take idea about output.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA number n\nA number m\n```\n\n### Output Format\n```\nPrint paths (one path in each line) in order hinted by Sample output\n```\n\n### Constraints\n```\n0 <= n <= 10\n0 <= m <= 10\n```\n\n### Sample Input\n```\n2\n2\n```\n\n### Sample Output\n```\nhv\nvh\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/TcCyI-eJMmY?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/MHtAA5UE-6Y?rel=0&loop=1&playlist=MHtAA5UE-6Y",
-  "codes": {
-    "java": "im\npo\nrt \nja\nva\n.i\no.\n*;\n    \nim\npo\nrt \nja\nva\n.u\nti\nl.\n*;\n    \npu\nbl\nic \ncl\nas\ns \nMa\nin \n{\n    \n  \n  \npu\nbl\nic \nst\nat\nic \nvo\nid \nma\nin\n(S\ntr\nin\ng[\n] \nar\ngs\n) \nth\nro\nws \nEx\nce\npt\nio\nn \n{"
-  }
+  "course": "dsa-fundamentals",
+  "module": "recursion-on-the-way-up",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n and a number m representing number of rows and columns in a maze.\n2. You are standing in the top-left corner and have to reach the bottom-right corner. Only two moves are allowed 'h' (1-step horizontal) and 'v' (1-step vertical).\n3. Complete the body of pri tMazePath function - without changing signature - to print the list of all paths that can be used to move from top-left to bottom-right.\nUse sample input and output to take idea about output.\n\nNote -&gt; The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.",
+  "inputFormat": "A number n\nA number m",
+  "outputFormat": "Print paths (one path in each line) in order hinted by Sample output",
+  "constraints": "0 &lt;= n &lt;= 10\n0 &lt;= m &lt;= 10",
+  "sampleInput": "2\n2",
+  "sampleOutput": "hv\nvh",
+  "questionVideo": "TcCyI-eJMmY",
+  "solutionVideo": "MHtAA5UE-6Y",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nvoid printMazePaths(int sr, int sc, int dr, int dc, string psf){\n    // write your code here\n    \n}\n\nint main(){\n    int n;\n    int m;\n    cin >> n >> m;\n    printMazePaths(0, 0, n - 1, m - 1, \"\");\n}",
+    "java": "import java.io.*;\n\timport java.util.*;\n\n\tpublic class Main {\n\n\t    public static void main(String[] args) throws Exception {\n\n\t    }\n\n\t    // sr - source row\n\t    // sc - source column\n\t    // dr - destination row\n\t    // dc - destination column\n\t    public static void printMazePaths(int sr, int sc, int dr, int dc, String psf) {\n\t        \n\t    }\n\n\t}",
+    "python": "def printMazePaths(sr, sc, dr, dc, asf):\n# write your code here\n\n\n  n = int(input())\n      m = int(input())\n\n          printMazePaths(0, 0, n - 1, m - 1, \"\")"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/recursion-on-the-way-up/print-maze-paths-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

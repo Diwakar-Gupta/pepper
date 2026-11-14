@@ -1,49 +1,100 @@
 {
-  "categorys": [
+  "name": "Level 2: LevelUp",
+  "slug": "levelup",
+  "description": "For intermediate coders: advanced recursion, DP, graphs, trees, bit manipulation and more.",
+  "duration": "3 months",
+  "counts": {
+    "problems": 273,
+    "articles": 128,
+    "videos": 1
+  },
+  "categories": [
     {
       "name": "Conceptual building blocks",
-      "topics": [
+      "modules": [
         {
           "name": "Recursion and Backtracking",
-          "slug": "recursion-and-backtracking"
+          "slug": "recursion-and-backtracking",
+          "counts": {
+            "problems": 46,
+            "articles": 42,
+            "videos": 0
+          }
         },
-        { "name": "Bit Manipulation", "slug": "bit-manipulation" },
-        { "name": "Dynamic Programming", "slug": "dynamic-programming" }
+        {
+          "name": "Bit Manipulation",
+          "slug": "bit-manipulation",
+          "counts": {
+            "problems": 35,
+            "articles": 24,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Dynamic Programming",
+          "slug": "dynamic-programming",
+          "counts": {
+            "problems": 77,
+            "articles": 61,
+            "videos": 1
+          }
+        }
       ]
     },
     {
       "name": "Data Structures",
-      "topics": [
-        { "name": "Graphs", "slug": "graphs" },
-        { "name": "Hashmap and Heaps", "slug": "hashmap-and-heaps" },
-        { "name": "Trees", "slug": "trees" },
-        { "name": "Linked List", "slug": "linked-list" },
-        { "name": "Stacks", "slug": "stacks" },
-        { "name": "Trie", "slug": "trie" }
-      ]
-    },
-    {
-      "name": "Competitive",
-      "topics": [
-        { "name": "Text Processing", "slug": "text-processing" },
-        { "name": "Number Theory", "slug": "number-theory" },
-        { "name": "Computational Geometry", "slug": "computational-geometry" },
-        { "name": "Range Query", "slug": "range-query" }
+      "modules": [
+        {
+          "name": "Graphs",
+          "slug": "graphs",
+          "counts": {
+            "problems": 11,
+            "articles": 1,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Hashmap and Heaps",
+          "slug": "hashmap-and-heaps",
+          "counts": {
+            "problems": 3,
+            "articles": 0,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Trees",
+          "slug": "trees",
+          "counts": {
+            "problems": 57,
+            "articles": 0,
+            "videos": 0
+          }
+        },
+        {
+          "name": "Linked List",
+          "slug": "linked-list",
+          "counts": {
+            "problems": 42,
+            "articles": 0,
+            "videos": 0
+          }
+        }
       ]
     },
     {
       "name": "Arrays and Strings",
-      "topics": [
-        { "name": "Arrays and Strings", "slug": "arrays-and-strings" },
-        { "name": "Searching and Sorting", "slug": "searching-and-sorting" }
-      ]
-    },
-    {
-      "name": "Miscellaneous",
-      "topics": [
-        { "name": "JAVA for C++ Coders", "slug": "java-for-c++-coders" }
+      "modules": [
+        {
+          "name": "Arrays and Strings",
+          "slug": "arrays-and-strings",
+          "counts": {
+            "problems": 2,
+            "articles": 0,
+            "videos": 0
+          }
+        }
       ]
     }
-  ],
-  "slug": "data-structures-and-algorithms-in-java-levelup"
+  ]
 }

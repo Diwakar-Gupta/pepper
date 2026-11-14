@@ -1,0 +1,25 @@
+{
+  "name": "Longest Univalue Path",
+  "slug": "levelup-trees-longest-univalue-path",
+  "course": "levelup",
+  "module": "trees",
+  "difficulty": "Hard",
+  "statement": "https://leetcode.com/problems/longest-univalue-path/",
+  "inputFormat": "Check Link",
+  "outputFormat": "Check Link",
+  "constraints": "Check Link",
+  "sampleInput": "Check Link",
+  "sampleOutput": "Check Link",
+  "questionVideo": "AxKs4XVyAss",
+  "solutionVideo": "AxKs4XVyAss",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    // Write Code here\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/longest-univalue-path/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Swap All Odd And Even Bits",
+  "slug": "levelup-bit-manipulation-swap-all-odd-and-even-bits",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n.\n2. You have to swap all odd position bits with even position bits.\n3. Every odd position bit is swapped with adjacent bit on left side.\n4. Every even position bit is swapped with adjacent bit on right side.\n5. Print the number formed after swapping.",
+  "inputFormat": "A number n",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "1 &lt;= n &lt;= 10^9",
+  "sampleInput": "10",
+  "sampleOutput": "5",
+  "questionVideo": "GbH8PcqKosk",
+  "solutionVideo": "GbH8PcqKosk",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args){\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    //write your code here\n    \n  }\n\n}"
+  },
+  "editorial": "<p>In this problem, we are given a number N and we need to swap all even position bits with odd position bits and then return the resultant number thus formed. Thus we need to swap 1 with 2, 3 with 4, ... (2k - 1) with (2k).</p><p>Let us take an example to understand the problem better:</p><p>N = 10</p><p>Binary Representation = 1 0 1 0</p><p> Index = 4 3 2 1</p><p>Binary After Swapping = 0 1 0 1</p><p>Output = 5</p><p>The problem statement can be reframed as given a number N we need to shift all its even position bits by 1 to the right side and all its odd position bits by 1 to its left side.</p><p>To achieve this we will be maintaining two integers one will be storing the result of all even bits and the other one will be storing the result of all odd bits. Now we know that even bits are of type ...1010...1010 which is the same as 0x...A...A... so we can take AND operation with 0xAAAAAAAA to get all even bits, similarly, we can take AND operation result of N with 0x555555555 to get our odd bits as 0x55 is same as 01010101 which implies that this contains 1 only at odd positions. Now, as soon as we have our bits separated we just need to left shift odd bits and right shift even bits and take their OR to get the final result.</p><p><b>Time Complexity: O(1)</b></p><p>The time complexity for the function is constant.<b>Space Complexity: O(n)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/swap-all-odd-and-even-bits-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

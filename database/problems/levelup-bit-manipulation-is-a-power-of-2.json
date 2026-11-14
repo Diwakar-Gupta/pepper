@@ -1,0 +1,26 @@
+{
+  "name": "Is A Power Of 2",
+  "slug": "levelup-bit-manipulation-is-a-power-of-2",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n.\n2. You have to check whether it is a power of 2 or not.",
+  "inputFormat": "A number n",
+  "outputFormat": "true/false",
+  "constraints": "1 &lt;= n &lt;= 10^9",
+  "sampleInput": "1024",
+  "sampleOutput": "true",
+  "questionVideo": "I80Ovvi_nRU",
+  "solutionVideo": "I80Ovvi_nRU",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args){\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    //write your code here\n    \n  }\n\n}"
+  },
+  "editorial": "<p>In this problem, we have to determine whether a given integer input is a power of 2 or not.</p><p>For example, 1, 2, 4, 8, 16, 32 ... are numbers that are a power of 2.</p><p>We will implement a constant time solution with bit manipulation.</p><p>A common trait of any number which is a power of 2 is that it has only one set bit and the rest of all bits are unset and that set bit is the MSB bit.</p><p>We can approach the problem in multiple ways. One way is to count the number of set bits using <b>Kerninghams algorithm</b>. Another approach deals with taking an AND operation with (N - 1). This works as N should be of type 1 0 0 0 ... while (N - 1) will be of type 0 1 1 1 ... so their AND operation must be zero for the number to be a power of 2. Another approach can be to get the <b>rightmost set bit mask</b> of the number and as there is only one set bit for a power of 2 number so the value of the RSB mask must be equal to the number N for it to be a power of 2.</p><p><b>Time Complexity: O(1)</b></p><p>The time complexity for the function is constant.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/is-a-power-of-2-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

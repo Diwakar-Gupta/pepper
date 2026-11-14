@@ -1,0 +1,474 @@
+{
+  "name": "Maths",
+  "slug": "maths",
+  "course": "interview-prep",
+  "counts": {
+    "problems": 2,
+    "articles": 0,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-k-lcm-easy-version",
+      "name": "K-lcm (easy Version)",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-k-lcm-hard-version",
+      "name": "K-lcm (hard Version)",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-polo-the-penguin-and-xor-operation",
+      "name": "Polo The Penguin And Xor Operation",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-random-teams",
+      "name": "Random Teams",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-k-th-not-divisible-by-n",
+      "name": "K-th Not Divisible By N",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-buying-shovels",
+      "name": "Buying Shovels",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-pocket-book",
+      "name": "Pocket Book",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-product-of-three-numbers",
+      "name": "Product Of Three Numbers",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-yet-another-array-restoration",
+      "name": "Yet Another Array Restoration",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-jumps",
+      "name": "Jumps",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-almost-all-divisors",
+      "name": "Almost All Divisors",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-mafia",
+      "name": "Mafia",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-points",
+      "name": "Points",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-taxes",
+      "name": "Taxes",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-easy-number-challenge",
+      "name": "Easy Number Challenge",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-minimum-number-of-steps",
+      "name": "Minimum Number Of Steps",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-sea-battle",
+      "name": "Sea Battle",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-permutations",
+      "name": "Permutations",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-nice-garland",
+      "name": "Nice Garland",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-domino",
+      "name": "Domino",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-equal-rectangles",
+      "name": "Equal Rectangles",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-cells-not-under-attack",
+      "name": "Cells Not Under Attack",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-same-parity-summands",
+      "name": "Same Parity Summands",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-permutation-by-sum",
+      "name": "Permutation By Sum",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-two-arrays-and-sum-of-functions",
+      "name": "Two Arrays And Sum Of Functions",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-lcm",
+      "name": "Lcm",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-good-subarrays",
+      "name": "Good Subarrays",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-divisibility-by-difference",
+      "name": "Divisibility By Difference",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-sasha-and-magnetic-machines",
+      "name": "Sasha And Magnetic Machines",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-add-to-neighbour-and-remove",
+      "name": "Add To Neighbour And Remove",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-just-arrange-the-icons",
+      "name": "Just Arrange The Icons",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-array-product",
+      "name": "Array Product",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-enlarge-gcd",
+      "name": "Enlarge Gcd",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-annoying-present",
+      "name": "Annoying Present",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-binary-numbers-and-sum",
+      "name": "Binary Numbers And Sum",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-guest-from-past",
+      "name": "Guest From Past",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-pipelines",
+      "name": "Pipelines",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-nezzar-and-board",
+      "name": "Nezzar And Board",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-square-free-division-easy-version",
+      "name": "Square-free Division (easy Version)",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-celex-update",
+      "name": "Celex Update",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-hilbert-s-hotel",
+      "name": "Hilbert's Hotel",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-orac-and-lcm",
+      "name": "Orac And Lcm",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-circle-of-monsters",
+      "name": "Circle Of Monsters",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-yet-another-counting-problem",
+      "name": "Yet Another Counting Problem",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-social-circles",
+      "name": "Social Circles",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-aquamoon-and-chess",
+      "name": "Aquamoon And Chess",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-position-in-fraction",
+      "name": "Position In Fraction",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-row-gcd",
+      "name": "Row Gcd",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-about-bacteria",
+      "name": "About Bacteria",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-chef-and-closure",
+      "name": "Chef And Closure",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-remove-one-element",
+      "name": "Remove One Element",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-bus-video-system",
+      "name": "Bus Video System",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-pythagorean-triples",
+      "name": "Pythagorean Triples",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-sequence-transformation",
+      "name": "Sequence Transformation",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-two-hundred-twenty-one",
+      "name": "Two Hundred Twenty One",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-board-game",
+      "name": "Board Game",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-road-to-post-office",
+      "name": "Road To Post Office",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-infinite-fence",
+      "name": "Infinite Fence",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-infinite-prefixes",
+      "name": "Infinite Prefixes",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-primes-and-multiplication",
+      "name": "Primes And Multiplication",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-laboratory-work",
+      "name": "Laboratory Work",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-count-the-arrays",
+      "name": "Count The Arrays",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-find-pair",
+      "name": "Find Pair",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-continued-fractions",
+      "name": "Continued Fractions",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-vus-the-cossaick-and-strings",
+      "name": "Vus The Cossaick And Strings",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-maths-guess-your-way-out",
+      "name": "Guess Your Way Out!",
+      "difficulty": "Hard",
+      "unavailable": true
+    }
+  ]
+}

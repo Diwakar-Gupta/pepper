@@ -1,11 +1,26 @@
 {
   "name": "Duplicate Brackets",
   "slug": "stacks-and-queues-duplicate-brackets",
-  "description": "1. You are given a string exp representing an expression.\n2. Assume that the expression is balanced  i.e. the opening and closing brackets match with each other.\n3. But, some of the pair of brackets maybe extra/needless. \n4. You are required to print true if you detect extra brackets and false otherwise.\n\ne.g.'\n((a + b) + (c + d)) -> false\n(a + b) + ((c + d)) -> true\n\n### Input Format\n```\nA string str\n```\n\n### Output Format\n```\ntrue or false\n```\n\n### Constraints\n```\n0 <= str.length <= 100\n```\n\n### Sample Input\n```\n(a + b) + ((c + d))\n```\n\n### Sample Output\n```\ntrue\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/4eSFaEOa-l0?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/aMPXhEdpXFA?rel=0&loop=1&playlist=aMPXhEdpXFA",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "stacks-and-queues",
+  "difficulty": "Easy",
+  "statement": "1. You are given a string exp representing an expression.\n2. Assume that the expression is balanced  i.e. the opening and closing brackets match with each other.\n3. But, some of the pair of brackets maybe extra/needless. \n4. You are required to print true if you detect extra brackets and false otherwise.\n\ne.g.'\n((a + b) + (c + d)) -&gt; false\n(a + b) + ((c + d)) -&gt; true",
+  "inputFormat": "A string str",
+  "outputFormat": "true or false",
+  "constraints": "0 &lt;= str.length &lt;= 100",
+  "sampleInput": "(a + b) + ((c + d))",
+  "sampleOutput": "true",
+  "questionVideo": "4eSFaEOa-l0",
+  "solutionVideo": "aMPXhEdpXFA",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n    }\n\n}"
+  },
+  "editorial": "<p>Example-<br></p><p>For the array [2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6] and k = 4, the answer is [9 9 8 12 12 14 14 32 32 32 32 19 19 19]<br></p><p>According to this question we are given a window size which is k=4 and we have to print the maximum value present in this window<br></p><p>First window-<br></p><p>[2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6] ANSWER = 9<br></p><p>Second window-<br></p><p>[2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6] ANSWER = 9<br></p><p>Third window-<br></p><p>[2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6] ANSWER = 8<br></p><p>Fourth window-<br></p><p>[2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6] ANSWER = 12<br></p><p>Fifth window-<br></p><p>[2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6] ANSWER = 12<br></p><p>Sixth window-<br></p><p>[2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6] ANSWER = 14<br></p><p>Seventh window-<br></p><p>[2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6] ANSWER = 14<br></p><p>Eighth window-<br></p><p>[2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6] ANSWER = 32<br></p><p>Ninth window-<br></p><p>[2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6] ANSWER = 32<br></p><p>Tenth window-<br></p><p>[2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6] ANSWER = 32<br></p><p>Eleventh window-<br></p><p>[2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6] ANSWER = 32<br></p><p>Twelfth window-<br></p><p>[2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6] ANSWER = 19<br></p><p>Thirteenth window-<br></p><p>[2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6] ANSWER = 19<br></p><p>Fourteenth window-<br></p><p>[2 9 3 8 1 7 12 6 14 4 32 0 7 19 8 12 6] ANSWER = 19<br></p><p>FINAL ANSWER:-<br></p><p>[9 9 8 12 12 14 14 32 32 32 32 19 19 19]<br></p><p>SOLUTION:-<br></p><p>Our approach will be depending on next greater element on the right so that we can code it in O(n)..21</p>",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/stacks-and-queues/duplicate-brackets-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

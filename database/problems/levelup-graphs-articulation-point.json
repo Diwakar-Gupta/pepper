@@ -1,0 +1,25 @@
+{
+  "name": "Articulation Point",
+  "slug": "levelup-graphs-articulation-point",
+  "course": "levelup",
+  "module": "graphs",
+  "difficulty": "Hard",
+  "statement": "A vertex in an undirected graph is an articluation point iff removing it disconnects the graph. You have to find the number of articulation point in the given graph.",
+  "inputFormat": "First line contains two integers V and E.\nEach of next E line contains two integer u and v denoting an edge betwwen vertex u and v.",
+  "outputFormat": "Print the number of articulation point",
+  "constraints": "1 &lt;= number of vertices(V) &lt;= 1000\n1 &lt;= number of Edges(E) &lt;= V*(V-1)/2;",
+  "sampleInput": "5 5\n1 2\n1 3\n3 2\n3 4\n5 4",
+  "sampleOutput": "2",
+  "questionVideo": "sAk4W8q0Rmw",
+  "solutionVideo": "sAk4W8q0Rmw",
+  "templates": {
+    "java": "import java.util.*;\nimport java.io.*;\n\nclass Main {\n\n  public static void main(String[] args) {\n\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/graphs/articulation-point-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

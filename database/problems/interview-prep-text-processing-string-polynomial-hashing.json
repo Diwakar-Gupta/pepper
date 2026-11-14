@@ -1,0 +1,25 @@
+{
+  "name": "String Polynomial Hashing",
+  "slug": "interview-prep-text-processing-string-polynomial-hashing",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Medium",
+  "statement": "Given a string S, print the hash code of that string using Polynomial Hashing.\nNote: Use prime number = 31 and print the answer mod 1000000007.",
+  "inputFormat": "The first line contains an integer T denoting the number of test cases.\nT lines follow each containing a string S.",
+  "outputFormat": "Print an integer (the hashcode of the string) mod 1000000007 and take prime number 31 for hashing.",
+  "constraints": "String s consists of only lowercase English alphabets\n|S| &lt;= 10^5",
+  "sampleInput": "6\nab\nabc\nabcd\nabc\nxyz\npqr",
+  "sampleOutput": "63\n2946\n122110\n2946\n25785\n17841",
+  "questionVideo": "N5kn4IrIAKg",
+  "solutionVideo": "N5kn4IrIAKg",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static long hashCode(String s) {\n    //Write your code here\n    // NOTE: use prime number = 31 and mod = 1000000007\n\n  }\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    int T = scn.nextInt();\n    while (T-- > 0) {\n      String s = scn.next();\n      System.out.println(hashCode(s));\n    }\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/string-polynomial-hashing-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

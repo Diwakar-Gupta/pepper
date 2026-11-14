@@ -1,0 +1,26 @@
+{
+  "name": "All Repeating Three Times Except One",
+  "slug": "levelup-bit-manipulation-all-repeating-three-times-except-one",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array of numbers.\n2. All numbers occur thrice in the array except one.\n3. You have to find the element that occurs once.",
+  "inputFormat": "A number n\na1\na2..\nn numbers",
+  "outputFormat": "A number",
+  "constraints": "1 &lt;= n &lt;= 10^9\n1 &lt;= a1,a2.. &lt;= 10^9",
+  "sampleInput": "4\n1 1 1 2",
+  "sampleOutput": "2",
+  "questionVideo": "3gJxLkPPW6M",
+  "solutionVideo": "3gJxLkPPW6M",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args){\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    for(int i = 0 ; i < n; i++){\n      arr[i] = scn.nextInt();\n    }\n    solution(arr);\n  }\n\n  public static void solution(int[] arr){\n   //write your code here\n   \n  }\n\n}"
+  },
+  "editorial": "<p>In this problem, we are provided with an array of numbers where all elements except one repeat thrice, so we need to find the unique element using bit manipulation.</p><p><b>Insight</b>: Suppose we remove the unique number from our array. Then we have a set of elements that repeats thrice with no exception. Now we wish to calculate the number of set bits at every position for this array. Now the point here is to observe that if an element has a set bit at index i then it means that its frequency will be 3 for that particular element, this ensures that if we take the sum of all the numbers in this array for every index then the result will be having bits frequencies in <b>multiples of three.</b></p><p>Now a bit manipulation approach surrounding the above insight is to use the <b>count of the set bit at every index</b> if the number of set bits at a particular index is of type <b>3x + 1 </b>then we have a set bit at that position for our unique element, else we have an unset bit.</p><p>So we iterate from 0 to 31 and for every index, we iterate over the entire array to check for the number of set bits, hence our total time complexity becomes O(32*n).</p><p>For example:</p><p>N = 10</p><p>51 -&gt; 1 1 0 0 1 1</p><p>57 -&gt; 1 1 1 0 0 1</p><p>51 -&gt; 1 1 0 0 1 1</p><p>63 -&gt; 1 1 1 1 1 1</p><p>57 -&gt; 1 1 1 0 0 1</p><p>57 -&gt; 1 1 1 0 0 1</p><p>51 -&gt; 1 1 0 0 1 1</p><p>63 -&gt; 1 1 1 1 1 1</p><p><b>38 -&gt; 1 0 0 1 1 0</b></p><p>63 -&gt; 1 1 1 1 1 1</p><p>Sum 10-9-6-4-7-9</p><p>Res -&gt;<b>1-0-0-1-1-0 =&gt; 38</b></p><p>We can optimize this code even further and can attain a time complexity of O(n).</p><p>To achieve this in O(n) time complexity we will be maintaining three integers say ones, twos, and threes which will be representing the <b>bits frequencies of type 3x + 1, 3x + 2, and 3x</b> respectively. Now we will start considering every element of the array one by one and update the counts of bits in these arrays. Say at some point we have the count of bits as 4 3 1 0 5 5 then we would have values of ones, twos, and threes as:</p><p>ones = 1 0 1 0 0 0</p><p>twos = 0 0 0 0 1 1</p><p>threes = 0 1 0 1 0 0</p><p>This represents that we have bits count of <b>type 3x + 1</b> at indexes 0 and 2. Similarly, we have the bit count of type 3x + 2 at indexes 4 and 5 and the bit count of type 3x at indexes 1 and 3.</p><p>Now while traversing the array we will be updating these count bits and when we reach the end of the array we will be returning ones as our result, as ones are of the type 3x + 1 so this will be storing our unique number.</p><p><b>Time Complexity: O(n)</b></p><p>The time complexity for the function is linear as we are traversing on every element only once.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/all-repeating-three-times-except-one-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+10
+10
+30
+20
+40
+20
+Invalid arguments
+List is empty

@@ -1,0 +1,26 @@
+{
+  "name": "Number Of Valid Words",
+  "slug": "levelup-bit-manipulation-number-of-valid-words",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Hard",
+  "statement": "1. You are given N number of words.\n2. You are given M puzzles in the form of M strings.\n3. For a given puzzle, a word is valid if both the following conditions are confirmed - \n    Condition 1 -&gt; Word contains the first letter of puzzle.\n    Condition 2 -&gt; For each letter in word, that letter should be present in puzzle.\n4. You have to print the number of valid words corresponding to a puzzle.",
+  "inputFormat": "A number N\nN space separated strings\nA number M\nM space separated strings",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "1 &lt;= N &lt;= 10^5\n4 &lt;= length of word &lt;= 50\n1 &lt;= M &lt;= 10^4\nlength of puzzle string = 7\npuzzle string doesn't contain any repeated characters.",
+  "sampleInput": "7\naaaa asas able ability actt actor access \n6\naboveyz abrodyz abslute absoryz actresz gaswxyz",
+  "sampleOutput": "aboveyz -> 1\nabrodyz -> 1\nabslute -> 3\nabsoryz -> 2\nactresz -> 4\ngaswxyz -> 0",
+  "questionVideo": "9jV0CC_C26s",
+  "solutionVideo": "9jV0CC_C26s",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static ArrayList<Integer> findNumOfValidWords(String[] words, String[] puzzles) {\n    //write your code here\n\n    return null;\n  }\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    String[] words = new String[n];\n    for (int i = 0 ; i < words.length; i++) {\n      words[i] = scn.next();\n    }\n    int m = scn.nextInt();\n    String[] puzzles = new String[m];\n    for (int i = 0 ; i < m ; i++) {\n      puzzles[i] = scn.next();\n    }\n    ArrayList<Integer> ans = findNumOfValidWords(words, puzzles);\n    for (int i = 0 ; i < m ; i++) {\n      System.out.println(puzzles[i] + \" -> \" + ans.get(i));\n    }\n  }\n\n}"
+  },
+  "editorial": "<p>The problem here deals with finding the number of valid words for the corresponding puzzle. Here we are provided with a list of puzzles and a list of words, we need to check for every puzzle the number of words from the list which satisfies the following criteria:</p><p>1. Word must contain the first letter of the puzzle.</p><p>2. The puzzle must contain all the letters of the word.</p><p>Let us consider an example to understand the problem better,</p><p>Patterns -&gt; hidcjb, bgjic, afiehbj, cghfe</p><p>Words -&gt; bcgi, dihj, hiba, cegh, jbaf</p><p>Output:</p><p>hidcjb -&gt; 1 [hidj]</p><p>bgjic -&gt; 1 [bcgi]</p><p>afiehbj -&gt; 2 [hiba, jbaf]</p><p>cghfe -&gt; 1 [cegh]</p><p>The brute force solution would deal with traversing the entire pattern array within in traverse for entire words array and every word and pattern firstly check whether the word contains pattern.charAt(0) and if true then check whether the pattern contains every letter of the word if true then update a result array.</p><p>In the brute force approach for every pattern we need to check for every word and then check whether it contains pattern.charAt(0) or not. This step can be avoided by taking a map that has keys from 'a' to 'z' that represents all the words that contain these letters. This step ensures that we only need to check for that key that matches with the pattern.charAt(0), hence it avoids traversing the entire word array every time.</p><p>The map for the above example will look like this:</p><p>a -&gt; hiba, jbaf</p><p>b -&gt; bcgi, hiba, jbaf</p><p>c -&gt; bcgi, cegh</p><p>d -&gt; dihj</p><p>e -&gt; cegh</p><p>f -&gt; jbaf</p><p>g -&gt; bcgi, cegh</p><p>h -&gt; dihj, hiba, cegh</p><p>i -&gt; bcgi, dihj, hiba</p><p>j -&gt; jbaf, dihj</p><p>So to check for afiehbj we only need to check elements [hiba, jbaf] and then compare. Now for comparison we will make use of bit manipulation where we will built a mask for patterns and words. While creating the map instead of pushing words (as shown above) we will push its corresponding mask. Thereafter when comparing pattern with word mask from the map we will make a mask for pattern and then if and only if patternMask &amp; wordMask == wordMask, this would imply that the pattern contains all the letters of the word and hence we would increment the count. This step eases our comparison task as it uses bit manipulation which is memory and time-efficient.</p><p><b>Time Complexity: O(p*w*l)</b></p><p>The time complexity for the function is number of puzzles(p) * number of words(w) * max length of puzzle (l).</p><p><b>Space Complexity: O(w)</b></p><p>The space complexity for the function is linear as we have implemented a map and a set for storing masked words from the word array.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/number-of-valid-words-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

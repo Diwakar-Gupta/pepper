@@ -1,11 +1,27 @@
 {
   "name": "Pattern 20",
   "slug": "patterns-pattern-20",
-  "description": "1. You are given a number n.\n2. You've to write code to print the pattern given in output format below.\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\n\n```\n\n### Constraints\n```\n1 <= n <= 10\n Also, n is odd.\n```\n\n### Sample Input\n```\n5\n```\n\n### Sample Output\n```\n*\t\t\t\t*\t\n*\t\t\t\t*\t\n*\t\t*\t\t*\t\n*\t*\t\t*\t*\t\n*\t\t\t\t*\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/JRjdGPn2Qz0?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/xvXhZ0k1fYo?rel=0&loop=1&playlist=xvXhZ0k1fYo",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "patterns",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n.\n2. You've to write code to print the pattern given in output format below.",
+  "inputFormat": "A number n",
+  "outputFormat": "<img src=\"database/images/ac40d6d9c2d002a3.jpg\" alt=\"pat201\">",
+  "constraints": "1 &lt;= n &lt;= 10\n Also, n is odd.",
+  "sampleInput": "5",
+  "sampleOutput": "*\t\t\t\t*\t\n*\t\t\t\t*\t\n*\t\t*\t\t*\t\n*\t*\t\t*\t*\t\n*\t\t\t\t*",
+  "questionVideo": "JRjdGPn2Qz0",
+  "solutionVideo": "xvXhZ0k1fYo",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\nint main(int argc, char**argv){\n    int n;\n    cin >> n;\n\n    //write your code here\n\n}",
+    "java": "import java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        Scanner scn = new Scanner(System.in);\n\n        // write ur code here\n\n    }\n}"
+  },
+  "editorial": "<p><i>&quot;Before a code can be reusable, it has to be usable.&quot;</i><br></p><p><b>Question:</b><br></p><p>1. You are given a number n.<br></p><p>2. You've to write code to print the pattern given in output format below.<br></p><p><u>Input format:</u><u><br></u></p><p>A number n<br></p><p><b><u>Output format:</u></b><br></p><p><b><u><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"></u></b><b><u><br></u></b></p><p><b><u>Constraints:</u></b><br></p><p>1 &lt;= n &lt;= 10;Also n is odd.<br></p><p><b><u>Solution Approach:</u></b><br></p><p>We have to print a pattern that resembles the shape of 'W'.<br></p><p>In this design, we observe that we need stars in all the rows of the first and last column; and on the diagonal positions, provided diagonal positions are below the middle row (inclusive).<br></p><p>So, we know the condition for the first and last row will be 'j' == 1 || 'j' == 'n' and condition for diagonal values are 'i' == 'j' || 'i' +'j' == n + 1 But in diagonal, we place another check, that is , the middle row is crossed ( 'i' &gt; n/2). Any place else, then we need to print whitespaces.<br></p><p>So implementing the above required conditions in programming: <br></p><pre>import java.util.*;\n                                public class Main{\n                                    public static void main(String[] args)\n                                    {\n                                        Scanner scn = new Scanner(System.in);\n                                        int n = scn.nextInt();\n                                        for(int i = 1;i&lt;=n;i++)\n                                        {\n                                            for(int j =1;j&lt;=n;j++)\n                                            {\n                                                if( j == 1 || j == n)  //if first or last column\n                                                {\n                                                    System.out.print(&quot;*\t&quot;);\n                                                }\n                                                else if(i &gt; n/2 &amp;&amp; (i ==j || i +j == n + 1))   // part of either diagonal below middle row\n                                                {\n                                                    System.out.print(&quot;*\t&quot;);\n                                                }\n                                                else                \n                                                {\n                                                    System.out.print(&quot;\t&quot;);\n                                                }\n                                            }\n                                            System.out.println();\n                                        }\n                                    }\n                                }<br></pre><p>Final output for input value 'n'= 5:</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"></p>",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/patterns/design-pattern-20-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

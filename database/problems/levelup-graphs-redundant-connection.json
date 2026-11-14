@@ -1,0 +1,25 @@
+{
+  "name": "Redundant Connection",
+  "slug": "levelup-graphs-redundant-connection",
+  "course": "levelup",
+  "module": "graphs",
+  "difficulty": "Medium",
+  "statement": "You are given a graph that started as a tree with n nodes labeled from 1 to n, with one additional edge added. The added edge has two different vertices chosen from 1 to n, and was not an edge that already existed. The graph is represented as an array edges of length n where edges[i] = [xi, yi] indicates that there is an edge between nodes xi and yi in the graph.\nReturn an edge that can be removed so that the resulting graph is a tree of n nodes. If there are multiple answers, return the answer that occurs last in the input.",
+  "inputFormat": "First line contains an integer n.\nEach of next n lines contain 2 numbers denoting a bidirectional edge between them.",
+  "outputFormat": "Print the edge that can be removed so that the resulting graph is a tree of n nodes. If there are multiple answers, return the answer that occurs last in the input.",
+  "constraints": "1&lt;= n &lt;= 10000\nnumber of edge = number of vertices",
+  "sampleInput": "3\n1 2\n1 3\n2 3",
+  "sampleOutput": "2 3",
+  "questionVideo": "aDLM2Laay5w",
+  "solutionVideo": "aDLM2Laay5w",
+  "templates": {
+    "java": "import java.util.*;\nimport java.io.*;\n\npublic class Main {\n  public static void main(String[] args) throws NumberFormatException, IOException {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n    String[] st = br.readLine().split(\" \");\n    int n = Integer.parseInt(st[0]);\n\n    int[][] pos = new int[n][2];\n    for (int i = 0; i < n; i++) {\n      st = br.readLine().split(\" \");\n      pos[i][0] = Integer.parseInt(st[0]);\n      pos[i][1] = Integer.parseInt(st[1]);\n    }\n\n    int[] ans = findRedundantConnection(pos);\n    System.out.println(ans[0] + \" \" + ans[1]);\n  }\n\n  public static int[] findRedundantConnection(int[][] edges) {\n\n  }\n\n  private static int find(int[] parent, int f) {\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/graphs/redundant-connection-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+6
+ab
+abc
+abcd
+abc
+xyz
+pqr

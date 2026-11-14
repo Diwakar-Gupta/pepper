@@ -1,0 +1,26 @@
+{
+  "name": "Reverse In Range",
+  "slug": "levelup-linked-list-reverse-in-range",
+  "course": "levelup",
+  "module": "linked-list",
+  "difficulty": "Easy",
+  "statement": "1. Given a singly linklist, Reverse a linkedlist from position starting position to end position.\n2. Do it in one-pass. without using any extra space.\n3. Indexing start from numeric 1.",
+  "inputFormat": "8-&gt;8-&gt;14-&gt;1-&gt;10-&gt;12-&gt;null \n3\n5",
+  "outputFormat": "8-&gt;8-&gt;10-&gt;1-&gt;14-&gt;12-&gt;null",
+  "constraints": "1 &lt;= size Of LinkedList &lt;= 10^6\n1 &lt;= starting Position, ending Position &lt;= 10^6",
+  "sampleInput": "6\n8 8 14 1 10 12 \n3\n5",
+  "sampleOutput": "8 8 10 1 14 12",
+  "questionVideo": null,
+  "solutionVideo": null,
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nclass ListNode\n{\npublic:\n    int val = 0;\n    ListNode *next = nullptr;\n\n    ListNode(int val)\n    {\n        this->val = val;\n    }\n};\n\nListNode *reverseInRange(ListNode *head, int m, int n)\n{\n}\n\nvoid printList(ListNode *node)\n{\n    ListNode *curr = node;\n    while (curr != nullptr)\n    {\n        cout << curr->val << \" \";\n        curr = curr->next;\n    }\n    cout << endl;\n}\n\nListNode *createList(int n)\n{\n    ListNode *dummy = new ListNode(-1);\n    ListNode *prev = dummy;\n    while (n-- > 0)\n    {\n        int val;\n        cin >> val;\n        prev->next = new ListNode(val);\n        prev = prev->next;\n    }\n    return dummy->next;\n}\n\nint main()\n{\n    int n;\n    cin >> n;\n    ListNode *h1 = createList(n);\n    int m, n;\n    cin >> m >> n;\n    h1 = reverseInRange(h1, m, n);\n    printList(h1);\n\n    return 0;\n}",
+    "java": "import java.util.*;\n\nclass Main {\n  public static Scanner scn = new Scanner(System.in);\n\n  public static class ListNode {\n    int val = 0;\n    ListNode next = null;\n\n    ListNode(int val) {\n      this.val = val;\n    }\n  }\n\n  public static ListNode reverseInRange(ListNode head, int n, int m) {\n    return null;\n  }\n\n  public static void printList(ListNode node) {\n    while (node != null) {\n      System.out.print(node.val + \" \");\n      node = node.next;\n    }\n  }\n\n  public static ListNode createList(int n) {\n    ListNode dummy = new ListNode(-1);\n    ListNode prev = dummy;\n    while (n-- > 0) {\n      prev.next = new ListNode(scn.nextInt());\n      prev = prev.next;\n    }\n\n    return dummy.next;\n  }\n\n  public static void main(String[] args) {\n    int sz = scn.nextInt();\n    ListNode h1 = createList(sz);\n\n    int m = scn.nextInt();\n    int n = scn.nextInt();\n\n    h1 = reverseInRange(h1, m, n);\n    printList(h1);\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/reverse-in-range/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

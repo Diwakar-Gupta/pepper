@@ -1,0 +1,2 @@
+After sorting on 1 place -> 1 2 3 4 7 
+1 2 3 4 7

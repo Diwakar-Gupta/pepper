@@ -1,0 +1,544 @@
+{
+  "name": "Recursion and Backtracking",
+  "slug": "recursion-and-backtracking",
+  "course": "levelup",
+  "counts": {
+    "problems": 46,
+    "articles": 42,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-permutation-1",
+      "name": "Permutation - 1",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-permutations-2",
+      "name": "Permutations - 2",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-combinations-1",
+      "name": "Combinations - 1",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-combinations-2",
+      "name": "Combinations - 2",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-queens-permutations-2d-as-2d-queen-chooses",
+      "name": "Queens Permutations - 2d As 2d - Queen Chooses",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-queens-combinations-2d-as-2d-box-chooses",
+      "name": "Queens Combinations - 2d As 2d - Box Chooses",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-queens-permutations-2d-as-2d-box-chooses",
+      "name": "Queens Permutations - 2d As 2d - Box Chooses",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-queens-combinations-2d-as-2d-queen-chooses",
+      "name": "Queens Combinations - 2d As 2d - Queen Chooses",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-queens-combinations-2d-as-1d-queen-chooses",
+      "name": "Queens Combinations - 2d As 1d - Queen Chooses",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-nqueens-permutations-2d-as-1d-queen-chooses",
+      "name": "Nqueens Permutations - 2d As 1d - Queen Chooses",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-nqueens-combinations-2d-as-1d-queen-chooses",
+      "name": "Nqueens Combinations - 2d As 1d - Queen Chooses",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-n-queens-branch-and-bound",
+      "name": "N Queens - Branch And Bound",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-nknights-combinations-2d-as-1d-knight-chooses",
+      "name": "Nknights Combinations - 2d As 1d - Knight Chooses",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-permutations-words-1",
+      "name": "Permutations - Words - 1",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-permutations-words-2",
+      "name": "Permutations - Words - 2",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-words-k-selection-1",
+      "name": "Words - K Selection - 1",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-words-k-selection-2",
+      "name": "Words - K Selection - 2",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-words-k-selection-3",
+      "name": "Words - K Selection - 3",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-words-k-selection-4",
+      "name": "Words - K Selection - 4",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-words-k-length-words-1",
+      "name": "Words - K Length Words - 1",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-words-k-length-words-2",
+      "name": "Words - K Length Words - 2",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-words-k-length-words-3",
+      "name": "Words - K Length Words - 3",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-words-k-length-words-4",
+      "name": "Words - K Length Words - 4",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-coin-change-combinations-1",
+      "name": "Coin Change - Combinations - 1",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-coin-change-combinations-2",
+      "name": "Coin Change - Combinations - 2",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-coin-change-permutations-1",
+      "name": "Coin Change - Permutations - 1",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-coin-change-permutations-2",
+      "name": "Coin Change - Permutations - 2",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-solve-sudoku",
+      "name": "Solve Sudoku",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-crossword-puzzle",
+      "name": "Crossword Puzzle",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-cryptarithmetic",
+      "name": "Cryptarithmetic",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-gold-mine-2",
+      "name": "Gold Mine - 2",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-josephus-problem",
+      "name": "Josephus Problem",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-lexicographical-numbers",
+      "name": "Lexicographical Numbers",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-friends-pairing-2",
+      "name": "Friends Pairing - 2",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-k-partitions",
+      "name": "K-partitions",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-k-subsets-with-equal-sum",
+      "name": "K Subsets With Equal Sum",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-abbreviation-using-backtracking",
+      "name": "Abbreviation Using Backtracking",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-max-score",
+      "name": "Max Score",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-all-palindromic-permutations",
+      "name": "All Palindromic Permutations",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-all-palindromic-partitions",
+      "name": "All Palindromic Partitions",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-pattern-matching",
+      "name": "Pattern Matching",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-word-break-i",
+      "name": "Word Break - I",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-remove-invalid-parenthesis",
+      "name": "Remove Invalid Parenthesis",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-tug-of-war",
+      "name": "Tug Of War",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-largest-number-possible-after-at-most-k-swaps",
+      "name": "Largest Number Possible After At Most K Swaps",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-recursion-and-backtracking-magnets",
+      "name": "Magnets",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-abbreviations-using-backtracking",
+      "name": "Abbreviations using Backtracking"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-max-score",
+      "name": "Max Score"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-n-queens-branch-and-bound",
+      "name": "N Queens Branch and Bound"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-josephus-problem",
+      "name": "Josephus Problem"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-permutations-1",
+      "name": "Permutations - 1"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-lexicographical-numbers",
+      "name": "Lexicographical Numbers"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-gold-mine-2",
+      "name": "Gold Mine - 2"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-maximum-number-after-k-swaps",
+      "name": "Maximum Number After K Swaps"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-k-length-words-3",
+      "name": "K Length Words-3"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-permutations-2",
+      "name": "Permutations - 2"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-coin-change-combination-2",
+      "name": "Coin Change Combination-2"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-combinations-1",
+      "name": "Combinations - 1"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-friends-pairing-2",
+      "name": "Friends Pairing - 2"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-remove-invalid-parentheses",
+      "name": "Remove Invalid Parentheses"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-sudoku-solver",
+      "name": "Sudoku Solver"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-word-break-1",
+      "name": "Word break-1"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-words-k-selection-2",
+      "name": "Words - K Selection - 2"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-tug-of-war",
+      "name": "Tug Of War"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-k-subsets-with-equal-sum",
+      "name": "K Subsets with Equal Sum"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-combinations-2",
+      "name": "Combinations - 2"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-nqueens-combinations-2d-as-1d-queen-chooses",
+      "name": "Nqueens Combinations - 2d As 1d - Queen Chooses"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-queens-combinations-2d-as-1d-queen-chooses",
+      "name": "Queens Combinations - 2d As 1d - Queen Chooses"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-cryptarithmetic",
+      "name": "Cryptarithmetic"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-coin-change-combination-1",
+      "name": "Coin change combination-1"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-coin-change-permutations-2",
+      "name": "Coin Change Permutations-2"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-coin-change-permutations-1",
+      "name": "Coin Change Permutations-1"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-k-partitions",
+      "name": "K - Partitions"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-all-palindromic-partitions",
+      "name": "All Palindromic Partitions"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-queens-combinations-2d-as-2d-box-chooses",
+      "name": "Queens Combinations - 2d As 2d - Box Chooses"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-queens-permutations-2d-as-2d-queen-chooses",
+      "name": "Queens Permutations - 2d As 2d - Queen Chooses"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-queens-permutations-2d-as-2d-box-chooses",
+      "name": "Queens Permutations - 2d As 2d - Box Chooses"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-queens-combinations-2d-as-2d-queen-chooses",
+      "name": "Queens Combinations - 2d As 2d - Queen Chooses"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-nknights-combinations-2d-as-1d-knight-chooses",
+      "name": "Nknights Combinations - 2d As 1d - Knight Chooses"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-nqueens-permutations-2d-as-1d-queen-chooses",
+      "name": "Nqueens Permutations - 2d As 1d - Queen Chooses"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-permutations-words-1",
+      "name": "Permutations words-1"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-permutations-words-2",
+      "name": "Permutations Words-2"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-words-k-selection-1",
+      "name": "Words - K Selection - 1"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-words-k-length-words-1",
+      "name": "Words-k length words-1"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-words-k-length-words-2",
+      "name": "Words-K Length Words-2"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-words-k-selection-3",
+      "name": "Words - K Selection - 3"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-words-k-selection-4",
+      "name": "Words - K Selection - 4"
+    },
+    {
+      "type": "article",
+      "slug": "levelup-recursion-and-backtracking-words-k-length-words-4",
+      "name": "Words-K Length Words-4"
+    }
+  ]
+}

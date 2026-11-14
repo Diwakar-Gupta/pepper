@@ -1,0 +1,25 @@
+{
+  "name": "Print All Paths With Minimum Jumps",
+  "slug": "levelup-dynamic-programming-print-all-paths-with-minimum-jumps",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number N representing number of elements.\n2. You are given N space separated numbers (ELE : elements).\n3. Your task is to find &amp; print  \n    3.1) &quot;MINIMUM JUMPS&quot; need from 0th step to (n-1)th step.\n    3.2) all configurations of &quot;MINIMUM JUMPS&quot;.\nNOTE: Checkout sample question/solution video inorder to have more insight.",
+  "inputFormat": "A number N (representing &quot;NUMBER OF ELEMENTS&quot;).\nELE1 ,ELE2 ,ELE3 ,ELE4 .... ELEn (N space separated numbers represnting numbers).",
+  "outputFormat": "1) A number representing &quot;MINIMUM JUMPS&quot; need from 0th step to (n-1)th step.\n2) Strings representing configurations of &quot;MINIMUM JUMPS&quot;.\nCheck the sample ouput and question video.",
+  "constraints": "1 &lt;= N &lt;= 100\n1 &lt;= ELE &lt;= 1000",
+  "sampleInput": "10\n3\n3\n0\n2\n1\n2\n4\n2\n0\n0",
+  "sampleOutput": "4\n0 -> 3 -> 5 -> 6 -> 9 .\n0 -> 3 -> 5 -> 7 -> 9 .",
+  "questionVideo": "phgjL7SbsWs",
+  "solutionVideo": "phgjL7SbsWs",
+  "templates": {
+    "java": "import java.util.ArrayDeque;\nimport java.util.Queue;\nimport java.util.Scanner;\n\npublic class Main{\n    public static void Solution(int arr[]){\n        // write your code here\n    }\n    public static void main(String []args){\n        Scanner scn = new Scanner(System.in);\n        int n = scn.nextInt();\n\n        int arr[] = new int[n];\n        for(int i = 0 ; i < n ; i++)\n            arr[i] = scn.nextInt();\n\n        Solution(arr);\n        scn.close();\n    }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/min-jumps-re-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

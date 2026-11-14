@@ -1,0 +1,25 @@
+{
+  "name": "Fifa And Fafa",
+  "slug": "interview-prep-geometry-fifa-and-fafa",
+  "course": "interview-prep",
+  "module": "geometry",
+  "difficulty": "Easy",
+  "statement": "<a href=\"https://codeforces.com/contest/935/problem/C\" target=\"_blank\" rel=\"noopener\">https://codeforces.com/contest/935/problem/C</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "5 3 3 1 1",
+  "sampleOutput": "3.7677669529663684 3.7677669529663684 3.914213562373095",
+  "questionVideo": "IwXdiI9j5OA",
+  "solutionVideo": "IwXdiI9j5OA",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args) throws Exception {\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/geometry/fifa-and-fafa/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

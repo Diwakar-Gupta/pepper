@@ -1,0 +1,26 @@
+{
+  "name": "Sum Of Bit Differences Of All Pairs",
+  "slug": "levelup-bit-manipulation-sum-of-bit-differences-of-all-pairs",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array of n numbers.\n2. You have to find the sum of bit differences in all pairs that can be formed from n numbers.\n3. Bit difference of two numbers is defined as the count of different bits at same positions in binary representations of two numbers.",
+  "inputFormat": "A number n\na1\na2..\nn numbers",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "1 &lt;= n &lt;= 10^9\n1 &lt;= arr[i] &lt;= 10^9",
+  "sampleInput": "3\n1 2 3",
+  "sampleOutput": "8",
+  "questionVideo": "L_fIn5TM3mM",
+  "solutionVideo": "L_fIn5TM3mM",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static long solution(int[] arr){\n    //write your code here\n    return 0;\n  }\n\n  public static void main(String[] args){\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    for(int i = 0 ; i < arr.length; i++){\n      arr[i] = scn.nextInt();\n    }\n    System.out.println(solution(arr));\n  }\n\n}"
+  },
+  "editorial": "<p>In this problem, we are given an array of integers and we need to determine the sum of bit differences in all pairs that can be formed from n numbers.</p><p>For example</p><p>N = 3</p><p>Array [N] = {1, 2, 3}</p><p>1 -&gt; 0 0 1</p><p>2 -&gt; 0 1 0</p><p>3 -&gt; 0 1 1</p><p>For pair (1, 2) difference at position 0 and 1 =&gt; count = 2</p><p>For pair (1, 3) difference at position 1 =&gt; count = 3</p><p>For pair (2, 3) difference at position 0 =&gt; count = 4</p><p>For pair (2, 1) difference at position 0 and 1 =&gt; count = 6</p><p>For pair (3, 1) difference at position 1 =&gt; count = 7</p><p>For pair (3, 2) difference at position 0 =&gt; count = 8</p><p>Hence our result is 8.</p><p>To summarise, we need to consider every possible pair (Ai, Aj) where i != j and for every such pair we need to count the bit differences. The brute force approach would be to generate every pair by two nested loops and for every pair count the set bits for the XOR of the pairs using Kerninghams algorithm. This would result in O(n2) time complexity.</p><p>A way to optimize this code is instead of generating all pairs we can traverse on every bit from 0 to 31 and for every bit, we can count the numbers having bit as a set and as unset. Later on, we can calculate the count by the expression: <b>count0 * count1 * 2.</b></p><p>Let us take the above example again to check the validity of the expression:</p><p>N = 3</p><p>Array [N] = {1, 2, 3}</p><p>1 -&gt; 0 0 1</p><p>2 -&gt; 0 1 0</p><p>3 -&gt; 0 1 1</p><p>For index 0: count0 = 1 and count1 = 2 =&gt; ans += 1*2*2 = 4</p><p>For index 1: count0 = 1 and count1 = 2 =&gt; ans += 1*2*2 = 8</p><p>For index 2: count0 = 3 and count1 = 0 =&gt; ans += 3*0*2 = 8</p><p>Hence we get 8 as our result.</p><p>Hence, our expression is valid.</p><p>The <b>insight </b>behind the expression is that by multiplying count0 and count1 we generate the pairs which have different bit values at this position and a multiplication by 2 is needed to check for the type (2, 1) for (1, 2).</p><p><b>Time Complexity: O(32*n)</b></p><p>The time complexity for the function is linear as we are traversing on every element of the array.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/sum-of-bit-differences-of-all-pairs-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

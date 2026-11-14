@@ -1,11 +1,27 @@
 {
   "name": "Fibonacci-dp",
   "slug": "dynamic-programming-and-greedy-fibonacci-dp",
-  "description": "1. You are given a number n.\n2. You are required to print the nth element of fibonnaci sequence.\n\nNote -> Notice precisely how we have defined the fibonnaci sequence\n0th element -> 0\n1st element -> 1\n2nd element -> 1\n3rd element -> 2\n4th element -> 3\n5th element -> 5\n6th element -> 8\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\nA number representing the nth element of fibonnaci sequence\n```\n\n### Constraints\n```\n0 <= n <= 45\n```\n\n### Sample Input\n```\n10\n```\n\n### Sample Output\n```\n55\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/94dfRrDANRY?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/94dfRrDANRY?rel=0&loop=1&playlist=94dfRrDANRY",
-  "codes": {
-    "java": "import java\n.io.*;\nimport java\n.util.*;\npublic class \nMain{\npublic \nstatic void \nmain(String[\n] args) \nthrows \nException {\n    // write \nyour code \nhere\n }\n}"
-  }
+  "course": "dsa-fundamentals",
+  "module": "dynamic-programming-and-greedy",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n.\n2. You are required to print the nth element of fibonnaci sequence.\n\nNote -&gt; Notice precisely how we have defined the fibonnaci sequence\n0th element -&gt; 0\n1st element -&gt; 1\n2nd element -&gt; 1\n3rd element -&gt; 2\n4th element -&gt; 3\n5th element -&gt; 5\n6th element -&gt; 8",
+  "inputFormat": "A number n",
+  "outputFormat": "A number representing the nth element of fibonnaci sequence",
+  "constraints": "0 &lt;= n &lt;= 45",
+  "sampleInput": "10",
+  "sampleOutput": "55",
+  "questionVideo": "94dfRrDANRY",
+  "solutionVideo": "94dfRrDANRY",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nint fib(int n){\n    // write your code here\n\n    return 0;\n}\n\nint main(){\n    int n;\n    cin>>n;\n    cout<<fib(n)<<endl;\n    return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main{\n\npublic static void main(String[] args) throws Exception {\n    // write your code here\n }\n\n}",
+    "python": "def fun(n, dp):\n#write code here\n\n  return 0\n\n\n\n\n         def main():\n         n = int(input())\n             dp = [] * (n + 1)\n                  print(fun(n, dp));\n\nif __name__ == \"__main__\":\nmain()"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/fibonacci-dp-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

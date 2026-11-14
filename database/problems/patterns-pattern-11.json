@@ -1,11 +1,26 @@
 {
   "name": "Pattern 11",
   "slug": "patterns-pattern-11",
-  "description": "1. You are given a number n.\n2. You've to create a pattern as shown in output format.\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\n\n```\n\n### Constraints\n```\n1 <= n <= 44\n```\n\n### Sample Input\n```\n5\n```\n\n### Sample Output\n```\n1\t\n2\t3\t\n4\t5\t6\t\n7\t8\t9\t10\t\n11\t12\t13\t14\t15\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/1AELjQJeeOw?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/Yqq4GUPvWQM?rel=0&loop=1&playlist=Yqq4GUPvWQM",
-  "codes": {
-    "java": "import java\n.util.*;\npublic class \nMain {\n    public \nstatic void \nmain(String[\n] args) {\n        \nScanner scn \n= new \nScanner\n(System.in);\n        // \nwrite ur \ncode here\n    }\n}"
-  }
+  "course": "dsa-fundamentals",
+  "module": "patterns",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n.\n2. You've to create a pattern as shown in output format.",
+  "inputFormat": "A number n",
+  "outputFormat": "",
+  "constraints": "1 &lt;= n &lt;= 44",
+  "sampleInput": "5",
+  "sampleOutput": "1\t\n2\t3\t\n4\t5\t6\t\n7\t8\t9\t10\t\n11\t12\t13\t14\t15",
+  "questionVideo": "1AELjQJeeOw",
+  "solutionVideo": "Yqq4GUPvWQM",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nint main(int argc, char **argv){\n    int n;\n    cin >> n;\n    \n    //write your code here\n    \n}",
+    "java": "import java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        Scanner scn = new Scanner(System.in);\n\n        // write ur code here\n\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/patterns/design-pattern-11-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

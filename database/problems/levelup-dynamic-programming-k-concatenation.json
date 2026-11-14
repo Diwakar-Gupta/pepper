@@ -1,0 +1,25 @@
+{
+  "name": "K Concatenation",
+  "slug": "levelup-dynamic-programming-k-concatenation",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given an array(arr1) of integers and an integer k.\n2. Another array(arr2) is formed by concatenating K copies of arr1.\n   For example, if arr1 = {1,2} and k = 3, then arr2 = {1,2,1,2,1,2}.\n3. You have to find the maximum subarray sum in arr2.",
+  "inputFormat": "A number N\na1\na2.. N integers\nA number K",
+  "outputFormat": "A number representing maximum sum subarray in arr2.",
+  "constraints": "1 &lt;= N &lt;= 10^5\n1 &lt;= K &lt;= 10^5\n-10^6 &lt;= arr1[i] &lt;= 10^6",
+  "sampleInput": "3\n1\n2\n3\n3",
+  "sampleOutput": "18",
+  "questionVideo": "qnoOu5Usb4o",
+  "solutionVideo": "qnoOu5Usb4o",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static long solution(int[] arr, int k, long sum) {\n    // write your code here\n\n    return 0;\n  }\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    long sum = 0;\n    for (int i = 0; i < arr.length; i++) {\n      arr[i] = scn.nextInt();\n      sum += arr[i];\n    }\n    int k = scn.nextInt();\n    System.out.println(solution(arr, k, sum));\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/k-concatenation-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

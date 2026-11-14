@@ -1,11 +1,27 @@
 {
   "name": "Count Digits In A Number",
   "slug": "getting-started-count-digits-in-a-number",
-  "description": "1. You've to count the number of digits in a number.\n2. Take as input \"n\", the number for which the digits has to be counted.\n3. Print the digits in that number.\n\n### Input Format\n```\n\"n\" where n is any integer.\n```\n\n### Output Format\n```\n\"d\" where d is the number of digits in the number \"n\"\n```\n\n### Constraints\n```\n1 <= n < 10^9\n```\n\n### Sample Input\n```\n65784383\n```\n\n### Sample Output\n```\n8\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/4wtESDtEBp4?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/Ue3MTpyPHoU?rel=0&loop=1&playlist=Ue3MTpyPHoU",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "getting-started",
+  "difficulty": "Easy",
+  "statement": "1. You've to count the number of digits in a number.\n2. Take as input &quot;n&quot;, the number for which the digits has to be counted.\n3. Print the digits in that number.",
+  "inputFormat": "&quot;n&quot; where n is any integer.",
+  "outputFormat": "&quot;d&quot; where d is the number of digits in the number &quot;n&quot;",
+  "constraints": "1 &lt;= n &lt; 10^9",
+  "sampleInput": "65784383",
+  "sampleOutput": "8",
+  "questionVideo": "4wtESDtEBp4",
+  "solutionVideo": "Ue3MTpyPHoU",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nint main(int argc, char **argv){\n    int n;\n    cin >> n;\n    \n    //write your code here\n    \n}",
+    "java": "import java.util.*;\n  \n  public class Main{\n  \n  public static void main(String[] args) {\n    // write your code here  \n   }\n  }"
+  },
+  "editorial": "<p><i>&quot;Number is the ruler of forms and ideas and the cause of gods and demons.&quot;</i></p><p><b><u>Question:</u></b></p><ol><li>You have to count the number of digits in a number.</li><li>Take as input &quot;n&quot;, the number for which the digits has to be counted.</li><li>Print the digits in that number.</li></ol><p><b><u>Input format</u></b></p><p>&quot;n&quot; where n is any integer</p><p><b><u>Output format</u></b></p><p>&quot;d&quot; where d is the number of digits in the number &quot;n&quot;</p><p><b><u>Constraints</u></b></p><p>1 &lt;= n &lt;= 10^9</p><p><u><b>Solution Approach:</b></u></p><p>For finding out the number of digits present in a number, we count the number of times that number is divisible by 10.</p><p>The count would give us the number of digits constituting the given number.</p><p>For example: we are given <b>9543</b></p><p>It is divided 4 times by 10 &amp; contains 4 digits.</p><p><b>&quot;Every division strips out the last digit&quot;</b></p><p><b><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/a4445a9efd4f4647.png\" alt=\"\"></b></p><p>So, we can effectively conclude that by continuously dividing a number and keeping a count of number of division operations until the dividend turns to 0 will give us the number of digits it is composed of in the form of number of division operations executed.</p><p>The algorithm for the same can be illustrated as:</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/6f77741c7b7468d8.png\" alt=\"\"></p><p>The coding implementation for the same will be:</p><pre>import java.util.*;\n                                \tpublic class Main{\n                                \t\tpublic static void main(String[] args)\n                                \t\t{\n                                \t\t\tScanner scn = new Scanner(System.in);\n                                \t\t\tint n = scn.nextInt();\n                                \n                                \n                                \t\t\tint digit = 0;\n                                \n                                \t\t\twhile(n!=0)\n                                \t\t\t{\n                                \t\t\t\tn=n/10;\n                                \t\t\t\tdigit++;\n                                \t\t\t}\n                                \n                                \t\t\tSystem.out.println(digit);\n                                \t\t}\n                                \t}</pre>",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/getting-started/count-digits-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

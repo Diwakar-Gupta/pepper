@@ -1,0 +1,25 @@
+{
+  "name": "Calender",
+  "slug": "interview-prep-text-processing-calender",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Hard",
+  "statement": "https://codeforces.com/problemset/problem/58/D",
+  "inputFormat": "Check Link",
+  "outputFormat": "Check Link",
+  "constraints": "Check Link",
+  "sampleInput": "4\nb\naa\nhg\nc\n.",
+  "sampleOutput": "aa.b\nc.hg",
+  "questionVideo": "3IklzAZNQO0",
+  "solutionVideo": "3IklzAZNQO0",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    // Write Code here\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/textprocessing-calender/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

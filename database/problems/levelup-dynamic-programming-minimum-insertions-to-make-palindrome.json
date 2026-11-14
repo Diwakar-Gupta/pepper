@@ -1,0 +1,25 @@
+{
+  "name": "Minimum Insertions To Make Palindrome",
+  "slug": "levelup-dynamic-programming-minimum-insertions-to-make-palindrome",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given a string(str).\n2. You have to find the minimum number of characters to be inserted to convert it to a palindrome.",
+  "inputFormat": "A string",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= length of s1 &lt;= 10000",
+  "sampleInput": "pepperatcoding",
+  "sampleOutput": "10",
+  "questionVideo": "IP4iqrh0mQk",
+  "solutionVideo": "IP4iqrh0mQk",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\t\n\tpublic static int solution(String str) {\n\t\t// write your code here\n\n\t\treturn 0;\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tString str = scn.next();\n\t\tSystem.out.println(solution(str));\n\t}\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/minimum-insertions-to-make-palindrome-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

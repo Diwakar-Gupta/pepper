@@ -1,0 +1,25 @@
+{
+  "name": "String Rotation",
+  "slug": "interview-prep-text-processing-string-rotation",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Hard",
+  "statement": "Three Programmers at Pepcoding invented an amusing game. First Pepcoder thought out a string S and passed it to the Second Pepcoder. The Second Pepcoder executed X (0&lt; X &lt; string length) cyclic shifts ( a cyclic shift is a transfer of the last character of the string to the beginning of this string) with this string. As a result of these operations, a string T was produced, and the Second Pepcoder passed it to the Third Pepcoder. The task of the Third Pepcoder was to find the number X or make sure that the Second Pepcoder was mistaken because the string T could not be produced from the string S via cyclic shifts.\n\nExpected complexity: O(n)",
+  "inputFormat": "The first line contains string S. The second line contains the string T.",
+  "outputFormat": "If the string T can be produced from the string S via cycle shifts you should output the desired number X, otherwise, you should output &quot;-1&quot;. If multiple answers exist, output maximum X among them.",
+  "constraints": "1 &lt;= S.length() &lt;= 100000",
+  "sampleInput": "pepcodingforlife\nforlifepepcoding",
+  "sampleOutput": "7",
+  "questionVideo": "Z-lZrO6N6Ko",
+  "solutionVideo": "Z-lZrO6N6Ko",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static void main(String[] args) throws NumberFormatException, IOException {\n\t\tBufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n\t\tString S = br.readLine();\n\t\tString T = br.readLine();\n\n\t\tSolution(S, T);\n\t}\n\n\tprivate static void Solution(String s, String t) {\n\n\t}\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/string-rotation-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Aho Corasick - Application",
+  "slug": "interview-prep-text-processing-aho-corasick-application",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Hard",
+  "statement": "Given an integer n indicating the number of patterns.Then follow n lines, each containing non empty strings, representing patterns.\nThen comes a non empty string representing text.\nOutput n lines where ith line contains the positions of all occurances of the ith pattern in text.",
+  "inputFormat": "First line: n\nThen follow n lines, each containing non empty strings, representing patterns.\nNext line consists of a string, text",
+  "outputFormat": "Print n lines each consisting of occurrences of ith pattern's start index , print -1 if ith pattern doesnt occur",
+  "constraints": "|pattern| &lt; 10^5\n|text| &lt; 10^5",
+  "sampleInput": "6\nACC\nATC\nCAT\nGCG\nC\nT\nGCATCG",
+  "sampleOutput": "-1\n2 \n1 \n-1\n1 4 \n3",
+  "questionVideo": "E20_JCLMdoU",
+  "solutionVideo": "E20_JCLMdoU",
+  "templates": {
+    "java": "import java.util.*;\n\n// import jdk.internal.org.jline.terminal.impl.CursorSupport;\n// import jdk.internal.org.jline.utils.Curses;\n\npublic class sol {\n\n  static class node {\n    HashMap<Character, node> child = new HashMap<>();\n    node suffix_link;\n    node output_link;\n    int pattern_ind;\n\n    node() {\n      this.suffix_link = null;\n      this.output_link = null;\n      this.pattern_ind = -1;\n    }\n  }\n\n  public static void build_trie(node root, String[] patterns) {\n    for (int i = 0; i < patterns.length; i++) {\n      node curr = root;\n      for (int j = 0; j < patterns[i].length(); j++) {\n        char c = patterns[i].charAt(j);\n        if (curr.child.containsKey(c)) curr = curr.child.get(c);\n        else {\n          node nn = new node();\n          curr.child.put(c, nn);\n          curr = nn;\n        }\n      }\n      curr.pattern_ind = i;\n    }\n  }\n\n  public static void build_suffix_and_output_links(node root) {       // will use bfs to set links\n    root.suffix_link = root;           //root represents empty string\n    Queue<node> qu = new LinkedList<>();\n\n    for (char rc : root.child.keySet()) {\n      qu.add(root.child.get(rc));\n      root.child.get(rc).suffix_link = root;  // root's children suffixlink will point to root only\n    }\n\n    while (qu.size() > 0) {\n      node curState = qu.peek();\n      qu.remove();\n\n      for (char cc : curState.child.keySet()) {\n        node cchild = curState.child.get(cc); // jiske liye suffix link dhund rhe hein\n        node tmp = curState.suffix_link;    // parent suffix link\n        while (!tmp.child.containsKey(cc) && tmp != root) tmp = tmp.suffix_link;    //finding lps\n\n        if (tmp.child.containsKey(cc)) cchild.suffix_link = tmp.child.get(cc);\n        else cchild.suffix_link = root;\n        qu.add(cchild);\n      }\n\n      // setting output link\n      if (curState.suffix_link.pattern_ind >= 0) curState.output_link = curState.suffix_link;\n      else curState.output_link = curState.suffix_link.output_link;\n    }\n  }\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    // Write your code here\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/aho-app1/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

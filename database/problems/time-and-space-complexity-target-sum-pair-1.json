@@ -1,0 +1,27 @@
+{
+  "name": "Target Sum Pair 1",
+  "slug": "time-and-space-complexity-target-sum-pair-1",
+  "course": "dsa-fundamentals",
+  "module": "time-and-space-complexity",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array(arr) of distinct integers and a target.\n2. You have to print all the pairs having their sum equal to the target.",
+  "inputFormat": "An Integer N \narr1\narr2..\nn integers\nAn integer target",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 10000\n-10^9&lt;= arr[i] &lt;= 10^9",
+  "sampleInput": "12\n9 \n-48 \n100 \n43 \n84 \n74 \n86 \n34 \n-37 \n60 \n-29 \n44\n160",
+  "sampleOutput": "60, 100\n74, 86",
+  "questionVideo": "4t9jv9AkVdE",
+  "solutionVideo": "4t9jv9AkVdE",
+  "templates": {
+    "cpp": "#include <bits/stdc++.h>\nusing namespace std;\nvoid input(vector<int>& arr)\n{\n  for (int i = 0; i < arr.size(); i++)\n  {\n    cin >> arr[i];\n  }\n}\nvoid targetSumPair(vector<int>& arr, int target)\n{\n  //write your code here\n}\nint main()\n{\n  int n, target;\n  cin >> n;\n  vector<int> vec(n, 0);\n  input(vec);\n  cin >> target;\n  targetSumPair(vec, target);\n  return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void targetSumPair(int[] arr, int target){\n    //write your code here\n\n  }\n  public static void main(String[] args) throws Exception {\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    for(int i = 0 ;i < n; i++){\n      arr[i] = scn.nextInt();\n    }\n    int target = scn.nextInt();\n    targetSumPair(arr,target);\n  }\n\n}",
+    "python": "def targetSumPair(arr,target):\n    #write your code here\n\n\nn=int(input());\narr=[];\nfor i in range(0,n):\n    val=int(input());\n    arr.append(val);\ntarget=int(input());\ntargetSumPair(arr,target);"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/time-and-space-complexity/target-sum-pair-1-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

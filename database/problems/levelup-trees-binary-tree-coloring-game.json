@@ -1,0 +1,18 @@
+{
+  "name": "Binary Tree Coloring Game",
+  "slug": "levelup-trees-binary-tree-coloring-game",
+  "course": "levelup",
+  "module": "trees",
+  "difficulty": "Medium",
+  "statement": "https://leetcode.com/problems/binary-tree-coloring-game/",
+  "inputFormat": "Check the link",
+  "outputFormat": "Check the link",
+  "constraints": "Check the link",
+  "questionVideo": "_DG3B9Gjt1E",
+  "solutionVideo": "_DG3B9Gjt1E",
+  "templates": {
+    "java": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode() {}\n *     TreeNode(int val) { this.val = val; }\n *     TreeNode(int val, TreeNode left, TreeNode right) {\n *         this.val = val;\n *         this.left = left;\n *         this.right = right;\n *     }\n * }\n */\nclass Main {\n  public boolean btreeGameWinningMove(TreeNode root, int n, int x) {\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/binary-tree-coloring-official/ojquestion",
+  "testCases": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Magnets",
+  "slug": "levelup-recursion-and-backtracking-magnets",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Hard",
+  "statement": "1. You are given n number of domino shaped bipolar magnets.\n2. You have to place these magnets in M*N following the conditions.\n3. Conditions are -\n   a. Each box of 1*2 or 2*1 can contain a magnet or can be empty.\n   b. Empty box can be represented by X's and magnets are represented by + and \n    - sign.\n   c. Digits along left and top side of the board represents the number of + in \n    corresponding rows and columns.\n   d. Digits along right and bottom of the board represents the number of - in \n    corresponding rows and columns.\n    e. -1 denotes that the corresponding row and column can have any number of \n    +  and - signs.\n    f. No two adjacent cell can have the same sign.\n\nNote -&gt; Check out the question video and write the recursive code as it is intended without changing signature. The judge can't force you but intends you to teach a concept.",
+  "inputFormat": "A number M\nA number N\nM*N characters containing only 'L', 'R', 'T' and 'B'.\n(For 1*2 box 'L' represents left end and 'R' represents the right end)\n(For 2*1 box 'T' represents top end and 'B' represents the right end)\nN integers representing count of '+' along the top edge.\nM integers representing count of '+' along the left edge.\nM integers representing count of '-' along the right edge.\nN integers representing count of '-' along the bottom edge.",
+  "outputFormat": "Check the sample output and question video",
+  "constraints": "2 &lt;= M &lt;= 10\n2 &lt;= N &lt;= 10\nBoth M and N are not odd.",
+  "sampleInput": "5 6\nLRLRTT\nLRLRBB\nTTTTLR\nBBBBTT\nLRLRBB\n1 -1 -1 2 1 -1\n2 3 -1 -1 -1\n-1 -1 -1 1 -1\n2 -1 -1 2 -1 3",
+  "sampleOutput": "+ - + - X - \n- + - + X + \nX X + - + - \nX X - + X + \n- + X X X -",
+  "questionVideo": "vUq70CeNKT4",
+  "solutionVideo": "vUq70CeNKT4",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static boolean solution(char[][] arr, int[] top, int[] left, int[] right, int[] bottom, char[][] ans,\n\t\t\tint row, int col) {\n\n\t\t\t\t//write your code here\n\n\t\treturn false;\n\t}\n\n\tpublic static void print(char[][] arr) {\n\t\tfor (int i = 0; i < arr.length; i++) {\n\t\t\tfor (int j = 0; j < arr[0].length; j++) {\n\t\t\t\tSystem.out.print(arr[i][j] + \" \");\n\t\t\t}\n\t\t\tSystem.out.println();\n\t\t}\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint m = scn.nextInt();\n\t\tint n = scn.nextInt();\n\t\tchar[][] arr = new char[m][n];\n\t\tfor (int i = 0; i < arr.length; i++) {\n\t\t\tString str = scn.next();\n\t\t\tarr[i] = str.toCharArray();\n\t\t}\n\t\tint[] top = new int[n];\n\t\tfor (int i = 0; i < n; i++) {\n\t\t\ttop[i] = scn.nextInt();\n\t\t}\n\t\tint[] left = new int[m];\n\t\tfor (int i = 0; i < m; i++) {\n\t\t\tleft[i] = scn.nextInt();\n\t\t}\n\t\tint[] right = new int[m];\n\t\tfor (int i = 0; i < m; i++) {\n\t\t\tright[i] = scn.nextInt();\n\t\t}\n\t\tint[] bottom = new int[n];\n\t\tfor (int i = 0; i < n; i++) {\n\t\t\tbottom[i] = scn.nextInt();\n\t\t}\n\n\t\t//write your code here\n\t}\n\n\t\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/magnets-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

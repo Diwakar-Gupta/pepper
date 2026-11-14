@@ -1,0 +1,25 @@
+{
+  "name": "Searching An Element In A Sorted Array",
+  "slug": "interview-prep-ternary-search-searching-an-element-in-a-sorted-array",
+  "course": "interview-prep",
+  "module": "ternary-search",
+  "difficulty": "Easy",
+  "statement": "Given a sorted array of size N and an integer, K. Check if K is present in the array or not using ternary search.\nTernary Search - It is a divide and conquers algorithm that can be used to find an element in an array. It is similar to binary search where we divide the array into two parts but in this algorithm, we divide the given array into three parts and determine which has the key (searched element).",
+  "inputFormat": "The first line contains two integers N and K denoting the size of the array and the element to be searched.\nThe second line contains n space separated integers a[1],a[2]...a[n].",
+  "outputFormat": "If the element is present in the array then print &quot;Found&quot; else print &quot;Not Found&quot;",
+  "constraints": "1 &lt;= N &lt;= 10^6\n1 &lt;= K &lt;= 10^6\n1 &lt;= arr[i] &lt;= 10^6",
+  "sampleInput": "5 2\n1 2 3 4 5",
+  "sampleOutput": "Found",
+  "questionVideo": "kch3MpnylB8",
+  "solutionVideo": "kch3MpnylB8",
+  "templates": {
+    "java": "import java.util.Scanner;\n\npublic class Main {\n  static void ternarySearch(int arr[], int k)\n  {\n    //Code Here\n  }\n\n\n  //================================//\n  public static void main(String[] args) {\n    Scanner sc = new Scanner(System.in);\n\n    int n = sc.nextInt();\n    int k = sc.nextInt();\n\n    int[] arr = new int[n];\n    for (int i = 0; i < n; i++) {\n      arr[i] = sc.nextInt();\n    }\n\n    ternarySearch(arr, k);\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/ternary-search/searching-an-element-in-a-sorted-array-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

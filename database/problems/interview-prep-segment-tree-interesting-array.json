@@ -1,0 +1,25 @@
+{
+  "name": "Interesting Array",
+  "slug": "interview-prep-segment-tree-interesting-array",
+  "course": "interview-prep",
+  "module": "segment-tree",
+  "difficulty": "Hard",
+  "statement": "<a href=\"https://codeforces.com/contest/482/problem/B\" target=\"_blank\" rel=\"noopener\">https://codeforces.com/contest/482/problem/B</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "3 1\n1 3 3",
+  "sampleOutput": "YES\n3 3 3",
+  "questionVideo": "BC8Isulsk6A",
+  "solutionVideo": "BC8Isulsk6A",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n  static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));\n  static PrintWriter out = new PrintWriter(System.out);\n  /*\n  use in for reading input\n  use out for printing output\n  */\n\n  public static void main(String[] args) throws IOException {\n\n    // write your code here.\n\n\n\n    out.close();\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/segment-tree/interesting-array/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Longest Common Subsequence",
+  "slug": "levelup-dynamic-programming-longest-common-subsequence",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given a string str1.\n2. You are given another string str2.\n3. You are required to print the length of longest common subsequence of two strings.",
+  "inputFormat": "A string str1\nA string str2",
+  "outputFormat": "A number representing the length of longest common subsequence of two strings.",
+  "constraints": "0 &lt;= str1.length &lt;= 10\n0 &lt;= str2.length &lt;= 10",
+  "sampleInput": "abcd\naebd",
+  "sampleOutput": "3",
+  "questionVideo": "0Ql40Llp09E",
+  "solutionVideo": "0Ql40Llp09E",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n    }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/lcs-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

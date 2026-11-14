@@ -1,0 +1,25 @@
+{
+  "name": "Optimal Strategy For A Game",
+  "slug": "levelup-dynamic-programming-optimal-strategy-for-a-game",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array(arr) of length N, where N is an even number.\n2. The elements of the array represent N coins of values arr1,arr1...arrN.\n3. You are playing a game against an opponent in an alternative way, where the opponent is equally smart.\n4. In this game, a player selects either the first or the last coin from the row in every turn, removes it from the row permanently, and receives the value of the coin.\n5. You have to find the maximum possible amount of money you can win if you make the first move.",
+  "inputFormat": "A number N\narr1\narr2...N numbers",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "2 &lt;= N &lt;= 1000\n1 &lt;= arr[i] &lt;= 10^6",
+  "sampleInput": "4\n5\n3\n7\n10",
+  "sampleOutput": "15",
+  "questionVideo": "ww4V7vRIzSk",
+  "solutionVideo": "ww4V7vRIzSk",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static void optimalStrategy(int[] arr) {\n\t\t//write your code here\n\t\t\n\t}\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tint a[] = new int[n];\n\t\tfor (int i = 0; i < a.length; i++) {\n\t\t\ta[i] = scn.nextInt();\n\t\t}\n\t\toptimalStrategy(a);\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/optimal-strategy-for-a-game-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

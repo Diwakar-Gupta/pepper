@@ -1,0 +1,27 @@
+{
+  "name": "Count Sort",
+  "slug": "time-and-space-complexity-count-sort",
+  "course": "dsa-fundamentals",
+  "module": "time-and-space-complexity",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array(arr) of integers.\n2. You have to sort the given array in increasing order using count sort.",
+  "inputFormat": "An Integer n \narr1\narr2..\nn integers",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "1 &lt;= N &lt;= 10000\n-10^8 &lt;= arr[i] &lt;= 10^8",
+  "sampleInput": "5\n7 \n-2 \n4 \n1 \n3",
+  "sampleOutput": "-2\n1\n3\n4\n7",
+  "questionVideo": "p-OyKUgIrx4",
+  "solutionVideo": "p-OyKUgIrx4",
+  "templates": {
+    "cpp": "#include<iostream>\n#include<vector>\n#include<climits>\n#include<algorithm>\n\nusing namespace std;\n\nvoid countsort(vector<int>& arr, int max, int min) {\n  // write your code here\n}\n\nvoid Display(vector<int>& arr) {\n  for (int ele : arr) {\n    cout << ele << endl;\n  }\n}\n\n\nint main() {\n  int n;\n  cin >> n;\n  vector<int> arr(n, 0);\n\n  for (int i = 0; i < n; i++) {\n    cin >> arr[i];\n  }\n\n  int maxi = (int) -1e9;\n  int mini = (int)1e9;\n\n  for (int i = 0; i < n; i++) {\n    mini = min(mini, arr[i]);\n    maxi = max(maxi, arr[i]);\n  }\n\n  countsort(arr, maxi, mini);\n  Display(arr);\n\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void countSort(int[] arr, int min, int max) {\n   //write your code here\n   \n  }\n\n  public static void print(int[] arr) {\n    for (int i = 0; i < arr.length; i++) {\n      System.out.println(arr[i]);\n    }\n  }\n\n  public static void main(String[] args) throws Exception {\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    int max = Integer.MIN_VALUE;\n    int min = Integer.MAX_VALUE;\n    for (int i = 0; i < n; i++) {\n      arr[i] = scn.nextInt();\n      max = Math.max(max, arr[i]);\n      min = Math.min(min, arr[i]);\n    }\n    countSort(arr,min,max);\n    print(arr);\n  }\n\n}",
+    "python": "import math\n\ndef countsort(arr, max, min):\n#write your code here\n\n\n\n  def Display(arr):\n  for i in range(0, len(arr)) :\n    print(arr[i]);\n\n\ndef main():\n  n = int(input());\narr = []\n      for i in range(0, n) :\n          ele = int(input());\narr.append(ele);\n\nmaxVal = -math.inf;\nminVal = math.inf;\n\nfor i in range(0, n) :\n    minVal = min(minVal, arr[i]);\nmaxVal = max(maxVal, arr[i]);\n\ncountsort(arr, maxVal, minVal);\nDisplay(arr);\n\n\nif __name__ == \"__main__\":\nmain()"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/time-and-space-complexity/count-sort-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

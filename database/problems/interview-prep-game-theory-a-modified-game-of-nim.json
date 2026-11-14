@@ -1,0 +1,25 @@
+{
+  "name": "A Modified Game Of Nim",
+  "slug": "interview-prep-game-theory-a-modified-game-of-nim",
+  "course": "interview-prep",
+  "module": "game-theory",
+  "difficulty": "Medium",
+  "statement": "Given an array of integers, two players Alice and Bob are playing a game where Alice can remove any  element from the array that are multiples of 3. Similarly, Bob can remove multiples of 5. The player who can't remove any element loses the game. The task is to find the winner of the game if Alice starts first and both play optimally.",
+  "inputFormat": "The first line contains integer n, no. of integers.\nsecond line contains n integers arr[1],arr[2]...arr[n].",
+  "outputFormat": "Print the winner (ALICE or BOB).",
+  "constraints": "1&lt;= n &lt;= 10^5\n1&lt;= arr[i] &lt;= 10^8",
+  "sampleInput": "5\n15 6 9 10 20",
+  "sampleOutput": "ALICE",
+  "questionVideo": "PPX8PNVjb24",
+  "solutionVideo": "PPX8PNVjb24",
+  "templates": {
+    "java": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\n\npublic class Main {\n  static String getWinner(int arr[], int n) {\n\n  }\n\n  public static void main(String[] args) throws NumberFormatException, IOException {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n    int n = Integer.parseInt(br.readLine());\n    int[] arr = new int[n];\n    String[] st = br.readLine().split(\" \");\n\n    for (int i = 0; i < n; i++) {\n      arr[i] = Integer.parseInt(st[i]);\n    }\n\n    System.out.println(getWinner(arr, n));\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/game-theory/a-modified-game-of-nim-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

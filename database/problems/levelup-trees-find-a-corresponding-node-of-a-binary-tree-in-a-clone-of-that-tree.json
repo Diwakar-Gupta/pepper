@@ -1,0 +1,18 @@
+{
+  "name": "Find A Corresponding Node Of A Binary Tree In A Clone Of That Tree",
+  "slug": "levelup-trees-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree",
+  "course": "levelup",
+  "module": "trees",
+  "difficulty": "Easy",
+  "statement": "https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/",
+  "inputFormat": "CHECK THE LINK",
+  "outputFormat": "CHECK THE LINK",
+  "constraints": "CHECK THE LINK",
+  "questionVideo": "SmLFW3C61XY",
+  "solutionVideo": "SmLFW3C61XY",
+  "templates": {
+    "java": "import java.util.*;\nclass Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/ojquestion",
+  "testCases": []
+}

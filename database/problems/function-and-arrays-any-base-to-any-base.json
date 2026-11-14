@@ -1,11 +1,28 @@
 {
   "name": "Any Base To Any Base",
   "slug": "function-and-arrays-any-base-to-any-base",
-  "description": "1. You are given a number n.\n2. You are given a base b1. n is a number on base b.\n3. You are given another base b2.\n4. You are required to convert the number n of base b1 to a number in base b2.\n\n### Input Format\n```\nA number n\nA base b1\nA base b2\n```\n\n### Output Format\n```\nA number of base b2 equal in value to n of base b1.\n```\n\n### Constraints\n```\n0 <= n <= 512\n2 <= b1 <= 10\n2 <= b2 <= 10\n```\n\n### Sample Input\n```\n111001\n2\n3\n```\n\n### Sample Output\n```\n2010\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/2-d3DcBFzug?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/LJ697zHLL0M?rel=0&loop=1&playlist=LJ697zHLL0M",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "function-and-arrays",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n.\n2. You are given a base b1. n is a number on base b.\n3. You are given another base b2.\n4. You are required to convert the number n of base b1 to a number in base b2.",
+  "inputFormat": "A number n\nA base b1\nA base b2",
+  "outputFormat": "A number of base b2 equal in value to n of base b1.",
+  "constraints": "0 &lt;= n &lt;= 512\n2 &lt;= b1 &lt;= 10\n2 &lt;= b2 &lt;= 10",
+  "sampleInput": "111001\n2\n3",
+  "sampleOutput": "2010",
+  "questionVideo": "2-d3DcBFzug",
+  "solutionVideo": "LJ697zHLL0M",
+  "templates": {
+    "cpp": "#include<iostream>\nusing namespace std;\npublic static int AnyToAny(int n, int b1, int b2) {\n  //write your code here\n}\nint main() {\n  int n;\n  int b1;\n  int b2;\n  cin >> n;\n  cin >> b1;\n  cin >> b2;\n  int res = AnyToAny(n, b1, b2);\n  cout << res << endl;\n}",
+    "java": "import java.util.*;\n  \n  public class Main{\n  \n  public static void main(String[] args) {\n      Scanner scn = new Scanner(System.in);\n      int n = scn.nextInt();\n      int sourceBase = scn.nextInt();\n     int  destBase= scn.nextInt();\n   }   \n  }",
+    "python": "n = int(input())\n    d1 = int(input())\n         d2 = int(input())\n\n              def AnyToAny(n, d1, d2):\n# Write your code here\n              if __name__ == \"__main__\":\n                res = AnyToAny(n, d1, d2)\n                        print(res)"
+  },
+  "editorial": "<p><i>&quot;We are not converted only once in our lives, but many times and this endless series of conversions and inner revolutions leads to our transformation.&quot;</i></p><p><b><u>Question:</u></b></p><p>1. You are given a number n.</p><p>2. You are given a base b1. n is a number on base b.</p><p>3. You are given another base b2.</p><p>4. You are required to convert the number n of base b1 to a number in base b2.</p><p><b><u>Input Format:</u></b></p><p>A number n</p><p>A base b1</p><p>A base b2</p><p><b><u>Output Format:</u></b></p><p>A number of base b2 equal in value to n of base b1</p><p><b><u>Constraints:</u></b></p><p>0 &lt;= n &lt;= 512</p><p>2 &lt;= b1 &lt;= 10</p><p>2 &lt;= b2 &lt;= 10</p><p><b><u>Sample Input:</u></b></p><p>111001</p><p>2</p><p>3</p><p><b><u>Sample Output:</u></b></p><p>2010</p><p><b><u>Solution Approach:</u></b></p><p>We are given a number &quot;n&quot; and two base numbers, one source base and one database. source base is the base of 'n'. The database is the base we want to convert or find the equivalent of 'n'. Now, we have already discussed the conversion of a number of any base to decimal; and also, the conversion of a decimal number to any base. So, we can simply re-use the already written code, to solve our problem. This will help us implement the concept of DRY-Do Not Repeat Yourself, and implement modularity in our program. We have already discussed the features of both DRY and modularity.</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/b6f2f4cc5ce17a9e.png\" alt=\"\"></p><p><b><u>Programming Implementation:</u></b> </p><pre>import java.util.*;\n                                public class Main{\n                                public static void main(String[] args) {\n                                Scanner scn = new Scanner(System.in);\n                                int n = scn.nextInt();\n                                int sourceBase = scn.nextInt();\n                                int destBase= scn.nextInt();\n                                int value = getValue(n,sourceBase, destBase);\n                                System.out.println(value);\n                                }\n                                public static int getValue(int n, int src, int dest)\n                                {\n                                int decimalValue = anyBaseToDecimal(n, src); //Converting to decimal\n                                int finalBaseValue = decimalToAnyBase(decimalValue, dest); // Converting to destination base\n                                return finalBaseValue;\n                                }\n                                // Function for converting number from decimal to base-b number system\n                                public static int decimalToAnyBase(int n, int b){\n                                int p =1; //Power variable - increases places\n                                int rv = 0; //Return value - stores answer\n                                while(n &gt; 0)\n                                {\n                                int dig = n % b; //Digit-stores remainder at each step\n                                rv += (dig*p); //placing digit at right place\n                                p*= 10; // increasing power; to the next place\n                                n = n / b; // dividing the number by base number\n                                }\n                                return rv; //Final converted number\n                                }\n                                // Function for converting number from base-b number system to decimal\n                                public static int anyBaseToDecimal(int n, int b){\n                                int rv = 0;\n                                int p =0;\n                                while(n&gt;0)\n                                {\n                                int dig = n % 10; //storing rightmost digit as remainder\n                                rv += (dig*Math.pow(b,p)); // we use Math.pow(base,power) to calculate multiplier\n                                p++; // incrementing power\n                                n /= 10; // removing rightmost digit\n                                }\n                                return rv;\n                                }\n                                }</pre><p><b><u>Output:</u></b></p><p>For input case: 111001</p><p>2</p><p>3</p>",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/any-base-to-any-base-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

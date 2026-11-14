@@ -1,0 +1,31 @@
+5
+push 10
+display
+push 20
+display
+push 30
+display
+push 40
+display
+push 50
+display
+push 60
+display
+top
+pop
+display
+top
+pop
+display
+top
+pop
+display
+top
+pop
+display
+top
+pop
+display
+top
+pop
+quit

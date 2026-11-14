@@ -1,0 +1,25 @@
+{
+  "name": "Permutations - Words - 1",
+  "slug": "levelup-recursion-and-backtracking-permutations-words-1",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Easy",
+  "statement": "1. You are given a word (may have one character repeat more than once).\n2. You are required to generate and print all arrangements of these characters. \n\nNote -&gt; Use the code snippet and follow the algorithm discussed in question video. The judge can't \n               force you but the intention is to teach a concept. Play in spirit of the question.",
+  "inputFormat": "Input is managed for you",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "0 &lt; str.length() &lt;= 4",
+  "sampleInput": "aabb",
+  "sampleOutput": "aabb\nabab\nabba\nbaab\nbaba\nbbaa",
+  "questionVideo": "4-Makzrj5qM",
+  "solutionVideo": "4-Makzrj5qM",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void generateWords(int cs, int ts, HashMap<Character, Integer> fmap, String asf) {\n    // write your code here\n  }\n\n  public static void main(String[] args) throws Exception {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n    String str = br.readLine();\n\n    HashMap<Character, Integer> fmap = new HashMap<>();\n    for(char ch: str.toCharArray()){\n      if(fmap.containsKey(ch)){\n        fmap.put(ch, fmap.get(ch) + 1);\n      } else {\n        fmap.put(ch, 1);\n      }\n    }\n\n    generateWords(1, str.length(), fmap, \"\");\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/permutations-words-1-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

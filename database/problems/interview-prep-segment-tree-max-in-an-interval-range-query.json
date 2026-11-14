@@ -1,0 +1,25 @@
+{
+  "name": "Max In An Interval - Range Query",
+  "slug": "interview-prep-segment-tree-max-in-an-interval-range-query",
+  "course": "interview-prep",
+  "module": "segment-tree",
+  "difficulty": "Medium",
+  "statement": "You are given an array(of integers) of length n.\nYou are required to answer q queries.\nIn each query u are given an interval l, r both inclusive and u have to find the maximum element in this interval.\n\nTo do the above task u have to create a datastructure as follows :-\n\nImplement the SegmentTree class:\n1. SegmentTree(int arr[]): Initializes the SegmentTree object with an array,\n2. int query(int l, int r): return max in interval [l, r].\n\nCan u do it in O(log(n)) or better Time Complexity.",
+  "inputFormat": "A number n\nn1\nn2\n.. n number of elements\nA number q\nfollowing q lines contains queries of format\nl r",
+  "outputFormat": "for each query print a single integer in seperate line",
+  "constraints": "1. 1 &lt;= n, q &lt;= 10^5\n2. 0 &lt;= l &lt;= r &lt; n\n3. 10^9 &lt;= arr[i] &lt;= 10^9\n4. all input and output will fit in 32bit signed integer",
+  "sampleInput": "8\n8\n7\n4\n2\n5\n3\n1\n10\n4\n0 7\n0 3\n2 7\n1 6",
+  "sampleOutput": "10\n8\n10\n7",
+  "questionVideo": "sSwR9h-c4Wo",
+  "solutionVideo": "sSwR9h-c4Wo",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static class SegmentTree {\n\n    SegmentTree(int arr[]) {\n\n    }\n\n    int query(int l, int r) {\n\n    }\n\n  }\n\n  public static void main(String[] args) throws Exception {\n    BufferedReader read = new BufferedReader(new InputStreamReader(System.in));\n\n    int n = Integer.parseInt(read.readLine());\n    int arr[] = new int[n];\n\n    for (int i = 0; i < n; i++) {\n      arr[i] = Integer.parseInt(read.readLine());\n    }\n\n    SegmentTree obj = new SegmentTree(arr);\n\n    int q = Integer.parseInt(read.readLine());\n\n    StringBuilder out = new StringBuilder();\n    while (q-- > 0) {\n      String[]inp = read.readLine().split(\" \");\n\n      int l = Integer.parseInt(inp[0]);\n      int r = Integer.parseInt(inp[1]);\n\n      int ans = obj.query(l, r);\n      out.append(ans);\n      out.append(\"\\n\");\n    }\n\n    System.out.println(out);\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/segment-tree/max-in-an-interval-range-query-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

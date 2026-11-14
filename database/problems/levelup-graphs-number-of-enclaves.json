@@ -1,0 +1,25 @@
+{
+  "name": "Number Of Enclaves",
+  "slug": "levelup-graphs-number-of-enclaves",
+  "course": "levelup",
+  "module": "graphs",
+  "difficulty": "Medium",
+  "statement": "You are given an m * n binary matrix grid, where 0 represents a sea cell and 1 represents a land cell. A move consists of walking from one land cell to another adjacent (4-directionally) land cell or walking off the boundary of the grid.\nReturn the number of land cells in grid for which we cannot walk off the boundary of the grid in any number of moves.",
+  "inputFormat": "First line contains two integers m and n.\nEach of next m line contains n integers 0 or 1.",
+  "outputFormat": "Print number of enclaves",
+  "constraints": "1 &lt;= m,n &lt;= 1000",
+  "sampleInput": "4 4\n0 0 0 0\n1 0 1 0\n0 1 1 0\n0 0 0 0",
+  "sampleOutput": "3",
+  "questionVideo": "TXyKxUmj5XU",
+  "solutionVideo": "TXyKxUmj5XU",
+  "templates": {
+    "java": "import java.util.*;\nimport java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.lang.*;\n\nclass Main {\n\n  public static void main(String[] args) throws NumberFormatException, IOException {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n    String[] st = br.readLine().split(\" \");\n    int m = Integer.parseInt(st[0]);\n    int n = Integer.parseInt(st[1]);\n\n    int[][] arr = new int[m][n];\n\n    for (int i = 0; i < m; i++) {\n      st = br.readLine().split(\" \");\n      for (int j = 0; j < n; j++) {\n        arr[i][j] = Integer.parseInt(st[j]);\n      }\n    }\n\n    System.out.println(numEnclaves(arr));\n\n  }\n\n  public static int numEnclaves(int[][] arr) {\n\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/graphs/number-of-enclaves-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

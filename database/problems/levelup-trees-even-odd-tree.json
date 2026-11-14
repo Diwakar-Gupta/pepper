@@ -1,0 +1,25 @@
+{
+  "name": "Even Odd Tree",
+  "slug": "levelup-trees-even-odd-tree",
+  "course": "levelup",
+  "module": "trees",
+  "difficulty": "Easy",
+  "statement": "<a href=\"https://leetcode.com/problems/even-odd-tree/\" target=\"_blank\" rel=\"noopener\">https://leetcode.com/problems/even-odd-tree/</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "1",
+  "sampleOutput": "1",
+  "questionVideo": "4cpcd-dStWI",
+  "solutionVideo": "4cpcd-dStWI",
+  "templates": {
+    "java": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode() {}\n *     TreeNode(int val) { this.val = val; }\n *     TreeNode(int val, TreeNode left, TreeNode right) {\n *         this.val = val;\n *         this.left = left;\n *         this.right = right;\n *     }\n * }\n */\nclass Solution {\n  public boolean isEvenOddTree(TreeNode root) {\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/even-odd-tree/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

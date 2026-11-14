@@ -1,0 +1,25 @@
+{
+  "name": "Pairs With Equal Sum",
+  "slug": "levelup-hashmap-and-heaps-pairs-with-equal-sum",
+  "course": "levelup",
+  "module": "hashmap-and-heaps",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array(arr) of distinct integers.\n2. You have to find if there are two pairs(A, B) and (C, D) present in the given array which satisfies the condition A+B = C+D.",
+  "inputFormat": "A number N\narr1\narr2.. N numbers",
+  "outputFormat": "true/false",
+  "constraints": "1 &lt;= N &lt;= 10^3\n-10^9 &lt;= arr[i] &lt;= 10^9",
+  "sampleInput": "8\n1 2 998 72 87576 21 45 -1",
+  "sampleOutput": "false",
+  "questionVideo": "11U8TjquNjY",
+  "solutionVideo": "11U8TjquNjY",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n\n    public static boolean solution(int[] arr) {\n        // write your code here\n\n        return false;\n    }\n    \n    public static void main(String[] args) {\n        Scanner scn = new Scanner(System.in);\n        int n = scn.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++) {\n            arr[i] = scn.nextInt();\n        }\n        System.out.println(solution(arr));\n    }\n\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/hashmap-and-heaps/pairs-with-equal-sum-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

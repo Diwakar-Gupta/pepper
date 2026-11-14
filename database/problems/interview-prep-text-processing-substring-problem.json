@@ -1,0 +1,25 @@
+{
+  "name": "Substring Problem",
+  "slug": "interview-prep-text-processing-substring-problem",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Hard",
+  "statement": "https://www.spoj.com/problems/SUB_PROB/",
+  "inputFormat": "Check Link",
+  "outputFormat": "Check Link",
+  "constraints": "Check Link",
+  "sampleInput": "abghABCDE\n2\nabAB\nab",
+  "sampleOutput": "N\nY",
+  "questionVideo": "P887FsZsNFY",
+  "solutionVideo": "P887FsZsNFY",
+  "templates": {
+    "java": "import java.util.*;\n\n// import jdk.internal.org.jline.terminal.impl.CursorSupport;\n// import jdk.internal.org.jline.utils.Curses;\n\nclass jsol {\n\n  static class node {\n    HashMap<Character, node> child = new HashMap<>();\n    node suffix_link;\n    node output_link;\n    int pattern_ind;\n\n    node() {\n      this.suffix_link = null;\n      this.output_link = null;\n      this.pattern_ind = -1;\n    }\n  }\n\n  public static void build_trie(node root, String[] patterns) {\n    for (int i = 0; i < patterns.length; i++) {\n      node curr = root;\n      for (int j = 0; j < patterns[i].length(); j++) {\n        char c = patterns[i].charAt(j);\n        if (curr.child.containsKey(c)) curr = curr.child.get(c);\n        else {\n          node nn = new node();\n          curr.child.put(c, nn);\n          curr = nn;\n        }\n      }\n      curr.pattern_ind = i;\n    }\n  }\n\n  public static void build_suffix_and_output_links(node root) {       // will use bfs to set links\n    root.suffix_link = root;           //root represents empty string\n    Queue<node> qu = new LinkedList<>();\n\n    for (char rc : root.child.keySet()) {\n      qu.add(root.child.get(rc));\n      root.child.get(rc).suffix_link = root;  // root's children suffixlink will point to root only\n    }\n\n    while (qu.size() > 0) {\n      node curState = qu.peek();\n      qu.remove();\n\n      for (char cc : curState.child.keySet()) {\n        node cchild = curState.child.get(cc); // jiske liye suffix link dhund rhe hein\n        node tmp = curState.suffix_link;    // parent suffix link\n        while (!tmp.child.containsKey(cc) && tmp != root) tmp = tmp.suffix_link;    //finding lps\n\n        if (tmp.child.containsKey(cc)) cchild.suffix_link = tmp.child.get(cc);\n        else cchild.suffix_link = root;\n        qu.add(cchild);\n      }\n\n      // setting output link\n      if (curState.suffix_link.pattern_ind >= 0) curState.output_link = curState.suffix_link;\n      else curState.output_link = curState.suffix_link.output_link;\n    }\n  }\n\n  public static void search(node root, String text, ArrayList<ArrayList<Integer>> searchResults) {\n    node parent = root;\n\n    for (int i = 0; i < text.length(); i++) {\n      char c = text.charAt(i);\n      if (parent.child.containsKey(c)) {      // if parent has a child node in trie, travel it\n        parent = parent.child.get(c);\n        if (parent.pattern_ind >= 0) {\n          searchResults.get(parent.pattern_ind).add(i); // reached a output node\n        }\n\n        node myOutput = parent.output_link;\n        while (myOutput != null) {\n          searchResults.get(myOutput.pattern_ind).add(i);\n          myOutput = myOutput.output_link;\n        }\n      } else {\n        while (parent != root && !parent.child.containsKey(c)) parent = parent.suffix_link;\n        if (parent.child.containsKey(c)) i--;           // hold i and start traversing in next iteration\n      }\n    }\n  }\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n\n\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/aho-sub-prob/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

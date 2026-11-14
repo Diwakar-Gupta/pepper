@@ -1,0 +1,25 @@
+{
+  "name": "Square Root Decomposition",
+  "slug": "interview-prep-range-queries-square-root-decomposition",
+  "course": "interview-prep",
+  "module": "range-queries",
+  "difficulty": "Hard",
+  "statement": "You are given a list of N numbers and Q queries.Each query is specified by two numbers i and j.The answer to\neach query is the minimum number between the range between i and j(including i and j).The query are specified using 0 based indexing.\n\nExpected complexity : O(Q * logN)",
+  "inputFormat": "The first line contains N. The next line holds N numbers. Following the list is a number Q. The next Q lines each contain two numbers i and j which specify a query you must answer.",
+  "outputFormat": "For each query, output the Minimum in the range in a line.",
+  "constraints": "1&lt;= N &lt;= 10^6\n1 &lt;= Q &lt;= 10^5\n0 &lt;= i,j &lt;= N-1",
+  "sampleInput": "4\n2 4 3 1\n4\n1 2\n1 3 \n2 2\n0 1",
+  "sampleOutput": "3\n1\n3\n2",
+  "questionVideo": "K54R2D9bilQ",
+  "solutionVideo": "K54R2D9bilQ",
+  "templates": {
+    "java": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\nimport java.util.Arrays;\n\npublic class Main {\n\n\tpublic static void main(String[] args) throws NumberFormatException, IOException {\n\t\t\n\t}\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/range-queries/square-root-decomposition-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

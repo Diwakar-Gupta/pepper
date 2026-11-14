@@ -1,0 +1,25 @@
+{
+  "name": "Maximum Sum Increasing Subsequence",
+  "slug": "levelup-dynamic-programming-maximum-sum-increasing-subsequence",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n, representing the number of elements.\n2. You are given n numbers, representing the contents of array of length n.\n3. You are required to print the sum of elements of the increasing subsequence with maximum sum for the array.",
+  "inputFormat": "A number n\n.. n more elements",
+  "outputFormat": "A number representing the sum of elements of the increasing subsequence with maximum sum for the array.",
+  "constraints": "0 &lt;= n &lt;= 20\n0 &lt;= n1, n2, .. &lt;= 100",
+  "sampleInput": "10\n10\n22\n9\n33\n21\n50\n41\n60\n80\n1",
+  "sampleOutput": "255",
+  "questionVideo": "5ToHur2XrA4",
+  "solutionVideo": "5ToHur2XrA4",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // write your code here\n    }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/msis-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

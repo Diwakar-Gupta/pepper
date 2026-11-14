@@ -1,0 +1,25 @@
+{
+  "name": "Longest Duplicate Substring",
+  "slug": "interview-prep-text-processing-longest-duplicate-substring",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Hard",
+  "statement": "Given a string s, \nconsider all duplicated substrings: (contiguous) substrings of s that occur 2 or more times. \nThe occurrences may overlap.\n\nReturn any duplicated substring that has the longest possible length. \nIf s does not have a duplicated substring, the answer is &quot;&quot;",
+  "inputFormat": "A string S.",
+  "outputFormat": "Print a string which is longest duplicate substring (any).\nIf no duplicate substring is found just print &quot;&quot; (Without quotes)",
+  "constraints": "2 &lt;= s.length &lt;= 3 * 10^4\ns consists of lowercase English letters",
+  "sampleInput": "banana",
+  "sampleOutput": "ana",
+  "questionVideo": "dcOSQjhfBcQ",
+  "solutionVideo": "dcOSQjhfBcQ",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    // Write Code here\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/longest-duplicate-substring-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

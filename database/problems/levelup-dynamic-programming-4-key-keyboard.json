@@ -1,0 +1,25 @@
+{
+  "name": "4 Key Keyboard",
+  "slug": "levelup-dynamic-programming-4-key-keyboard",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Hard",
+  "statement": "1. Imagine you have a special keyboard with the following keys - \n   Key 1 : Print 'X' on the screen.\n   key 2 : Select screen.\n   Key 3 : Copy selection to buffer.\n   Key 4 : Print buffer on screen appending to what has already been printed.\n2. You are given a number N, which represents the number of times the keyboard is pressed.\n3. You have to find the maximum number of 'X' that can be produced by pressing the N number of keys.",
+  "inputFormat": "A number N",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 100",
+  "sampleInput": "3",
+  "sampleOutput": "3",
+  "questionVideo": null,
+  "solutionVideo": null,
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int solution(int n) {\n\t\t//write your code here\n\n\t\treturn 0;\n\t}\n\t\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tSystem.out.println(solution(n));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/4-key-keyboard-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

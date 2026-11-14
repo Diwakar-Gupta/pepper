@@ -1,0 +1,6 @@
+addLast 10
+addLast 20
+addLast 30
+addLast 40
+addLast 50
+quit

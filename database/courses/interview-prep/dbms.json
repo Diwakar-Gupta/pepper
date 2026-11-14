@@ -1,0 +1,72 @@
+{
+  "name": "DBMS",
+  "slug": "dbms",
+  "course": "interview-prep",
+  "counts": {
+    "problems": 0,
+    "articles": 12,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "article",
+      "slug": "interview-prep-dbms-introduction-to-dbms",
+      "name": "Introduction To Dbms"
+    },
+    {
+      "type": "article",
+      "slug": "interview-prep-dbms-entity-relationship-model",
+      "name": "Entity Relationship Model"
+    },
+    {
+      "type": "article",
+      "slug": "interview-prep-dbms-relational-model",
+      "name": "Relational Model"
+    },
+    {
+      "type": "article",
+      "slug": "interview-prep-dbms-relational-algebra",
+      "name": "Relational Algebra"
+    },
+    {
+      "type": "article",
+      "slug": "interview-prep-dbms-functional-dependencies",
+      "name": "Functional Dependencies"
+    },
+    {
+      "type": "article",
+      "slug": "interview-prep-dbms-normalization",
+      "name": "Normalization"
+    },
+    {
+      "type": "article",
+      "slug": "interview-prep-dbms-file-organization",
+      "name": "File Organization"
+    },
+    {
+      "type": "article",
+      "slug": "interview-prep-dbms-transactions-and-concurrency-control",
+      "name": "Transactions And Concurrency Control"
+    },
+    {
+      "type": "article",
+      "slug": "interview-prep-dbms-sql-introduction",
+      "name": "Sql Introduction"
+    },
+    {
+      "type": "article",
+      "slug": "interview-prep-dbms-sql-basics",
+      "name": "Sql Basics"
+    },
+    {
+      "type": "article",
+      "slug": "interview-prep-dbms-sql-clause",
+      "name": "Sql Clause"
+    },
+    {
+      "type": "article",
+      "slug": "interview-prep-dbms-sql-queries-for-interview",
+      "name": "Sql Queries For Interview"
+    }
+  ]
+}

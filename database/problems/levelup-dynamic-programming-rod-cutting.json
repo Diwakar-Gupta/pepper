@@ -1,0 +1,25 @@
+{
+  "name": "Rod Cutting",
+  "slug": "levelup-dynamic-programming-rod-cutting",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given an integer N, which represents the length of a rod, and an array of integers, which represents the prices of rod pieces of length varying from 1 to \n     N.\n2. You have to find the maximum value that can be obtained by selling the rod.\n3. You can sell it in pieces or as a whole.",
+  "inputFormat": "A number N\narr1\narr2.. N integers",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 100000\n1 &lt;= arr[i] &lt;= 10^8",
+  "sampleInput": "8\n1   \n5   \n8   \n9  \n10 \n17  \n17  \n20",
+  "sampleOutput": "22",
+  "questionVideo": "eQuJb5gBkkc",
+  "solutionVideo": "eQuJb5gBkkc",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static int solution(int[] prices) {\n    // write your code here\n\n    return 0;\n  }\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] prices = new int[n];\n    for (int i = 0; i < n; i++) {\n      prices[i] = scn.nextInt();\n    }\n    System.out.println(solution(prices));\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/rod-cutting-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

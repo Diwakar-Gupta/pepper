@@ -1,0 +1,467 @@
+{
+  "name": "Hashmap and Heaps",
+  "slug": "hashmap-and-heaps",
+  "course": "levelup",
+  "counts": {
+    "problems": 3,
+    "articles": 0,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-number-of-employees-under-every-manager",
+      "name": "Number Of Employees Under Every Manager",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-find-itinerary-from-tickets",
+      "name": "Find Itinerary From Tickets",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-check-if-an-array-can-be-divided-into-pairs-whose-sum-is-divisible-by-k",
+      "name": "Check If An Array Can Be Divided Into Pairs Whose Sum Is Divisible By K",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-count-distinct-elements-in-every-window-of-size-k",
+      "name": "Count Distinct Elements In Every Window Of Size K",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-largest-subarray-with-zero-sum",
+      "name": "Largest Subarray With Zero Sum",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-count-of-all-subarrays-with-zero-sum",
+      "name": "Count Of All Subarrays With Zero Sum",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-largest-subarray-with-contiguous-elements",
+      "name": "Largest Subarray With Contiguous Elements",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-smallest-substring-of-a-string-containing-all-characters-of-another-string",
+      "name": "Smallest Substring Of A String Containing All Characters Of Another String",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-smallest-substring-of-a-string-containing-all-unique-characters-of-itself",
+      "name": "Smallest Substring Of A String Containing All Unique Characters Of Itself",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-longest-substring-with-non-repeating-characters",
+      "name": "Longest Substring With Non Repeating Characters",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-count-of-substrings-having-all-unique-characters",
+      "name": "Count Of Substrings Having All Unique Characters",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-longest-substring-with-exactly-k-unique-characters",
+      "name": "Longest Substring With Exactly K Unique Characters",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-count-of-substrings-with-exactly-k-unique-characters",
+      "name": "Count Of Substrings With Exactly K Unique Characters",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-equivalent-subarrays",
+      "name": "Equivalent Subarrays",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-maximum-consecutive-ones-1",
+      "name": "Maximum Consecutive Ones - 1",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-maximum-consecutive-ones-2",
+      "name": "Maximum Consecutive Ones - 2",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-longest-substring-with-at-most-k-unique-characters",
+      "name": "Longest Substring With At Most K Unique Characters",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-count-of-substrings-having-at-most-k-unique-characters",
+      "name": "Count Of Substrings Having At Most K Unique Characters",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-binary-string-with-substrings-representing-numbers-from-1-to-n",
+      "name": "Binary String With Substrings Representing Numbers From 1 To N",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-find-all-anagrams-in-a-string",
+      "name": "Find All Anagrams In A String",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-k-anagrams",
+      "name": "K Anagrams",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-find-anagram-mappings",
+      "name": "Find Anagram Mappings",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-valid-anagram",
+      "name": "Valid Anagram",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-group-anagrams",
+      "name": "Group Anagrams",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-group-shifted-string",
+      "name": "Group Shifted String",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-isomorphic-strings",
+      "name": "Isomorphic Strings",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-word-pattern",
+      "name": "Word Pattern",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-count-of-subarrays-having-sum-equals-to-k",
+      "name": "Count Of Subarrays Having Sum Equals To K",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-longest-subarray-with-sum-divisible-by-k",
+      "name": "Longest Subarray With Sum Divisible By K",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-count-of-subarrays-with-sum-divisible-by-k",
+      "name": "Count Of Subarrays With Sum Divisible By K",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-longest-subarray-with-equal-number-of-zeroes-and-ones",
+      "name": "Longest Subarray With Equal Number Of Zeroes And Ones",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-count-of-subarrays-with-equal-number-of-zeroes-and-ones",
+      "name": "Count Of Subarrays With Equal Number Of Zeroes And Ones",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-longest-subarray-with-equal-number-of-0s-1s-and-2s",
+      "name": "Longest Subarray With Equal Number Of 0s 1s And 2s",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-count-of-subarrays-with-equal-number-of-0s-1s-and-2s",
+      "name": "Count Of Subarrays With Equal Number Of 0s 1s And 2s",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-pairs-with-equal-sum",
+      "name": "Pairs With Equal Sum",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-recurring-sequence-in-a-fraction",
+      "name": "Recurring Sequence In A Fraction",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-rabbits-in-the-forest",
+      "name": "Rabbits In The Forest",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-double-pair-array",
+      "name": "Double Pair Array",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-check-arithmetic-sequence",
+      "name": "Check Arithmetic Sequence",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-smallest-subarray-with-all-occurrences-of-the-most-frequent-element",
+      "name": "Smallest Subarray With All Occurrences Of The Most Frequent Element",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-task-completion",
+      "name": "Task Completion",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-pairs-with-given-sum-in-two-sorted-matrices",
+      "name": "Pairs With Given Sum In Two Sorted Matrices",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-quadruplet-sum",
+      "name": "Quadruplet Sum",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-quadruplet-sum-2",
+      "name": "Quadruplet Sum - 2",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-powerful-number",
+      "name": "Powerful Number",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-subdomain-visit-count",
+      "name": "Subdomain Visit Count",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-first-non-repeating-character",
+      "name": "First Non-repeating Character",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-lru-cache",
+      "name": "Lru Cache",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-x-of-a-kind-in-a-deck",
+      "name": "X Of A Kind In A Deck",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-brick-wall",
+      "name": "Brick Wall",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-max-frequency-stack",
+      "name": "Max Frequency Stack",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-encode-and-decode-tinyurl",
+      "name": "Encode And Decode Tinyurl",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-the-skyline-problem",
+      "name": "The Skyline Problem",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-insert-delete-getrandom-o-1",
+      "name": "Insert Delete Getrandom O(1)",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-insert-delete-getrandom-o-1-duplicates-allowed",
+      "name": "Insert Delete Getrandom O(1) - Duplicates Allowed",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-random-pick-with-blacklist",
+      "name": "Random Pick With Blacklist",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-avoid-flood-in-the-city",
+      "name": "Avoid Flood In The City",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-pairs-of-non-coinciding-points",
+      "name": "Pairs Of Non Coinciding Points",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-line-reflection",
+      "name": "Line Reflection",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-longest-substring-with-at-most-two-distinct-characters",
+      "name": "Longest Substring With At Most Two Distinct Characters",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-minimum-cost-to-connect-sticks",
+      "name": "Minimum Cost To Connect Sticks",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-tricky-sorting-cost",
+      "name": "Tricky Sorting Cost",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-reorganize-string",
+      "name": "Reorganize String",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-snap-shot-array",
+      "name": "Snap Shot Array",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-hashmap-and-heaps-minimum-number-of-refueling-stops",
+      "name": "Minimum Number Of Refueling Stops",
+      "difficulty": "Hard",
+      "unavailable": true
+    }
+  ]
+}

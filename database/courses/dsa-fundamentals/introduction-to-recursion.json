@@ -1,42 +1,103 @@
-[
-  {
-    "type": "Code",
-    "slug": "introduction-to-recursion-print-decreasing",
-    "name": "Print Decreasing"
+{
+  "name": "Introduction to Recursion",
+  "slug": "introduction-to-recursion",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 8,
+    "articles": 7,
+    "videos": 0
   },
-  {
-    "type": "Code",
-    "slug": "introduction-to-recursion-print-increasing",
-    "name": "Print Increasing"
-  },
-  {
-    "type": "Code",
-    "slug": "introduction-to-recursion-print-increasing-decreasing",
-    "name": "Print Increasing Decreasing"
-  },
-  {
-    "type": "Code",
-    "slug": "introduction-to-recursion-factorial",
-    "name": "Factorial"
-  },
-  {
-    "type": "Code",
-    "slug": "introduction-to-recursion-power-linear",
-    "name": "Power-linear"
-  },
-  {
-    "type": "Code",
-    "slug": "introduction-to-recursion-power-logarithmic",
-    "name": "Power-logarithmic"
-  },
-  {
-    "type": "Code",
-    "slug": "introduction-to-recursion-print-zigzag",
-    "name": "Print Zigzag"
-  },
-  {
-    "type": "Code",
-    "slug": "introduction-to-recursion-tower-of-hanoi",
-    "name": "Tower Of Hanoi"
-  }
-]
+  "items": [
+    {
+      "type": "article",
+      "slug": "introduction-to-recursion-print-decreasing",
+      "name": "Print Decreasing"
+    },
+    {
+      "type": "problem",
+      "slug": "introduction-to-recursion-print-decreasing",
+      "name": "Print Decreasing",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "introduction-to-recursion-print-increasing",
+      "name": "Print Increasing"
+    },
+    {
+      "type": "problem",
+      "slug": "introduction-to-recursion-print-increasing",
+      "name": "Print Increasing",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "introduction-to-recursion-print-increasing-decreasing",
+      "name": "Print Increasing Decreasing"
+    },
+    {
+      "type": "problem",
+      "slug": "introduction-to-recursion-print-increasing-decreasing",
+      "name": "Print Increasing Decreasing",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "introduction-to-recursion-factorial",
+      "name": "Factorial"
+    },
+    {
+      "type": "problem",
+      "slug": "introduction-to-recursion-factorial",
+      "name": "Factorial",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "introduction-to-recursion-power-linear-logarithmic",
+      "name": "Power Linear & Logarithmic"
+    },
+    {
+      "type": "problem",
+      "slug": "introduction-to-recursion-power-linear",
+      "name": "Power-linear",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "introduction-to-recursion-power-logarithmic",
+      "name": "Power-logarithmic",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "introduction-to-recursion-print-zigzag",
+      "name": "Print Zigzag"
+    },
+    {
+      "type": "problem",
+      "slug": "introduction-to-recursion-print-zigzag",
+      "name": "Print Zigzag",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "introduction-to-recursion-tower-of-hanoi",
+      "name": "Tower Of Hanoi"
+    },
+    {
+      "type": "problem",
+      "slug": "introduction-to-recursion-tower-of-hanoi",
+      "name": "Tower Of Hanoi",
+      "difficulty": "Easy",
+      "tests": 1
+    }
+  ]
+}

@@ -1,117 +1,360 @@
-[
-  {
-    "type": "Code",
-    "slug": "generic-tree-size-of-generic-tree",
-    "name": "Size Of Generic Tree"
+{
+  "name": "Generic Tree",
+  "slug": "generic-tree",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 23,
+    "articles": 29,
+    "videos": 7
   },
-  {
-    "type": "Code",
-    "slug": "generic-tree-maximum-in-a-generic-tree",
-    "name": "Maximum In A Generic Tree"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-height-of-a-generic-tree",
-    "name": "Height Of A Generic Tree"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-generic-tree-traversals-pre-order-post-order-",
-    "name": "Generic Tree - Traversals (pre-order, Post-order)"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-level-order-of-generic-tree",
-    "name": "Level-order Of Generic Tree"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-levelorder-linewise-generic-tree-",
-    "name": "Levelorder Linewise (generic Tree)"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-levelorder-linewise-zig-zag",
-    "name": "Levelorder Linewise Zig Zag"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-mirror-a-generic-tree",
-    "name": "Mirror A Generic Tree"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-remove-leaves-in-generic-tree",
-    "name": "Remove Leaves In Generic Tree"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-linearize-a-generic-tree",
-    "name": "Linearize A Generic Tree"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-find-in-generic-tree",
-    "name": "Find In Generic Tree"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-node-to-root-path-in-generic-tree",
-    "name": "Node To Root Path In Generic Tree"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-lowest-common-ancestor-generic-tree-",
-    "name": "Lowest Common Ancestor (generic Tree)"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-distance-between-two-nodes-in-a-generic-tree",
-    "name": "Distance Between Two Nodes In A Generic Tree"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-are-trees-similar-in-shape",
-    "name": "Are Trees Similar In Shape"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-are-trees-mirror-in-shape",
-    "name": "Are Trees Mirror In Shape"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-is-generic-tree-symmetric",
-    "name": "Is Generic Tree Symmetric"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-predecessor-and-successor-of-an-element",
-    "name": "Predecessor And Successor Of An Element"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-ceil-and-floor-in-generic-tree",
-    "name": "Ceil And Floor In Generic Tree"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-kth-largest-element-in-tree",
-    "name": "Kth Largest Element In Tree"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-node-with-maximum-subtree-sum",
-    "name": "Node With Maximum Subtree Sum"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-diameter-of-generic-tree",
-    "name": "Diameter Of Generic Tree"
-  },
-  {
-    "type": "Code",
-    "slug": "generic-tree-iterative-preorder-and-postorder-of-generic-tree",
-    "name": "Iterative Preorder And Postorder Of Generic Tree"
-  }
-]
+  "items": [
+    {
+      "type": "article",
+      "slug": "generic-tree-introduction-to-generic-tree",
+      "name": "Introduction to Generic tree"
+    },
+    {
+      "type": "video",
+      "slug": "generic-tree-generic-trees-introduction-and-data-members",
+      "name": "Generic Trees - Introduction And Data Members",
+      "youtubeId": "MhpRvvdRBqY"
+    },
+    {
+      "type": "video",
+      "slug": "generic-tree-generic-tree-constructor",
+      "name": "Generic Tree - Constructor",
+      "youtubeId": "9Oi3WamOCPo"
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-generic-tree-constructor",
+      "name": "Generic tree Constructor"
+    },
+    {
+      "type": "video",
+      "slug": "generic-tree-display-a-generic-tree",
+      "name": "Display A Generic Tree",
+      "youtubeId": "3xovYxKCgBQ"
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-display-a-generic-tree",
+      "name": "Display a Generic tree"
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-size-of-generic-tree",
+      "name": "Size of Generic tree"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-size-of-generic-tree",
+      "name": "Size Of Generic Tree",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-maximum-in-a-generic-tree",
+      "name": "Maximum in a Generic tree"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-maximum-in-a-generic-tree",
+      "name": "Maximum In A Generic Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-height-of-a-generic-tree",
+      "name": "Height Of A Generic tree"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-height-of-a-generic-tree",
+      "name": "Height Of A Generic Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-generic-tree-traversal-pre-and-post-order",
+      "name": "Generic Tree Traversal - Pre And Post Order"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-generic-tree-traversals-pre-order-post-order",
+      "name": "Generic Tree - Traversals (pre-order, Post-order)",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-level-order-of-generic-tree",
+      "name": "Level - Order Of Generic Tree"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-level-order-of-generic-tree",
+      "name": "Level-order Of Generic Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-level-order-linewise",
+      "name": "Level-order Linewise"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-levelorder-linewise-generic-tree",
+      "name": "Levelorder Linewise (generic Tree)",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-level-order-linewise-zig-zag",
+      "name": "Level Order Linewise Zig - Zag"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-levelorder-linewise-zig-zag",
+      "name": "Levelorder Linewise Zig Zag",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "video",
+      "slug": "generic-tree-level-order-traversals-more-approaches",
+      "name": "Level Order Traversals - More Approaches",
+      "youtubeId": "NuASXwfaFaY"
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-level-order-traversal-more-approaches",
+      "name": "Level Order Traversal - More Approaches"
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-mirror-of-a-generic-tree",
+      "name": "Mirror Of A Generic Tree"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-mirror-a-generic-tree",
+      "name": "Mirror A Generic Tree",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-remove-leaves-in-generic-tree",
+      "name": "Remove Leaves in Generic tree"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-remove-leaves-in-generic-tree",
+      "name": "Remove Leaves In Generic Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-linearize-a-generic-tree",
+      "name": "Linearize a Generic tree"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-linearize-a-generic-tree",
+      "name": "Linearize A Generic Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "video",
+      "slug": "generic-tree-linearize-a-generic-tree-efficient-approach",
+      "name": "Linearize A Generic Tree - Efficient Approach",
+      "youtubeId": "D5RYXVgJ5NM"
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-linearize-a-generic-tree-efficient-approach",
+      "name": "Linearize A Generic Tree - Efficient Approach"
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-find-in-generic-tree",
+      "name": "Find In Generic tree"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-find-in-generic-tree",
+      "name": "Find In Generic Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-node-to-root-path-in-generic-tree",
+      "name": "Node To Root Path In Generic Tree"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-node-to-root-path-in-generic-tree",
+      "name": "Node To Root Path In Generic Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-lowest-common-ancestor-generic-tree",
+      "name": "Lowest Common Ancestor - Generic Tree"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-lowest-common-ancestor-generic-tree",
+      "name": "Lowest Common Ancestor (generic Tree)",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-distance-between-two-nodes-in-a-generic-tree",
+      "name": "Distance Between Two Nodes In A Generic Tree"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-distance-between-two-nodes-in-a-generic-tree",
+      "name": "Distance Between Two Nodes In A Generic Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-are-trees-similar-in-shape",
+      "name": "Are Trees similar in shape"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-are-trees-similar-in-shape",
+      "name": "Are Trees Similar In Shape",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-are-trees-mirror-in-shape",
+      "name": "Are Trees Mirror In Shape",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-is-generic-tree-symmetric",
+      "name": "Is Generic Tree Symmetric"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-is-generic-tree-symmetric",
+      "name": "Is Generic Tree Symmetric",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "video",
+      "slug": "generic-tree-multisolver-for-generic-tree",
+      "name": "Multisolver For Generic Tree",
+      "youtubeId": "cBQs7kqK_Dw"
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-multisolver-for-generic-tree",
+      "name": "Multisolver For Generic Tree"
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-predecessor-and-successor-of-an-element",
+      "name": "Predecessor And Successor Of An Element"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-predecessor-and-successor-of-an-element",
+      "name": "Predecessor And Successor Of An Element",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-ceil-and-floor-in-a-generic-tree",
+      "name": "Ceil And Floor In A Generic Tree"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-ceil-and-floor-in-generic-tree",
+      "name": "Ceil And Floor In Generic Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-kth-largest-element-generic-tree",
+      "name": "Kth Largest Element - Generic Tree"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-kth-largest-element-in-tree",
+      "name": "Kth Largest Element In Tree",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-node-with-maximum-subtree-sum",
+      "name": "Node with Maximum Subtree sum"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-node-with-maximum-subtree-sum",
+      "name": "Node With Maximum Subtree Sum",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-diameter-in-a-generic-tree",
+      "name": "Diameter in a Generic tree"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-diameter-of-generic-tree",
+      "name": "Diameter Of Generic Tree",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-iterative-pre-order-and-post-order-of-generic-tree",
+      "name": "Iterative Pre Order And Post Order Of Generic Tree"
+    },
+    {
+      "type": "problem",
+      "slug": "generic-tree-iterative-preorder-and-postorder-of-generic-tree",
+      "name": "Iterative Preorder And Postorder Of Generic Tree",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "video",
+      "slug": "generic-tree-iterable-and-iterator",
+      "name": "Iterable And Iterator",
+      "youtubeId": "t4IKNhNBTdo"
+    },
+    {
+      "type": "article",
+      "slug": "generic-tree-iterable-and-iterator",
+      "name": "Iterable and Iterator"
+    }
+  ]
+}

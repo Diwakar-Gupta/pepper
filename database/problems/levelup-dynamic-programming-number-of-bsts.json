@@ -1,0 +1,25 @@
+{
+  "name": "Number Of Bsts",
+  "slug": "levelup-dynamic-programming-number-of-bsts",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number n, representing the number of elements.\n2. You are required to find the number of Binary Search Trees you can create using the elements.",
+  "inputFormat": "A number n",
+  "outputFormat": "A number representing the number of Binary Search Trees you can create using the elements.",
+  "constraints": "0 &lt;= n &lt;= 15",
+  "sampleInput": "4",
+  "sampleOutput": "14",
+  "questionVideo": "H1qjjkm3P3c",
+  "solutionVideo": "H1qjjkm3P3c",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main{\n\npublic static void main(String[] args) throws Exception {\n    // write your code here\n }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/count-bst-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

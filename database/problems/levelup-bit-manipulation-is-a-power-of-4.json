@@ -1,0 +1,25 @@
+{
+  "name": "Is A Power Of 4",
+  "slug": "levelup-bit-manipulation-is-a-power-of-4",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "<a href=\"https://leetcode.com/problems/power-of-four/\" target=\"_blank\" rel=\"noopener\">https://leetcode.com/problems/power-of-four/</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "4",
+  "sampleOutput": "true",
+  "questionVideo": "VLMj6_XCTGU",
+  "solutionVideo": "VLMj6_XCTGU",
+  "templates": {
+    "java": "class Solution {\n  public boolean isPowerOfFour(int n) {\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/is-a-power-of-4/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

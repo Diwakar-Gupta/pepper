@@ -1,0 +1,25 @@
+{
+  "name": "Restorer Distance",
+  "slug": "interview-prep-ternary-search-restorer-distance",
+  "course": "interview-prep",
+  "module": "ternary-search",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://codeforces.com/contest/1355/problem/E\" target=\"_blank\" rel=\"noopener\"><i> Link -&gt; Restorer Distance</i></a>",
+  "inputFormat": "Check the Link",
+  "outputFormat": "Check the Link",
+  "constraints": "Check the Link",
+  "sampleInput": "3 1 100 100\n1 3 8",
+  "sampleOutput": "12",
+  "questionVideo": "JOwqV6pcEX0",
+  "solutionVideo": "JOwqV6pcEX0",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) throws Exception{\n    Scanner sc = new Scanner(System.in);\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/ternary-search/restorer-distance/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

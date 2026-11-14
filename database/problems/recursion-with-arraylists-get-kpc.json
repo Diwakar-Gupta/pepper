@@ -1,11 +1,27 @@
 {
   "name": "Get Kpc",
   "slug": "recursion-with-arraylists-get-kpc",
-  "description": "1. You are given a string str. The string str will contains numbers only, where each number stands for a key pressed on a mobile phone.\n2. The following list is the key to characters map :\n    0 -> .;\n    1 -> abc\n    2 -> def\n    3 -> ghi\n    4 -> jkl\n    5 -> mno\n    6 -> pqrs\n    7 -> tu\n    8 -> vwx\n    9 -> yz\n3. Complete the body of getKPC function - without changing signature - to get the list of all words that could be produced by the keys in str.\nUse sample input and output to take idea about output.\n\nNote -> The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.\n\n### Input Format\n```\nA string str\n```\n\n### Output Format\n```\nContents of the arraylist containing words as shown in sample output\n```\n\n### Constraints\n```\n0 <= str.length <= 10\nstr contains numbers only\n```\n\n### Sample Input\n```\n78\n```\n\n### Sample Output\n```\n[tv, tw, tx, uv, uw, ux]\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/97mF4juql6g?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/3fjt19bjs3A?rel=0&loop=1&playlist=3fjt19bjs3A",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "recursion-with-arraylists",
+  "difficulty": "Easy",
+  "statement": "1. You are given a string str. The string str will contains numbers only, where each number stands for a key pressed on a mobile phone.\n2. The following list is the key to characters map :\n    0 -&gt; .;\n    1 -&gt; abc\n    2 -&gt; def\n    3 -&gt; ghi\n    4 -&gt; jkl\n    5 -&gt; mno\n    6 -&gt; pqrs\n    7 -&gt; tu\n    8 -&gt; vwx\n    9 -&gt; yz\n3. Complete the body of getKPC function - without changing signature - to get the list of all words that could be produced by the keys in str.\nUse sample input and output to take idea about output.\n\nNote -&gt; The online judge can't force you to write the function recursively but that is what the spirit of question is. Write recursive and not iterative logic. The purpose of the question is to aid learning recursion and not test you.",
+  "inputFormat": "A string str",
+  "outputFormat": "Contents of the arraylist containing words as shown in sample output",
+  "constraints": "0 &lt;= str.length &lt;= 10\nstr contains numbers only",
+  "sampleInput": "78",
+  "sampleOutput": "[tv, tw, tx, uv, uw, ux]",
+  "questionVideo": "97mF4juql6g",
+  "solutionVideo": "3fjt19bjs3A",
+  "templates": {
+    "cpp": "#include<iostream>\n#include<string>\n#include<vector>\nusing namespace std;\n\nvector<string> getKPC(string s) {\n  //Write your code here\n}\n\n\nint main() {\n  string s;\n  cin >> s;\n  vector<string> ans = getKPC(s);\n  int cnt = 0;\n\n  cout << '[';\n  for (string str : ans) {\n    if (cnt != ans.size() - 1)\n      cout << str << \", \";\n    else\n      cout << str;\n    cnt++;\n  }\n  cout << ']';\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n    }\n\n    public static ArrayList<String> getKPC(String str) {\n        return null;\n    }\n\n}",
+    "python": "s = input()\n\n    def getKPC(s):\n#Write your code here\n\n      ans = getKPC(s)\n\n            print(\"[\" + ', '.join(ans) + \"]\")"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/recursion-with-arraylists/get-kpc-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

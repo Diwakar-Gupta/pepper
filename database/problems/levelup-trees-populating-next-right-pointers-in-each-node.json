@@ -1,0 +1,25 @@
+{
+  "name": "Populating Next Right Pointers In Each Node",
+  "slug": "levelup-trees-populating-next-right-pointers-in-each-node",
+  "course": "levelup",
+  "module": "trees",
+  "difficulty": "Easy",
+  "statement": "<a href=\"https://leetcode.com/problems/populating-next-right-pointers-in-each-node/\" target=\"_blank\" rel=\"noopener\">https://leetcode.com/problems/populating-next-right-pointers-in-each-node/</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": ".",
+  "sampleOutput": ".",
+  "questionVideo": "3MRPQFUpoA0",
+  "solutionVideo": "3MRPQFUpoA0",
+  "templates": {
+    "java": "/*\n// Definition for a Node.\nclass Node {\n    public int val;\n    public Node left;\n    public Node right;\n    public Node next;\n\n    public Node() {}\n\n    public Node(int _val) {\n        val = _val;\n    }\n\n    public Node(int _val, Node _left, Node _right, Node _next) {\n        val = _val;\n        left = _left;\n        right = _right;\n        next = _next;\n    }\n};\n*/\n\nclass Solution {\n  public Node connect(Node root) {\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/populating-next-right-pointers-in-each-node/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

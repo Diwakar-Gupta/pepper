@@ -1,0 +1,25 @@
+{
+  "name": "Good Substrings",
+  "slug": "interview-prep-text-processing-good-substrings",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Medium",
+  "statement": "https://codeforces.com/problemset/problem/271/D",
+  "inputFormat": "Check link in description",
+  "outputFormat": "Check link in description",
+  "constraints": "Check link in description",
+  "sampleInput": "acbacbacaa\n00000000000000000000000000\n2",
+  "sampleOutput": "8",
+  "questionVideo": "pTj1QvxOzOI",
+  "solutionVideo": "pTj1QvxOzOI",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main{\n    static class pair{\n        long a; \n        long b;\n        pair(long x,long y){\n            this.a = x;\n            this.b = y;\n        }\n        public boolean equals(Object o) {\n            if (o instanceof pair) {\n                pair p = (pair)o;\n                return p.a == a && p.b == b;\n            }\n            return false;\n        }\n        public int hashCode() {\n            return (Long.valueOf(a).hashCode())* 31 +(Long.valueOf(b).hashCode());\n        }\n    }\n    public static void main(String[] args){\n        Scanner scn = new Scanner(System.in);\n        // Write Code here\n        scn.close();\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/good-substrings-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

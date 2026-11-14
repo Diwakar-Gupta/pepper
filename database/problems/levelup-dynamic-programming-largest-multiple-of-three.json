@@ -1,0 +1,25 @@
+{
+  "name": "Largest Multiple Of Three",
+  "slug": "levelup-dynamic-programming-largest-multiple-of-three",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Hard",
+  "statement": "https://leetcode.com/problems/largest-multiple-of-three/",
+  "inputFormat": "Check Link",
+  "outputFormat": "Check Link",
+  "constraints": "Check Link",
+  "sampleInput": "Check Link",
+  "sampleOutput": "Check Link",
+  "questionVideo": "3GsK-H_dI9o",
+  "solutionVideo": "3GsK-H_dI9o",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    // Write Code here\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/largest-multiple-of-three/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

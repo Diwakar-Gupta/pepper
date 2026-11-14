@@ -1,0 +1,25 @@
+{
+  "name": "Circle And Chords",
+  "slug": "levelup-dynamic-programming-circle-and-chords",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number N.\n2. There are 2*N points on a circle. You have to draw N non-intersecting chords on a circle.\n3. You have to find the number of ways in which these chords can be drawn.",
+  "inputFormat": "A number N",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 1000\n1 &lt;= arr[i] &lt;= 100",
+  "sampleInput": "3",
+  "sampleOutput": "5",
+  "questionVideo": "qgQg1BcCWBA",
+  "solutionVideo": "qgQg1BcCWBA",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static long NumberOfChords(int n){\n        //write your code here\n        \n        return 0;\n    }\n  public static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n        int n = scn.nextInt();\n        System.out.println(NumberOfChords(n));\n\t}\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/circle-and-chords-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

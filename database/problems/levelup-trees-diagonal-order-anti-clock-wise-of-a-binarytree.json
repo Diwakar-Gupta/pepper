@@ -1,0 +1,26 @@
+{
+  "name": "Diagonal Order (anti-clock Wise) Of A Binarytree",
+  "slug": "levelup-trees-diagonal-order-anti-clock-wise-of-a-binarytree",
+  "course": "levelup",
+  "module": "trees",
+  "difficulty": "Easy",
+  "statement": "1. Given a Binary Tree, print Diagonal Order of it anti-clock wise. \n2. For more Information watch given video link below.",
+  "inputFormat": "Input is managed for you.",
+  "outputFormat": "Output is managed for you.",
+  "constraints": "0 &lt;= Number of Nodes &lt;= 10^5\n-1000 &lt;= value of Node data &lt;= 1000",
+  "sampleInput": "15\n1\n1\n-1\n1\n1\n-1\n1\n-1\n-1\n1\n-1\n-1\n1\n-1\n-1",
+  "sampleOutput": "0 -> 1 1 \n1 -> 1 1 1 \n2 -> 1 1",
+  "questionVideo": "BZ49ZTWUbmg",
+  "solutionVideo": "BZ49ZTWUbmg",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\n#include <queue>\nusing namespace std;\n\nclass TreeNode\n{\npublic:\n    int val = 0;\n    TreeNode *left = nullptr;\n    TreeNode *right = nullptr;\n\n    TreeNode(int val)\n    {\n        this->val = val;\n    }\n};\n\nvector<vector<int>> diagonalOrder(TreeNode *root)\n{\n    queue<TreeNode *> que;\n    que.push(root);\n    vector<vector<int>> ans;\n    while (que.size() != 0)\n    {\n        int size = que.size();\n        TreeNode *node = que.front();\n        que.pop();\n\n        vector<int> smallAns;\n\n        while (node != nullptr)\n        {\n            smallAns.push_back(node->val);\n            if (node->right != nullptr)\n            { // add in que for next diagonal process.\n                que.push(node->right);\n            }\n            node = node->left; // move forward in respective diagonal.\n        }\n        ans.push_back(smallAns);\n    }\n\n    return ans;\n}\n\n// input_section=================================================\n\nTreeNode *createTree(vector<int> &arr, vector<int> &IDX)\n{\n\n    if (IDX[0] > arr.size() || arr[IDX[0]] == -1)\n    {\n        IDX[0]++;\n        return nullptr;\n    }\n\n    TreeNode *node = new TreeNode(arr[IDX[0]++]);\n    node->left = createTree(arr, IDX);\n    node->right = createTree(arr, IDX);\n\n    return node;\n}\n\nvoid solve()\n{\n    int n;\n    cin >> n;\n    vector<int> arr(n, 0);\n    for (int i = 0; i < n; i++)\n    {\n        cin >> arr[i];\n    }\n\n    vector<int> IDX(1, 0);\n    TreeNode *root = createTree(arr, IDX);\n\n    vector<vector<int>> ans = diagonalOrder(root);\n    int idx = 0;\n    for (vector<int> &i : ans)\n    {\n        cout << idx++ << \" -> \";\n        for (int j : i)\n        {\n            cout << j << \" \";\n        }\n        cout << endl;\n    }\n}\n\nint main()\n{\n    solve();\n    return 0;\n}",
+    "java": "import java.util.*;\n\npublic class Main {\n    public static Scanner scn = new Scanner(System.in);\n\n    public static class TreeNode {\n        int val = 0;\n        TreeNode left = null;\n        TreeNode right = null;\n\n        TreeNode(int val) {\n            this.val = val;\n        }\n    }\n\n    public static ArrayList<ArrayList<Integer>> diagonalOrder(TreeNode root) {\n        return ans;\n    }\n\n    // input_section=================================================\n\n    public static TreeNode createTree(int[] arr, int[] IDX) {\n        if (IDX[0] > arr.length || arr[IDX[0]] == -1) {\n            IDX[0]++;\n            return null;\n        }\n        TreeNode node = new TreeNode(arr[IDX[0]++]);\n        node.left = createTree(arr, IDX);\n        node.right = createTree(arr, IDX);\n\n        return node;\n    }\n\n    public static void solve() {\n        int n = scn.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++)\n            arr[i] = scn.nextInt();\n\n        int[] IDX = new int[1];\n        TreeNode root = createTree(arr, IDX);\n\n        ArrayList<ArrayList<Integer>> ans = diagonalOrder(root);\n        int idx = 0;\n        for (ArrayList<Integer> i : ans) {\n            System.out.print(idx++ + \" -> \");\n            for (Integer j : i)\n                System.out.print(j + \" \");\n            System.out.println();\n        }\n    }\n\n    public static void main(String[] args) {\n        solve();\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/diagonal-order-(anti-clock-wise)-of-a-binarytree/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

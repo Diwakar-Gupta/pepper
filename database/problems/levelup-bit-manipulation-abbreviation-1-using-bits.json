@@ -1,0 +1,26 @@
+{
+  "name": "Abbreviation 1 - Using Bits",
+  "slug": "levelup-bit-manipulation-abbreviation-1-using-bits",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given a word.\n2. You have to generate all abbrevations of that word.\nNote - Use bit manipulation",
+  "inputFormat": "A string representing a word",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "1 &lt;= length of string &lt;= 32",
+  "sampleInput": "pep",
+  "sampleOutput": "pep\npe1\np1p\np2\n1ep\n1e1\n2p\n3",
+  "questionVideo": "2F-c8F4TCOo",
+  "solutionVideo": "2F-c8F4TCOo",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void solve(String str){\n        // write your code here\n    }\n    \n\tpublic static void main(String[] args) {\n        Scanner scn = new Scanner(System.in);\n        String str = scn.nextLine();\n        solve(str);\n    }\n}"
+  },
+  "editorial": "<p>The problem here deals with generating all the abbreviations of a string here by using bit manipulation. Earlier we have solved this problem using recursion now here we will implement a solution making use of bit manipulation concepts.</p><p>The abbreviation here is an <b>alpha-numeric</b> type where characters are mixed with the digits. The digits represent the number of skipped characters of a selected substring. Henceforth, whenever a substring of characters is skipped, it is replaced with the digit denoting the number of characters in the substring. There may be any number of skipped substrings of a string. No two substrings should be adjacent to each other. Hence, no two digits are adjacent to the result.</p><p>Let us consider an example to understand the problem better,</p><p>String -&gt; pep</p><p>Abbreviations:</p><p>pep</p><p>pe1</p><p>p1p</p><p>p2</p><p>1ep</p><p>1e1</p><p>2p*</p><p>3</p><p>* Note: 11p is not valid because no two digits should be adjacent,</p><p>2p is the correct one because pe is a substring, not p and e individually.</p><p>Let us try to draw an analogy with bit manipulation to approach to the solution:</p><p>000 -&gt; pep</p><p>001 -&gt; pe1</p><p>010 -&gt; p1p</p><p>011 -&gt; p2</p><p>100 -&gt; 1ep</p><p>101 -&gt; 1e1</p><p>110 -&gt; 2p</p><p>111 -&gt; 3</p><p>This pattern clearly indicates that abbreviations can be easily obtained from the binary representation of numbers from <b>0 to 2str.length() - 1</b>. Here from 0 to 7.</p><p>The solution to the problem is to take every number from 0 to 2str.length() - 1 and for every number we need to keep a check of its binary digit, if the digit is 0 then we need to print the corresponding character and if the digit is 1 then we need to skip the corresponding character and increment the counter variable. The counter variable is responsible for all the numeric values in the abbreviation, also when the digit is zero we need to consider the count too if the count is greater than 0 say in the case of 100 at index 1 we will have count = 1 so we will firstly print the count, then reset the count variable to 0 and thereafter we will add the character e to the result. Also after traversing the bits if there is still any unsettled count value left then we need to settle it at the end of the resultant string, in the case of 111 after string end, we have count = 3 and resultant string null so we add 3 to the resultant string and henceforth we obtain 3 as the abbreviation.</p><p><b>Time Complexity: O(n2n)</b></p><p>The time complexity for the function is exponential as we need to consider all the sub-sequences which takes 2n time and then for every subsequence we need to traverse the string which takes linear time.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/abrreviation1-using-bits-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

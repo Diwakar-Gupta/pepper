@@ -1,0 +1,27 @@
+{
+  "name": "Perfect Friends",
+  "slug": "graphs-perfect-friends",
+  "course": "dsa-fundamentals",
+  "module": "graphs",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n (representing the number of students). Each student will have an id \n     from 0 to n - 1.\n2. You are given a number k (representing the number of clubs)\n3. In the next k lines, two numbers are given separated by a space. The numbers are ids of \n     students belonging to same club.\n4. You have to find in how many ways can we select a pair of students such that both students are \n     from different clubs.",
+  "inputFormat": "Input has been managed for you",
+  "outputFormat": "Check the sample output",
+  "constraints": "None",
+  "sampleInput": "7\n5\n0 1\n2 3\n4 5\n5 6\n4 6",
+  "sampleOutput": "16",
+  "questionVideo": "_q4hA01ZcVQ",
+  "solutionVideo": "_q4hA01ZcVQ",
+  "templates": {
+    "cpp": "#include<bits/stdc++.h>\n\nusing namespace std;\n\nint main() {\n  int n;\n  cin >> n;\n\n  int k;\n  cin >> k;\n\n  // write your code here\n\n  return 0;\n}\n",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n   \n\n   public static void main(String[] args) throws Exception {\n      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n      int n = Integer.parseInt(br.readLine());\n      int k = Integer.parseInt(br.readLine());\n      \n      // write your code here\n   }\n\n}",
+    "python": "def main():\n  n = int(input())\n      k = int(input())\n\n#write your code here\n\n        if __name__ == \"__main__\":\n          main()\n"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/graphs/perfect-friends-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Merge K Sorted Linkedlist",
+  "slug": "levelup-linked-list-merge-k-sorted-linkedlist",
+  "course": "levelup",
+  "module": "linked-list",
+  "difficulty": "Easy",
+  "statement": "You are given an array of k linked-lists, each linked-list is sorted in increasing order.\nMerge all the linkedlists into one sorted linkedlist and return it.",
+  "inputFormat": "3 sorted linkedlist :\n{\n    0-&gt;0-&gt;0-&gt;null,\n    0-&gt;0-&gt;1-&gt;1-&gt;1-&gt;2-&gt;2-&gt;4-&gt;null,\n    0-&gt;0-&gt;0-&gt;0-&gt;5-&gt;5-&gt;6-&gt;null\n}",
+  "outputFormat": "after merging them : \n0-&gt;0-&gt;0-&gt;0-&gt;0-&gt;0-&gt;0-&gt;0-&gt;0-&gt;1-&gt;1-&gt;1-&gt;2-&gt;2-&gt;4-&gt;5-&gt;5-&gt;6-&gt;null",
+  "constraints": "0 &lt;= k &lt;= 10^5\n0 &lt;= size of linkedlist &lt;= 1000",
+  "sampleInput": "3\n3\n0 0 0 \n8\n0 0 1 1 1 2 2 4 \n7\n0 0 0 0 5 5 6",
+  "sampleOutput": "0 0 0 0 0 0 0 0 0 1 1 1 2 2 4 5 5 6",
+  "questionVideo": "wugaUVZ8PVw",
+  "solutionVideo": "wugaUVZ8PVw",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\n\nusing namespace std;\n\nclass ListNode\n{\npublic:\n    int val = 0;\n    ListNode *next = nullptr;\n\n    ListNode(int val)\n    {\n        this->val = val;\n    }\n};\n\nListNode *mergeKLists(vector<ListNode *> &lists)\n{\n    return nullptr;\n}\n\nvoid printList(ListNode *node)\n{\n    ListNode *curr = node;\n    while (curr != nullptr)\n    {\n        cout << curr->val << \" \";\n        curr = curr->next;\n    }\n    cout << endl;\n}\n\nListNode *createList(int n)\n{\n    ListNode *dummy = new ListNode(-1);\n    ListNode *prev = dummy;\n    while (n-- > 0)\n    {\n        int val;\n        cin >> val;\n        prev->next = new ListNode(val);\n        prev = prev->next;\n    }\n    return dummy->next\n}\n\nint main()\n{\n    int n;\n    cin >> n;\n    vector<ListNode *> list(n, 0);\n    for (int i = 0; i < n; i++)\n    {\n        int m;\n        cin >> m;\n        list[i] = createList(m);\n    }\n\n    ListNode *head = mergeKLists(list);\n    printList(head);\n\n    return 0;\n}",
+    "java": "import java.util.*;\n\nclass Main {\n    public static Scanner scn = new Scanner(System.in);\n\n    public static class ListNode {\n        int val = 0;\n        ListNode next = null;\n\n        ListNode(int val) {\n            this.val = val;\n        }\n    }\n\n    public static ListNode mergeKLists(ListNode[] lists) {\n        return null;\n    }\n\n    public static void printList(ListNode node) {\n        while (node != null) {\n            System.out.print(node.val + \" \");\n            node = node.next;\n        }\n    }\n\n    public static ListNode createList(int n) {\n        ListNode dummy = new ListNode(-1);\n        ListNode prev = dummy;\n        while (n-- > 0) {\n            prev.next = new ListNode(scn.nextInt());\n            prev = prev.next;\n        }\n\n        return dummy.next;\n    }\n\n    public static void main(String[] args) {\n        int n = scn.nextInt();\n        ListNode[] list = new ListNode[n];\n        for (int i = 0; i < n; i++) {\n            int m = scn.nextInt();\n            list[i] = createList(m);\n        }\n\n        ListNode head = mergeKLists(list);\n        printList(head);\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/merge-k-sorted-linkedlist/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

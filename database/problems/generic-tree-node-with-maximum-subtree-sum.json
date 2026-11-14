@@ -1,11 +1,26 @@
 {
   "name": "Node With Maximum Subtree Sum",
   "slug": "generic-tree-node-with-maximum-subtree-sum",
-  "description": "1. You are given a partially written GenericTree class.\n2. You are required to find and print the node which has the subtree with largest sum. Also print the sum of the concerned subtree separated from node's value by an '@'. Refer the question video for clarity.\n3. Input is managed for you.\n\n### Input Format\n```\nInput is managed for you\n```\n\n### Output Format\n```\n@\n```\n\n### Constraints\n```\nNone\n```\n\n### Sample Input\n```\n20\n10 20 -50 -1 60 -1 -1 30 -70 -1 80 -1 90 -1 -1 40 -100 -1 -1 -1\n```\n\n### Sample Output\n```\n30@130\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/TKqOZ3tp1D8?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/tDx3PPwgSxs?rel=0&loop=1&playlist=tDx3PPwgSxs",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "generic-tree",
+  "difficulty": "Medium",
+  "statement": "1. You are given a partially written GenericTree class.\n2. You are required to find and print the node which has the subtree with largest sum. Also print the sum of the concerned subtree separated from node's value by an '@'. Refer the question video for clarity.\n3. Input is managed for you.",
+  "inputFormat": "Input is managed for you",
+  "outputFormat": "@",
+  "constraints": "None",
+  "sampleInput": "20\n10 20 -50 -1 60 -1 -1 30 -70 -1 80 -1 90 -1 -1 40 -100 -1 -1 -1",
+  "sampleOutput": "30@130",
+  "questionVideo": "TKqOZ3tp1D8",
+  "solutionVideo": "tDx3PPwgSxs",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n  private static class Node {\n    int data;\n    ArrayList<Node> children = new ArrayList<>();\n  }\n\n  public static void display(Node node) {\n    String str = node.data + \" -> \";\n    for (Node child : node.children) {\n      str += child.data + \", \";\n    }\n    str += \".\";\n    System.out.println(str);\n\n    for (Node child : node.children) {\n      display(child);\n    }\n  }\n\n  public static Node construct(int[] arr) {\n    Node root = null;\n\n    Stack<Node> st = new Stack<>();\n    for (int i = 0; i < arr.length; i++) {\n      if (arr[i] == -1) {\n        st.pop();\n      } else {\n        Node t = new Node();\n        t.data = arr[i];\n\n        if (st.size() > 0) {\n          st.peek().children.add(t);\n        } else {\n          root = t;\n        }\n\n        st.push(t);\n      }\n    }\n\n    return root;\n  }\n\n  public static void main(String[] args) throws Exception {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n    int n = Integer.parseInt(br.readLine());\n    int[] arr = new int[n];\n    String[] values = br.readLine().split(\" \");\n    for (int i = 0; i < n; i++) {\n      arr[i] = Integer.parseInt(values[i]);\n    }\n\n    Node root = construct(arr);\n    // write your code here\n  }\n\n}"
+  },
+  "editorial": "<p>The problem here is to get the node having the maximum subtree sum in the given input generic tree.</p><p>The idea here is to traverse the tree in a postorder fashion and for every node, we need to calculate the sum of all the subtrees from this node, after getting the sum we need to compare it with the global maxSum if it exceeds the global maxSum then we need to update the maxSum and assign this node as the node with the maximum sum, we need to do this step for each node on the tree and thereafter the node and the sum left with us at the end will be our desired result. Also for every node, we need to return the subtree sum so that it can be used later on by its ancestors for computation for their subtree sum, without visiting all the child nodes, again and again.</p><p>This return step ensures that our algorithm has linear time complexity. The other approach would be to calculate the sum for every node by calling the sum() function which would take the total time complexity of our code to n2.</p><p>Below is the implementation in Java: </p><pre>static int mSum = 0;\n                                static int mSumNode = 0;\n                                private static int nodeWithMaximumSubtreeSum(Node node) {\n                                    int sum = 0;\n                                    for (Node child : node.children) {\n                                        int cstSum = nodeWithMaximumSubtreeSum(child);\n                                        sum += cstSum;\n                                    }\n                                    sum += node.data;\n                                    if (sum &gt; mSum) {\n                                        mSum = sum;\n                                        mSumNode = node.data;\n                                    }\n                                    return sum;\n                                }</pre><p><b>Time Complexity: O(n)</b></p><p>The time complexity for the function is linear as tree traversal is involved which is linear in terms of time complexity.</p><p><b>Space Complexity: O(logn)</b></p><p>The space complexity for the function is proportional to the height of the generic tree.</p>",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/generic-tree/node-with-maximum-subtree-sum-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

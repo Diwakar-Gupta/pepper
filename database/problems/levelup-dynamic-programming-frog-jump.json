@@ -1,0 +1,25 @@
+{
+  "name": "Frog Jump",
+  "slug": "levelup-dynamic-programming-frog-jump",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Hard",
+  "statement": "1. You are given an array of positive integers in ascending order, which represents the position of stones in the river.\n2. A frog is trying to cross a river. It can jump on a stone, but it must not jump into the water.\n3. You have to find if the frog can cross the river by landing on the last stone.\n4. The frog is on the first stone initially, and from first stone it can jump 1 unit only.\n5. The frog can only jump k-1, k, or k+1 units in the forward direction, where k is the frog's last jump.",
+  "inputFormat": "A number N \na1\na2.. N numbers",
+  "outputFormat": "true/false",
+  "constraints": "2 &lt;= n &lt;= 2000\n0 &lt;= a[i] &lt; 2^31\na[0] = 0",
+  "sampleInput": "8\n0 1 3 5 6 8 12 17",
+  "sampleOutput": "true",
+  "questionVideo": "1V8gRXh1qbU",
+  "solutionVideo": "1V8gRXh1qbU",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static boolean solution(int[] stones) {\n    // write your code here\n\n  }\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    for (int i = 0 ; i < n; i++) {\n      arr[i] = scn.nextInt();\n    }\n\n    System.out.println(solution(arr));\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/frog-jump-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

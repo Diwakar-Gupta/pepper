@@ -1,0 +1,25 @@
+{
+  "name": "Print All Longest Increasing Subsequences",
+  "slug": "levelup-dynamic-programming-print-all-longest-increasing-subsequences",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number N representing number of elements.\n2. You are given N space separated numbers (ELE : elements).\n3. Your task is to find &amp; print  \n    3.1) Length of &quot;Longest Increasing Subsequence&quot;(LIS).\n    3.2) All &quot;Longest Increasing Subsequence(s)&quot;(LIS).\nNOTE: Checkout sample question/solution video inorder to have more insight.",
+  "inputFormat": "A number N (representing &quot;NUMBER OF ELEMENTS&quot;).\nELE1 ,ELE2 ,ELE3 ,ELE4 .... ELEn (N space separated numbers represnting numbers).",
+  "outputFormat": "1) A number representing Length of &quot;Longest Increasing Subsequence&quot;(LIS).\n2) Strings representing &quot;Longest Increasing Subsequence(s)&quot;(LIS).\nCheck the sample ouput and question video.",
+  "constraints": "1 &lt;= N &lt;= 100\n1 &lt;= ELE &lt;= 1000",
+  "sampleInput": "10\n10 22 9 33 21 50 41 60 80 1",
+  "sampleOutput": "6\n10 -> 22 -> 33 -> 41 -> 60 -> 80\n10 -> 22 -> 33 -> 50 -> 60 -> 80",
+  "questionVideo": "3mD20VSib5E",
+  "solutionVideo": "3mD20VSib5E",
+  "templates": {
+    "java": "import java.util.ArrayDeque;\nimport java.util.ArrayList;\nimport java.util.Queue;\nimport java.util.Scanner;\n\npublic class Main{\n    \n    public static class Pair {\n        int l;\n        int i;\n        int v;\n        String psf;\n        \n        Pair(int l, int i, int v, String psf){\n            this.l = l;\n            this.i = i;\n            this.v = v;\n            this.psf = psf;\n        }\n    }\n        \n    public static void solution(int []arr){\n// write your code here\n    }\n    \n    \n    \n    public static void main(String []args){\n        Scanner scn = new Scanner(System.in);\n\n        int n = scn.nextInt();\n\n        int arr[] = new int[n];\n        for(int i = 0 ; i < n ; i++){\n            arr[i] = scn.nextInt();\n        }\n\n        solution(arr);\n\n        scn.close();\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/lis-re-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Regular Expression Matching",
+  "slug": "levelup-dynamic-programming-regular-expression-matching",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Hard",
+  "statement": "1. You are given two strings S1 and S2. S1 represents a text and S2 represents a pattern.\n2. You have to print 'true' if the pattern is matched with the given text, otherwise print 'false'.\n\nThe pattern can include the characters '.' and '*'\n'.' - matches any single character\n'*' - matches zero or more of the preceding character",
+  "inputFormat": "2 strings S1 and S2",
+  "outputFormat": "true or false as required",
+  "constraints": "1 &lt; length of strings S1 amd S2 &lt;= 200",
+  "sampleInput": "aa\na",
+  "sampleOutput": "false",
+  "questionVideo": "DJvw8jCmxUU",
+  "solutionVideo": "DJvw8jCmxUU",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static boolean solution(String s, String p) {\n\t\t//write your code here\n\t\t\n\t\treturn false;\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tString s1 = scn.next();\n\t\tString s2 = scn.next();\n\t\tSystem.out.println(solution(s1,s2));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/regular-expression-matching-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

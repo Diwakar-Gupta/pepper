@@ -1,0 +1,25 @@
+{
+  "name": "Range Addition",
+  "slug": "interview-prep-range-queries-range-addition",
+  "course": "interview-prep",
+  "module": "range-queries",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number N.\n 2. Assume you have an array of length N initialised with all 0's.\n 3. You are also given K update operations.\n 4. Each operation contain 3 numbers: startIndex, endIndex and inc and updates each element of the subarray arr[startIndex, endIndex](both inclusive) with inc.\n 5. You have to find the resultant array when all K operations are executed.\n 6. display is a utility function, feel free to use it for debugging purposes.\n 7. main takes input from the users.\n 8. This is a functional problem. \n 9. You have to complete the getModifiedArray function. It takes as input a length and a 2D array of update operations. It should return the modified array.\n 10. Don't change the code of main and display.\n\nExpected Complexity : O(n+k)",
+  "inputFormat": "First line takes input N, the length of the array.\n Second line takes input K, the number of update operations.\n Next K lines take input 3 space separated integers representing the startIndex, endIndex and inc.\n Input is handled for you.",
+  "outputFormat": "The resultant array.\n Output is handled for you.",
+  "constraints": "1 &lt;= N &lt;= 30000",
+  "sampleInput": "4 \n3\n0 2 -1\n2 2 2\n1 3 1",
+  "sampleOutput": "-1 0 2 1",
+  "questionVideo": "-SDHYqxI-Hc",
+  "solutionVideo": "-SDHYqxI-Hc",
+  "templates": {
+    "java": "import java.util.*;\n \n public class Main {\n \n     // This is a functional problem. You have to complete this function.\n     // It takes as input a length and a 2D array of update operations.\n     // It should return the modified array.\n     public static int[] Range(int length, int[][] updates) {\n         // write your code here. \n         \n     }\n \n     public static void main(String[] args) {\n         Scanner sc = new Scanner(System.in);\n \n         // Input for length of first array.\n         int length = sc.nextInt();\n \n         int K = sc.nextInt();\n \n         int[][] updates = new int[K][3];\n \n         for (int i = 0; i < updates.length; i++) {\n             for (int j = 0; j < updates[0].length; j++) {\n                 updates[i][j] = sc.nextInt();\n             }\n         }\n \n         int[] result = Range(length, updates);\n         display(result);\n     }\n \n     // function to display an array.\n     public static void display(int[] arr) {\n \n         for (int i = 0; i < arr.length; i++) {\n             System.out.print(arr[i] + \" \");\n         }\n \n         System.out.println();\n     }\n \n }"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/range-queries/range-addition/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

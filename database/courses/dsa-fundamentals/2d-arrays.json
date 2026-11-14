@@ -1,52 +1,132 @@
-[
-  {
-    "type": "Code",
-    "slug": "2d-arrays-2d-arrays-demo",
-    "name": "2d Arrays Demo"
+{
+  "name": "2D Arrays",
+  "slug": "2d-arrays",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 10,
+    "articles": 10,
+    "videos": 0
   },
-  {
-    "type": "Code",
-    "slug": "2d-arrays-matrix-multiplication",
-    "name": "Matrix Multiplication"
-  },
-  {
-    "type": "Code",
-    "slug": "2d-arrays-the-state-of-wakanda-1",
-    "name": "The State Of Wakanda - 1"
-  },
-  {
-    "type": "Code",
-    "slug": "2d-arrays-spiral-display",
-    "name": "Spiral Display"
-  },
-  {
-    "type": "Code",
-    "slug": "2d-arrays-exit-point-of-a-matrix",
-    "name": "Exit Point Of A Matrix"
-  },
-  {
-    "type": "Code",
-    "slug": "2d-arrays-rotate-by-90-degree",
-    "name": "Rotate By 90 Degree"
-  },
-  {
-    "type": "Code",
-    "slug": "2d-arrays-ring-rotate",
-    "name": "Ring Rotate"
-  },
-  {
-    "type": "Code",
-    "slug": "2d-arrays-the-state-of-wakanda-2",
-    "name": "The State Of Wakanda - 2"
-  },
-  {
-    "type": "Code",
-    "slug": "2d-arrays-saddle-price",
-    "name": "Saddle Price"
-  },
-  {
-    "type": "Code",
-    "slug": "2d-arrays-search-in-a-sorted-2d-array",
-    "name": "Search In A Sorted 2d Array"
-  }
-]
+  "items": [
+    {
+      "type": "article",
+      "slug": "2d-arrays-2d-arrays-demo",
+      "name": "2d Arrays Demo"
+    },
+    {
+      "type": "problem",
+      "slug": "2d-arrays-2d-arrays-demo",
+      "name": "2d Arrays Demo",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "2d-arrays-matrix-multiplication",
+      "name": "Matrix Multiplication"
+    },
+    {
+      "type": "problem",
+      "slug": "2d-arrays-matrix-multiplication",
+      "name": "Matrix Multiplication",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "2d-arrays-the-state-of-wakanda-1",
+      "name": "The State Of Wakanda 1"
+    },
+    {
+      "type": "problem",
+      "slug": "2d-arrays-the-state-of-wakanda-1",
+      "name": "The State Of Wakanda - 1",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "2d-arrays-spiral-display",
+      "name": "Spiral Display"
+    },
+    {
+      "type": "problem",
+      "slug": "2d-arrays-spiral-display",
+      "name": "Spiral Display",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "2d-arrays-exit-point-of-matrix",
+      "name": "Exit Point Of Matrix"
+    },
+    {
+      "type": "problem",
+      "slug": "2d-arrays-exit-point-of-a-matrix",
+      "name": "Exit Point Of A Matrix",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "2d-arrays-rotate-by-90-degrees",
+      "name": "Rotate By 90 Degrees"
+    },
+    {
+      "type": "problem",
+      "slug": "2d-arrays-rotate-by-90-degree",
+      "name": "Rotate By 90 Degree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "2d-arrays-ring-rotate",
+      "name": "Ring Rotate"
+    },
+    {
+      "type": "problem",
+      "slug": "2d-arrays-ring-rotate",
+      "name": "Ring Rotate",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "2d-arrays-the-state-of-wakanda-2",
+      "name": "The State Of Wakanda - 2"
+    },
+    {
+      "type": "problem",
+      "slug": "2d-arrays-the-state-of-wakanda-2",
+      "name": "The State Of Wakanda - 2",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "2d-arrays-saddle-price",
+      "name": "Saddle Price"
+    },
+    {
+      "type": "problem",
+      "slug": "2d-arrays-saddle-price",
+      "name": "Saddle Price",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "2d-arrays-search-in-a-2d-sorted-array",
+      "name": "Search In A 2D Sorted Array"
+    },
+    {
+      "type": "problem",
+      "slug": "2d-arrays-search-in-a-sorted-2d-array",
+      "name": "Search In A Sorted 2d Array",
+      "difficulty": "Medium",
+      "tests": 1
+    }
+  ]
+}

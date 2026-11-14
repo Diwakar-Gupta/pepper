@@ -1,0 +1,25 @@
+{
+  "name": "Minimum Cost To Connect All Cities",
+  "slug": "levelup-graphs-minimum-cost-to-connect-all-cities",
+  "course": "levelup",
+  "module": "graphs",
+  "difficulty": "Medium",
+  "statement": "There are n cities and there are roads in between some of the cities. Somehow all the roads are damaged simultaneously. We have to repair the roads to connect the cities again. There is a fixed cost to repair a particular road. Find out the minimum cost to connect all the cities by repairing roads.",
+  "inputFormat": "First line contains number of cities.\nSecond line contains number of edges roads.\nEach of next E lines contain 3 number u and v and c denoting a road between u and v with cost c to repair.",
+  "outputFormat": "print the minimum cost.",
+  "constraints": "1&lt;= n &lt;= 1000\n1&lt;= e &lt;= n*(n-1)/2",
+  "sampleInput": "7\n8\n0 1 10\n1 2 10\n2 3 10\n0 3 40\n3 4 2\n4 5 3\n5 6 3\n4 6 8",
+  "sampleOutput": "38",
+  "questionVideo": "k5SVIlN4hio",
+  "solutionVideo": "k5SVIlN4hio",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n  static class Edge implements Comparable<Edge> {\n    int v;\n    int wt;\n\n    Edge(int nbr, int wt) {\n      this.v = nbr;\n      this.wt = wt;\n    }\n\n    @Override\n    public int compareTo(Edge o) {\n      return this.wt - o.wt;\n    }\n  }\n\n  public static void main(String[] args) throws Exception {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\n    int vtces = Integer.parseInt(br.readLine());\n    ArrayList<ArrayList<Edge>> graph = new ArrayList<>();\n    for (int i = 0; i < vtces; i++) {\n      graph.add(new ArrayList<>());\n    }\n\n    int edges = Integer.parseInt(br.readLine());\n    for (int i = 0; i < edges; i++) {\n      String[] parts = br.readLine().split(\" \");\n      int v1 = Integer.parseInt(parts[0]);\n      int v2 = Integer.parseInt(parts[1]);\n      int wt = Integer.parseInt(parts[2]);\n      graph.get(v1).add(new Edge(v2, wt));\n      graph.get(v2).add(new Edge(v1, wt));\n    }\n\n\n  }\n\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/graphs/minimum-cost-to-connect-all-cities-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

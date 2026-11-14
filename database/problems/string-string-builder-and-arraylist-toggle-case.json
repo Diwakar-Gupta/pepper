@@ -1,11 +1,27 @@
 {
   "name": "Toggle Case",
   "slug": "string-string-builder-and-arraylist-toggle-case",
-  "description": "1. You are given a string that contains only lowercase and uppercase alphabets. \n2. You have to toggle the case of every character of the given string.\n\n### Input Format\n```\nA String\n```\n\n### Output Format\n```\nA String\n```\n\n### Constraints\n```\n1 <= length of string <= 1000\n```\n\n### Sample Input\n```\npepCODinG\n```\n\n### Sample Output\n```\nPEPcodINg\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/VQnWqpHpKnE?end=128&rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/VQnWqpHpKnE?start=128&rel=0&loop=1&playlist=VQnWqpHpKnE",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "string-string-builder-and-arraylist",
+  "difficulty": "Easy",
+  "statement": "1. You are given a string that contains only lowercase and uppercase alphabets. \n2. You have to toggle the case of every character of the given string.",
+  "inputFormat": "A String",
+  "outputFormat": "A String",
+  "constraints": "1 &lt;= length of string &lt;= 1000",
+  "sampleInput": "pepCODinG",
+  "sampleOutput": "PEPcodINg",
+  "questionVideo": "VQnWqpHpKnE",
+  "solutionVideo": "VQnWqpHpKnE",
+  "templates": {
+    "cpp": "#include<iostream>\n#include<string>\nusing namespace std;\n\nvoid togglecase(string str)\n{\n  //write your code here\n}\n\nint main() {\n  string str;\n  getline(cin, str);\n  togglecase(str);\n  return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static String toggleCase(String str){\n\t\t//write your code here\n\n\t\treturn null;\n\t}\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tString str = scn.next();\n\t\tSystem.out.println(toggleCase(str));\n\t}\n\n}",
+    "python": "def togglecase(st):\n#write your code here\n\nif __name__ == '__main__':\n  st = input()\n         togglecase(st)"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/string,-string-builder-and-arraylist/toggle-case-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

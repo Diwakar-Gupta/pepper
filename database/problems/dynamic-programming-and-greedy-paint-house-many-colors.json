@@ -1,11 +1,27 @@
 {
   "name": "Paint House - Many Colors",
   "slug": "dynamic-programming-and-greedy-paint-house-many-colors",
-  "description": "1. You are given a number n and a number k separated by a space, representing the number of houses and number of colors.\n2. In the next n rows, you are given k space separated numbers representing the cost of painting nth house with one of the k colors.\n3. You are required to calculate and print the minimum cost of painting all houses without painting any consecutive house with same color.\n\n### Input Format\n```\nA number n\nn1-0th n1-1st n1-2nd .. n1-kth\nn2-0th n2-1st n2-2nd .. n2-kth\n.. n number of elements\n```\n\n### Output Format\n```\nA number representing the minimum cost of painting all houses without painting any consecutive house with same color.\n```\n\n### Constraints\n```\n1 <= n <= 1000\n1 <= k <= 10\n0 <= n1-0th, n1-1st, .. <= 1000\n```\n\n### Sample Input\n```\n4 3\n1 5 7\n5 8 4\n3 2 9\n1 2 4\n```\n\n### Sample Output\n```\n8\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/jGywRalvoRw?end=197&rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/jGywRalvoRw?start=197&rel=0&loop=1&playlist=jGywRalvoRw",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "dynamic-programming-and-greedy",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n and a number k separated by a space, representing the number of houses and number of colors.\n2. In the next n rows, you are given k space separated numbers representing the cost of painting nth house with one of the k colors.\n3. You are required to calculate and print the minimum cost of painting all houses without painting any consecutive house with same color.",
+  "inputFormat": "A number n\nn1-0th n1-1st n1-2nd .. n1-kth\nn2-0th n2-1st n2-2nd .. n2-kth\n.. n number of elements",
+  "outputFormat": "A number representing the minimum cost of painting all houses without painting any consecutive house with same color.",
+  "constraints": "1 &lt;= n &lt;= 1000\n1 &lt;= k &lt;= 10\n0 &lt;= n1-0th, n1-1st, .. &lt;= 1000",
+  "sampleInput": "4 3\n1 5 7\n5 8 4\n3 2 9\n1 2 4",
+  "sampleOutput": "8",
+  "questionVideo": "jGywRalvoRw",
+  "solutionVideo": "jGywRalvoRw",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <bits/stdc++.h>\nusing namespace std ;\n\nint main()\n{\n  int n ;\n  cin >> n ;\n  int k ;\n  cin >> k ;\n  //write your code from here\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n    }\n}",
+    "python": "import sys\ndef minCost(arr, N, K):\n# write your code here\nif __name__ == '__main__':\n\n  inp = list(map(int, input().split()))\n\n          n = inp[0]\n              k = inp[1]\n\n                  a = []\n                      for i in range(n) :\n                        b = []\n                            im = list(map(int, input().split()))\n                                 for j in range(0, k) :\n                                   temp = im[j]\n                                          b.append(temp)\n                                          a.append(b)\n\n                                          print(minCost(a, n, k))"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/paint-house-many-colors-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

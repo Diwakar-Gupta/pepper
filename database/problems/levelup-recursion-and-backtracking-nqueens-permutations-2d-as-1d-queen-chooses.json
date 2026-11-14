@@ -1,0 +1,25 @@
+{
+  "name": "Nqueens Permutations - 2d As 1d - Queen Chooses",
+  "slug": "levelup-recursion-and-backtracking-nqueens-permutations-2d-as-1d-queen-chooses",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n, representing the size of a n * n chess board.\n2. You are required to calculate and print the permutations in which n queens (distinct) can be \n     placed on the n * n chess-board. \n3. No queen shall be able to kill another.\n\nNote -&gt; Use the code snippet and follow the algorithm discussed in question video. The judge can't \n               force you but the intention is to teach a concept. Play in spirit of the question.",
+  "inputFormat": "A number n",
+  "outputFormat": "Check the sample output and question video",
+  "constraints": "1 &lt;= n &lt;= 5",
+  "sampleInput": "4",
+  "sampleOutput": "-\tq1\t-\t-\t\n-\t-\t-\tq2\t\nq3\t-\t-\t-\t\n-\t-\tq4\t-\t\n\n-\tq1\t-\t-\t\n-\t-\t-\tq2\t\nq4\t-\t-\t-\t\n-\t-\tq3\t-\t\n\n-\tq1\t-\t-\t\n-\t-\t-\tq3\t\nq2\t-\t-\t-\t\n-\t-\tq4\t-\t\n\n-\tq1\t-\t-\t\n-\t-\t-\tq4\t\nq2\t-\t-\t-\t\n-\t-\tq3\t-\t\n\n-\tq1\t-\t-\t\n-\t-\t-\tq3\t\nq4\t-\t-\t-\t\n-\t-\tq2\t-\t\n\n-\tq1\t-\t-\t\n-\t-\t-\tq4\t\nq3\t-\t-\t-\t\n-\t-\tq2\t-\t\n\n-\t-\tq1\t-\t\nq2\t-\t-\t-\t\n-\t-\t-\tq3\t\n-\tq4\t-\t-\t\n\n-\t-\tq1\t-\t\nq2\t-\t-\t-\t\n-\t-\t-\tq4\t\n-\tq3\t-\t-\t\n\n-\t-\tq1\t-\t\nq3\t-\t-\t-\t\n-\t-\t-\tq2\t\n-\tq4\t-\t-\t\n\n-\t-\tq1\t-\t\nq4\t-\t-\t-\t\n-\t-\t-\tq2\t\n-\tq3\t-\t-\t\n\n-\t-\tq1\t-\t\nq3\t-\t-\t-\t\n-\t-\t-\tq4\t\n-\tq2\t-\t-\t\n\n-\t-\tq1\t-\t\nq4\t-\t-\t-\t\n-\t-\t-\tq3\t\n-\tq2\t-\t-\t\n\n-\t-\tq2\t-\t\nq1\t-\t-\t-\t\n-\t-\t-\tq3\t\n-\tq4\t-\t-\t\n\n-\t-\tq2\t-\t\nq1\t-\t-\t-\t\n-\t-\t-\tq4\t\n-\tq3\t-\t-\t\n\n-\t-\tq3\t-\t\nq1\t-\t-\t-\t\n-\t-\t-\tq2\t\n-\tq4\t-\t-\t\n\n-\t-\tq4\t-\t\nq1\t-\t-\t-\t\n-\t-\t-\tq2\t\n-\tq3\t-\t-\t\n\n-\t-\tq3\t-\t\nq1\t-\t-\t-\t\n-\t-\t-\tq4\t\n-\tq2\t-\t-\t\n\n-\t-\tq4\t-\t\nq1\t-\t-\t-\t\n-\t-\t-\tq3\t\n-\tq2\t-\t-\t\n\n-\tq2\t-\t-\t\n-\t-\t-\tq1\t\nq3\t-\t-\t-\t\n-\t-\tq4\t-\t\n\n-\tq2\t-\t-\t\n-\t-\t-\tq1\t\nq4\t-\t-\t-\t\n-\t-\tq3\t-\t\n\n-\tq3\t-\t-\t\n-\t-\t-\tq1\t\nq2\t-\t-\t-\t\n-\t-\tq4\t-\t\n\n-\tq4\t-\t-\t\n-\t-\t-\tq1\t\nq2\t-\t-\t-\t\n-\t-\tq3\t-\t\n\n-\tq3\t-\t-\t\n-\t-\t-\tq1\t\nq4\t-\t-\t-\t\n-\t-\tq2\t-\t\n\n-\tq4\t-\t-\t\n-\t-\t-\tq1\t\nq3\t-\t-\t-\t\n-\t-\tq2\t-\t\n\n-\tq2\t-\t-\t\n-\t-\t-\tq3\t\nq1\t-\t-\t-\t\n-\t-\tq4\t-\t\n\n-\tq2\t-\t-\t\n-\t-\t-\tq4\t\nq1\t-\t-\t-\t\n-\t-\tq3\t-\t\n\n-\tq3\t-\t-\t\n-\t-\t-\tq2\t\nq1\t-\t-\t-\t\n-\t-\tq4\t-\t\n\n-\tq4\t-\t-\t\n-\t-\t-\tq2\t\nq1\t-\t-\t-\t\n-\t-\tq3\t-\t\n\n-\tq3\t-\t-\t\n-\t-\t-\tq4\t\nq1\t-\t-\t-\t\n-\t-\tq2\t-\t\n\n-\tq4\t-\t-\t\n-\t-\t-\tq3\t\nq1\t-\t-\t-\t\n-\t-\tq2\t-\t\n\n-\t-\tq2\t-\t\nq3\t-\t-\t-\t\n-\t-\t-\tq1\t\n-\tq4\t-\t-\t\n\n-\t-\tq2\t-\t\nq4\t-\t-\t-\t\n-\t-\t-\tq1\t\n-\tq3\t-\t-\t\n\n-\t-\tq3\t-\t\nq2\t-\t-\t-\t\n-\t-\t-\tq1\t\n-\tq4\t-\t-\t\n\n-\t-\tq4\t-\t\nq2\t-\t-\t-\t\n-\t-\t-\tq1\t\n-\tq3\t-\t-\t\n\n-\t-\tq3\t-\t\nq4\t-\t-\t-\t\n-\t-\t-\tq1\t\n-\tq2\t-\t-\t\n\n-\t-\tq4\t-\t\nq3\t-\t-\t-\t\n-\t-\t-\tq1\t\n-\tq2\t-\t-\t\n\n-\t-\tq2\t-\t\nq3\t-\t-\t-\t\n-\t-\t-\tq4\t\n-\tq1\t-\t-\t\n\n-\t-\tq2\t-\t\nq4\t-\t-\t-\t\n-\t-\t-\tq3\t\n-\tq1\t-\t-\t\n\n-\t-\tq3\t-\t\nq2\t-\t-\t-\t\n-\t-\t-\tq4\t\n-\tq1\t-\t-\t\n\n-\t-\tq4\t-\t\nq2\t-\t-\t-\t\n-\t-\t-\tq3\t\n-\tq1\t-\t-\t\n\n-\t-\tq3\t-\t\nq4\t-\t-\t-\t\n-\t-\t-\tq2\t\n-\tq1\t-\t-\t\n\n-\t-\tq4\t-\t\nq3\t-\t-\t-\t\n-\t-\t-\tq2\t\n-\tq1\t-\t-\t\n\n-\tq2\t-\t-\t\n-\t-\t-\tq3\t\nq4\t-\t-\t-\t\n-\t-\tq1\t-\t\n\n-\tq2\t-\t-\t\n-\t-\t-\tq4\t\nq3\t-\t-\t-\t\n-\t-\tq1\t-\t\n\n-\tq3\t-\t-\t\n-\t-\t-\tq2\t\nq4\t-\t-\t-\t\n-\t-\tq1\t-\t\n\n-\tq4\t-\t-\t\n-\t-\t-\tq2\t\nq3\t-\t-\t-\t\n-\t-\tq1\t-\t\n\n-\tq3\t-\t-\t\n-\t-\t-\tq4\t\nq2\t-\t-\t-\t\n-\t-\tq1\t-\t\n\n-\tq4\t-\t-\t\n-\t-\t-\tq3\t\nq2\t-\t-\t-\t\n-\t-\tq1\t-",
+  "questionVideo": "BLy1wjhwHU8",
+  "solutionVideo": "BLy1wjhwHU8",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static boolean IsQueenSafe(int[][] chess, int row, int col) {\n        // write your code here\n    }\n\n    public static void nqueens(int qpsf, int tq, int[][] chess) {\n        // write your code here\n    }\n\n    public static void main(String[] args) throws Exception {\n        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n        int n = Integer.parseInt(br.readLine());\n        int[][] chess = new int[n][n];\n\n        nqueens(0, n, chess);\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/nqueens-permutations-2das1d-official-queen-chooses/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

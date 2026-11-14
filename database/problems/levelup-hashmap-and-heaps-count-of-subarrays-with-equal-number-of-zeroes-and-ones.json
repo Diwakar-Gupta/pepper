@@ -1,0 +1,25 @@
+{
+  "name": "Count Of Subarrays With Equal Number Of Zeroes And Ones",
+  "slug": "levelup-hashmap-and-heaps-count-of-subarrays-with-equal-number-of-zeroes-and-ones",
+  "course": "levelup",
+  "module": "hashmap-and-heaps",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array that contains only 0s and 1s.\n2. You have to find the count of subarrays with equal number of 0s and 1s.",
+  "inputFormat": "A number N\narr1\narr2.. N numbers",
+  "outputFormat": "A number representing count of subarrays with equal number of 0s and 1s.",
+  "constraints": "1 &lt;= N &lt;= 10^5\n0 &lt;= arr[i] &lt;= 1",
+  "sampleInput": "6\n0 1 1 0 1 1",
+  "sampleOutput": "4",
+  "questionVideo": "svMdY6wlQ6I",
+  "solutionVideo": "svMdY6wlQ6I",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n\n    public static int solution(int[] arr) {\n        // write your code here\n\n        return 0;\n    }\n    public static void main(String[] args) {\n        Scanner scn = new Scanner(System.in);\n        int n = scn.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++) {\n            arr[i] = scn.nextInt();\n        }\n        System.out.println(solution(arr));\n    }\n\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/hashmap-and-heaps/count-of-subarrays-with-equal-number-of-zeroes-and-ones-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Lost Numbers",
+  "slug": "interview-prep-interactive-problems-lost-numbers",
+  "course": "interview-prep",
+  "module": "interactive-problems",
+  "difficulty": "Easy",
+  "statement": "https://codeforces.com/problemset/problem/1167/B",
+  "inputFormat": "check the link",
+  "outputFormat": "check the link",
+  "constraints": "check the link",
+  "sampleInput": "1",
+  "sampleOutput": "1",
+  "questionVideo": "CdpOuYnxXXw",
+  "solutionVideo": "CdpOuYnxXXw",
+  "templates": {},
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/interactive-problems/lost-numbers-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

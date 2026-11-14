@@ -1,0 +1,25 @@
+{
+  "name": "Sum Of Squares",
+  "slug": "interview-prep-segment-tree-sum-of-squares",
+  "course": "interview-prep",
+  "module": "segment-tree",
+  "difficulty": "Hard",
+  "statement": "You are given an array(of integers) of length n.\nYou are required to answer q queries.\n\nQueries can be of two types\n0. 0 l r : In this you have to return sum of squares of all elements int range [l, r].\n1. 1 l r val: In this query u have to increase all elements in this interval [l, r] by val.\n\nTo do the above task u have to create a datastructure as follows :-\n\nImplement the SegmentTree class:\n1. SegmentTree(int arr[]): Initializes the SegmentTree object with an array,\n2. void update(int l, int r, int val): increase all elements in this interval [l, r] by val,\n3. long query(int l, int r): return sum of squares of all elements arr[i] for which i is in range [l, r].",
+  "inputFormat": "A number n\nn1\nn2\n.. n number of elements\nA number q\nfollowing q lines contains queries of format\n0 l r\n1 l r val",
+  "outputFormat": "for each query of type 0 print a single integer in seperate line",
+  "constraints": "1. 1 &lt;= n, q &lt;= 10^5\n2. 0 &lt;= l &lt;= r &lt; n\n3. -10^4 &lt;= arr[i], val &lt;= 10^4.",
+  "sampleInput": "8\n0\n10\n10\n-1\n5\n8\n10\n2\n5\n0 7 7\n1 4 6 1\n0 2 4\n1 5 5 7\n0 3 7",
+  "sampleOutput": "4\n137\n418",
+  "questionVideo": "86pjOaGlXAQ",
+  "solutionVideo": "86pjOaGlXAQ",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static class SegmentTree {\n\n    SegmentTree(int arr[]) {\n\n    }\n\n    void update(int l, int r, int val) {\n\n    }\n\n    long query(int l, int r) {\n\n    }\n\n  }\n\n  public static void main(String[] args) throws Exception {\n    BufferedReader read = new BufferedReader(new InputStreamReader(System.in));\n\n    int n = Integer.parseInt(read.readLine());\n    int arr[] = new int[n];\n\n    for (int i = 0; i < n; i++) {\n      arr[i] = Integer.parseInt(read.readLine());\n    }\n\n    SegmentTree obj = new SegmentTree(arr);\n\n    int q = Integer.parseInt(read.readLine());\n\n    StringBuilder out = new StringBuilder();\n    while (q-- > 0) {\n      String[] inp = read.readLine().split(\" \");\n\n      int t = Integer.parseInt(inp[0]);\n      int l = Integer.parseInt(inp[1]);\n      int r = Integer.parseInt(inp[2]);\n\n      if (t == 0) {\n        long ans = obj.query(l, r);\n        out.append(ans + \"\\n\");\n      } else {\n        int val = Integer.parseInt(inp[3]);\n        obj.update(l, r, val);\n      }\n    }\n\n    System.out.println(out);\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/segment-tree/sum-of-squares-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

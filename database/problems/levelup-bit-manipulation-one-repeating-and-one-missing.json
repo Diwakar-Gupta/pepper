@@ -1,0 +1,26 @@
+{
+  "name": "One Repeating And One Missing",
+  "slug": "levelup-bit-manipulation-one-repeating-and-one-missing",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array of length n containing numbers from 1 to n.\n2. One number is present twice in array and one is missing.\n3. You have to find these two numbers.",
+  "inputFormat": "A number n\na1\na2..\nn numbers",
+  "outputFormat": "Missing number\nRepeating Number",
+  "constraints": "1 &lt;= n &lt;= 10^9\n1 &lt;= a1,a2.. &lt;= 10^9",
+  "sampleInput": "7\n1 \n3 \n4 \n5 \n1 \n6 \n2",
+  "sampleOutput": "Missing Number -> 7\nRepeating Number -> 1",
+  "questionVideo": "MvklwzVz654",
+  "solutionVideo": "MvklwzVz654",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args){\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    for(int i = 0 ; i < n; i++){\n      arr[i] = scn.nextInt();\n    }\n    solution(arr);\n  }\n\n  public static void solution(int[] arr){\n   //write your code here\n   \n  }\n\n}"
+  },
+  "editorial": "<p>The problem here is that we are given an input array with numbers 1 to n but due to some reason a number is missing and in that position another number from the set repeats itself, now we wish to find the repeating and the missing number.</p><p>Consider the following example:</p><p>Input array: [ 3, 6, 2, 5, 1, 2, 7 ]</p><p>In this array, we can observe that 2 is the repeating number and 4 is the missing number.</p><p>To solve this problem if we would try taking XOR of the array that would serve no use as the XOR would cancel out the repeating number and the result would be meaningless. So to get our result we would add repetition to our input array and that repetition would be the original numbers that should be present i.e. numbers from 1 to n (here 1 to 7).</p><p>Now if we try to take XOR of the array we would get:</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/f4a0c5168f8540f9.png\" alt=\"\"></p><p>Now we can observe that the XOR result is <b>the XOR of the repeating element and the non-repeating element</b>. Now we have successfully converted our problem to <b>All Repeating except two,</b> the difference only lies in the fact that our repeating number occurs thrice which can be considered as a pair of repeating with an extra occurrence so the problem remains the same. Now we can easily implement the segregation approach in our earlier problem <b>All Repeating except two</b>, to get our result.</p><p><b>Time Complexity: O(n)</b></p><p>The time complexity for the function is linear as we are traversing on every element at least once.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/one-repeating-and-one-missing-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

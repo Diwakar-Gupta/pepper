@@ -1,11 +1,27 @@
 {
   "name": "The Curious Case Of Benjamin Bulbs",
   "slug": "getting-started-the-curious-case-of-benjamin-bulbs",
-  "description": "1. You are given n number of bulbs. They are all switched off. A weird fluctuation in voltage hits the circuit n times. In the 1st fluctuation all bulbs are toggled, in the 2nd fluctuation every 2nd bulb is toggled, in the 3rd fluctuation every 3rd bulb is toggled and so on. You've to find which bulbs will be switched on after n fluctuations.\n2. Take as input a number n, representing the number of bulbs.\n3. Print all the bulbs that will be on after the nth fluctuation in voltage.\n\n### Input Format\n```\nn, an integer\n```\n\n### Output Format\n```\nb1 b2 b3 b4 .. all bulbs that will be on after nth wave\n```\n\n### Constraints\n```\n2 <= n < 10^9\n```\n\n### Sample Input\n```\n6\n```\n\n### Sample Output\n```\n1\n4\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/_F7ejdDCpyg?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/7IbWTFOUP1U?rel=0&loop=1&playlist=7IbWTFOUP1U",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "getting-started",
+  "difficulty": "Easy",
+  "statement": "1. You are given n number of bulbs. They are all switched off. A weird fluctuation in voltage hits the circuit n times. In the 1st fluctuation all bulbs are toggled, in the 2nd fluctuation every 2nd bulb is toggled, in the 3rd fluctuation every 3rd bulb is toggled and so on. You've to find which bulbs will be switched on after n fluctuations.\n2. Take as input a number n, representing the number of bulbs.\n3. Print all the bulbs that will be on after the nth fluctuation in voltage.",
+  "inputFormat": "n, an integer",
+  "outputFormat": "b1 b2 b3 b4 .. all bulbs that will be on after nth wave",
+  "constraints": "2 &lt;= n &lt; 10^9",
+  "sampleInput": "6",
+  "sampleOutput": "1\n4",
+  "questionVideo": "_F7ejdDCpyg",
+  "solutionVideo": "7IbWTFOUP1U",
+  "templates": {
+    "cpp": "#include<iostream>\nusing namespace std;\nint main(int argc, char**argv){\n    int n;\n    cin>>n;\n    \n    //write your code here\n    \n}",
+    "java": "import java.util.*;\n  \n  public class Main{\n  \n  public static void main(String[] args) {\n    // write your code here  \n   }\n  }"
+  },
+  "editorial": "<p><i>&quot;For what it is worth, it is never too late to be whoever you want to be.&quot;</i></p><p><b><u>Question:</u></b></p><ol><li>You are given n number of bulbs. They are all switched off. A weird fluctuation in voltage hits the circuit n times. In the 1st fluctuation, all bulbs are toggled, in the 2nd fluctuation every 2nd bulb is toggled, in the 3rd fluctuation, every 3rd bulb is toggled, and so on. You've to find which bulbs will be switched on after n fluctuations.</li><li>Take as input a number n, representing the number of bulbs.</li><li>Print all the bulbs that will be on after the nth fluctuation in voltage.</li></ol><p><b><u>Input format:</u></b></p><p>n, an integer</p><p><b><u>Output format:</u></b></p><p>b1 b2 b3 b4 .. all bulbs that will be on after nth wave</p><p><b><u>Constraints:</u></b></p><p>2 &lt;= n &lt; 10^9</p><p><b><u>Solution Approach:</u></b></p><p>Let us start off with an example of 20 given bulbs. Every voltage change will change the state of the bulb, either from on or off, or off from on.</p><p>Now according to the given problem, after the first fluctuation, all the bulbs will be turned on.</p><p>In the second fluctuation, every second bulb will be affected.</p><p>For illustration purposes, let us denote the effect of fluctuation with a tick against the 20 given bulbs.</p><p>On the first fluctuation, all the bulbs state will change (on from off). On second fluctuation, every 2nd bulb, that is, 2 4 6 8 10 12 14 16 18 20 state will be changed (off from on).</p><p>On the third fluctuation, every third bulb will be affected by the voltage, that is, 3 6 9 12 15 18 (the bulbs that are on will turn off and bulbs that were off will turn on).</p><p>Carrying on this process for 20 fluctuations and maintaining the pattern of ticking off, we end up with the following results.</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"></p><p>The following illustration explains the process of turning on and off with the fluctuation cycle:</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"></p><p>After 20 fluctuations, we observe that the bulbs that end up being turned on are</p><p><b>1 4 9 16</b> which experienced an odd number of fluctuations through them. Rest all numbers experienced an even number of fluctuations and hence, they are turned off.</p><p>And we can detect a pattern here. All of these bulb numbers are perfect squares.</p><p>Now why only these perfect squares were numbers left on, after the whole cycle?</p><p>The problem comes down to the question that how many factors does the number have, or comprises of.</p><p>If a bulb had even number of factors, then it would participate in even number of cycles, thus, it would then keep the bulb off.</p><p>If a bulb had odd number of factors, then it would participate in odd number of cycles and hence, otherwise would be kept on.</p><p>So, all perfect square numbers have odd numbers of factors.</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"></p><p>So, in this problem, we just have to print all the perfect squares up to the user input number.</p><p>It was not much of a question, as much as it was a puzzle which required to be decoded.</p><p><b><u>The programming implementation for this problem will be:</u></b> </p><pre>import java.util.*;\n                                   \n                                   public class Main {\n                                   \n                                       public static void main(String[] args) {\n                                           Scanner scn = new Scanner(System.in);\n                                           int n = scn.nextInt();\n                                            \n                                           for(int i = 1; i * i &lt;=n; i++)\n                                            {\n                                              System.out.println(i*i);\n                                            } \n                                           }\n                                       }\n                                   }</pre>",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/getting-started/benjamin-bulbs-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

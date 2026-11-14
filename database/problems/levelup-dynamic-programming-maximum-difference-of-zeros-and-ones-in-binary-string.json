@@ -1,0 +1,25 @@
+{
+  "name": "Maximum Difference Of Zeros And Ones In Binary String",
+  "slug": "levelup-dynamic-programming-maximum-difference-of-zeros-and-ones-in-binary-string",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given a string containing only 0's and 1's.\n2. You have to find the length of substring which is having maximum difference of number of 0s and number of 1s i.e (Number of 0's - Number of 1's).\n3. If there are all 1's present in the given string, then print '-1'.",
+  "inputFormat": "A Binary String",
+  "outputFormat": "A number",
+  "constraints": "1 &lt;= length of string &lt;= 10^5",
+  "sampleInput": "11000010001",
+  "sampleOutput": "6",
+  "questionVideo": "tDdqQxd-nFw",
+  "solutionVideo": "tDdqQxd-nFw",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int solution(String str) {\n\t\t// write your code here\n\n\t\treturn 0;\n\t}\n\t\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tString string = scn.next();\n\t\tSystem.out.println(solution(str));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/maximum-difference-of-zeros-and-ones-in-binary-string-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

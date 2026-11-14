@@ -1,0 +1,26 @@
+{
+  "name": "N Queens Using Bit",
+  "slug": "levelup-bit-manipulation-n-queens-using-bit",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number n, the size of a chess board.\n2. You are required to place n number of queens in the n * n cells of board such that no queen can kill another.\n     Note - Queens kill at distance in all 8 directions\n3. Complete the body of printNQueens function - without changing signature - to calculate and print all safe configurations of n-queens\n     Use sample input and output to get more idea.\n\nNote -&gt; The online judge can't force you to write the function recursively but that is what the spirit of question is.\n               Write recursive and not iterative logic. The purpose of the question is to aid learning recursion, branch and bound technique, bit manipulation \n               and not test you.",
+  "inputFormat": "A number n",
+  "outputFormat": "Safe configurations of queens as suggested in sample output",
+  "constraints": "1 &lt;= n &lt;= 10",
+  "sampleInput": "4",
+  "sampleOutput": "0-1, 1-3, 2-0, 3-2, .\n0-2, 1-0, 2-3, 3-1, .",
+  "questionVideo": "7qWsFBBTFRE",
+  "solutionVideo": "7qWsFBBTFRE",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void solution(boolean[][] board, int row, int cols, int ndiag, int rdiag, String asf) {\n    // write your code here\n  }\n\n  public static void main(String[] args) throws Exception {\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    boolean[][] board = new boolean[n][n];\n    int cols = 0;\n    int ndiag = 0;\n    int rdiag = 0;\n    solution(board, 0, cols, ndiag, rdiag, \"\");\n  }\n\n}"
+  },
+  "editorial": "<p>The problem here deals with solving NQueens problem using the concepts of bit manipulation. Earlier we have solved the NQueens problem using recursion and backtracking. This bit manipulation technique is just an optimization to the recursive solution so the <b>NQueens Branch and Bound</b> recursive solution is a pre-requisite to this problem.</p><p>The N Queens problem deals with placing N Queens on a N*N board so that no two queens attack each other. A queen can attack in all 8 directions.</p><p>For example N = 4</p><p>_ _ Q _</p><p>Q _ _ _</p><p>_ _ _ Q</p><p>_ Q _ _</p><p>The above arrangement is a possible solution to the problem.</p><p>In this solution, we will be working on space optimization for the branch and bound method. So instead of creating arrays for columns, diagonals, and antidiagonal here, we will be maintained integer values which will be the binary representation analogous to that of arrays created earlier. Here an unset bit will provide us the information that position is a safe position and a set bit will imply that we need not apply recursion here as that would lead to an attack by the queen.</p><p>The rest implementation is solely based on branch and bound NQueens recursive solution.</p><p><b>Time Complexity: O(N!)</b></p><p>Each row has N positions to deal with which makes our recursive solution of the type: T(n) = n*T(n-1) + k</p><p><b>Space Complexity: O(N*N)</b></p><p>A board of size N*N is created to store the result.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/nqueens-using-bits-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

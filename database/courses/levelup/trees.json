@@ -1,0 +1,411 @@
+{
+  "name": "Trees",
+  "slug": "trees",
+  "course": "levelup",
+  "counts": {
+    "problems": 57,
+    "articles": 0,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "levelup-trees-in-order-morris-traversal-in-binarytree",
+      "name": "In Order Morris Traversal In Binarytree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-pre-order-morris-traversal-in-binary-tree",
+      "name": "Pre Order Morris Traversal In Binary Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-cameras-in-binary-tree",
+      "name": "Cameras In Binary Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-house-robber-in-binary-tree",
+      "name": "House Robber In Binary Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-longest-zigzag-path-in-a-binary-tree",
+      "name": "Longest Zigzag Path In A Binary Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-validate-bst",
+      "name": "Validate Bst",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-recover-bst",
+      "name": "Recover Bst",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-construct-binarytree-from-preorder-and-inorder-traversal",
+      "name": "Construct Binarytree From Preorder And Inorder Traversal",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-construct-binarytree-from-postorder-and-inorder-traversal",
+      "name": "Construct Binarytree From Postorder And Inorder Traversal",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-construct-binary-tree-from-inorder-and-levelorder-traversal",
+      "name": "Construct Binary Tree From Inorder And Levelorder Traversal",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-construct-binary-tree-from-preorder-and-postorder-traversal",
+      "name": "Construct Binary Tree From Preorder And Postorder Traversal",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-construct-bst-from-inorder-traversal",
+      "name": "Construct Bst From Inorder Traversal",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-construct-bst-from-preorder-traversal",
+      "name": "Construct Bst From Preorder Traversal",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-construct-bst-from-postorder-traversal",
+      "name": "Construct Bst From Postorder Traversal",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-construct-bst-from-levelorder-traversal",
+      "name": "Construct Bst From Levelorder Traversal",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-serialize-and-deserialize-binary-tree",
+      "name": "Serialize And Deserialize Binary Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-serialize-and-deserialize-n-ary-tree",
+      "name": "Serialize And Deserialize N - Ary Tree",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-left-view-of-a-binarytree",
+      "name": "Left View Of A Binarytree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-right-view-of-a-binarytree",
+      "name": "Right View Of A Binarytree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-width-of-shadow-of-binary-tree",
+      "name": "Width Of Shadow Of Binary Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-vertical-order-traversal-of-a-binarytree",
+      "name": "Vertical Order Traversal Of A Binarytree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-vertical-order-traversal-of-a-binarytree-ii",
+      "name": "Vertical Order Traversal Of A Binarytree-ii",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-bottom-view-of-a-binarytree",
+      "name": "Bottom View Of A Binarytree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-top-view-of-a-binarytree",
+      "name": "Top View Of A Binarytree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-diagonal-order-of-a-binarytree",
+      "name": "Diagonal Order Of A Binarytree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-diagonal-order-anti-clock-wise-of-a-binarytree",
+      "name": "Diagonal Order (anti-clock Wise) Of A Binarytree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-vertical-order-sum-of-a-binarytree",
+      "name": "Vertical Order Sum Of A Binarytree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-diagonal-order-sum-of-a-binary-tree",
+      "name": "Diagonal Order Sum Of A Binary Tree",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-binary-search-tree-iterator-2",
+      "name": "Binary Search Tree Iterator 2",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-node-to-root-path-binary-tree",
+      "name": "Node To Root Path Binary Tree",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-all-single-child-parent-in-binary-tree",
+      "name": "All Single Child Parent In Binary Tree",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-count-all-single-child-parent-in-binary-tree",
+      "name": "Count All Single Child Parent In Binary Tree",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-all-nodes-distance-k-in-binary-tree",
+      "name": "All Nodes Distance K In Binary Tree",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-burning-tree",
+      "name": "Burning Tree",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-burning-tree-2",
+      "name": "Burning Tree 2",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-maximum-width-of-binary-tree",
+      "name": "Maximum Width Of Binary Tree",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-convert-binary-search-tree-to-doubly-linked-list",
+      "name": "Convert Binary Search Tree To Doubly Linked List",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-convert-sorted-doubly-linked-list-to-binary-search-tree",
+      "name": "Convert Sorted Doubly Linked List To Binary Search Tree",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-path-sum-in-binary-tree",
+      "name": "Path Sum In Binary Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-path-sum-in-binary-tree-2",
+      "name": "Path Sum In Binary Tree - 2",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-diameter-of-binary-tree-all-methods",
+      "name": "Diameter Of Binary Tree All Methods",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-maximum-path-sum-in-between-two-leaves-of-binary-tree",
+      "name": "Maximum Path Sum In Between Two Leaves Of Binary Tree",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-maximum-path-sum-of-binary-tree",
+      "name": "Maximum Path Sum Of Binary Tree",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-path-sum-equal-to-given-value",
+      "name": "Path Sum Equal To Given Value",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-lowest-common-ancestor-of-a-binary-tree",
+      "name": "Lowest Common Ancestor Of A Binary Tree",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-unique-binary-search-trees-2",
+      "name": "Unique Binary Search Trees 2",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-all-possible-full-binary-trees",
+      "name": "All Possible Full Binary Trees",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-add-one-row-to-tree",
+      "name": "Add One Row To Tree",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-path-in-zigzag-labelled-binary-tree",
+      "name": "Path In Zigzag Labelled Binary Tree",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-complete-binary-tree-inserter",
+      "name": "Complete Binary Tree Inserter",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-delete-nodes-and-return-forest",
+      "name": "Delete Nodes And Return Forest",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-count-good-nodes-in-binary-tree",
+      "name": "Count Good Nodes In Binary Tree",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-even-odd-tree",
+      "name": "Even Odd Tree",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-longest-univalue-path",
+      "name": "Longest Univalue Path",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-populating-next-right-pointers-in-each-node",
+      "name": "Populating Next Right Pointers In Each Node",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-binary-tree-coloring-game",
+      "name": "Binary Tree Coloring Game",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-trees-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree",
+      "name": "Find A Corresponding Node Of A Binary Tree In A Clone Of That Tree",
+      "difficulty": "Easy",
+      "tests": 0
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Cherry Pickup",
+  "slug": "levelup-dynamic-programming-cherry-pickup",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Hard",
+  "statement": "1. You are given a number N, which represents the rows and columns of a 2-D matrix.\n2. Matrix contains only three values - \n   a. Cell is empty.\n   b. Cell contains a cherry.\n   c. Cell contains a thorn and you can not pass through this cell.\n3. You have to find the maximum number of cherries that you can collect following these rules :\n   a. You have to start from (0,0) and travel till (N-1,N-1) by moving right or down, \n    one step at a time.\n   b. After reaching (N-1,N-1), you have to come back to (0,0) by moving left or up, \n    one step at a time.   \n\nNote -&gt; If there is no valid path between the top-left cell and bottom-right cell, then no cherries can be collected.",
+  "inputFormat": "A number N\narr1\narr2... (N*N numbers).",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 50\nCells can have only three values 0,1 and -1.",
+  "sampleInput": "3\n0 \n1 \n-1\n1 \n0\n-1\n1 \n1  \n1",
+  "sampleOutput": "5",
+  "questionVideo": "ZV0sUzfA7Eg",
+  "solutionVideo": "ZV0sUzfA7Eg",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int Solution(int r1, int c1, int r2, int[][] arr, int[][][] dp) {\n\t\t//write your code here\n\n\t\treturn 0;\n\t}\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tint[][] arr = new int[n][n];\n\t\tfor(int i = 0; i < n; i++){\n\t\t\tfor(int j = 0 ; j < n; j++){\n\t\t\t\tarr[i][j] = scn.nextInt();\n\t\t\t}\n\t\t}\n\t\tint ans = Math.max(0,Solution(0, 0, 0, arr, new int[n][n][n]));\n\t\tSystem.out.println(ans);\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/cherry-pickup-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

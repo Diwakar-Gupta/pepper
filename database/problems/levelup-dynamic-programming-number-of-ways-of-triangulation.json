@@ -1,0 +1,25 @@
+{
+  "name": "Number Of Ways Of Triangulation",
+  "slug": "levelup-dynamic-programming-number-of-ways-of-triangulation",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number N, which represents the number of sides in a polygon.\n2. You have to find the total number of ways in which the given polygon can be triangulated.",
+  "inputFormat": "A number N",
+  "outputFormat": "A number representing number of ways of traingulating a N-sided polygon.",
+  "constraints": "1 &lt;= N &lt;= 15",
+  "sampleInput": "5",
+  "sampleOutput": "5",
+  "questionVideo": "jSGW3YKkyHQ",
+  "solutionVideo": "jSGW3YKkyHQ",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int solution(int n){\n\t\t// write your code here\n\t\t\n\t\treturn 0;\n\t }\n\t \n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tSystem.out.println(solution(n));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/number-of-ways-of-triangulation-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

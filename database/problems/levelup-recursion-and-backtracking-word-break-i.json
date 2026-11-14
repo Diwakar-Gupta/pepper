@@ -1,0 +1,26 @@
+{
+  "name": "Word Break - I",
+  "slug": "levelup-recursion-and-backtracking-word-break-i",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Easy",
+  "statement": "1. You are given n space separated strings, which represents a dictionary of words.\n2. You are given another string which represents a sentence.\n3. You have to print all possible sentences from the string, such that words of the sentence are \n     present in dictionary.\n\nNote -&gt; Check out the question video and write the recursive code as it is intended without \n               changing signature. The judge can't force you but intends you to teach a concept.",
+  "inputFormat": "A number n \nn strings representing words\na string representing a sentence",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "1 &lt;= number of words &lt;= 10\n1 &lt;= length of each word &lt;= 15\n1 &lt;= length of sentence &lt;= 1000",
+  "sampleInput": "11\ni like pep coding pepper eating mango man go in pepcoding\nilikepeppereatingmangoinpepcoding",
+  "sampleOutput": "i like pepper eating man go in pep coding \ni like pepper eating man go in pepcoding \ni like pepper eating mango in pep coding \ni like pepper eating mango in pepcoding",
+  "questionVideo": "LmHWIsBQBU4",
+  "solutionVideo": "LmHWIsBQBU4",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tHashSet<String> dict = new HashSet<>();\n\t\tfor(int i = 0  ; i  < n; i++){\n\t\t\tdict.add(scn.next());\n\t\t}\n\t\tString sentence = scn.next();\n\t\twordBreak(sentence,\"\", dict);\n\t}\n\n\tpublic static void wordBreak(String str, String ans, HashSet<String> dict){\n\t\t// write your code here\n\t}\n\t\t\n}"
+  },
+  "editorial": "<p>We will solve this question with the recursion. We will first store all the given words in a set. Then we will generate all the prefixes of the current word. If the prefix is present in the set, we will call the recursive function for the remaining string. When the length of the string is zero, we will print the ans and return.</p><p><b><u>Signature -</u></b></p><p>public static void wordBreak(String str, String ans, HashSet &lt; String &gt; dict)</p><p>str = Input string</p><p>ans = answer till the current level</p><p>dict = Set containing all the given words</p><p><b><u>Code -</u></b> </p><pre>public static void wordBreak(String str, String ans, HashSet &lt; String &gt; dict) {\n                                        if (str.length() == 0) {\n                                            System.out.println(ans);\n                                            return;\n                                        }\n                                        for (int i = 0; i &lt; str.length(); i++) {\n                                            String left = str.substring(0, i + 1);\n                                            if (dict.contains(left)) {\n                                                String right = str.substring(i + 1);\n                                                wordBreak(right, ans + left + &quot; &quot;, dict);\n                                            }\n                                        }\n                                }</pre><p><b><u>Code Explained -</u></b></p><p>With the help of for loop, we generate all the prefixes. If the prefix is present in the dict, we first find the suffix left and call the recursive function for the remaining string. We also append the prefix to the ans.</p><p><b><u>Base Case -</u></b></p><p>When the length of the str is zero, it means we have used the whole string. We will print the ans and return.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/wordbreak1official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

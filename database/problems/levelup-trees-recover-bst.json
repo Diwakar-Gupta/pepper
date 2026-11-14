@@ -1,0 +1,26 @@
+{
+  "name": "Recover Bst",
+  "slug": "levelup-trees-recover-bst",
+  "course": "levelup",
+  "module": "trees",
+  "difficulty": "Easy",
+  "statement": "1. You are given a partially written function to solve(Refer question video).\n2. You are given the root of a binary search tree (BST), where exactly two nodes of the tree were swapped by mistake. Recover the tree without changing its structure.\n\nFollow up: You are Not Allowed To Use Extra Space(Example : Storing All Element In Arrays).",
+  "inputFormat": "Input is managed for you.",
+  "outputFormat": "Output is managed for you.",
+  "constraints": "0 &lt;= Number of Nodes &lt;= 10^9\n-10^9 &lt;= value of Node data &lt;= 10^9",
+  "sampleInput": "13\n7\n3\n2\n-1\n-1\n10\n-1\n-1\n5\n-1\n12\n-1\n-1",
+  "sampleOutput": "3 -> 7 <- 10\n2 -> 3 <- 5\n. -> 2 <- .\n. -> 5 <- .\n. -> 10 <- 12\n. -> 12 <- .",
+  "questionVideo": "XLFGcZxn0PM",
+  "solutionVideo": "XLFGcZxn0PM",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nclass TreeNode\n{\npublic:\n    int val = 0;\n    TreeNode *left = nullptr;\n    TreeNode *right = nullptr;\n\n    TreeNode(int val)\n    {\n        this->val = val;\n    }\n};\n\nvoid recoverTree(TreeNode *root)\n{\n}\n\n// input_Section_====================================================================\n\nvoid display(TreeNode *node)\n{\n    if (node == nullptr)\n        return;\n\n    string str = \"\";\n    str += ((node->left != nullptr ? to_string(node->left->val) : \".\"));\n    str += (\" -> \" + to_string(node->val) + \" <- \");\n    str += ((node->right != nullptr ? to_string(node->right->val) : \".\"));\n\n    cout << str << endl;\n\n    display(node->left);\n    display(node->right);\n}\n\nTreeNode *createTree(vector<int> &arr, vector<int> &IDX)\n{\n    if (IDX[0] > arr.size() || arr[IDX[0]] == -1)\n    {\n        IDX[0]++;\n        return nullptr;\n    }\n\n    TreeNode *node = new TreeNode(arr[IDX[0]++]);\n    node->left = createTree(arr, IDX);\n    node->right = createTree(arr, IDX);\n\n    return node;\n}\n\nvoid solve()\n{\n    int n;\n    cin >> n;\n    vector<int> arr(n, 0);\n    for (int i = 0; i < n; i++)\n    {\n        cin >> arr[i];\n    }\n\n    vector<int> IDX(1, 0);\n    TreeNode *root = createTree(arr, IDX);\n    recoverTree(root);\n    display(root);\n}\n\nint main()\n{\n    solve();\n    return 0;\n}",
+    "java": "import java.util.Scanner;\n\npublic class Main {\n    public static Scanner scn = new Scanner(System.in);\n\n    public static class TreeNode {\n        int val = 0;\n        TreeNode left = null;\n        TreeNode right = null;\n\n        TreeNode(int val) {\n            this.val = val;\n        }\n    }\n\n    public static void recoverTree(TreeNode root) {\n\n    }\n\n    // input_section=================================================\n\n    public static void display(TreeNode node) {\n        if (node == null)\n            return;\n\n        StringBuilder sb = new StringBuilder();\n        sb.append((node.left != null ? node.left.val : \".\"));\n        sb.append(\" -> \" + node.val + \" <- \");\n        sb.append((node.right != null ? node.right.val : \".\"));\n\n        System.out.println(sb.toString());\n\n        display(node.left);\n        display(node.right);\n\n    }\n\n    public static TreeNode createTree(int[] arr, int[] IDX) {\n        if (IDX[0] > arr.length || arr[IDX[0]] == -1) {\n            IDX[0]++;\n            return null;\n        }\n\n        TreeNode node = new TreeNode(arr[IDX[0]++]);\n        node.left = createTree(arr, IDX);\n        node.right = createTree(arr, IDX);\n\n        return node;\n    }\n\n    public static void solve() {\n        int n = scn.nextInt();\n        int[] arr = new int[n];\n        for (int i = 0; i < n; i++)\n            arr[i] = scn.nextInt();\n\n        int[] IDX = new int[1];\n        TreeNode root = createTree(arr, IDX);\n        recoverTree(root);\n        display(root);\n    }\n\n    public static void main(String[] args) {\n        solve();\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/recover-bst/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

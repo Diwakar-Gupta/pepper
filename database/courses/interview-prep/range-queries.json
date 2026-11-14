@@ -1,0 +1,68 @@
+{
+  "name": "Range Queries",
+  "slug": "range-queries",
+  "course": "interview-prep",
+  "counts": {
+    "problems": 8,
+    "articles": 0,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "interview-prep-range-queries-range-addition",
+      "name": "Range Addition",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-range-queries-moksh-and-his-girlfriend",
+      "name": "Moksh And His Girlfriend",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-range-queries-square-root-decomposition",
+      "name": "Square Root Decomposition",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-range-queries-point-update-in-square-root-decomposition",
+      "name": "Point Update In Square Root Decomposition",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-range-queries-fenwick-tree",
+      "name": "Fenwick Tree",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-range-queries-2d-binary-indexed-tree",
+      "name": "2d Binary Indexed Tree",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-range-queries-create-sorted-array-through-instructions",
+      "name": "Create Sorted Array Through Instructions",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-range-queries-sparse-table",
+      "name": "Sparse Table",
+      "difficulty": "Medium",
+      "tests": 1
+    }
+  ]
+}

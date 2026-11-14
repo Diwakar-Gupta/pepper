@@ -1,0 +1,26 @@
+{
+  "name": "Reduce N To 1",
+  "slug": "levelup-bit-manipulation-reduce-n-to-1",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given a positive number N.\n2. You have to find the minimum number of operations required to convert N into 1.\n3. Operations allowed :\n     (i)  If n is even, you have to replace n with n/2.\n     (ii) If n is odd, you can replace n with either n-1 or n+1.",
+  "inputFormat": "A number N",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "1 &lt;= N &lt;= 2147483647",
+  "sampleInput": "8",
+  "sampleOutput": "3",
+  "questionVideo": "pW5fvwnZ1TA",
+  "solutionVideo": "pW5fvwnZ1TA",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static int solution(int n) {\n        //write your code here\n        return 0;\n    }\n    \n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n        System.out.println(solution(n));\n    }\n\t\n\t\n}"
+  },
+  "editorial": "<p>The problem here deals with reducing a given number say n to 1 by performing the following operations in minimum steps:</p><p>1. If n is even, the only operation that is allowed in this case is to divide by 2.</p><p>2. If n is odd, both addition or subtraction by 1 is allowed.</p><p>To understand minimization adequately, we need to understand few illustrations and so for that let us assume a number n of the form 4x + l.</p><p>So our number can lie in one of the following <b>{ (4x + 1), (4x + 2), (4x + 3), (4x) }</b>.</p><p>For the cases (4x + 2) and (4x) we can only perform a single operation i.e. to divide by 2 as they are the even cases.</p><p>Henceforth, we are only left with two cases to tackle:</p><p><b>1. The number is of the form: (4x + 1)</b></p><p>In this subtracting by 1 yield to minimum steps. As we can observe that by subtracting we can reach x in just 3 steps whereas by adding we can reach x in at least 4 steps. So if having x is advantageous then subtraction is effective. Now let us assume that having (x + 1) is advantageous so in that case too we can reach (x + 1) in four steps if we chose to subtract. This indicates that adding 1 to the form (4x +1) will never yield better results, so for this form, we would always subtract 1.</p><p><b>2. The number is of the form: (4x + 3)</b></p><p>In this case, adding 1 yield to minimum steps. As we can observe that by adding 1 we can reach (x + 1) in just 3 steps whereas by subtracting we can reach (x + 1) in at least 4 steps. So if having (x + 1) is advantageous then the addition is effective. Now let us assume that having x is advantageous so in that case too we can reach x in four steps if we chose to add. This indicates that subtracting 1 to the form (4x + 3) will never yield better results, so for this form, we would always add 1.</p><p><b>Exception</b>: 3 is the only number that does not follow this rule, can be considered as an edge case in our problem. As 3 is of the form (4x + 3) but subtracting 1 reduces it to 2 and then division makes it to 1 which is a minimized route.</p><p> <img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/9dc2a486b5aec461.png\" alt=\"\"></p><p><b>Time Complexity: O(logn)</b></p><p>The time complexity for the function is approximately logarithmic as division by 2 is actively involved.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/reduce-n-to-1-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

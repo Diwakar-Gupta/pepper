@@ -1,0 +1,25 @@
+{
+  "name": "Two Pile With Grundy Number",
+  "slug": "interview-prep-game-theory-two-pile-with-grundy-number",
+  "course": "interview-prep",
+  "module": "game-theory",
+  "difficulty": "Medium",
+  "statement": "Two players Alice and Bob are playing a game. They have 2 pile's with n1 and n2 coins in it.\nThey can pick only allowed numbers of coins from any one pile at a time given in an array picks.\nAlice goes first and they take alternate turns.\nThe player who picks the last coin is the winner. Can you find out the winner.",
+  "inputFormat": "The first line contains two integers n1 and n2.\nSecond line contains size of picks array say l\npicks[0]\npicks[1]\n....\npicks[l-1]",
+  "outputFormat": "Print the winner (ALICE or BOB).",
+  "constraints": "1 &lt;= n1, n2 &lt;= 50",
+  "sampleInput": "4 3\n3\n1\n4\n2",
+  "sampleOutput": "ALICE",
+  "questionVideo": "sENUBixcTrA",
+  "solutionVideo": "sENUBixcTrA",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  static void solve(int n1, int n2, int picks[]) {\n    // print the winner here\n  }\n\n  public static void main(String[] args) throws Exception {\n\n    Scanner scn = new Scanner(System.in);\n\n    int n1 = scn.nextInt();\n    int n2 = scn.nextInt();\n    int l = scn.nextInt();\n    int picks[] = new int[l];\n\n    for (int i = 0; i < l; i++) {\n      picks[i] = scn.nextInt();\n    }\n\n    solve(n1, n2, picks);\n  }\n}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/game-theory/two-pile-with-grundy-number/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "First Move In A Nim Game",
+  "slug": "interview-prep-game-theory-first-move-in-a-nim-game",
+  "course": "interview-prep",
+  "module": "game-theory",
+  "difficulty": "Medium",
+  "statement": "Two players Alice and Bob are playing NIM Game with each other. Both are playing optimally.Alice starts the game. The task is to find the number of ways of playing 1st move for Alice to ensure a winning strategy for him if possible, otherwise print -1.",
+  "inputFormat": "The first line contains one integer n.\nThe second line contains n space separated integers a[1],a[2]...a[n].",
+  "outputFormat": "Print the number of possible first move for Alice to win. If Alice can't win, Print -1.",
+  "constraints": "1&lt;= n &lt;= 10^5\n1&lt;= A[i] &lt;= 10^8",
+  "sampleInput": "7\n24 6 10 56 9 1 24",
+  "sampleOutput": "1",
+  "questionVideo": "lmUGM45JEWI",
+  "solutionVideo": "lmUGM45JEWI",
+  "templates": {
+    "java": "import java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\n\npublic class Main {\n\n  static int Solve(int[] arr) {\n\n  }\n\n  public static void main(String[] args) throws NumberFormatException, IOException {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n    int n = Integer.parseInt(br.readLine());\n    int arr[] = new int[n];\n    String[] st = br.readLine().split(\" \");\n    for (int i = 0; i < n; i++) {\n      arr[i] = Integer.parseInt(st[i]);\n    }\n    System.out.println(Solve(arr));\n  }\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/game-theory/first-move-in-a-nim-game-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Polygon Lattice Points",
+  "slug": "interview-prep-geometry-polygon-lattice-points",
+  "course": "interview-prep",
+  "module": "geometry",
+  "difficulty": "Hard",
+  "statement": "https://cses.fi/problemset/task/2193",
+  "inputFormat": "Check Link",
+  "outputFormat": "Check Link",
+  "constraints": "Check Link",
+  "sampleInput": "4\n1 1\n5 3\n3 5\n1 4",
+  "sampleOutput": "6 8",
+  "questionVideo": "sYBugdXMKqs",
+  "solutionVideo": "sYBugdXMKqs",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    // Write Code here\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/geometry/geometry-polygon-lattice-points/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

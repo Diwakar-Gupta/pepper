@@ -1,0 +1,25 @@
+{
+  "name": "Remove Adjacent",
+  "slug": "interview-prep-text-processing-remove-adjacent",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://codeforces.com/contest/1321/problem/C\" target=\"_blank\" rel=\"noopener\"><i> Link -&gt; Remove Adjacent</i></a>",
+  "inputFormat": "check the link",
+  "outputFormat": "check the link",
+  "constraints": "check the link",
+  "sampleInput": "8\nbacabcab",
+  "sampleOutput": "4",
+  "questionVideo": null,
+  "solutionVideo": null,
+  "templates": {
+    "java": "import java.util.Scanner;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner sc = new Scanner(System.in);\n\n    //Code here\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/remove-adjacent/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

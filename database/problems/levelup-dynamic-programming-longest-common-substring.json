@@ -1,0 +1,25 @@
+{
+  "name": "Longest Common Substring",
+  "slug": "levelup-dynamic-programming-longest-common-substring",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given two strings S1 and S2.\n2. You are required to print the length of the longest common substring of two strings.",
+  "inputFormat": "2 strings S1 and S2",
+  "outputFormat": "A number representing the length of longest common substring of two strings.",
+  "constraints": "1 &lt; length of strings S1 and S2 &lt;= 200",
+  "sampleInput": "abcdgh\nacdghr",
+  "sampleOutput": "4",
+  "questionVideo": "NvmJBCn4eQI",
+  "solutionVideo": "NvmJBCn4eQI",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int solution(String s1, String s2){\n\t\t//write your code here\n\n\t\treturn 0;\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tString s1 = scn.next();\n\t\tString s2 = scn.next();\n\t\tSystem.out.println(solution(s1,s2));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/longest-common-substring-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

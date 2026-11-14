@@ -1,0 +1,25 @@
+{
+  "name": "Say No To Palindrome",
+  "slug": "interview-prep-text-processing-say-no-to-palindrome",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Medium",
+  "statement": "Let's call the string beautiful if it does not contain a substring of length at least 2, which is a palindrome.\nLet's define cost of a string as the minimum number of operations so that the string becomes beautiful, if in one operation it is allowed to change any character of the string to one of the first 3 letters of the latin alphabet (in lowercase).\nYou are given a string s of length n, each character of the string is one of the first 3 letters of the latin alphabet ( in lowercase).\nyou have to answer m queries - calculate the cost of the substring of the string s from l to r position, inclusive.",
+  "inputFormat": "The first line contains two integers n and m. the length of string s and the number of queries.\nThe second line contains the string s, it consists of n characters, each character one of the first 3 Latin letters.\nThe following m lines contain two integers l and r (both inclusive).",
+  "outputFormat": "For each query, print a single integer.\nthe cost of the substring of the string s from l-th to r-th position.",
+  "constraints": "1 &lt;= n,m &lt;= 200000\n1 &lt;= l,r &lt;= n",
+  "sampleInput": "5 4\nbaacb\n1 3\n1 5\n4 5\n2 3",
+  "sampleOutput": "1\n2\n0\n1",
+  "questionVideo": "dQackPBwLWw",
+  "solutionVideo": "dQackPBwLWw",
+  "templates": {
+    "java": "import java.util.*;\nimport java.lang.*;\nimport java.io.*;\n\nclass Main {\n  public int[] p;\n  public int[] size;\n\n  public static void main(String[] args) throws Exception {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n  }\n\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/say-no-to-palindrome-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "All Repeating Except Two",
+  "slug": "levelup-bit-manipulation-all-repeating-except-two",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array of numbers.\n2. You have to find 2 non-repeating numbers in an array.\n3. All repeating numbers are repeating even number of times.",
+  "inputFormat": "A number n\na1\na2..\nn numbers",
+  "outputFormat": "2 Non-repeating number",
+  "constraints": "1 &lt;= n &lt;= 10^9\n1 &lt;= a1,a2.. &lt;= 10^9",
+  "sampleInput": "6\n23 27 23 17 17 37",
+  "sampleOutput": "27\n37",
+  "questionVideo": "pnx5JA9LNM4",
+  "solutionVideo": "pnx5JA9LNM4",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args){\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    for(int i = 0 ; i < n; i++){\n      arr[i] = scn.nextInt();\n    }\n    solution(arr);\n  }\n\n  public static void solution(int[] arr){\n   //write your code here\n   \n  }\n\n}"
+  },
+  "editorial": "<p>The problem here deals with finding two non-repeating elements in an input array where every other element repeats twice. Here lets suppose we have non-repeating numbers as a and b. Now if we use the XOR approach as we did in the problem <b>All Repeating Except One, </b>then we would get a ^ b, which would not be of any use, so we have to come up with a different approach.</p><p>Consider the following example:</p><p>Input: [36, 50, 24, 56, 36, 24, 42, 50]</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/fedaa4a62ee04c83.png\" alt=\"\"></p><p>Now let us try to take the XOR of the input array then we would get <b>[ 0 1 0 0 1 0 ]</b> which is a dead-end. Now let us try to take the XOR of the non-repeating elements here that are 56 and 42, so 52 ^ 42 = <b>[ 0 1 0 0 1 0 ]</b> which is the same as the XOR of the entire input array. This is since every other element in the input array except 42 and 56 are repeating twice hence they would cancel out each other. So we conclude that [ 0 1 0 0 1 0 ] is the XOR of both the entire array and also the XOR of non-repeating elements.</p><p>The RSB Mask of our XOR result for non-repeating elements would be [ 0 0 0 0 1 0 ]. This implies that at the 1st index there is a difference of bits in the non-repeating elements. Now we wish to segregate the input array concerning<b> whether the 1st index bit is set or not</b>. After segregating we would get:</p><p>Set 1: [ 36, 24, 56, 36, 24 ] =&gt; 1st index bit set to 0</p><p>Set 2: [ 50, 42, 50 ] =&gt; 1st Index bit set to 1</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/892a44c1d96180c6.png\" alt=\"\"></p><p>Now if we observe that in both sets every element repeats itself twice except one and we were also able to separate both non-repeating elements in different sets. This was possible since segregating at 1st index ensured that firstly both non-repeating would segregate and then in the entire array it ensured that only an odd number of elements would be present in any setting. Now taking XOR in both sets would yield us the non-repeating elements.</p><p><b>Time Complexity: O(n)</b></p><p>The time complexity for the function is linear as we are traversing on every element at least once.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/all-repeating-except-two-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

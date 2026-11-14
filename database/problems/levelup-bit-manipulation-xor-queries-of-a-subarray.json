@@ -1,0 +1,25 @@
+{
+  "name": "Xor Queries Of A Subarray",
+  "slug": "levelup-bit-manipulation-xor-queries-of-a-subarray",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Medium",
+  "statement": "https://leetcode.com/problems/xor-queries-of-a-subarray/",
+  "inputFormat": "Check Link",
+  "outputFormat": "Check Link",
+  "constraints": "Check Link",
+  "sampleInput": "Check Link",
+  "sampleOutput": "Check Link",
+  "questionVideo": "kPewZUtfmaE",
+  "solutionVideo": "kPewZUtfmaE",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    // Write Code here\n    scn.close();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/bit-manipulation-xor-qs/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

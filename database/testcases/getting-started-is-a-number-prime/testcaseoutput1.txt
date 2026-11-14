@@ -1,0 +1,5 @@
+prime
+prime
+prime
+not prime
+prime

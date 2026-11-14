@@ -1,0 +1,25 @@
+{
+  "name": "Maximum Length Of Repeated Subarray",
+  "slug": "levelup-dynamic-programming-maximum-length-of-repeated-subarray",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given two arrays of integers arr1 and arr2.\n2. You have to find the maximum length of subarray that appears in both the given arrays.",
+  "inputFormat": "A number N \na1\na2.. N numbers\nA number M\nb1\nb2.. M numbers",
+  "outputFormat": "An integer representing the maximum length of repeated subarray.",
+  "constraints": "1 &lt;= N,M &lt;= 10^4\n0 &lt;= a[i], b[i] &lt;= 10^3",
+  "sampleInput": "5\n5 4 3 2 1\n6\n7 8 4 3 2 5",
+  "sampleOutput": "3",
+  "questionVideo": "Zg3HBicw4LU",
+  "solutionVideo": "Zg3HBicw4LU",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static int solution(int[] arr1, int[] arr2) {\n    // write your code here\n\n  }\n\n  public static void main(String[] args) {\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr1 = new int[n];\n    for (int i = 0 ; i < n; i++) {\n      arr1[i] = scn.nextInt();\n    }\n\n    int m = scn.nextInt();\n    int[] arr2 = new int[m];\n    for (int i = 0 ; i < m; i++) {\n      arr2[i] = scn.nextInt();\n    }\n    System.out.println(solution(arr1, arr2));\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/maximum-length-of-repeated-subarray-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

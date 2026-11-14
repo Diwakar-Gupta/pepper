@@ -1,0 +1,8 @@
+6
+ACC
+ATC
+CAT
+GCG
+C
+T
+GCATCG

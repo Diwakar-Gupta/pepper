@@ -1,0 +1,25 @@
+{
+  "name": "Shortest Palindrome",
+  "slug": "interview-prep-text-processing-shortest-palindrome",
+  "course": "interview-prep",
+  "module": "text-processing",
+  "difficulty": "Hard",
+  "statement": "1. You are given string(str). \n2. You can convert the given string to a palindrome by adding some characters in front of it.\n3. You have to find the shortest palindromic string formed after performing the above-mentioned transformation.",
+  "inputFormat": "A string",
+  "outputFormat": "A string",
+  "constraints": "1 &lt;= length of the string &lt;= 10^4",
+  "sampleInput": "coding",
+  "sampleOutput": "gnidocoding",
+  "questionVideo": "M0Nwvd-G-tg",
+  "solutionVideo": "M0Nwvd-G-tg",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static String solution(String str){\n    // write your code here\n    \n    return null;\n  }\n\n  public static void main(String[] args) throws Exception {\n    Scanner scn = new Scanner(System.in);\n    String str = scn.next();\n    System.out.println(solution(str));\n  }\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/text-processing/shortest-palindrome-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

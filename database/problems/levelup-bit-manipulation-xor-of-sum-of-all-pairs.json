@@ -1,0 +1,26 @@
+{
+  "name": "Xor Of Sum Of All Pairs",
+  "slug": "levelup-bit-manipulation-xor-of-sum-of-all-pairs",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array of integers.\n2. You have to find the XOR of sum of all pairs in the array.",
+  "inputFormat": "A number N\narr1\narr2..\nN numbers",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "1 &lt;= N &lt;= 10^9\n1 &lt;= arr[i] &lt;= 10^9",
+  "sampleInput": "5\n1\n5\n2\n1\n2",
+  "sampleOutput": "10",
+  "questionVideo": "10sMnEraOBs",
+  "solutionVideo": "10sMnEraOBs",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static int solution(int[] arr){\n       //write your code here\n       \n       return 0;\n    }\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n        int n = scn.nextInt();\n        int[] arr = new int[n];\n        for(int i = 0 ; i < n; i++){\n            arr[i] = scn.nextInt();\n        }\n        System.out.println(solution(arr));\n    }\n    \n    \n}"
+  },
+  "editorial": "<p>The problem here deals with finding the XOR of the sum of all pairs of the given array.</p><p>Let us consider the following example:</p><p>Input array: [ a, b, c, d ]</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/e4aa61c694a45a5e.png\" alt=\"\"></p><p>Now here we wish to have the XOR of all the pairs. One way to solve this is to go for nested looping wherein we will be forming every pair and then performing XOR with the result. The time complexity, in this case, would be O(n2), but we wish to optimize the time complexity to O(n).</p><p>If we carefully observe then we can notice that (a+b) is repeating as (b+a) similarly (a+c) is repeating as (c+a) and so on. Now we can see that only {2*a}, {2*b}, {2*c} and {2*d} are not repeating. So taking XOR of all the pairs is equal to taking XOR of {2*a}, {2*b}, {2*c} and {2*d}.</p><p>Also,</p><p>{ ( 2 * a ) ^ ( 2 * b ) ^ ( 2 * c ) ^ ( 2 * d ) } = 2 * ( a ^ b ^ c ^ d )</p><p>Therefore we have successfully converted our O(n2) solution to O(n) solution by mere checking of repeatitive pattern.</p><p><b>Time Complexity: O(n)</b></p><p>The time complexity for the function is linear as we are traversing on every element once.</p><p><b>Space Complexity: O(1)</b></p><p>The space complexity for the function is constant.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/xor-sum-pair-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

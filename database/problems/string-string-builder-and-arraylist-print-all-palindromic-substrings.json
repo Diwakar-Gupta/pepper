@@ -1,11 +1,27 @@
 {
   "name": "Print All Palindromic Substrings",
   "slug": "string-string-builder-and-arraylist-print-all-palindromic-substrings",
-  "description": "1. You are given a string. \n2. You have to print all palindromic substrings of the given string.\n\n### Input Format\n```\nA String\n```\n\n### Output Format\n```\nAll palindromic substrings(one in a line).\nFirst, all palindromic substrings starting from first character of string will be printed, then from second character and so on.\n```\n\n### Constraints\n```\n1 <= length of string <= 500\n```\n\n### Sample Input\n```\nabcc\n```\n\n### Sample Output\n```\na\nb\nc\ncc\nc\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/_jM3iMT4k7g?end=88&rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/_jM3iMT4k7g?start=88&rel=0&loop=1&playlist=_jM3iMT4k7g",
-  "codes": {
-    "java": "import \njava.io\n.*;\nimport \njava\n.util.*;\npublic \nclass \nMain {\n    \npublic \nstatic \nvoid \nsolution\n(String \nstr){\n        \n//write \nyour \ncode \nhere\n        \n    }\n    \npublic \nstatic \nvoid \nmain\n(String[\n] args) \n{\n        \nScanner \nscn = \nnew \nScanner\n(System\n.in);"
-  }
+  "course": "dsa-fundamentals",
+  "module": "string-string-builder-and-arraylist",
+  "difficulty": "Easy",
+  "statement": "1. You are given a string. \n2. You have to print all palindromic substrings of the given string.",
+  "inputFormat": "A String",
+  "outputFormat": "All palindromic substrings(one in a line).\nFirst, all palindromic substrings starting from first character of string will be printed, then from second character and so on.",
+  "constraints": "1 &lt;= length of string &lt;= 500",
+  "sampleInput": "abcc",
+  "sampleOutput": "a\nb\nc\ncc\nc",
+  "questionVideo": "_jM3iMT4k7g",
+  "solutionVideo": "_jM3iMT4k7g",
+  "templates": {
+    "cpp": "#include<iostream>\n#include<string.h>\nusing namespace std;\nvoid printallpralindrome(string str)\n{\n  //write your code here\n}\n\nint main()\n{\n  string str;\n  getline(cin, str);\n  printallpalindrome(str);\n  return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static void solution(String str){\n\t\t//write your code here\n\t\t\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tString str = scn.next();\n\t\tsolution(str);\n\t}\n\n}",
+    "python": "def printallpalindrome(st):\n#write your code here\n\n  st = str(input())\n       prinallpalindrome(st)"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/string,-string-builder-and-arraylist/print-all-palindromic-substrings-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

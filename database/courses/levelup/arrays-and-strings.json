@@ -1,0 +1,551 @@
+{
+  "name": "Arrays and Strings",
+  "slug": "arrays-and-strings",
+  "course": "levelup",
+  "counts": {
+    "problems": 2,
+    "articles": 0,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-range-addition",
+      "name": "Range Addition",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-container-with-most-water",
+      "name": "Container With Most Water",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-squares-of-a-sorted-array",
+      "name": "Squares Of A Sorted Array",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-majority-element-i",
+      "name": "Majority Element - I",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-majority-elements-i-i",
+      "name": "Majority Elements - I I",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-majority-element-general",
+      "name": "Majority Element General",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-next-greater-element-i-i-i",
+      "name": "Next Greater Element I I I",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-product-of-array-except-itself-without-using-division-operator",
+      "name": "Product Of Array Except Itself Without Using Division Operator",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-partition-labels",
+      "name": "Partition Labels",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-partition-array-into-disjoint-intervals",
+      "name": "Partition Array Into Disjoint Intervals",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-max-chunks-to-make-array-sorted",
+      "name": "Max Chunks To Make Array Sorted",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-max-chunks-to-make-array-sorted-2",
+      "name": "Max Chunks To Make Array Sorted 2",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-min-jumps-with-i-i-moves",
+      "name": "Min Jumps With +i -i Moves",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-max-product-of-three-numbers",
+      "name": "Max Product Of Three Numbers",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-sort-array-by-parity",
+      "name": "Sort Array By Parity",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-best-meeting-point",
+      "name": "Best Meeting Point",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-sieve-of-eratosthenes",
+      "name": "Sieve Of Eratosthenes",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-segmented-sieve",
+      "name": "Segmented Sieve",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-transpose-of-matrix-with-dimension-m-x-n",
+      "name": "Transpose Of Matrix With Dimension M X N",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-transpose-of-matrix-with-dimension-n-x-n",
+      "name": "Transpose Of Matrix With Dimension N X N",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-shortest-unsorted-continuous-subarray",
+      "name": "Shortest Unsorted Continuous Subarray",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-rotate-image",
+      "name": "Rotate Image",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-reverse-vowels-of-a-string",
+      "name": "Reverse Vowels Of A String",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-wiggle-sort-1",
+      "name": "Wiggle Sort 1",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-wiggle-sort-2",
+      "name": "Wiggle Sort 2",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-add-strings",
+      "name": "Add Strings",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-multiply-strings",
+      "name": "Multiply Strings",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-complex-number-multiplication",
+      "name": "Complex Number Multiplication",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-valid-palindrome-2",
+      "name": "Valid Palindrome 2",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-car-fleet",
+      "name": "Car Fleet",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-max-area-of-island",
+      "name": "Max Area Of Island",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-number-of-subarrays-with-bounded-maximum",
+      "name": "Number Of Subarrays With Bounded Maximum",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-maximum-swap",
+      "name": "Maximum Swap",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-smallest-range-covering-elements-from-k-lists",
+      "name": "Smallest Range Covering Elements From K Lists",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-minimum-domino-rotations-for-equal-row",
+      "name": "Minimum Domino Rotations For Equal Row",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-2-sum-target-sum-unique-pairs",
+      "name": "2 Sum - Target Sum Unique Pairs",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-boats-to-save-people",
+      "name": "Boats To Save People",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-3-sum-target-sum-unique-triplet",
+      "name": "3 Sum - Target Sum Unique Triplet",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-4-sum-target-sum-with-unique-quadruple",
+      "name": "4 Sum - Target Sum With Unique Quadruple",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-k-sum-target-sum-unique-set",
+      "name": "K Sum - Target Sum Unique Set",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-first-missing-positive",
+      "name": "First Missing Positive",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-pascal-s-triangle-2",
+      "name": "Pascal's Triangle 2",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-find-all-duplicates-in-an-array",
+      "name": "Find All Duplicates In An Array",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-find-and-replace-pattern",
+      "name": "Find And Replace Pattern",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-consecutive-numbers-sum",
+      "name": "Consecutive Numbers Sum",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-push-dominoes",
+      "name": "Push Dominoes",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-maximum-product-subarray",
+      "name": "Maximum Product Subarray",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-sum-of-subsequence-widths",
+      "name": "Sum Of Subsequence Widths",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n",
+      "name": "The K-th Lexicographical String Of All Happy Strings Of Length N",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-construct-target-array-with-multiple-sums",
+      "name": "Construct Target Array With Multiple Sums",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-furthest-building-you-can-reach",
+      "name": "Furthest Building You Can Reach",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-where-will-the-ball-fall",
+      "name": "Where Will The Ball Fall",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-ways-to-make-a-fair-array",
+      "name": "Ways To Make A Fair Array",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-orderly-queue",
+      "name": "Orderly Queue",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-sort-the-matrix-diagonally",
+      "name": "Sort The Matrix Diagonally",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-reorganize-string",
+      "name": "Reorganize String",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-bulb-switcher-iv",
+      "name": "Bulb Switcher Iv",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-design-tic-tac-toe",
+      "name": "Design Tic-tac-toe",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-maximum-sum-of-two-non-overlapping-subarrays",
+      "name": "Maximum Sum Of Two Non-overlapping Subarrays",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-island-perimeter",
+      "name": "Island Perimeter",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-largest-multiple-of-three",
+      "name": "Largest Multiple Of Three",
+      "difficulty": "Hard",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-battleship-in-board",
+      "name": "Battleship In Board",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-merge-intervals",
+      "name": "Merge Intervals",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-minimum-number-of-platform",
+      "name": "Minimum Number Of Platform",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-meeting-rooms-i",
+      "name": "Meeting Rooms I",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-meeting-rooms-i-i",
+      "name": "Meeting Rooms I I",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-interval-list-intersections",
+      "name": "Interval List Intersections",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-insert-intervals",
+      "name": "Insert Intervals",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-find-minimum-number-of-arrows-needed-to-burst-balloon",
+      "name": "Find Minimum Number Of Arrows Needed To Burst Balloon",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-car-pooling",
+      "name": "Car Pooling",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-maximum-average-subarray-i",
+      "name": "Maximum Average Subarray I",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-min-len-of-string-after-removing-similar-ends",
+      "name": "Min Len Of String After Removing Similar Ends",
+      "difficulty": "Medium",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-justification-of-text",
+      "name": "Justification Of Text",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-set-matrix-zeroes",
+      "name": "Set Matrix Zeroes",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-number-of-sub-arrays-with-odd-sum",
+      "name": "Number Of Sub-arrays With Odd Sum",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-top-k-frequent-elements",
+      "name": "Top K Frequent Elements",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-arrays-and-strings-word-search",
+      "name": "Word Search",
+      "difficulty": "Medium",
+      "unavailable": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Maximum Sum Of Two Non-overlapping Subarrays",
+  "slug": "levelup-dynamic-programming-maximum-sum-of-two-non-overlapping-subarrays",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given an array(arr) of positive numbers and two numbers X and Y.\n2. You have to find the maximum sum of elements in two non-overlapping subarrays.\n3. One subarray must of length X and the other must be of length Y.",
+  "inputFormat": "A number N\narr1\narr2.. N numbers\nTwo numbers X and Y",
+  "outputFormat": "A number representing maximum sum of elements in two non-overlapping subarrays.",
+  "constraints": "1 &lt;= N &lt;= 1000\n0 &lt;= arr[i] &lt;= 1000\nX &gt;= 1, Y &gt;= 1\nX + Y &lt;= N",
+  "sampleInput": "9\n0 6 5 2 2 5 1 9 4\n1\n2",
+  "sampleOutput": "20",
+  "questionVideo": "8e6U4O5VUx0",
+  "solutionVideo": "8e6U4O5VUx0",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int solution(int[] arr, int x, int y){\n\t\t// write your code here\n\n\t\treturn 0;\n\t}\n\t\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tint[] arr = new int[n];\n\t\tfor(int i = 0 ; i < arr.length; i++){\n\t\t\tarr[i] = scn.nextInt();\n\t\t}\n\t\tint x = scn.nextInt();\n\t\tint y = scn.nextInt();\n\t\tSystem.out.println(solution(arr,x,y));\n\t}\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/maximum-sum-of-two-non-overlapping-subarrays-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

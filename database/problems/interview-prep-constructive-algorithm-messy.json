@@ -1,0 +1,25 @@
+{
+  "name": "Messy",
+  "slug": "interview-prep-constructive-algorithm-messy",
+  "course": "interview-prep",
+  "module": "constructive-algorithm",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://codeforces.com/problemset/problem/1227/C\" target=\"_blank\" rel=\"noopener\">https://codeforces.com/problemset/problem/1227/C</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "4\n8 2\n()(())()\n10 3\n))()()()((\n2 1\n()\n2 1\n)(",
+  "sampleOutput": "4\n3 4\n1 1\n5 8\n2 2\n3\n4 10\n1 4\n6 7\n0\n1\n1 2",
+  "questionVideo": "UDxAx_HVAwY",
+  "solutionVideo": "UDxAx_HVAwY",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args) throws IOException {\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/constructive-algorithm/messy/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

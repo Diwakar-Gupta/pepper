@@ -1,0 +1,27 @@
+{
+  "name": "Sort Dates",
+  "slug": "time-and-space-complexity-sort-dates",
+  "course": "dsa-fundamentals",
+  "module": "time-and-space-complexity",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array(arr) of different dates in format DD-MM-YYYY.\n2. You have to sort these dates in increasing order.",
+  "inputFormat": "An Integer N \narr1\narr2..\nn integers",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 10000\nAll dates are between year 0 to year 2500",
+  "sampleInput": "5\n12041996\n20101996\n05061997\n12041989\n11081987",
+  "sampleOutput": "11081987\n12041989\n12041996\n20101996\n05061997",
+  "questionVideo": "YdzCuP6LwVg",
+  "solutionVideo": "YdzCuP6LwVg",
+  "templates": {
+    "cpp": "#include <iostream>\n\n#include <vector>\n\nusing namespace std;\n\nvoid input(vector<int> &arr)\n{\n    for (int i = 0; i < arr.size(); i++)\n    {\n        cin >> arr[i];\n    }\n}\n\nvoid print(vector<int> &arr)\n{\n    for (int i = 0; i < arr.size(); i++)\n    {\n        cout << arr[i] << endl;\n    }\n    cout << endl;\n}\n\n// used for swapping ith and jth elements of array\nvoid swap(vector<int> &arr, int i, int j)\n{\n    cout << (\"Swapping index \" + to_string(i) + \" and index \" + to_string(j)) << endl;\n    int temp = arr[i];\n    arr[i] = arr[j];\n    arr[j] = temp;\n}\n\nvoid sort01(vector<int> &arr)\n{\n\n}\n\nint main()\n{\n    int n, m;\n    cin >> n;\n    vector<int> A(n, 0);\n    input(A);\n\n    sort01(A);\n    print(A);\n    return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void sortDates(String[] arr) {\n    // write your code here\n  }\n\n  public static void countSort(String[] arr,int div, int mod, int range) {\n    // write your code here\n  }\n\n  public static void print(String[] arr) {\n    for (int i = 0; i < arr.length; i++) {\n      System.out.println(arr[i]);\n    }\n  }\n\n  public static void main(String[] args) throws Exception {\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    String[] arr = new String[n];\n    for (int i = 0; i < n; i++) {\n      String str = scn.next();\n      arr[i] = str;\n    }\n    sortDates(arr);\n    print(arr);\n  }\n\n}",
+    "python": "def Display(arr):\n    for i in arr:\n        print(i);\n    \n\ndef countsort(arr, d, mod, r):\n    # write your code here\n    \n\ndef sortDates(arr):\n    # write your code here\n\n\n\ndef main():\n    n = int(input());\n    arr = []\n    for i in range(0, n):\n        ele = (input());\n        arr.append(ele);\n    \n    sortDates(arr);\n    Display(arr);\n    \n    \nif __name__ == \"__main__\":\n    main()"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/time-and-space-complexity/sort-dates-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

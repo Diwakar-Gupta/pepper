@@ -1,0 +1,22 @@
+add 10
+add 20
+add 30
+add 40
+add 50
+remove
+remove
+add 60
+add 70
+peek
+remove
+peek
+remove
+peek
+remove
+peek
+remove
+peek
+remove
+peek
+remove
+quit

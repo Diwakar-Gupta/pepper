@@ -1,0 +1,25 @@
+{
+  "name": "Weakness And Poorness",
+  "slug": "interview-prep-ternary-search-weakness-and-poorness",
+  "course": "interview-prep",
+  "module": "ternary-search",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://codeforces.com/problemset/problem/578/C\" target=\"_blank\" rel=\"noopener\"><i> Link -&gt; Weakness and Poorness</i></a>",
+  "inputFormat": "Check the Link",
+  "outputFormat": "Check the Link",
+  "constraints": "Check the Link",
+  "sampleInput": "3\n1 2 3",
+  "sampleOutput": "1.000000",
+  "questionVideo": "nC87xi-XGvg",
+  "solutionVideo": "nC87xi-XGvg",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) throws Exception{\n    Scanner sc = new Scanner(System.in);\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/ternary-search/weakness-and-poorness-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

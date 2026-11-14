@@ -1,0 +1,40 @@
+{
+  "name": "Euler Tour",
+  "slug": "euler-tour",
+  "course": "interview-prep",
+  "counts": {
+    "problems": 4,
+    "articles": 0,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "interview-prep-euler-tour-subtree-sum",
+      "name": "Subtree Sum",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-euler-tour-new-year-tree",
+      "name": "New Year Tree",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-euler-tour-lca-lowest-common-ancestor-euler-tour",
+      "name": "Lca - Lowest Common Ancestor - Euler Tour",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-euler-tour-path-sum",
+      "name": "Path Sum",
+      "difficulty": "Medium",
+      "tests": 1
+    }
+  ]
+}

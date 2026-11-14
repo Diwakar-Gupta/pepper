@@ -1,0 +1,26 @@
+{
+  "name": "Serialize And Deserialize N - Ary Tree",
+  "slug": "levelup-trees-serialize-and-deserialize-n-ary-tree",
+  "course": "levelup",
+  "module": "trees",
+  "difficulty": "Medium",
+  "statement": "1. Serialization is to store tree in a file so that it can be later restored.\n2. The structure of tree must be maintained. Deserialization is reading tree back from file.",
+  "inputFormat": "Input is managed for you.",
+  "outputFormat": "Output is managed for you.",
+  "constraints": "0 &lt;= Number of Nodes &lt;= 10^5\n-1000 &lt;= value of Node data &lt;= 1000",
+  "sampleInput": "1 3 5 null 6 null null 2 null 4 null null",
+  "sampleOutput": "1 -> 3 2 4 \n3 -> 5 6 \n5 -> \n6 -> \n2 -> \n4 ->",
+  "questionVideo": "qk3JNkcdm0o",
+  "solutionVideo": "qk3JNkcdm0o",
+  "templates": {
+    "cpp": "#include <iostream>\n#include <vector>\n#include <stack>\n#include <stringstream>\nusing namespace std;\n\nclass Node\n{\npublic:\n  int val;\n  vector<Node*> children;\n\n  Node() {}\n\n  Node(int _val)\n  {\n    val = _val;\n  }\n\n  Node(int _val, vector<Node*> _children)\n  {\n    val = _val;\n    children = _children;\n  }\n};\n\n// Encodes a tree to a single string.\nstring serialize(TreeNode* root)\n{\n}\n\n// Decodes your encoded data to tree.\nTreeNode* deserialize(string s)\n{\n}\n\n// input_Section_====================================================================\n\nvoid display(TreeNode* node)\n{\n  if (node == nullptr)\n    return;\n\n  string str = node->val + \"->\";\n  for (Node* child : node->children)\n  {\n    str += child->val;\n  }\n\n  for (Node* child : node->children)\n  {\n    display(child);\n  }\n}\n\nTreeNode* createTree(vector<int>& arr)\n{\n  stack<Node*> st;\n  for (int i = 0; i < arr.size - 1; i++)\n  {\n    string s = arr[i];\n    if (s == \"null\")\n    {\n      Node* node = st.top();\n      st.pop();\n      st.peek()->children.add(node);\n    }\n    else\n    {\n      Node* node = new Node(stoi(s));\n      st.push(node);\n    }\n  }\n\n  return st.size() != 0 ? st.top() : nullptr;\n}\n\nvoid solve()\n{\n  string str;\n  cin >> str;\n  stringstream ss(str);\n  string word;\n  vector<string> arr;\n  while (ss >> word)\n    arr.push_back(word);\n\n  Node* root = createTree(arr);\n  string s = serialize(root);\n  display(deserialize(s));\n}\n\nint main()\n{\n  solve();\n  return 0;\n}",
+    "java": "import java.util.*;\n\npublic class Main {\n  public static Scanner scn = new Scanner(System.in);\n\n  static class Node {\n    public int val;\n    public ArrayList<Node> children;\n\n    public Node() {\n      children = new ArrayList<Node>();\n    }\n\n    public Node(int _val) {\n      val = _val;\n      children = new ArrayList<Node>();\n    }\n\n    public Node(int _val, ArrayList<Node> _children) {\n      val = _val;\n      children = _children;\n    }\n  }\n\n  // Encodes a tree to a single string.\n  public static String serialize(Node root) {\n\n  }\n\n  // Decodes your encoded data to tree.\n  public static Node deserialize(String str) {\n\n  }\n\n  // input_Section=================================================\n  public static void display(Node node) {\n    if (node == null)\n      return;\n\n    StringBuilder sb = new StringBuilder();\n    sb.append(node.val + \" -> \");\n    for (Node child : node.children) {\n      sb.append(child.val + \" \");\n    }\n    System.out.println(sb.toString());\n\n    for (Node child : node.children) {\n      display(child);\n    }\n  }\n\n  public static Node createTree(String[] arr) {\n    Stack<Node> st = new Stack<>();\n    for (int i = 0; i < arr.length - 1; i++) {\n      String s = arr[i];\n      if (s.equals(\"null\")) {\n        Node node = st.pop();\n        st.peek().children.add(node);\n      } else {\n        Node node = new Node(Integer.parseInt(s));\n        st.push(node);\n      }\n    }\n\n    return st.size() != 0 ? st.pop() : null;\n  }\n\n  public static void solve() {\n    String str = scn.nextLine();\n    String[] arr = str.split(\" \");\n\n    Node root = createTree(arr);\n    String s = serialize(root);\n    display(deserialize(s));\n  }\n\n  public static void main(String[] args) {\n    solve();\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/trees/serialize-and-deserialize-n-ary-tree/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

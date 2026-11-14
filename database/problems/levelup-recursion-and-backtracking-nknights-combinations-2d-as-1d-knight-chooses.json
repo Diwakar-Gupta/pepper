@@ -1,0 +1,25 @@
+{
+  "name": "Nknights Combinations - 2d As 1d - Knight Chooses",
+  "slug": "levelup-recursion-and-backtracking-nknights-combinations-2d-as-1d-knight-chooses",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Medium",
+  "statement": "1. You are given a number n, representing the size of a n * n chess board.\n2. You are required to calculate and print the combinations in which n knights can be placed on the \n     n * n chess-board. \n3. No knight shall be able to kill another.\n\nNote -&gt; Use the code snippet and follow the algorithm discussed in question video. The judge can't \n               force you but the intention is to teach a concept. Play in spirit of the question.",
+  "inputFormat": "A number n",
+  "outputFormat": "Check the sample output and question video",
+  "constraints": "1 &lt;= n &lt;= 5",
+  "sampleInput": "2",
+  "sampleOutput": "k\tk\t\n-\t-\t\n\nk\t-\t\nk\t-\t\n\nk\t-\t\n-\tk\t\n\n-\tk\t\nk\t-\t\n\n-\tk\t\n-\tk\t\n\n-\t-\t\nk\tk",
+  "questionVideo": "XSlMg_VUfwk",
+  "solutionVideo": "XSlMg_VUfwk",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static boolean IsKnightSafe(boolean[][] chess, int i, int j) {\n        // write your code here\n    }\n\n    public static void nknights(int kpsf, int tk, boolean[][] chess, int lcno) {\n        if (kpsf == tk) {\n            for (int row = 0; row < chess.length; row++) {\n                for (int col = 0; col < chess.length; col++) {\n                    System.out.print(chess[row][col] ? \"k\\t\" : \"-\\t\");\n                }\n                System.out.println();\n            }\n            System.out.println();\n            return;\n        }\n\n        for (int i = lcno + 1; i < chess.length * chess.length; i++) {\n            int row = i / chess.length;\n            int col = i % chess.length;\n\n            if (chess[row][col] == false && IsKnightSafe(chess, row, col)) {\n                chess[row][col] = true;\n                nknights(kpsf + 1, tk, chess, row * chess.length + col);\n                chess[row][col] = false;\n            }\n        }\n    }\n\n    public static void main(String[] args) throws Exception {\n        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n        int n = Integer.parseInt(br.readLine());\n        boolean[][] chess = new boolean[n][n];\n\n        nknights(0, n, chess, -1);\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/nknights-combinations-2das1d-knight-chooses-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

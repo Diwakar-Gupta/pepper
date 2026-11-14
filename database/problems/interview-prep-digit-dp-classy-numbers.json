@@ -1,0 +1,25 @@
+{
+  "name": "Classy Numbers",
+  "slug": "interview-prep-digit-dp-classy-numbers",
+  "course": "interview-prep",
+  "module": "digit-dp",
+  "difficulty": "Hard",
+  "statement": "https://codeforces.com/problemset/problem/1036/C",
+  "inputFormat": "Check the link",
+  "outputFormat": "Check the link",
+  "constraints": "Check the link",
+  "sampleInput": "Check the link",
+  "sampleOutput": "Check the link",
+  "questionVideo": "wWfGCIL0AfU",
+  "solutionVideo": "wWfGCIL0AfU",
+  "templates": {
+    "java": "Check the link"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/digit-dp/classy-numbers-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

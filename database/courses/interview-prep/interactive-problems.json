@@ -1,0 +1,145 @@
+{
+  "name": "Interactive problems",
+  "slug": "interactive-problems",
+  "course": "interview-prep",
+  "counts": {
+    "problems": 19,
+    "articles": 0,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-lost-tree",
+      "name": "Lost Tree",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-manhattan-rectangle",
+      "name": "Manhattan Rectangle",
+      "difficulty": "Hard",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-bear-and-prime-100",
+      "name": "Bear And Prime 100",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-flamingoes-of-mystery",
+      "name": "Flamingoes Of Mystery",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-chocolate-bunny",
+      "name": "Chocolate Bunny",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-lost-numbers",
+      "name": "Lost Numbers",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-guess-the-array",
+      "name": "Guess The Array",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-guessing-the-greatest-version",
+      "name": "Guessing The Greatest Version",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-guess-the-kth-zero",
+      "name": "Guess The Kth Zero",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-3-coloring",
+      "name": "3 Coloring",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-rpd-and-rap-sheet",
+      "name": "Rpd And Rap Sheet",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-strange-device",
+      "name": "Strange Device",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-pick-heroes",
+      "name": "Pick Heroes",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-kuroni-and-the-celebration",
+      "name": "Kuroni And The Celebration",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-tree-diameter",
+      "name": "Tree Diameter",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-take-a-guess",
+      "name": "Take A Guess",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-nastia-and-a-hidden-permutation",
+      "name": "Nastia And A Hidden Permutation",
+      "difficulty": "Hard",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-rocket",
+      "name": "Rocket",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-interactive-problems-dwarves-hats-and-extrasensory-abilities",
+      "name": "Dwarves, Hats And Extrasensory Abilities",
+      "difficulty": "Medium",
+      "tests": 1
+    }
+  ]
+}

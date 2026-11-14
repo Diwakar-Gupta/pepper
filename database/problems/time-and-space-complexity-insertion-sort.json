@@ -1,0 +1,27 @@
+{
+  "name": "Insertion Sort",
+  "slug": "time-and-space-complexity-insertion-sort",
+  "course": "dsa-fundamentals",
+  "module": "time-and-space-complexity",
+  "difficulty": "Easy",
+  "statement": "1. You are given an array(arr) of integers.\n2. You have to sort the given array in increasing order using insertion sort.",
+  "inputFormat": "An Integer n \narr1\narr2..\nn integers",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 10000\n-10^9 &lt;= arr[i] &lt;= 10^9",
+  "sampleInput": "5\n7 \n-2 \n4 \n1 \n3",
+  "sampleOutput": "Comparing -2 and 7\nSwapping 7 and -2\nComparing 4 and 7\nSwapping 7 and 4\nComparing 4 and -2\nComparing 1 and 7\nSwapping 7 and 1\nComparing 1 and 4\nSwapping 4 and 1\nComparing 1 and -2\nComparing 3 and 7\nSwapping 7 and 3\nComparing 3 and 4\nSwapping 4 and 3\nComparing 3 and 1\n-2\n1\n3\n4\n7",
+  "questionVideo": "MMt2x6an_i8",
+  "solutionVideo": "MMt2x6an_i8",
+  "templates": {
+    "cpp": "#include<iostream>\nusing namespace std;\n\n\nbool isGreater(int arr[], int j, int i ) {\n  cout << \"Comparing \" << arr[i] << \" and \" << arr[j] << endl;\n  if (arr[i] < arr[j]) {\n    return true;\n  } else {\n    return false;\n  }\n}\n\nvoid swap(int arr[], int i, int j) {\n  cout << \"Swapping \" << arr[i] << \" and \" << arr[j] << endl;\n  int temp = arr[i];\n  arr[i] = arr[j];\n  arr[j] = temp;\n\n}\n\n\nvoid insertionSort(int arr[], int n) {\n\n  // write your code\n\n}\n\nvoid print(int arr[], int n) {\n  for (int i = 0; i < n; i++) {\n    cout << arr[i] << endl;\n  }\n}\n\n\n\nint main() {\n  int n;\n  cin >> n;\n  int arr[n];\n  for (int i = 0; i < n; i++) {\n    cin >> arr[i];\n  }\n\n  insertionSort(arr, n);\n  print(arr, n);\n\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void insertionSort(int[] arr) {\n    //write your code here\n    \n  }\n\n  // used for swapping ith and jth elements of array\n  public static void swap(int[] arr, int i, int j) {\n    System.out.println(\"Swapping \" + arr[i] + \" and \" + arr[j]);\n    int temp = arr[i];\n    arr[i] = arr[j];\n    arr[j] = temp;\n  }\n\n  // return true if jth element is greater than ith element\n  public static boolean isGreater(int[] arr, int j, int i) {\n    System.out.println(\"Comparing \" + arr[i] + \" and \" + arr[j]);\n    if (arr[i] < arr[j]) {\n      return true;\n    } else {\n      return false;\n    }\n  }\n\n  public static void print(int[] arr) {\n    for (int i = 0; i < arr.length; i++) {\n      System.out.println(arr[i]);\n    }\n  }\n\n  public static void main(String[] args) throws Exception {\n    Scanner scn = new Scanner(System.in);\n    int n = scn.nextInt();\n    int[] arr = new int[n];\n    for (int i = 0; i < n; i++) {\n      arr[i] = scn.nextInt();\n    }\n    insertionSort(arr);\n    print(arr);\n  }\n\n}",
+    "python": "def swap(arr, i, j):\n  print(\"Swapping\", arr[i], \"and\", arr[j])\n  temp = arr[i]\n         arr[i] = arr[j]\n                  arr[j] = temp\n\n                           def isGreater(arr, j, i):\n                           print(\"Comparing\", arr[i], \"and\", arr[j])\n\n                         if arr[i] < arr[j]:\n                             return True\n                                else :\n                                      return False;\n\ndef insertionSort(arr):\n#write your code\n\n\n  def printList(arr):\n  for i in range(len(arr)) :\n    print(arr[i], end = \"\\n\")\n    print()\n\n\n\n    arr = []\n\n          n = int(input())\n\n              for i in range(0, n) :\n                ele = int(input())\n\n                      arr.append(ele) # adding the element\n                      insertionSort(arr);\nprintList(arr);"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/time-and-space-complexity/insertion-sort-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

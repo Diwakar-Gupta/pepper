@@ -1,11 +1,27 @@
 {
   "name": "Merge K Sorted Lists",
   "slug": "hashmap-and-heap-merge-k-sorted-lists",
-  "description": "1. You are given a list of lists, where each list is sorted.\n2. You are required to complete the body of mergeKSortedLists function. The function is expected to merge k sorted lists to create one sorted list.\n\n### Input Format\n```\nInput is managed for you\n```\n\n### Output Format\n```\nOutput is managed for you\n```\n\n### Constraints\n```\nSpace complextiy = O(k)\nTime complexity = nlogk\nwhere k is the number of lists and n is number of elements across all lists.\n```\n\n### Sample Input\n```\n4\n5\n10 20 30 40 50\n7\n5 7 9 11 19 55 57\n3\n1 2 3\n2\n32 39\n```\n\n### Sample Output\n```\n1 2 3 5 7 9 10 11 19 20 30 32 39 40 50 55 57\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/k_3hDj23DuE?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/E5WSILx1q0Q?rel=0&loop=1&playlist=E5WSILx1q0Q",
-  "codes": {
-    "java": "import \njava\n.io.*;\nimport \njava\n.util\n.*;\npublic \nclass \nMain {\n   \npublic \nstatic \nArrayL\nist\n<Integ\ner> \nmergeK\nSorted\nLists\n(Array\nList\n<Array\nList\n<Integ\ner>> \nlists\n){\n      \nArrayL\nist\n<Integ\ner> rv \n= new \nArrayL\nist\n<>();"
-  }
+  "course": "dsa-fundamentals",
+  "module": "hashmap-and-heap",
+  "difficulty": "Hard",
+  "statement": "1. You are given a list of lists, where each list is sorted.\n2. You are required to complete the body of mergeKSortedLists function. The function is expected to merge k sorted lists to create one sorted list.",
+  "inputFormat": "Input is managed for you",
+  "outputFormat": "Output is managed for you",
+  "constraints": "Space complextiy = O(k)\nTime complexity = nlogk\nwhere k is the number of lists and n is number of elements across all lists.",
+  "sampleInput": "4\n5\n10 20 30 40 50\n7\n5 7 9 11 19 55 57\n3\n1 2 3\n2\n32 39",
+  "sampleOutput": "1 2 3 5 7 9 10 11 19 20 30 32 39 40 50 55 57",
+  "questionVideo": "k_3hDj23DuE",
+  "solutionVideo": "E5WSILx1q0Q",
+  "templates": {
+    "cpp": "#include<iostream>\n#include<unordered_map>\n#include<vector>\nusing namespace std;\n\nvector<int>mergeKSortedLists(vector<vector<int>>& lists) {\n  vector<int> rv;\n  //write your code here\n  return rv;\n}\n\nint main() {\n  int k;\n  cin >> k;\n  vector<vector<int>>lists;\n  for (int i = 0; i < k; i++) {\n    vector<int>list;\n\n    int n;\n    cin >> n;\n    for (int j = 0; j < n; j++) {\n      int data;\n      cin >> data;\n      list.push_back(data);\n    }\n\n    lists.push_back(list);\n  }\n\n  vector<int> mlist = mergeKSortedLists(lists);\n  for (int val : mlist) {\n    cout << val << \" \";\n  }\n  cout << endl;\n  return 0;\n}",
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n   public static ArrayList<Integer> mergeKSortedLists(ArrayList<ArrayList<Integer>> lists){\n      ArrayList<Integer> rv = new ArrayList<>();\n\n      // write your code here\n\n      return rv;\n   }\n\n   public static void main(String[] args) throws Exception {\n      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n      int k = Integer.parseInt(br.readLine());\n      ArrayList<ArrayList<Integer>> lists = new ArrayList<>();\n      for(int i = 0; i < k; i++){\n         ArrayList<Integer> list = new ArrayList<>();\n\n         int n = Integer.parseInt(br.readLine());\n         String[] elements = br.readLine().split(\" \");\n         for(int j = 0; j < n; j++){\n            list.add(Integer.parseInt(elements[j]));\n         }\n\n         lists.add(list);\n      }\n\n      ArrayList<Integer> mlist = mergeKSortedLists(lists);\n      for(int val: mlist){\n         System.out.print(val + \" \");\n      }\n      System.out.println();\n   }\n\n}",
+    "python": "class PriorityQueue(object):\n    def __init__(self):\n    self.queue = []\n\n                 def __str__(self):\n                 return ' '.join([str(i) for i in self.queue])\n\n                        def isEmpty(self):\n                        return len(self.queue) == 0\n\n                               def insert(self, data):\n                               self.queue.append(data)\n\n                               def delete (self):\n                               try:\n                                 max = 0\n                                       for i in range(len(self.queue)) :\n                                         if self.queue[i] > self.queue[max]:\n                                           max = i\n                                                 item = self.queue[max]\n                                                     del self.queue[max]\n                                                     return item\n                                                         except IndexError:\n                                                         print()\n                                                         exit()\n\n                                                         if __name__ == '__main__':\n                                                         k = int(input())\n                                                               arr = []\n                                                                   for i in range(k) :\n                                                                     n = int(input())\n                                                                         row = input().split()\n                                                                             for i in range(len(row)) :\n                                                                               row[i] = int(row[i])\n                                                                                   arr.append(row)\n\n\n\n#write your code here"
+  },
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/hashmap-and-heap/merge-k-sorted-lists-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

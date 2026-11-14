@@ -1,0 +1,26 @@
+{
+  "name": "Pepcoder And Bits",
+  "slug": "levelup-bit-manipulation-pepcoder-and-bits",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. Pepcoder is feeling confident after solving many problems on Bit Manipulation.\n2. So, his teacher ask him to find out the count of positive integers strictly less than N, having same \n     number of set bits as that of N.\n3. Let us see that if pepcoder can solve it or not.",
+  "inputFormat": "A number N",
+  "outputFormat": "Check the sample ouput and question video.",
+  "constraints": "1 &lt;= N &lt;= 10^12",
+  "sampleInput": "1024",
+  "sampleOutput": "10",
+  "questionVideo": "DMTw6pP5zTg",
+  "solutionVideo": "DMTw6pP5zTg",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n    public static long ncr(long n, long r){\n        if(n < r){\n            return 0L;    \n        }\n        \n        long res = 1L;\n        \n        for(long i = 0L; i < r; i++){\n            res = res * (n - i);\n            res = res / (i + 1);\n        }\n        \n        return res;\n    }\n    \n    public static long solution(long n, int k, int i) {\n      \n    }\n    \n    public static int csb(long n){\n        int res = 0;\n        \n        while(n > 0){\n            long rsb = n & -n;\n            n -= rsb;\n            res++;\n        }\n        \n        return res;\n    }\n    \n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n        long n = scn.nextLong();\n        int k = csb(n);\n        System.out.println(solution(n, k, 63));\n    }\n\t\n\t\n}"
+  },
+  "editorial": "<p>The problem here deals with getting all the numbers in the range 0 to (n-1) which have the same number of set bits as that of n.</p><p>Say for example n = 12 [ 1 1 0 0 ]</p><p>Output: 5 { 3[ 0 0 1 1 ], 5[ 0 1 0 1 ], 6[ 0 1 1 0 ], 9[1 0 0 1 ], 10[ 1 0 1 0 ] }</p><p>The problem can be solved with the help of <b>recursion</b>. Here we will choose every step that whether to set this bit or not and then we would act accordingly. Suppose we have [ 1 1 0 0 ] then for the first case we would choose that whether we want the MSB to be 1 or 0. If MSB is set to 0 then we have to put two 1s in the remaining three spaces which can be done in 3C2 ways. And if we set MSB to 1 we have to solve recursively for {1 0 0} as we only need to have numbers which are lesser than n so any combination that could be greater than n must be neglected and our recursion ensures that every combination yields number less than n. </p><p>Thus we can have two cases:</p><p><b>1. The bit is already set</b></p><p>This is the case when we have two options, if we choose this bit value is 0 then we will have all numbers less than n irrespective of the combination of latter bits so here we do not recurse but simply calculate the combinations possible. The other case is when we choose to set this bit, in this case, there is a possibility that the combination of latter bits can yield to a number greater than n so we choose to recurse.</p><p><b>2. The bit is not set</b></p><p>This is the case when no operations need to be done and we just need to recurse to the next index as setting this bit would yield a number greater than n.<b>Time Complexity: O(n!)</b></p><p>The time complexity for the recursive call is linear as the recursive function if of the type <b>T(n) = k + T(n - 1)</b> but we have to find nCr for every n which is a costly operation.</p><p><b>Space Complexity: O(n)</b></p><p>The space complexity for the function is linear due to the recursive stack.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/pepcoder-and-bits-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

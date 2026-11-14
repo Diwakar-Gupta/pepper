@@ -1,0 +1,306 @@
+{
+  "name": "Linked List",
+  "slug": "linked-list",
+  "course": "levelup",
+  "counts": {
+    "problems": 42,
+    "articles": 0,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-reverse-a-linkedlist",
+      "name": "Reverse A Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-middle-of-a-linked-list",
+      "name": "Middle Of A Linked List",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-palindrome-linkedlist",
+      "name": "Palindrome Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-fold-of-linkedlist",
+      "name": "Fold Of Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-unfold-of-linkedlist",
+      "name": "Unfold Of Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-merge-two-sorted-linkedlist",
+      "name": "Merge Two Sorted Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-merge-k-sorted-linkedlist",
+      "name": "Merge K Sorted Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-mergesort-linkedlist",
+      "name": "Mergesort Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-remove-nth-node-from-end-of-linkedlist",
+      "name": "Remove Nth Node From End Of Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-segregate-even-and-odd-nodes-in-a-linkedlist",
+      "name": "Segregate Even And Odd Nodes In A Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-reverse-node-of-linkedlist-in-k-group",
+      "name": "Reverse Node Of Linkedlist In K Group",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-reverse-in-range",
+      "name": "Reverse In Range",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-copy-linkedlist-with-random-pointers",
+      "name": "Copy Linkedlist With Random Pointers",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-is-cycle-present-in-linkedlist",
+      "name": "Is Cycle Present In Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-cycle-node-in-linkedlist",
+      "name": "Cycle Node In Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-intersection-node-in-two-linkedlist-using-difference-method",
+      "name": "Intersection Node In Two Linkedlist Using Difference Method",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-intersection-node-in-two-linkedlist-using-floyd-cycle-method",
+      "name": "Intersection Node In Two Linkedlist Using Floyd Cycle Method",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-add-two-linkedlist",
+      "name": "Add Two Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-subtract-two-linkedlist",
+      "name": "Subtract Two Linkedlist",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-multiply-two-linkedlist",
+      "name": "Multiply Two Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-remove-duplicate-from-sorted-linkedlist",
+      "name": "Remove Duplicate From Sorted Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-remove-all-duplicates-from-sorted-linkedlist",
+      "name": "Remove All Duplicates From Sorted Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-segregate-01-node-of-linkedlist-over-swapping-nodes",
+      "name": "Segregate 01 Node Of Linkedlist Over Swapping Nodes",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-segregate-012-node-of-linkedlist-over-swapping-nodes",
+      "name": "Segregate 012 Node Of Linkedlist Over Swapping Nodes",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-segregate-node-of-linkedlist-over-last-index",
+      "name": "Segregate Node Of Linkedlist Over Last Index.",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-segregate-node-of-linkedlist-over-pivot-index",
+      "name": "Segregate Node Of Linkedlist Over Pivot Index",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-quicksort-in-linkedlist",
+      "name": "Quicksort In Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-add-first-in-doubly-linkedlist",
+      "name": "Add First In Doubly Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-add-last-in-doubly-linkedlist",
+      "name": "Add Last In Doubly Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-remove-first-in-doubly-linkedlist",
+      "name": "Remove First In Doubly Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-remove-last-in-doubly-linkedlist",
+      "name": "Remove Last In Doubly Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-get-first-and-get-last-in-doubly-linkedlist",
+      "name": "Get First And Get Last In Doubly Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-get-at-in-doubly-linkedlist",
+      "name": "Get At In Doubly Linkedlist",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-add-at-in-doubly-linkedlist",
+      "name": "Add At In Doubly Linkedlist",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-remove-at-in-doubly-linkedlist",
+      "name": "Remove At In Doubly Linkedlist",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-add-before-in-doubly-linkedlist",
+      "name": "Add Before In Doubly Linkedlist",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-add-after-in-doubly-linkedlist",
+      "name": "Add After In Doubly Linkedlist",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-remove-after-in-doubly-linkedlist",
+      "name": "Remove After In Doubly Linkedlist",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-remove-before-in-doubly-linkedlist",
+      "name": "Remove Before In Doubly Linkedlist",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-remove-node-in-doubly-linkedlist",
+      "name": "Remove Node In Doubly Linkedlist",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-display-forward-and-backward-in-doubly-linkedlist",
+      "name": "Display Forward And Backward In Doubly Linkedlist",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "levelup-linked-list-design-lru-chache",
+      "name": "Design Lru Chache",
+      "difficulty": "Medium",
+      "tests": 1
+    }
+  ]
+}

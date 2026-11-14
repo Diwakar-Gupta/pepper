@@ -1,0 +1,25 @@
+{
+  "name": "Find Longest Awesome Substring",
+  "slug": "levelup-bit-manipulation-find-longest-awesome-substring",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://leetcode.com/problems/find-longest-awesome-substring/\" target=\"_blank\" rel=\"noopener\">https://leetcode.com/problems/find-longest-awesome-substring/</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "1",
+  "sampleOutput": "1",
+  "questionVideo": "pOlA8FZmC0Y",
+  "solutionVideo": "pOlA8FZmC0Y",
+  "templates": {
+    "java": "class Solution {\n  public int longestAwesome(String s) {\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/find-longest-awesome-substring/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

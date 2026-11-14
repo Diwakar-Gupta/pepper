@@ -1,0 +1,26 @@
+{
+  "name": "Quicksort In Linkedlist",
+  "slug": "levelup-linked-list-quicksort-in-linkedlist",
+  "course": "levelup",
+  "module": "linked-list",
+  "difficulty": "Easy",
+  "statement": "1. Given the head of a linked list, return the list after sorting it in increasing order.\n2. You must apply quick sort.\n3. Time Complexity : O(nlogn)\n4. Space Complexity : constant space",
+  "inputFormat": "1-&gt;7-&gt;2-&gt;6-&gt;3-&gt;5-&gt;4-&gt;null",
+  "outputFormat": "1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;7-&gt;null",
+  "constraints": "0 &lt;= N &lt;= 10^6",
+  "sampleInput": "4\n0\n6\n7\n5",
+  "sampleOutput": "0 5 6 7",
+  "questionVideo": "DZXb4UGl-v4",
+  "solutionVideo": "DZXb4UGl-v4",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nclass ListNode\n{\npublic:\n    int val = 0;\n    ListNode *next = nullptr;\n\n    ListNode(int val)\n    {\n        this->val = val;\n    }\n};\n\nListNode *quickSort(ListNode *head)\n{\n    return nullptr;\n}\n\nvoid printList(ListNode *node)\n{\n    ListNode *curr = node;\n    while (curr != nullptr)\n    {\n        cout << curr->val << \" \";\n        curr = curr->next;\n    }\n    cout << endl;\n}\n\nListNode *createList(int n)\n{\n    ListNode *dummy = new ListNode(-1);\n    ListNode *prev = dummy;\n    while (n-- > 0)\n    {\n        int val;\n        cin >> val;\n        prev->next = new ListNode(val);\n        prev = prev->next;\n    }\n    return dummy->next\n}\n\nint main()\n{\n    int n;\n    cin >> n;\n    ListNode *h1 = createList(n);\n\n    ListNode *head = quickSort(h1);\n    printList(head);\n\n    return 0;\n}",
+    "java": "import java.util.*;\n\nclass Main {\n    public static Scanner scn = new Scanner(System.in);\n\n    public static class ListNode {\n        int val = 0;\n        ListNode next = null;\n\n        ListNode(int val) {\n            this.val = val;\n        }\n    }\n\n    public static ListNode quickSort(ListNode head) {\n        return null;\n    }\n\n    public static void printList(ListNode node) {\n        while (node != null) {\n            System.out.print(node.val + \" \");\n            node = node.next;\n        }\n    }\n\n    public static ListNode createList(int n) {\n        ListNode dummy = new ListNode(-1);\n        ListNode prev = dummy;\n        while (n-- > 0) {\n            prev.next = new ListNode(scn.nextInt());\n            prev = prev.next;\n        }\n\n        return dummy.next;\n    }\n\n    public static void main(String[] args) {\n        int n = scn.nextInt();\n        ListNode h1 = createList(n);\n\n        ListNode head = quickSort(h1);\n        printList(head);\n    }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/linked-list/quicksort-in-linkedlist/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

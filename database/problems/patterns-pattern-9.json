@@ -1,11 +1,27 @@
 {
   "name": "Pattern 9",
   "slug": "patterns-pattern-9",
-  "description": "1. You are given a number n.\n2. You've to create a pattern of * and separated by tab as shown in output format.\n\n### Input Format\n```\nA number n\n```\n\n### Output Format\n```\n\n```\n\n### Constraints\n```\n1 <= n <= 100\n Also, n is odd.\n```\n\n### Sample Input\n```\n5\n```\n\n### Sample Output\n```\n*\t\t\t\t*\t\n\t*\t\t*\t\t\n\t\t*\t\t\t\n\t*\t\t*\t\t\n*\t\t\t\t*\n```",
-  "externalPlatforms": [],
-  "problemVideoLink": "https://www.youtube.com/embed/zcoVmVMIymQ?rel=0",
-  "solutionVideolink": "https://www.youtube.com/embed/Ul2CgihEzp0?rel=0&loop=1&playlist=Ul2CgihEzp0",
-  "codes": {
-    "java": ""
-  }
+  "course": "dsa-fundamentals",
+  "module": "patterns",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number n.\n2. You've to create a pattern of * and separated by tab as shown in output format.",
+  "inputFormat": "A number n",
+  "outputFormat": "",
+  "constraints": "1 &lt;= n &lt;= 100\n Also, n is odd.",
+  "sampleInput": "5",
+  "sampleOutput": "*\t\t\t\t*\t\n\t*\t\t*\t\t\n\t\t*\t\t\t\n\t*\t\t*\t\t\n*\t\t\t\t*",
+  "questionVideo": "zcoVmVMIymQ",
+  "solutionVideo": "Ul2CgihEzp0",
+  "templates": {
+    "cpp": "#include <iostream>\nusing namespace std;\n\nint main(int argc, char **argv){\n    int n;\n    cin >> n;\n\n    //write your code here\n\n}",
+    "java": "import java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        Scanner scn = new Scanner(System.in);\n\n        // write ur code here\n\n    }\n}"
+  },
+  "editorial": "<p><i>&quot;Art is pattern informed by sensibility!&quot;</i><br></p><p><b><u>Question:</u></b><br></p><p>1. You are given a number n.<br></p><p>2. You've to create a pattern of * and separated it by tab as shown in the output format.<br></p><p><b><u>Input format:</u></b><br></p><p>A number n<br></p><p><b><u>Output format:</u></b><br></p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><br></p><p><b><u>Constraints:</u></b><br></p><p>1 &lt;= n &lt;= 100; Also n is odd.<br></p><p><b><u>Solution Approach:</u></b><br></p><p>This problem is a combination of the two problems we have already faced, a diagonal of stars that leans down from left to right (Pattern 7) and a diagonal of stars that rise up from left to right (Pattern 8).<br></p><p>So we combine the printing conditions of both the loops by an &quot;or&quot; operator to create the required program to print the &quot;Cross of stars&quot;. We use the &quot;or&quot; operator so that the star is printed if either of the conditions is true.<br></p><p> <br></p><pre>import java.util.*;\n                                public class Main{\n                                    public static void main(String[] args)\n                                    {\n                                        Scanner scn = new Scanner(System.in);\n                                        int n = scn.nextInt();\n                                        for(int i =1;i&lt;=n;i++)      //decides the number of rows for output printing\n                                        {\n                                            for(int j =1;j&lt;=n;j++)  //prints the stars in the row\n                                            {\n                                                if(i == j || i + j == n + 1)        \n                                                    {\n                                                        System.out.print(&quot;*\t&quot;);\n                                                    }\n                                                else                        \n                                                    System.out.print(&quot;\t&quot;);    \n                                            }\n                                            System.out.println();   //changes the row on output console\n                                        }\n                                    }\n                                }<br></pre><p><b><u>Output for input value n = 5:</u></b></p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"></p>",
+  "source": "https://www.pepcoding.com/resources/online-java-foundation/patterns/design-pattern-9-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
 }

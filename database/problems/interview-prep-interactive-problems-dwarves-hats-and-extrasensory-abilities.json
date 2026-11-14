@@ -1,0 +1,25 @@
+{
+  "name": "Dwarves, Hats And Extrasensory Abilities",
+  "slug": "interview-prep-interactive-problems-dwarves-hats-and-extrasensory-abilities",
+  "course": "interview-prep",
+  "module": "interactive-problems",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://codeforces.com/problemset/problem/1063/C\" target=\"_blank\" rel=\"noopener\">https://codeforces.com/problemset/problem/1063/C</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": ".",
+  "sampleOutput": ".",
+  "questionVideo": "cDM83KGVykc",
+  "solutionVideo": "cDM83KGVykc",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args) throws IOException {\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/interactive-problems/dwarves-hats-and-extrasensory-abilities/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

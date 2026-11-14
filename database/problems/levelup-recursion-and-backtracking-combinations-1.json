@@ -1,0 +1,26 @@
+{
+  "name": "Combinations - 1",
+  "slug": "levelup-recursion-and-backtracking-combinations-1",
+  "course": "levelup",
+  "module": "recursion-and-backtracking",
+  "difficulty": "Medium",
+  "statement": "1. You are give a number of boxes (nboxes) and number of identical items (ritems).\n2. You are required to place the items in those boxes and print all such configurations possible.\n\nItems are identical and all of them are named 'i'.\nNote 1 -&gt; Number of boxes is greater than number of items, hence some of the boxes may remain \n                   empty.\nNote 2 -&gt; Check out the question video and write the recursive code as it is intended without \n                   changing signature. The judge can't force you but intends you to teach a concept.",
+  "inputFormat": "Input is managed for you",
+  "outputFormat": "Check the sample ouput and question video. - means empty box, i means occupied by item.",
+  "constraints": "0 &lt; nboxes &lt;= 10\n0 &lt;= ritems &lt;= nboxes",
+  "sampleInput": "5\n3",
+  "sampleOutput": "iii--\nii-i-\nii--i\ni-ii-\ni-i-i\ni--ii\n-iii-\n-ii-i\n-i-ii\n--iii",
+  "questionVideo": "wOaxJAtJ2Mo",
+  "solutionVideo": "wOaxJAtJ2Mo",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void combinations(int cb, int tb, int ssf, int ts, String asf){\n    // write your code here\n  }\n\n  public static void main(String[] args) throws Exception {\n    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n    int nboxes = Integer.parseInt(br.readLine());\n    int ritems = Integer.parseInt(br.readLine());\n    combinations(1, nboxes, 0, ritems, \"\");\n  }\n\n}"
+  },
+  "editorial": "<p>As the items are identical, order will not matter, selection will matter. The total number of ways will be nCr. At level, the boxes will be kept. There will be two option at each level.</p><p>Option 1 - Yes - Place the item in the current box</p><p>Option 2 - No - Do not place the item in the current box.</p><p>Difference between permutation and combination -</p><p>Let n = 4, r = 2</p><p><b>Answer for permutation -</b></p><p>1 2 _ _</p><p>1 _ 2 _</p><p>1 _ _ 2</p><p>_ 1 2 _</p><p>_ 1 _ 2</p><p>_ _ 1 2</p><p>2 1 _ _</p><p>2 _ 1 _</p><p>2 _ _ 1</p><p>_ 2 1 _</p><p>_ 2 _ 1</p><p>_ _ 2 1</p><p><b>Answer for Combination -</b></p><p>i i _ _</p><p>i _ i _</p><p>i _ _ i</p><p>_ i i _</p><p>_ i _ i</p><p>_ _ i i</p><p>As it can be clearly seen in the example, order matters in permutation but not in combination as items are identical in combination.</p><p><b>Formula Used -</b></p><p>2n = nC0 + nC1 + nC2 + ........ + nCn</p><p>Total number of ways of placing 1 to n identical items in n boxes is 2^n. At each level there will be 2 calls -</p><p>Yes Call - Place item in the current box.</p><p>No call - Do not place item in the current box.</p><p>Therefore total 2^n calls will be made. When all the boxes are considered and number of YES calls is equal to r, print the sequence.</p><p><b><u>Signature -</u></b></p><p>public static void combinations(int cb, int tb, int ssf, int ts, String asf)</p><p>cb - current box</p><p>tb - total boxes (input n)</p><p>ssf - selections so far</p><p>ts - total selections allowed (input r)</p><p>asf - Sequence so far</p><p><b><u>Code -</u></b> </p><pre>public static void combinations(int cb, int tb, int ssf, int ts, String asf) {\n                                        if (cb &gt; tb) {\n                                            if (ssf == ts) {\n                                                System.out.println(asf);\n                                            }\n                                            return;\n                                        }\n                                \n                                        combinations(cb + 1, tb, ssf + 1, ts, asf + &quot;i&quot;); //YES Call\n                                        combinations(cb + 1, tb, ssf + 0, ts, asf + &quot;-&quot;); //NO Call\n                                 }</pre><p><b><u>Code Explained -</u></b></p><p>Boxes is at level. At each level, 2 calls are made. Yes call - place the item in the current box, increase selection so far. No call - do not place the current item in the box, do not increase the selection so far. When the current box will be more than total boxes, base case is reached.</p><p><b><u>Base Case -</u></b></p><p>If selections so far is equal to the input r(total selections), it means r items have been placed in n boxes. Print the answer and return.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/recursion-and-backtracking/combinations-i-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

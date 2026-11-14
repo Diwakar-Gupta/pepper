@@ -1,0 +1,25 @@
+{
+  "name": "Min Squares",
+  "slug": "levelup-dynamic-programming-min-squares",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Easy",
+  "statement": "1. You are given a number N.\n2. You have to find the minimum number of squares that sum to N.\n3. You can always represent a number as a sum of squares of other numbers.\n   For eg -&gt; In worst case N can be represented as (1*1) + (1*1) + (1*1)..... N times.",
+  "inputFormat": "An integer N",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 10^5",
+  "sampleInput": "35",
+  "sampleOutput": "3",
+  "questionVideo": "aZuQXkO0-XA",
+  "solutionVideo": "aZuQXkO0-XA",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int solution(int n){\n\t\t//write your code here\n\n\t\treturn 0;\n\t}\n\n\tpublic static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint n = scn.nextInt();\n\t\tSystem.out.println(solution(n));\n\t}\n\n\n\t\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/min-squares-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

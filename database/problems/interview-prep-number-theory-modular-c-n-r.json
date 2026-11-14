@@ -1,0 +1,25 @@
+{
+  "name": "Modular C(n,r)",
+  "slug": "interview-prep-number-theory-modular-c-n-r",
+  "course": "interview-prep",
+  "module": "number-theory",
+  "difficulty": "Medium",
+  "statement": "You have T test cases and for each test case you have been given n and r values and you need to find nCr mod 10^9+7.",
+  "inputFormat": "The first line contains an integer T.\nNext T lines contain integers n and r.",
+  "outputFormat": "for each query print nCr mod 10^9+7 in a line.",
+  "constraints": "1 &lt;= T &lt;= 10^6\n1 &lt;= n &lt;= 3000\n1 &lt;= r &lt;= n",
+  "sampleInput": "3\n4 3\n5 2\n10 8",
+  "sampleOutput": "4\n10\n45",
+  "questionVideo": "btOYsr-V0WU",
+  "solutionVideo": "btOYsr-V0WU",
+  "templates": {
+    "java": "import java.util.Arrays;\nimport java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\n\npublic class Main {\n\n\tpublic static void main(String[] args) throws NumberFormatException, IOException {\n\t\tBufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n\t\t\n\n\t\t\n\t}\n\n}\n"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/number-theory/modular-ncr-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Anton And Lines",
+  "slug": "interview-prep-geometry-anton-and-lines",
+  "course": "interview-prep",
+  "module": "geometry",
+  "difficulty": "Easy",
+  "statement": "<a href=\"https://codeforces.com/contest/593/problem/B\" target=\"_blank\" rel=\"noopener\">https://codeforces.com/contest/593/problem/B</a>",
+  "inputFormat": ".",
+  "outputFormat": ".",
+  "constraints": ".",
+  "sampleInput": "4\n1 2\n1 2\n1 0\n0 1\n0 2",
+  "sampleOutput": "NO",
+  "questionVideo": "yE7VKdsVwP8",
+  "solutionVideo": "yE7VKdsVwP8",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n  public static void main(String[] args) throws Exception {\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/geometry/anton-and-lines/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

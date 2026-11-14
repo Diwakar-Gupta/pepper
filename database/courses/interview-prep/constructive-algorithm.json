@@ -1,0 +1,278 @@
+{
+  "name": "Constructive algorithm",
+  "slug": "constructive-algorithm",
+  "course": "interview-prep",
+  "counts": {
+    "problems": 38,
+    "articles": 0,
+    "videos": 0
+  },
+  "items": [
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-alyona-and-mex",
+      "name": "Alyona And Mex",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-marina-and-vasya",
+      "name": "Marina And Vasya",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-messy",
+      "name": "Messy",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-cows-and-sequences",
+      "name": "Cows And Sequences",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-anya-and-smartphone",
+      "name": "Anya And Smartphone",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-plasticine-zebra",
+      "name": "Plasticine Zebra",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-bits",
+      "name": "Bits",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-heap-operations",
+      "name": "Heap Operations",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-slava-and-tanks",
+      "name": "Slava And Tanks",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-polyline",
+      "name": "Polyline",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-from-y-to-y",
+      "name": "From Y To Y",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-maximum-sum-of-products",
+      "name": "Maximum Sum Of Products",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-palindromic-matrix",
+      "name": "Palindromic Matrix",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-crazy-diamond",
+      "name": "Crazy Diamond",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-reading-books",
+      "name": "Reading Books",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-another-problem-about-dividing-numbers",
+      "name": "Another Problem About Dividing Numbers",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-grid-00100",
+      "name": "Grid-00100",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-ehab-and-prefix-mexs",
+      "name": "Ehab And Prefix Mexs",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-even-picture",
+      "name": "Even Picture",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-natsya-is-transposing-matrix",
+      "name": "Natsya Is Transposing Matrix",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-swap-letters",
+      "name": "Swap Letters",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-long-beautiful-integer",
+      "name": "Long Beautiful Integer",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-balance-the-bits",
+      "name": "Balance The Bits",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-fence-painting",
+      "name": "Fence Painting",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-tennis-championship",
+      "name": "Tennis Championship",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-basic-diplomacy",
+      "name": "Basic Diplomacy",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-yet-another-array-partitioning-task",
+      "name": "Yet Another Array Partitioning Task",
+      "difficulty": "Easy",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-new-year-book-reading",
+      "name": "New Year Book Reading",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-hometask",
+      "name": "Hometask",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-codeforces-subsequence",
+      "name": "Codeforces Subsequence",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-omkar-and-baseball",
+      "name": "Omkar And Baseball",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-beautiful-set-of-points",
+      "name": "Beautiful Set Of Points",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-knight-tournament",
+      "name": "Knight Tournament",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-balls-and-boxes",
+      "name": "Balls And Boxes",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-bulls-and-cows",
+      "name": "Bulls And Cows",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-sequence-transformation",
+      "name": "Sequence Transformation",
+      "difficulty": "Medium",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-kefa-and-company",
+      "name": "Kefa And Company",
+      "difficulty": "Medium",
+      "tests": 0
+    },
+    {
+      "type": "problem",
+      "slug": "interview-prep-constructive-algorithm-bicolored-rbs",
+      "name": "Bicolored Rbs",
+      "difficulty": "Easy",
+      "tests": 0
+    }
+  ]
+}

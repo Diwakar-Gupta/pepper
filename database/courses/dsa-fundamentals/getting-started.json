@@ -1,72 +1,227 @@
-[
-  {
-    "type": "Code",
-    "slug": "getting-started-print-z",
-    "name": "Print Z"
+{
+  "name": "Getting Started",
+  "slug": "getting-started",
+  "course": "dsa-fundamentals",
+  "counts": {
+    "problems": 12,
+    "articles": 20,
+    "videos": 4
   },
-  {
-    "type": "Code",
-    "slug": "getting-started-grading-system",
-    "name": "Grading System"
-  },
-  {
-    "type": "Code",
-    "slug": "is-a-number-prime-easy",
-    "name": "Is A Number Prime Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "getting-started-print-all-primes-till-n",
-    "name": "Print All Primes Till N"
-  },
-  {
-    "type": "Code",
-    "slug": "getting-started-print-fibonacci-numbers-till-n",
-    "name": "Print Fibonacci Numbers Till N"
-  },
-  {
-    "type": "Code",
-    "slug": "getting-started-count-digits-in-a-number",
-    "name": "Count Digits In A Number"
-  },
-  {
-    "type": "Code",
-    "slug": "digits-of-a-number-easy",
-    "name": "Digits Of A Number Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "getting-started-reverse-a-number",
-    "name": "Reverse A Number"
-  },
-  {
-    "type": "Code",
-    "slug": "getting-started-inverse-of-a-number",
-    "name": "Inverse Of A Number"
-  },
-  {
-    "type": "Code",
-    "slug": "getting-started-rotate-a-number",
-    "name": "Rotate A Number"
-  },
-  {
-    "type": "Code",
-    "slug": "getting-started-gcd-and-lcm",
-    "name": "Gcd And Lcm"
-  },
-  {
-    "type": "Code",
-    "slug": "prime-factorisation-of-a-number-easy",
-    "name": "Prime Factorisation Of A Number Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "pythagorean-triplet-easy",
-    "name": "Pythagorean Triplet Easy"
-  },
-  {
-    "type": "Code",
-    "slug": "getting-started-the-curious-case-of-benjamin-bulbs",
-    "name": "The Curious Case Of Benjamin Bulbs"
-  }
-]
+  "items": [
+    {
+      "type": "article",
+      "slug": "getting-started-how-to-print-in-java",
+      "name": "How To Print In Java"
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-print-z-in-java",
+      "name": "Print Z In Java"
+    },
+    {
+      "type": "problem",
+      "slug": "getting-started-print-z",
+      "name": "Print Z",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-variables-in-java",
+      "name": "Variables In Java"
+    },
+    {
+      "type": "video",
+      "slug": "getting-started-variables",
+      "name": "Variables",
+      "youtubeId": "hipkIs4gBkw"
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-grading-system",
+      "name": "Grading System"
+    },
+    {
+      "type": "problem",
+      "slug": "getting-started-grading-system",
+      "name": "Grading System",
+      "difficulty": "Easy",
+      "tests": 9
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-loops",
+      "name": "Loops"
+    },
+    {
+      "type": "video",
+      "slug": "getting-started-loops",
+      "name": "Loops",
+      "youtubeId": "27Aa9X5g0tY"
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-take-input",
+      "name": "Take Input"
+    },
+    {
+      "type": "video",
+      "slug": "getting-started-take-input",
+      "name": "Take Input",
+      "youtubeId": "1eiyukDzfTs"
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-is-a-number-prime",
+      "name": "Is A Number Prime"
+    },
+    {
+      "type": "problem",
+      "slug": "getting-started-is-a-number-prime",
+      "name": "Is A Number Prime",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-primes-till-n",
+      "name": "Primes Till N"
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-what-are-conditional-statements",
+      "name": "What Are Conditional Statements"
+    },
+    {
+      "type": "problem",
+      "slug": "getting-started-print-all-primes-till-n",
+      "name": "Print All Primes Till N",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-print-fibonacci-numbers-till-n",
+      "name": "Print Fibonacci Numbers Till N"
+    },
+    {
+      "type": "problem",
+      "slug": "getting-started-print-fibonacci-numbers-till-n",
+      "name": "Print Fibonacci Numbers Till N",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-count-digits-in-a-number",
+      "name": "Count Digits In A Number"
+    },
+    {
+      "type": "problem",
+      "slug": "getting-started-count-digits-in-a-number",
+      "name": "Count Digits In A Number",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "problem",
+      "slug": "getting-started-digits-of-a-number",
+      "name": "Digits Of A Number",
+      "difficulty": "Easy",
+      "unavailable": true
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-digits-of-a-number",
+      "name": "Digits Of A Number"
+    },
+    {
+      "type": "video",
+      "slug": "getting-started-how-to-print-in-java",
+      "name": "How To Print In Java",
+      "youtubeId": "WxsPr2ojbiE"
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-reverse-a-number",
+      "name": "Reverse A Number"
+    },
+    {
+      "type": "problem",
+      "slug": "getting-started-reverse-a-number",
+      "name": "Reverse A Number",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-inverse-of-a-number",
+      "name": "Inverse Of A Number"
+    },
+    {
+      "type": "problem",
+      "slug": "getting-started-inverse-of-a-number",
+      "name": "Inverse Of A Number",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-rotate-a-number",
+      "name": "Rotate A Number"
+    },
+    {
+      "type": "problem",
+      "slug": "getting-started-rotate-a-number",
+      "name": "Rotate A Number",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-gcd-lcm",
+      "name": "Gcd & Lcm"
+    },
+    {
+      "type": "problem",
+      "slug": "getting-started-gcd-and-lcm",
+      "name": "Gcd And Lcm",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-prime-factorization-of-a-number",
+      "name": "Prime Factorization Of A Number"
+    },
+    {
+      "type": "problem",
+      "slug": "getting-started-prime-factorization-of-a-number",
+      "name": "Prime Factorization Of A Number",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-pythagorean-triplet",
+      "name": "Pythagorean Triplet"
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-the-curious-case-of-benjamin-bulbs",
+      "name": "The Curious Case Of Benjamin Bulbs"
+    },
+    {
+      "type": "problem",
+      "slug": "getting-started-the-curious-case-of-benjamin-bulbs",
+      "name": "The Curious Case Of Benjamin Bulbs",
+      "difficulty": "Easy",
+      "tests": 1
+    },
+    {
+      "type": "article",
+      "slug": "getting-started-increment-operators-mcq",
+      "name": "Increment Operators MCQ"
+    }
+  ]
+}

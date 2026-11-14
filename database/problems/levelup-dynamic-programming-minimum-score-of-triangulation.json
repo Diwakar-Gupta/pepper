@@ -1,0 +1,25 @@
+{
+  "name": "Minimum Score Of Triangulation",
+  "slug": "levelup-dynamic-programming-minimum-score-of-triangulation",
+  "course": "levelup",
+  "module": "dynamic-programming",
+  "difficulty": "Medium",
+  "statement": "1. You are given an array of integers, which represents the vertices of an N-sided convex polygon in clockwise order.\n2. You have to triangulate the given polygon into N-2 triangles.\n3. The value of a triangle is the product of the labels of vertices of that triangle.\n4. The total score of the triangulation is the sum of the value of all the triangles.\n5. You have to find the minimum score of the triangulation of the given polygon.",
+  "inputFormat": "A number N\na1\na2.. N integers",
+  "outputFormat": "Check the sample output and question video.",
+  "constraints": "1 &lt;= N &lt;= 1000\n1 &lt;= arr[i] &lt;= 100",
+  "sampleInput": "3\n1\n2\n3",
+  "sampleOutput": "6",
+  "questionVideo": "tmIhmeL8WRo",
+  "solutionVideo": "tmIhmeL8WRo",
+  "templates": {
+    "java": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n\n\tpublic static int minScoreTriangulation(int[] arr) {\n\t\t//write your code here\n\t\t\n\t\treturn 0;\n    }\n  public static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n        int n = scn.nextInt();\n        int[] arr = new int[n];\n\t\tfor(int i = 0 ; i  < n; i++){\n            arr[i] = scn.nextInt();\n        }\n        System.out.println(minScoreTriangulation(arr));\n\t}\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/dynamic-programming/minimum-score-of-triangulation-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

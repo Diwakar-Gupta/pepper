@@ -1,0 +1,20 @@
+Comparing -2 and 7
+Swapping 7 and -2
+Comparing 4 and 7
+Swapping 7 and 4
+Comparing 4 and -2
+Comparing 1 and 7
+Swapping 7 and 1
+Comparing 1 and 4
+Swapping 4 and 1
+Comparing 1 and -2
+Comparing 3 and 7
+Swapping 7 and 3
+Comparing 3 and 4
+Swapping 4 and 3
+Comparing 3 and 1
+-2
+1
+3
+4
+7

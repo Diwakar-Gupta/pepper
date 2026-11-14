@@ -1,0 +1,13 @@
+Stack overflow
+20
+20
+10
+10
+50
+50
+40
+40
+Stack underflow
+Stack underflow
+30
+30

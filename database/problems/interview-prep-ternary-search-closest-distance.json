@@ -1,0 +1,25 @@
+{
+  "name": "Closest Distance",
+  "slug": "interview-prep-ternary-search-closest-distance",
+  "course": "interview-prep",
+  "module": "ternary-search",
+  "difficulty": "Medium",
+  "statement": "<a href=\"https://lightoj.com/problem/closest-distance\" target=\"_blank\" rel=\"noopener\"><i> Link -&gt; Closest Distance</i></a>",
+  "inputFormat": "Check the Link",
+  "outputFormat": "Check the Link",
+  "constraints": "Check the Link",
+  "sampleInput": "3\n0 0 5 0 5 5 5 0\n0 0 5 5 10 10 6 6\n0 0 5 0 10 1 1 1",
+  "sampleOutput": "Case 1: 0\nCase 2: 1.4142135624\nCase 3: 1",
+  "questionVideo": "w6SrH5dgAbg",
+  "solutionVideo": "w6SrH5dgAbg",
+  "templates": {
+    "java": "import java.util.*;\n\npublic class Main {\n  public static void main(String[] args) throws Exception{\n    Scanner sc = new Scanner(System.in);\n\n  }\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/ternary-search/closest-distance-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

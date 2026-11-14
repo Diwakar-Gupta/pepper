@@ -1,0 +1,25 @@
+{
+  "name": "Linear Diophantine Equation",
+  "slug": "interview-prep-number-theory-linear-diophantine-equation",
+  "course": "interview-prep",
+  "module": "number-theory",
+  "difficulty": "Medium",
+  "statement": "You have been given three Integers a, b and k. you need to find an integral solution of x and y such that a*x + b*y= k * gcd(a,b). \n\nIt can be proven that solution always exist.",
+  "inputFormat": "The first line contains 3 integer a, b and k.",
+  "outputFormat": "output integral value of x and y in a single line.",
+  "constraints": "1 &lt;= a, b, k &lt;= 10^6",
+  "sampleInput": "3 5 8",
+  "sampleOutput": "16 -8",
+  "questionVideo": "hl3JWn1loiI",
+  "solutionVideo": "hl3JWn1loiI",
+  "templates": {
+    "java": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n\t\tScanner scn = new Scanner(System.in);\n\t\tint a = scn.nextInt();\n\t\tint b = scn.nextInt();\n        int k = scn.nextInt();\n        \n\t\t\n\t}\n\n\n}"
+  },
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-interview-prep/number-theory/linear-diophantine-equation-official/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}

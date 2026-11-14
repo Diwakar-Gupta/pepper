@@ -1,0 +1,27 @@
+{
+  "name": "Gray Code",
+  "slug": "levelup-bit-manipulation-gray-code",
+  "course": "levelup",
+  "module": "bit-manipulation",
+  "difficulty": "Easy",
+  "statement": "1. The gray code is a binary numeral system where two successive numbers differ in only one bit.\n2. Given a non-negative integer n representing the total number of bits in the code, print the \n     sequence of gray code. A gray code sequence must begin with 0.\n \n Example:\n Input: 2\n Output: [0,1,3,2]\n Explanation:\n 00 - 0\n 01 - 1\n 11 - 3\n 10 - 2\n [0,2,3,1] is also a valid gray code sequence.\n 00 - 0\n 10 - 2\n 11 - 3\n 01 - 1",
+  "inputFormat": "First line contains n(number of digits).",
+  "outputFormat": "Return the list of numbers in any valid order.",
+  "constraints": "0&lt;=n&lt;=20",
+  "sampleInput": "2",
+  "sampleOutput": "[0, 1, 2, 3]",
+  "questionVideo": "KOD2BFauQbA",
+  "solutionVideo": "KOD2BFauQbA",
+  "templates": {
+    "cpp": "#include<iostream>\n #include<vector>\n using namespace std;\n \n vector<int> grayCode(int n) {\n \t //Write your code here\n }\n     \n \n int main(int argc, char** argv){\n     int n;\n     cin>>n;\n     vector<int> res = grayCode(n);\n     cout<<\"[\";\n     for(int i=0; i<res.size(); i++){\n         cout<<res[i];\n         if(i != res.size() - 1){\n             cout<<\", \";\n         }\n     }\n     cout<<\"]\";\n }",
+    "java": "import java.util.*;\n \n public class Main {\n \n     public static List<Integer> grayCode(int n) {\n \t //Write your code here\n     }\n \n     public static void main(String[] args) {\n         Scanner scn = new Scanner(System.in);\n         List<Integer> ans=grayCode(scn.nextInt());\n         Collections.sort(ans);\n         System.out.println(ans);\n     }\n }"
+  },
+  "editorial": "<p>The problem here deals with printing the gray code representation for the n-bit numbers. Say for n = 2 we would have [ 0, 1, 3, 2 ].</p><p>A gray code representation is a way of representing numbers in which the consecutive numbers can have a bit difference of 1. So for n = 2 [ 00, 01, 10, 11 ] would not work as for {01} and {10} there is a bit difference of 2. Therefore the code is [ 00, 01, 11, 10 ] =&gt; [0, 1, 3, 2] which maintains consistency.</p><p>The problem can be solved using recursion. For better clarity let's take an example: Suppose we want to have a 3 - bit gray code representation using a 2-bit representation which we know is [ 00, 01, 11, 10 ] so to get 3 - bit representation firstly we need to add a bit to the given set.</p><p>1. <b>Adding 0-bit value at MSB</b> - [ 000, 001, 011, 010 ] Now we can see that adding 0 at MSB has not been an issue as every consecutive number has a bit difference of 1.</p><p>2. <b>Adding 1-bit value at MSB </b>- [ 100, 101, 111, 110 ] Now also we can see that adding 1 at MSB has not been an issue as every consecutive number has a bit difference of 1.</p><p>The problem occurs when we combine both the sets as at that point {010} and {100} conflicts with bit difference equals 2.</p><p>To eradicate this issue all we need to do is to reverse the set with MSB 1 then we would get a consistent result. Along with the power of recursion, we can build gray code for varying range of bits. As for every case we first need to add 0 to the recursive result and then we need to add 1 in reverse order and later combine the two.</p><p>Below is the recursive tree for N = 3 :</p><p><img src=\"database/images/1c791b63afa7a8ff.png\" alt=\"\"><img src=\"database/images/9fbf349ae23aee24.png\" alt=\"\"></p><p><b>Time Complexity: O(n)</b></p><p>The time complexity for the function is linear as we are calling recursively for every bit range.</p><p><b>Space Complexity: O(n)</b></p><p>The space complexity for the function is linear as we are maintaining an ArrayList to store our result in addition to the recursive stack space complexity.</p>",
+  "source": "https://www.pepcoding.com/resources/data-structures-and-algorithms-in-java-levelup/bit-manipulation/gray-code/ojquestion",
+  "testCases": [
+    {
+      "input": "testcaseinput1.txt",
+      "output": "testcaseoutput1.txt"
+    }
+  ]
+}
