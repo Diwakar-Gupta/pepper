@@ -9,8 +9,9 @@ import { ErrorState, Kbd, Spinner } from "../components/ui";
 import { DEFAULT_TEMPLATES, LANGUAGE_META } from "../constants";
 import { useJudge } from "../contexts/JudgeContext";
 import { getModule, getProblem, getTestCases, useLoader } from "../lib/data";
+import { BROWSER_LANGUAGES, runInBrowser } from "../lib/browserRunner";
 import * as judge from "../lib/judge";
-import { loadDraft, markProgress, saveDraft, usePersistentState, useProgress } from "../lib/storage";
+import { addLocalSubmission, loadDraft, markProgress, saveDraft, usePersistentState, useProgress } from "../lib/storage";
 
 // Ace is large; load it after the statement is on screen.
 const CodeEditor = lazy(() => import("../components/problem/CodeEditor"));
@@ -85,7 +86,7 @@ export default function ProblemPage() {
 
   // ---- language & code --------------------------------------------------- //
   const languages = useMemo(() => {
-    const ids = j.connected ? Object.keys(j.languages) : ["java", "cpp", "python"];
+    const ids = j.connected ? Object.keys(j.languages) : ["java", "cpp", "python", "javascript"];
     return LANGUAGE_ORDER.filter((l) => ids.includes(l));
   }, [j.connected, j.languages]);
   const [preferred, setPreferred] = usePersistentState("language", "java");
@@ -124,6 +125,10 @@ export default function ProblemPage() {
 
   // ---- run / submit ------------------------------------------------------ //
   const [busy, setBusy] = useState(null); // "run" | "submit" | null
+  const [runStatus, setRunStatus] = useState(null); // e.g. "Loading Python…"
+  // Without the judge, Python and JavaScript still run inside the browser.
+  const inBrowser = !j.connected && BROWSER_LANGUAGES.includes(language);
+  const canRun = j.connected || inBrowser;
   const [outcome, setOutcome] = useState(null);
   const [consoleTab, setConsoleTab] = useState("testcase");
   const [leftTab, setLeftTab] = useState("description");
@@ -137,33 +142,43 @@ export default function ProblemPage() {
   }, [problemSlug]);
 
   const doRun = useCallback(async () => {
-    if (!j.connected || busy) return;
+    if (!canRun || busy) return;
     setBusy("run");
     setOutcome(null);
     setConsoleOpen(true);
     setConsoleTab("result");
     try {
-      const result = await judge.run({
-        language,
-        code,
-        tests: cases.map((c) => ({ input: c.input, expected: c.expected === "" ? null : c.expected })),
-      });
+      const tests = cases.map((c) => ({ input: c.input, expected: c.expected === "" ? null : c.expected }));
+      const result = inBrowser
+        ? await runInBrowser({ language, code, tests, onStatus: setRunStatus })
+        : await judge.run({ language, code, tests });
       setOutcome({ kind: "run", result });
     } catch (e) {
       setOutcome({ kind: "run", error: e.message });
     } finally {
       setBusy(null);
+      setRunStatus(null);
     }
-  }, [j.connected, busy, language, code, cases]);
+  }, [canRun, inBrowser, busy, language, code, cases]);
 
   const doSubmit = useCallback(async () => {
-    if (!j.connected || busy || !allTests?.length) return;
+    if (!canRun || busy || !allTests?.length) return;
     setBusy("submit");
     setOutcome(null);
     setConsoleOpen(true);
     setConsoleTab("result");
     try {
-      const result = await judge.submit({ problemSlug, language, code, tests: allTests });
+      let result;
+      if (inBrowser) {
+        result = await runInBrowser({ language, code, tests: allTests, stopOnFailure: true, onStatus: setRunStatus });
+        const s = result.summary;
+        addLocalSubmission(problemSlug, {
+          id: `b${Date.now()}`, language, code, verdict: s.verdict, passed: s.passed, total: s.total,
+          createdAt: new Date().toISOString(), ranIn: "browser",
+        });
+      } else {
+        result = await judge.submit({ problemSlug, language, code, tests: allTests });
+      }
       setOutcome({ kind: "submit", result });
       markProgress(problemSlug, result.summary.verdict === "AC" ? "solved" : "attempted");
       setHistoryKey((k) => k + 1);
@@ -171,8 +186,9 @@ export default function ProblemPage() {
       setOutcome({ kind: "submit", error: e.message });
     } finally {
       setBusy(null);
+      setRunStatus(null);
     }
-  }, [j.connected, busy, allTests, problemSlug, language, code]);
+  }, [canRun, inBrowser, busy, allTests, problemSlug, language, code]);
 
   // Shortcuts that also work when focus is outside the editor.
   useEffect(() => {
@@ -189,7 +205,7 @@ export default function ProblemPage() {
   if (loading && !problem) return <Spinner />;
   if (error) return <ErrorState title="Problem not found">This problem is not in the archive yet.</ErrorState>;
 
-  const canSubmit = j.connected && allTests && allTests.length > 0;
+  const canSubmit = canRun && allTests && allTests.length > 0;
   const solved = progress[problemSlug] === "solved";
   const mod1 = isMac ? "⌘" : "Ctrl";
 
@@ -259,6 +275,14 @@ export default function ProblemPage() {
             ))}
           </select>
           <div className="flex items-center gap-1 text-sm">
+            <span
+              className={`mr-1 hidden rounded-full px-2 py-0.5 text-[11px] font-medium sm:inline ${
+                j.connected ? "bg-emerald-500/15 text-emerald-300" : inBrowser ? "bg-sky-500/15 text-sky-300" : "bg-slate-600 text-slate-300"
+              }`}
+              title={inBrowser ? "Runs inside your browser with WebAssembly. No judge needed." : undefined}
+            >
+              {j.connected ? "Local judge" : inBrowser ? "Runs in browser" : "Needs local judge"}
+            </span>
             <button
               type="button"
               onClick={() => {
@@ -283,27 +307,42 @@ export default function ProblemPage() {
           </Suspense>
         </div>
 
-        {j.connected ? (
+        {canRun ? (
           consoleOpen && (
             <div className="min-h-[220px] flex-[2] border-t border-slate-200">
-              <ConsolePanel cases={cases} setCases={setCases} outcome={outcome} busy={busy} tab={consoleTab} setTab={setConsoleTab} />
+              <ConsolePanel cases={cases} setCases={setCases} outcome={outcome} busy={busy} busyLabel={runStatus} tab={consoleTab} setTab={setConsoleTab} />
             </div>
           )
         ) : (
           <div className="max-h-[50%] overflow-y-auto border-t border-slate-200 bg-slate-50 p-4">
+            <div className="mb-4 flex flex-wrap items-center gap-2 rounded-lg border border-sky-200 bg-sky-50 p-3 text-xs text-sky-900">
+              <span>
+                <b>No setup?</b> Python and JavaScript run right in your browser.
+              </span>
+              {["python", "javascript"].map((l) => (
+                <button
+                  key={l}
+                  type="button"
+                  onClick={() => setPreferred(l)}
+                  className="rounded-md bg-white px-2 py-1 font-medium text-sky-800 ring-1 ring-sky-200 hover:ring-sky-400"
+                >
+                  Use {LANGUAGE_META[l].label}
+                </button>
+              ))}
+            </div>
             <JudgeSetup />
           </div>
         )}
 
         <div className="flex items-center justify-between gap-2 border-t border-slate-200 bg-slate-50 px-3 py-2">
-          <button type="button" onClick={() => setConsoleOpen((o) => !o)} className="text-xs font-medium text-slate-500 hover:text-slate-800" disabled={!j.connected}>
+          <button type="button" onClick={() => setConsoleOpen((o) => !o)} className="text-xs font-medium text-slate-500 hover:text-slate-800" disabled={!canRun}>
             Console {consoleOpen ? "▾" : "▴"}
           </button>
           <div className="flex items-center gap-2">
             <button
               type="button"
               onClick={doRun}
-              disabled={!j.connected || !!busy}
+              disabled={!canRun || !!busy}
               title={`Run sample cases (${mod1}+Enter)`}
               className="rounded-lg bg-white px-4 py-1.5 text-sm font-medium text-slate-700 ring-1 ring-slate-300 transition hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-50"
             >
@@ -320,7 +359,7 @@ export default function ProblemPage() {
             </button>
           </div>
         </div>
-        {j.connected && (
+        {canRun && (
           <p className="hidden border-t border-slate-100 px-3 py-1 text-right text-[11px] text-slate-400 lg:block">
             <Kbd>{mod1}</Kbd> <Kbd>Enter</Kbd> run · <Kbd>{mod1}</Kbd> <Kbd>Shift</Kbd> <Kbd>Enter</Kbd> submit · code is saved in this browser
           </p>

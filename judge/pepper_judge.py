@@ -20,6 +20,7 @@ import re
 import shutil
 import sqlite3
 import subprocess
+import ssl
 import sys
 import tempfile
 import threading
@@ -27,11 +28,15 @@ import time
 import uuid
 from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from urllib.error import HTTPError, URLError
 from urllib.parse import parse_qs, urlparse
+from urllib.request import Request, urlopen
 
 VERSION = "3.0.0"
 DEFAULT_PORT = 5050
 SITE_URL = "https://diwakar-gupta.github.io/pepper/"
+SITE_ORIGIN = "https://diwakar-gupta.github.io"
+SITE_PREFIX = "/pepper/"  # the judge also serves the website under this path
 
 DEFAULT_ALLOWED_ORIGINS = {
     "https://diwakar-gupta.github.io",
@@ -337,6 +342,54 @@ class SubmissionStore:
 
 
 # --------------------------------------------------------------------------- #
+# Website mirror
+#
+# Safari (and some locked-down browsers) block an https page from calling
+# http://127.0.0.1. To work everywhere, the judge can serve the website itself:
+# http://127.0.0.1:5050/pepper/ is fetched from GitHub Pages and passed through,
+# so the page and the judge share one origin.
+# --------------------------------------------------------------------------- #
+
+class SiteMirror:
+    def __init__(self, origin=SITE_ORIGIN):
+        self.origin = origin.rstrip("/")
+        self.cache = {}  # path -> (status, content_type, body)
+        self.lock = threading.Lock()
+        self.ssl_context = ssl.create_default_context()
+
+    def _download(self, path):
+        req = Request(self.origin + path, headers={"User-Agent": "pepper-judge/" + VERSION})
+        try:
+            with urlopen(req, timeout=20, context=self.ssl_context) as resp:
+                return resp.status, resp.headers.get("Content-Type", "application/octet-stream"), resp.read()
+        except HTTPError as e:
+            return e.code, e.headers.get("Content-Type", "text/html"), e.read()
+
+    def get(self, path):
+        """Returns (status, content_type, body). Raises URLError when offline."""
+        # Hashed bundles, images and test data never change between deploys.
+        cacheable = "." in path.rsplit("/", 1)[-1] and not path.endswith(".html")
+        with self.lock:
+            if cacheable and path in self.cache:
+                return self.cache[path]
+        status, ctype, body = self._download(path)
+        is_page = "text/html" in ctype and not cacheable
+        if status == 404 and is_page:
+            status = 200  # client-side route: GitHub Pages answers with the app shell (404.html)
+        if is_page and status == 200:
+            # Tell the app it is being served by the judge, so it calls this origin.
+            tag = b'<script>window.__PEPPER_JUDGE__=location.origin</script>'
+            m = re.search(rb"<html[^>]*>", body, re.I)
+            at = m.end() if m else 0
+            body = body[:at] + tag + body[at:]
+        result = (status, ctype, body)
+        if cacheable and status == 200:
+            with self.lock:
+                self.cache[path] = result
+        return result
+
+
+# --------------------------------------------------------------------------- #
 # HTTP server
 # --------------------------------------------------------------------------- #
 
@@ -344,6 +397,7 @@ class Handler(BaseHTTPRequestHandler):
     server_version = "PepperJudge/" + VERSION
     judge = None  # type: Judge
     store = None  # type: SubmissionStore
+    mirror = SiteMirror()
     allowed_origins = set(DEFAULT_ALLOWED_ORIGINS)
     port = DEFAULT_PORT
     verbose = False
@@ -385,6 +439,31 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
+    def _redirect(self, location):
+        self.send_response(302)
+        self.send_header("Location", location)
+        self.send_header("Content-Length", "0")
+        self.end_headers()
+
+    def _serve_site(self, path):
+        try:
+            status, ctype, body = self.mirror.get(path)
+        except (URLError, OSError) as e:
+            reason = getattr(e, "reason", e)
+            hint = ""
+            if isinstance(reason, ssl.SSLError):
+                hint = (" Python cannot verify HTTPS certificates. On macOS run "
+                        "'Install Certificates.command' from your Python folder.")
+            body = ("<h1>Pepper</h1><p>Could not load the website from GitHub Pages: %s.%s</p>"
+                    "<p>Check your internet connection and reload.</p>" % (reason, hint)).encode()
+            status, ctype = 502, "text/html; charset=utf-8"
+        self.send_response(status)
+        self.send_header("Content-Type", ctype)
+        self.send_header("Content-Length", str(len(body)))
+        self.send_header("Cache-Control", "no-cache")
+        self.end_headers()
+        self.wfile.write(body)
+
     def _guard(self):
         if not self._host_allowed():
             self._send(403, {"error": "Requests must be addressed to 127.0.0.1"})
@@ -422,7 +501,13 @@ class Handler(BaseHTTPRequestHandler):
         url = urlparse(self.path)
         query = parse_qs(url.query)
         try:
-            if url.path in ("/", "/health"):
+            if url.path == "/":
+                self._redirect(SITE_PREFIX)
+            elif url.path == SITE_PREFIX.rstrip("/"):
+                self._redirect(SITE_PREFIX)
+            elif url.path.startswith(SITE_PREFIX):
+                self._serve_site(self.path)
+            elif url.path == "/health":
                 self._send(200, self._health())
             elif url.path == "/submissions":
                 slug = (query.get("problem") or [""])[0]
@@ -506,6 +591,8 @@ def main(argv=None):
     parser.add_argument("--port", type=int, default=int(os.environ.get("PEPPER_JUDGE_PORT", DEFAULT_PORT)))
     parser.add_argument("--allow-origin", action="append", default=[],
                         help="Extra website origin allowed to use this judge (repeatable)")
+    parser.add_argument("--site-origin", default=SITE_ORIGIN,
+                        help="Where to load the website from when serving it at /pepper/ (for forks)")
     parser.add_argument("--verbose", action="store_true", help="Log every HTTP request")
     args = parser.parse_args(argv)
 
@@ -523,6 +610,7 @@ def main(argv=None):
     Handler.store = SubmissionStore()
     Handler.allowed_origins = set(DEFAULT_ALLOWED_ORIGINS) | set(args.allow_origin)
     Handler.port = args.port
+    Handler.mirror = SiteMirror(args.site_origin)
     Handler.verbose = args.verbose
 
     try:
@@ -535,6 +623,7 @@ def main(argv=None):
     print("\n  Listening on http://127.0.0.1:%d" % args.port)
     print("  Submissions are saved in %s" % DB_PATH)
     print("\n  Now open %s - it connects automatically." % SITE_URL)
+    print("  Using Safari? Open http://127.0.0.1:%d%s instead (served by this judge)." % (args.port, SITE_PREFIX))
     print("  Keep this window open while you practice. Press Ctrl+C to stop.\n")
     try:
         httpd.serve_forever()

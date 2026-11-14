@@ -151,7 +151,7 @@ function ResultView({ outcome }) {
   );
 }
 
-export default function ConsolePanel({ cases, setCases, outcome, busy, tab, setTab }) {
+export default function ConsolePanel({ cases, setCases, outcome, busy, busyLabel, tab, setTab }) {
   const [active, setActive] = useState(0);
   useEffect(() => {
     if (active >= cases.length) setActive(Math.max(0, cases.length - 1));
@@ -213,7 +213,7 @@ export default function ConsolePanel({ cases, setCases, outcome, busy, tab, setT
             </div>
           </div>
         ) : busy && !outcome ? (
-          <p className="py-6 text-center text-sm text-slate-500">Running…</p>
+          <p className="py-6 text-center text-sm text-slate-500">{busyLabel || "Running…"}</p>
         ) : outcome ? (
           <ResultView outcome={outcome} />
         ) : (

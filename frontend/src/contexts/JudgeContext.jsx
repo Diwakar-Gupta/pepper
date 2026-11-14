@@ -1,4 +1,5 @@
 import React, { createContext, useCallback, useContext, useEffect, useRef, useState } from "react";
+import { judgeBlockedByBrowser, servedByJudge } from "../lib/env";
 import * as judge from "../lib/judge";
 import { load, mergeProgress, save } from "../lib/storage";
 
@@ -16,7 +17,7 @@ export const useJudge = () => useContext(JudgeContext);
 export function JudgeProvider({ children }) {
   const [status, setStatus] = useState("idle"); // idle | checking | connected | offline
   const [info, setInfo] = useState(null);
-  const [active, setActive] = useState(() => Boolean(load("judgeSeen", false)));
+  const [active, setActive] = useState(() => servedByJudge || Boolean(load("judgeSeen", false)));
   const timer = useRef(null);
   const failures = useRef(0);
 
@@ -51,7 +52,7 @@ export function JudgeProvider({ children }) {
   }, []);
 
   useEffect(() => {
-    if (!active) return undefined;
+    if (!active || judgeBlockedByBrowser) return undefined;
     check();
     const onFocus = () => {
       failures.current = 0;
@@ -72,7 +73,8 @@ export function JudgeProvider({ children }) {
   }, [active, check]);
 
   const value = {
-    status,
+    status: judgeBlockedByBrowser ? "blocked" : status,
+    blocked: judgeBlockedByBrowser,
     connected: status === "connected",
     languages: info ? info.languages : {},
     version: info ? info.version : null,

@@ -1,9 +1,12 @@
 // Client for the local judge (judge/pepper_judge.py) at http://127.0.0.1:<port>.
 import { DEFAULT_JUDGE_PORT } from "../constants";
+import { servedByJudge } from "./env";
 import { load } from "./storage";
 
-export const judgePort = () => Number(load("judgePort", DEFAULT_JUDGE_PORT)) || DEFAULT_JUDGE_PORT;
-const baseUrl = () => `http://127.0.0.1:${judgePort()}`;
+export const judgePort = () =>
+  servedByJudge ? Number(window.location.port) : Number(load("judgePort", DEFAULT_JUDGE_PORT)) || DEFAULT_JUDGE_PORT;
+// When the judge serves the site itself, talk to the same origin.
+const baseUrl = () => (servedByJudge ? window.__PEPPER_JUDGE__ : `http://127.0.0.1:${judgePort()}`);
 
 async function call(path, { body, timeoutMs = 60000 } = {}) {
   const res = await fetch(baseUrl() + path, {

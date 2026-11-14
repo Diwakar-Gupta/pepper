@@ -24,6 +24,11 @@ curl -fsSL https://raw.githubusercontent.com/Diwakar-Gupta/pepper/main/judge/pep
 
 Open the website: it detects the judge automatically. More in [`judge/README.md`](judge/README.md).
 
+- **No setup at all:** Python and JavaScript also run directly in the browser (Pyodide / Web Worker). The judge is
+  needed for Java, C++ and C, and for keeping submission history in one place.
+- **Safari:** it blocks https pages from reaching the judge, so open **http://127.0.0.1:5050/pepper/** (the judge
+  serves the site itself), or use Chrome, Edge, Firefox or Brave.
+
 ## How it fits together
 
 ```

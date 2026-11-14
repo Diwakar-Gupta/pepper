@@ -21,6 +21,7 @@ function JudgeStatus() {
     checking: { dot: "bg-amber-400 animate-pulse", text: "Looking for judge…" },
     offline: { dot: "bg-slate-300", text: "Judge offline" },
     idle: { dot: "bg-slate-300", text: "Connect judge" },
+    blocked: { dot: "bg-amber-400", text: "Judge: Safari needs a step" },
   }[status];
 
   return (

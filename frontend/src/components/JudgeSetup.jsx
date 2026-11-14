@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { JUDGE_SCRIPT_URL, REPO_URL } from "../constants";
 import { useJudge } from "../contexts/JudgeContext";
+import { judgeBlockedByBrowser } from "../lib/env";
 import { CopyButton } from "./ui";
 
 const detectOs = () => {
@@ -49,6 +50,9 @@ export default function JudgeSetup({ compact = false }) {
           <code className="min-w-0 flex-1 break-all font-mono text-[12px] leading-relaxed text-emerald-300">{c.cmd}</code>
           <CopyButton text={c.cmd} />
         </div>
+        {judgeBlockedByBrowser ? (
+          <SafariStep port={port} />
+        ) : (
         <p className="mt-2 text-xs text-slate-500">
           2. This page connects by itself within a few seconds
           {status === "checking" ? " (checking…)" : ""}.{" "}
@@ -56,6 +60,7 @@ export default function JudgeSetup({ compact = false }) {
             Check now
           </button>
         </p>
+        )}
       </div>
 
       <details className="text-xs text-slate-500">
@@ -65,7 +70,11 @@ export default function JudgeSetup({ compact = false }) {
             If your browser asks to let this site access apps on your device / local network, click <b>Allow</b>.
           </li>
           <li>The judge must say “Listening on http://127.0.0.1:{port}”. Another app using that port? Run with <code>--port 6000</code> and set the same port below.</li>
-          <li>Safari may block connections to your own computer from https pages; Chrome, Edge and Firefox work. You can also run the site locally (see README).</li>
+          <li>
+            Safari blocks secure (https) pages from talking to your computer. Chrome, Edge, Firefox and Brave work. In Safari,
+            open <code>http://127.0.0.1:{port}/pepper/</code> while the judge runs: the judge serves this site itself.
+          </li>
+          <li>Brave: if Shields blocks it, allow “localhost access” for this site.</li>
           <li>
             Prefer to read the script first?{" "}
             <a className="text-brand-700 hover:underline" href={`${REPO_URL}/blob/main/judge/pepper_judge.py`} target="_blank" rel="noreferrer">
@@ -76,6 +85,26 @@ export default function JudgeSetup({ compact = false }) {
         </ul>
         <PortSetting />
       </details>
+    </div>
+  );
+}
+
+function SafariStep({ port }) {
+  const local = `http://127.0.0.1:${port}${window.location.pathname}`;
+  return (
+    <div className="mt-3 rounded-lg border border-amber-200 bg-amber-50 p-3 text-xs text-amber-900">
+      <p className="font-semibold">Safari can't reach the judge from this https page.</p>
+      <p className="mt-1">
+        Safari blocks secure websites from talking to programs on your computer. Either use Chrome, Edge, Firefox or Brave,
+        or, once the judge is running, open this page through it:
+      </p>
+      <a
+        href={local}
+        className="mt-2 inline-block rounded-md bg-amber-600 px-3 py-1.5 font-medium text-white hover:bg-amber-700"
+      >
+        2. Open {local.replace(/^http:\/\//, "").slice(0, 48)}
+      </a>
+      <p className="mt-2 text-amber-800">Python and JavaScript also run right here in the browser, with no judge needed.</p>
     </div>
   );
 }

@@ -82,3 +82,14 @@ export function useProgress() {
   }, []);
   return progress;
 }
+
+// ---- submissions made with the in-browser runner (no judge database) ------- //
+
+export function getLocalSubmissions(slug) {
+  return load(`subs:${slug}`, []);
+}
+
+export function addLocalSubmission(slug, entry) {
+  const list = [entry, ...getLocalSubmissions(slug)].slice(0, 30);
+  save(`subs:${slug}`, list);
+}

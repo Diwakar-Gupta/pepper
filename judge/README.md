@@ -43,6 +43,7 @@ Install a missing one and restart the judge to enable it.
 ```
 python3 pepper_judge.py --port 6000                 # if 5050 is taken (also set the port on the website)
 python3 pepper_judge.py --allow-origin https://you.github.io   # if you host your own fork of the site
+python3 pepper_judge.py --site-origin http://127.0.0.1:8000   # serve /pepper/ from another copy of the site
 python3 pepper_judge.py --verbose                   # log every request
 ```
 
@@ -51,6 +52,8 @@ python3 pepper_judge.py --verbose                   # log every request
 - Listens on `http://127.0.0.1:5050` (your computer only, never the network).
 - The website, running in your browser on the same machine, calls it directly with `fetch`.
   Nothing goes through a server on the internet.
+- It also serves the website at `http://127.0.0.1:5050/pepper/` (passed through from GitHub Pages), for browsers
+  like Safari that block https → http requests.
 - Endpoints: `GET /health`, `POST /run`, `POST /submit`, `GET /submissions?problem=<slug>`, `GET /progress`.
 - Each run compiles once, then runs every test case with a time limit (2 s, 4 s for Java).
   Verdicts: Accepted, Wrong Answer, Time Limit Exceeded, Runtime Error, Compilation Error.
@@ -70,8 +73,11 @@ Still, only run code you understand. Don't run the judge as root/Administrator.
 ## Troubleshooting
 
 - **The website says "Judge offline" but the judge is running.** If the browser asks to allow the site to access
-  apps or devices on your local network, click *Allow*. Chrome, Edge and Firefox work. Safari may block
-  https pages from talking to `http://127.0.0.1`; use another browser or run the frontend locally (see `frontend/README.md`).
+  apps or devices on your local network, click *Allow*. In Brave, allow "localhost access" if Shields blocks it.
+- **Safari.** Safari blocks https pages from talking to `http://127.0.0.1`, so the GitHub Pages site can't reach the
+  judge there. Open **http://127.0.0.1:5050/pepper/** instead: the judge serves the website itself (fetched from
+  GitHub Pages), and the page connects automatically. Chrome, Edge, Firefox and Brave work with either address.
+  Note that code drafts saved in the browser are per address.
 - **"Could not listen on 127.0.0.1:5050".** Another judge is already running. Close it, or use `--port`.
 - **`python3` not found on Windows.** Use `python` (or `py`) instead.
 - **Java/C++ not listed.** Check `javac -version` / `g++ --version` work in the same terminal, then restart the judge.

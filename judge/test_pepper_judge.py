@@ -120,6 +120,30 @@ class HttpTests(unittest.TestCase):
         status, _, _ = self.request("/health", origin="http://localhost:1234")
         self.assertEqual(status, 200)
 
+    def test_root_redirects_to_site(self):
+        conn = __import__("http.client").client.HTTPConnection("127.0.0.1", self.httpd.server_address[1])
+        conn.request("GET", "/")
+        resp = conn.getresponse()
+        self.assertEqual(resp.status, 302)
+        self.assertEqual(resp.getheader("Location"), "/pepper/")
+
+    def test_site_is_mirrored_with_judge_marker(self):
+        class FakeMirror(pj.SiteMirror):
+            def _download(self, path):
+                if path == "/pepper/app.js":
+                    return 200, "application/javascript", b"console.log(1)"
+                return 404, "text/html", b"<html><head></head><body>shell</body></html>"
+
+        pj.Handler.mirror = FakeMirror()
+        try:
+            with urllib.request.urlopen(self.base + "/pepper/course/x/y") as resp:
+                self.assertEqual(resp.status, 200)  # SPA route served as the app shell
+                self.assertIn(b"__PEPPER_JUDGE__", resp.read())
+            with urllib.request.urlopen(self.base + "/pepper/app.js") as resp:
+                self.assertEqual(resp.read(), b"console.log(1)")
+        finally:
+            pj.Handler.mirror = pj.SiteMirror()
+
     def test_submit_and_progress(self):
         status, body, _ = self.request("/submit", {
             "problemSlug": "demo", "language": "python", "code": "print(input())",
