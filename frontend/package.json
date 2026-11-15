@@ -20,9 +20,12 @@
     "react-ace": "^10.1.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.0",
-    "ace-builds": "^1.36.0"
+    "ace-builds": "1.45.2"
   },
   "staticFiles": {
     "staticPath": "public"
+  },
+  "resolutions": {
+    "ace-builds": "1.45.2"
   }
 }
